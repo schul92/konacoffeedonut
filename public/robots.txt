@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.konacoffeedonut.com
+
+# Sitemaps
+Sitemap: https://www.konacoffeedonut.com/sitemap.xml
