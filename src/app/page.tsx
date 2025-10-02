@@ -82,7 +82,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-orange-500 hover:text-orange-400 transition-colors"
               >
-                I'm donut ?
+                I&apos;m donut ?
               </a>
             </div>
           </div>
