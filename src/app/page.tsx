@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Instagram } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -91,15 +91,19 @@ export default function Home() {
           <div className="pt-8 border-t border-white/10">
             <p className="text-center text-sm opacity-60 mb-6">In collaboration with</p>
             <div className="flex justify-center items-center gap-8 md:gap-12 mb-8">
-              <img
+              <Image
                 src="/honolulu_coffee.webp"
                 alt="Honolulu Coffee"
-                className="h-12 md:h-16 object-contain opacity-70 hover:opacity-100 transition-opacity"
+                width={80}
+                height={64}
+                className="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
-              <img
+              <Image
                 src="/mochi_land_circle.png"
                 alt="Mochiland"
-                className="h-12 md:h-16 object-contain opacity-70 hover:opacity-100 transition-opacity"
+                width={80}
+                height={64}
+                className="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
             </div>
           </div>
