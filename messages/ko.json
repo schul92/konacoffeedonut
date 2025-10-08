@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "menu": "메뉴",
+    "about": "소개",
+    "location": "위치"
+  },
+  "menu": {
+    "title": "메뉴",
+    "subtitle": "정성껏 만든 맛",
+    "viewMenu": "메뉴 보기",
+    "categories": {
+      "donuts": {
+        "name": "도넛",
+        "description": "쌀가루로 만든 장인 모찌 도넛. 독특한 식감으로 겉은 바삭하고 속은 쫄깃쫄깃"
+      },
+      "malasada": {
+        "name": "말라사다",
+        "description": "하와이 스타일 포르투갈식 튀김 도넛"
+      },
+      "coffee": {
+        "name": "코나 커피",
+        "description": "하와이 No.1 프리미엄 코나 커피, 호놀룰루 커피와의 협업으로 제공하는 100% 코나 커피"
+      },
+      "bingsu": {
+        "name": "빙수",
+        "description": "신선한 과일과 한국식 빙수를 결합한 하와이안 스타일 빙수"
+      },
+      "hotdog": {
+        "name": "한국식 핫도그",
+        "description": "바삭한 한국식 콘도그"
+      },
+      "smoothie": {
+        "name": "스무디",
+        "description": "신선한 열대 과일 스무디"
+      }
+    }
+  },
+  "location": {
+    "title": "그랜드 오픈",
+    "subtitle": "곧 오픈합니다",
+    "address": "2142 Kalakaua Ave",
+    "city": "Honolulu, HI 96815",
+    "directions": "길찾기"
+  },
+  "footer": {
+    "tagline": "알로하 정신으로 수제 제작",
+    "collaboration": "협력 파트너",
+    "copyright": "© 2025 Kona Coffee Donut? 모든 권리 보유"
+  },
+  "meta": {
+    "title": "Kona Coffee Donut? | 하와이에서 알로하로 수제 제작",
+    "description": "정통 하와이안 커피와 장인 도넛을 경험하세요. 호놀룰루 커피 및 모치랜드와 협력하여 100% 코나 커피로 제작합니다."
+  }
+}

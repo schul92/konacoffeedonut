@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "menu": "メニュー",
+    "about": "私たちについて",
+    "location": "所在地"
+  },
+  "menu": {
+    "title": "メニュー",
+    "subtitle": "手作りの美味しさ",
+    "viewMenu": "メニューを見る",
+    "categories": {
+      "donuts": {
+        "name": "ドーナツ",
+        "description": "もち米粉で作られた職人モチドーナツ。独特の食感で外はサクサク、中はもちもち"
+      },
+      "malasada": {
+        "name": "マラサダ",
+        "description": "ハワイ風ポルトガル揚げドーナツ"
+      },
+      "coffee": {
+        "name": "コナコーヒー",
+        "description": "ハワイNo.1のプレミアムコナコーヒー、ホノルルコーヒーとのコラボレーションで提供する100％コナコーヒー"
+      },
+      "bingsu": {
+        "name": "ビンス",
+        "description": "新鮮なフルーツと韓国風かき氷を使ったハワイアンスタイルビンス"
+      },
+      "hotdog": {
+        "name": "韓国式コーンドッグ",
+        "description": "サクサク韓国風コーンドッグ"
+      },
+      "smoothie": {
+        "name": "スムージー",
+        "description": "新鮮なトロピカルフルーツスムージー"
+      }
+    }
+  },
+  "location": {
+    "title": "グランドオープニング",
+    "subtitle": "まもなくオープン",
+    "address": "2142 Kalakaua Ave",
+    "city": "Honolulu, HI 96815",
+    "directions": "ルートを検索"
+  },
+  "footer": {
+    "tagline": "アロハの心で手作り",
+    "collaboration": "コラボレーション",
+    "copyright": "© 2025 Kona Coffee Donut? 無断転載禁止"
+  },
+  "meta": {
+    "title": "Kona Coffee Donut? | ハワイで手作りアロハ",
+    "description": "本格的なハワイアンコーヒーと職人ドーナツをご体験ください。ホノルルコーヒーとモチランドとのコラボレーションで100％コナコーヒーを使用。"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "about": "About Us",
+    "location": "Location"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Handcrafted Delights",
+    "viewMenu": "View Menu",
+    "categories": {
+      "donuts": {
+        "name": "Donuts",
+        "description": "Artisan mochi donuts made with rich rice flour for its uniqueness and crispy outside and chewy inside"
+      },
+      "malasada": {
+        "name": "Malasada",
+        "description": "Hawaiian-Portuguese fried dough pastries"
+      },
+      "coffee": {
+        "name": "Kona Coffee",
+        "description": "100% Kona coffee in collaboration with Honolulu Coffee, Hawaii's number one premium Kona coffee"
+      },
+      "bingsu": {
+        "name": "Bingsu",
+        "description": "Hawaiian style bingsu made with fresh fruits and Korean style shaved ice"
+      },
+      "hotdog": {
+        "name": "Korean Corn Dogs",
+        "description": "Crispy Korean-style corn dogs"
+      },
+      "smoothie": {
+        "name": "Smoothies",
+        "description": "Fresh tropical fruit smoothies"
+      }
+    }
+  },
+  "location": {
+    "title": "GRAND OPENING",
+    "subtitle": "Opening Soon",
+    "address": "2142 Kalakaua Ave",
+    "city": "Honolulu, HI 96815",
+    "directions": "Get Directions"
+  },
+  "footer": {
+    "tagline": "Handcrafted with Aloha",
+    "collaboration": "In collaboration with",
+    "copyright": "© 2025 Kona Coffee Donut? All rights reserved."
+  },
+  "meta": {
+    "title": "Kona Coffee Donut? | Handcrafted with Aloha in Hawaii",
+    "description": "Experience authentic Hawaiian coffee and artisan donuts. Made with 100% Kona coffee in collaboration with Honolulu Coffee and Mochiland."
+  }
+}

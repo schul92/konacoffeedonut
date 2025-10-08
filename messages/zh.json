@@ -1,0 +1,54 @@
+{
+  "nav": {
+    "menu": "菜单",
+    "about": "关于我们",
+    "location": "位置"
+  },
+  "menu": {
+    "title": "菜单",
+    "subtitle": "手工美味",
+    "viewMenu": "查看菜单",
+    "categories": {
+      "donuts": {
+        "name": "甜甜圈",
+        "description": "采用米粉制作的手工麻糬甜甜圈。独特口感，外酥里糯"
+      },
+      "malasada": {
+        "name": "马拉萨达",
+        "description": "夏威夷式葡萄牙炸面团"
+      },
+      "coffee": {
+        "name": "科纳咖啡",
+        "description": "夏威夷第一优质科纳咖啡，与檀香山咖啡合作提供的100%科纳咖啡"
+      },
+      "bingsu": {
+        "name": "刨冰",
+        "description": "采用新鲜水果和韩式刨冰制作的夏威夷风格刨冰"
+      },
+      "hotdog": {
+        "name": "韩式玉米热狗",
+        "description": "酥脆的韩式玉米热狗"
+      },
+      "smoothie": {
+        "name": "冰沙",
+        "description": "新鲜热带水果冰沙"
+      }
+    }
+  },
+  "location": {
+    "title": "盛大开业",
+    "subtitle": "即将开业",
+    "address": "2142 Kalakaua Ave",
+    "city": "Honolulu, HI 96815",
+    "directions": "获取路线"
+  },
+  "footer": {
+    "tagline": "以阿罗哈精神手工制作",
+    "collaboration": "合作伙伴",
+    "copyright": "© 2025 Kona Coffee Donut? 版权所有"
+  },
+  "meta": {
+    "title": "Kona Coffee Donut? | 夏威夷手工制作阿罗哈",
+    "description": "体验正宗的夏威夷咖啡和手工甜甜圈。与檀香山咖啡和麻糬乐园合作，采用100%科纳咖啡制作。"
+  }
+}
