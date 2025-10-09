@@ -4,6 +4,10 @@
     "about": "소개",
     "location": "위치"
   },
+  "hero": {
+    "welcome": "알로하 정신으로 수제 제작",
+    "subtitle": "정통 하와이안 커피 & 장인 도넛"
+  },
   "menu": {
     "title": "메뉴",
     "subtitle": "정성껏 만든 맛",

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
@@ -10,32 +10,116 @@ import MenuSection from '@/components/MenuSection';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
   const t = useTranslations();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Calculate scale and opacity for smooth logo transition
+  // Starts transitioning at 0px, fully transitioned at 200px
+  const scrollProgress = Math.min(scrollY / 200, 1);
+  const isScrolled = scrollY > 10;
+  const logoScale = 1 - (scrollProgress * 0.5); // Scale from 1 to 0.5
+  const questionScale = 2 - scrollProgress; // Scale from 2 to 1
 
   return (
     <main className="min-h-screen bg-white text-black">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-6 flex justify-between items-center">
-          <div className="text-xl md:text-2xl font-medium">
-            Kona Coffee Donut<span className="text-orange-500">?</span>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-4">
+          {/* Desktop Navigation */}
+          <div className="hidden md:grid grid-cols-3 items-center gap-4">
+            {/* Left: Menu & About */}
+            <div className="flex gap-8 text-base">
+              <a href="#menu" className="hover:opacity-60 transition-opacity">{t('nav.menu')}</a>
+              <a href="#about" className="hover:opacity-60 transition-opacity">{t('nav.about')}</a>
+            </div>
+
+            {/* Center: Logo (converts to ? when scrolled) */}
+            <div className="flex justify-center items-center h-12">
+              <div
+                className="absolute transition-all duration-200 ease-out"
+                style={{
+                  opacity: 1 - scrollProgress,
+                  transform: `scale(${logoScale})`,
+                  pointerEvents: scrollProgress > 0.5 ? 'none' : 'auto'
+                }}
+              >
+                <Image
+                  src="/konacoffee.png"
+                  alt="Kona Coffee Donut"
+                  width={300}
+                  height={50}
+                  className="h-10 w-auto"
+                />
+              </div>
+              <div
+                className="absolute transition-all duration-200 ease-out font-bold"
+                style={{
+                  color: '#5C2E1F',
+                  opacity: scrollProgress,
+                  transform: `scale(${questionScale})`,
+                  fontSize: '2.5rem'
+                }}
+              >
+                ?
+              </div>
+            </div>
+
+            {/* Right: Location & Language */}
+            <div className="flex gap-8 text-base items-center justify-end">
+              <a href="#location" className="hover:opacity-60 transition-opacity">{t('nav.location')}</a>
+              <LanguageSwitcher />
+            </div>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex gap-10 text-base items-center">
-            <a href="#menu" className="hover:opacity-60 transition-opacity">{t('nav.menu')}</a>
-            <a href="#about" className="hover:opacity-60 transition-opacity">{t('nav.about')}</a>
-            <a href="#location" className="hover:opacity-60 transition-opacity">{t('nav.location')}</a>
-            <LanguageSwitcher />
-          </div>
+          {/* Mobile Navigation */}
+          <div className="md:hidden flex justify-between items-center">
+            <button
+              className="text-2xl"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? '×' : '☰'}
+            </button>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-2xl"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? '×' : '☰'}
-          </button>
+            <div className="flex-1 flex justify-center items-center h-10 relative">
+              <div
+                className="absolute transition-all duration-200 ease-out"
+                style={{
+                  opacity: 1 - scrollProgress,
+                  transform: `scale(${logoScale})`,
+                  pointerEvents: scrollProgress > 0.5 ? 'none' : 'auto'
+                }}
+              >
+                <Image
+                  src="/konacoffee.png"
+                  alt="Kona Coffee Donut"
+                  width={200}
+                  height={40}
+                  className="h-8 w-auto"
+                />
+              </div>
+              <div
+                className="absolute transition-all duration-200 ease-out font-bold"
+                style={{
+                  color: '#5C2E1F',
+                  opacity: scrollProgress,
+                  transform: `scale(${questionScale})`,
+                  fontSize: '2rem'
+                }}
+              >
+                ?
+              </div>
+            </div>
+
+            <div className="w-8"></div>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -51,25 +135,8 @@ export default function Home() {
         )}
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative pt-20 min-h-screen flex items-center justify-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
-        >
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-medium">
-            Kona Coffee Donut<span className="text-orange-500">?</span>
-          </h1>
-        </motion.div>
-      </section>
-
-      {/* Menu Section */}
-      <MenuSection />
-
-      {/* Location Section */}
-      <section id="location" className="py-20 md:py-32 bg-white">
+      {/* Location Section - Moved to Top */}
+      <section id="location" className="pt-20 md:pt-24 pb-20 md:pb-32 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -78,15 +145,17 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-5xl md:text-7xl font-bold text-orange-500 mb-4">
-              {t('location.title')}
-            </h2>
-            <p className="text-2xl md:text-3xl text-gray-600 mb-8">
-              {t('location.subtitle')}
-            </p>
-            <div className="text-xl md:text-2xl text-gray-800">
-              <p className="font-medium">{t('location.address')}</p>
-              <p>{t('location.city')}</p>
+            <div className="inline-block bg-gradient-to-r from-amber-50 to-orange-50 px-8 py-4 rounded-2xl mb-6 shadow-md">
+              <h2 className="text-4xl md:text-6xl font-bold mb-2" style={{ color: '#5C2E1F' }}>
+                ☕ {t('location.title')} ☕
+              </h2>
+              <p className="text-xl md:text-2xl font-semibold" style={{ color: '#8B4513' }}>
+                {t('location.subtitle')}
+              </p>
+            </div>
+            <div className="text-xl md:text-2xl text-gray-800 mt-8">
+              <p className="font-semibold mb-1">{t('location.address')}</p>
+              <p className="text-gray-600">{t('location.city')}</p>
             </div>
           </motion.div>
 
@@ -113,13 +182,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Menu Section */}
+      <MenuSection />
+
       {/* Footer */}
       <footer className="py-12 md:py-16 bg-black text-white">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
             <div>
-              <h3 className="text-2xl md:text-3xl font-medium mb-2">
-                Kona Coffee Donut<span className="text-orange-500">?</span>
+              <h3 className="text-xl md:text-2xl font-righteous mb-2">
+                KONA COFFEE <span className="inline-block" style={{ fontSize: '0.9em' }}>☕</span> DONUT ?
               </h3>
               <p className="opacity-60">{t('footer.tagline')}</p>
             </div>

@@ -4,6 +4,10 @@
     "about": "About Us",
     "location": "Location"
   },
+  "hero": {
+    "welcome": "Handcrafted with Aloha",
+    "subtitle": "Authentic Hawaiian Coffee & Artisan Donuts"
+  },
   "menu": {
     "title": "Our Menu",
     "subtitle": "Handcrafted Delights",
