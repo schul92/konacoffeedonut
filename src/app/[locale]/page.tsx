@@ -340,27 +340,44 @@ export default function Home() {
               />
 
               {/* Floating Particles */}
-              {[...Array(12)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute w-1 h-1 bg-orange-400 rounded-full"
-                  style={{
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 100}%`,
-                  }}
-                  animate={{
-                    y: [0, -30, 0],
-                    opacity: [0, 1, 0],
-                    scale: [0, 1.5, 0]
-                  }}
-                  transition={{
-                    duration: 2 + Math.random() * 2,
-                    repeat: Infinity,
-                    delay: Math.random() * 2,
-                    ease: "easeInOut"
-                  }}
-                />
-              ))}
+              {[...Array(12)].map((_, i) => {
+                // Deterministic positions based on index
+                const positions = [
+                  { left: 15, top: 20 },
+                  { left: 85, top: 15 },
+                  { left: 30, top: 80 },
+                  { left: 70, top: 85 },
+                  { left: 45, top: 30 },
+                  { left: 55, top: 70 },
+                  { left: 10, top: 50 },
+                  { left: 90, top: 55 },
+                  { left: 25, top: 40 },
+                  { left: 75, top: 45 },
+                  { left: 40, top: 65 },
+                  { left: 60, top: 25 },
+                ];
+                return (
+                  <motion.div
+                    key={i}
+                    className="absolute w-1 h-1 bg-orange-400 rounded-full"
+                    style={{
+                      left: `${positions[i].left}%`,
+                      top: `${positions[i].top}%`,
+                    }}
+                    animate={{
+                      y: [0, -30, 0],
+                      opacity: [0, 1, 0],
+                      scale: [0, 1.5, 0]
+                    }}
+                    transition={{
+                      duration: 2 + (i % 4) * 0.5,
+                      repeat: Infinity,
+                      delay: (i % 3) * 0.5,
+                      ease: "easeInOut"
+                    }}
+                  />
+                );
+              })}
             </div>
 
             {/* Honolulu Coffee Feature Section */}

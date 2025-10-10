@@ -4,32 +4,32 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import PDFModal from './PDFModal';
+import ImageModal from './ImageModal';
 
 interface MenuItem {
   id: string;
-  pdf: string;
+  image: string;
   icon?: string;
   iconImage?: string;
 }
 
 const menuItems: MenuItem[] = [
-  { id: 'donuts', pdf: '/donut_final.pdf', iconImage: '/mochi_land_circle.png' },
-  { id: 'malasada', pdf: '/malasada_final.pdf', iconImage: '/malasada-icon.png' },
-  { id: 'coffee', pdf: '/coffee_final.pdf', iconImage: '/honolulu_coffee.webp' },
-  { id: 'bingsu', pdf: '/bingsu_final.pdf', icon: '🍧' },
-  { id: 'hotdog', pdf: '/hotdog_final.pdf', iconImage: '/corndog-icon.png' },
-  { id: 'smoothie', pdf: '/smoothie_final.pdf', icon: '🥤' },
+  { id: 'donuts', image: '/bingsu.png', iconImage: '/mochi_land_circle.png' },
+  { id: 'malasada', image: '/bingsu.png', iconImage: '/malasada-icon.png' },
+  { id: 'coffee', image: '/coffee.png', iconImage: '/honolulu_coffee.webp' },
+  { id: 'bingsu', image: '/bingsu.png', icon: '🍧' },
+  { id: 'hotdog', image: '/bingsu.png', iconImage: '/corndog-icon.png' },
+  { id: 'smoothie', image: '/smoothie.png', icon: '🥤' },
 ];
 
 export default function MenuSection() {
   const t = useTranslations('menu');
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
-  const [currentPDF, setCurrentPDF] = useState<{ url: string; title: string } | null>(null);
+  const [currentImage, setCurrentImage] = useState<{ url: string; title: string } | null>(null);
 
-  const openPDF = (pdf: string, title: string) => {
-    setCurrentPDF({ url: pdf, title });
+  const openImage = (image: string, title: string) => {
+    setCurrentImage({ url: image, title });
     setModalOpen(true);
   };
 
@@ -62,7 +62,7 @@ export default function MenuSection() {
               className="relative"
             >
               <button
-                onClick={() => openPDF(item.pdf, t(`categories.${item.id}.name`))}
+                onClick={() => openImage(item.image, t(`categories.${item.id}.name`))}
                 className="w-full group relative overflow-hidden rounded-xl md:rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 active:scale-95 md:hover:scale-105"
               >
                 {/* Card Content */}
@@ -140,13 +140,13 @@ export default function MenuSection() {
         </motion.div>
       </div>
 
-      {/* PDF Modal */}
-      {currentPDF && (
-        <PDFModal
+      {/* Image Modal */}
+      {currentImage && (
+        <ImageModal
           isOpen={modalOpen}
           onClose={() => setModalOpen(false)}
-          pdfUrl={currentPDF.url}
-          title={currentPDF.title}
+          imageUrl={currentImage.url}
+          title={currentImage.title}
         />
       )}
     </section>
