@@ -24,7 +24,6 @@ export default function Home() {
   // Calculate scale and opacity for smooth logo transition
   // Starts transitioning at 0px, fully transitioned at 200px
   const scrollProgress = Math.min(scrollY / 200, 1);
-  const isScrolled = scrollY > 10;
   const logoScale = 1 - (scrollProgress * 0.5); // Scale from 1 to 0.5
   const questionScale = 2 - scrollProgress; // Scale from 2 to 1
 
@@ -457,7 +456,7 @@ export default function Home() {
                 </motion.div>
 
                 <p className="text-base md:text-lg text-gray-700 font-medium mt-6 max-w-2xl mx-auto">
-                  Experience authentic <span className="font-bold text-orange-600">Hawaii's #1 Premium Kona Coffee</span> –
+                  Experience authentic <span className="font-bold text-orange-600">Hawaii&apos;s #1 Premium Kona Coffee</span> –
                   now at Kona Coffee Donut!
                 </p>
 
