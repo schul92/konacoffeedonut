@@ -48,8 +48,8 @@ export default function MenuSection() {
           <p className="text-2xl md:text-3xl text-gray-600">{t('subtitle')}</p>
         </motion.div>
 
-        {/* Menu Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Menu Grid - Mobile Optimized */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {menuItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -63,10 +63,10 @@ export default function MenuSection() {
             >
               <button
                 onClick={() => openPDF(item.pdf, t(`categories.${item.id}.name`))}
-                className="w-full group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                className="w-full group relative overflow-hidden rounded-xl md:rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 active:scale-95 md:hover:scale-105"
               >
                 {/* Card Content */}
-                <div className="p-8 text-center">
+                <div className="p-4 md:p-6 lg:p-8 text-center">
                   {/* Icon */}
                   <motion.div
                     animate={{
@@ -74,35 +74,35 @@ export default function MenuSection() {
                       rotate: selectedItem === item.id ? 10 : 0,
                     }}
                     transition={{ type: 'spring', stiffness: 300 }}
-                    className="mb-4 flex items-center justify-center"
+                    className="mb-3 md:mb-4 flex items-center justify-center"
                   >
                     {item.iconImage ? (
-                      <div className="relative w-24 h-24 md:w-28 md:h-28">
+                      <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28">
                         <Image
                           src={item.iconImage}
                           alt={t(`categories.${item.id}.name`)}
                           fill
                           className="object-contain"
-                          sizes="(max-width: 768px) 96px, 112px"
+                          sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, (max-width: 1024px) 96px, 112px"
                         />
                       </div>
                     ) : (
-                      <span className="text-7xl">{item.icon}</span>
+                      <span className="text-5xl sm:text-6xl md:text-7xl">{item.icon}</span>
                     )}
                   </motion.div>
 
                   {/* Category Name */}
-                  <h3 className="text-2xl md:text-3xl font-bold mb-3 group-hover:text-orange-500 transition-colors">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 md:mb-3 group-hover:text-orange-500 transition-colors line-clamp-1">
                     {t(`categories.${item.id}.name`)}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 mb-6 text-sm md:text-base">
+                  <p className="text-gray-600 mb-4 md:mb-6 text-xs sm:text-sm md:text-base line-clamp-2 md:line-clamp-none">
                     {t(`categories.${item.id}.description`)}
                   </p>
 
                   {/* View Menu Button */}
-                  <div className="inline-flex items-center gap-2 text-orange-500 font-semibold group-hover:gap-4 transition-all">
+                  <div className="inline-flex items-center gap-2 text-orange-500 font-semibold text-sm md:text-base group-hover:gap-4 transition-all">
                     <span>{t('viewMenu')}</span>
                     <motion.span
                       animate={{ x: selectedItem === item.id ? 5 : 0 }}
@@ -120,7 +120,7 @@ export default function MenuSection() {
                 />
 
                 {/* Decorative Corner */}
-                <div className="absolute top-4 right-4 w-12 h-12 border-t-4 border-r-4 border-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-tr-2xl" />
+                <div className="absolute top-3 right-3 md:top-4 md:right-4 w-8 h-8 md:w-12 md:h-12 border-t-2 border-r-2 md:border-t-4 md:border-r-4 border-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-tr-xl md:rounded-tr-2xl" />
               </button>
             </motion.div>
           ))}

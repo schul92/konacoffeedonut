@@ -121,17 +121,40 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="md:hidden bg-white border-t px-4 py-6 space-y-4">
-            <a href="#menu" className="block text-lg" onClick={() => setMenuOpen(false)}>{t('nav.menu')}</a>
-            <a href="#about" className="block text-lg" onClick={() => setMenuOpen(false)}>{t('nav.about')}</a>
-            <a href="#location" className="block text-lg" onClick={() => setMenuOpen(false)}>{t('nav.location')}</a>
-            <div className="pt-4 border-t border-gray-200">
+        {/* Mobile Menu - Improved */}
+        <motion.div
+          initial={false}
+          animate={{ height: menuOpen ? 'auto' : 0 }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
+          className="md:hidden overflow-hidden"
+        >
+          <div className="bg-white border-t border-gray-100 px-6 py-6 space-y-1">
+            <a
+              href="#menu"
+              className="block py-3 text-lg font-medium text-gray-700 hover:text-orange-500 transition-colors rounded-lg hover:bg-orange-50 px-4 -mx-4"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t('nav.menu')}
+            </a>
+            <a
+              href="#about"
+              className="block py-3 text-lg font-medium text-gray-700 hover:text-orange-500 transition-colors rounded-lg hover:bg-orange-50 px-4 -mx-4"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t('nav.about')}
+            </a>
+            <a
+              href="#location"
+              className="block py-3 text-lg font-medium text-gray-700 hover:text-orange-500 transition-colors rounded-lg hover:bg-orange-50 px-4 -mx-4"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t('nav.location')}
+            </a>
+            <div className="pt-4 mt-4 border-t border-gray-200">
               <LanguageSwitcher />
             </div>
           </div>
-        )}
+        </motion.div>
       </nav>
 
       {/* Location Section - Moved to Top */}

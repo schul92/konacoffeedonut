@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { X, ExternalLink } from 'lucide-react';
 
 interface PDFModalProps {
   isOpen: boolean;
@@ -43,63 +44,54 @@ export default function PDFModal({ isOpen, onClose, pdfUrl, title }: PDFModalPro
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/80 z-50 backdrop-blur-sm"
+            className="fixed inset-0 bg-black/90 z-50"
           />
 
-          {/* Modal */}
+          {/* Modal - Mobile Optimized */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
             transition={{ duration: 0.3, type: 'spring', damping: 25 }}
-            className="fixed inset-4 md:inset-8 z-50 flex items-center justify-center"
+            className="fixed inset-0 z-50 flex items-end md:items-center justify-center p-0 md:p-4"
           >
-            <div className="bg-white rounded-2xl shadow-2xl w-full h-full flex flex-col overflow-hidden">
-              {/* Header */}
-              <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 bg-gradient-to-r from-orange-50 to-white">
-                <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
+            <div className="bg-white rounded-t-3xl md:rounded-2xl shadow-2xl w-full h-[90vh] md:h-[85vh] md:max-w-4xl flex flex-col overflow-hidden">
+              {/* Header - Simplified */}
+              <div className="flex items-center justify-between px-4 md:px-6 py-4 border-b border-gray-200 shrink-0">
+                <h2 className="text-lg md:text-xl font-bold text-gray-900 truncate pr-4">{title}</h2>
                 <button
                   onClick={onClose}
-                  className="text-gray-500 hover:text-gray-700 transition-colors p-2 hover:bg-gray-100 rounded-full"
-                  aria-label="Close modal"
+                  className="shrink-0 p-2 hover:bg-gray-100 rounded-full transition-colors"
+                  aria-label="Close"
                 >
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path d="M6 18L18 6M6 6l12 12" />
-                  </svg>
+                  <X className="w-5 h-5 md:w-6 md:h-6 text-gray-600" />
                 </button>
               </div>
 
-              {/* PDF Viewer */}
-              <div className="flex-1 overflow-hidden bg-gray-100">
+              {/* PDF Viewer - Full Height */}
+              <div className="flex-1 overflow-hidden bg-gray-50">
                 <iframe
                   src={pdfUrl}
                   className="w-full h-full"
                   title={`${title} Menu`}
+                  loading="lazy"
                 />
               </div>
 
-              {/* Footer */}
-              <div className="px-6 py-3 border-t border-gray-200 bg-gray-50 flex justify-between items-center">
-                <p className="text-sm text-gray-600">Press ESC to close</p>
-                <a
-                  href={pdfUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-orange-500 hover:text-orange-600 font-semibold text-sm flex items-center gap-2"
-                >
-                  Open in New Tab
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
+              {/* Footer - Mobile Friendly */}
+              <div className="px-4 md:px-6 py-3 border-t border-gray-200 bg-white shrink-0">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-0 sm:justify-between sm:items-center">
+                  <p className="text-xs md:text-sm text-gray-500 hidden sm:block">Press ESC or tap outside to close</p>
+                  <a
+                    href={pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-sm rounded-lg transition-colors"
+                  >
+                    <span>Open Full Menu</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.div>
