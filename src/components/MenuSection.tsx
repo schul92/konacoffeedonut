@@ -15,7 +15,7 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { id: 'donuts', image: '/bingsu.png', video: '/videos/donuts.mp4', iconImage: '/mochi_land_circle.png' },
+  { id: 'donuts', image: '/bingsu.png', video: '/videos/donut.mp4', iconImage: '/mochi_land_circle.png' },
   { id: 'malasada', image: '/bingsu.png', video: '/videos/malasada.mp4', iconImage: '/malasada-icon.png' },
   { id: 'coffee', image: '/coffee.png', video: '/videos/coffee.mp4', iconImage: '/honolulu_coffee.webp' },
   { id: 'bingsu', image: '/bingsu.png', video: '/videos/bingsu.mp4', icon: '🍧' },

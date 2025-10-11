@@ -5,7 +5,7 @@
 ```
 public/
 └── videos/
-    ├── donuts.mp4      # Mochi donuts video
+    ├── donut.mp4       # Mochi donuts video
     ├── malasada.mp4    # Malasada video
     ├── coffee.mp4      # Coffee video
     ├── bingsu.mp4      # Bingsu video
@@ -50,7 +50,7 @@ public/
 
 1. Place your video files in `/public/videos/`
 2. Name them according to the menu item:
-   - `donuts.mp4` - Mochi donuts showcase
+   - `donut.mp4` - Mochi donuts showcase
    - `malasada.mp4` - Malasada preparation or display
    - `coffee.mp4` - Coffee brewing or pouring
    - `bingsu.mp4` - Bingsu preparation or close-up
