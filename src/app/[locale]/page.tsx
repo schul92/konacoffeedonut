@@ -165,7 +165,7 @@ export default function Home() {
             >
               {t('nav.location')}
             </a>
-            <div className="pt-4 mt-4 border-t border-gray-200">
+            <div className="pt-4 mt-4 border-t border-gray-200 flex justify-center">
               <LanguageSwitcher />
             </div>
           </div>
