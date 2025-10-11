@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import ImageModal from './ImageModal';
+import { Play } from 'lucide-react';
 
 interface MenuItem {
   id: string;
@@ -28,12 +29,40 @@ export default function MenuSection() {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState<{ url: string; title: string } | null>(null);
-  const [hoveredVideo, setHoveredVideo] = useState<string | null>(null);
+  const [playingVideos, setPlayingVideos] = useState<Record<string, boolean>>({});
+  const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
   const openImage = (image: string, title: string) => {
     setCurrentImage({ url: image, title });
     setModalOpen(true);
   };
+
+  // Auto-play videos when they come into view
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const videoId = entry.target.getAttribute('data-video-id');
+          if (videoId && videoRefs.current[videoId]) {
+            if (entry.isIntersecting) {
+              videoRefs.current[videoId]?.play();
+              setPlayingVideos(prev => ({ ...prev, [videoId]: true }));
+            } else {
+              videoRefs.current[videoId]?.pause();
+              setPlayingVideos(prev => ({ ...prev, [videoId]: false }));
+            }
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    Object.values(videoRefs.current).forEach((video) => {
+      if (video) observer.observe(video);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section id="menu" className="py-20 md:py-32 bg-gradient-to-b from-orange-50 to-white">
@@ -50,8 +79,8 @@ export default function MenuSection() {
           <p className="text-2xl md:text-3xl text-gray-600">{t('subtitle')}</p>
         </motion.div>
 
-        {/* Menu Grid - 2x3 Layout (2 columns, 3 rows) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:gap-8 max-w-5xl mx-auto">
+        {/* Menu Grid - 2x3 Layout - Movie Theater Style */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
           {menuItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -59,107 +88,134 @@ export default function MenuSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              onHoverStart={() => {
-                setSelectedItem(item.id);
-                if (item.video) setHoveredVideo(item.id);
-              }}
-              onHoverEnd={() => {
-                setSelectedItem(null);
-                setHoveredVideo(null);
-              }}
-              className="relative"
+              onHoverStart={() => setSelectedItem(item.id)}
+              onHoverEnd={() => setSelectedItem(null)}
+              className="relative group"
             >
               <button
                 onClick={() => openImage(item.image, t(`categories.${item.id}.name`))}
-                onMouseEnter={() => item.video && setHoveredVideo(item.id)}
-                onMouseLeave={() => setHoveredVideo(null)}
-                className="w-full group relative overflow-hidden rounded-xl md:rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 active:scale-95 md:hover:scale-[1.02]"
+                className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:hover:scale-[1.02]"
               >
-                {/* Video Preview Background - Movie Box Style */}
+                {/* Video Background - Cinema Style - Auto-playing */}
                 {item.video && (
                   <div className="absolute inset-0 z-0">
                     <video
+                      ref={(el) => {
+                        videoRefs.current[item.id] = el;
+                      }}
+                      data-video-id={item.id}
                       src={item.video}
-                      className={`w-full h-full object-cover transition-opacity duration-500 ${
-                        hoveredVideo === item.id ? 'opacity-30' : 'opacity-0'
-                      }`}
-                      autoPlay={hoveredVideo === item.id}
+                      className="w-full h-full object-cover"
+                      autoPlay
                       loop
                       muted
                       playsInline
                       onError={(e) => {
-                        // Hide video if file doesn't exist yet
                         e.currentTarget.style.display = 'none';
                       }}
                     />
-                    <div className={`absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-500 ${
-                      hoveredVideo === item.id ? 'opacity-100' : 'opacity-0'
-                    }`} />
+                    {/* Cinematic Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/40" />
                   </div>
                 )}
 
-                {/* Card Content */}
-                <div className="relative z-10 p-4 md:p-6 lg:p-8 text-center">
-                  {/* Icon */}
-                  <motion.div
-                    animate={{
-                      scale: selectedItem === item.id ? 1.2 : 1,
-                      rotate: selectedItem === item.id ? 10 : 0,
-                    }}
-                    transition={{ type: 'spring', stiffness: 300 }}
-                    className="mb-3 md:mb-4 flex items-center justify-center"
-                  >
-                    {item.iconImage ? (
-                      <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28">
-                        <Image
-                          src={item.iconImage}
-                          alt={t(`categories.${item.id}.name`)}
-                          fill
-                          className="object-contain"
-                          sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, (max-width: 1024px) 96px, 112px"
-                        />
-                      </div>
-                    ) : (
-                      <span className="text-5xl sm:text-6xl md:text-7xl">{item.icon}</span>
-                    )}
-                  </motion.div>
-
-                  {/* Category Name */}
-                  <h3 className={`text-xl sm:text-2xl md:text-3xl font-bold mb-2 md:mb-3 transition-colors line-clamp-1 ${
-                    hoveredVideo === item.id ? 'text-white drop-shadow-lg' : 'text-gray-900 group-hover:text-orange-500'
-                  }`}>
-                    {t(`categories.${item.id}.name`)}
-                  </h3>
-
-                  {/* Description */}
-                  <p className={`mb-4 md:mb-6 text-xs sm:text-sm md:text-base line-clamp-2 md:line-clamp-none transition-colors ${
-                    hoveredVideo === item.id ? 'text-white/90 drop-shadow' : 'text-gray-600'
-                  }`}>
-                    {t(`categories.${item.id}.description`)}
-                  </p>
-
-                  {/* View Menu Button */}
-                  <div className={`inline-flex items-center gap-2 font-semibold text-sm md:text-base group-hover:gap-4 transition-all ${
-                    hoveredVideo === item.id ? 'text-white drop-shadow-lg' : 'text-orange-500'
-                  }`}>
-                    <span>{t('viewMenu')}</span>
-                    <motion.span
-                      animate={{ x: selectedItem === item.id ? 5 : 0 }}
-                      transition={{ type: 'spring', stiffness: 300 }}
-                    >
-                      →
-                    </motion.span>
+                {/* Fallback Image if no video */}
+                {!item.video && (
+                  <div className="absolute inset-0 z-0">
+                    <Image
+                      src={item.image}
+                      alt={t(`categories.${item.id}.name`)}
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70" />
                   </div>
+                )}
+
+                {/* Film Grain Effect */}
+                <div className="absolute inset-0 z-[1] opacity-20 mix-blend-overlay pointer-events-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')]" />
+
+                {/* Top Corner - Brand Logo */}
+                <motion.div
+                  className="absolute top-4 right-4 z-20"
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 0.3 + index * 0.1, type: 'spring' }}
+                >
+                  {item.iconImage ? (
+                    <div className="relative w-12 h-12 md:w-16 md:h-16 bg-white/10 backdrop-blur-md rounded-xl p-2 border border-white/20 shadow-xl">
+                      <Image
+                        src={item.iconImage}
+                        alt={t(`categories.${item.id}.name`)}
+                        fill
+                        className="object-contain p-1"
+                      />
+                    </div>
+                  ) : (
+                    <div className="text-3xl md:text-4xl bg-white/10 backdrop-blur-md rounded-xl p-2 border border-white/20 shadow-xl">
+                      {item.icon}
+                    </div>
+                  )}
+                </motion.div>
+
+                {/* Bottom Info Bar - Cinema Style */}
+                <div className="absolute bottom-0 left-0 right-0 z-10 p-4 md:p-6">
+                  <motion.div
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.4 + index * 0.1 }}
+                  >
+                    {/* Category Name - Large & Bold */}
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-2 drop-shadow-2xl tracking-tight">
+                      {t(`categories.${item.id}.name`)}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-sm md:text-base text-white/90 drop-shadow-lg mb-4 line-clamp-2 font-medium">
+                      {t(`categories.${item.id}.description`)}
+                    </p>
+
+                    {/* Action Button - Theater Style */}
+                    <motion.div
+                      whileHover={{ x: 5 }}
+                      className="inline-flex items-center gap-3 px-6 py-3 bg-orange-500 hover:bg-orange-600 rounded-full shadow-xl transition-all"
+                    >
+                      <Play className="w-4 h-4 fill-white" />
+                      <span className="text-white font-bold text-sm md:text-base">
+                        {t('viewMenu')}
+                      </span>
+                    </motion.div>
+                  </motion.div>
                 </div>
 
-                {/* Hover Effect Background */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-orange-100 to-orange-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
-                  initial={false}
-                />
+                {/* Playing Indicator */}
+                {playingVideos[item.id] && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="absolute top-4 left-4 z-20 flex items-center gap-2 px-3 py-1.5 bg-red-600 rounded-full shadow-xl"
+                  >
+                    <motion.div
+                      animate={{ scale: [1, 1.2, 1] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                      className="w-2 h-2 bg-white rounded-full"
+                    />
+                    <span className="text-xs font-bold text-white uppercase tracking-wider">Now Playing</span>
+                  </motion.div>
+                )}
 
-                {/* Decorative Corner */}
-                <div className="absolute top-3 right-3 md:top-4 md:right-4 w-8 h-8 md:w-12 md:h-12 border-t-2 border-r-2 md:border-t-4 md:border-r-4 border-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-tr-xl md:rounded-tr-2xl" />
+                {/* Hover Glow Effect */}
+                <motion.div
+                  className="absolute inset-0 pointer-events-none z-[2]"
+                  initial={false}
+                  animate={{
+                    boxShadow: selectedItem === item.id
+                      ? '0 0 60px rgba(251, 146, 60, 0.6) inset'
+                      : '0 0 0px rgba(251, 146, 60, 0) inset'
+                  }}
+                  transition={{ duration: 0.3 }}
+                />
               </button>
             </motion.div>
           ))}
