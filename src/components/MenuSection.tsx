@@ -9,17 +9,18 @@ import ImageModal from './ImageModal';
 interface MenuItem {
   id: string;
   image: string;
+  video?: string; // Optional video file path
   icon?: string;
   iconImage?: string;
 }
 
 const menuItems: MenuItem[] = [
-  { id: 'donuts', image: '/bingsu.png', iconImage: '/mochi_land_circle.png' },
-  { id: 'malasada', image: '/bingsu.png', iconImage: '/malasada-icon.png' },
-  { id: 'coffee', image: '/coffee.png', iconImage: '/honolulu_coffee.webp' },
-  { id: 'bingsu', image: '/bingsu.png', icon: '🍧' },
-  { id: 'hotdog', image: '/bingsu.png', iconImage: '/corndog-icon.png' },
-  { id: 'smoothie', image: '/smoothie.png', icon: '🥤' },
+  { id: 'donuts', image: '/bingsu.png', video: '/videos/donuts.mp4', iconImage: '/mochi_land_circle.png' },
+  { id: 'malasada', image: '/bingsu.png', video: '/videos/malasada.mp4', iconImage: '/malasada-icon.png' },
+  { id: 'coffee', image: '/coffee.png', video: '/videos/coffee.mp4', iconImage: '/honolulu_coffee.webp' },
+  { id: 'bingsu', image: '/bingsu.png', video: '/videos/bingsu.mp4', icon: '🍧' },
+  { id: 'hotdog', image: '/bingsu.png', video: '/videos/hotdog.mp4', iconImage: '/corndog-icon.png' },
+  { id: 'smoothie', image: '/smoothie.png', video: '/videos/smoothie.mp4', icon: '🥤' },
 ];
 
 export default function MenuSection() {
@@ -27,6 +28,7 @@ export default function MenuSection() {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState<{ url: string; title: string } | null>(null);
+  const [hoveredVideo, setHoveredVideo] = useState<string | null>(null);
 
   const openImage = (image: string, title: string) => {
     setCurrentImage({ url: image, title });
@@ -48,8 +50,8 @@ export default function MenuSection() {
           <p className="text-2xl md:text-3xl text-gray-600">{t('subtitle')}</p>
         </motion.div>
 
-        {/* Menu Grid - Mobile Optimized */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+        {/* Menu Grid - 2x3 Layout (2 columns, 3 rows) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:gap-8 max-w-5xl mx-auto">
           {menuItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -57,16 +59,47 @@ export default function MenuSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              onHoverStart={() => setSelectedItem(item.id)}
-              onHoverEnd={() => setSelectedItem(null)}
+              onHoverStart={() => {
+                setSelectedItem(item.id);
+                if (item.video) setHoveredVideo(item.id);
+              }}
+              onHoverEnd={() => {
+                setSelectedItem(null);
+                setHoveredVideo(null);
+              }}
               className="relative"
             >
               <button
                 onClick={() => openImage(item.image, t(`categories.${item.id}.name`))}
-                className="w-full group relative overflow-hidden rounded-xl md:rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 active:scale-95 md:hover:scale-105"
+                onMouseEnter={() => item.video && setHoveredVideo(item.id)}
+                onMouseLeave={() => setHoveredVideo(null)}
+                className="w-full group relative overflow-hidden rounded-xl md:rounded-2xl bg-white shadow-md hover:shadow-xl transition-all duration-300 active:scale-95 md:hover:scale-[1.02]"
               >
+                {/* Video Preview Background - Movie Box Style */}
+                {item.video && (
+                  <div className="absolute inset-0 z-0">
+                    <video
+                      src={item.video}
+                      className={`w-full h-full object-cover transition-opacity duration-500 ${
+                        hoveredVideo === item.id ? 'opacity-30' : 'opacity-0'
+                      }`}
+                      autoPlay={hoveredVideo === item.id}
+                      loop
+                      muted
+                      playsInline
+                      onError={(e) => {
+                        // Hide video if file doesn't exist yet
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-t from-black/60 to-transparent transition-opacity duration-500 ${
+                      hoveredVideo === item.id ? 'opacity-100' : 'opacity-0'
+                    }`} />
+                  </div>
+                )}
+
                 {/* Card Content */}
-                <div className="p-4 md:p-6 lg:p-8 text-center">
+                <div className="relative z-10 p-4 md:p-6 lg:p-8 text-center">
                   {/* Icon */}
                   <motion.div
                     animate={{
@@ -92,17 +125,23 @@ export default function MenuSection() {
                   </motion.div>
 
                   {/* Category Name */}
-                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 md:mb-3 group-hover:text-orange-500 transition-colors line-clamp-1">
+                  <h3 className={`text-xl sm:text-2xl md:text-3xl font-bold mb-2 md:mb-3 transition-colors line-clamp-1 ${
+                    hoveredVideo === item.id ? 'text-white drop-shadow-lg' : 'text-gray-900 group-hover:text-orange-500'
+                  }`}>
                     {t(`categories.${item.id}.name`)}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-600 mb-4 md:mb-6 text-xs sm:text-sm md:text-base line-clamp-2 md:line-clamp-none">
+                  <p className={`mb-4 md:mb-6 text-xs sm:text-sm md:text-base line-clamp-2 md:line-clamp-none transition-colors ${
+                    hoveredVideo === item.id ? 'text-white/90 drop-shadow' : 'text-gray-600'
+                  }`}>
                     {t(`categories.${item.id}.description`)}
                   </p>
 
                   {/* View Menu Button */}
-                  <div className="inline-flex items-center gap-2 text-orange-500 font-semibold text-sm md:text-base group-hover:gap-4 transition-all">
+                  <div className={`inline-flex items-center gap-2 font-semibold text-sm md:text-base group-hover:gap-4 transition-all ${
+                    hoveredVideo === item.id ? 'text-white drop-shadow-lg' : 'text-orange-500'
+                  }`}>
                     <span>{t('viewMenu')}</span>
                     <motion.span
                       animate={{ x: selectedItem === item.id ? 5 : 0 }}

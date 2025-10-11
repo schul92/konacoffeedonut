@@ -1,0 +1,18 @@
+# Video files directory
+#
+# Recommended video formats:
+# - MP4 (H.264) - Best browser compatibility
+# - WebM - Modern browsers, smaller file size
+#
+# Recommended settings for web:
+# - Resolution: 1080p or 720p
+# - Bitrate: 2-5 Mbps for good quality
+# - Duration: 10-30 seconds for menu previews
+#
+# File naming convention:
+# - donuts.mp4
+# - malasada.mp4
+# - coffee.mp4
+# - bingsu.mp4
+# - hotdog.mp4
+# - smoothie.mp4
