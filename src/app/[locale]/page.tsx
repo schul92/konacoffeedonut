@@ -27,6 +27,11 @@ export default function Home() {
   const logoScale = 1 - (scrollProgress * 0.5); // Scale from 1 to 0.5
   const questionScale = 2 - scrollProgress; // Scale from 2 to 1
 
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <main className="min-h-screen bg-white text-black">
       {/* Navigation */}
@@ -42,33 +47,39 @@ export default function Home() {
 
             {/* Center: Logo (converts to ? when scrolled) */}
             <div className="flex justify-center items-center h-12">
-              <div
-                className="absolute transition-all duration-200 ease-out"
-                style={{
-                  opacity: 1 - scrollProgress,
-                  transform: `scale(${logoScale})`,
-                  pointerEvents: scrollProgress > 0.5 ? 'none' : 'auto'
-                }}
+              <button
+                onClick={scrollToTop}
+                className="relative cursor-pointer hover:opacity-80 transition-opacity focus:outline-none rounded h-12 w-[300px] flex items-center justify-center"
+                aria-label="Scroll to top"
               >
-                <Image
-                  src="/konacoffee.png"
-                  alt="Kona Coffee Donut"
-                  width={300}
-                  height={50}
-                  className="h-10 w-auto"
-                />
-              </div>
-              <div
-                className="absolute transition-all duration-200 ease-out font-bold"
-                style={{
-                  color: '#5C2E1F',
-                  opacity: scrollProgress,
-                  transform: `scale(${questionScale})`,
-                  fontSize: '2.5rem'
-                }}
-              >
-                ?
-              </div>
+                <div
+                  className="absolute transition-all duration-200 ease-out"
+                  style={{
+                    opacity: 1 - scrollProgress,
+                    transform: `scale(${logoScale})`,
+                    pointerEvents: scrollProgress > 0.5 ? 'none' : 'auto'
+                  }}
+                >
+                  <Image
+                    src="/konacoffee.png"
+                    alt="Kona Coffee Donut"
+                    width={300}
+                    height={50}
+                    className="h-10 w-auto"
+                  />
+                </div>
+                <div
+                  className="absolute transition-all duration-200 ease-out font-bold leading-none flex items-center justify-center"
+                  style={{
+                    color: '#5C2E1F',
+                    opacity: scrollProgress,
+                    transform: `scale(${questionScale})`,
+                    fontSize: '2.5rem'
+                  }}
+                >
+                  ?
+                </div>
+              </button>
             </div>
 
             {/* Right: Location & Language */}
@@ -87,7 +98,11 @@ export default function Home() {
               {menuOpen ? '×' : '☰'}
             </button>
 
-            <div className="flex-1 flex justify-center items-center h-10 relative">
+            <button
+              onClick={scrollToTop}
+              className="flex-1 flex justify-center items-center h-10 relative cursor-pointer hover:opacity-80 transition-opacity focus:outline-none rounded min-w-[200px]"
+              aria-label="Scroll to top"
+            >
               <div
                 className="absolute transition-all duration-200 ease-out"
                 style={{
@@ -105,7 +120,7 @@ export default function Home() {
                 />
               </div>
               <div
-                className="absolute transition-all duration-200 ease-out font-bold"
+                className="absolute transition-all duration-200 ease-out font-bold leading-none flex items-center justify-center"
                 style={{
                   color: '#5C2E1F',
                   opacity: scrollProgress,
@@ -115,7 +130,7 @@ export default function Home() {
               >
                 ?
               </div>
-            </div>
+            </button>
 
             <div className="w-8"></div>
           </div>
@@ -382,7 +397,7 @@ export default function Home() {
 
             {/* Honolulu Coffee Feature Section */}
             <motion.div
-              className="mb-12"
+              className="mb-12 relative"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -392,31 +407,54 @@ export default function Home() {
                 bounce: 0.4
               }}
             >
-              {/* Glow Background */}
+              {/* Enhanced Glow Background with Multiple Layers */}
               <motion.div
                 className="absolute inset-0 -z-10"
                 animate={{
-                  opacity: [0.3, 0.6, 0.3],
-                  scale: [1, 1.1, 1]
+                  opacity: [0.4, 0.8, 0.4],
+                  scale: [0.95, 1.1, 0.95]
                 }}
                 transition={{
-                  duration: 2,
+                  duration: 3,
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
               >
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-amber-300 rounded-full blur-3xl opacity-20"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-radial from-amber-400 via-orange-400 to-transparent rounded-full blur-3xl opacity-40"></div>
               </motion.div>
 
-              <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 px-8 py-8 rounded-3xl shadow-2xl border-2 border-orange-200 relative overflow-hidden max-w-3xl mx-auto">
-                {/* Animated Border Glow */}
+              {/* Radiating Circles */}
+              {[...Array(4)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-amber-400 -z-10"
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{
+                    scale: [1, 2 + i * 0.5],
+                    opacity: [0.6, 0],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    delay: i * 0.8,
+                    ease: "easeOut"
+                  }}
+                  style={{
+                    width: '400px',
+                    height: '400px',
+                  }}
+                />
+              ))}
+
+              <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 px-8 py-10 rounded-3xl shadow-2xl border-2 border-orange-300 relative overflow-hidden max-w-3xl mx-auto">
+                {/* Enhanced Animated Border Glow */}
                 <motion.div
                   className="absolute inset-0 rounded-3xl"
                   animate={{
                     boxShadow: [
-                      '0 0 20px 2px rgba(251, 146, 60, 0.5)',
-                      '0 0 40px 4px rgba(251, 146, 60, 0.8)',
-                      '0 0 20px 2px rgba(251, 146, 60, 0.5)',
+                      '0 0 30px 4px rgba(251, 146, 60, 0.6)',
+                      '0 0 60px 8px rgba(251, 146, 60, 1)',
+                      '0 0 30px 4px rgba(251, 146, 60, 0.6)',
                     ]
                   }}
                   transition={{
@@ -426,48 +464,96 @@ export default function Home() {
                   }}
                 />
 
-                {/* Featured Badge */}
+                {/* Featured Badge - More Dynamic */}
                 <motion.div
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full mb-6 shadow-lg"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 rounded-full mb-8 shadow-xl"
                   animate={{
-                    y: [0, -5, 0],
+                    y: [0, -8, 0],
+                    scale: [1, 1.05, 1],
                   }}
                   transition={{
                     duration: 2,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
+                  style={{
+                    backgroundSize: '200% 200%',
+                  }}
                 >
                   <motion.span
-                    animate={{ rotate: [0, 360] }}
-                    transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                    animate={{
+                      rotate: [0, 360],
+                      scale: [1, 1.2, 1]
+                    }}
+                    transition={{
+                      rotate: { duration: 3, repeat: Infinity, ease: "linear" },
+                      scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
+                    }}
                     className="text-xl"
                   >
                     ⭐
                   </motion.span>
-                  <span className="text-sm font-black tracking-wider uppercase text-white">
+                  <span className="text-sm font-black tracking-wider uppercase text-white drop-shadow-lg">
                     Featured Partnership
                   </span>
+                  <motion.span
+                    animate={{
+                      rotate: [0, -360],
+                      scale: [1, 1.2, 1]
+                    }}
+                    transition={{
+                      rotate: { duration: 3, repeat: Infinity, ease: "linear" },
+                      scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut", delay: 0.75 }
+                    }}
+                    className="text-xl"
+                  >
+                    ⭐
+                  </motion.span>
                 </motion.div>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  Featuring Premium 100% Kona Coffee
-                </h3>
-
-                {/* Honolulu Coffee Logo with Animation */}
-                <motion.div
-                  className="relative inline-block"
-                  whileHover={{
-                    scale: 1.1,
-                    rotate: [0, -2, 2, -2, 0],
-                    transition: { duration: 0.5 }
+                <motion.h3
+                  className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-900 via-orange-600 to-amber-900 mb-6"
+                  animate={{
+                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                  style={{
+                    backgroundSize: '200% 200%',
                   }}
                 >
+                  Featuring Premium 100% Kona Coffee
+                </motion.h3>
+
+                {/* Honolulu Coffee Logo with MEGA Animation */}
+                <div className="relative my-12">
+                  {/* Multiple Glow Layers */}
                   <motion.div
-                    className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-400 to-yellow-400 blur-xl opacity-50"
+                    className="absolute inset-0 -m-16 rounded-full bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 blur-3xl"
                     animate={{
-                      scale: [1, 1.2, 1],
-                      opacity: [0.5, 0.8, 0.5]
+                      scale: [1, 1.4, 1],
+                      opacity: [0.4, 0.8, 0.4],
+                      rotate: [0, 360]
+                    }}
+                    transition={{
+                      scale: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+                      opacity: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+                      rotate: { duration: 20, repeat: Infinity, ease: "linear" }
+                    }}
+                  />
+
+                  {/* Spotlight Effect */}
+                  <motion.div
+                    className="absolute -inset-8 rounded-full"
+                    animate={{
+                      boxShadow: [
+                        '0 0 40px 10px rgba(251, 191, 36, 0.6)',
+                        '0 0 80px 20px rgba(251, 146, 60, 0.9)',
+                        '0 0 40px 10px rgba(251, 191, 36, 0.6)',
+                      ]
                     }}
                     transition={{
                       duration: 2,
@@ -475,44 +561,122 @@ export default function Home() {
                       ease: "easeInOut"
                     }}
                   />
+
                   <motion.div
-                    initial={{ opacity: 0, rotateY: -90 }}
-                    animate={{ opacity: 1, rotateY: 0 }}
-                    transition={{
-                      duration: 1,
-                      delay: 2.5,
-                      type: "spring"
+                    className="relative inline-block"
+                    initial={{ opacity: 0, scale: 0, rotateY: -180 }}
+                    animate={{
+                      opacity: 1,
+                      scale: 1,
+                      rotateY: 0,
                     }}
-                    className="relative bg-white p-6 rounded-2xl shadow-xl"
+                    transition={{
+                      duration: 1.5,
+                      delay: 2.5,
+                      type: "spring",
+                      bounce: 0.6
+                    }}
+                    whileHover={{
+                      scale: 1.15,
+                      rotate: [0, -5, 5, -5, 0],
+                      transition: { duration: 0.6 }
+                    }}
                   >
-                    <Image
-                      src="/honolulu_coffee.webp"
-                      alt="Honolulu Coffee - Hawaii's #1 Premium Kona Coffee"
-                      width={200}
-                      height={160}
-                      className="h-20 md:h-24 w-auto object-contain"
+                    {/* Animated Ring Around Logo */}
+                    <motion.div
+                      className="absolute -inset-4 rounded-3xl border-4 border-amber-400"
+                      animate={{
+                        rotate: 360,
+                        scale: [1, 1.1, 1]
+                      }}
+                      transition={{
+                        rotate: { duration: 10, repeat: Infinity, ease: "linear" },
+                        scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+                      }}
                     />
+
+                    <motion.div
+                      className="relative bg-white p-8 md:p-10 rounded-3xl shadow-2xl"
+                      animate={{
+                        y: [0, -10, 0],
+                      }}
+                      transition={{
+                        duration: 3,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                    >
+                      <motion.div
+                        animate={{
+                          scale: [1, 1.05, 1],
+                        }}
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: "easeInOut"
+                        }}
+                      >
+                        <Image
+                          src="/honolulu_coffee.webp"
+                          alt="Honolulu Coffee - Hawaii's #1 Premium Kona Coffee"
+                          width={300}
+                          height={240}
+                          className="h-28 md:h-36 w-auto object-contain"
+                          priority
+                        />
+                      </motion.div>
+                    </motion.div>
                   </motion.div>
-                </motion.div>
 
-                <p className="text-base md:text-lg text-gray-700 font-medium mt-6 max-w-2xl mx-auto">
-                  Experience authentic <span className="font-bold text-orange-600">Hawaii&apos;s #1 Premium Kona Coffee</span> –
-                  now at Kona Coffee Donut!
-                </p>
+                  {/* Sparkle Effects Around Logo */}
+                  {[...Array(8)].map((_, i) => (
+                    <motion.div
+                      key={i}
+                      className="absolute text-3xl"
+                      style={{
+                        left: `${50 + 40 * Math.cos((i * Math.PI * 2) / 8)}%`,
+                        top: `${50 + 40 * Math.sin((i * Math.PI * 2) / 8)}%`,
+                      }}
+                      animate={{
+                        scale: [0, 1.5, 0],
+                        rotate: [0, 180, 360],
+                        opacity: [0, 1, 0]
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        delay: i * 0.2,
+                        ease: "easeInOut"
+                      }}
+                    >
+                      ✨
+                    </motion.div>
+                  ))}
+                </div>
 
-                {/* Floating Coffee Beans */}
-                {[...Array(5)].map((_, i) => (
+                <motion.p
+                  className="text-lg md:text-xl text-gray-800 font-bold mt-8 max-w-2xl mx-auto leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 3 }}
+                >
+                  Experience authentic <span className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-500 to-orange-600 font-black">Hawaii&apos;s #1 Premium Kona Coffee</span> – now at Kona Coffee Donut!
+                </motion.p>
+
+                {/* Enhanced Floating Coffee Beans */}
+                {[...Array(8)].map((_, i) => (
                   <motion.div
                     key={i}
-                    className="absolute text-3xl"
+                    className="absolute text-4xl"
                     style={{
-                      left: `${10 + i * 20}%`,
-                      top: i % 2 === 0 ? '10%' : '80%',
+                      left: `${5 + i * 12}%`,
+                      top: i % 2 === 0 ? '5%' : '85%',
                     }}
                     animate={{
-                      y: [0, -15, 0],
+                      y: [0, -20, 0],
                       rotate: [0, 180, 360],
-                      opacity: [0.3, 0.6, 0.3]
+                      opacity: [0.2, 0.7, 0.2],
+                      scale: [0.8, 1.2, 0.8]
                     }}
                     transition={{
                       duration: 3 + i * 0.3,
