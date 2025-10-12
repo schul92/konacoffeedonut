@@ -49,7 +49,7 @@ export default function Home() {
             <div className="flex justify-center items-center h-12">
               <button
                 onClick={scrollToTop}
-                className="relative cursor-pointer hover:opacity-80 transition-opacity focus:outline-none rounded h-12 w-[300px] flex items-center justify-center"
+                className="relative cursor-pointer hover:opacity-80 transition-opacity focus:outline-none rounded h-12 w-[450px] flex items-center justify-center"
                 aria-label="Scroll to top"
               >
                 <div
@@ -63,9 +63,9 @@ export default function Home() {
                   <Image
                     src="/konacoffee.png"
                     alt="Kona Coffee Donut"
-                    width={300}
-                    height={50}
-                    className="h-10 w-auto"
+                    width={450}
+                    height={75}
+                    className="h-12 w-auto"
                   />
                 </div>
                 <div
@@ -100,7 +100,7 @@ export default function Home() {
 
             <button
               onClick={scrollToTop}
-              className="flex-1 flex justify-center items-center h-10 relative cursor-pointer hover:opacity-80 transition-opacity focus:outline-none rounded min-w-[200px]"
+              className="flex-1 flex justify-center items-center h-10 relative cursor-pointer hover:opacity-80 transition-opacity focus:outline-none rounded min-w-[280px]"
               aria-label="Scroll to top"
             >
               <div
@@ -114,9 +114,9 @@ export default function Home() {
                 <Image
                   src="/konacoffee.png"
                   alt="Kona Coffee Donut"
-                  width={200}
-                  height={40}
-                  className="h-8 w-auto"
+                  width={280}
+                  height={56}
+                  className="h-10 w-auto"
                 />
               </div>
               <div
