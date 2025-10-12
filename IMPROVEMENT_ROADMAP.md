@@ -51,41 +51,92 @@
 
 ---
 
-### 2. Online Ordering/Pickup System ⭐⭐⭐⭐
+### 2. Clover POS Online Ordering Integration ⭐⭐⭐⭐⭐
 
-**Why**: Tourists want convenience, locals want quick pickup
+**Why**: Seamless integration with your existing Clover POS system
 
-**Options**:
+**What We'll Build**:
+- ✅ **Real-time menu sync** - Menu items, prices, availability from Clover
+- ✅ **Dynamic inventory** - Auto-update when items sell out
+- ✅ **Secure payments** - Clover Hosted Checkout (PCI compliant)
+- ✅ **Direct to POS** - Orders appear instantly in Clover for kitchen
+- ✅ **Pickup times** - Customer selects preferred pickup time
+- ✅ **Order tracking** - Real-time status updates
+- ✅ **Modifiers support** - Size options, add-ons, customizations
 
-#### A. Square Online (Easiest - $0/month + 2.9% per transaction)
-- No monthly fee
-- Simple setup
-- Pickup/delivery
-- Integrated payment
-- Mobile-friendly
+**Technical Implementation**:
 
-#### B. Toast (Restaurant-focused - $69/month)
-- Built for food businesses
-- POS integration
-- Loyalty programs
-- Online ordering
+#### A. Clover API Integration
+- REST API for inventory, orders, payments
+- OAuth 2.0 authentication
+- Webhook support for real-time updates
+- Sandbox testing environment
 
-#### C. Custom Integration (I can build this!)
-- Integrate with your existing POS
-- No monthly fees (just payment processing)
-- Full control
-- Branded experience
+#### B. Features I'll Build
+1. **Menu Management**:
+   - Fetch items from Clover inventory
+   - Categories (donuts, coffee, malasada, bingsu, etc.)
+   - Real-time pricing
+   - Stock level tracking
+   - Item modifiers (sizes, extras)
 
-**What I Can Build For You**:
-- "Order Now" button on website
-- Menu selection with photos
-- Pickup time selection
-- Payment integration (Stripe/Square)
-- Order confirmation emails
-- Real-time order status
+2. **Shopping Cart**:
+   - Add/remove items
+   - Quantity selection
+   - Modifier choices
+   - Tax calculation (from Clover)
+   - Price updates
 
-**Time to Build**: 1-2 weeks
-**Cost**: Free (I'll build it) + payment processing fees
+3. **Checkout Flow**:
+   - Customer info form
+   - Pickup time selector
+   - Special instructions
+   - Clover Hosted Checkout (secure payment)
+   - Payment confirmation
+
+4. **Order Creation**:
+   - Automatic order in Clover POS
+   - Appears on kitchen display
+   - Email confirmation to customer
+   - SMS notification (optional)
+
+5. **Order Tracking**:
+   - Order status (received → preparing → ready)
+   - Estimated pickup time
+   - Order history for customers
+
+**Transaction Fees**:
+- Card-not-present: ~2.6% + $0.10 (standard Clover rates)
+- No additional monthly fees for API usage
+- Uses your existing Clover merchant account
+
+**Timeline**:
+- **Week 1**: API setup, authentication, inventory sync
+- **Week 2**: Shopping cart UI, checkout flow
+- **Week 3**: Payment integration, order creation
+- **Week 4**: Testing, staff training, launch
+
+**What I Need From You**:
+1. Clover merchant ID
+2. Developer API access (I'll guide you)
+3. Menu properly categorized in Clover
+4. Preferred pickup time intervals (15min? 30min?)
+5. Order type setup in Clover (for "Online Pickup")
+
+**Cost**:
+- Development: **FREE** (I'll build it)
+- Transaction fees: Standard Clover rates (no markup)
+- No monthly software fees
+
+**📖 Full Documentation**: See `CLOVER_INTEGRATION_GUIDE.md` for complete technical specs
+
+**Advantages Over Generic Solutions**:
+- ✅ No duplicate menu management
+- ✅ Inventory auto-syncs
+- ✅ Staff uses familiar Clover interface
+- ✅ All orders in one system
+- ✅ Unified reporting
+- ✅ Lower transaction fees (direct Clover rates)
 
 ---
 
