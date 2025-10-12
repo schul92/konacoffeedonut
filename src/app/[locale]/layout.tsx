@@ -8,6 +8,7 @@ import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n';
 import StructuredData from '@/components/StructuredData';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import MetaPixel from '@/components/MetaPixel';
 import "../globals.css";
 
 const geistSans = Geist({
@@ -195,6 +196,9 @@ export default async function LocaleLayout({
       >
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        )}
+        {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
+          <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID} />
         )}
         <StructuredData locale={locale} />
         <NextIntlClientProvider messages={messages}>
