@@ -18,8 +18,8 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@type': 'Restaurant',
     '@id': 'https://www.konacoffeedonut.com/#restaurant',
     name: 'Kona Coffee Donut',
-    alternateName: 'BONEPI MOCHILAND x Honolulu Coffee',
-    description: 'Authentic Hawaiian coffee and artisan mochi donuts. Collaboration between BONEPI MOCHILAND and Honolulu Coffee in Waikiki.',
+    alternateName: 'MOCHILAND x Honolulu Coffee',
+    description: 'Authentic Hawaiian coffee and artisan mochi donuts. Featuring MOCHILAND and Honolulu Coffee in Waikiki.',
     image: 'https://www.konacoffeedonut.com/og-image.jpg',
     url: `https://www.konacoffeedonut.com/${locale}`,
     telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available

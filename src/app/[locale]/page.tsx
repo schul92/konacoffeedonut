@@ -828,7 +828,7 @@ export default function Home() {
             />
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center relative z-10">
-              {/* BONEPI MOCHILAND */}
+              {/* MOCHILAND */}
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -847,18 +847,18 @@ export default function Home() {
                   />
                   <Image
                     src="/images/menu/mochi_land_circle.png"
-                    alt="BONEPI MOCHILAND"
+                    alt="MOCHILAND"
                     width={200}
                     height={200}
                     className="relative rounded-full shadow-2xl"
                   />
                 </motion.div>
                 <motion.h3
-                  className="text-3xl md:text-4xl font-black text-orange-600 mb-2"
+                  className="text-3xl md:text-4xl font-black text-orange-600 mb-2 font-righteous"
                   animate={{ scale: [1, 1.05, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  BONEPI<br />MOCHILAND
+                  MOCHILAND
                 </motion.h3>
                 <p className="text-lg text-gray-600 font-semibold">Artisan Mochi Donuts</p>
               </motion.div>
@@ -904,11 +904,11 @@ export default function Home() {
                   +
                 </motion.div>
                 <motion.p
-                  className="text-xl md:text-2xl font-bold text-orange-600 mt-4"
+                  className="text-xl md:text-2xl font-bold text-orange-600 mt-4 font-righteous"
                   animate={{ opacity: [1, 0.5, 1] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
-                  PERFECT PARTNERS
+                  PERFECT COMBINATION
                 </motion.p>
               </motion.div>
 
@@ -940,7 +940,7 @@ export default function Home() {
                   </div>
                 </motion.div>
                 <motion.h3
-                  className="text-3xl md:text-4xl font-black text-amber-600 mb-2"
+                  className="text-3xl md:text-4xl font-black text-amber-600 mb-2 font-righteous"
                   animate={{ scale: [1, 1.05, 1] }}
                   transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
                 >
