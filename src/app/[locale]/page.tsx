@@ -100,7 +100,7 @@ export default function Home() {
 
             <button
               onClick={scrollToTop}
-              className="flex-1 flex justify-center items-center h-10 relative cursor-pointer hover:opacity-80 transition-opacity focus:outline-none rounded min-w-[280px]"
+              className="flex-1 flex justify-center items-center h-10 relative cursor-pointer hover:opacity-80 transition-opacity focus:outline-none rounded min-w-[200px]"
               aria-label="Scroll to top"
             >
               <div
@@ -114,9 +114,9 @@ export default function Home() {
                 <Image
                   src="/konacoffee.png"
                   alt="Kona Coffee Donut"
-                  width={280}
-                  height={56}
-                  className="h-10 w-auto"
+                  width={200}
+                  height={40}
+                  className="h-8 w-auto"
                 />
               </div>
               <div
