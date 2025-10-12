@@ -16,12 +16,12 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { id: 'donuts', image: '/bingsu.png', video: '/videos/donut.mp4', iconImage: '/mochi_land_circle.png' },
-  { id: 'malasada', image: '/bingsu.png', video: '/videos/malasada.mp4', iconImage: '/malasada-icon.png' },
-  { id: 'coffee', image: '/coffee.png', video: '/videos/coffee.mp4', iconImage: '/honolulu_coffee.webp' },
-  { id: 'bingsu', image: '/bingsu.png', video: '/videos/bingsu.mp4', icon: '🍧' },
-  { id: 'hotdog', image: '/bingsu.png', video: '/videos/hotdog.mp4', iconImage: '/corndog-icon.png' },
-  { id: 'smoothie', image: '/smoothie.png', icon: '🥤' }, // No video yet - add smoothie.mp4 when ready
+  { id: 'donuts', image: '/images/menu/bingsu.png', video: '/videos/donut.mp4', iconImage: '/images/menu/mochi_land_circle.png' },
+  { id: 'malasada', image: '/images/menu/bingsu.png', video: '/videos/malasada.mp4', iconImage: '/images/menu/malasada-icon.png' },
+  { id: 'coffee', image: '/images/menu/coffee.png', video: '/videos/coffee.mp4', iconImage: '/images/menu/honolulu_coffee.webp' },
+  { id: 'bingsu', image: '/images/menu/bingsu.png', video: '/videos/bingsu.mp4', icon: '🍧' },
+  { id: 'hotdog', image: '/images/menu/bingsu.png', video: '/videos/hotdog.mp4', iconImage: '/images/menu/corndog-icon.png' },
+  { id: 'smoothie', image: '/images/menu/smoothie.png', icon: '🥤' }, // No video yet - add smoothie.mp4 when ready
 ];
 
 export default function MenuSection() {

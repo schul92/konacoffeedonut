@@ -617,7 +617,7 @@ export default function Home() {
                         }}
                       >
                         <Image
-                          src="/honolulu_coffee.webp"
+                          src="/images/menu/honolulu_coffee.webp"
                           alt="Honolulu Coffee - Hawaii's #1 Premium Kona Coffee"
                           width={300}
                           height={240}
@@ -808,14 +808,14 @@ export default function Home() {
             <p className="text-center text-sm opacity-60 mb-6">{t('footer.collaboration')}</p>
             <div className="flex justify-center items-center gap-8 md:gap-12 mb-8">
               <Image
-                src="/honolulu_coffee.webp"
+                src="/images/menu/honolulu_coffee.webp"
                 alt="Honolulu Coffee"
                 width={80}
                 height={64}
                 className="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
               <Image
-                src="/mochi_land_circle.png"
+                src="/images/menu/mochi_land_circle.png"
                 alt="Mochiland"
                 width={80}
                 height={64}
