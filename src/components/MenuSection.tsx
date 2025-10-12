@@ -8,32 +8,31 @@ import { Play, X } from 'lucide-react';
 
 interface MenuItem {
   id: string;
-  image: string;
-  menuImage: string; // Menu image to display
+  menuPdf: string; // PDF menu file
   video?: string; // Optional video file path
   icon?: string;
   iconImage?: string;
 }
 
 const menuItems: MenuItem[] = [
-  { id: 'donuts', image: '/images/menu/bingsu.png', menuImage: '/images/menu/bingsu.png', video: '/videos/donut.mp4', iconImage: '/images/menu/mochi_land_circle.png' },
-  { id: 'malasada', image: '/images/menu/bingsu.png', menuImage: '/images/menu/bingsu.png', video: '/videos/malasada.mp4', iconImage: '/images/menu/malasada-icon.png' },
-  { id: 'coffee', image: '/images/menu/coffee.png', menuImage: '/images/menu/coffee.png', video: '/videos/coffee.mp4', iconImage: '/images/menu/honolulu_coffee.webp' },
-  { id: 'bingsu', image: '/images/menu/bingsu.png', menuImage: '/images/menu/bingsu.png', video: '/videos/bingsu.mp4', icon: '🍧' },
-  { id: 'hotdog', image: '/images/menu/bingsu.png', menuImage: '/images/menu/bingsu.png', video: '/videos/hotdog.mp4', iconImage: '/images/menu/corndog-icon.png' },
-  { id: 'smoothie', image: '/images/menu/smoothie.png', menuImage: '/images/menu/smoothie.png', icon: '🥤' },
+  { id: 'donuts', menuPdf: '/images/menu/donut.pdf', video: '/videos/donut.mp4', iconImage: '/images/menu/mochi_land_circle.png' },
+  { id: 'malasada', menuPdf: '/images/menu/malasada.pdf', video: '/videos/malasada.mp4', iconImage: '/images/menu/malasada-icon.png' },
+  { id: 'coffee', menuPdf: '/images/menu/coffee.pdf', video: '/videos/coffee.mp4', iconImage: '/images/menu/honolulu_coffee.webp' },
+  { id: 'bingsu', menuPdf: '/images/menu/bingsu.pdf', video: '/videos/bingsu.mp4', icon: '🍧' },
+  { id: 'hotdog', menuPdf: '/images/menu/hotdog.pdf', video: '/videos/hotdog.mp4', iconImage: '/images/menu/corndog-icon.png' },
+  { id: 'smoothie', menuPdf: '/images/menu/smoothie.pdf', icon: '🥤' },
 ];
 
 export default function MenuSection() {
   const t = useTranslations('menu');
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<{ image: string; title: string } | null>(null);
+  const [currentMenu, setCurrentMenu] = useState<{ pdf: string; title: string } | null>(null);
   const [playingVideos, setPlayingVideos] = useState<Record<string, boolean>>({});
   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
-  const openMenu = (menuImage: string, title: string) => {
-    setCurrentMenu({ image: menuImage, title });
+  const openMenu = (menuPdf: string, title: string) => {
+    setCurrentMenu({ pdf: menuPdf, title });
     setModalOpen(true);
   };
 
@@ -93,7 +92,7 @@ export default function MenuSection() {
               className="relative group"
             >
               <button
-                onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`))}
+                onClick={() => openMenu(item.menuPdf, t(`categories.${item.id}.name`))}
                 className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:hover:scale-[1.02]"
               >
                 {/* Video Background - Cinema Style - Auto-playing */}
@@ -120,17 +119,9 @@ export default function MenuSection() {
                   </div>
                 )}
 
-                {/* Fallback Image if no video */}
+                {/* Fallback solid background if no video */}
                 {!item.video && (
-                  <div className="absolute inset-0 z-0">
-                    <Image
-                      src={item.image}
-                      alt={t(`categories.${item.id}.name`)}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-70" />
-                  </div>
+                  <div className="absolute inset-0 z-0 bg-gradient-to-br from-gray-900 to-black" />
                 )}
 
                 {/* Film Grain Effect */}
@@ -235,7 +226,7 @@ export default function MenuSection() {
         </motion.div>
       </div>
 
-      {/* Simple Menu Modal */}
+      {/* Simple PDF Menu Modal */}
       <AnimatePresence>
         {modalOpen && currentMenu && (
           <>
@@ -250,29 +241,27 @@ export default function MenuSection() {
 
             {/* Modal */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.9 }}
+              exit={{ opacity: 0, scale: 0.95 }}
               className="fixed inset-0 z-50 flex items-center justify-center p-4"
             >
-              <div className="relative w-full max-w-6xl max-h-[90vh]">
+              <div className="relative w-full max-w-6xl h-[90vh]">
                 {/* Close Button */}
                 <button
                   onClick={() => setModalOpen(false)}
-                  className="absolute -top-12 right-0 p-2 text-white hover:text-orange-500 transition-colors"
+                  className="absolute -top-12 right-0 p-3 text-white hover:text-orange-500 transition-colors bg-black/50 rounded-full"
                   aria-label="Close"
                 >
-                  <X className="w-8 h-8" />
+                  <X className="w-6 h-6" />
                 </button>
 
-                {/* Menu Image */}
-                <div className="relative w-full h-[85vh] bg-black rounded-lg overflow-hidden">
-                  <Image
-                    src={currentMenu.image}
-                    alt={currentMenu.title}
-                    fill
-                    className="object-contain"
-                    priority
+                {/* Simple PDF Viewer */}
+                <div className="w-full h-full bg-white rounded-lg overflow-hidden shadow-2xl">
+                  <iframe
+                    src={currentMenu.pdf}
+                    className="w-full h-full"
+                    title={currentMenu.title}
                   />
                 </div>
               </div>
