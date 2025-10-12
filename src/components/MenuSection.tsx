@@ -1,40 +1,39 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import PDFModal from './PDFModal';
-import { Play } from 'lucide-react';
+import { Play, X } from 'lucide-react';
 
 interface MenuItem {
   id: string;
   image: string;
-  pdf: string; // PDF menu file path
+  menuImage: string; // Menu image to display
   video?: string; // Optional video file path
   icon?: string;
   iconImage?: string;
 }
 
 const menuItems: MenuItem[] = [
-  { id: 'donuts', image: '/images/menu/bingsu.png', pdf: '/images/menu/donut.pdf', video: '/videos/donut.mp4', iconImage: '/images/menu/mochi_land_circle.png' },
-  { id: 'malasada', image: '/images/menu/bingsu.png', pdf: '/images/menu/malasada.pdf', video: '/videos/malasada.mp4', iconImage: '/images/menu/malasada-icon.png' },
-  { id: 'coffee', image: '/images/menu/coffee.png', pdf: '/images/menu/coffee.pdf', video: '/videos/coffee.mp4', iconImage: '/images/menu/honolulu_coffee.webp' },
-  { id: 'bingsu', image: '/images/menu/bingsu.png', pdf: '/images/menu/bingsu.pdf', video: '/videos/bingsu.mp4', icon: '🍧' },
-  { id: 'hotdog', image: '/images/menu/bingsu.png', pdf: '/images/menu/hotdog.pdf', video: '/videos/hotdog.mp4', iconImage: '/images/menu/corndog-icon.png' },
-  { id: 'smoothie', image: '/images/menu/smoothie.png', pdf: '/images/menu/smoothie.pdf', icon: '🥤' },
+  { id: 'donuts', image: '/images/menu/bingsu.png', menuImage: '/images/menu/bingsu.png', video: '/videos/donut.mp4', iconImage: '/images/menu/mochi_land_circle.png' },
+  { id: 'malasada', image: '/images/menu/bingsu.png', menuImage: '/images/menu/bingsu.png', video: '/videos/malasada.mp4', iconImage: '/images/menu/malasada-icon.png' },
+  { id: 'coffee', image: '/images/menu/coffee.png', menuImage: '/images/menu/coffee.png', video: '/videos/coffee.mp4', iconImage: '/images/menu/honolulu_coffee.webp' },
+  { id: 'bingsu', image: '/images/menu/bingsu.png', menuImage: '/images/menu/bingsu.png', video: '/videos/bingsu.mp4', icon: '🍧' },
+  { id: 'hotdog', image: '/images/menu/bingsu.png', menuImage: '/images/menu/bingsu.png', video: '/videos/hotdog.mp4', iconImage: '/images/menu/corndog-icon.png' },
+  { id: 'smoothie', image: '/images/menu/smoothie.png', menuImage: '/images/menu/smoothie.png', icon: '🥤' },
 ];
 
 export default function MenuSection() {
   const t = useTranslations('menu');
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<{ pdf: string; title: string } | null>(null);
+  const [currentMenu, setCurrentMenu] = useState<{ image: string; title: string } | null>(null);
   const [playingVideos, setPlayingVideos] = useState<Record<string, boolean>>({});
   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
-  const openMenu = (pdf: string, title: string) => {
-    setCurrentMenu({ pdf, title });
+  const openMenu = (menuImage: string, title: string) => {
+    setCurrentMenu({ image: menuImage, title });
     setModalOpen(true);
   };
 
@@ -94,7 +93,7 @@ export default function MenuSection() {
               className="relative group"
             >
               <button
-                onClick={() => openMenu(item.pdf, t(`categories.${item.id}.name`))}
+                onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`))}
                 className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:hover:scale-[1.02]"
               >
                 {/* Video Background - Cinema Style - Auto-playing */}
@@ -236,15 +235,51 @@ export default function MenuSection() {
         </motion.div>
       </div>
 
-      {/* PDF Modal */}
-      {currentMenu && (
-        <PDFModal
-          isOpen={modalOpen}
-          onClose={() => setModalOpen(false)}
-          pdfUrl={currentMenu.pdf}
-          title={currentMenu.title}
-        />
-      )}
+      {/* Simple Menu Modal */}
+      <AnimatePresence>
+        {modalOpen && currentMenu && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setModalOpen(false)}
+              className="fixed inset-0 bg-black/95 z-50"
+            />
+
+            {/* Modal */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            >
+              <div className="relative w-full max-w-6xl max-h-[90vh]">
+                {/* Close Button */}
+                <button
+                  onClick={() => setModalOpen(false)}
+                  className="absolute -top-12 right-0 p-2 text-white hover:text-orange-500 transition-colors"
+                  aria-label="Close"
+                >
+                  <X className="w-8 h-8" />
+                </button>
+
+                {/* Menu Image */}
+                <div className="relative w-full h-[85vh] bg-black rounded-lg overflow-hidden">
+                  <Image
+                    src={currentMenu.image}
+                    alt={currentMenu.title}
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
