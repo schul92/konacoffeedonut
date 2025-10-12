@@ -39,6 +39,15 @@
       }
     }
   },
+  "about": {
+    "title": "ABOUT US",
+    "subtitle": "Where Premium Kona Coffee Meets Artisan Donuts",
+    "coffeeDonutStory": "BONEPI MOCHILAND and HONOLULU COFFEE are joining forces to bring you the ultimate café experience! Coffee and donuts are the perfect combination - the rich, bold flavors of premium Kona coffee complement the sweet, delicate texture of artisan mochi donuts. Experience both exceptional brands in one amazing location in the heart of Waikiki!",
+    "konaStory": "Kona coffee is world-renowned for its exceptional quality, grown exclusively on the volcanic slopes of Hawaii's Big Island. HONOLULU COFFEE sources only the finest 100% Kona beans, delivering a smooth, rich flavor with subtle notes of chocolate and nuts. Combined with MOCHILAND's innovative mochi donuts, this collaboration represents the best of Hawaiian craftsmanship and quality.",
+    "ctaTitle": "Experience The Perfect Pairing",
+    "ctaText": "Visit us in Waikiki and discover why KONA COFFEE + MOCHILAND DONUTS = the perfect match!",
+    "visitButton": "Visit Us Today"
+  },
   "location": {
     "title": "GRAND OPENING",
     "subtitle": "Opening Soon",

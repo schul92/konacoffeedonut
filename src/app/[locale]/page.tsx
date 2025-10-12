@@ -780,6 +780,288 @@ export default function Home() {
       {/* Menu Section */}
       <MenuSection />
 
+      {/* About Us Section - Epic Collaboration Story */}
+      <section id="about" className="py-20 md:py-32 bg-gradient-to-b from-white via-orange-50 to-white overflow-hidden">
+        <div className="max-w-[1400px] mx-auto px-4 md:px-8">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.h2
+              className="text-5xl md:text-7xl font-black mb-6 bg-gradient-to-r from-orange-600 via-amber-500 to-orange-600 bg-clip-text text-transparent"
+              animate={{
+                backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+              }}
+              transition={{ duration: 5, repeat: Infinity }}
+              style={{ backgroundSize: '200% auto' }}
+            >
+              {t('about.title')}
+            </motion.h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+              {t('about.subtitle')}
+            </p>
+          </motion.div>
+
+          {/* Epic Collaboration Animation */}
+          <div className="relative mb-20">
+            {/* Connecting Line Animation */}
+            <motion.div
+              className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-orange-400 to-transparent -translate-y-1/2 z-0"
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
+              transition={{ duration: 1.5, delay: 0.3 }}
+              viewport={{ once: true }}
+            />
+
+            {/* Energy Pulse */}
+            <motion.div
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-orange-400/20 blur-2xl z-0"
+              animate={{
+                scale: [1, 2, 1],
+                opacity: [0.5, 0.2, 0.5],
+              }}
+              transition={{ duration: 3, repeat: Infinity }}
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center relative z-10">
+              {/* BONEPI MOCHILAND */}
+              <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  className="relative inline-block mb-6"
+                >
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-400 rounded-full blur-xl opacity-50"
+                    animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  />
+                  <Image
+                    src="/images/menu/mochi_land_circle.png"
+                    alt="BONEPI MOCHILAND"
+                    width={200}
+                    height={200}
+                    className="relative rounded-full shadow-2xl"
+                  />
+                </motion.div>
+                <motion.h3
+                  className="text-3xl md:text-4xl font-black text-orange-600 mb-2"
+                  animate={{ scale: [1, 1.05, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  BONEPI<br />MOCHILAND
+                </motion.h3>
+                <p className="text-lg text-gray-600 font-semibold">Artisan Mochi Donuts</p>
+              </motion.div>
+
+              {/* Center: Plus Symbol with Particles */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.5, type: 'spring' }}
+                viewport={{ once: true }}
+                className="text-center relative"
+              >
+                {/* Orbiting Particles */}
+                {[...Array(8)].map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute top-1/2 left-1/2 w-2 h-2 bg-orange-400 rounded-full"
+                    style={{
+                      transformOrigin: '0 0',
+                    }}
+                    animate={{
+                      rotate: [i * 45, i * 45 + 360],
+                      x: [0, Math.cos((i * 45 * Math.PI) / 180) * 60],
+                      y: [0, Math.sin((i * 45 * Math.PI) / 180) * 60],
+                      opacity: [1, 0.2, 1],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      delay: i * 0.1,
+                    }}
+                  />
+                ))}
+
+                <motion.div
+                  className="text-8xl md:text-9xl font-black text-orange-500"
+                  animate={{
+                    rotate: [0, 180, 360],
+                    scale: [1, 1.2, 1]
+                  }}
+                  transition={{ duration: 4, repeat: Infinity }}
+                >
+                  +
+                </motion.div>
+                <motion.p
+                  className="text-xl md:text-2xl font-bold text-orange-600 mt-4"
+                  animate={{ opacity: [1, 0.5, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  PERFECT PARTNERS
+                </motion.p>
+              </motion.div>
+
+              {/* HONOLULU COFFEE */}
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: -5 }}
+                  className="relative inline-block mb-6"
+                >
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full blur-xl opacity-50"
+                    animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
+                    transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+                  />
+                  <div className="relative bg-white rounded-full p-6 shadow-2xl w-[200px] h-[200px] flex items-center justify-center">
+                    <Image
+                      src="/images/menu/honolulu_coffee.webp"
+                      alt="Honolulu Coffee"
+                      width={160}
+                      height={160}
+                      className="object-contain"
+                    />
+                  </div>
+                </motion.div>
+                <motion.h3
+                  className="text-3xl md:text-4xl font-black text-amber-600 mb-2"
+                  animate={{ scale: [1, 1.05, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
+                >
+                  HONOLULU<br />COFFEE
+                </motion.h3>
+                <p className="text-lg text-gray-600 font-semibold">Premium Kona Beans</p>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Story Content */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+            {/* Coffee & Donut Love Story */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <motion.div
+                className="absolute -top-4 -left-4 text-8xl opacity-10"
+                animate={{ rotate: [0, 10, 0] }}
+                transition={{ duration: 3, repeat: Infinity }}
+              >
+                ☕
+              </motion.div>
+              <div className="relative bg-white rounded-2xl p-8 shadow-xl border border-orange-100">
+                <h3 className="text-3xl font-bold text-orange-600 mb-4">
+                  Coffee ☕ + Donut 🍩 = ❤️
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  {t('about.coffeeDonutStory')}
+                </p>
+                <motion.div
+                  className="text-6xl text-center"
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                >
+                  🤝
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Kona Excellence */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <motion.div
+                className="absolute -top-4 -right-4 text-8xl opacity-10"
+                animate={{ rotate: [0, -10, 0] }}
+                transition={{ duration: 3, repeat: Infinity }}
+              >
+                🍩
+              </motion.div>
+              <div className="relative bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 shadow-xl border border-orange-200">
+                <h3 className="text-3xl font-bold text-amber-700 mb-4">
+                  The Kona Difference
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  {t('about.konaStory')}
+                </p>
+                <motion.div
+                  className="flex justify-center gap-4 text-4xl"
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  🌺 🏝️ ☀️
+                </motion.div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Call to Action */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center bg-gradient-to-r from-orange-500 to-amber-500 rounded-3xl p-12 shadow-2xl relative overflow-hidden"
+          >
+            {/* Animated Background Shapes */}
+            <motion.div
+              className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"
+              animate={{ x: [0, 100, 0], y: [0, 50, 0] }}
+              transition={{ duration: 8, repeat: Infinity }}
+            />
+            <motion.div
+              className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"
+              animate={{ x: [0, -100, 0], y: [0, -50, 0] }}
+              transition={{ duration: 8, repeat: Infinity, delay: 1 }}
+            />
+
+            <div className="relative z-10">
+              <motion.h3
+                className="text-4xl md:text-5xl font-black text-white mb-6"
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 2, repeat: Infinity }}
+              >
+                {t('about.ctaTitle')}
+              </motion.h3>
+              <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+                {t('about.ctaText')}
+              </p>
+              <motion.a
+                href="#location"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block bg-white text-orange-600 font-black text-xl px-12 py-5 rounded-full shadow-2xl hover:shadow-orange-300/50 transition-all"
+              >
+                {t('about.visitButton')}
+              </motion.a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-12 md:py-16 bg-black text-white">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
