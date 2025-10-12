@@ -6,6 +6,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n';
+import StructuredData from '@/components/StructuredData';
 import "../globals.css";
 
 const geistSans = Geist({
@@ -52,10 +53,31 @@ export async function generateMetadata({
       template: `%s | ${t('title')}`,
     },
     description: t('description'),
-    keywords: ['kona coffee', 'artisanal donuts', 'hawaiian donuts', 'coffee donuts', 'gourmet pastries', 'kona', 'coffee shop', 'コナコーヒー', 'ドーナツ', '코나 커피', '도넛', '科纳咖啡', '甜甜圈'],
-    authors: [{ name: 'Kona Coffee Donut' }],
+    keywords: [
+      // Location-based
+      'kona coffee waikiki', 'honolulu coffee shop', 'waikiki donuts', 'kalakaua ave coffee',
+      'hawaii coffee and donuts', 'oahu coffee shop', 'waikiki cafe',
+      // Product-based
+      'kona coffee', '100% kona coffee', 'premium kona beans', 'honolulu coffee',
+      'mochi donuts', 'artisanal donuts', 'mochiland', 'bonepi mochiland',
+      'malasada hawaii', 'hawaiian malasada', 'korean corn dogs',
+      'bingsu hawaii', 'korean bingsu', 'tropical smoothies',
+      // Brand collaboration
+      'honolulu coffee collaboration', 'mochiland waikiki', 'bonepi waikiki',
+      'kona coffee donut shop', 'coffee donut pairing',
+      // Experience
+      'best coffee in waikiki', 'gourmet donuts hawaii', 'hawaiian cafe',
+      'coffee and donuts waikiki', 'artisan pastries honolulu',
+      // International
+      'コナコーヒー', 'ワイキキドーナツ', 'ホノルルコーヒー', 'モチドーナツ',
+      '코나 커피', '와이키키 도넛', '호놀룰루 커피', '모찌 도넛',
+      '科纳咖啡', '威基基甜甜圈', '檀香山咖啡', '麻糬甜甜圈',
+    ],
+    authors: [{ name: 'Kona Coffee Donut', url: 'https://www.konacoffeedonut.com' }],
     creator: 'Kona Coffee Donut',
     publisher: 'Kona Coffee Donut',
+    category: 'Food & Beverage',
+    classification: 'Restaurant, Coffee Shop, Cafe',
     formatDetection: {
       email: false,
       address: false,
@@ -130,20 +152,47 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
+        {/* Favicons */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
         <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        {/* Preconnect to Google Maps for faster loading */}
+
+        {/* SEO Meta Tags */}
+        <meta name="theme-color" content="#8b4513" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no" />
+
+        {/* Geo Tags for Local SEO */}
+        <meta name="geo.region" content="US-HI" />
+        <meta name="geo.placename" content="Honolulu" />
+        <meta name="geo.position" content="21.2793;-157.8294" />
+        <meta name="ICBM" content="21.2793, -157.8294" />
+
+        {/* Business Info */}
+        <meta name="rating" content="General" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="target" content="all" />
+        <meta name="audience" content="all" />
+        <meta name="revisit-after" content="7 days" />
+
+        {/* Google Verification - TODO: Add your verification code */}
+        {/* <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> */}
+
+        {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${righteous.variable} antialiased overflow-x-hidden`}
       >
+        <StructuredData locale={locale} />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
