@@ -305,7 +305,7 @@ export default function Home() {
             {/* GRAND OPENING - Letter by Letter Animation */}
             <div className="mb-12 relative">
               <motion.h2
-                className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter relative inline-block"
+                className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter relative inline-block whitespace-nowrap"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
