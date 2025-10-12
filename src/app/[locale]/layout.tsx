@@ -142,7 +142,7 @@ export default async function LocaleLayout({
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${righteous.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${righteous.variable} antialiased overflow-x-hidden`}
       >
         <NextIntlClientProvider messages={messages}>
           {children}
