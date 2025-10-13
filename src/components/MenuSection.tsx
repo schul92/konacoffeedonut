@@ -20,7 +20,7 @@ const menuItems: MenuItem[] = [
   { id: 'coffee', menuImage: '/images/menu/coffee.jpeg', video: '/videos/coffee.mp4', iconImage: '/icons/honolulu_coffee.webp' },
   { id: 'bingsu', menuImage: '/images/menu/bingsu.jpeg', video: '/videos/bingsu.mp4', icon: '🍧' },
   { id: 'hotdog', menuImage: '/images/menu/hotdog.jpeg', video: '/videos/hotdog.mp4', iconImage: '/icons/corndog-icon.png' },
-  { id: 'smoothie', menuImage: '/images/menu/smoothie.jpeg', iconImage: '/icons/smoothie-icon.png' },
+  { id: 'acai', menuImage: '/images/menu/acai.jpeg', iconImage: '/icons/acai-icon.png' },
 ];
 
 export default function MenuSection() {
@@ -140,7 +140,7 @@ export default function MenuSection() {
                         src={item.iconImage}
                         alt={t(`categories.${item.id}.name`)}
                         fill
-                        className={`object-contain ${item.id === 'smoothie' || item.id === 'malasada' ? 'p-0' : 'p-1'}`}
+                        className={`object-contain ${item.id === 'acai' || item.id === 'malasada' ? 'p-0' : 'p-1'}`}
                       />
                     </div>
                   ) : (

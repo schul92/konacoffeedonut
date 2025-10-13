@@ -33,9 +33,9 @@
         "name": "한국식 핫도그",
         "description": "바삭한 한국식 콘도그"
       },
-      "smoothie": {
-        "name": "스무디",
-        "description": "신선한 열대 과일 스무디"
+      "acai": {
+        "name": "아사이 볼",
+        "description": "열대 과일과 그래놀라를 토핑한 신선한 아사이 볼"
       }
     }
   },

@@ -33,9 +33,9 @@
         "name": "Korean Corn Dogs",
         "description": "Crispy Korean-style corn dogs"
       },
-      "smoothie": {
-        "name": "Smoothies",
-        "description": "Fresh tropical fruit smoothies"
+      "acai": {
+        "name": "Acai Bowl",
+        "description": "Fresh acai bowls topped with tropical fruits and granola"
       }
     }
   },

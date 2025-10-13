@@ -33,9 +33,9 @@
         "name": "韩式玉米热狗",
         "description": "酥脆的韩式玉米热狗"
       },
-      "smoothie": {
-        "name": "冰沙",
-        "description": "新鲜热带水果冰沙"
+      "acai": {
+        "name": "巴西莓碗",
+        "description": "新鲜巴西莓碗配热带水果和麦片"
       }
     }
   },
