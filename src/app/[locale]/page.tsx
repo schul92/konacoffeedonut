@@ -156,18 +156,18 @@ export default function Home() {
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="fixed top-0 left-0 bottom-0 w-[80vw] max-w-sm bg-white z-[70] md:hidden shadow-2xl"
+              className="fixed top-0 left-0 bottom-0 w-[85vw] max-w-sm bg-white z-[70] md:hidden shadow-2xl"
             >
               {/* Header with Close Button */}
-              <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200">
-                <h2 className="text-lg font-bold text-gray-900">Menu</h2>
+              <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 bg-orange-50">
+                <h2 className="text-xl font-bold text-gray-900">Menu</h2>
                 <button
                   onClick={() => setMenuOpen(false)}
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 transition-colors active:scale-95"
+                  className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 text-white transition-colors active:scale-95 shadow-lg"
                   aria-label="Close menu"
                 >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <svg className="w-7 h-7 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
               </div>
