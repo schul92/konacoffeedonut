@@ -198,17 +198,92 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            {/* COMING SOON Badge */}
-            <motion.div
-              className="inline-block mb-6"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              <div className="bg-orange-500 text-white px-8 py-3 rounded-full font-black text-xl md:text-2xl tracking-wider shadow-2xl border-4 border-white/30">
-                🌺 COMING SOON 🌺
-              </div>
-            </motion.div>
+            {/* Badges Container - Centered & Aligned */}
+            <div className="flex flex-col items-center gap-4 mb-8">
+              {/* COMING SOON Badge */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2 }}
+              >
+                <div className="bg-orange-500 text-white px-8 py-3 rounded-full font-black text-xl md:text-2xl tracking-wider shadow-2xl border-4 border-white/30">
+                  🌺 COMING SOON 🌺
+                </div>
+              </motion.div>
+
+              {/* Proudly Serving Honolulu Coffee - Emphasized & Animated */}
+              <motion.div
+                className="inline-flex items-center gap-4 bg-gradient-to-r from-white/20 via-white/30 to-white/20 backdrop-blur-lg px-8 py-4 md:px-10 md:py-5 rounded-2xl border-2 border-white/50 shadow-2xl"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  scale: [1, 1.05, 1],
+                }}
+                transition={{
+                  opacity: { delay: 0.5 },
+                  y: { delay: 0.5 },
+                  scale: {
+                    delay: 1.2,
+                    duration: 0.6,
+                    repeat: Infinity,
+                    repeatDelay: 3,
+                    ease: "easeInOut"
+                  }
+                }}
+              >
+                {/* Logo with Glow Effect */}
+                <motion.div
+                  className="relative w-14 h-14 md:w-16 md:h-16 flex-shrink-0 bg-white rounded-xl p-2 shadow-lg"
+                  animate={{
+                    boxShadow: [
+                      "0 10px 25px rgba(255, 255, 255, 0.3)",
+                      "0 10px 40px rgba(251, 146, 60, 0.6)",
+                      "0 10px 25px rgba(255, 255, 255, 0.3)",
+                    ]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                >
+                  <Image
+                    src="/icons/honolulu_coffee.webp"
+                    alt="Honolulu Coffee"
+                    fill
+                    className="object-contain p-1"
+                  />
+                </motion.div>
+
+                {/* Text Content */}
+                <div className="text-left">
+                  <p className="text-white/90 font-medium text-xs md:text-sm mb-0.5 tracking-wide">
+                    PROUDLY SERVING
+                  </p>
+                  <motion.p
+                    className="text-white font-black text-xl md:text-2xl tracking-tight"
+                    animate={{
+                      textShadow: [
+                        "0 0 10px rgba(251, 146, 60, 0)",
+                        "0 0 20px rgba(251, 146, 60, 0.8)",
+                        "0 0 10px rgba(251, 146, 60, 0)",
+                      ]
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    HONOLULU <span className="text-orange-400">COFFEE</span>
+                  </motion.p>
+                  <p className="text-orange-200 font-semibold text-xs md:text-sm">
+                    100% Premium Kona Beans
+                  </p>
+                </div>
+              </motion.div>
+            </div>
 
             <motion.h1
               className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white mb-6 tracking-tight"
@@ -281,598 +356,44 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Location Section - Moved to Top */}
-      <section id="location" className="pt-20 md:pt-24 pb-20 md:pb-32 bg-white">
+      {/* Location Section - Clean & Simple */}
+      <section id="location" className="py-16 md:py-24 bg-gradient-to-b from-white to-orange-50">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-          <div className="text-center mb-16 relative overflow-visible py-12">
-            {/* Animated Concentric Circles Background */}
-            <motion.div
-              className="absolute inset-0 -z-10 overflow-hidden"
+          {/* Header */}
+          <div className="text-center mb-12">
+            <motion.h2
+              className="text-3xl md:text-4xl font-bold text-gray-900 mb-3"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              📍 Visit Us
+            </motion.h2>
+            <motion.p
+              className="text-xl md:text-2xl text-gray-600"
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              viewport={{ once: true }}
             >
-              {[...Array(3)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-orange-200"
-                  initial={{ scale: 0, opacity: 0 }}
-                  animate={{
-                    scale: [1, 1.5 + i * 0.3],
-                    opacity: [0.5, 0],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    delay: i * 0.6,
-                    ease: "easeOut"
-                  }}
-                  style={{
-                    width: '600px',
-                    height: '600px',
-                  }}
-                />
-              ))}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-orange-100 to-transparent opacity-30"></div>
-            </motion.div>
-
-            {/* Sparkle Effects */}
-            {[...Array(6)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute text-2xl"
-                style={{
-                  left: `${20 + i * 15}%`,
-                  top: `${10 + (i % 2) * 60}%`,
-                }}
-                initial={{ scale: 0, rotate: 0 }}
-                animate={{
-                  scale: [0, 1, 0],
-                  rotate: [0, 180, 360],
-                  opacity: [0, 1, 0]
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  delay: i * 0.3,
-                  ease: "easeInOut"
-                }}
-              >
-                ✨
-              </motion.div>
-            ))}
-
-            {/* Epic Badge with Multiple Animations */}
-            <motion.div
-              initial={{ opacity: 0, y: -50, scale: 0 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                type: "spring",
-                bounce: 0.5
-              }}
-              className="inline-block mb-8 relative"
-            >
-              {/* Badge Glow Ring */}
-              <motion.div
-                className="absolute inset-0 rounded-full"
-                animate={{
-                  boxShadow: [
-                    '0 0 20px 5px rgba(251, 146, 60, 0.6)',
-                    '0 0 40px 10px rgba(251, 146, 60, 0.3)',
-                    '0 0 20px 5px rgba(251, 146, 60, 0.6)',
-                  ]
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-
-              <motion.div
-                whileHover={{ scale: 1.1, rotate: [0, -5, 5, 0] }}
-                whileTap={{ scale: 0.95 }}
-                className="relative px-8 py-3 rounded-full bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 shadow-2xl cursor-pointer"
-                animate={{
-                  backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
-                }}
-                transition={{
-                  backgroundPosition: {
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }
-                }}
-                style={{
-                  backgroundSize: '200% 200%',
-                }}
-              >
-                <div className="flex items-center gap-3">
-                  <motion.span
-                    animate={{
-                      scale: [1, 1.3, 1],
-                      opacity: [1, 0.7, 1]
-                    }}
-                    transition={{ duration: 1, repeat: Infinity }}
-                    className="w-3 h-3 bg-white rounded-full shadow-lg"
-                  ></motion.span>
-                  <span className="text-base font-black tracking-widest uppercase text-white drop-shadow-lg">
-                    {t('location.subtitle')}
-                  </span>
-                  <motion.span
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                    className="text-white text-xl"
-                  >
-                    ✨
-                  </motion.span>
-                </div>
-              </motion.div>
-            </motion.div>
-
-            {/* GRAND OPENING - Letter by Letter Animation */}
-            <div className="mb-12 relative">
-              <motion.h2
-                className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter relative inline-block whitespace-nowrap"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                {t('location.title').split('').map((char, i) => (
-                  <motion.span
-                    key={i}
-                    className="inline-block bg-clip-text text-transparent bg-gradient-to-b from-amber-900 via-orange-600 to-red-700"
-                    initial={{ opacity: 0, y: 50, rotateX: -90 }}
-                    animate={{
-                      opacity: 1,
-                      y: 0,
-                      rotateX: 0,
-                    }}
-                    transition={{
-                      duration: 0.5,
-                      delay: 0.3 + i * 0.05,
-                      type: "spring",
-                      stiffness: 200
-                    }}
-                    whileHover={{
-                      scale: 1.2,
-                      color: '#ea580c',
-                      transition: { duration: 0.2 }
-                    }}
-                    style={{
-                      display: char === ' ' ? 'inline' : 'inline-block',
-                      textShadow: '0 4px 20px rgba(251, 146, 60, 0.5)',
-                      perspective: '1000px',
-                    }}
-                  >
-                    {char === ' ' ? '\u00A0' : char}
-                  </motion.span>
-                ))}
-              </motion.h2>
-
-              {/* Animated Underline */}
-              <motion.div
-                className="absolute -bottom-4 left-0 right-0 mx-auto h-2 bg-gradient-to-r from-transparent via-orange-500 to-transparent rounded-full"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{
-                  duration: 1.5,
-                  delay: 1.5,
-                  ease: "easeInOut"
-                }}
-              />
-
-              {/* Floating Particles */}
-              {[...Array(12)].map((_, i) => {
-                // Deterministic positions based on index
-                const positions = [
-                  { left: 15, top: 20 },
-                  { left: 85, top: 15 },
-                  { left: 30, top: 80 },
-                  { left: 70, top: 85 },
-                  { left: 45, top: 30 },
-                  { left: 55, top: 70 },
-                  { left: 10, top: 50 },
-                  { left: 90, top: 55 },
-                  { left: 25, top: 40 },
-                  { left: 75, top: 45 },
-                  { left: 40, top: 65 },
-                  { left: 60, top: 25 },
-                ];
-                return (
-                  <motion.div
-                    key={i}
-                    className="absolute w-1 h-1 bg-orange-400 rounded-full"
-                    style={{
-                      left: `${positions[i].left}%`,
-                      top: `${positions[i].top}%`,
-                    }}
-                    animate={{
-                      y: [0, -30, 0],
-                      opacity: [0, 1, 0],
-                      scale: [0, 1.5, 0]
-                    }}
-                    transition={{
-                      duration: 2 + (i % 4) * 0.5,
-                      repeat: Infinity,
-                      delay: (i % 3) * 0.5,
-                      ease: "easeInOut"
-                    }}
-                  />
-                );
-              })}
-            </div>
-
-            {/* Honolulu Coffee Feature Section */}
-            <motion.div
-              className="mb-12 relative"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 1,
-                delay: 2.2,
-                type: "spring",
-                bounce: 0.4
-              }}
-            >
-              {/* Enhanced Glow Background with Multiple Layers */}
-              <motion.div
-                className="absolute inset-0 -z-10"
-                animate={{
-                  opacity: [0.4, 0.8, 0.4],
-                  scale: [0.95, 1.1, 0.95]
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              >
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-radial from-amber-400 via-orange-400 to-transparent rounded-full blur-3xl opacity-40"></div>
-              </motion.div>
-
-              {/* Radiating Circles */}
-              {[...Array(4)].map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-amber-400 -z-10"
-                  initial={{ scale: 0, opacity: 0 }}
-                  animate={{
-                    scale: [1, 2 + i * 0.5],
-                    opacity: [0.6, 0],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    delay: i * 0.8,
-                    ease: "easeOut"
-                  }}
-                  style={{
-                    width: '400px',
-                    height: '400px',
-                  }}
-                />
-              ))}
-
-              <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 px-8 py-10 rounded-3xl shadow-2xl border-2 border-orange-300 relative overflow-hidden max-w-3xl mx-auto">
-                {/* Enhanced Animated Border Glow */}
-                <motion.div
-                  className="absolute inset-0 rounded-3xl"
-                  animate={{
-                    boxShadow: [
-                      '0 0 30px 4px rgba(251, 146, 60, 0.6)',
-                      '0 0 60px 8px rgba(251, 146, 60, 1)',
-                      '0 0 30px 4px rgba(251, 146, 60, 0.6)',
-                    ]
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-
-                {/* Featured Badge - More Dynamic */}
-                <motion.div
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-yellow-400 via-orange-400 to-red-500 rounded-full mb-8 shadow-xl"
-                  animate={{
-                    y: [0, -8, 0],
-                    scale: [1, 1.05, 1],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                  style={{
-                    backgroundSize: '200% 200%',
-                  }}
-                >
-                  <motion.span
-                    animate={{
-                      rotate: [0, 360],
-                      scale: [1, 1.2, 1]
-                    }}
-                    transition={{
-                      rotate: { duration: 3, repeat: Infinity, ease: "linear" },
-                      scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut" }
-                    }}
-                    className="text-xl"
-                  >
-                    ⭐
-                  </motion.span>
-                  <span className="text-sm font-black tracking-wider uppercase text-white drop-shadow-lg">
-                    Featured Partnership
-                  </span>
-                  <motion.span
-                    animate={{
-                      rotate: [0, -360],
-                      scale: [1, 1.2, 1]
-                    }}
-                    transition={{
-                      rotate: { duration: 3, repeat: Infinity, ease: "linear" },
-                      scale: { duration: 1.5, repeat: Infinity, ease: "easeInOut", delay: 0.75 }
-                    }}
-                    className="text-xl"
-                  >
-                    ⭐
-                  </motion.span>
-                </motion.div>
-
-                <motion.h3
-                  className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-amber-900 via-orange-600 to-amber-900 mb-6"
-                  animate={{
-                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
-                  }}
-                  transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  style={{
-                    backgroundSize: '200% 200%',
-                  }}
-                >
-                  Featuring Premium 100% Kona Coffee
-                </motion.h3>
-
-                {/* Honolulu Coffee Logo with MEGA Animation */}
-                <div className="relative my-12">
-                  {/* Multiple Glow Layers */}
-                  <motion.div
-                    className="absolute inset-0 -m-16 rounded-full bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 blur-3xl"
-                    animate={{
-                      scale: [1, 1.4, 1],
-                      opacity: [0.4, 0.8, 0.4],
-                      rotate: [0, 360]
-                    }}
-                    transition={{
-                      scale: { duration: 3, repeat: Infinity, ease: "easeInOut" },
-                      opacity: { duration: 3, repeat: Infinity, ease: "easeInOut" },
-                      rotate: { duration: 20, repeat: Infinity, ease: "linear" }
-                    }}
-                  />
-
-                  {/* Spotlight Effect */}
-                  <motion.div
-                    className="absolute -inset-8 rounded-full"
-                    animate={{
-                      boxShadow: [
-                        '0 0 40px 10px rgba(251, 191, 36, 0.6)',
-                        '0 0 80px 20px rgba(251, 146, 60, 0.9)',
-                        '0 0 40px 10px rgba(251, 191, 36, 0.6)',
-                      ]
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  />
-
-                  <motion.div
-                    className="relative inline-block"
-                    initial={{ opacity: 0, scale: 0, rotateY: -180 }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                      rotateY: 0,
-                    }}
-                    transition={{
-                      duration: 1.5,
-                      delay: 2.5,
-                      type: "spring",
-                      bounce: 0.6
-                    }}
-                    whileHover={{
-                      scale: 1.15,
-                      rotate: [0, -5, 5, -5, 0],
-                      transition: { duration: 0.6 }
-                    }}
-                  >
-                    {/* Animated Ring Around Logo */}
-                    <motion.div
-                      className="absolute -inset-4 rounded-3xl border-4 border-amber-400"
-                      animate={{
-                        rotate: 360,
-                        scale: [1, 1.1, 1]
-                      }}
-                      transition={{
-                        rotate: { duration: 10, repeat: Infinity, ease: "linear" },
-                        scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
-                      }}
-                    />
-
-                    <motion.div
-                      className="relative bg-white p-8 md:p-10 rounded-3xl shadow-2xl"
-                      animate={{
-                        y: [0, -10, 0],
-                      }}
-                      transition={{
-                        duration: 3,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
-                    >
-                      <motion.div
-                        animate={{
-                          scale: [1, 1.05, 1],
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeInOut"
-                        }}
-                      >
-                        <Image
-                          src="/icons/honolulu_coffee.webp"
-                          alt="Honolulu Coffee - Hawaii's #1 Premium Kona Coffee"
-                          width={300}
-                          height={240}
-                          className="h-28 md:h-36 w-auto object-contain"
-                          priority
-                        />
-                      </motion.div>
-                    </motion.div>
-                  </motion.div>
-
-                  {/* Sparkle Effects Around Logo */}
-                  {[...Array(8)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className="absolute text-3xl"
-                      style={{
-                        left: `${50 + 40 * Math.cos((i * Math.PI * 2) / 8)}%`,
-                        top: `${50 + 40 * Math.sin((i * Math.PI * 2) / 8)}%`,
-                      }}
-                      animate={{
-                        scale: [0, 1.5, 0],
-                        rotate: [0, 180, 360],
-                        opacity: [0, 1, 0]
-                      }}
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        delay: i * 0.2,
-                        ease: "easeInOut"
-                      }}
-                    >
-                      ✨
-                    </motion.div>
-                  ))}
-                </div>
-
-                <motion.p
-                  className="text-lg md:text-xl text-gray-800 font-bold mt-8 max-w-2xl mx-auto leading-relaxed"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 3 }}
-                >
-                  Experience authentic <span className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-500 to-orange-600 font-black">Hawaii&apos;s #1 Premium Kona Coffee</span> – now at Kona Coffee Donut!
-                </motion.p>
-
-                {/* Enhanced Floating Coffee Beans */}
-                {[...Array(8)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    className="absolute text-4xl"
-                    style={{
-                      left: `${5 + i * 12}%`,
-                      top: i % 2 === 0 ? '5%' : '85%',
-                    }}
-                    animate={{
-                      y: [0, -20, 0],
-                      rotate: [0, 180, 360],
-                      opacity: [0.2, 0.7, 0.2],
-                      scale: [0.8, 1.2, 0.8]
-                    }}
-                    transition={{
-                      duration: 3 + i * 0.3,
-                      repeat: Infinity,
-                      delay: i * 0.2,
-                      ease: "easeInOut"
-                    }}
-                  >
-                    ☕
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Address with 3D Card Effect */}
-            <motion.div
-              className="inline-block"
-              initial={{ opacity: 0, y: 30, rotateX: 45 }}
-              animate={{ opacity: 1, y: 0, rotateX: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 2.8,
-                type: "spring"
-              }}
-              whileHover={{
-                scale: 1.05,
-                rotateY: 5,
-                transition: { duration: 0.3 }
-              }}
-              style={{ perspective: '1000px' }}
-            >
-              <div className="bg-gradient-to-br from-white to-orange-50 px-8 py-6 rounded-2xl shadow-xl border border-orange-100 backdrop-blur-sm">
-                <motion.p
-                  className="text-2xl md:text-3xl font-bold text-gray-900 mb-2"
-                  animate={{
-                    textShadow: [
-                      '0 0 0px rgba(251, 146, 60, 0)',
-                      '0 0 10px rgba(251, 146, 60, 0.5)',
-                      '0 0 0px rgba(251, 146, 60, 0)',
-                    ]
-                  }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  📍 {t('location.address')}
-                </motion.p>
-                <p className="text-lg md:text-xl text-gray-600 font-medium">{t('location.city')}</p>
-              </div>
-            </motion.div>
-
-            {/* Animated Coffee Cups - More Dynamic */}
-            {[...Array(4)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute text-5xl md:text-6xl opacity-10"
-                style={{
-                  left: i % 2 === 0 ? '-10%' : 'auto',
-                  right: i % 2 === 1 ? '-10%' : 'auto',
-                  top: `${20 + i * 20}%`,
-                }}
-                animate={{
-                  y: [0, -20, 0],
-                  x: i % 2 === 0 ? [0, 10, 0] : [0, -10, 0],
-                  rotate: i % 2 === 0 ? [0, 10, 0] : [0, -10, 0],
-                  scale: [1, 1.1, 1]
-                }}
-                transition={{
-                  duration: 3 + i * 0.5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: i * 0.3
-                }}
-              >
-                ☕
-              </motion.div>
-            ))}
+              {t('location.address')} <br className="sm:hidden" />
+              {t('location.city')}
+            </motion.p>
           </div>
 
+          {/* Map */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
             className="mb-8"
           >
             <MapEmbed />
           </motion.div>
 
+          {/* Directions Button */}
           <div className="text-center">
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=2142+Kalakaua+Ave,+Honolulu,+HI+96815"
@@ -1175,11 +696,15 @@ export default function Home() {
       <footer className="py-12 md:py-16 bg-black text-white">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
-            <div>
-              <h3 className="text-2xl md:text-3xl font-righteous mb-3 tracking-tight">
-                KONA COFFEE <span className="inline-block text-2xl md:text-3xl">☕</span> DONUT?
-              </h3>
-              <p className="opacity-60">{t('footer.tagline')}</p>
+            <div className="flex flex-col items-start">
+              <Image
+                src="/konacoffee.png"
+                alt="Kona Coffee Donut"
+                width={300}
+                height={50}
+                className="h-10 md:h-12 w-auto mb-2 brightness-0 invert"
+              />
+              <p className="text-white/60 text-sm md:text-base">{t('footer.tagline')}</p>
             </div>
             <div className="flex gap-8 text-base">
               <a href="#menu" className="opacity-60 hover:opacity-100 transition-opacity">
