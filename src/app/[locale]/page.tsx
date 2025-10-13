@@ -617,7 +617,7 @@ export default function Home() {
                         }}
                       >
                         <Image
-                          src="/images/menu/honolulu_coffee.webp"
+                          src="/icons/honolulu_coffee.webp"
                           alt="Honolulu Coffee - Hawaii's #1 Premium Kona Coffee"
                           width={300}
                           height={240}
@@ -846,7 +846,7 @@ export default function Home() {
                     transition={{ duration: 2, repeat: Infinity }}
                   />
                   <Image
-                    src="/images/menu/mochi_land_circle.png"
+                    src="/icons/mochi_land_circle.png"
                     alt="MOCHILAND"
                     width={200}
                     height={200}
@@ -931,7 +931,7 @@ export default function Home() {
                   />
                   <div className="relative bg-white rounded-full p-6 shadow-2xl w-[200px] h-[200px] flex items-center justify-center">
                     <Image
-                      src="/images/menu/honolulu_coffee.webp"
+                      src="/icons/honolulu_coffee.webp"
                       alt="Honolulu Coffee"
                       width={160}
                       height={160}
@@ -1090,14 +1090,14 @@ export default function Home() {
             <p className="text-center text-sm opacity-60 mb-6">{t('footer.collaboration')}</p>
             <div className="flex justify-center items-center gap-8 md:gap-12 mb-8">
               <Image
-                src="/images/menu/honolulu_coffee.webp"
+                src="/icons/honolulu_coffee.webp"
                 alt="Honolulu Coffee"
                 width={80}
                 height={64}
                 className="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
               <Image
-                src="/images/menu/mochi_land_circle.png"
+                src="/icons/mochi_land_circle.png"
                 alt="Mochiland"
                 width={80}
                 height={64}
