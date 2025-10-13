@@ -8,31 +8,31 @@ import { Play, X } from 'lucide-react';
 
 interface MenuItem {
   id: string;
-  menuPdf: string; // PDF menu file
+  menuImage: string; // Menu image file (JPEG)
   video?: string; // Optional video file path
   icon?: string;
   iconImage?: string;
 }
 
 const menuItems: MenuItem[] = [
-  { id: 'donuts', menuPdf: '/images/menu/donut.pdf', video: '/videos/donut.mp4', iconImage: '/images/menu/mochi_land_circle.png' },
-  { id: 'malasada', menuPdf: '/images/menu/malasada.pdf', video: '/videos/malasada.mp4', iconImage: '/images/menu/malasada-icon.png' },
-  { id: 'coffee', menuPdf: '/images/menu/coffee.pdf', video: '/videos/coffee.mp4', iconImage: '/images/menu/honolulu_coffee.webp' },
-  { id: 'bingsu', menuPdf: '/images/menu/bingsu.pdf', video: '/videos/bingsu.mp4', icon: '🍧' },
-  { id: 'hotdog', menuPdf: '/images/menu/hotdog.pdf', video: '/videos/hotdog.mp4', iconImage: '/images/menu/corndog-icon.png' },
-  { id: 'smoothie', menuPdf: '/images/menu/smoothie.pdf', icon: '🥤' },
+  { id: 'donuts', menuImage: '/images/menu/donut.jpeg', video: '/videos/donut.mp4', iconImage: '/images/menu/mochi_land_circle.png' },
+  { id: 'malasada', menuImage: '/images/menu/malasada.jpeg', video: '/videos/malasada.mp4', iconImage: '/images/menu/malasada-icon.png' },
+  { id: 'coffee', menuImage: '/images/menu/coffee.jpeg', video: '/videos/coffee.mp4', iconImage: '/images/menu/honolulu_coffee.webp' },
+  { id: 'bingsu', menuImage: '/images/menu/bingsu.jpeg', video: '/videos/bingsu.mp4', icon: '🍧' },
+  { id: 'hotdog', menuImage: '/images/menu/hotdog.jpeg', video: '/videos/hotdog.mp4', iconImage: '/images/menu/corndog-icon.png' },
+  { id: 'smoothie', menuImage: '/images/menu/smoothie.jpeg', icon: '🥤' },
 ];
 
 export default function MenuSection() {
   const t = useTranslations('menu');
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<{ pdf: string; title: string } | null>(null);
+  const [currentMenu, setCurrentMenu] = useState<{ image: string; title: string } | null>(null);
   const [playingVideos, setPlayingVideos] = useState<Record<string, boolean>>({});
   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
-  const openMenu = (menuPdf: string, title: string) => {
-    setCurrentMenu({ pdf: menuPdf, title });
+  const openMenu = (menuImage: string, title: string) => {
+    setCurrentMenu({ image: menuImage, title });
     setModalOpen(true);
   };
 
@@ -92,7 +92,7 @@ export default function MenuSection() {
               className="relative group"
             >
               <button
-                onClick={() => openMenu(item.menuPdf, t(`categories.${item.id}.name`))}
+                onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`))}
                 className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:hover:scale-[1.02]"
               >
                 {/* Video Background - Cinema Style - Auto-playing */}
@@ -240,7 +240,7 @@ export default function MenuSection() {
         </motion.div>
       </div>
 
-      {/* Simple PDF Menu Modal */}
+      {/* Menu Image Modal */}
       <AnimatePresence>
         {modalOpen && currentMenu && (
           <>
@@ -270,12 +270,15 @@ export default function MenuSection() {
                   <X className="w-6 h-6" />
                 </button>
 
-                {/* Simple PDF Viewer */}
-                <div className="w-full h-full bg-white rounded-lg overflow-hidden shadow-2xl">
-                  <iframe
-                    src={currentMenu.pdf}
-                    className="w-full h-full"
-                    title={currentMenu.title}
+                {/* Menu Image Viewer */}
+                <div className="w-full h-full bg-black rounded-lg overflow-hidden shadow-2xl flex items-center justify-center">
+                  <Image
+                    src={currentMenu.image}
+                    alt={currentMenu.title}
+                    width={1920}
+                    height={1080}
+                    className="max-w-full max-h-full object-contain"
+                    priority
                   />
                 </div>
               </div>
