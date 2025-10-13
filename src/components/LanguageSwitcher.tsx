@@ -34,9 +34,9 @@ export default function LanguageSwitcher() {
     setIsOpen(false);
   };
 
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside (mobile & desktop)
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
@@ -44,7 +44,11 @@ export default function LanguageSwitcher() {
 
     if (isOpen) {
       document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+        document.removeEventListener('touchstart', handleClickOutside);
+      };
     }
   }, [isOpen]);
 
@@ -53,19 +57,21 @@ export default function LanguageSwitcher() {
       {/* Mobile & Desktop Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 md:px-4 py-2 md:py-2.5 rounded-lg md:rounded-xl bg-white md:bg-transparent hover:bg-gray-100 transition-all text-sm md:text-base font-medium border border-gray-200 md:border-transparent shadow-sm md:shadow-none active:scale-95"
+        className="flex items-center gap-2 px-4 py-2.5 rounded-lg md:rounded-xl bg-white md:bg-transparent hover:bg-gray-100 transition-all text-sm md:text-base font-medium border border-gray-200 md:border-transparent shadow-sm md:shadow-none active:scale-95 min-h-[44px] touch-manipulation"
+        aria-label="Change language"
+        aria-expanded={isOpen}
       >
-        <Globe className="w-4 h-4 md:w-5 md:h-5 text-orange-500" />
+        <Globe className="w-5 h-5 text-orange-500 flex-shrink-0" />
         <span className="hidden sm:inline">{languageNames[locale]}</span>
-        <span className="text-lg sm:hidden">{languageFlags[locale]}</span>
+        <span className="text-xl sm:hidden">{languageFlags[locale]}</span>
         <ChevronDown
-          className={`w-4 h-4 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
         />
       </button>
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 py-2 w-48 md:w-44 bg-white rounded-xl shadow-2xl border border-gray-100 z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="absolute right-0 mt-2 py-2 w-48 md:w-44 bg-white rounded-xl shadow-2xl border border-gray-100 z-[60] animate-in fade-in slide-in-from-top-2 duration-200">
           <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b border-gray-100">
             Select Language
           </div>
@@ -73,16 +79,17 @@ export default function LanguageSwitcher() {
             <button
               key={loc}
               onClick={() => switchLanguage(loc)}
-              className={`flex items-center gap-3 w-full text-left px-4 py-3 text-sm md:text-base hover:bg-orange-50 active:bg-orange-100 transition-colors ${
+              className={`flex items-center gap-3 w-full text-left px-4 py-3.5 text-base hover:bg-orange-50 active:bg-orange-100 transition-colors min-h-[48px] touch-manipulation ${
                 locale === loc
                   ? 'font-bold text-orange-600 bg-orange-50'
                   : 'text-gray-700'
               }`}
+              aria-label={`Switch to ${languageNames[loc]}`}
             >
-              <span className="text-xl">{languageFlags[loc]}</span>
+              <span className="text-xl flex-shrink-0">{languageFlags[loc]}</span>
               <span className="flex-1">{languageNames[loc]}</span>
               {locale === loc && (
-                <span className="text-orange-500 font-bold">✓</span>
+                <span className="text-orange-500 font-bold flex-shrink-0">✓</span>
               )}
             </button>
           ))}
