@@ -273,7 +273,7 @@ export default function MenuSection() {
 
                 {/* Menu Image Viewer - Scrollable & Zoomable on Mobile */}
                 <div
-                  className="w-full max-h-[90vh] bg-black rounded-lg overflow-auto shadow-2xl"
+                  className="w-full max-h-[90vh] bg-black rounded-lg overflow-auto shadow-2xl flex items-center justify-center"
                   onClick={(e) => e.stopPropagation()}
                   style={{
                     overscrollBehavior: 'contain',
@@ -283,9 +283,8 @@ export default function MenuSection() {
                   <img
                     src={currentMenu.image}
                     alt={currentMenu.title}
-                    className="w-full h-auto min-h-full object-contain"
+                    className="max-w-full max-h-[90vh] h-auto w-auto object-contain"
                     style={{
-                      maxWidth: '100%',
                       touchAction: 'manipulation',
                       userSelect: 'none'
                     }}
