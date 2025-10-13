@@ -198,6 +198,18 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
+            {/* COMING SOON Badge */}
+            <motion.div
+              className="inline-block mb-6"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <div className="bg-orange-500 text-white px-8 py-3 rounded-full font-black text-xl md:text-2xl tracking-wider shadow-2xl border-4 border-white/30">
+                🌺 COMING SOON 🌺
+              </div>
+            </motion.div>
+
             <motion.h1
               className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white mb-6 tracking-tight"
               animate={{ scale: [1, 1.02, 1] }}
@@ -207,11 +219,27 @@ export default function Home() {
               <br />
               <span className="text-orange-400">DONUT?</span>
             </motion.h1>
-            <motion.p
-              className="text-2xl md:text-3xl text-white font-medium mb-8"
+
+            {/* Waikiki Location Emphasis */}
+            <motion.div
+              className="mb-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.5 }}
+            >
+              <p className="text-3xl md:text-4xl lg:text-5xl text-white font-black mb-2 tracking-tight">
+                📍 WAIKIKI, HAWAII
+              </p>
+              <p className="text-xl md:text-2xl text-orange-300 font-bold">
+                2142 Kalakaua Avenue
+              </p>
+            </motion.div>
+
+            <motion.p
+              className="text-xl md:text-2xl text-white font-medium mb-8 max-w-2xl mx-auto"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7 }}
             >
               {t('hero.subtitle')}
             </motion.p>
