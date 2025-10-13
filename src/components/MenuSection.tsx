@@ -140,7 +140,7 @@ export default function MenuSection() {
                         src={item.iconImage}
                         alt={t(`categories.${item.id}.name`)}
                         fill
-                        className="object-contain p-1"
+                        className={`object-contain ${item.id === 'smoothie' || item.id === 'malasada' ? 'p-0' : 'p-1'}`}
                       />
                     </div>
                   ) : (
