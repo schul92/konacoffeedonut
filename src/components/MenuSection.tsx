@@ -261,7 +261,7 @@ export default function MenuSection() {
               className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4"
               onClick={() => setModalOpen(false)}
             >
-              <div className="relative w-full max-w-6xl max-h-[95vh] sm:max-h-[90vh]">
+              <div className="relative w-full max-w-6xl h-[85vh] sm:h-auto sm:max-h-[90vh]">
                 {/* Close Button */}
                 <button
                   onClick={() => setModalOpen(false)}
@@ -273,7 +273,7 @@ export default function MenuSection() {
 
                 {/* Menu Image Viewer - Scrollable & Zoomable on Mobile */}
                 <div
-                  className="w-full max-h-[90vh] bg-black rounded-lg overflow-auto shadow-2xl flex items-center justify-center"
+                  className="w-full h-full bg-black rounded-lg overflow-auto shadow-2xl flex items-center justify-center p-2 sm:p-4"
                   onClick={(e) => e.stopPropagation()}
                   style={{
                     overscrollBehavior: 'contain',
@@ -283,7 +283,7 @@ export default function MenuSection() {
                   <img
                     src={currentMenu.image}
                     alt={currentMenu.title}
-                    className="max-w-full max-h-[90vh] h-auto w-auto object-contain"
+                    className="max-w-full max-h-full h-auto w-auto object-contain"
                     style={{
                       touchAction: 'manipulation',
                       userSelect: 'none'
