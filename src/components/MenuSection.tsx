@@ -240,7 +240,7 @@ export default function MenuSection() {
         </motion.div>
       </div>
 
-      {/* Menu Image Modal */}
+      {/* Menu Image Modal - Mobile Optimized */}
       <AnimatePresence>
         {modalOpen && currentMenu && (
           <>
@@ -258,27 +258,37 @@ export default function MenuSection() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="fixed inset-0 z-50 flex items-center justify-center p-4"
+              className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4"
+              onClick={() => setModalOpen(false)}
             >
-              <div className="relative w-full max-w-6xl h-[90vh]">
+              <div className="relative w-full max-w-6xl max-h-[95vh] sm:max-h-[90vh]">
                 {/* Close Button */}
                 <button
                   onClick={() => setModalOpen(false)}
-                  className="absolute -top-12 right-0 p-3 text-white hover:text-orange-500 transition-colors bg-black/50 rounded-full"
+                  className="absolute -top-10 sm:-top-12 right-0 p-2 sm:p-3 text-white hover:text-orange-500 transition-colors bg-black/70 rounded-full z-10"
                   aria-label="Close"
                 >
-                  <X className="w-6 h-6" />
+                  <X className="w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
-                {/* Menu Image Viewer */}
-                <div className="w-full h-full bg-black rounded-lg overflow-hidden shadow-2xl flex items-center justify-center">
-                  <Image
+                {/* Menu Image Viewer - Scrollable & Zoomable on Mobile */}
+                <div
+                  className="w-full max-h-[90vh] bg-black rounded-lg overflow-auto shadow-2xl"
+                  onClick={(e) => e.stopPropagation()}
+                  style={{
+                    overscrollBehavior: 'contain',
+                    WebkitOverflowScrolling: 'touch'
+                  }}
+                >
+                  <img
                     src={currentMenu.image}
                     alt={currentMenu.title}
-                    width={1920}
-                    height={1080}
-                    className="max-w-full max-h-full object-contain"
-                    priority
+                    className="w-full h-auto min-h-full object-contain"
+                    style={{
+                      maxWidth: '100%',
+                      touchAction: 'manipulation',
+                      userSelect: 'none'
+                    }}
                   />
                 </div>
               </div>
