@@ -92,8 +92,9 @@ export default function Home() {
           {/* Mobile Navigation */}
           <div className="md:hidden flex justify-between items-center">
             <button
-              className="text-2xl"
+              className="text-3xl w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors active:scale-95 touch-manipulation"
               onClick={() => setMenuOpen(!menuOpen)}
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             >
               {menuOpen ? '×' : '☰'}
             </button>
@@ -132,18 +133,43 @@ export default function Home() {
               </div>
             </button>
 
-            <div className="w-8"></div>
+            <div className="w-10"></div>
           </div>
         </div>
 
-        {/* Mobile Menu - Improved */}
+        {/* Mobile Menu Backdrop Overlay */}
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 bg-black/50 z-40 md:hidden"
+            onClick={() => setMenuOpen(false)}
+          />
+        )}
+
+        {/* Mobile Menu - Improved with Close Button */}
         <motion.div
           initial={false}
           animate={{ height: menuOpen ? 'auto' : 0 }}
           transition={{ duration: 0.3, ease: 'easeInOut' }}
-          className="md:hidden overflow-hidden"
+          className="md:hidden overflow-hidden relative z-50"
         >
-          <div className="bg-white border-t border-gray-100 px-6 py-6 space-y-1">
+          <div className="bg-white border-t border-gray-100 px-6 py-6 space-y-1 shadow-xl">
+            {/* Close Button */}
+            <div className="flex justify-end mb-2">
+              <button
+                onClick={() => setMenuOpen(false)}
+                className="text-gray-500 hover:text-gray-700 p-2 rounded-lg hover:bg-gray-100 transition-colors"
+                aria-label="Close menu"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
             <a
               href="#menu"
               className="block py-3 text-lg font-medium text-gray-700 hover:text-orange-500 transition-colors rounded-lg hover:bg-orange-50 px-4 -mx-4"
