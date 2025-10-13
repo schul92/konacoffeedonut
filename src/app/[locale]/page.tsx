@@ -1067,13 +1067,18 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
             <div>
-              <Image
-                src="/konacoffee.png"
-                alt="Kona Coffee Donut"
-                width={300}
-                height={50}
-                className="h-10 md:h-12 w-auto mb-3"
-              />
+              <div className="relative h-10 md:h-12 mb-3">
+                <Image
+                  src="/konacoffee.png"
+                  alt="Kona Coffee Donut"
+                  width={300}
+                  height={50}
+                  className="h-full w-auto"
+                  style={{
+                    filter: 'brightness(0) invert(1)',
+                  }}
+                />
+              </div>
               <p className="opacity-60">{t('footer.tagline')}</p>
             </div>
             <div className="flex gap-8 text-base">
