@@ -183,7 +183,7 @@ export default function Home() {
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src="/videos/waikiki.MP4" type="video/mp4" />
+            <source src="/videos/waikiki.mov" type="video/mp4" />
           </video>
           {/* Dark overlay for better text readability */}
           <div className="absolute inset-0 bg-black/40"></div>
