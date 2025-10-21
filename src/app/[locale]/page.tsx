@@ -82,9 +82,8 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Right: Location & Language */}
+            {/* Right: Language */}
             <div className="flex gap-8 text-base items-center justify-end">
-              <a href="#location" className="hover:opacity-60 transition-opacity">{t('nav.location')}</a>
               <LanguageSwitcher />
             </div>
           </div>
@@ -188,13 +187,6 @@ export default function Home() {
                 >
                   {t('nav.about')}
                 </a>
-                <a
-                  href="#location"
-                  className="block py-4 text-lg font-medium text-gray-700 hover:text-orange-500 transition-colors rounded-xl hover:bg-orange-50 px-4 -mx-4"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {t('nav.location')}
-                </a>
 
                 {/* Language Switcher */}
                 <div className="pt-6 mt-6 border-t border-gray-200">
@@ -209,26 +201,27 @@ export default function Home() {
         )}
       </nav>
 
-      {/* Hero Section with Waikiki Video Background */}
+      {/* Hero Section */}
       <section className="relative h-screen min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
-        {/* Video Background - Responsive */}
-        <div className="absolute inset-0 w-full h-full">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{
-              objectPosition: 'center center',
+        {/* Modern Light Gradient Background */}
+        <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100">
+          {/* Animated gradient overlay */}
+          <motion.div
+            className="absolute inset-0 bg-gradient-to-tr from-orange-100/50 via-transparent to-amber-100/50"
+            animate={{
+              opacity: [0.3, 0.6, 0.3],
             }}
-          >
-            <source src="/videos/waikiki.mov" type="video/mp4" />
-          </video>
-          {/* Dark overlay for better text readability - stronger on mobile */}
-          <div className="absolute inset-0 bg-black/50 md:bg-black/40"></div>
-          {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 md:from-black/30 md:to-black/50"></div>
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+          {/* Subtle mesh pattern */}
+          <div className="absolute inset-0 opacity-[0.03]" style={{
+            backgroundImage: 'linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.1) 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }}></div>
         </div>
 
         {/* Hero Content */}
@@ -238,38 +231,30 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
           >
-            {/* Badges Container - Centered & Aligned */}
-            <div className="flex flex-col items-center gap-3 md:gap-4 mb-6 md:mb-8">
+            {/* Badges Container */}
+            <div className="flex flex-col items-center gap-4 mb-8">
               {/* COMING SOON Badge */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.2 }}
               >
-                <div className="bg-orange-500 text-white px-6 py-2.5 md:px-8 md:py-3 rounded-full font-black text-lg md:text-2xl tracking-wider shadow-2xl border-2 md:border-4 border-white/30">
+                <div className="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-2.5 md:px-8 md:py-3 rounded-full font-black text-lg md:text-2xl tracking-wider shadow-xl border-2 border-white/40">
                   🌺 COMING SOON 🌺
                 </div>
               </motion.div>
 
-              {/* Proudly Serving Honolulu Coffee - Mobile Responsive */}
+              {/* Honolulu Coffee Badge - Smaller */}
               <motion.div
-                className="inline-flex items-center gap-3 md:gap-4 bg-gradient-to-r from-white/20 via-white/30 to-white/20 backdrop-blur-lg px-4 py-3 md:px-10 md:py-5 rounded-xl md:rounded-2xl border-2 border-white/50 shadow-2xl max-w-[90vw]"
+                className="inline-flex items-center gap-3 md:gap-4 bg-white/95 backdrop-blur-lg px-5 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl border-2 border-white shadow-xl max-w-[90vw]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{
                   opacity: 1,
                   y: 0,
-                  scale: [1, 1.05, 1],
                 }}
                 transition={{
-                  opacity: { delay: 0.5 },
-                  y: { delay: 0.5 },
-                  scale: {
-                    delay: 1.2,
-                    duration: 0.6,
-                    repeat: Infinity,
-                    repeatDelay: 3,
-                    ease: "easeInOut"
-                  }
+                  opacity: { delay: 0.4, duration: 0.6 },
+                  y: { delay: 0.4, duration: 0.6 }
                 }}
               >
                 {/* Logo with Glow Effect */}
@@ -277,13 +262,13 @@ export default function Home() {
                   className="relative w-12 h-12 md:w-16 md:h-16 flex-shrink-0 bg-white rounded-lg md:rounded-xl p-1.5 md:p-2 shadow-lg"
                   animate={{
                     boxShadow: [
-                      "0 10px 25px rgba(255, 255, 255, 0.3)",
-                      "0 10px 40px rgba(251, 146, 60, 0.6)",
-                      "0 10px 25px rgba(255, 255, 255, 0.3)",
+                      "0 5px 15px rgba(251, 146, 60, 0.3)",
+                      "0 8px 25px rgba(251, 146, 60, 0.5)",
+                      "0 5px 15px rgba(251, 146, 60, 0.3)",
                     ]
                   }}
                   transition={{
-                    duration: 2,
+                    duration: 2.5,
                     repeat: Infinity,
                     ease: "easeInOut"
                   }}
@@ -296,44 +281,71 @@ export default function Home() {
                   />
                 </motion.div>
 
-                {/* Text Content - Mobile Responsive */}
+                {/* Text Content */}
                 <div className="text-left">
-                  <p className="text-white/90 font-medium text-[10px] md:text-sm mb-0.5 tracking-wide">
+                  <p className="text-gray-700 font-medium text-[10px] md:text-sm mb-0.5 tracking-wide">
                     PROUDLY SERVING
                   </p>
-                  <motion.p
-                    className="text-white font-black text-base md:text-2xl tracking-tight leading-tight"
-                    animate={{
-                      textShadow: [
-                        "0 0 10px rgba(251, 146, 60, 0)",
-                        "0 0 20px rgba(251, 146, 60, 0.8)",
-                        "0 0 10px rgba(251, 146, 60, 0)",
-                      ]
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  >
-                    HONOLULU <span className="text-orange-400">COFFEE</span>
-                  </motion.p>
-                  <p className="text-orange-200 font-semibold text-[10px] md:text-sm">
+                  <p className="font-black text-base md:text-2xl tracking-tight leading-tight text-orange-600">
+                    <motion.span
+                      animate={{
+                        scale: [1, 1.05, 1],
+                        filter: [
+                          "drop-shadow(0 0 0px rgba(251, 146, 60, 0))",
+                          "drop-shadow(0 0 4px rgba(251, 146, 60, 0.6))",
+                          "drop-shadow(0 0 0px rgba(251, 146, 60, 0))",
+                        ]
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                      style={{ display: 'inline-block' }}
+                      className="text-orange-600"
+                    >
+                      HONOLULU
+                    </motion.span>{' '}
+                    <span>COFFEE</span>
+                  </p>
+                  <p className="text-orange-600 font-semibold text-[10px] md:text-sm">
                     100% Premium Kona Beans
                   </p>
                 </div>
               </motion.div>
             </div>
 
-            <motion.h1
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white mb-6 tracking-tight"
-              animate={{ scale: [1, 1.02, 1] }}
-              transition={{ duration: 3, repeat: Infinity }}
+            {/* Logo - Moderately Sized */}
+            <motion.div
+              className="mb-8 relative w-full max-w-2xl mx-auto"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{ duration: 1, delay: 0.6 }}
             >
-              KONA COFFEE
-              <br />
-              <span className="text-orange-400">DONUT?</span>
-            </motion.h1>
+              <motion.div
+                animate={{
+                  scale: [1, 1.02, 1],
+                  filter: [
+                    "drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15))",
+                    "drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2))",
+                    "drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15))",
+                  ]
+                }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <Image
+                  src="/konacoffee.png"
+                  alt="Kona Coffee Donut"
+                  width={800}
+                  height={133}
+                  className="w-full h-auto"
+                  priority
+                />
+              </motion.div>
+            </motion.div>
 
             {/* Waikiki Location Emphasis */}
             <motion.div
@@ -342,16 +354,16 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              <p className="text-3xl md:text-4xl lg:text-5xl text-white font-black mb-2 tracking-tight">
+              <p className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 tracking-tight text-gray-900">
                 📍 WAIKIKI, HAWAII
               </p>
-              <p className="text-xl md:text-2xl text-orange-300 font-bold">
+              <p className="text-xl md:text-2xl text-gray-800 font-bold">
                 2142 Kalakaua Avenue
               </p>
             </motion.div>
 
             <motion.p
-              className="text-xl md:text-2xl text-white font-medium mb-8 max-w-2xl mx-auto"
+              className="text-xl md:text-2xl text-gray-800 font-semibold mb-8 max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
@@ -372,7 +384,7 @@ export default function Home() {
               </a>
               <a
                 href="#location"
-                className="px-8 py-4 bg-white/20 backdrop-blur-md hover:bg-white/30 text-white text-xl font-bold rounded-full shadow-2xl transition-all border-2 border-white/50"
+                className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold rounded-full shadow-2xl transition-all transform hover:scale-105"
               >
                 {t('nav.location')}
               </a>
