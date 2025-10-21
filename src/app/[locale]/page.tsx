@@ -316,15 +316,7 @@ export default function Home() {
             </div>
 
             {/* Logo - Moderately Sized */}
-            <motion.div
-              className="mb-8 relative w-full max-w-2xl mx-auto"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{
-                opacity: 1,
-                scale: 1,
-              }}
-              transition={{ duration: 1, delay: 0.6 }}
-            >
+            <div className="mb-8 relative w-full max-w-2xl mx-auto">
               <motion.div
                 animate={{
                   scale: [1, 1.02, 1],
@@ -345,7 +337,7 @@ export default function Home() {
                   priority
                 />
               </motion.div>
-            </motion.div>
+            </div>
 
             {/* Waikiki Location Emphasis */}
             <motion.div
@@ -378,13 +370,13 @@ export default function Home() {
             >
               <a
                 href="#menu"
-                className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold rounded-full shadow-2xl transition-all transform hover:scale-105"
+                className="px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white text-base md:text-xl font-bold rounded-full shadow-2xl transition-all transform hover:scale-105"
               >
                 {t('nav.menu')}
               </a>
               <a
                 href="#location"
-                className="px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold rounded-full shadow-2xl transition-all transform hover:scale-105"
+                className="px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white text-base md:text-xl font-bold rounded-full shadow-2xl transition-all transform hover:scale-105"
               >
                 {t('nav.location')}
               </a>
@@ -611,12 +603,12 @@ export default function Home() {
                     animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
                     transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                   />
-                  <div className="relative bg-white rounded-full p-6 shadow-2xl w-[200px] h-[200px] flex items-center justify-center">
+                  <div className="relative w-[200px] h-[200px] flex items-center justify-center">
                     <Image
                       src="/icons/honolulu_coffee.webp"
                       alt="Honolulu Coffee"
-                      width={160}
-                      height={160}
+                      width={200}
+                      height={200}
                       className="object-contain"
                     />
                   </div>
