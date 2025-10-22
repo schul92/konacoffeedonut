@@ -34,6 +34,14 @@ export default function MenuSection() {
   const openMenu = (menuImage: string, title: string) => {
     setCurrentMenu({ image: menuImage, title });
     setModalOpen(true);
+
+    // Track menu view
+    if (typeof window !== 'undefined' && (window as any).trackEvent) {
+      (window as any).trackEvent('view_menu', {
+        menu_category: title,
+        interaction_type: 'modal_open',
+      });
+    }
   };
 
   // Auto-play videos when they come into view
@@ -151,29 +159,29 @@ export default function MenuSection() {
                 </motion.div>
 
                 {/* Bottom Info Bar - Cinema Style */}
-                <div className="absolute bottom-0 left-0 right-0 z-10 p-4 md:p-6">
+                <div className="absolute bottom-0 left-0 right-0 z-10 p-3 md:p-6">
                   <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.4 + index * 0.1 }}
                   >
                     {/* Category Name - Large & Bold */}
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-2 drop-shadow-2xl tracking-tight">
+                    <h3 className="text-xl sm:text-2xl md:text-4xl font-black text-white mb-1 md:mb-2 drop-shadow-2xl tracking-tight break-words leading-tight">
                       {t(`categories.${item.id}.name`)}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-sm md:text-base text-white/90 drop-shadow-lg mb-4 line-clamp-2 font-medium">
+                    <p className="text-xs sm:text-sm md:text-base text-white/90 drop-shadow-lg mb-2 md:mb-4 line-clamp-2 font-medium leading-snug">
                       {t(`categories.${item.id}.description`)}
                     </p>
 
                     {/* Action Button - Theater Style */}
                     <motion.div
                       whileHover={{ x: 5 }}
-                      className="inline-flex items-center gap-3 px-6 py-3 bg-orange-500 hover:bg-orange-600 rounded-full shadow-xl transition-all"
+                      className="inline-flex items-center gap-2 md:gap-3 px-3 md:px-6 py-1.5 md:py-3 bg-orange-500 hover:bg-orange-600 rounded-full shadow-xl transition-all"
                     >
-                      <Play className="w-4 h-4 fill-white" />
-                      <span className="text-white font-bold text-sm md:text-base">
+                      <Play className="w-3 h-3 md:w-4 md:h-4 fill-white flex-shrink-0" />
+                      <span className="text-white font-bold text-xs md:text-base whitespace-nowrap">
                         {t('viewMenu')}
                       </span>
                     </motion.div>

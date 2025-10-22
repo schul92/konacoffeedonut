@@ -28,6 +28,15 @@ export default function LanguageSwitcher() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const switchLanguage = (newLocale: string) => {
+    // Track language change
+    if (typeof window !== 'undefined' && (window as any).trackEvent) {
+      (window as any).trackEvent('language_change', {
+        from_language: locale,
+        to_language: newLocale,
+        page: pathname,
+      });
+    }
+
     // Remove the current locale from pathname and add new locale
     const pathWithoutLocale = pathname.replace(`/${locale}`, '');
     router.push(`/${newLocale}${pathWithoutLocale}`);

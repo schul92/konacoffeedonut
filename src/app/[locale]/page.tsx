@@ -57,6 +57,15 @@ export default function Home() {
       }
     });
     setIsPlaying(!isPlaying);
+
+    // Track video interaction
+    if (typeof window !== 'undefined' && (window as any).trackEvent) {
+      (window as any).trackEvent('video_interaction', {
+        action: isPlaying ? 'pause' : 'play',
+        video_id: `waikiki_${currentVideo}`,
+        location: 'hero_section',
+      });
+    }
   };
 
   // Switch between videos manually with smooth transition
@@ -68,6 +77,15 @@ export default function Home() {
       setIsPlaying(true);
       setTimeout(() => setIsTransitioning(false), 100);
     }, 300);
+
+    // Track video switch
+    if (typeof window !== 'undefined' && (window as any).trackEvent) {
+      (window as any).trackEvent('video_switch', {
+        from_video: currentVideo,
+        to_video: videoNumber,
+        method: 'manual',
+      });
+    }
   };
 
   // Get video-specific content
@@ -131,9 +149,39 @@ export default function Home() {
           <div className="hidden md:grid grid-cols-3 items-center">
             {/* Left: Menu & About Links */}
             <div className="flex gap-6 lg:gap-8 text-sm lg:text-base">
-              <a href="#menu" className="text-gray-900 font-semibold hover:text-orange-500 transition-colors">Menu</a>
-              <a href="#location" className="text-gray-900 font-semibold hover:text-orange-500 transition-colors">Location</a>
-              <a href="#about" className="text-gray-900 font-semibold hover:text-orange-500 transition-colors">About</a>
+              <a
+                href="#menu"
+                className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
+                    (window as any).trackEvent('navigation_click', { section: 'menu', device: 'desktop' });
+                  }
+                }}
+              >
+                Menu
+              </a>
+              <a
+                href="#location"
+                className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
+                    (window as any).trackEvent('navigation_click', { section: 'location', device: 'desktop' });
+                  }
+                }}
+              >
+                Location
+              </a>
+              <a
+                href="#about"
+                className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
+                    (window as any).trackEvent('navigation_click', { section: 'about', device: 'desktop' });
+                  }
+                }}
+              >
+                About
+              </a>
             </div>
 
             {/* Center: Logo (converts to ? when scrolled) */}
@@ -192,21 +240,36 @@ export default function Home() {
               <a
                 href="#menu"
                 className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
+                    (window as any).trackEvent('navigation_click', { section: 'menu', device: 'mobile' });
+                  }
+                  setMenuOpen(false);
+                }}
               >
                 Menu
               </a>
               <a
                 href="#location"
                 className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
+                    (window as any).trackEvent('navigation_click', { section: 'location', device: 'mobile' });
+                  }
+                  setMenuOpen(false);
+                }}
               >
                 Location
               </a>
               <a
                 href="#about"
                 className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
-                onClick={() => setMenuOpen(false)}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
+                    (window as any).trackEvent('navigation_click', { section: 'about', device: 'mobile' });
+                  }
+                  setMenuOpen(false);
+                }}
               >
                 About
               </a>
