@@ -219,6 +219,103 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     ],
   };
 
+  // Video Object Schema - Waikiki Experience Videos
+  const videoSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Waikiki Experience - Kona Coffee Donut',
+    description: 'Experience the ambiance of our Waikiki location featuring premium Kona coffee and artisan mochi donuts',
+    thumbnailUrl: 'https://www.konacoffeedonut.com/og-image.jpg',
+    uploadDate: '2025-01-15T08:00:00+00:00',
+    contentUrl: 'https://www.konacoffeedonut.com/videos/waikiki_1.mp4',
+    embedUrl: `https://www.konacoffeedonut.com/${locale}`,
+    duration: 'PT30S',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Kona Coffee Donut',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.konacoffeedonut.com/konacoffee.png',
+      },
+    },
+  };
+
+  // FAQ Schema - Common Questions
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What makes Kona Coffee special?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We use 100% premium Kona coffee beans in collaboration with Honolulu Coffee. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are mochi donuts?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Mochi donuts are artisan donuts made with rice flour, giving them a unique texture that is crispy on the outside and chewy on the inside. We feature MOCHILAND mochi donuts at our Waikiki location.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Where is Kona Coffee Donut located?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We are located at 2142 Kalakaua Ave, Honolulu, HI 96815 in the heart of Waikiki, Hawaii.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are your opening hours?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We are open daily from 7:00 AM to 9:00 PM, serving fresh coffee and donuts throughout the day.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you offer takeout?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we offer takeout service. You can grab your favorite coffee and donuts to go.',
+        },
+      },
+    ],
+  };
+
+  // Product Schema - Featured Items
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: 'Premium Kona Coffee & Mochi Donuts',
+    description: 'Authentic Hawaiian experience featuring 100% Kona coffee and artisan mochi donuts',
+    brand: {
+      '@type': 'Brand',
+      name: 'Kona Coffee Donut',
+    },
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: '3.00',
+      highPrice: '15.00',
+      offerCount: '20',
+      availability: 'https://schema.org/InStock',
+      url: `https://www.konacoffeedonut.com/${locale}#menu`,
+    },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      reviewCount: '250',
+      bestRating: '5',
+      worstRating: '1',
+    },
+  };
+
   return (
     <>
       {/* Local Business Schema */}
@@ -254,6 +351,27 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* Video Object Schema */}
+      <Script
+        id="video-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+      />
+
+      {/* FAQ Schema */}
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* Product Schema */}
+      <Script
+        id="product-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
     </>
   );

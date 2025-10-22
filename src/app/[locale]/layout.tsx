@@ -190,6 +190,14 @@ export default async function LocaleLayout({
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+        {/* Preload critical assets */}
+        <link rel="preload" href="/images/background/background.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="/videos/waikiki_1.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/konacoffee.png" as="image" type="image/png" />
+
+        {/* Prefetch next video for smooth transition */}
+        <link rel="prefetch" href="/videos/waikiki_2.mp4" as="video" type="video/mp4" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${righteous.variable} antialiased overflow-x-hidden`}
