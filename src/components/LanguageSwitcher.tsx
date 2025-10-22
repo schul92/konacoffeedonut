@@ -61,14 +61,13 @@ export default function LanguageSwitcher() {
           e.stopPropagation();
           setIsOpen(!isOpen);
         }}
-        className="flex items-center gap-2 px-4 py-2.5 rounded-lg md:rounded-xl bg-white md:bg-transparent hover:bg-gray-100 transition-all text-sm md:text-base font-medium border border-gray-200 md:border-transparent shadow-sm md:shadow-none active:scale-95 min-h-[44px] touch-manipulation"
+        className="flex items-center gap-2 px-3 md:px-4 py-2.5 rounded-lg md:rounded-xl bg-white md:bg-transparent hover:bg-gray-100 transition-all text-sm md:text-base font-medium border border-gray-200 md:border-transparent shadow-sm md:shadow-none active:scale-95 min-h-[44px] touch-manipulation"
         aria-label="Change language"
         aria-expanded={isOpen}
         type="button"
       >
         <Globe className="w-5 h-5 text-orange-500 flex-shrink-0" />
-        <span className="hidden sm:inline">{languageNames[locale]}</span>
-        <span className="text-xl sm:hidden">{languageFlags[locale]}</span>
+        <span className="hidden md:inline">{languageNames[locale]}</span>
         <ChevronDown
           className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
         />
