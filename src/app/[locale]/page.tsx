@@ -136,61 +136,49 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mobile Menu - Full Screen Modal */}
+        {/* Mobile Menu - Compact Dropdown */}
         {menuOpen && (
           <>
-            {/* Backdrop Overlay */}
+            {/* Backdrop Overlay - Subtle */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/60 z-[60] md:hidden"
+              className="fixed inset-0 bg-black/20 z-[60] md:hidden"
               onClick={() => setMenuOpen(false)}
             />
 
-            {/* Menu Panel */}
+            {/* Compact Dropdown Menu */}
             <motion.div
-              initial={{ x: '-100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '-100%' }}
-              transition={{ duration: 0.3, ease: 'easeOut' }}
-              className="fixed top-0 left-0 bottom-0 w-[85vw] max-w-sm bg-white z-[70] md:hidden shadow-2xl"
+              initial={{ opacity: 0, y: -10, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -10, scale: 0.95 }}
+              transition={{ duration: 0.2, ease: 'easeOut' }}
+              className="fixed top-16 left-4 right-4 bg-white z-[70] md:hidden rounded-2xl shadow-2xl overflow-hidden border border-gray-100"
             >
-              {/* Header with Close Button */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 bg-orange-50">
-                <h2 className="text-xl font-bold text-gray-900">Menu</h2>
-                <button
-                  onClick={() => setMenuOpen(false)}
-                  className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 text-white transition-colors active:scale-95 shadow-lg"
-                  aria-label="Close menu"
-                >
-                  <svg className="w-7 h-7 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-
-              {/* Menu Content */}
-              <div className="px-6 py-6 space-y-2">
+              {/* Menu Items */}
+              <div className="py-2">
                 <a
                   href="#menu"
-                  className="block py-4 text-lg font-medium text-gray-700 hover:text-orange-500 transition-colors rounded-xl hover:bg-orange-50 px-4 -mx-4"
+                  className="flex items-center gap-3 px-5 py-3.5 text-base font-semibold text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors active:bg-orange-100"
                   onClick={() => setMenuOpen(false)}
                 >
-                  {t('nav.menu')}
+                  <span className="text-xl">🍩</span>
+                  <span>{t('nav.menu')}</span>
                 </a>
                 <a
                   href="#about"
-                  className="block py-4 text-lg font-medium text-gray-700 hover:text-orange-500 transition-colors rounded-xl hover:bg-orange-50 px-4 -mx-4"
+                  className="flex items-center gap-3 px-5 py-3.5 text-base font-semibold text-gray-700 hover:bg-orange-50 hover:text-orange-500 transition-colors active:bg-orange-100"
                   onClick={() => setMenuOpen(false)}
                 >
-                  {t('nav.about')}
+                  <span className="text-xl">ℹ️</span>
+                  <span>{t('nav.about')}</span>
                 </a>
 
                 {/* Language Switcher */}
-                <div className="pt-6 mt-6 border-t border-gray-200">
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 px-4">
+                <div className="px-5 py-3 border-t border-gray-100 bg-gray-50">
+                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
                     Language
                   </p>
                   <LanguageSwitcher />
@@ -203,25 +191,24 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
-        {/* Modern Light Gradient Background */}
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100">
-          {/* Animated gradient overlay */}
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-tr from-orange-100/50 via-transparent to-amber-100/50"
-            animate={{
-              opacity: [0.3, 0.6, 0.3],
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{
+              objectPosition: 'center center',
             }}
-            transition={{
-              duration: 5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          />
-          {/* Subtle mesh pattern */}
-          <div className="absolute inset-0 opacity-[0.03]" style={{
-            backgroundImage: 'linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.1) 1px, transparent 1px)',
-            backgroundSize: '50px 50px'
-          }}></div>
+          >
+            <source src="/videos/waikiki.mp4" type="video/mp4" />
+          </video>
+          {/* Dark overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
         </div>
 
         {/* Hero Content */}
@@ -246,7 +233,7 @@ export default function Home() {
 
               {/* Honolulu Coffee Badge - Smaller */}
               <motion.div
-                className="inline-flex items-center gap-3 md:gap-4 bg-white/95 backdrop-blur-lg px-5 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl border-2 border-white shadow-xl max-w-[90vw]"
+                className="inline-flex items-center gap-3 md:gap-4 bg-white backdrop-blur-lg px-5 py-3 md:px-8 md:py-4 rounded-xl md:rounded-2xl border-2 border-white shadow-xl max-w-[90vw]"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{
                   opacity: 1,
@@ -283,10 +270,10 @@ export default function Home() {
 
                 {/* Text Content */}
                 <div className="text-left">
-                  <p className="text-gray-700 font-medium text-[10px] md:text-sm mb-0.5 tracking-wide">
+                  <p className="text-gray-600 font-medium text-[10px] md:text-sm mb-0.5 tracking-wide">
                     PROUDLY SERVING
                   </p>
-                  <p className="font-black text-base md:text-2xl tracking-tight leading-tight text-orange-600">
+                  <p className="font-black text-base md:text-2xl tracking-tight leading-tight text-orange-500">
                     <motion.span
                       animate={{
                         scale: [1, 1.05, 1],
@@ -302,13 +289,13 @@ export default function Home() {
                         ease: "easeInOut"
                       }}
                       style={{ display: 'inline-block' }}
-                      className="text-orange-600"
+                      className="text-orange-500"
                     >
                       HONOLULU
                     </motion.span>{' '}
                     <span>COFFEE</span>
                   </p>
-                  <p className="text-orange-600 font-semibold text-[10px] md:text-sm">
+                  <p className="text-orange-500 font-semibold text-[10px] md:text-sm">
                     100% Premium Kona Beans
                   </p>
                 </div>
@@ -321,9 +308,9 @@ export default function Home() {
                 animate={{
                   scale: [1, 1.02, 1],
                   filter: [
-                    "drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15))",
-                    "drop-shadow(0 10px 25px rgba(0, 0, 0, 0.2))",
-                    "drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15))",
+                    "drop-shadow(0 4px 12px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.4))",
+                    "drop-shadow(0 6px 16px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 40px rgba(255, 255, 255, 0.5))",
+                    "drop-shadow(0 4px 12px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.4))",
                   ]
                 }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -333,7 +320,7 @@ export default function Home() {
                   alt="Kona Coffee Donut"
                   width={800}
                   height={133}
-                  className="w-full h-auto"
+                  className="w-full h-auto brightness-110"
                   priority
                 />
               </motion.div>
@@ -346,16 +333,16 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              <p className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 tracking-tight text-gray-900">
+              <p className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 tracking-tight text-white">
                 📍 WAIKIKI, HAWAII
               </p>
-              <p className="text-xl md:text-2xl text-gray-800 font-bold">
+              <p className="text-xl md:text-2xl text-orange-300 font-bold">
                 2142 Kalakaua Avenue
               </p>
             </motion.div>
 
             <motion.p
-              className="text-xl md:text-2xl text-gray-800 font-semibold mb-8 max-w-2xl mx-auto"
+              className="text-xl md:text-2xl text-white font-medium mb-8 max-w-2xl mx-auto"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
@@ -363,22 +350,24 @@ export default function Home() {
               {t('hero.subtitle')}
             </motion.p>
             <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+              className="flex flex-row gap-2.5 md:gap-4 justify-center items-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9 }}
             >
               <a
                 href="#menu"
-                className="px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white text-base md:text-xl font-bold rounded-full shadow-2xl transition-all transform hover:scale-105"
+                className="flex items-center gap-1.5 md:gap-2 px-4 py-2 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105 backdrop-blur-sm whitespace-nowrap"
               >
-                {t('nav.menu')}
+                <span className="text-sm md:text-xl">📋</span>
+                <span>{t('nav.menu')}</span>
               </a>
               <a
                 href="#location"
-                className="px-6 py-3 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white text-base md:text-xl font-bold rounded-full shadow-2xl transition-all transform hover:scale-105"
+                className="flex items-center gap-1.5 md:gap-2 px-4 py-2 md:px-8 md:py-4 bg-orange-500 hover:bg-orange-600 text-white text-xs md:text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105 backdrop-blur-sm whitespace-nowrap"
               >
-                {t('nav.location')}
+                <span className="text-sm md:text-xl">📍</span>
+                <span>{t('nav.location')}</span>
               </a>
             </motion.div>
           </motion.div>
