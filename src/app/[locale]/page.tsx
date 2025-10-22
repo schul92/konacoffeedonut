@@ -198,6 +198,7 @@ export default function Home() {
             loop
             muted
             playsInline
+            preload="metadata"
             className="absolute inset-0 w-full h-full object-cover"
             style={{
               objectPosition: 'center center',
@@ -336,7 +337,7 @@ export default function Home() {
               <p className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 tracking-tight text-white">
                 📍 WAIKIKI, HAWAII
               </p>
-              <p className="text-xl md:text-2xl text-orange-300 font-bold">
+              <p className="text-xl md:text-2xl text-orange-200 font-bold">
                 2142 Kalakaua Avenue
               </p>
             </motion.div>
