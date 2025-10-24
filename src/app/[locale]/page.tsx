@@ -325,7 +325,7 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center gap-0">
           {/* Honolulu Coffee Badge */}
           <motion.div
-            className="relative inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2.5 py-1.5 md:px-8 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto max-w-[90vw] min-w-[180px]"
+            className="relative inline-flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-lg px-1.5 py-1.5 md:px-3 md:py-3 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto w-[190px] md:w-[350px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{
               opacity: 1,
@@ -515,7 +515,7 @@ export default function Home() {
 
           {/* Mochiland × Bonepi Collaboration Badge */}
           <motion.div
-            className="relative inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2.5 py-1.5 md:px-8 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto max-w-[90vw] min-w-[180px]"
+            className="relative inline-flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-lg px-1.5 py-1.5 md:px-3 md:py-3 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto w-[190px] md:w-[350px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{
               opacity: 1,
