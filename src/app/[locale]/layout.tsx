@@ -55,6 +55,8 @@ export async function generateMetadata({
       template: `%s | ${t('title')}`,
     },
     description: t('description'),
+    applicationName: 'Kona Coffee Donut',
+    referrer: 'origin-when-cross-origin',
     keywords: [
       // Location-based
       'kona coffee waikiki', 'honolulu coffee shop', 'waikiki donuts', 'kalakaua ave coffee',
@@ -123,10 +125,36 @@ export async function generateMetadata({
       canonical: `${siteUrl}/${locale}`,
       languages: {
         'en': `${siteUrl}/en`,
+        'en-US': `${siteUrl}/en`,
         'ja': `${siteUrl}/ja`,
+        'ja-JP': `${siteUrl}/ja`,
         'ko': `${siteUrl}/ko`,
+        'ko-KR': `${siteUrl}/ko`,
         'zh': `${siteUrl}/zh`,
+        'zh-CN': `${siteUrl}/zh`,
       },
+    },
+    verification: {
+      // Add your verification codes here when available
+      // google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+      // yandex: 'YOUR_YANDEX_VERIFICATION_CODE',
+      // bing: 'YOUR_BING_VERIFICATION_CODE',
+    },
+    other: {
+      // Rich Snippets
+      'og:see_also': [
+        'https://www.instagram.com/konacoffeedonut',
+        'https://www.facebook.com/konacoffeedonut',
+      ],
+      // Local Business
+      'business:contact_data:street_address': '2142 Kalakaua Ave',
+      'business:contact_data:locality': 'Honolulu',
+      'business:contact_data:region': 'HI',
+      'business:contact_data:postal_code': '96815',
+      'business:contact_data:country_name': 'United States',
+      // Place
+      'place:location:latitude': '21.2793',
+      'place:location:longitude': '-157.8294',
     },
   };
 }
@@ -185,11 +213,17 @@ export default async function LocaleLayout({
         {/* Google Verification - TODO: Add your verification code */}
         {/* <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> */}
 
+        {/* Viewport and Mobile Optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
+
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
 
         {/* Preload critical assets */}
         <link rel="preload" href="/images/background/background.jpg" as="image" type="image/jpeg" />

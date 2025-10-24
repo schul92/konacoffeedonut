@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ['', '/menu'];
   const sitemap: MetadataRoute.Sitemap = [];
 
-  // Add all routes for each locale
+  // Add all routes for each locale with enhanced metadata
   locales.forEach((locale) => {
     routes.forEach((route) => {
       sitemap.push({
@@ -22,6 +22,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
           ),
         },
       });
+    });
+  });
+
+  // Add anchor-linked sections for better SEO
+  const sections = ['#menu', '#location', '#about'];
+  sections.forEach((section) => {
+    sitemap.push({
+      url: `${baseUrl}/en${section}`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.7,
     });
   });
 

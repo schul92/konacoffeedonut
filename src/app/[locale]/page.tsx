@@ -3,10 +3,34 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
-import MapEmbed from '@/components/MapEmbed';
-import MenuSection from '@/components/MenuSection';
+
+// Dynamic imports for heavy components to improve initial page load
+// These components are below the fold and can be loaded lazily
+const MapEmbed = dynamic(() => import('@/components/MapEmbed'), {
+  loading: () => (
+    <div className="w-full h-[400px] md:h-[600px] rounded-2xl bg-gray-200 animate-pulse flex items-center justify-center">
+      <div className="text-gray-400 text-lg">Loading map...</div>
+    </div>
+  ),
+  ssr: false, // Map requires client-side only
+});
+
+const MenuSection = dynamic(() => import('@/components/MenuSection'), {
+  loading: () => (
+    <div className="py-20 md:py-32 bg-gradient-to-b from-orange-50 to-white">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8">
+        <div className="text-center mb-16">
+          <div className="h-16 bg-gray-200 animate-pulse rounded-lg mx-auto max-w-md mb-4"></div>
+          <div className="h-8 bg-gray-100 animate-pulse rounded-lg mx-auto max-w-lg"></div>
+        </div>
+      </div>
+    </div>
+  ),
+  ssr: false, // Menu section has videos and client-side interactions
+});
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
