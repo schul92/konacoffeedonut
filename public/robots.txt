@@ -1,4 +1,6 @@
-# *
+# Kona Coffee Donut - Robots.txt
+# Allow all search engines to index the website
+
 User-agent: *
 Allow: /
 
@@ -7,3 +9,14 @@ Host: https://www.konacoffeedonut.com
 
 # Sitemaps
 Sitemap: https://www.konacoffeedonut.com/sitemap.xml
+Sitemap: https://www.konacoffeedonut.com/image-sitemap.xml
+
+# Block access to build files and API routes
+Disallow: /_next/static/
+Disallow: /_next/image/
+Disallow: /api/
+
+# Allow important assets for indexing
+Allow: /images/
+Allow: /videos/
+Allow: /icons/

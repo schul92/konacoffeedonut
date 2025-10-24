@@ -63,5 +63,100 @@
   "meta": {
     "title": "Kona Coffee Donut? | Handcrafted with Aloha in Hawaii",
     "description": "Experience authentic Hawaiian coffee and artisan donuts. Made with 100% Kona coffee in collaboration with Honolulu Coffee and Mochiland."
+  },
+  "aboutKonaCoffee": {
+    "hero": {
+      "title": "What Makes Kona Coffee Special?",
+      "subtitle": "Discover why Kona coffee is considered one of the world's finest coffees, grown exclusively on the volcanic slopes of Hawaii's Big Island.",
+      "cta": "Try Our Kona Coffee"
+    },
+    "intro": {
+      "title": "The Gold Standard of Hawaiian Coffee",
+      "paragraph1": "Kona coffee is a premium 100% Hawaiian coffee grown exclusively in the Kona District on the Big Island of Hawaii. Known for its smooth, rich flavor with low acidity, Kona coffee represents less than 1% of the world's coffee production, making it one of the rarest and most sought-after coffees globally.",
+      "paragraph2": "At Kona Coffee Donut in Waikiki, we proudly serve authentic 100% Kona coffee in partnership with Honolulu Coffee, Hawaii's premier coffee roaster. Every cup delivers the genuine taste of Hawaii's coffee-growing heritage."
+    },
+    "whySpecial": {
+      "title": "Why Kona Coffee Tastes Different",
+      "growing": {
+        "title": "🌋 Perfect Growing Conditions",
+        "text": "Kona coffee thrives on the volcanic slopes of Mauna Loa and Hualalai mountains. The rich volcanic soil, combined with ideal elevation (800-2,500 feet), creates the perfect terroir for coffee cultivation. Morning sunshine, afternoon cloud cover, and mild nights create a microclimate found nowhere else on Earth."
+      },
+      "flavor": {
+        "title": "☕ Distinctive Flavor Profile",
+        "text": "Premium Kona coffee beans produce a medium-bodied brew with low acidity and a smooth finish. Expect tasting notes of brown sugar, milk chocolate, subtle fruit undertones, and a hint of nuttiness. The flavor is clean, balanced, and never bitter—perfect for both black coffee enthusiasts and those who prefer cream and sugar."
+      },
+      "handPicked": {
+        "title": "👨‍🌾 Hand-Picked & Small-Batch",
+        "text": "Unlike mass-produced commercial coffee, Kona coffee cherries are hand-picked at peak ripeness by local farmers. This labor-intensive process ensures only the best cherries make it to your cup. Small family farms dominate Kona coffee production, maintaining generations of coffee-growing expertise."
+      },
+      "origin": {
+        "title": "🏝️ 100% Hawaiian Origin",
+        "text": "True Kona coffee must be grown in the Kona District to carry the name. The \"100% Kona Coffee\" label is protected, ensuring authenticity. Beware of \"Kona blends\" that may contain as little as 10% actual Kona beans—at our Waikiki location, we serve only genuine 100% Kona coffee."
+      }
+    },
+    "comparison": {
+      "title": "Kona Coffee vs. Other Premium Coffees",
+      "coffeeType": "Coffee Type",
+      "flavor": "Flavor",
+      "acidity": "Acidity",
+      "kona": {
+        "name": "100% Kona Coffee",
+        "flavor": "Smooth, balanced, chocolate notes",
+        "acidity": "Low"
+      },
+      "colombian": {
+        "name": "Colombian Coffee",
+        "flavor": "Bright, fruity, caramel",
+        "acidity": "Medium-High"
+      },
+      "ethiopian": {
+        "name": "Ethiopian Coffee",
+        "flavor": "Floral, wine-like, berry",
+        "acidity": "High"
+      },
+      "brazilian": {
+        "name": "Brazilian Coffee",
+        "flavor": "Nutty, chocolatey, heavy body",
+        "acidity": "Low"
+      },
+      "note": "Kona coffee's low acidity makes it ideal for those with sensitive stomachs while maintaining complex flavor development."
+    },
+    "experience": {
+      "title": "Experience Authentic Kona Coffee in Waikiki",
+      "paragraph1": "Located in the heart of Waikiki at 2142 Kalakaua Ave, Kona Coffee Donut is your destination for genuine 100% Kona coffee paired with artisan mochi donuts from MOCHILAND. We partner with Honolulu Coffee, Hawaii's most trusted name in premium Kona coffee since 1992.",
+      "whyChoose": {
+        "title": "Why Choose Our Kona Coffee?",
+        "point1": "100% certified Kona coffee beans—no blends, no compromises",
+        "point2": "Freshly brewed daily using traditional Hawaiian roasting methods",
+        "point3": "Perfect pairing with our artisan mochi donuts and malasadas",
+        "point4": "Convenient Waikiki location—open daily 7 AM to 9 PM"
+      },
+      "cta": "Visit Us in Waikiki"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions About Kona Coffee",
+      "q1": {
+        "question": "Is Kona coffee worth the price?",
+        "answer": "Yes! Kona coffee's premium price reflects its limited production, hand-picking process, and exceptional quality. With less than 1% of global coffee production, genuine 100% Kona coffee offers a unique taste experience you can't find elsewhere."
+      },
+      "q2": {
+        "question": "What's the difference between \"Kona blend\" and \"100% Kona\"?",
+        "answer": "\"Kona blend\" may contain as little as 10% actual Kona beans mixed with cheaper coffees. Always look for \"100% Kona Coffee\" to ensure you're getting authentic Hawaiian Kona beans. At Kona Coffee Donut, we serve only 100% Kona coffee."
+      },
+      "q3": {
+        "question": "How should I brew Kona coffee at home?",
+        "answer": "Pour-over, French press, or drip methods all work beautifully with Kona coffee. Use water just below boiling (195-205°F) and a medium grind. The coffee-to-water ratio should be about 1:16 for optimal flavor extraction."
+      },
+      "q4": {
+        "question": "Can I buy Kona coffee beans to take home?",
+        "answer": "Absolutely! Visit us at our Waikiki location to purchase freshly roasted Kona coffee beans. We offer various roast levels and package sizes—perfect for gifts or bringing a taste of Hawaii home with you."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Experience Hawaii's Best Coffee?",
+      "subtitle": "Visit Kona Coffee Donut in Waikiki and taste the difference that 100% Kona coffee makes.",
+      "viewMenu": "View Our Menu",
+      "getDirections": "Get Directions"
+    }
   }
 }
