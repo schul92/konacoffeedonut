@@ -83,8 +83,8 @@ export default function Home() {
     setIsPlaying(!isPlaying);
 
     // Track video interaction
-    if (typeof window !== 'undefined' && (window as any).trackEvent) {
-      (window as any).trackEvent('video_interaction', {
+    if (typeof window !== 'undefined' && window.trackEvent) {
+      window.trackEvent('video_interaction', {
         action: isPlaying ? 'pause' : 'play',
         video_id: `waikiki_${currentVideo}`,
         location: 'hero_section',
@@ -103,8 +103,8 @@ export default function Home() {
     }, 300);
 
     // Track video switch
-    if (typeof window !== 'undefined' && (window as any).trackEvent) {
-      (window as any).trackEvent('video_switch', {
+    if (typeof window !== 'undefined' && window.trackEvent) {
+      window.trackEvent('video_switch', {
         from_video: currentVideo,
         to_video: videoNumber,
         method: 'manual',
@@ -177,8 +177,8 @@ export default function Home() {
                 href="#menu"
                 className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
-                    (window as any).trackEvent('navigation_click', { section: 'menu', device: 'desktop' });
+                  if (typeof window !== 'undefined' && window.trackEvent) {
+                    window.trackEvent('navigation_click', { section: 'menu', device: 'desktop' });
                   }
                 }}
               >
@@ -188,8 +188,8 @@ export default function Home() {
                 href="#location"
                 className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
-                    (window as any).trackEvent('navigation_click', { section: 'location', device: 'desktop' });
+                  if (typeof window !== 'undefined' && window.trackEvent) {
+                    window.trackEvent('navigation_click', { section: 'location', device: 'desktop' });
                   }
                 }}
               >
@@ -199,8 +199,8 @@ export default function Home() {
                 href="#about"
                 className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
-                    (window as any).trackEvent('navigation_click', { section: 'about', device: 'desktop' });
+                  if (typeof window !== 'undefined' && window.trackEvent) {
+                    window.trackEvent('navigation_click', { section: 'about', device: 'desktop' });
                   }
                 }}
               >
@@ -265,8 +265,8 @@ export default function Home() {
                 href="#menu"
                 className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
-                    (window as any).trackEvent('navigation_click', { section: 'menu', device: 'mobile' });
+                  if (typeof window !== 'undefined' && window.trackEvent) {
+                    window.trackEvent('navigation_click', { section: 'menu', device: 'mobile' });
                   }
                   setMenuOpen(false);
                 }}
@@ -277,8 +277,8 @@ export default function Home() {
                 href="#location"
                 className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
-                    (window as any).trackEvent('navigation_click', { section: 'location', device: 'mobile' });
+                  if (typeof window !== 'undefined' && window.trackEvent) {
+                    window.trackEvent('navigation_click', { section: 'location', device: 'mobile' });
                   }
                   setMenuOpen(false);
                 }}
@@ -289,8 +289,8 @@ export default function Home() {
                 href="#about"
                 className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).trackEvent) {
-                    (window as any).trackEvent('navigation_click', { section: 'about', device: 'mobile' });
+                  if (typeof window !== 'undefined' && window.trackEvent) {
+                    window.trackEvent('navigation_click', { section: 'about', device: 'mobile' });
                   }
                   setMenuOpen(false);
                 }}

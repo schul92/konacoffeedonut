@@ -29,8 +29,8 @@ export default function LanguageSwitcher() {
 
   const switchLanguage = (newLocale: string) => {
     // Track language change
-    if (typeof window !== 'undefined' && (window as any).trackEvent) {
-      (window as any).trackEvent('language_change', {
+    if (typeof window !== 'undefined' && window.trackEvent) {
+      window.trackEvent('language_change', {
         from_language: locale,
         to_language: newLocale,
         page: pathname,

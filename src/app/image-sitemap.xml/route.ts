@@ -1,5 +1,3 @@
-import { locales } from '@/i18n';
-
 export async function GET() {
   const baseUrl = 'https://www.konacoffeedonut.com';
 

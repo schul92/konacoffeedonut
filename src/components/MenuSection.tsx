@@ -36,8 +36,8 @@ export default function MenuSection() {
     setModalOpen(true);
 
     // Track menu view
-    if (typeof window !== 'undefined' && (window as any).trackEvent) {
-      (window as any).trackEvent('view_menu', {
+    if (typeof window !== 'undefined' && window.trackEvent) {
+      window.trackEvent('view_menu', {
         menu_category: title,
         interaction_type: 'modal_open',
       });
@@ -288,6 +288,7 @@ export default function MenuSection() {
                     WebkitOverflowScrolling: 'touch'
                   }}
                 >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={currentMenu.image}
                     alt={currentMenu.title}
