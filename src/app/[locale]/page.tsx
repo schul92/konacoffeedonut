@@ -175,7 +175,7 @@ export default function Home() {
             <div className="flex gap-6 lg:gap-8 text-sm lg:text-base">
               <motion.a
                 href="#menu"
-                className="relative text-gray-900 font-semibold transition-colors group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
                 style={{ cursor: 'pointer' }}
                 whileHover={{ scale: 1.05, cursor: 'pointer' }}
                 whileTap={{ scale: 0.95 }}
@@ -199,7 +199,7 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="#location"
-                className="relative text-gray-900 font-semibold transition-colors group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
                 style={{ cursor: 'pointer' }}
                 whileHover={{ scale: 1.05, cursor: 'pointer' }}
                 whileTap={{ scale: 0.95 }}
@@ -223,7 +223,7 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="#about"
-                className="relative text-gray-900 font-semibold transition-colors group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
                 style={{ cursor: 'pointer' }}
                 whileHover={{ scale: 1.05, cursor: 'pointer' }}
                 whileTap={{ scale: 0.95 }}
@@ -302,7 +302,7 @@ export default function Home() {
             <div className="px-4 py-3 space-y-1">
               <motion.a
                 href="#menu"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all group overflow-hidden"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
                 style={{ cursor: 'pointer' }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => {
@@ -329,7 +329,7 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="#location"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all group overflow-hidden"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
                 style={{ cursor: 'pointer' }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => {
@@ -356,7 +356,7 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="#about"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all group overflow-hidden"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
                 style={{ cursor: 'pointer' }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => {
