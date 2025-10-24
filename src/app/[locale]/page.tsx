@@ -175,8 +175,9 @@ export default function Home() {
             <div className="flex gap-6 lg:gap-8 text-sm lg:text-base">
               <motion.a
                 href="#menu"
-                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group"
-                whileHover={{ scale: 1.05 }}
+                className="relative text-gray-900 font-semibold transition-colors group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                style={{ cursor: 'pointer' }}
+                whileHover={{ scale: 1.05, cursor: 'pointer' }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
@@ -184,7 +185,7 @@ export default function Home() {
                   }
                 }}
               >
-                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   Menu
                 </span>
                 <motion.div
@@ -198,8 +199,9 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="#location"
-                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group"
-                whileHover={{ scale: 1.05 }}
+                className="relative text-gray-900 font-semibold transition-colors group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                style={{ cursor: 'pointer' }}
+                whileHover={{ scale: 1.05, cursor: 'pointer' }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
@@ -207,7 +209,7 @@ export default function Home() {
                   }
                 }}
               >
-                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   Location
                 </span>
                 <motion.div
@@ -221,8 +223,9 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="#about"
-                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group"
-                whileHover={{ scale: 1.05 }}
+                className="relative text-gray-900 font-semibold transition-colors group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                style={{ cursor: 'pointer' }}
+                whileHover={{ scale: 1.05, cursor: 'pointer' }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
@@ -230,7 +233,7 @@ export default function Home() {
                   }
                 }}
               >
-                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   About
                 </span>
                 <motion.div
@@ -299,7 +302,8 @@ export default function Home() {
             <div className="px-4 py-3 space-y-1">
               <motion.a
                 href="#menu"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all group overflow-hidden"
+                style={{ cursor: 'pointer' }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
@@ -314,7 +318,7 @@ export default function Home() {
                   whileHover={{ x: 0 }}
                   transition={{ duration: 0.3 }}
                 />
-                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   Menu
                 </span>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -325,7 +329,8 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="#location"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all group overflow-hidden"
+                style={{ cursor: 'pointer' }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
@@ -340,7 +345,7 @@ export default function Home() {
                   whileHover={{ x: 0 }}
                   transition={{ duration: 0.3 }}
                 />
-                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   Location
                 </span>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -351,7 +356,8 @@ export default function Home() {
               </motion.a>
               <motion.a
                 href="#about"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all group overflow-hidden"
+                style={{ cursor: 'pointer' }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
@@ -366,7 +372,7 @@ export default function Home() {
                   whileHover={{ x: 0 }}
                   transition={{ duration: 0.3 }}
                 />
-                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   About
                 </span>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
