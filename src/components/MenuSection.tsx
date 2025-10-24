@@ -20,7 +20,7 @@ const menuItems: MenuItem[] = [
   { id: 'coffee', menuImage: '/images/menu/coffee.jpeg', video: '/videos/coffee.mp4', iconImage: '/icons/honolulu_coffee.webp' },
   { id: 'bingsu', menuImage: '/images/menu/bingsu.jpeg', video: '/videos/bingsu.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'hotdog', menuImage: '/images/menu/hotdog.jpeg', video: '/videos/hotdog.mp4', iconImage: '/icons/mochi_land_circle.png' },
-  { id: 'acai', menuImage: '/images/menu/acai.jpeg', video: '/videos/acai.mp4', iconImage: '/icons/honolulu_coffee.webp' },
+  { id: 'acai', menuImage: '/images/menu/acai.jpeg', video: '/videos/acai.mp4', iconImage: '/icons/mochi_land_circle.png' },
 ];
 
 export default function MenuSection() {
