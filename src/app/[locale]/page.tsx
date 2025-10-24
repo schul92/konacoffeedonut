@@ -325,7 +325,7 @@ export default function Home() {
         <div className="relative z-10 flex flex-col items-center gap-0">
           {/* Honolulu Coffee Badge */}
           <motion.div
-            className="relative inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2.5 py-1.5 md:px-8 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto max-w-[90vw]"
+            className="relative inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2.5 py-1.5 md:px-8 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto max-w-[90vw] min-w-[180px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{
               opacity: 1,
@@ -515,7 +515,7 @@ export default function Home() {
 
           {/* Mochiland × Bonepi Collaboration Badge */}
           <motion.div
-            className="relative inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2 py-1.5 md:px-6 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto max-w-[90vw]"
+            className="relative inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2.5 py-1.5 md:px-8 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto max-w-[90vw] min-w-[180px]"
             initial={{ opacity: 0, y: 20 }}
             animate={{
               opacity: 1,
@@ -595,7 +595,7 @@ export default function Home() {
               </motion.span>
             </div>
             <p className="text-pink-500 font-semibold text-[8px] md:text-sm">
-              Artisan Mochi Donuts × Kawaii Culture
+              Artisan Mochi Donuts
             </p>
           </div>
         </motion.div>
