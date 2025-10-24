@@ -321,75 +321,285 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* Honolulu Coffee Badge */}
-        <motion.div
-          className="relative z-10 inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2.5 py-1.5 md:px-8 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-4 max-w-[90vw]"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            opacity: { delay: 0.3, duration: 0.6 },
-            y: { delay: 0.3, duration: 0.6 }
-          }}
-        >
-          {/* Logo with Glow Effect */}
+        {/* Collaboration Container with Enhanced Fusion Effect */}
+        <div className="relative z-10 flex flex-col items-center gap-0">
+          {/* Honolulu Coffee Badge */}
           <motion.div
-            className="relative w-8 h-8 md:w-16 md:h-16 flex-shrink-0 bg-white rounded-md md:rounded-xl p-0.5 md:p-2 shadow-lg"
+            className="relative inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2.5 py-1.5 md:px-8 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto max-w-[90vw]"
+            initial={{ opacity: 0, y: 20 }}
             animate={{
-              boxShadow: [
-                "0 5px 15px rgba(251, 146, 60, 0.3)",
-                "0 8px 25px rgba(251, 146, 60, 0.5)",
-                "0 5px 15px rgba(251, 146, 60, 0.3)",
-              ]
+              opacity: 1,
+              y: 0,
+            }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 20px 40px rgba(251, 146, 60, 0.3)",
+              borderColor: "rgba(251, 146, 60, 0.5)",
             }}
             transition={{
-              duration: 2.5,
-              repeat: Infinity,
-              ease: "easeInOut"
+              opacity: { delay: 0.3, duration: 0.6 },
+              y: { delay: 0.3, duration: 0.6 },
+              scale: { duration: 0.3 },
+              boxShadow: { duration: 0.3 }
             }}
           >
-            <Image
-              src="/icons/honolulu_coffee.webp"
-              alt="Honolulu Coffee"
-              fill
-              className="object-contain p-0.5"
-            />
+            {/* Logo with Glow Effect */}
+            <motion.div
+              className="relative w-8 h-8 md:w-16 md:h-16 flex-shrink-0 bg-white rounded-md md:rounded-xl p-0.5 md:p-2 shadow-lg"
+              animate={{
+                boxShadow: [
+                  "0 5px 15px rgba(251, 146, 60, 0.3)",
+                  "0 8px 25px rgba(251, 146, 60, 0.5)",
+                  "0 5px 15px rgba(251, 146, 60, 0.3)",
+                ]
+              }}
+              whileHover={{
+                rotate: [0, -5, 5, -5, 0],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                rotate: { duration: 0.5 }
+              }}
+            >
+              <Image
+                src="/icons/honolulu_coffee.webp"
+                alt="Honolulu Coffee"
+                fill
+                className="object-contain p-0.5"
+              />
+            </motion.div>
+
+            {/* Text Content */}
+            <div className="text-left">
+              <p className="text-gray-600 font-medium text-[8px] md:text-sm mb-0 md:mb-0.5 tracking-wide">
+                PROUDLY SERVING
+              </p>
+              <p className="font-black text-xs md:text-2xl tracking-tight leading-tight text-orange-500">
+                <motion.span
+                  animate={{
+                    scale: [1, 1.05, 1],
+                    filter: [
+                      "drop-shadow(0 0 0px rgba(251, 146, 60, 0))",
+                      "drop-shadow(0 0 4px rgba(251, 146, 60, 0.6))",
+                      "drop-shadow(0 0 0px rgba(251, 146, 60, 0))",
+                    ]
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  style={{ display: 'inline-block' }}
+                  className="text-orange-500"
+                >
+                  HONOLULU
+                </motion.span>{' '}
+                <span>COFFEE</span>
+              </p>
+              <p className="text-orange-500 font-semibold text-[8px] md:text-sm">
+                100% Premium Kona Beans
+              </p>
+            </div>
           </motion.div>
 
-          {/* Text Content */}
-          <div className="text-left">
-            <p className="text-gray-600 font-medium text-[8px] md:text-sm mb-0 md:mb-0.5 tracking-wide">
-              PROUDLY SERVING
-            </p>
-            <p className="font-black text-xs md:text-2xl tracking-tight leading-tight text-orange-500">
-              <motion.span
+          {/* Enhanced Fusion Animation - Connecting Element */}
+          <div className="relative w-full h-6 md:h-8 flex items-center justify-center my-1">
+            {/* Animated Gradient Line */}
+            <motion.div
+              className="absolute w-px h-full bg-gradient-to-b from-orange-400 via-pink-400 to-pink-500"
+              initial={{ scaleY: 0, opacity: 0 }}
+              animate={{
+                scaleY: 1,
+                opacity: [0.4, 0.7, 0.4]
+              }}
+              transition={{
+                scaleY: { delay: 0.6, duration: 0.4 },
+                opacity: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+              }}
+            />
+
+            {/* Multiple Flowing Particles */}
+            {[...Array(5)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute w-1 h-1 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full"
                 animate={{
-                  scale: [1, 1.05, 1],
-                  filter: [
-                    "drop-shadow(0 0 0px rgba(251, 146, 60, 0))",
-                    "drop-shadow(0 0 4px rgba(251, 146, 60, 0.6))",
-                    "drop-shadow(0 0 0px rgba(251, 146, 60, 0))",
-                  ]
+                  y: ['-50%', '50%'],
+                  opacity: [0, 1, 0],
+                  scale: [0.3, 1, 0.3],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  delay: i * 0.4 + 0.7,
+                  ease: "easeInOut"
+                }}
+              />
+            ))}
+
+            {/* Modern × Symbol with Enhanced Glassmorphism */}
+            <motion.div
+              className="relative z-10 bg-white/90 backdrop-blur-md rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center shadow-lg border border-white/60"
+              initial={{ scale: 0 }}
+              animate={{
+                scale: 1,
+                y: [0, -2, 0]
+              }}
+              whileHover={{
+                scale: 1.3,
+                borderColor: "rgba(251, 146, 60, 0.6)",
+                boxShadow: "0 8px 30px rgba(251, 146, 60, 0.4)"
+              }}
+              transition={{
+                scale: { delay: 0.7, duration: 0.4, type: 'spring', stiffness: 200 },
+                y: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+              }}
+            >
+              {/* Enhanced Pulse Effect */}
+              <motion.div
+                className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-300/40 to-pink-300/40"
+                animate={{
+                  scale: [1, 1.2, 1],
+                  opacity: [0.3, 0.6, 0.3],
                 }}
                 transition={{
                   duration: 2,
                   repeat: Infinity,
                   ease: "easeInOut"
                 }}
-                style={{ display: 'inline-block' }}
-                className="text-orange-500"
+              />
+              <motion.span
+                className="relative text-sm md:text-lg font-black bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent"
+                animate={{
+                  rotate: [0, 360],
+                  scale: [1, 1.15, 1]
+                }}
+                transition={{
+                  rotate: { duration: 10, repeat: Infinity, ease: "linear" },
+                  scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+                }}
               >
-                HONOLULU
-              </motion.span>{' '}
-              <span>COFFEE</span>
+                ×
+              </motion.span>
+            </motion.div>
+
+            {/* Dual Energy Rings with Stagger */}
+            <motion.div
+              className="absolute w-8 h-8 md:w-12 md:h-12 border border-orange-300/25 rounded-full"
+              animate={{
+                scale: [1, 1.4],
+                opacity: [0.5, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeOut"
+              }}
+            />
+            <motion.div
+              className="absolute w-8 h-8 md:w-12 md:h-12 border border-pink-300/25 rounded-full"
+              animate={{
+                scale: [1, 1.4],
+                opacity: [0.5, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeOut",
+                delay: 1
+              }}
+            />
+          </div>
+
+          {/* Mochiland × Bonepi Collaboration Badge */}
+          <motion.div
+            className="relative inline-flex items-center gap-1.5 md:gap-4 bg-white/90 backdrop-blur-lg px-2 py-1.5 md:px-6 md:py-4 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto max-w-[90vw]"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 20px 40px rgba(236, 72, 153, 0.3)",
+              borderColor: "rgba(236, 72, 153, 0.5)",
+            }}
+            transition={{
+              opacity: { delay: 0.5, duration: 0.6 },
+              y: { delay: 0.5, duration: 0.6 },
+              scale: { duration: 0.3 },
+              boxShadow: { duration: 0.3 }
+            }}
+          >
+          {/* Bonepi Logo with Glow Effect */}
+          <motion.div
+            className="relative w-8 h-8 md:w-16 md:h-16 flex-shrink-0 bg-white rounded-md md:rounded-xl p-0.5 md:p-2 shadow-lg overflow-hidden"
+            animate={{
+              boxShadow: [
+                "0 5px 15px rgba(236, 72, 153, 0.3)",
+                "0 8px 25px rgba(236, 72, 153, 0.5)",
+                "0 5px 15px rgba(236, 72, 153, 0.3)",
+              ]
+            }}
+            whileHover={{
+              rotate: [0, -5, 5, -5, 0],
+            }}
+            transition={{
+              duration: 2.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.5,
+              rotate: { duration: 0.5 }
+            }}
+          >
+            <Image
+              src="/icons/bonepi.jpeg"
+              alt="Bonepi"
+              fill
+              className="object-cover rounded"
+            />
+          </motion.div>
+
+          {/* Text Content */}
+          <div className="text-left">
+            <p className="text-gray-600 font-medium text-[8px] md:text-sm mb-0 md:mb-0.5 tracking-wide">
+              COLLABORATION WITH
             </p>
-            <p className="text-orange-500 font-semibold text-[8px] md:text-sm">
-              100% Premium Kona Beans
+            <div className="font-black text-xs md:text-2xl tracking-tight leading-tight">
+              <motion.span
+                animate={{
+                  scale: [1, 1.05, 1],
+                  filter: [
+                    "drop-shadow(0 0 0px rgba(236, 72, 153, 0))",
+                    "drop-shadow(0 0 4px rgba(236, 72, 153, 0.6))",
+                    "drop-shadow(0 0 0px rgba(236, 72, 153, 0))",
+                  ]
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.3
+                }}
+                style={{ display: 'inline-block' }}
+              >
+                <Image
+                  src="/icons/mochiland.png"
+                  alt="MOCHILAND"
+                  width={240}
+                  height={60}
+                  className="h-4 md:h-8 w-auto inline-block"
+                />
+              </motion.span>
+            </div>
+            <p className="text-pink-500 font-semibold text-[8px] md:text-sm">
+              Artisan Mochi Donuts × Kawaii Culture
             </p>
           </div>
         </motion.div>
+        </div>
 
         {/* Movie Theater Video Box - Smart Responsive Layout */}
         <motion.div
