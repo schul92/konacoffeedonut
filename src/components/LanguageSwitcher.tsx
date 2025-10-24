@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { locales } from '@/i18n';
 import { useState, useEffect, useRef } from 'react';
 import { Globe, ChevronDown } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const languageNames: Record<string, string> = {
   en: 'English',
@@ -64,23 +65,32 @@ export default function LanguageSwitcher() {
   return (
     <div className="relative z-[100]" ref={dropdownRef}>
       {/* Mobile & Desktop Button */}
-      <button
+      <motion.button
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();
           setIsOpen(!isOpen);
         }}
-        className="flex items-center gap-2 px-3 md:px-4 py-2.5 rounded-lg md:rounded-xl bg-white md:bg-transparent hover:bg-gray-100 transition-all text-sm md:text-base font-medium border border-gray-200 md:border-transparent shadow-sm md:shadow-none active:scale-95 min-h-[44px] touch-manipulation"
+        className="relative flex items-center gap-2 px-3 md:px-4 py-2.5 rounded-lg md:rounded-xl bg-white md:bg-transparent hover:bg-orange-50 transition-all text-sm md:text-base font-medium border border-gray-200 md:border-orange-200 shadow-sm md:shadow-none min-h-[44px] touch-manipulation cursor-pointer group overflow-hidden"
         aria-label="Change language"
         aria-expanded={isOpen}
         type="button"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        <Globe className="w-5 h-5 text-orange-500 flex-shrink-0" />
-        <span className="hidden md:inline">{languageNames[locale]}</span>
-        <ChevronDown
-          className={`w-4 h-4 flex-shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+        {/* Animated background gradient */}
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-r from-orange-50 to-amber-50"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileHover={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
         />
-      </button>
+        <Globe className="w-5 h-5 text-orange-500 flex-shrink-0 relative z-10 group-hover:rotate-12 transition-transform" />
+        <span className="hidden md:inline relative z-10 group-hover:text-orange-600 transition-colors">{languageNames[locale]}</span>
+        <ChevronDown
+          className={`w-4 h-4 flex-shrink-0 transition-all duration-200 relative z-10 group-hover:text-orange-600 ${isOpen ? 'rotate-180' : ''}`}
+        />
+      </motion.button>
 
       {/* Dropdown Menu */}
       {isOpen && (

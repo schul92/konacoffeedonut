@@ -173,39 +173,75 @@ export default function Home() {
           <div className="hidden md:grid grid-cols-3 items-center">
             {/* Left: Menu & About Links */}
             <div className="flex gap-6 lg:gap-8 text-sm lg:text-base">
-              <a
+              <motion.a
                 href="#menu"
-                className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'menu', device: 'desktop' });
                   }
                 }}
               >
-                Menu
-              </a>
-              <a
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                  Menu
+                </span>
+                <motion.div
+                  className="absolute inset-0 bg-orange-50 rounded-lg -z-0"
+                  initial={{ scaleX: 0, opacity: 0 }}
+                  whileHover={{ scaleX: 1, opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                  style={{ originX: 0 }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </motion.a>
+              <motion.a
                 href="#location"
-                className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'location', device: 'desktop' });
                   }
                 }}
               >
-                Location
-              </a>
-              <a
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                  Location
+                </span>
+                <motion.div
+                  className="absolute inset-0 bg-orange-50 rounded-lg -z-0"
+                  initial={{ scaleX: 0, opacity: 0 }}
+                  whileHover={{ scaleX: 1, opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                  style={{ originX: 0 }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </motion.a>
+              <motion.a
                 href="#about"
-                className="text-gray-900 font-semibold hover:text-orange-500 transition-colors"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'about', device: 'desktop' });
                   }
                 }}
               >
-                About
-              </a>
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                  About
+                </span>
+                <motion.div
+                  className="absolute inset-0 bg-orange-50 rounded-lg -z-0"
+                  initial={{ scaleX: 0, opacity: 0 }}
+                  whileHover={{ scaleX: 1, opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                  style={{ originX: 0 }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </motion.a>
             </div>
 
             {/* Center: Logo (converts to ? when scrolled) */}
@@ -261,9 +297,10 @@ export default function Home() {
             className="md:hidden bg-white border-t border-gray-100"
           >
             <div className="px-4 py-3 space-y-1">
-              <a
+              <motion.a
                 href="#menu"
-                className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                whileTap={{ scale: 0.98 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'menu', device: 'mobile' });
@@ -271,11 +308,25 @@ export default function Home() {
                   setMenuOpen(false);
                 }}
               >
-                Menu
-              </a>
-              <a
+                <motion.div
+                  className="absolute inset-0 bg-orange-50"
+                  initial={{ x: '-100%' }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                  Menu
+                </span>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </motion.a>
+              <motion.a
                 href="#location"
-                className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                whileTap={{ scale: 0.98 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'location', device: 'mobile' });
@@ -283,11 +334,25 @@ export default function Home() {
                   setMenuOpen(false);
                 }}
               >
-                Location
-              </a>
-              <a
+                <motion.div
+                  className="absolute inset-0 bg-orange-50"
+                  initial={{ x: '-100%' }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                  Location
+                </span>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </motion.a>
+              <motion.a
                 href="#about"
-                className="block py-3 px-4 text-gray-900 font-semibold hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors"
+                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                whileTap={{ scale: 0.98 }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'about', device: 'mobile' });
@@ -295,8 +360,21 @@ export default function Home() {
                   setMenuOpen(false);
                 }}
               >
-                About
-              </a>
+                <motion.div
+                  className="absolute inset-0 bg-orange-50"
+                  initial={{ x: '-100%' }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors">
+                  About
+                </span>
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </motion.a>
             </div>
           </motion.div>
         )}
