@@ -173,17 +173,17 @@ export default function Home() {
           <div className="hidden md:grid grid-cols-3 items-center">
             {/* Left: Menu & About Links */}
             <div className="flex gap-6 lg:gap-8 text-sm lg:text-base">
-              <motion.a
-                href="#menu"
-                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
-                style={{ cursor: 'pointer' }}
-                whileHover={{ scale: 1.05, cursor: 'pointer' }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => {
+              <motion.button
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' });
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'menu', device: 'desktop' });
                   }
                 }}
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   Menu
@@ -196,18 +196,18 @@ export default function Home() {
                   style={{ originX: 0 }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              </motion.a>
-              <motion.a
-                href="#location"
-                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
-                style={{ cursor: 'pointer' }}
-                whileHover={{ scale: 1.05, cursor: 'pointer' }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => {
+              </motion.button>
+              <motion.button
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('location')?.scrollIntoView({ behavior: 'smooth' });
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'location', device: 'desktop' });
                   }
                 }}
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   Location
@@ -220,18 +220,18 @@ export default function Home() {
                   style={{ originX: 0 }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              </motion.a>
-              <motion.a
-                href="#about"
-                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
-                style={{ cursor: 'pointer' }}
-                whileHover={{ scale: 1.05, cursor: 'pointer' }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => {
+              </motion.button>
+              <motion.button
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'about', device: 'desktop' });
                   }
                 }}
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   About
@@ -244,7 +244,7 @@ export default function Home() {
                   style={{ originX: 0 }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              </motion.a>
+              </motion.button>
             </div>
 
             {/* Center: Logo (converts to ? when scrolled) */}
@@ -300,17 +300,17 @@ export default function Home() {
             className="md:hidden bg-white border-t border-gray-100"
           >
             <div className="px-4 py-3 space-y-1">
-              <motion.a
-                href="#menu"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
-                style={{ cursor: 'pointer' }}
-                whileTap={{ scale: 0.98 }}
-                onClick={() => {
+              <motion.button
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' });
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'menu', device: 'mobile' });
                   }
                   setMenuOpen(false);
                 }}
+                className="relative block py-3 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                whileTap={{ scale: 0.98 }}
               >
                 <motion.div
                   className="absolute inset-0 bg-orange-50"
@@ -326,18 +326,18 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
-              </motion.a>
-              <motion.a
-                href="#location"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
-                style={{ cursor: 'pointer' }}
-                whileTap={{ scale: 0.98 }}
-                onClick={() => {
+              </motion.button>
+              <motion.button
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('location')?.scrollIntoView({ behavior: 'smooth' });
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'location', device: 'mobile' });
                   }
                   setMenuOpen(false);
                 }}
+                className="relative block py-3 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                whileTap={{ scale: 0.98 }}
               >
                 <motion.div
                   className="absolute inset-0 bg-orange-50"
@@ -353,18 +353,18 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
-              </motion.a>
-              <motion.a
-                href="#about"
-                className="relative block py-3 px-4 text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
-                style={{ cursor: 'pointer' }}
-                whileTap={{ scale: 0.98 }}
-                onClick={() => {
+              </motion.button>
+              <motion.button
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
                   if (typeof window !== 'undefined' && window.trackEvent) {
                     window.trackEvent('navigation_click', { section: 'about', device: 'mobile' });
                   }
                   setMenuOpen(false);
                 }}
+                className="relative block py-3 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                whileTap={{ scale: 0.98 }}
               >
                 <motion.div
                   className="absolute inset-0 bg-orange-50"
@@ -380,7 +380,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
-              </motion.a>
+              </motion.button>
             </div>
           </motion.div>
         )}
