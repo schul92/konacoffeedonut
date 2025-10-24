@@ -15,11 +15,11 @@ export default function StructuredData({ locale }: StructuredDataProps) {
   // Local Business Schema
   const localBusinessSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Restaurant',
+    '@type': ['Restaurant', 'CafeOrCoffeeShop', 'Bakery'],
     '@id': 'https://www.konacoffeedonut.com/#restaurant',
-    name: 'Kona Coffee Donut',
-    alternateName: 'MOCHILAND x Honolulu Coffee',
-    description: 'Authentic Hawaiian coffee and artisan mochi donuts. Featuring MOCHILAND and Honolulu Coffee in Waikiki.',
+    name: 'Kona Coffee Donut - Waikiki',
+    alternateName: ['MOCHILAND x Honolulu Coffee', 'Kona Coffee Donut Waikiki', 'Kona Coffee Honolulu'],
+    description: 'Best Kona coffee and mochi donuts in Waikiki, Honolulu. Featuring 100% Kona coffee by Honolulu Coffee and artisan mochi donuts by MOCHILAND. Perfect for tourists visiting Hawaii.',
     image: 'https://www.konacoffeedonut.com/og-image.jpg',
     url: `https://www.konacoffeedonut.com/${locale}`,
     telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
@@ -62,7 +62,47 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'Takeout',
         value: true,
       },
+      {
+        '@type': 'LocationFeatureSpecification',
+        name: 'Outdoor Seating',
+        value: true,
+      },
+      {
+        '@type': 'LocationFeatureSpecification',
+        name: 'Tourist Friendly',
+        value: true,
+      },
+      {
+        '@type': 'LocationFeatureSpecification',
+        name: 'Multilingual Staff',
+        value: true,
+      },
+      {
+        '@type': 'LocationFeatureSpecification',
+        name: 'Walking Distance from Waikiki Beach',
+        value: true,
+      },
     ],
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Honolulu',
+      },
+      {
+        '@type': 'State',
+        name: 'Hawaii',
+      },
+      {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: 21.2793,
+          longitude: -157.8294,
+        },
+        geoRadius: '5000',
+      },
+    ],
+    keywords: 'kona coffee waikiki, coffee near me, donuts near me, mochi donuts hawaii, best coffee waikiki, honolulu coffee, waikiki breakfast, tourist cafe waikiki, kalakaua ave coffee, hawaii coffee shop',
     sameAs: [
       'https://www.instagram.com/konacoffeedonut',
       'https://www.facebook.com/konacoffeedonut',
