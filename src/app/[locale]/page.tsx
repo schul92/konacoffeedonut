@@ -1249,12 +1249,18 @@ export default function Home() {
                   {t('about.konaStory')}
                 </p>
                 <motion.div
-                  className="flex justify-center gap-4 text-4xl"
+                  className="flex justify-center gap-4 text-4xl mb-6"
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
                 >
                   🌺 🏝️ ☀️
                 </motion.div>
+                <Link
+                  href={`/${locale}/about-kona-coffee`}
+                  className="inline-block w-full text-center bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 text-white font-bold px-6 py-3 rounded-full transition-all shadow-lg hover:shadow-xl"
+                >
+                  Learn More About Kona Coffee →
+                </Link>
               </div>
             </motion.div>
           </div>

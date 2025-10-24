@@ -58,14 +58,20 @@ export async function generateMetadata({
     applicationName: 'Kona Coffee Donut',
     referrer: 'origin-when-cross-origin',
     keywords: [
+      // Kona Coffee - Primary Keywords
+      'kona coffee', '100% kona coffee', 'authentic kona coffee', 'hawaiian kona coffee',
+      'premium kona coffee', 'kona coffee beans', 'kona coffee waikiki',
+      'best kona coffee hawaii', 'where to buy kona coffee', 'kona coffee near me',
       // Location-based
       'kona coffee waikiki', 'honolulu coffee shop', 'waikiki donuts', 'kalakaua ave coffee',
       'hawaii coffee and donuts', 'oahu coffee shop', 'waikiki cafe',
       // Product-based
-      'kona coffee', '100% kona coffee', 'premium kona beans', 'honolulu coffee',
-      'mochi donuts', 'artisanal donuts', 'mochiland', 'bonepi mochiland',
+      'honolulu coffee', 'mochi donuts', 'artisanal donuts', 'mochiland', 'bonepi mochiland',
       'malasada hawaii', 'hawaiian malasada', 'korean corn dogs',
       'bingsu hawaii', 'korean bingsu', 'tropical smoothies',
+      // Kona Coffee Experience
+      'kona coffee taste', 'kona coffee flavor', 'volcanic coffee hawaii',
+      'hawaiian coffee beans', 'kona district coffee', 'kona blend vs 100% kona',
       // Brand collaboration
       'honolulu coffee collaboration', 'mochiland waikiki', 'bonepi waikiki',
       'kona coffee donut shop', 'coffee donut pairing',
