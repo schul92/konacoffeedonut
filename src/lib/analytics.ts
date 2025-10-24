@@ -1,19 +1,5 @@
 // Analytics Event Tracking Utilities
-
-declare global {
-  interface Window {
-    gtag?: (
-      command: string,
-      targetId: string,
-      config?: Record<string, unknown>
-    ) => void;
-    fbq?: (
-      track: string,
-      event: string,
-      params?: Record<string, unknown>
-    ) => void;
-  }
-}
+// Window interface extensions are defined in src/types/window.d.ts
 
 // Google Analytics 4 Events
 export const trackEvent = (

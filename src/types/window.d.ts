@@ -3,8 +3,16 @@ declare global {
   interface Window {
     trackEvent: (eventName: string, params?: Record<string, string | number | boolean>) => void;
     dataLayer: unknown[];
-    gtag: (...args: unknown[]) => void;
-    fbq: (...args: unknown[]) => void;
+    gtag?: (
+      command: string,
+      targetId: string,
+      config?: Record<string, unknown>
+    ) => void;
+    fbq?: (
+      track: string,
+      event: string,
+      params?: Record<string, unknown>
+    ) => void;
   }
 }
 
