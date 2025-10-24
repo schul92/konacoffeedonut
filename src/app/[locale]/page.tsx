@@ -3,8 +3,10 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 // Dynamic imports for heavy components to improve initial page load
@@ -39,6 +41,7 @@ export default function Home() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const t = useTranslations();
+  const locale = useLocale();
 
   useEffect(() => {
     const handleScroll = () => {
