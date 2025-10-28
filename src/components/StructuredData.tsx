@@ -104,7 +104,8 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     ],
     keywords: 'kona coffee waikiki, coffee near me, donuts near me, mochi donuts hawaii, best coffee waikiki, honolulu coffee, waikiki breakfast, tourist cafe waikiki, kalakaua ave coffee, hawaii coffee shop',
     sameAs: [
-      'https://www.instagram.com/konacoffeedonut',
+      'https://www.instagram.com/konacoffee_donut',
+      'https://www.instagram.com/bonepi_mochiland_official',
       'https://www.facebook.com/konacoffeedonut',
     ],
     potentialAction: {
@@ -146,7 +147,8 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       availableLanguage: ['English', 'Japanese', 'Korean', 'Chinese'],
     },
     sameAs: [
-      'https://www.instagram.com/konacoffeedonut',
+      'https://www.instagram.com/konacoffee_donut',
+      'https://www.instagram.com/bonepi_mochiland_official',
       'https://www.facebook.com/konacoffeedonut',
     ],
   };

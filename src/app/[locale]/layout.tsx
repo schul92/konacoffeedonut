@@ -149,7 +149,8 @@ export async function generateMetadata({
     other: {
       // Rich Snippets
       'og:see_also': [
-        'https://www.instagram.com/konacoffeedonut',
+        'https://www.instagram.com/konacoffee_donut',
+        'https://www.instagram.com/bonepi_mochiland_official',
         'https://www.facebook.com/konacoffeedonut',
       ],
       // Local Business
