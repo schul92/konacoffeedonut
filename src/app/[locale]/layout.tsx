@@ -150,6 +150,8 @@ export async function generateMetadata({
       // Rich Snippets
       'og:see_also': [
         'https://www.instagram.com/konacoffee_donut',
+        'https://www.instagram.com/mochinut_fortlee',
+        'https://www.instagram.com/bonepi_mochiland',
         'https://www.instagram.com/bonepi_mochiland_official',
         'https://www.facebook.com/konacoffeedonut',
       ],
