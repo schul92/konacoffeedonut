@@ -59,7 +59,7 @@ export async function generateMetadata({
     referrer: 'origin-when-cross-origin',
     keywords: [
       // Kona Coffee - Primary Keywords
-      'kona coffee', '100% kona coffee', 'authentic kona coffee', 'hawaiian kona coffee',
+      'kona coffee', 'authentic kona coffee', 'hawaiian kona coffee',
       'premium kona coffee', 'kona coffee beans', 'kona coffee waikiki',
       'best kona coffee hawaii', 'where to buy kona coffee', 'kona coffee near me',
       // Location-based
@@ -71,7 +71,7 @@ export async function generateMetadata({
       'bingsu hawaii', 'korean bingsu', 'tropical smoothies',
       // Kona Coffee Experience
       'kona coffee taste', 'kona coffee flavor', 'volcanic coffee hawaii',
-      'hawaiian coffee beans', 'kona district coffee', 'kona blend vs 100% kona',
+      'hawaiian coffee beans', 'kona district coffee', 'honolulu coffee kona',
       // Brand collaboration
       'honolulu coffee collaboration', 'mochiland waikiki', 'bonepi waikiki',
       'kona coffee donut shop', 'coffee donut pairing',

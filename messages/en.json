@@ -23,7 +23,7 @@
       },
       "coffee": {
         "name": "Kona Coffee",
-        "description": "100% Kona coffee in collaboration with Honolulu Coffee, Hawaii's number one premium Kona coffee"
+        "description": "Premium Kona coffee by Honolulu Coffee, Hawaii's number one premium Kona coffee roaster"
       },
       "bingsu": {
         "name": "Bingsu",
@@ -43,7 +43,7 @@
     "title": "ABOUT US",
     "subtitle": "Where Premium Kona Coffee Meets Artisan Donuts",
     "coffeeDonutStory": "We're bringing together MOCHILAND and HONOLULU COFFEE to create the ultimate café experience! Coffee and donuts are the perfect combination - the rich, bold flavors of premium Kona coffee complement the sweet, delicate texture of artisan mochi donuts. Experience both exceptional brands in one amazing location in the heart of Waikiki!",
-    "konaStory": "Kona coffee is world-renowned for its exceptional quality, grown exclusively on the volcanic slopes of Hawaii's Big Island. HONOLULU COFFEE sources only the finest 100% Kona beans, delivering a smooth, rich flavor with subtle notes of chocolate and nuts. Combined with MOCHILAND's innovative mochi donuts, we offer the best of Hawaiian craftsmanship and quality.",
+    "konaStory": "Kona coffee is world-renowned for its exceptional quality, grown exclusively on the volcanic slopes of Hawaii's Big Island. HONOLULU COFFEE sources only the finest premium Kona beans, delivering a smooth, rich flavor with subtle notes of chocolate and nuts. Combined with MOCHILAND's innovative mochi donuts, we offer the best of Hawaiian craftsmanship and quality.",
     "ctaTitle": "Experience The Perfect Pairing",
     "ctaText": "Visit us in Waikiki and discover why KONA COFFEE + MOCHILAND DONUTS = the perfect match!",
     "visitButton": "Visit Us Today"
@@ -62,7 +62,7 @@
   },
   "meta": {
     "title": "Kona Coffee Donut? | Handcrafted with Aloha in Hawaii",
-    "description": "Experience authentic Hawaiian coffee and artisan donuts. Made with 100% Kona coffee in collaboration with Honolulu Coffee and Mochiland."
+    "description": "Experience authentic Hawaiian coffee and artisan donuts. Made with premium Kona coffee by Honolulu Coffee and Mochiland."
   },
   "aboutKonaCoffee": {
     "hero": {
@@ -72,8 +72,8 @@
     },
     "intro": {
       "title": "The Gold Standard of Hawaiian Coffee",
-      "paragraph1": "Kona coffee is a premium 100% Hawaiian coffee grown exclusively in the Kona District on the Big Island of Hawaii. Known for its smooth, rich flavor with low acidity, Kona coffee represents less than 1% of the world's coffee production, making it one of the rarest and most sought-after coffees globally.",
-      "paragraph2": "At Kona Coffee Donut in Waikiki, we proudly serve authentic 100% Kona coffee in partnership with Honolulu Coffee, Hawaii's premier coffee roaster. Every cup delivers the genuine taste of Hawaii's coffee-growing heritage."
+      "paragraph1": "Kona coffee is a premium Hawaiian coffee grown exclusively in the Kona District on the Big Island of Hawaii. Known for its smooth, rich flavor with low acidity, Kona coffee represents less than 1% of the world's coffee production, making it one of the rarest and most sought-after coffees globally.",
+      "paragraph2": "At Kona Coffee Donut in Waikiki, we proudly serve authentic Kona coffee in partnership with Honolulu Coffee, Hawaii's premier coffee roaster since 1992. Every cup delivers the genuine taste of Hawaii's coffee-growing heritage."
     },
     "whySpecial": {
       "title": "Why Kona Coffee Tastes Different",
@@ -91,7 +91,7 @@
       },
       "origin": {
         "title": "🏝️ 100% Hawaiian Origin",
-        "text": "True Kona coffee must be grown in the Kona District to carry the name. The \"100% Kona Coffee\" label is protected, ensuring authenticity. Beware of \"Kona blends\" that may contain as little as 10% actual Kona beans—at our Waikiki location, we serve only genuine 100% Kona coffee."
+        "text": "True Kona coffee must be grown in the Kona District to carry the name. Beware of \"Kona blends\" that may contain as little as 10% actual Kona beans—at our Waikiki location, we serve only genuine premium Kona coffee from Honolulu Coffee."
       }
     },
     "comparison": {
@@ -100,7 +100,7 @@
       "flavor": "Flavor",
       "acidity": "Acidity",
       "kona": {
-        "name": "100% Kona Coffee",
+        "name": "Premium Kona Coffee",
         "flavor": "Smooth, balanced, chocolate notes",
         "acidity": "Low"
       },
@@ -123,10 +123,10 @@
     },
     "experience": {
       "title": "Experience Authentic Kona Coffee in Waikiki",
-      "paragraph1": "Located in the heart of Waikiki at 2142 Kalakaua Ave, Kona Coffee Donut is your destination for genuine 100% Kona coffee paired with artisan mochi donuts from MOCHILAND. We partner with Honolulu Coffee, Hawaii's most trusted name in premium Kona coffee since 1992.",
+      "paragraph1": "Located in the heart of Waikiki at 2142 Kalakaua Ave, Kona Coffee Donut is your destination for genuine premium Kona coffee paired with artisan mochi donuts from MOCHILAND. We partner with Honolulu Coffee, Hawaii's most trusted name in premium Kona coffee since 1992.",
       "whyChoose": {
         "title": "Why Choose Our Kona Coffee?",
-        "point1": "100% certified Kona coffee beans—no blends, no compromises",
+        "point1": "Premium Kona coffee beans by Honolulu Coffee",
         "point2": "Freshly brewed daily using traditional Hawaiian roasting methods",
         "point3": "Perfect pairing with our artisan mochi donuts and malasadas",
         "point4": "Convenient Waikiki location—open daily 7 AM to 9 PM"
@@ -137,11 +137,11 @@
       "title": "Frequently Asked Questions About Kona Coffee",
       "q1": {
         "question": "Is Kona coffee worth the price?",
-        "answer": "Yes! Kona coffee's premium price reflects its limited production, hand-picking process, and exceptional quality. With less than 1% of global coffee production, genuine 100% Kona coffee offers a unique taste experience you can't find elsewhere."
+        "answer": "Yes! Kona coffee's premium price reflects its limited production, hand-picking process, and exceptional quality. With less than 1% of global coffee production, genuine Kona coffee offers a unique taste experience you can't find elsewhere."
       },
       "q2": {
-        "question": "What's the difference between \"Kona blend\" and \"100% Kona\"?",
-        "answer": "\"Kona blend\" may contain as little as 10% actual Kona beans mixed with cheaper coffees. Always look for \"100% Kona Coffee\" to ensure you're getting authentic Hawaiian Kona beans. At Kona Coffee Donut, we serve only 100% Kona coffee."
+        "question": "What's the difference between \"Kona blend\" and premium Kona?",
+        "answer": "\"Kona blend\" may contain as little as 10% actual Kona beans mixed with cheaper coffees. At Kona Coffee Donut, we serve only genuine premium Kona coffee from Honolulu Coffee—never blends."
       },
       "q3": {
         "question": "How should I brew Kona coffee at home?",
@@ -154,7 +154,7 @@
     },
     "finalCta": {
       "title": "Ready to Experience Hawaii's Best Coffee?",
-      "subtitle": "Visit Kona Coffee Donut in Waikiki and taste the difference that 100% Kona coffee makes.",
+      "subtitle": "Visit Kona Coffee Donut in Waikiki and taste the difference that premium Kona coffee from Honolulu Coffee makes.",
       "viewMenu": "View Our Menu",
       "getDirections": "Get Directions"
     }

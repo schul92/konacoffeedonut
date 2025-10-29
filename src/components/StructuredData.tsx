@@ -19,7 +19,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@id': 'https://www.konacoffeedonut.com/#restaurant',
     name: 'Kona Coffee Donut - Waikiki',
     alternateName: ['MOCHILAND x Honolulu Coffee', 'Kona Coffee Donut Waikiki', 'Kona Coffee Honolulu'],
-    description: 'Best Kona coffee and mochi donuts in Waikiki, Honolulu. Featuring 100% Kona coffee by Honolulu Coffee and artisan mochi donuts by MOCHILAND. Perfect for tourists visiting Hawaii.',
+    description: 'Best Kona coffee and mochi donuts in Waikiki, Honolulu. Featuring premium Kona coffee by Honolulu Coffee and artisan mochi donuts by MOCHILAND. Perfect for tourists visiting Hawaii.',
     image: 'https://www.konacoffeedonut.com/og-image.jpg',
     url: `https://www.konacoffeedonut.com/${locale}`,
     telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
@@ -201,7 +201,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       {
         '@type': 'MenuSection',
         name: 'Coffee',
-        description: '100% Kona coffee in collaboration with Honolulu Coffee',
+        description: 'Premium Kona coffee by Honolulu Coffee',
         hasMenuItem: [
           {
             '@type': 'MenuItem',
@@ -296,7 +296,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'What makes Kona Coffee special?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We use 100% premium Kona coffee beans in collaboration with Honolulu Coffee. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity.',
+          text: 'We serve premium Kona coffee in partnership with Honolulu Coffee, Hawaii\'s premier coffee roaster. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity.',
         },
       },
       {
@@ -339,7 +339,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: 'Premium Kona Coffee & Mochi Donuts',
-    description: 'Authentic Hawaiian experience featuring 100% Kona coffee and artisan mochi donuts',
+    description: 'Authentic Hawaiian experience featuring premium Kona coffee and artisan mochi donuts',
     brand: {
       '@type': 'Brand',
       name: 'Kona Coffee Donut',

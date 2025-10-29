@@ -21,7 +21,7 @@ export async function GET() {
     },
     {
       loc: `${baseUrl}/images/menu/coffee.jpeg`,
-      caption: '100% Premium Kona Coffee - Honolulu Coffee',
+      caption: 'Premium Kona Coffee by Honolulu Coffee',
       title: 'Kona Coffee Menu',
       geoLocation: 'Waikiki, Honolulu, Hawaii',
       license: `${baseUrl}`,

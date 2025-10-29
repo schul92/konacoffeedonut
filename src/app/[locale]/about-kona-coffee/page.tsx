@@ -34,7 +34,7 @@ export default function AboutKonaCoffee() {
     },
     about: {
       '@type': 'Product',
-      name: '100% Kona Coffee',
+      name: 'Premium Kona Coffee',
       description: 'Premium Hawaiian Kona coffee beans grown in the Kona District',
       brand: {
         '@type': 'Brand',

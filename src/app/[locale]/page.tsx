@@ -510,7 +510,7 @@ export default function Home() {
                 <span>COFFEE</span>
               </p>
               <p className="text-orange-500 font-semibold text-[8px] md:text-sm">
-                100% Premium Kona Beans
+                Premium Kona Coffee
               </p>
             </div>
           </motion.div>
