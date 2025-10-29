@@ -163,6 +163,7 @@ export default function Home() {
                 width={200}
                 height={21}
                 priority
+                fetchPriority="high"
                 className="h-7 w-auto max-w-full"
               />
             </button>
