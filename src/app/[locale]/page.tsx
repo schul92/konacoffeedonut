@@ -1330,7 +1330,7 @@ export default function Home() {
                 src="/konacoffee.png"
                 alt="Kona Coffee Donut"
                 width={300}
-                height={50}
+                height={32}
                 className="h-10 md:h-12 w-auto mb-2 brightness-0 invert"
               />
               <p className="text-white/60 text-sm md:text-base mb-4">{t('footer.tagline')}</p>
