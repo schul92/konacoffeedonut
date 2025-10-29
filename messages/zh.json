@@ -2,7 +2,8 @@
   "nav": {
     "menu": "菜单",
     "about": "关于我们",
-    "location": "位置"
+    "location": "位置",
+    "instagram": "Instagram"
   },
   "hero": {
     "welcome": "以阿罗哈精神手工制作",
@@ -63,6 +64,30 @@
   "meta": {
     "title": "Kona Coffee Donut? | 夏威夷手工制作阿罗哈",
     "description": "体验正宗的夏威夷咖啡和手工甜甜圈。与檀香山咖啡和麻糬乐园合作，采用优质科纳咖啡制作。"
+  },
+  "instagram": {
+    "title": "在Instagram上关注我们",
+    "subtitle": "与我们的社区保持联系",
+    "konaCoffee": {
+      "title": "科纳咖啡甜甜圈",
+      "handle": "@konacoffee_donut",
+      "description": "威基基门店每日更新"
+    },
+    "mochinutFortLee": {
+      "title": "麻糬甜甜圈李堡店",
+      "handle": "@mochinut_fortlee",
+      "description": "麻糬甜甜圈和韩式小吃"
+    },
+    "bonepiMochiland": {
+      "title": "本埃皮麻糬乐园",
+      "handle": "@bonepi_mochiland",
+      "description": "原创麻糬乐园作品"
+    },
+    "bonepiMochilandOfficial": {
+      "title": "本埃皮麻糬乐园官方",
+      "handle": "@bonepi_mochiland_official",
+      "description": "麻糬乐园官方更新"
+    }
   },
   "aboutKonaCoffee": {
     "hero": {
