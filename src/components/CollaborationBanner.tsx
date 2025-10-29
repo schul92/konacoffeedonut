@@ -43,7 +43,7 @@ export default function CollaborationBanner() {
               }}
             >
               <Image
-                src="/icons/honolulu_coffee.webp"
+                src="/icons/honolulu_coffee.png"
                 alt="Honolulu Coffee"
                 width={112}
                 height={112}

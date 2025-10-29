@@ -161,7 +161,7 @@ export default function Home() {
                 src="/konacoffee.png"
                 alt="Kona Coffee Donut"
                 width={200}
-                height={33}
+                height={21}
                 priority
                 className="h-7 w-auto max-w-full"
               />
@@ -270,7 +270,9 @@ export default function Home() {
                     src="/konacoffee.png"
                     alt="Kona Coffee Donut"
                     width={450}
-                    height={75}
+                    height={48}
+                    priority
+                    fetchPriority="high"
                     className="h-10 w-auto"
                   />
                 </div>
@@ -476,7 +478,7 @@ export default function Home() {
               }}
             >
               <Image
-                src="/icons/honolulu_coffee.webp"
+                src="/icons/honolulu_coffee.png"
                 alt="Honolulu Coffee"
                 fill
                 className="object-contain p-0.5"
@@ -801,25 +803,29 @@ export default function Home() {
               </div>
 
               {/* Video Dots - Center Bottom */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2.5">
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1">
                 <button
                   onClick={() => switchVideo(1)}
-                  className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
+                  className="p-5 group"
+                  aria-label="Play video 1"
+                >
+                  <span className={`block w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
                     currentVideo === 1
                       ? 'bg-white scale-125'
-                      : 'bg-white/50 hover:bg-white/70'
-                  }`}
-                  aria-label="Play video 1"
-                />
+                      : 'bg-white/50 group-hover:bg-white/70'
+                  }`} />
+                </button>
                 <button
                   onClick={() => switchVideo(2)}
-                  className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
+                  className="p-5 group"
+                  aria-label="Play video 2"
+                >
+                  <span className={`block w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
                     currentVideo === 2
                       ? 'bg-white scale-125'
-                      : 'bg-white/50 hover:bg-white/70'
-                  }`}
-                  aria-label="Play video 2"
-                />
+                      : 'bg-white/50 group-hover:bg-white/70'
+                  }`} />
+                </button>
               </div>
             </div>
           </div>
@@ -1176,7 +1182,7 @@ export default function Home() {
                   />
                   <div className="relative w-[200px] h-[200px] flex items-center justify-center">
                     <Image
-                      src="/icons/honolulu_coffee.webp"
+                      src="/icons/honolulu_coffee.png"
                       alt="Honolulu Coffee"
                       width={200}
                       height={200}
@@ -1330,7 +1336,7 @@ export default function Home() {
 
               {/* Instagram Links - Compact */}
               <div className="flex flex-col gap-2">
-                <p className="text-white/40 text-xs font-semibold uppercase tracking-wider">Follow us</p>
+                <p className="text-white/70 text-xs font-semibold uppercase tracking-wider">Follow us</p>
                 <div className="flex flex-wrap gap-2">
                   <a
                     href="https://instagram.com/konacoffee_donut"
@@ -1345,7 +1351,7 @@ export default function Home() {
                     <span className="text-white/70 group-hover:text-pink-400 transition-colors">@konacoffee_donut</span>
                   </a>
                 </div>
-                <p className="text-white/30 text-[10px] mt-1">MOCHILAND:</p>
+                <p className="text-white/60 text-[10px] mt-1">MOCHILAND:</p>
                 <div className="flex flex-wrap gap-1.5 items-center">
                   <a
                     href="https://instagram.com/mochinut_fortlee"
@@ -1408,7 +1414,7 @@ export default function Home() {
             <p className="text-center text-sm opacity-60 mb-6">{t('footer.collaboration')}</p>
             <div className="flex justify-center items-center gap-8 md:gap-12 mb-8">
               <Image
-                src="/icons/honolulu_coffee.webp"
+                src="/icons/honolulu_coffee.png"
                 alt="Honolulu Coffee"
                 width={80}
                 height={64}

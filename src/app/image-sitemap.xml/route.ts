@@ -62,7 +62,7 @@ export async function GET() {
       license: `${baseUrl}`,
     },
     {
-      loc: `${baseUrl}/icons/honolulu_coffee.webp`,
+      loc: `${baseUrl}/icons/honolulu_coffee.png`,
       caption: 'Honolulu Coffee Logo - Premium Kona Beans',
       title: 'Honolulu Coffee Brand',
       license: `${baseUrl}`,
