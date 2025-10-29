@@ -2,8 +2,7 @@
   "nav": {
     "menu": "Menu",
     "about": "About Us",
-    "location": "Location",
-    "instagram": "Instagram"
+    "location": "Location"
   },
   "hero": {
     "welcome": "Handcrafted with Aloha",
@@ -64,30 +63,6 @@
   "meta": {
     "title": "Kona Coffee Donut? | Handcrafted with Aloha in Hawaii",
     "description": "Experience authentic Hawaiian coffee and artisan donuts. Made with premium Kona coffee by Honolulu Coffee and Mochiland."
-  },
-  "instagram": {
-    "title": "Follow Us on Instagram",
-    "subtitle": "Stay connected with our community",
-    "konaCoffee": {
-      "title": "Kona Coffee Donut",
-      "handle": "@konacoffee_donut",
-      "description": "Daily updates from our Waikiki location"
-    },
-    "mochinutFortLee": {
-      "title": "Mochinut Fort Lee",
-      "handle": "@mochinut_fortlee",
-      "description": "Mochi donuts & Korean treats"
-    },
-    "bonepiMochiland": {
-      "title": "Bonepi Mochiland",
-      "handle": "@bonepi_mochiland",
-      "description": "Original Mochiland creations"
-    },
-    "bonepiMochilandOfficial": {
-      "title": "Bonepi Mochiland Official",
-      "handle": "@bonepi_mochiland_official",
-      "description": "Official Mochiland updates"
-    }
   },
   "aboutKonaCoffee": {
     "hero": {

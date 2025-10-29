@@ -2,8 +2,7 @@
   "nav": {
     "menu": "메뉴",
     "about": "소개",
-    "location": "위치",
-    "instagram": "인스타그램"
+    "location": "위치"
   },
   "hero": {
     "welcome": "알로하 정신으로 수제 제작",
@@ -64,30 +63,6 @@
   "meta": {
     "title": "Kona Coffee Donut? | 하와이에서 알로하로 수제 제작",
     "description": "정통 하와이안 커피와 장인 도넛을 경험하세요. 호놀룰루 커피 및 모치랜드와 협력하여 프리미엄 코나 커피로 제작합니다."
-  },
-  "instagram": {
-    "title": "인스타그램 팔로우",
-    "subtitle": "커뮤니티와 함께하세요",
-    "konaCoffee": {
-      "title": "코나 커피 도넛",
-      "handle": "@konacoffee_donut",
-      "description": "와이키키 매장의 일상 업데이트"
-    },
-    "mochinutFortLee": {
-      "title": "모치넛 포트리",
-      "handle": "@mochinut_fortlee",
-      "description": "모찌 도넛 & 한국 간식"
-    },
-    "bonepiMochiland": {
-      "title": "본에피 모치랜드",
-      "handle": "@bonepi_mochiland",
-      "description": "오리지널 모치랜드 창작품"
-    },
-    "bonepiMochilandOfficial": {
-      "title": "본에피 모치랜드 공식",
-      "handle": "@bonepi_mochiland_official",
-      "description": "모치랜드 공식 업데이트"
-    }
   },
   "aboutKonaCoffee": {
     "hero": {
