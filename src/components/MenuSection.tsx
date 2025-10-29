@@ -292,7 +292,7 @@ export default function MenuSection() {
                   <img
                     src={currentMenu.image}
                     alt={currentMenu.title}
-                    className="max-w-full h-auto max-h-full object-contain"
+                    className="max-w-[70%] h-auto object-contain"
                     style={{
                       touchAction: 'manipulation',
                       userSelect: 'none'
