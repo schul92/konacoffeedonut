@@ -162,6 +162,7 @@ export default function Home() {
                 alt="Kona Coffee Donut"
                 width={200}
                 height={33}
+                priority
                 className="h-7 w-auto max-w-full"
               />
             </button>
