@@ -1315,7 +1315,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 md:py-16 bg-black text-white">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
+            {/* Left: Logo + Instagram */}
             <div className="flex flex-col items-start">
               <Image
                 src="/konacoffee.png"
@@ -1324,8 +1325,61 @@ export default function Home() {
                 height={50}
                 className="h-10 md:h-12 w-auto mb-2 brightness-0 invert"
               />
-              <p className="text-white/60 text-sm md:text-base">{t('footer.tagline')}</p>
+              <p className="text-white/60 text-sm md:text-base mb-4">{t('footer.tagline')}</p>
+
+              {/* Instagram Links - Compact */}
+              <div className="flex flex-col gap-2">
+                <p className="text-white/40 text-xs font-semibold uppercase tracking-wider">Follow us</p>
+                <div className="flex flex-wrap gap-2">
+                  <a
+                    href="https://instagram.com/konacoffee_donut"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-1.5 px-3 py-1.5 bg-white/5 hover:bg-white/10 rounded-full transition-all text-xs"
+                    aria-label="Follow Kona Coffee Donut on Instagram"
+                  >
+                    <svg className="w-4 h-4 text-white/60 group-hover:text-pink-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span className="text-white/70 group-hover:text-pink-400 transition-colors">@konacoffee_donut</span>
+                  </a>
+                </div>
+                <p className="text-white/30 text-[10px] mt-1">MOCHILAND Partners:</p>
+                <div className="flex flex-wrap gap-1.5">
+                  <a
+                    href="https://instagram.com/mochinut_fortlee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/50 hover:text-pink-400 transition-colors text-xs"
+                    aria-label="Follow Mochinut Fort Lee on Instagram"
+                  >
+                    @mochinut_fortlee
+                  </a>
+                  <span className="text-white/30">•</span>
+                  <a
+                    href="https://instagram.com/bonepi_mochiland"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/50 hover:text-pink-400 transition-colors text-xs"
+                    aria-label="Follow Bonepi Mochiland on Instagram"
+                  >
+                    @bonepi_mochiland
+                  </a>
+                  <span className="text-white/30">•</span>
+                  <a
+                    href="https://instagram.com/bonepi_mochiland_official"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/50 hover:text-pink-400 transition-colors text-xs"
+                    aria-label="Follow Bonepi Mochiland Official on Instagram"
+                  >
+                    @bonepi_mochiland_official
+                  </a>
+                </div>
+              </div>
             </div>
+
+            {/* Right: Navigation */}
             <div className="flex gap-8 text-base">
               <a href="#menu" className="opacity-60 hover:opacity-100 transition-opacity">
                 {t('nav.menu')}
@@ -1357,97 +1411,6 @@ export default function Home() {
                 height={64}
                 className="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
-            </div>
-          </div>
-
-          {/* Social Media - Grouped by Brand */}
-          <div className="pt-8 border-t border-white/10">
-            <p className="text-center text-sm opacity-60 mb-6">Follow Us on Instagram</p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {/* Kona Coffee Donut */}
-              <div className="space-y-3">
-                <h3 className="text-orange-400 font-semibold text-sm text-center md:text-left mb-3">Kona Coffee Donut</h3>
-                <a
-                  href="https://instagram.com/konacoffee_donut"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-3 px-6 py-3 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 hover:scale-105"
-                  aria-label="Follow Kona Coffee Donut on Instagram"
-                >
-                  <svg
-                    className="w-6 h-6 text-white group-hover:text-pink-400 transition-colors flex-shrink-0"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                  </svg>
-                  <span className="text-white font-semibold group-hover:text-pink-400 transition-colors">
-                    @konacoffee_donut
-                  </span>
-                </a>
-              </div>
-
-              {/* Mochiland Partners */}
-              <div className="space-y-3">
-                <h3 className="text-pink-400 font-semibold text-sm text-center md:text-left mb-3">MOCHILAND (Our Partners)</h3>
-                <div className="space-y-2">
-                  <a
-                    href="https://instagram.com/mochinut_fortlee"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-3 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 hover:scale-105"
-                    aria-label="Follow Mochinut Fort Lee on Instagram"
-                  >
-                    <svg
-                      className="w-5 h-5 text-white group-hover:text-pink-400 transition-colors flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    <span className="text-white text-sm font-medium group-hover:text-pink-400 transition-colors">
-                      @mochinut_fortlee
-                    </span>
-                  </a>
-                  <a
-                    href="https://instagram.com/bonepi_mochiland"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-3 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 hover:scale-105"
-                    aria-label="Follow Bonepi Mochiland on Instagram"
-                  >
-                    <svg
-                      className="w-5 h-5 text-white group-hover:text-pink-400 transition-colors flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    <span className="text-white text-sm font-medium group-hover:text-pink-400 transition-colors">
-                      @bonepi_mochiland
-                    </span>
-                  </a>
-                  <a
-                    href="https://instagram.com/bonepi_mochiland_official"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-3 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 hover:scale-105"
-                    aria-label="Follow Bonepi Mochiland Official on Instagram"
-                  >
-                    <svg
-                      className="w-5 h-5 text-white group-hover:text-pink-400 transition-colors flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    <span className="text-white text-sm font-medium group-hover:text-pink-400 transition-colors">
-                      @bonepi_mochiland_official
-                    </span>
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
 
