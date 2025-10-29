@@ -748,7 +748,7 @@ export default function Home() {
               loop={currentVideo === 2}
               muted
               playsInline
-              preload="auto"
+              preload="metadata"
               onEnded={handleVideoEnd}
               className="absolute inset-0 w-full h-full object-cover"
             >
@@ -857,7 +857,7 @@ export default function Home() {
                   loop={currentVideo === 2}
                   muted
                   playsInline
-                  preload="auto"
+                  preload="metadata"
                   onEnded={handleVideoEnd}
                   className="absolute inset-0 w-full h-full object-cover"
                 >

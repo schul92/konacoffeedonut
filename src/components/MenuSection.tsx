@@ -117,6 +117,7 @@ export default function MenuSection() {
                       loop
                       muted
                       playsInline
+                      preload="none"
                       onError={(e) => {
                         e.currentTarget.style.display = 'none';
                       }}

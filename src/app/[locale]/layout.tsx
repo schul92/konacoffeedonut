@@ -234,13 +234,8 @@ export default async function LocaleLayout({
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
 
-        {/* Preload critical assets */}
-        <link rel="preload" href="/images/background/background.jpg" as="image" type="image/jpeg" />
-        <link rel="preload" href="/videos/waikiki_1.mp4" as="video" type="video/mp4" />
-        <link rel="preload" href="/konacoffee.png" as="image" type="image/png" />
-
-        {/* Prefetch next video for smooth transition */}
-        <link rel="prefetch" href="/videos/waikiki_2.mp4" as="video" type="video/mp4" />
+        {/* Preload critical assets only - removed videos to improve LCP */}
+        <link rel="preload" href="/konacoffee.png" as="image" type="image/png" fetchpriority="high" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${righteous.variable} antialiased overflow-x-hidden`}

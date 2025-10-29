@@ -31,7 +31,7 @@ export default function MapEmbed() {
           height="100%"
           style={{ border: 0 }}
           allowFullScreen
-          loading="eager"
+          loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="Kona Coffee Donut Location"
           onLoad={() => setIsLoaded(true)}
