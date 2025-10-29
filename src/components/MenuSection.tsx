@@ -101,7 +101,7 @@ export default function MenuSection() {
             >
               <button
                 onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`))}
-                className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:hover:scale-[1.02]"
+                className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:aspect-[4/3] md:hover:scale-[1.02]"
               >
                 {/* Video Background - Cinema Style - Auto-playing */}
                 {item.video && (
