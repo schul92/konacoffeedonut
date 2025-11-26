@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
   },
   compress: true,
   poweredByHeader: false,
+  // Target modern browsers to reduce polyfills and bundle size
+  compiler: {
+    // Remove console.log in production
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
   // Generate sitemap and robots.txt automatically
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],

@@ -235,7 +235,7 @@ export default async function LocaleLayout({
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
 
         {/* Preload critical assets only - removed videos to improve LCP */}
-        <link rel="preload" href="/konacoffee.png" as="image" type="image/png" fetchPriority="high" />
+        <link rel="preload" href="/konacoffee.webp" as="image" type="image/webp" fetchPriority="high" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${righteous.variable} antialiased overflow-x-hidden`}

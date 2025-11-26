@@ -166,7 +166,7 @@ export default function Home() {
               className="flex-1 flex justify-center min-w-0"
             >
               <Image
-                src="/konacoffee.png"
+                src="/konacoffee.webp"
                 alt="Kona Coffee Donut"
                 width={200}
                 height={21}
@@ -277,7 +277,7 @@ export default function Home() {
                   }}
                 >
                   <Image
-                    src="/konacoffee.png"
+                    src="/konacoffee.webp"
                     alt="Kona Coffee Donut"
                     width={450}
                     height={48}
@@ -1348,7 +1348,7 @@ export default function Home() {
             {/* Left: Logo + Instagram */}
             <div className="flex flex-col items-start">
               <Image
-                src="/konacoffee.png"
+                src="/konacoffee.webp"
                 alt="Kona Coffee Donut"
                 width={300}
                 height={32}
