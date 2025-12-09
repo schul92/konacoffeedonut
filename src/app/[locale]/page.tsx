@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import HiringModal from '@/components/HiringModal';
 
 // Dynamic imports for heavy components to improve initial page load
 // These components are below the fold and can be loaded lazily
@@ -140,6 +141,9 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-black">
+      {/* Hiring Modal */}
+      <HiringModal locale={locale} />
+
       {/* Navigation - Responsive */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4">
