@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
@@ -386,25 +385,26 @@ export default function CareersPage() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-lg text-amber-800/80 max-w-2xl mx-auto"
+            className="text-lg text-amber-800/80 max-w-2xl mx-auto mb-8"
           >
             {t.hero.description}
           </motion.p>
 
-          {/* Logo */}
+          {/* Primary CTA Button */}
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
+            initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.5, type: "spring" }}
-            className="mt-8"
           >
-            <Image
-              src="/konacoffee.webp"
-              alt="Kona Coffee Donut"
-              width={120}
-              height={120}
-              className="mx-auto"
-            />
+            <button
+              onClick={handleApply}
+              className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-2xl font-bold text-white text-xl transition-all duration-300 shadow-2xl hover:shadow-amber-500/40 hover:scale-105 active:scale-100"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl" />
+              <span className="relative">{t.cta.button}</span>
+              <ExternalLink className="w-6 h-6 relative" />
+            </button>
+            <p className="text-amber-600 text-sm mt-4">{t.cta.note}</p>
           </motion.div>
         </div>
       </section>
@@ -520,31 +520,21 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-white to-amber-50">
+      {/* Secondary CTA Section */}
+      <section className="py-12 md:py-16 bg-gradient-to-b from-white to-amber-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <motion.div
-            initial={{ y: 30, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-950 mb-4" style={{ fontFamily: 'var(--font-righteous)' }}>
-              {t.cta.title}
-            </h2>
-            <p className="text-amber-700 mb-8 max-w-xl mx-auto">
-              {t.cta.description}
-            </p>
-
             <button
               onClick={handleApply}
-              className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-2xl font-bold text-white text-lg transition-all duration-300 shadow-xl hover:shadow-amber-500/30 hover:scale-105 active:scale-100"
+              className="group relative inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-xl font-bold text-white transition-all duration-300 shadow-lg hover:shadow-amber-500/30 hover:scale-105 active:scale-100"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/25 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl" />
               <span className="relative">{t.cta.button}</span>
               <ExternalLink className="w-5 h-5 relative" />
             </button>
-
-            <p className="text-amber-600 text-sm mt-4">{t.cta.note}</p>
           </motion.div>
         </div>
       </section>
