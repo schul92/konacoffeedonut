@@ -5,13 +5,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.konacoffeedonut.com';
   const currentDate = new Date();
 
-  const routes = ['', '/menu', '/about-kona-coffee'];
+  const routes = ['', '/menu', '/about-kona-coffee', '/careers'];
   const sitemap: MetadataRoute.Sitemap = [];
 
   // Priority map for different routes
   const priorityMap: Record<string, number> = {
     '': 1.0,
     '/about-kona-coffee': 0.9,
+    '/careers': 0.9,
     '/menu': 0.8,
   };
 
@@ -19,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const changeFreqMap: Record<string, 'daily' | 'weekly' | 'monthly'> = {
     '': 'daily',
     '/about-kona-coffee': 'weekly',
+    '/careers': 'daily',
     '/menu': 'weekly',
   };
 
