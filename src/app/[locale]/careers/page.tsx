@@ -323,8 +323,118 @@ export default function CareersPage() {
     window.open(APPLICATION_URL, '_blank', 'noopener,noreferrer');
   };
 
+  // Job posting structured data for SEO
+  const jobPostingSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: [
+      {
+        '@type': 'JobPosting',
+        title: 'Manager',
+        description: 'Lead our team and ensure exceptional customer experiences. Oversee daily operations, staff scheduling, and inventory management.',
+        employmentType: 'FULL_TIME',
+        hiringOrganization: {
+          '@type': 'Organization',
+          name: 'Kona Coffee Donut',
+          sameAs: 'https://www.konacoffeedonut.com',
+          logo: 'https://www.konacoffeedonut.com/konacoffee.webp',
+        },
+        jobLocation: {
+          '@type': 'Place',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '2142 Kalakaua Ave',
+            addressLocality: 'Honolulu',
+            addressRegion: 'HI',
+            postalCode: '96815',
+            addressCountry: 'US',
+          },
+        },
+        datePosted: '2024-12-01',
+        validThrough: '2025-02-28',
+      },
+      {
+        '@type': 'JobPosting',
+        title: 'Barista',
+        description: 'Craft premium Kona coffee beverages and create memorable experiences for our guests.',
+        employmentType: ['FULL_TIME', 'PART_TIME'],
+        hiringOrganization: {
+          '@type': 'Organization',
+          name: 'Kona Coffee Donut',
+          sameAs: 'https://www.konacoffeedonut.com',
+        },
+        jobLocation: {
+          '@type': 'Place',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '2142 Kalakaua Ave',
+            addressLocality: 'Honolulu',
+            addressRegion: 'HI',
+            postalCode: '96815',
+            addressCountry: 'US',
+          },
+        },
+        datePosted: '2024-12-01',
+        validThrough: '2025-02-28',
+      },
+      {
+        '@type': 'JobPosting',
+        title: 'Baker',
+        description: 'Create signature mochi donuts and delicious pastries. Early morning shifts available.',
+        employmentType: ['FULL_TIME', 'PART_TIME'],
+        hiringOrganization: {
+          '@type': 'Organization',
+          name: 'Kona Coffee Donut',
+          sameAs: 'https://www.konacoffeedonut.com',
+        },
+        jobLocation: {
+          '@type': 'Place',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '2142 Kalakaua Ave',
+            addressLocality: 'Honolulu',
+            addressRegion: 'HI',
+            postalCode: '96815',
+            addressCountry: 'US',
+          },
+        },
+        datePosted: '2024-12-01',
+        validThrough: '2025-02-28',
+      },
+      {
+        '@type': 'JobPosting',
+        title: 'Cashier',
+        description: 'Handle transactions, assist customers, and maintain a welcoming atmosphere.',
+        employmentType: ['FULL_TIME', 'PART_TIME'],
+        hiringOrganization: {
+          '@type': 'Organization',
+          name: 'Kona Coffee Donut',
+          sameAs: 'https://www.konacoffeedonut.com',
+        },
+        jobLocation: {
+          '@type': 'Place',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: '2142 Kalakaua Ave',
+            addressLocality: 'Honolulu',
+            addressRegion: 'HI',
+            postalCode: '96815',
+            addressCountry: 'US',
+          },
+        },
+        datePosted: '2024-12-01',
+        validThrough: '2025-02-28',
+      },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-orange-50">
+      {/* Structured Data for Job Postings */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jobPostingSchema) }}
+      />
       {/* Back Navigation */}
       <div className="fixed top-4 left-4 z-50">
         <Link
