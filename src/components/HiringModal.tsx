@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { X, Coffee, Sparkles, MapPin, Calendar, ExternalLink } from 'lucide-react';
+import { trackJobApplyClick, trackHiringModalView, trackHiringModalDismiss } from '@/lib/analytics';
 
 const APPLICATION_URL = 'https://docs.google.com/forms/d/1GT3pewI8J-HEk0Paz1dK41NfUP7VNtJeD8Zhq0Sawu8/edit';
 
@@ -82,22 +83,25 @@ export default function HiringModal({ locale = 'en' }: HiringModalProps) {
     // Show modal if never dismissed or dismissed more than 24 hours ago
     if (!dismissed || dismissedTime < oneDayAgo) {
       // Delay showing modal for better UX
-      const timer = setTimeout(() => setIsOpen(true), 2000);
+      const timer = setTimeout(() => {
+        setIsOpen(true);
+        trackHiringModalView(locale);
+      }, 2000);
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [locale]);
 
   const handleClose = () => {
     setIsOpen(false);
     localStorage.setItem('hiring-modal-dismissed', Date.now().toString());
+    trackHiringModalDismiss(locale);
   };
 
   const handleApply = () => {
+    // Track conversion
+    trackJobApplyClick('hiring_modal', locale);
+    // Open application form
     window.open(APPLICATION_URL, '_blank', 'noopener,noreferrer');
-    // Track the click if analytics is available
-    if (typeof window !== 'undefined' && (window as unknown as { trackEvent?: (event: string, data: Record<string, string>) => void }).trackEvent) {
-      (window as unknown as { trackEvent: (event: string, data: Record<string, string>) => void }).trackEvent('hiring_apply_click', { locale });
-    }
   };
 
   return (

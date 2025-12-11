@@ -2,8 +2,9 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
+import { useEffect } from 'react';
+import { trackJobApplyClick, trackCareersPageView } from '@/lib/analytics';
 import {
   Briefcase,
   MapPin,
@@ -319,7 +320,15 @@ export default function CareersPage() {
   const locale = useLocale();
   const t = translations[locale as keyof typeof translations] || translations.en;
 
-  const handleApply = () => {
+  // Track careers page view on mount
+  useEffect(() => {
+    trackCareersPageView(locale);
+  }, [locale]);
+
+  const handleApply = (source: string = 'careers_page') => {
+    // Track the conversion
+    trackJobApplyClick(source, locale);
+    // Open application form
     window.open(APPLICATION_URL, '_blank', 'noopener,noreferrer');
   };
 
@@ -507,7 +516,7 @@ export default function CareersPage() {
             transition={{ delay: 0.5, type: "spring" }}
           >
             <button
-              onClick={handleApply}
+              onClick={() => handleApply('careers_hero')}
               className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-2xl font-bold text-white text-xl transition-all duration-300 shadow-2xl hover:shadow-amber-500/40 hover:scale-105 active:scale-100"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl" />
@@ -639,7 +648,7 @@ export default function CareersPage() {
             viewport={{ once: true }}
           >
             <button
-              onClick={handleApply}
+              onClick={() => handleApply('careers_bottom')}
               className="group relative inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-xl font-bold text-white transition-all duration-300 shadow-lg hover:shadow-amber-500/30 hover:scale-105 active:scale-100"
             >
               <span className="relative">{t.cta.button}</span>

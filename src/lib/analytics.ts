@@ -124,6 +124,65 @@ export const trackOrderClick = () => {
   }
 };
 
+// Job Application Click - KEY CONVERSION EVENT
+export const trackJobApplyClick = (source: string, locale: string) => {
+  trackEvent('job_apply_click', {
+    event_category: 'conversion',
+    event_label: 'Job Application',
+    source: source, // 'careers_page', 'modal', 'nav_banner'
+    locale: locale,
+    value: 1,
+  });
+
+  // Also track as generate_lead for GA4 recommended events
+  trackEvent('generate_lead', {
+    currency: 'USD',
+    value: 10, // Assign value to job application
+    source: source,
+  });
+
+  if (typeof window !== 'undefined' && window.fbq) {
+    window.fbq('track', 'Lead', {
+      content_name: 'Job Application',
+      content_category: 'Careers',
+    });
+  }
+};
+
+// Careers Page View - Track interest
+export const trackCareersPageView = (locale: string) => {
+  trackEvent('careers_page_view', {
+    event_category: 'engagement',
+    event_label: 'Careers Page',
+    locale: locale,
+  });
+
+  if (typeof window !== 'undefined' && window.fbq) {
+    window.fbq('track', 'ViewContent', {
+      content_name: 'Careers Page',
+      content_category: 'Jobs',
+    });
+  }
+};
+
+// Hiring Modal View
+export const trackHiringModalView = (locale: string) => {
+  trackEvent('hiring_modal_view', {
+    event_category: 'engagement',
+    event_label: 'Hiring Modal Shown',
+    locale: locale,
+  });
+};
+
+// Hiring Modal Dismiss
+export const trackHiringModalDismiss = (locale: string) => {
+  trackEvent('hiring_modal_dismiss', {
+    event_category: 'engagement',
+    event_label: 'Hiring Modal Dismissed',
+    locale: locale,
+  });
+};
+
 const analytics = {
   trackEvent,
   trackMenuView,
@@ -137,6 +196,10 @@ const analytics = {
   trackMenuDownload,
   trackNewsletterSignup,
   trackOrderClick,
+  trackJobApplyClick,
+  trackCareersPageView,
+  trackHiringModalView,
+  trackHiringModalDismiss,
 };
 
 export default analytics;
