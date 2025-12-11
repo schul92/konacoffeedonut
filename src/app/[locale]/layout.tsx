@@ -219,8 +219,8 @@ export default async function LocaleLayout({
         <meta name="audience" content="all" />
         <meta name="revisit-after" content="7 days" />
 
-        {/* Google Verification - TODO: Add your verification code */}
-        {/* <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> */}
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="B_3ls-YIFDHA5XYRx9mkf_QuiFx53A2XlqSdegSRwjY" />
 
         {/* Viewport and Mobile Optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
