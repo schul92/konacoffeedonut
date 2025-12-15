@@ -9,6 +9,7 @@ import { locales, type Locale } from '@/i18n';
 import StructuredData from '@/components/StructuredData';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import MetaPixel from '@/components/MetaPixel';
+import HiringBanner from '@/components/HiringBanner';
 import "../globals.css";
 
 const geistSans = Geist({
@@ -247,8 +248,11 @@ export default async function LocaleLayout({
           <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID} />
         )}
         <StructuredData locale={locale} />
+        <HiringBanner locale={locale} />
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <div className="pt-10">{/* Offset for hiring banner */}
+            {children}
+          </div>
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />

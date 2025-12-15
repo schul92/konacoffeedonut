@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import { ArrowLeft, MapPin, Clock, Star, Sparkles } from 'lucide-react';
+import JoinTeamCTA from '@/components/JoinTeamCTA';
 
 const translations = {
   en: {
@@ -361,6 +362,9 @@ export default function MochiDonutsPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Join Team CTA */}
+      <JoinTeamCTA locale={locale} />
 
       {/* Footer */}
       <footer className="py-8 bg-pink-950 text-center">

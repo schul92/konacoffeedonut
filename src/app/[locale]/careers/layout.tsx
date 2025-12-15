@@ -97,6 +97,12 @@ export async function generateMetadata({
     // Brand specific
     'kona coffee donut careers', 'kona coffee donut jobs', 'kona coffee donut hiring',
     'kona coffee donut employment', 'work at kona coffee donut',
+
+    // From external job postings (Craigslist, Vivinavi)
+    'honolulu cafe jobs', 'waikiki barista positions', 'mochi donut shop hiring',
+    'hawaii food service jobs', 'coffee shop employment oahu',
+    'part time restaurant work honolulu', 'mochi donut jobs',
+    'kona coffee cafe jobs', 'musubi cook jobs hawaii',
   ];
 
   return {

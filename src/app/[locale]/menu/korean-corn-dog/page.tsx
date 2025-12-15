@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { Flame, MapPin, Clock, Star, Sparkles, ChefHat } from 'lucide-react';
+import JoinTeamCTA from '@/components/JoinTeamCTA';
 
 const translations = {
   en: {
@@ -367,6 +368,9 @@ export default function KoreanCornDogPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Join Team CTA */}
+      <JoinTeamCTA locale={locale} />
 
       {/* Schema.org Product Data */}
       <script
