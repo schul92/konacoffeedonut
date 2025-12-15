@@ -144,8 +144,8 @@ export default function Home() {
       {/* Hiring Modal */}
       <HiringModal locale={locale} />
 
-      {/* Navigation - Responsive */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+      {/* Navigation - Responsive (top-10 accounts for hiring banner height) */}
+      <nav className="fixed top-10 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4">
           {/* Mobile Navigation */}
           <div className="md:hidden flex justify-between items-center gap-2">
@@ -443,8 +443,8 @@ export default function Home() {
         )}
       </nav>
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16 md:pt-32 lg:pt-40 pb-16 md:pb-20 gap-4 md:gap-6 lg:gap-10">
+      {/* Hero Section - pt-28 accounts for hiring banner (40px) + navbar */}
+      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 md:pt-36 lg:pt-44 pb-16 md:pb-20 gap-4 md:gap-6 lg:gap-10">
         {/* Gradient Background - Beach/Ocean Theme */}
         <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-sky-100 via-blue-50 to-amber-50"></div>
 

@@ -250,9 +250,7 @@ export default async function LocaleLayout({
         <StructuredData locale={locale} />
         <HiringBanner locale={locale} />
         <NextIntlClientProvider messages={messages}>
-          <div className="pt-10">{/* Offset for hiring banner */}
-            {children}
-          </div>
+          {children}
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
