@@ -92,6 +92,11 @@ const translations = {
       button: "Apply Now",
       note: "Applications are reviewed within 48 hours",
     },
+    external: {
+      title: "Also Find Our Job Posting On",
+      craigslist: "Craigslist Honolulu",
+      vivinavi: "Vivinavi Hawaii",
+    },
     back: "Back to Home",
   },
   ja: {
@@ -162,6 +167,11 @@ const translations = {
       description: "下のボタンをクリックして応募フォームに記入してください。毎日応募を確認し、資格のある候補者に連絡します。",
       button: "今すぐ応募",
       note: "48時間以内に応募を確認します",
+    },
+    external: {
+      title: "こちらでも求人掲載中",
+      craigslist: "Craigslist ホノルル",
+      vivinavi: "びびなび ハワイ",
     },
     back: "ホームに戻る",
   },
@@ -234,6 +244,11 @@ const translations = {
       button: "지금 지원하기",
       note: "48시간 이내에 지원서를 검토합니다",
     },
+    external: {
+      title: "다른 곳에서도 채용 공고 확인",
+      craigslist: "Craigslist 호놀룰루",
+      vivinavi: "비비나비 하와이",
+    },
     back: "홈으로 돌아가기",
   },
   zh: {
@@ -304,6 +319,11 @@ const translations = {
       description: "点击下方按钮填写申请表。我们每天审核申请，并会联系符合条件的候选人。",
       button: "立即申请",
       note: "48小时内审核申请",
+    },
+    external: {
+      title: "在其他平台查看招聘信息",
+      craigslist: "Craigslist 檀香山",
+      vivinavi: "Vivinavi 夏威夷",
     },
     back: "返回首页",
   },
@@ -654,6 +674,37 @@ export default function CareersPage() {
               <span className="relative">{t.cta.button}</span>
               <ExternalLink className="w-5 h-5 relative" />
             </button>
+          </motion.div>
+
+          {/* External Job Postings */}
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="mt-10 pt-8 border-t border-amber-200"
+          >
+            <p className="text-amber-700 text-sm font-medium mb-4">{t.external.title}</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="https://honolulu.craigslist.org/oah/fbh/d/honolulu-now-hiring-mochi-donut-kona/7902507831.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-amber-200 rounded-lg text-amber-800 hover:bg-amber-50 hover:border-amber-300 transition-colors text-sm font-medium shadow-sm"
+              >
+                <ExternalLink className="w-4 h-4" />
+                {t.external.craigslist}
+              </a>
+              <a
+                href="https://hawaii.vivinavi.com/cj/desc/_wid_971375a68b57a78205b8c8ca757cab1314ce122515"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white border border-amber-200 rounded-lg text-amber-800 hover:bg-amber-50 hover:border-amber-300 transition-colors text-sm font-medium shadow-sm"
+              >
+                <ExternalLink className="w-4 h-4" />
+                {t.external.vivinavi}
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>

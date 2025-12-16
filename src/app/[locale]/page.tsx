@@ -9,6 +9,7 @@ import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import HiringModal from '@/components/HiringModal';
+import { BANNER_VISIBILITY_EVENT, isBannerVisible } from '@/components/HiringBanner';
 
 // Dynamic imports for heavy components to improve initial page load
 // These components are below the fold and can be loaded lazily
@@ -41,8 +42,25 @@ export default function Home() {
   const [currentVideo, setCurrentVideo] = useState(1);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [bannerVisible, setBannerVisible] = useState(true);
   const t = useTranslations();
   const locale = useLocale();
+
+  // Listen for banner visibility changes
+  useEffect(() => {
+    // Check initial state
+    setBannerVisible(isBannerVisible());
+
+    // Listen for changes
+    const handleBannerChange = (e: CustomEvent<{ visible: boolean }>) => {
+      setBannerVisible(e.detail.visible);
+    };
+
+    window.addEventListener(BANNER_VISIBILITY_EVENT, handleBannerChange as EventListener);
+    return () => {
+      window.removeEventListener(BANNER_VISIBILITY_EVENT, handleBannerChange as EventListener);
+    };
+  }, []);
 
   useEffect(() => {
     let rafId: number | null = null;
@@ -144,8 +162,8 @@ export default function Home() {
       {/* Hiring Modal */}
       <HiringModal locale={locale} />
 
-      {/* Navigation - Responsive (top-10 accounts for hiring banner height) */}
-      <nav className="fixed top-10 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+      {/* Navigation - Responsive (position adjusts based on banner visibility) */}
+      <nav className={`fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300 ${bannerVisible ? 'top-10' : 'top-0'}`}>
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4">
           {/* Mobile Navigation */}
           <div className="md:hidden flex justify-between items-center gap-2">
@@ -443,8 +461,8 @@ export default function Home() {
         )}
       </nav>
 
-      {/* Hero Section - pt-28 accounts for hiring banner (40px) + navbar */}
-      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-28 md:pt-36 lg:pt-44 pb-16 md:pb-20 gap-4 md:gap-6 lg:gap-10">
+      {/* Hero Section - padding adjusts based on banner visibility */}
+      <section className={`relative min-h-screen flex flex-col items-center justify-center overflow-hidden pb-16 md:pb-20 gap-4 md:gap-6 lg:gap-10 transition-all duration-300 ${bannerVisible ? 'pt-28 md:pt-36 lg:pt-44' : 'pt-20 md:pt-28 lg:pt-36'}`}>
         {/* Gradient Background - Beach/Ocean Theme */}
         <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-sky-100 via-blue-50 to-amber-50"></div>
 

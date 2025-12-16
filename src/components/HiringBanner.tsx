@@ -2,8 +2,11 @@
 
 import Link from 'next/link';
 import { Sparkles, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { trackJobApplyClick } from '@/lib/analytics';
+
+// Custom event for banner visibility changes
+export const BANNER_VISIBILITY_EVENT = 'hiring-banner-visibility';
 
 interface HiringBannerProps {
   locale?: string;
@@ -32,26 +35,39 @@ const translations = {
   },
 };
 
+// Helper to dispatch visibility event
+const dispatchBannerEvent = (visible: boolean) => {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent(BANNER_VISIBILITY_EVENT, { detail: { visible } }));
+  }
+};
+
+// Helper to check if banner should be visible
+export const isBannerVisible = (): boolean => {
+  if (typeof window === 'undefined') return false;
+  const dismissed = localStorage.getItem('hiring-banner-dismissed');
+  const dismissedTime = dismissed ? parseInt(dismissed) : 0;
+  const threeDaysAgo = Date.now() - 3 * 24 * 60 * 60 * 1000;
+  return !dismissed || dismissedTime < threeDaysAgo;
+};
+
 export default function HiringBanner({ locale = 'en' }: HiringBannerProps) {
   const [isVisible, setIsVisible] = useState(false);
   const t = translations[locale as keyof typeof translations] || translations.en;
 
   useEffect(() => {
-    // Check if banner was dismissed
-    const dismissed = localStorage.getItem('hiring-banner-dismissed');
-    const dismissedTime = dismissed ? parseInt(dismissed) : 0;
-    const threeDaysAgo = Date.now() - 3 * 24 * 60 * 60 * 1000;
-
-    // Show if not dismissed or dismissed more than 3 days ago
-    if (!dismissed || dismissedTime < threeDaysAgo) {
-      setIsVisible(true);
-    }
+    const shouldShow = isBannerVisible();
+    setIsVisible(shouldShow);
+    // Dispatch event on mount
+    dispatchBannerEvent(shouldShow);
   }, []);
 
-  const handleDismiss = () => {
+  const handleDismiss = useCallback(() => {
     setIsVisible(false);
     localStorage.setItem('hiring-banner-dismissed', Date.now().toString());
-  };
+    // Dispatch event when dismissed
+    dispatchBannerEvent(false);
+  }, []);
 
   const handleClick = () => {
     trackJobApplyClick('hiring_banner', locale);
