@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "menu": "Menú",
+    "about": "Nosotros",
+    "location": "Ubicación"
+  },
+  "hero": {
+    "welcome": "Hecho a Mano con Aloha",
+    "subtitle": "Café Hawaiano Auténtico y Donuts Artesanales"
+  },
+  "menu": {
+    "title": "Nuestro Menú",
+    "subtitle": "Delicias Artesanales",
+    "viewMenu": "Ver Menú",
+    "categories": {
+      "donuts": {
+        "name": "Donuts de Mochi",
+        "description": "Donuts artesanales de mochi hechos con harina de arroz premium, crujientes por fuera y suaves por dentro"
+      },
+      "malasada": {
+        "name": "Malasada",
+        "description": "Pastelería frita tradicional hawaiana-portuguesa"
+      },
+      "coffee": {
+        "name": "Café Kona",
+        "description": "Café Kona premium de Honolulu Coffee, el tostador de café Kona número uno de Hawaii"
+      },
+      "bingsu": {
+        "name": "Bingsu",
+        "description": "Bingsu estilo hawaiano con frutas frescas y hielo raspado coreano"
+      },
+      "hotdog": {
+        "name": "Corn Dogs Coreanos",
+        "description": "Corn dogs crujientes al estilo coreano"
+      },
+      "acai": {
+        "name": "Bowl de Açaí",
+        "description": "Bowls frescos de açaí con frutas tropicales y granola"
+      }
+    }
+  },
+  "about": {
+    "title": "NOSOTROS",
+    "subtitle": "Donde el Café Kona Premium se Une con Donuts Artesanales",
+    "coffeeDonutStory": "¡Unimos MOCHILAND y HONOLULU COFFEE para crear la experiencia de café definitiva! El café y los donuts son la combinación perfecta - los sabores ricos y audaces del café Kona premium complementan la textura dulce y delicada de los donuts de mochi artesanales. ¡Experimenta ambas marcas excepcionales en una ubicación increíble en el corazón de Waikiki!",
+    "konaStory": "El café Kona es mundialmente reconocido por su calidad excepcional, cultivado exclusivamente en las laderas volcánicas de la Isla Grande de Hawaii. HONOLULU COFFEE obtiene solo los mejores granos Kona premium, ofreciendo un sabor suave y rico con notas sutiles de chocolate y nueces. Combinado con los innovadores donuts de mochi de MOCHILAND, ofrecemos lo mejor de la artesanía y calidad hawaiana.",
+    "ctaTitle": "Experimenta el Maridaje Perfecto",
+    "ctaText": "¡Visítanos en Waikiki y descubre por qué CAFÉ KONA + DONUTS MOCHILAND = la combinación perfecta!",
+    "visitButton": "Visítanos Hoy"
+  },
+  "location": {
+    "title": "GRAN APERTURA",
+    "subtitle": "Próximamente",
+    "address": "2142 Kalakaua Ave",
+    "city": "Honolulu, HI 96815",
+    "directions": "Cómo Llegar"
+  },
+  "footer": {
+    "tagline": "Hecho a Mano con Aloha",
+    "collaboration": "En colaboración con",
+    "copyright": "© 2025 Kona Coffee Donut. Todos los derechos reservados."
+  },
+  "meta": {
+    "title": "Kona Coffee Donut | Donuts y Café Artesanal en Waikiki, Hawaii",
+    "description": "Disfruta del auténtico café Kona hawaiano y donuts artesanales de mochi en Waikiki. Hecho con café premium de Honolulu Coffee y MOCHILAND. Cafetería cerca de mí en Hawaii."
+  },
+  "aboutKonaCoffee": {
+    "hero": {
+      "title": "¿Qué Hace Especial al Café Kona?",
+      "subtitle": "Descubre por qué el café Kona es considerado uno de los mejores cafés del mundo, cultivado exclusivamente en las laderas volcánicas de la Isla Grande de Hawaii.",
+      "cta": "Prueba Nuestro Café Kona"
+    },
+    "intro": {
+      "title": "El Estándar de Oro del Café Hawaiano",
+      "paragraph1": "El café Kona es un café hawaiano premium cultivado exclusivamente en el Distrito de Kona en la Isla Grande de Hawaii. Conocido por su sabor suave y rico con baja acidez, el café Kona representa menos del 1% de la producción mundial de café, convirtiéndolo en uno de los cafés más raros y codiciados del mundo.",
+      "paragraph2": "En Kona Coffee Donut en Waikiki, servimos orgullosamente café Kona auténtico en asociación con Honolulu Coffee, el principal tostador de café de Hawaii desde 1992. Cada taza ofrece el sabor genuino del patrimonio cafetero de Hawaii."
+    },
+    "whySpecial": {
+      "title": "Por Qué el Café Kona Sabe Diferente",
+      "growing": {
+        "title": "Condiciones de Cultivo Perfectas",
+        "text": "El café Kona prospera en las laderas volcánicas de los montes Mauna Loa y Hualalai. El suelo volcánico rico, combinado con la elevación ideal (240-760 metros), crea el terroir perfecto para el cultivo del café. El sol de la mañana, la cobertura de nubes por la tarde y las noches suaves crean un microclima único en el mundo."
+      },
+      "flavor": {
+        "title": "Perfil de Sabor Distintivo",
+        "text": "Los granos de café Kona premium producen una infusión de cuerpo medio con baja acidez y un final suave. Espera notas de azúcar morena, chocolate con leche, sutiles matices frutales y un toque de nuez. El sabor es limpio, equilibrado y nunca amargo - perfecto para los entusiastas del café negro y aquellos que prefieren crema y azúcar."
+      },
+      "handPicked": {
+        "title": "Recogido a Mano y en Lotes Pequeños",
+        "text": "A diferencia del café comercial producido en masa, las cerezas de café Kona son recogidas a mano en su punto óptimo de madurez por agricultores locales. Este proceso intensivo en mano de obra asegura que solo las mejores cerezas lleguen a tu taza. Las pequeñas fincas familiares dominan la producción de café Kona, manteniendo generaciones de experiencia cafetera."
+      },
+      "origin": {
+        "title": "100% Origen Hawaiano",
+        "text": "El verdadero café Kona debe cultivarse en el Distrito de Kona para llevar ese nombre. Cuidado con las 'mezclas Kona' que pueden contener tan solo un 10% de granos Kona reales - en nuestra ubicación de Waikiki, servimos solo café Kona premium genuino de Honolulu Coffee."
+      }
+    },
+    "comparison": {
+      "title": "Café Kona vs. Otros Cafés Premium",
+      "coffeeType": "Tipo de Café",
+      "flavor": "Sabor",
+      "acidity": "Acidez",
+      "kona": {
+        "name": "Café Kona Premium",
+        "flavor": "Suave, equilibrado, notas de chocolate",
+        "acidity": "Baja"
+      },
+      "colombian": {
+        "name": "Café Colombiano",
+        "flavor": "Brillante, afrutado, caramelo",
+        "acidity": "Media-Alta"
+      },
+      "ethiopian": {
+        "name": "Café Etíope",
+        "flavor": "Floral, tipo vino, bayas",
+        "acidity": "Alta"
+      },
+      "brazilian": {
+        "name": "Café Brasileño",
+        "flavor": "Nuez, chocolate, cuerpo pesado",
+        "acidity": "Baja"
+      },
+      "note": "La baja acidez del café Kona lo hace ideal para personas con estómagos sensibles mientras mantiene un desarrollo de sabor complejo."
+    },
+    "experience": {
+      "title": "Experimenta el Auténtico Café Kona en Waikiki",
+      "paragraph1": "Ubicados en el corazón de Waikiki en 2142 Kalakaua Ave, Kona Coffee Donut es tu destino para café Kona premium genuino combinado con donuts de mochi artesanales de MOCHILAND. Nos asociamos con Honolulu Coffee, el nombre más confiable de Hawaii en café Kona premium desde 1992.",
+      "whyChoose": {
+        "title": "¿Por Qué Elegir Nuestro Café Kona?",
+        "point1": "Granos de café Kona premium de Honolulu Coffee",
+        "point2": "Preparado fresco diariamente usando métodos tradicionales de tostado hawaiano",
+        "point3": "Maridaje perfecto con nuestros donuts de mochi artesanales y malasadas",
+        "point4": "Ubicación conveniente en Waikiki - abierto diariamente de 7 AM a 9 PM"
+      },
+      "cta": "Visítanos en Waikiki"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes Sobre el Café Kona",
+      "q1": {
+        "question": "¿Vale la pena el precio del café Kona?",
+        "answer": "¡Sí! El precio premium del café Kona refleja su producción limitada, proceso de recolección manual y calidad excepcional. Con menos del 1% de la producción mundial de café, el café Kona genuino ofrece una experiencia de sabor única que no encontrarás en ningún otro lugar."
+      },
+      "q2": {
+        "question": "¿Cuál es la diferencia entre 'mezcla Kona' y Kona premium?",
+        "answer": "La 'mezcla Kona' puede contener tan solo un 10% de granos Kona reales mezclados con cafés más baratos. En Kona Coffee Donut, servimos solo café Kona premium genuino de Honolulu Coffee - nunca mezclas."
+      },
+      "q3": {
+        "question": "¿Cómo debo preparar el café Kona en casa?",
+        "answer": "Los métodos de vertido, prensa francesa o goteo funcionan maravillosamente con el café Kona. Usa agua justo por debajo del punto de ebullición (90-96°C) y una molienda media. La proporción de café a agua debe ser aproximadamente 1:16 para una extracción óptima del sabor."
+      },
+      "q4": {
+        "question": "¿Puedo comprar granos de café Kona para llevar a casa?",
+        "answer": "¡Absolutamente! Visítanos en nuestra ubicación de Waikiki para comprar granos de café Kona recién tostados. Ofrecemos varios niveles de tueste y tamaños de paquete - perfecto para regalos o para llevar un sabor de Hawaii a casa."
+      }
+    },
+    "finalCta": {
+      "title": "¿Listo para Experimentar el Mejor Café de Hawaii?",
+      "subtitle": "Visita Kona Coffee Donut en Waikiki y prueba la diferencia que hace el café Kona premium de Honolulu Coffee.",
+      "viewMenu": "Ver Nuestro Menú",
+      "getDirections": "Cómo Llegar"
+    }
+  }
+}

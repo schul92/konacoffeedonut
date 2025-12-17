@@ -10,6 +10,25 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     ja: '日本語',
     ko: '한국어',
     zh: '中文',
+    es: 'Español',
+  };
+
+  // Locale-specific descriptions for better SEO
+  const descriptions: Record<string, string> = {
+    en: 'Best Kona coffee and mochi donuts in Waikiki, Honolulu. Coffee near me, donuts near me. Featuring premium Kona coffee by Honolulu Coffee and artisan mochi donuts by MOCHILAND. Perfect for tourists visiting Hawaii.',
+    ja: 'ワイキキで最高のコナコーヒーとモチドーナツ。近くのカフェ、近くのドーナツ。ホノルルコーヒーのプレミアムコナコーヒーとモチランドの職人モチドーナツ。ハワイ観光に最適。',
+    ko: '와이키키 최고의 코나 커피와 모찌 도넛. 근처 카페, 근처 도넛. 호놀룰루 커피의 프리미엄 코나 커피와 모찌랜드의 장인 모찌 도넛. 하와이 여행객에게 완벽.',
+    zh: '威基基最好的科纳咖啡和麻糬甜甜圈。附近咖啡店，附近甜甜圈。檀香山咖啡的优质科纳咖啡和MOCHILAND的手工麻糬甜甜圈。非常适合来夏威夷旅游的游客。',
+    es: 'El mejor café Kona y donuts de mochi en Waikiki, Honolulu. Café cerca de mí, donuts cerca de mí. Café Kona premium de Honolulu Coffee y donuts de mochi artesanales de MOCHILAND. Perfecto para turistas que visitan Hawaii.',
+  };
+
+  // Locale-specific keywords for better local SEO
+  const keywordsByLocale: Record<string, string> = {
+    en: 'kona coffee waikiki, coffee near me, donuts near me, mochi donuts hawaii, best coffee waikiki, honolulu coffee, waikiki breakfast, tourist cafe waikiki, malasada near me, bingsu near me',
+    ja: 'コナコーヒー ワイキキ, 近くのカフェ, 近くのドーナツ, モチドーナツ ハワイ, ワイキキ おすすめ カフェ, ホノルルコーヒー, ワイキキ 朝食, ハワイ 観光 カフェ, マラサダ ハワイ, ビングス ハワイ',
+    ko: '코나 커피 와이키키, 근처 카페, 근처 도넛, 모찌 도넛 하와이, 와이키키 추천 카페, 호놀룰루 커피, 와이키키 아침식사, 하와이 관광 카페, 말라사다 하와이, 빙수 하와이',
+    zh: '科纳咖啡 威基基, 附近咖啡店, 附近甜甜圈, 麻糬甜甜圈 夏威夷, 威基基 推荐 咖啡店, 檀香山咖啡, 威基基 早餐, 夏威夷 旅游 咖啡店, 马拉萨达 夏威夷, 刨冰 夏威夷',
+    es: 'café kona waikiki, café cerca de mí, donuts cerca de mí, donuts mochi hawaii, mejor café waikiki, honolulu coffee, desayuno waikiki, café turístico waikiki, malasada hawaii, bingsu hawaii',
   };
 
   // Local Business Schema
@@ -19,7 +38,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@id': 'https://www.konacoffeedonut.com/#restaurant',
     name: 'Kona Coffee Donut - Waikiki',
     alternateName: ['MOCHILAND x Honolulu Coffee', 'Kona Coffee Donut Waikiki', 'Kona Coffee Honolulu'],
-    description: 'Best Kona coffee and mochi donuts in Waikiki, Honolulu. Featuring premium Kona coffee by Honolulu Coffee and artisan mochi donuts by MOCHILAND. Perfect for tourists visiting Hawaii.',
+    description: descriptions[locale] || descriptions.en,
     image: 'https://www.konacoffeedonut.com/og-image.jpg',
     url: `https://www.konacoffeedonut.com/${locale}`,
     telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
@@ -102,7 +121,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         geoRadius: '5000',
       },
     ],
-    keywords: 'kona coffee waikiki, coffee near me, donuts near me, mochi donuts hawaii, best coffee waikiki, honolulu coffee, waikiki breakfast, tourist cafe waikiki, kalakaua ave coffee, hawaii coffee shop',
+    keywords: keywordsByLocale[locale] || keywordsByLocale.en,
     sameAs: [
       'https://www.instagram.com/konacoffeedonut',
       'https://www.instagram.com/mochinut_fortlee',
@@ -146,7 +165,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       telephone: '+1-808-XXX-XXXX',
       contactType: 'customer service',
       areaServed: 'US',
-      availableLanguage: ['English', 'Japanese', 'Korean', 'Chinese'],
+      availableLanguage: ['English', 'Japanese', 'Korean', 'Chinese', 'Spanish'],
     },
     sameAs: [
       'https://www.instagram.com/konacoffeedonut',
