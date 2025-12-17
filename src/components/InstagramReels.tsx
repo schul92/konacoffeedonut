@@ -159,7 +159,6 @@ export default function InstagramReels({ className = '' }: InstagramReelsProps) 
               : { opacity: 0, y: -10, scale: 0.95 }
             }
             transition={{ duration: 0.25, ease: 'easeOut' }}
-            onMouseLeave={() => !isMobile && setIsOpen(false)}
             className={isMobile
               ? "fixed bottom-0 left-0 right-0 z-[9999] max-h-[85vh]"
               : "fixed z-[9999]"
@@ -311,7 +310,6 @@ export default function InstagramReels({ className = '' }: InstagramReelsProps) 
       {/* Trigger Button - Just Instagram Icon */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        onMouseEnter={() => !isMobile && setIsOpen(true)}
         className="flex items-center gap-1.5 px-2 py-2 rounded-lg hover:bg-amber-50 transition-colors group"
         aria-expanded={isOpen}
         aria-haspopup="true"
