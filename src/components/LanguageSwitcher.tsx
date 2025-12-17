@@ -12,6 +12,7 @@ const languageNames: Record<string, string> = {
   ja: '日本語',
   ko: '한국어',
   zh: '中文',
+  es: 'Español',
 };
 
 const languageFlags: Record<string, string> = {
@@ -19,6 +20,7 @@ const languageFlags: Record<string, string> = {
   ja: '🇯🇵',
   ko: '🇰🇷',
   zh: '🇨🇳',
+  es: '🇪🇸',
 };
 
 export default function LanguageSwitcher() {
