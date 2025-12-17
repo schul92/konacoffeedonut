@@ -78,10 +78,10 @@ export default function HiringModal({ locale = 'en' }: HiringModalProps) {
     // Check if user has dismissed the modal before
     const dismissed = localStorage.getItem('hiring-modal-dismissed');
     const dismissedTime = dismissed ? parseInt(dismissed) : 0;
-    const oneDayAgo = Date.now() - 24 * 60 * 60 * 1000;
+    const fourHoursAgo = Date.now() - 4 * 60 * 60 * 1000;
 
-    // Show modal if never dismissed or dismissed more than 24 hours ago
-    if (!dismissed || dismissedTime < oneDayAgo) {
+    // Show modal if never dismissed or dismissed more than 4 hours ago
+    if (!dismissed || dismissedTime < fourHoursAgo) {
       // Delay showing modal for better UX
       const timer = setTimeout(() => {
         setIsOpen(true);
