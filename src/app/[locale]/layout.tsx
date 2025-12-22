@@ -255,6 +255,9 @@ export default async function LocaleLayout({
         {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="B_3ls-YIFDHA5XYRx9mkf_QuiFx53A2XlqSdegSRwjY" />
 
+        {/* Ahrefs Analytics Verification */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="AxGEdYt3cOmhXOY0Vi16ZQ" async></script>
+
         {/* Viewport and Mobile Optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
 
