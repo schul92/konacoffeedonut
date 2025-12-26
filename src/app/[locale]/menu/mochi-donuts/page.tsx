@@ -150,10 +150,12 @@ export default function MochiDonutsPage() {
       name: 'Kona Coffee Donut',
     },
     offers: {
-      '@type': 'Offer',
+      '@type': 'AggregateOffer',
       availability: 'https://schema.org/InStock',
       priceCurrency: 'USD',
-      priceRange: '$3-$5',
+      lowPrice: '3.00',
+      highPrice: '5.00',
+      offerCount: '10',
       seller: {
         '@type': 'Organization',
         name: 'Kona Coffee Donut',

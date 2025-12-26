@@ -158,18 +158,11 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteUrl}/${locale}`,
       languages: {
-        'en': `${siteUrl}/en`,
         'en-US': `${siteUrl}/en`,
-        'ja': `${siteUrl}/ja`,
         'ja-JP': `${siteUrl}/ja`,
-        'ko': `${siteUrl}/ko`,
         'ko-KR': `${siteUrl}/ko`,
-        'zh': `${siteUrl}/zh`,
         'zh-CN': `${siteUrl}/zh`,
-        'zh-TW': `${siteUrl}/zh`,
-        'es': `${siteUrl}/es`,
         'es-ES': `${siteUrl}/es`,
-        'es-MX': `${siteUrl}/es`,
         'x-default': `${siteUrl}/en`,
       },
     },

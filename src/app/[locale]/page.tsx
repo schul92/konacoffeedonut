@@ -186,6 +186,11 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-black">
+      {/* SEO H1 - Visually hidden but accessible to search engines */}
+      <h1 className="sr-only">
+        {t('hero.welcome')} - {t('hero.subtitle')}
+      </h1>
+
       {/* Hiring Modal */}
       <HiringModal locale={locale} />
 

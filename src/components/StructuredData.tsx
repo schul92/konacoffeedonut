@@ -359,6 +359,10 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@type': 'Product',
     name: 'Premium Kona Coffee & Mochi Donuts',
     description: 'Authentic Hawaiian experience featuring premium Kona coffee and artisan mochi donuts',
+    image: [
+      'https://www.konacoffeedonut.com/images/menu/donut.webp',
+      'https://www.konacoffeedonut.com/images/menu/coffee.webp',
+    ],
     brand: {
       '@type': 'Brand',
       name: 'Kona Coffee Donut',
