@@ -47,6 +47,16 @@ module.exports = {
       priority = 1.0;
       changefreq = 'daily';
     }
+    // High-priority SEO landing pages (target keywords)
+    else if (path.includes('/fresh-donuts') || path.includes('/gourmet-donuts')) {
+      priority = 0.9;
+      changefreq = 'weekly';
+    }
+    // About Kona Coffee page (targets "100% kona coffee" keyword)
+    else if (path.includes('/about-kona-coffee')) {
+      priority = 0.85;
+      changefreq = 'weekly';
+    }
     // Menu item pages
     else if (path.includes('/menu/')) {
       priority = 0.8;

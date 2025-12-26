@@ -83,9 +83,15 @@ export async function generateMetadata({
       // Brand collaboration
       'honolulu coffee collaboration', 'mochiland waikiki', 'bonepi waikiki',
       'kona coffee donut shop', 'coffee donut pairing',
-      // Experience
+      // Experience & High-Priority Keywords
       'best coffee in waikiki', 'gourmet donuts hawaii', 'hawaiian cafe',
       'coffee and donuts waikiki', 'artisan pastries honolulu',
+      // High-Priority Target Keywords (Low Difficulty)
+      'fresh donuts', 'fresh donuts hawaii', 'fresh donuts waikiki',
+      'gourmet donuts', 'gourmet donuts near me', 'gourmet coffee and donuts',
+      '100% kona coffee', 'authentic kona coffee', 'best kona coffee',
+      'hawaiian bakery', 'hawaiian bakery waikiki', 'hawaiian pastries',
+      'kona coffee donuts', 'hawaiian coffee and donuts', 'coffee donut gift',
       // Japanese Keywords - "Near Me" searches (近くの = near me)
       'コナコーヒー', 'ワイキキドーナツ', 'ホノルルコーヒー', 'モチドーナツ',
       '近くのカフェ', '近くのドーナツ', '近くのコーヒー', 'ワイキキカフェ',
