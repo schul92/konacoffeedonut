@@ -100,7 +100,7 @@ const translations = {
       {
         category: "services",
         question: "Do you cater events?",
-        answer: "For large orders or catering inquiries, please contact us directly at konacoffeedonut@gmail.com. We'd be happy to discuss your needs."
+        answer: "For large orders or catering inquiries, please contact us directly at info@konacoffeedonut.com. We'd be happy to discuss your needs."
       },
       {
         category: "services",
@@ -487,10 +487,10 @@ export default function FAQPage() {
              "Feel free to reach out to us"}
           </p>
           <a
-            href="mailto:konacoffeedonut@gmail.com"
+            href="mailto:info@konacoffeedonut.com"
             className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-xl font-medium transition-colors"
           >
-            konacoffeedonut@gmail.com
+            info@konacoffeedonut.com
           </a>
         </div>
       </section>

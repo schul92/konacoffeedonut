@@ -42,7 +42,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     image: 'https://www.konacoffeedonut.com/og-image.jpg',
     url: `https://www.konacoffeedonut.com/${locale}`,
     // telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
-    email: 'konacoffeedonut@gmail.com',
+    email: 'info@konacoffeedonut.com',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',

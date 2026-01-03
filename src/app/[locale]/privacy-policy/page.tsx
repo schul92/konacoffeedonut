@@ -37,7 +37,7 @@ const translations = {
       },
       {
         title: "Contact Us",
-        content: "If you have questions about this privacy policy or our data practices, please contact us at:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nEmail: konacoffeedonut@gmail.com"
+        content: "If you have questions about this privacy policy or our data practices, please contact us at:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nEmail: info@konacoffeedonut.com"
       },
     ],
   },
@@ -60,7 +60,7 @@ const translations = {
       },
       {
         title: "お問い合わせ",
-        content: "このプライバシーポリシーまたはデータの取り扱いについてご質問がある場合は、以下までご連絡ください：\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nメール: konacoffeedonut@gmail.com"
+        content: "このプライバシーポリシーまたはデータの取り扱いについてご質問がある場合は、以下までご連絡ください：\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nメール: info@konacoffeedonut.com"
       },
     ],
   },
@@ -79,7 +79,7 @@ const translations = {
       },
       {
         title: "문의하기",
-        content: "이 개인정보 처리방침 또는 데이터 처리에 대해 질문이 있으시면 아래로 연락해 주세요:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\n이메일: konacoffeedonut@gmail.com"
+        content: "이 개인정보 처리방침 또는 데이터 처리에 대해 질문이 있으시면 아래로 연락해 주세요:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\n이메일: info@konacoffeedonut.com"
       },
     ],
   },
@@ -98,7 +98,7 @@ const translations = {
       },
       {
         title: "联系我们",
-        content: "如果您对本隐私政策或我们的数据处理有任何疑问，请联系我们：\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\n电子邮件：konacoffeedonut@gmail.com"
+        content: "如果您对本隐私政策或我们的数据处理有任何疑问，请联系我们：\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\n电子邮件：info@konacoffeedonut.com"
       },
     ],
   },
@@ -117,7 +117,7 @@ const translations = {
       },
       {
         title: "Contáctenos",
-        content: "Si tiene preguntas sobre esta política de privacidad o nuestras prácticas de datos, contáctenos en:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nCorreo electrónico: konacoffeedonut@gmail.com"
+        content: "Si tiene preguntas sobre esta política de privacidad o nuestras prácticas de datos, contáctenos en:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nCorreo electrónico: info@konacoffeedonut.com"
       },
     ],
   },

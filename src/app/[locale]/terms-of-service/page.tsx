@@ -45,7 +45,7 @@ const translations = {
       },
       {
         title: "Contact Information",
-        content: "If you have any questions about these Terms of Service, please contact us at:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nEmail: konacoffeedonut@gmail.com"
+        content: "If you have any questions about these Terms of Service, please contact us at:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nEmail: info@konacoffeedonut.com"
       },
     ],
   },
@@ -68,7 +68,7 @@ const translations = {
       },
       {
         title: "お問い合わせ",
-        content: "この利用規約についてご質問がある場合は、以下までご連絡ください：\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nメール: konacoffeedonut@gmail.com"
+        content: "この利用規約についてご質問がある場合は、以下までご連絡ください：\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nメール: info@konacoffeedonut.com"
       },
     ],
   },
@@ -87,7 +87,7 @@ const translations = {
       },
       {
         title: "문의하기",
-        content: "본 이용약관에 대해 질문이 있으시면 아래로 연락해 주세요:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\n이메일: konacoffeedonut@gmail.com\n전화: (808) 922-1515"
+        content: "본 이용약관에 대해 질문이 있으시면 아래로 연락해 주세요:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\n이메일: info@konacoffeedonut.com"
       },
     ],
   },
@@ -106,7 +106,7 @@ const translations = {
       },
       {
         title: "联系我们",
-        content: "如果您对本服务条款有任何疑问，请联系我们：\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\n电子邮件：konacoffeedonut@gmail.com"
+        content: "如果您对本服务条款有任何疑问，请联系我们：\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\n电子邮件：info@konacoffeedonut.com"
       },
     ],
   },
@@ -125,7 +125,7 @@ const translations = {
       },
       {
         title: "Contáctenos",
-        content: "Si tiene alguna pregunta sobre estos Términos de Servicio, contáctenos en:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nCorreo electrónico: konacoffeedonut@gmail.com"
+        content: "Si tiene alguna pregunta sobre estos Términos de Servicio, contáctenos en:\n\nKona Coffee Donut\n2142 Kalakaua Ave\nHonolulu, HI 96815\nCorreo electrónico: info@konacoffeedonut.com"
       },
     ],
   },
