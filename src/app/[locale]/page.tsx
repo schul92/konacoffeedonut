@@ -1612,16 +1612,29 @@ export default function Home() {
             </div>
 
             {/* Right: Navigation */}
-            <div className="flex gap-8 text-base">
-              <a href="#menu" className="opacity-60 hover:opacity-100 transition-opacity">
-                {t('nav.menu')}
-              </a>
-              <a href="#about" className="opacity-60 hover:opacity-100 transition-opacity">
-                {t('nav.about')}
-              </a>
-              <a href="#location" className="opacity-60 hover:opacity-100 transition-opacity">
-                {t('nav.location')}
-              </a>
+            <div className="flex flex-col gap-4">
+              <div className="flex gap-8 text-base">
+                <a href="#menu" className="opacity-60 hover:opacity-100 transition-opacity">
+                  {t('nav.menu')}
+                </a>
+                <a href="#about" className="opacity-60 hover:opacity-100 transition-opacity">
+                  {t('nav.about')}
+                </a>
+                <a href="#location" className="opacity-60 hover:opacity-100 transition-opacity">
+                  {t('nav.location')}
+                </a>
+              </div>
+              <div className="flex gap-6 text-sm">
+                <Link href={`/${locale}/faq`} className="opacity-50 hover:opacity-100 transition-opacity">
+                  FAQ
+                </Link>
+                <Link href={`/${locale}/privacy-policy`} className="opacity-50 hover:opacity-100 transition-opacity">
+                  {locale === 'ja' ? 'プライバシー' : locale === 'ko' ? '개인정보' : locale === 'zh' ? '隐私政策' : locale === 'es' ? 'Privacidad' : 'Privacy'}
+                </Link>
+                <Link href={`/${locale}/terms-of-service`} className="opacity-50 hover:opacity-100 transition-opacity">
+                  {locale === 'ja' ? '利用規約' : locale === 'ko' ? '이용약관' : locale === 'zh' ? '服务条款' : locale === 'es' ? 'Términos' : 'Terms'}
+                </Link>
+              </div>
             </div>
           </div>
 
