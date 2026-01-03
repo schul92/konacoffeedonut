@@ -41,7 +41,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     description: descriptions[locale] || descriptions.en,
     image: 'https://www.konacoffeedonut.com/og-image.jpg',
     url: `https://www.konacoffeedonut.com/${locale}`,
-    telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
+    // telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
     email: 'konacoffeedonut@gmail.com',
     priceRange: '$$',
     address: {
@@ -162,7 +162,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-808-XXX-XXXX',
+      // telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
       contactType: 'customer service',
       areaServed: 'US',
       availableLanguage: ['English', 'Japanese', 'Korean', 'Chinese', 'Spanish'],
@@ -305,7 +305,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     },
   };
 
-  // FAQ Schema - Common Questions
+  // FAQ Schema - Common Questions (15+ questions for comprehensive SEO)
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -315,7 +315,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'What makes Kona Coffee special?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We serve premium Kona coffee in partnership with Honolulu Coffee, Hawaii\'s premier coffee roaster. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity.',
+          text: 'We serve premium Kona coffee in partnership with Honolulu Coffee, Hawaii\'s premier coffee roaster. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity. It\'s one of the most sought-after coffees in the world due to Hawaii\'s unique volcanic soil and ideal growing conditions.',
         },
       },
       {
@@ -323,7 +323,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'What are mochi donuts?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Mochi donuts are artisan donuts made with rice flour, giving them a unique texture that is crispy on the outside and chewy on the inside. We feature MOCHILAND mochi donuts at our Waikiki location.',
+          text: 'Mochi donuts are artisan donuts made with rice flour (mochiko), giving them a unique texture that is crispy on the outside and chewy on the inside. We feature MOCHILAND mochi donuts at our Waikiki location, offering a variety of flavors including ube, matcha, black sesame, and seasonal specials.',
         },
       },
       {
@@ -331,7 +331,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'Where is Kona Coffee Donut located?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We are located at 2142 Kalakaua Ave, Honolulu, HI 96815 in the heart of Waikiki, Hawaii.',
+          text: 'We are located at 2142 Kalakaua Ave, Honolulu, HI 96815 in the heart of Waikiki, Hawaii. We\'re just a short walk from Waikiki Beach, making us the perfect spot for tourists and locals alike.',
         },
       },
       {
@@ -339,7 +339,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'What are your opening hours?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We are open daily from 7:00 AM to 9:00 PM, serving fresh coffee and donuts throughout the day.',
+          text: 'We are open daily from 7:00 AM to 9:00 PM, serving fresh coffee and donuts throughout the day. We recommend visiting in the morning for the freshest selection of donuts.',
         },
       },
       {
@@ -347,7 +347,95 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'Do you offer takeout?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, we offer takeout service. You can grab your favorite coffee and donuts to go.',
+          text: 'Yes, we offer takeout service. You can grab your favorite coffee and donuts to go. Our donuts are packaged carefully to maintain freshness.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is malasada?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Malasada is a traditional Hawaiian-Portuguese fried dough pastry that was brought to Hawaii by Portuguese immigrants. Our malasadas are freshly made, coated in sugar, and can be filled with various flavors like custard, chocolate, or haupia (coconut).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is bingsu?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Bingsu is a popular Korean shaved ice dessert made with finely shaved milk ice and topped with various ingredients. Our Hawaiian-style bingsu features fresh tropical fruits, mochi, and sweet toppings - perfect for cooling down in the Waikiki heat.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you have vegan or gluten-free options?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'While our mochi donuts contain rice flour which is naturally gluten-free, they may be prepared in facilities that handle wheat. Please inform our staff about any dietary restrictions and we\'ll do our best to accommodate you.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is parking available?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Street parking and nearby parking garages are available in the Waikiki area. Many visitors also walk from nearby hotels or take public transportation to our Kalakaua Avenue location.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you accept credit cards?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we accept all major credit cards, debit cards, and cash. We also accept contactless payment methods like Apple Pay and Google Pay.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between Kona coffee and regular coffee?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Kona coffee is grown exclusively in the Kona district of Hawaii\'s Big Island. The unique combination of volcanic soil, tropical climate, and high altitude creates a coffee with exceptional smoothness, low acidity, and distinctive flavor notes. True 100% Kona coffee is rare and considered among the finest coffees in the world.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you offer Wi-Fi?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we offer free Wi-Fi for our customers. Feel free to work or browse while enjoying your coffee and donuts.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I buy Kona coffee beans to take home?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes! We sell premium Kona coffee beans through our partnership with Honolulu Coffee. They make perfect souvenirs and gifts from Hawaii.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are Korean corn dogs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Korean corn dogs (also known as K-dogs) are a popular Korean street food featuring a hot dog or cheese on a stick, coated in a variety of batters, deep-fried, and topped with different seasonings. Our corn dogs are crispy on the outside and perfectly seasoned.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is Kona Coffee Donut family-friendly?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Absolutely! We welcome families with children. Our menu has something for everyone, from sweet mochi donuts to refreshing bingsu. We have a relaxed, friendly atmosphere perfect for families visiting Waikiki.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you hire tourists or international students?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we are always looking for enthusiastic team members! We welcome applications from individuals with valid work authorization. Please visit our careers page or stop by our store to learn about current openings.',
         },
       },
     ],

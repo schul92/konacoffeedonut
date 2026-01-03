@@ -572,7 +572,7 @@ export default function Home() {
         <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
           <Image
             src="/images/background/background.webp"
-            alt="Background"
+            alt="Waikiki beach and palm trees background for Kona Coffee Donut cafe"
             fill
             sizes="100vw"
             className="object-cover opacity-40"

@@ -193,10 +193,14 @@ export async function generateMetadata({
       },
     },
     verification: {
-      // Add your verification codes here when available
-      // google: 'YOUR_GOOGLE_VERIFICATION_CODE',
-      // yandex: 'YOUR_YANDEX_VERIFICATION_CODE',
-      // bing: 'YOUR_BING_VERIFICATION_CODE',
+      // Note: Google verification is in <head> at line 275
+      // Add Bing/Yandex verification codes when you register with their webmaster tools:
+      // - Bing: https://www.bing.com/webmasters
+      // - Yandex: https://webmaster.yandex.com
+      other: {
+        'msvalidate.01': '', // Add Bing verification code here
+        'yandex-verification': '8198509aea172f8f',
+      },
     },
     other: {
       // Rich Snippets

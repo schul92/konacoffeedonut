@@ -10,6 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/menu',
     '/about-kona-coffee',
     '/careers',
+    '/faq',
+    '/privacy-policy',
+    '/terms-of-service',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -25,6 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '': 1.0,
     '/about-kona-coffee': 0.9,
     '/careers': 0.95, // Higher priority for job postings
+    '/faq': 0.8,
+    '/privacy-policy': 0.3,
+    '/terms-of-service': 0.3,
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
     '/menu/kona-coffee': 0.85,
@@ -39,6 +45,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '': 'daily',
     '/about-kona-coffee': 'weekly',
     '/careers': 'daily', // Job postings change frequently
+    '/faq': 'monthly',
+    '/privacy-policy': 'monthly',
+    '/terms-of-service': 'monthly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',
     '/menu/kona-coffee': 'weekly',
@@ -65,14 +74,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // Add anchor-linked sections for better SEO
+  // Add anchor-linked sections for better SEO (for all locales)
   const sections = ['#menu', '#location', '#about'];
-  sections.forEach((section) => {
-    sitemap.push({
-      url: `${baseUrl}/en${section}`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.7,
+  locales.forEach((locale) => {
+    sections.forEach((section) => {
+      sitemap.push({
+        url: `${baseUrl}/${locale}${section}`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((loc) => [loc, `${baseUrl}/${loc}${section}`])
+          ),
+        },
+      });
     });
   });
 
