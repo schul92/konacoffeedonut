@@ -381,8 +381,8 @@ export default function FAQPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Back Navigation */}
-      <div className="fixed top-4 left-4 z-50">
+      {/* Back Navigation - positioned below hiring banner */}
+      <div className="fixed top-14 left-4 z-50">
         <Link
           href={`/${locale}`}
           className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-white transition-all text-amber-900 font-medium text-sm"
