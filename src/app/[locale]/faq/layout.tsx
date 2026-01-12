@@ -10,12 +10,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const titles: Record<string, string> = {
-    en: 'FAQ - Frequently Asked Questions | Kona Coffee Donut',
-    ja: 'よくある質問 - FAQ | Kona Coffee Donut',
-    ko: '자주 묻는 질문 - FAQ | Kona Coffee Donut',
-    zh: '常见问题 - FAQ | Kona Coffee Donut',
-    es: 'Preguntas Frecuentes - FAQ | Kona Coffee Donut',
+    en: 'FAQ - Frequently Asked Questions',
+    ja: 'よくある質問 - FAQ',
+    ko: '자주 묻는 질문 - FAQ',
+    zh: '常见问题 - FAQ',
+    es: 'Preguntas Frecuentes - FAQ',
   };
 
   const descriptions: Record<string, string> = {

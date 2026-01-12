@@ -9,22 +9,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "Kona Coffee Waikiki | Best Hawaiian Coffee Shop | Kona Coffee Donut",
+      title: "Kona Coffee | Best Hawaiian Coffee in Waikiki",
       description: "Experience authentic 100% Kona Coffee in Waikiki! Hawaii's finest coffee from Big Island farms. Smooth, rich flavor with hints of chocolate. Visit us on Kalakaua Ave!",
     },
     ja: {
-      title: "ワイキキのコナコーヒー | ハワイ最高のコーヒーショップ | Kona Coffee Donut",
+      title: "コナコーヒー | ワイキキ最高のハワイアンコーヒー",
       description: "ワイキキで本格的なコナコーヒーを！ビッグアイランド産100%コナ豆使用。チョコレートの香りが漂う滑らかで豊かな味わい。カラカウア通りでお待ちしています！",
     },
     ko: {
-      title: "와이키키 코나 커피 | 하와이 최고의 커피숍 | Kona Coffee Donut",
+      title: "코나 커피 | 와이키키 최고의 하와이안 커피",
       description: "와이키키에서 정통 100% 코나 커피를! 빅 아일랜드 농장의 하와이 최고급 커피. 초콜릿 향이 나는 부드럽고 풍부한 맛. 칼라카우아 애비뉴에서 만나요!",
     },
     zh: {
-      title: "威基基科纳咖啡 | 夏威夷最好的咖啡店 | Kona Coffee Donut",
+      title: "科纳咖啡 | 威基基最好的夏威夷咖啡",
       description: "在威基基体验正宗100%科纳咖啡！来自大岛农场的夏威夷顶级咖啡。带有巧克力香气的顺滑浓郁风味。卡拉卡瓦大道等你来！",
+    },
+    es: {
+      title: "Café Kona | El Mejor Café Hawaiano en Waikiki",
+      description: "¡Experimenta el auténtico café Kona 100% en Waikiki! El mejor café de Hawaii de las granjas de Big Island. Sabor suave y rico con notas de chocolate. ¡Visítanos!",
     },
   };
 
@@ -79,10 +84,12 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteUrl}/${locale}/menu/kona-coffee`,
       languages: {
-        'en': `${siteUrl}/en/menu/kona-coffee`,
-        'ja': `${siteUrl}/ja/menu/kona-coffee`,
-        'ko': `${siteUrl}/ko/menu/kona-coffee`,
-        'zh': `${siteUrl}/zh/menu/kona-coffee`,
+        'en-US': `${siteUrl}/en/menu/kona-coffee`,
+        'ja-JP': `${siteUrl}/ja/menu/kona-coffee`,
+        'ko-KR': `${siteUrl}/ko/menu/kona-coffee`,
+        'zh-CN': `${siteUrl}/zh/menu/kona-coffee`,
+        'es-ES': `${siteUrl}/es/menu/kona-coffee`,
+        'x-default': `${siteUrl}/en/menu/kona-coffee`,
       },
     },
   };

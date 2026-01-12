@@ -6,8 +6,8 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
 
-  // SEO-optimized title: Primary keyword + Location + Brand (under 60 chars ideal)
-  const title = 'Gourmet Donuts Waikiki | Artisan Mochi Donuts | Kona Coffee Donut';
+  // SEO-optimized title (without site name - parent template adds it)
+  const title = 'Gourmet Donuts | Artisan Mochi Donuts in Waikiki';
 
   // SEO-optimized description: Primary + secondary keywords + CTA (150-160 chars ideal)
   const description = 'Gourmet donuts handcrafted daily in Waikiki. Artisan mochi donuts & Hawaiian malasadas with premium ingredients. Paired with 100% Kona coffee. Visit us today!';

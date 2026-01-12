@@ -9,23 +9,28 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  // Locale-specific metadata
+  // Titles without site name - parent template adds "| Kona Coffee Donut®..."
+  // Keep titles under 60 chars total (including template suffix)
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "Careers - Now Hiring | Jobs in Waikiki",
+      title: "Careers - Now Hiring",
       description: "Join Kona Coffee Donut in Waikiki! Now hiring Manager, Barista, Baker, Cashier, and more. Full-time & part-time positions available. Apply today for jobs in Honolulu, Hawaii.",
     },
     ja: {
-      title: "採用情報 - スタッフ募集中 | ワイキキ求人",
-      description: "Kona Coffee Donutワイキキ店でスタッフ募集中！マネージャー、バリスタ、ベイカー、キャッシャー募集。フルタイム・パートタイム勤務可能。ハワイでのお仕事をお探しの方、今すぐ応募！",
+      title: "採用情報 - スタッフ募集中",
+      description: "Kona Coffee Donutワイキキ店でスタッフ募集中！マネージャー、バリスタ、ベイカー、キャッシャーを募集しています。フルタイム・パートタイム勤務可能。ハワイでのお仕事をお探しの方、今すぐ応募してください！カラカウア通りのおしゃれなカフェで働きませんか？",
     },
     ko: {
-      title: "채용정보 - 직원 모집 | 와이키키 일자리",
-      description: "Kona Coffee Donut 와이키키점에서 직원을 모집합니다! 매니저, 바리스타, 베이커, 캐셔 모집 중. 풀타임 및 파트타임 가능. 하와이 취업을 원하시는 분들 지금 지원하세요!",
+      title: "채용정보 - 직원모집",
+      description: "Kona Coffee Donut 와이키키점에서 직원을 모집합니다! 매니저, 바리스타, 베이커, 캐셔를 찾고 있습니다. 풀타임 및 파트타임 근무 가능합니다. 하와이 취업을 원하시는 분들 칼라카우아 거리의 카페에서 일해보세요. 지금 바로 지원하세요!",
     },
     zh: {
-      title: "招聘信息 - 正在招聘 | 威基基工作机会",
-      description: "Kona Coffee Donut威基基店招聘中！招聘经理、咖啡师、面包师、收银员等职位。全职兼职均可。在夏威夷找工作？立即申请！",
+      title: "招聘信息 - 正在招聘",
+      description: "Kona Coffee Donut威基基店正在招聘！我们正在寻找经理、咖啡师、面包师、收银员等职位。提供全职和兼职机会。在卡拉卡瓦大道的时尚咖啡店工作，享受夏威夷的阳光和海风。立即申请加入我们的团队！",
+    },
+    es: {
+      title: "Empleos - Contratando",
+      description: "¡Únete a Kona Coffee Donut en Waikiki! Estamos contratando Gerentes, Baristas, Panaderos, Cajeros y más. Posiciones de tiempo completo y parcial disponibles. Trabaja en la Avenida Kalakaua con vista al mar. ¡Solicita hoy para empleos en Honolulu, Hawaii!",
     },
   };
 
@@ -134,14 +139,12 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteUrl}/${locale}/careers`,
       languages: {
-        'en': `${siteUrl}/en/careers`,
         'en-US': `${siteUrl}/en/careers`,
-        'ja': `${siteUrl}/ja/careers`,
         'ja-JP': `${siteUrl}/ja/careers`,
-        'ko': `${siteUrl}/ko/careers`,
         'ko-KR': `${siteUrl}/ko/careers`,
-        'zh': `${siteUrl}/zh/careers`,
         'zh-CN': `${siteUrl}/zh/careers`,
+        'es-ES': `${siteUrl}/es/careers`,
+        'x-default': `${siteUrl}/en/careers`,
       },
     },
     robots: {

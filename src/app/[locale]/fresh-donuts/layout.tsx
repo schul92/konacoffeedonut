@@ -6,8 +6,8 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
 
-  // SEO-optimized title: Primary keyword + Location + Brand
-  const title = 'Fresh Donuts in Waikiki | Made Daily | Kona Coffee Donut Hawaii';
+  // SEO-optimized title (without site name - parent template adds it)
+  const title = 'Fresh Donuts in Waikiki | Made Daily';
 
   // SEO-optimized description: Keywords + Value proposition + Call to action
   const description = 'Fresh donuts made daily in Waikiki, Hawaii. Handcrafted mochi donuts & malasadas baked fresh every morning. Paired with 100% Kona coffee. Visit us at 2142 Kalakaua Ave!';

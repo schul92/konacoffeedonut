@@ -9,22 +9,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "Korean Corn Dog Waikiki | Best Cheese Hot Dog Hawaii | Kona Coffee Donut",
+      title: "Korean Corn Dog | Best Cheese Hot Dog in Waikiki",
       description: "Try authentic Korean corn dogs in Waikiki! Crispy batter, stretchy mozzarella cheese, delicious toppings. The viral K-food sensation! Visit Kalakaua Ave!",
     },
     ja: {
-      title: "ワイキキの韓国ホットドッグ | ハワイで人気のチーズドッグ | Kona Coffee Donut",
+      title: "韓国ホットドッグ | ワイキキで人気のチーズドッグ",
       description: "ワイキキで本格的な韓国ホットドッグを！カリカリ衣、伸び〜るモッツァレラチーズ。話題のK-フードをカラカウア通りで！",
     },
     ko: {
-      title: "와이키키 핫도그 | 하와이 최고의 치즈 핫도그 | Kona Coffee Donut",
+      title: "핫도그 | 와이키키 최고의 치즈 핫도그",
       description: "와이키키에서 정통 한국 핫도그를! 바삭한 반죽, 쭉쭉 늘어나는 모짜렐라 치즈. 바이럴 K-푸드를 칼라카우아에서!",
     },
     zh: {
-      title: "威基基韩式热狗 | 夏威夷最好的芝士热狗 | Kona Coffee Donut",
+      title: "韩式热狗 | 威基基最好的芝士热狗",
       description: "在威基基品尝正宗韩式热狗！酥脆面糊，拉丝马苏里拉芝士。网红K-美食在卡拉卡瓦！",
+    },
+    es: {
+      title: "Korean Corn Dog | El Mejor Hot Dog con Queso en Waikiki",
+      description: "¡Prueba los auténticos corn dogs coreanos en Waikiki! Masa crujiente, queso mozzarella elástico. ¡La sensación viral K-food! ¡Visítanos en Kalakaua Ave!",
     },
   };
 
@@ -78,10 +83,12 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteUrl}/${locale}/menu/korean-corn-dog`,
       languages: {
-        'en': `${siteUrl}/en/menu/korean-corn-dog`,
-        'ja': `${siteUrl}/ja/menu/korean-corn-dog`,
-        'ko': `${siteUrl}/ko/menu/korean-corn-dog`,
-        'zh': `${siteUrl}/zh/menu/korean-corn-dog`,
+        'en-US': `${siteUrl}/en/menu/korean-corn-dog`,
+        'ja-JP': `${siteUrl}/ja/menu/korean-corn-dog`,
+        'ko-KR': `${siteUrl}/ko/menu/korean-corn-dog`,
+        'zh-CN': `${siteUrl}/zh/menu/korean-corn-dog`,
+        'es-ES': `${siteUrl}/es/menu/korean-corn-dog`,
+        'x-default': `${siteUrl}/en/menu/korean-corn-dog`,
       },
     },
   };

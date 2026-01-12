@@ -9,22 +9,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "Mochi Donuts in Waikiki | Best Japanese Donuts Hawaii | Kona Coffee Donut",
+      title: "Mochi Donuts | Best Japanese Donuts in Waikiki",
       description: "Try the best mochi donuts in Waikiki! Our signature Japanese-style donuts are crispy outside, chewy inside. Made fresh daily with premium rice flour. Visit us on Kalakaua Ave!",
     },
     ja: {
-      title: "ワイキキのモチドーナツ | ハワイで人気の日本式ドーナツ | Kona Coffee Donut",
+      title: "モチドーナツ | ワイキキで人気の日本式ドーナツ",
       description: "ワイキキで最高のモチドーナツを！外はサクサク、中はもちもちの日本式ドーナツ。毎日新鮮な米粉で手作り。カラカウア通りでお待ちしています！",
     },
     ko: {
-      title: "와이키키 모찌 도넛 | 하와이 최고의 일본식 도넛 | Kona Coffee Donut",
+      title: "모찌 도넛 | 와이키키 최고의 일본식 도넛",
       description: "와이키키 최고의 모찌 도넛을 맛보세요! 겉은 바삭, 속은 쫄깃한 일본식 도넛. 매일 신선한 쌀가루로 만듭니다. 칼라카우아 애비뉴에서 만나요!",
     },
     zh: {
-      title: "威基基麻糬甜甜圈 | 夏威夷最好吃的日式甜甜圈 | Kona Coffee Donut",
+      title: "麻糬甜甜圈 | 威基基最好吃的日式甜甜圈",
       description: "来威基基品尝最好的麻糬甜甜圈！外酥内软的日式甜甜圈，每日新鲜制作。卡拉卡瓦大道等你来！",
+    },
+    es: {
+      title: "Mochi Donuts | Los Mejores Donuts Japoneses en Waikiki",
+      description: "¡Prueba los mejores mochi donuts en Waikiki! Donuts japoneses crujientes por fuera, suaves por dentro. Hechos frescos diariamente. ¡Visítanos en Kalakaua Ave!",
     },
   };
 
@@ -79,10 +84,12 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteUrl}/${locale}/menu/mochi-donuts`,
       languages: {
-        'en': `${siteUrl}/en/menu/mochi-donuts`,
-        'ja': `${siteUrl}/ja/menu/mochi-donuts`,
-        'ko': `${siteUrl}/ko/menu/mochi-donuts`,
-        'zh': `${siteUrl}/zh/menu/mochi-donuts`,
+        'en-US': `${siteUrl}/en/menu/mochi-donuts`,
+        'ja-JP': `${siteUrl}/ja/menu/mochi-donuts`,
+        'ko-KR': `${siteUrl}/ko/menu/mochi-donuts`,
+        'zh-CN': `${siteUrl}/zh/menu/mochi-donuts`,
+        'es-ES': `${siteUrl}/es/menu/mochi-donuts`,
+        'x-default': `${siteUrl}/en/menu/mochi-donuts`,
       },
     },
   };

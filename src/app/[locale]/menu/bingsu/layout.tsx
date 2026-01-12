@@ -9,22 +9,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "Bingsu Waikiki | Best Korean Shaved Ice Hawaii | Kona Coffee Donut",
+      title: "Bingsu | Best Korean Shaved Ice in Waikiki",
       description: "Try authentic Korean bingsu in Waikiki! Fluffy shaved ice with premium toppings - injeolmi, mango, strawberry & more. Perfect refreshing treat! Visit Kalakaua Ave!",
     },
     ja: {
-      title: "ワイキキのビンス | ハワイで人気の韓国かき氷 | Kona Coffee Donut",
+      title: "ビンス | ワイキキで人気の韓国かき氷",
       description: "ワイキキで本格的な韓国ビンスを！ふわふわかき氷にプレミアムトッピング - インジョルミ、マンゴー、いちごなど。カラカウア通りでお待ちしています！",
     },
     ko: {
-      title: "와이키키 빙수 | 하와이 최고의 한국 빙수 | Kona Coffee Donut",
+      title: "빙수 | 와이키키 최고의 한국 빙수",
       description: "와이키키에서 정통 한국 빙수를! 부드러운 빙수에 프리미엄 토핑 - 인절미, 망고, 딸기 등. 칼라카우아 애비뉴에서 만나요!",
     },
     zh: {
-      title: "威基基冰淇淋 | 夏威夷最好的韩式刨冰 | Kona Coffee Donut",
+      title: "冰淇淋 | 威基基最好的韩式刨冰",
       description: "在威基基品尝正宗韩式冰淇淋！绵密刨冰配优质配料 - 豆粉、芒果、草莓等。卡拉卡瓦大道等你来！",
+    },
+    es: {
+      title: "Bingsu | El Mejor Hielo Raspado Coreano en Waikiki",
+      description: "¡Prueba el auténtico bingsu coreano en Waikiki! Hielo raspado esponjoso con toppings premium. ¡El postre refrescante perfecto! ¡Visítanos en Kalakaua Ave!",
     },
   };
 
@@ -78,10 +83,12 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteUrl}/${locale}/menu/bingsu`,
       languages: {
-        'en': `${siteUrl}/en/menu/bingsu`,
-        'ja': `${siteUrl}/ja/menu/bingsu`,
-        'ko': `${siteUrl}/ko/menu/bingsu`,
-        'zh': `${siteUrl}/zh/menu/bingsu`,
+        'en-US': `${siteUrl}/en/menu/bingsu`,
+        'ja-JP': `${siteUrl}/ja/menu/bingsu`,
+        'ko-KR': `${siteUrl}/ko/menu/bingsu`,
+        'zh-CN': `${siteUrl}/zh/menu/bingsu`,
+        'es-ES': `${siteUrl}/es/menu/bingsu`,
+        'x-default': `${siteUrl}/en/menu/bingsu`,
       },
     },
   };

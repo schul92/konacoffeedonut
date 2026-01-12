@@ -9,22 +9,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
+  // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "Malasada Waikiki | Best Portuguese Donuts Hawaii | Kona Coffee Donut",
+      title: "Malasada | Best Portuguese Donuts in Waikiki",
       description: "Try authentic malasadas in Waikiki! Traditional Portuguese fried dough, crispy outside and fluffy inside. Made fresh daily with haupia, chocolate, and more. Visit Kalakaua Ave!",
     },
     ja: {
-      title: "ワイキキのマラサダ | ハワイで人気のポルトガルドーナツ | Kona Coffee Donut",
+      title: "マラサダ | ワイキキで人気のポルトガルドーナツ",
       description: "ワイキキで本格マラサダを！外はカリッ、中はふわふわの伝統的なポルトガル風揚げドーナツ。ハウピア、チョコレートなど毎日新鮮に手作り！",
     },
     ko: {
-      title: "와이키키 말라사다 | 하와이 최고의 포르투갈 도넛 | Kona Coffee Donut",
+      title: "말라사다 | 와이키키 최고의 포르투갈 도넛",
       description: "와이키키에서 정통 말라사다를! 겉은 바삭 속은 폭신한 전통 포르투갈식 튀김 도넛. 하우피아, 초콜릿 등 매일 신선하게!",
     },
     zh: {
-      title: "威基基马拉萨达 | 夏威夷最好的葡萄牙甜甜圈 | Kona Coffee Donut",
+      title: "马拉萨达 | 威基基最好的葡萄牙甜甜圈",
       description: "在威基基品尝正宗马拉萨达！外酥内软的传统葡萄牙炸甜甜圈。椰奶、巧克力等口味每日新鲜制作！",
+    },
+    es: {
+      title: "Malasada | Los Mejores Donuts Portugueses en Waikiki",
+      description: "¡Prueba las auténticas malasadas en Waikiki! Masa frita portuguesa tradicional, crujiente por fuera y esponjosa por dentro. ¡Visítanos en Kalakaua Ave!",
     },
   };
 
@@ -78,10 +83,12 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteUrl}/${locale}/menu/malasada`,
       languages: {
-        'en': `${siteUrl}/en/menu/malasada`,
-        'ja': `${siteUrl}/ja/menu/malasada`,
-        'ko': `${siteUrl}/ko/menu/malasada`,
-        'zh': `${siteUrl}/zh/menu/malasada`,
+        'en-US': `${siteUrl}/en/menu/malasada`,
+        'ja-JP': `${siteUrl}/ja/menu/malasada`,
+        'ko-KR': `${siteUrl}/ko/menu/malasada`,
+        'zh-CN': `${siteUrl}/zh/menu/malasada`,
+        'es-ES': `${siteUrl}/es/menu/malasada`,
+        'x-default': `${siteUrl}/en/menu/malasada`,
       },
     },
   };

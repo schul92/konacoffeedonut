@@ -13,6 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/faq',
     '/privacy-policy',
     '/terms-of-service',
+    // SEO landing pages for high-value keywords
+    '/fresh-donuts',
+    '/gourmet-donuts',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -31,6 +34,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/faq': 0.8,
     '/privacy-policy': 0.3,
     '/terms-of-service': 0.3,
+    '/fresh-donuts': 0.85, // High-value SEO keyword page
+    '/gourmet-donuts': 0.85, // High-value SEO keyword page
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
     '/menu/kona-coffee': 0.85,
@@ -48,6 +53,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/faq': 'monthly',
     '/privacy-policy': 'monthly',
     '/terms-of-service': 'monthly',
+    '/fresh-donuts': 'weekly',
+    '/gourmet-donuts': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',
     '/menu/kona-coffee': 'weekly',
@@ -74,23 +81,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // Add anchor-linked sections for better SEO (for all locales)
-  const sections = ['#menu', '#location', '#about'];
-  locales.forEach((locale) => {
-    sections.forEach((section) => {
-      sitemap.push({
-        url: `${baseUrl}/${locale}${section}`,
-        lastModified: currentDate,
-        changeFrequency: 'weekly',
-        priority: 0.7,
-        alternates: {
-          languages: Object.fromEntries(
-            locales.map((loc) => [loc, `${baseUrl}/${loc}${section}`])
-          ),
-        },
-      });
-    });
-  });
+  // Note: Anchor-linked sections (#menu, #location, #about) are NOT included
+  // in sitemap as they share the same canonical URL as their parent pages,
+  // which causes SEO issues (non-canonical pages in sitemap).
 
   return sitemap;
 }
