@@ -44,7 +44,7 @@ const translations = {
       description: "Beat the Hawaii heat with our refreshing bingsu! Pair it with our Kona coffee and mochi donuts for the ultimate treat.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening January 2025",
+      hours: "Opening February 2026",
     },
   },
   ja: {
@@ -83,7 +83,7 @@ const translations = {
       description: "爽やかなビンスでハワイの暑さを吹き飛ばしましょう！コナコーヒーやモチドーナツと一緒にどうぞ。",
       button: "お店を訪問",
       location: "2142 カラカウア通り、ワイキキ",
-      hours: "2025年1月オープン",
+      hours: "2026年2月オープン",
     },
   },
   ko: {
@@ -122,7 +122,7 @@ const translations = {
       description: "시원한 빙수로 하와이 더위를 날려보세요! 코나 커피와 모찌 도넛과 함께 즐기세요.",
       button: "매장 방문",
       location: "2142 칼라카우아 애비뉴, 와이키키",
-      hours: "2025년 1월 오픈",
+      hours: "2026년 2월 오픈",
     },
   },
   zh: {
@@ -161,7 +161,7 @@ const translations = {
       description: "用清凉的冰淇淋打败夏威夷的炎热！搭配科纳咖啡和麻糬甜甜圈享用。",
       button: "访问我们",
       location: "2142 卡拉卡瓦大道，威基基",
-      hours: "2025年1月开业",
+      hours: "2026年2月开业",
     },
   },
 };

@@ -15,7 +15,7 @@ const translations = {
   en: {
     badge: "NOW HIRING",
     title: "Join Our Waikiki Team",
-    subtitle: "Grand Opening January 2025",
+    subtitle: "Grand Opening February 2026",
     description: "Full time & Part time positions available! Join Kona Coffee Donut in the heart of Waikiki.",
     positions: "Open Positions",
     positionList: ["Manager", "Assistant Manager", "Barista", "Counter Help / Cashier", "Baker (Donuts)", "Musubi Cook"],
@@ -29,7 +29,7 @@ const translations = {
   ja: {
     badge: "スタッフ募集中",
     title: "ワイキキチームに参加しよう",
-    subtitle: "2025年1月グランドオープン",
+    subtitle: "2026年2月グランドオープン",
     description: "フルタイム・パートタイム募集中！ワイキキの中心にあるKona Coffee Donutで働きませんか。",
     positions: "募集職種",
     positionList: ["マネージャー", "アシスタントマネージャー", "バリスタ", "カウンター/キャッシャー", "ベイカー（ドーナツ）", "むすびクック"],
@@ -43,7 +43,7 @@ const translations = {
   ko: {
     badge: "채용 중",
     title: "와이키키 팀에 합류하세요",
-    subtitle: "2025년 1월 그랜드 오픈",
+    subtitle: "2026년 2월 그랜드 오픈",
     description: "풀타임 & 파트타임 모집 중! 와이키키 중심부의 Kona Coffee Donut에서 함께해요.",
     positions: "모집 직종",
     positionList: ["매니저", "어시스턴트 매니저", "바리스타", "카운터/캐셔", "베이커 (도넛)", "무스비 쿡"],
@@ -57,7 +57,7 @@ const translations = {
   zh: {
     badge: "正在招聘",
     title: "加入我们的威基基团队",
-    subtitle: "2025年1月盛大开业",
+    subtitle: "2026年2月盛大开业",
     description: "全职和兼职职位招聘中！加入位于威基基中心的Kona Coffee Donut。",
     positions: "招聘职位",
     positionList: ["经理", "助理经理", "咖啡师", "柜台/收银员", "面包师（甜甜圈）", "饭团厨师"],

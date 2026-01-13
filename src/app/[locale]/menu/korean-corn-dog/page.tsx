@@ -44,7 +44,7 @@ const translations = {
       description: "Try Hawaii's best Korean corn dogs! Perfect with our Kona coffee for an unforgettable snack experience.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening January 2025",
+      hours: "Opening February 2026",
     },
   },
   ja: {
@@ -83,7 +83,7 @@ const translations = {
       description: "ハワイ最高の韓国ホットドッグを！コナコーヒーと一緒に忘れられないスナック体験を。",
       button: "お店を訪問",
       location: "2142 カラカウア通り、ワイキキ",
-      hours: "2025年1月オープン",
+      hours: "2026年2月オープン",
     },
   },
   ko: {
@@ -122,7 +122,7 @@ const translations = {
       description: "하와이 최고의 한국 핫도그를 맛보세요! 코나 커피와 함께 잊을 수 없는 간식 경험을.",
       button: "매장 방문",
       location: "2142 칼라카우아 애비뉴, 와이키키",
-      hours: "2025년 1월 오픈",
+      hours: "2026년 2월 오픈",
     },
   },
   zh: {
@@ -161,7 +161,7 @@ const translations = {
       description: "品尝夏威夷最好的韩式热狗！搭配科纳咖啡享受难忘的美食体验。",
       button: "访问我们",
       location: "2142 卡拉卡瓦大道，威基基",
-      hours: "2025年1月开业",
+      hours: "2026年2月开业",
     },
   },
 };

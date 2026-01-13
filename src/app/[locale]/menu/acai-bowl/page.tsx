@@ -44,7 +44,7 @@ const translations = {
       description: "Start your day with our refreshing acai bowls! Pair with our Kona coffee for the perfect Hawaiian breakfast.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening January 2025",
+      hours: "Opening February 2026",
     },
   },
   ja: {
@@ -83,7 +83,7 @@ const translations = {
       description: "爽やかなアサイーボウルで一日をスタート！コナコーヒーと一緒に完璧なハワイアン朝食を。",
       button: "お店を訪問",
       location: "2142 カラカウア通り、ワイキキ",
-      hours: "2025年1月オープン",
+      hours: "2026年2月オープン",
     },
   },
   ko: {
@@ -122,7 +122,7 @@ const translations = {
       description: "상쾌한 아사이 볼로 하루를 시작하세요! 코나 커피와 함께 완벽한 하와이안 아침을.",
       button: "매장 방문",
       location: "2142 칼라카우아 애비뉴, 와이키키",
-      hours: "2025년 1월 오픈",
+      hours: "2026년 2월 오픈",
     },
   },
   zh: {
@@ -161,7 +161,7 @@ const translations = {
       description: "用清爽的巴西莓果碗开启新的一天！搭配科纳咖啡享用完美的夏威夷早餐。",
       button: "访问我们",
       location: "2142 卡拉卡瓦大道，威基基",
-      hours: "2025年1月开业",
+      hours: "2026年2月开业",
     },
   },
 };

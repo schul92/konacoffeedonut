@@ -27,7 +27,7 @@ const translations = {
     hero: {
       badge: "NOW HIRING",
       title: "Join Our Waikiki Team",
-      subtitle: "Grand Opening January 2025",
+      subtitle: "Grand Opening February 2026",
       description: "Be part of something special! We're building an amazing team for our new Waikiki location. Full-time and part-time positions available.",
     },
     positions: {
@@ -103,7 +103,7 @@ const translations = {
     hero: {
       badge: "スタッフ募集中",
       title: "ワイキキチームに参加しよう",
-      subtitle: "2025年1月グランドオープン",
+      subtitle: "2026年2月グランドオープン",
       description: "特別な瞬間の一員になりませんか！ワイキキの新店舗で素晴らしいチームを作っています。フルタイム・パートタイム募集中。",
     },
     positions: {
@@ -179,7 +179,7 @@ const translations = {
     hero: {
       badge: "채용 중",
       title: "와이키키 팀에 합류하세요",
-      subtitle: "2025년 1월 그랜드 오픈",
+      subtitle: "2026년 2월 그랜드 오픈",
       description: "특별한 순간의 일원이 되세요! 와이키키 신규 매장을 위한 멋진 팀을 구성하고 있습니다. 풀타임 및 파트타임 모집 중.",
     },
     positions: {
@@ -255,7 +255,7 @@ const translations = {
     hero: {
       badge: "正在招聘",
       title: "加入我们的威基基团队",
-      subtitle: "2025年1月盛大开业",
+      subtitle: "2026年2月盛大开业",
       description: "成为特别时刻的一部分！我们正在为威基基新店组建一支出色的团队。全职和兼职职位招聘中。",
     },
     positions: {
