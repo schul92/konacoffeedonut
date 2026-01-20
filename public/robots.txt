@@ -1,8 +1,100 @@
 # Kona Coffee Donut - Robots.txt
-# Allow all search engines to index the website
+# Optimized for GEO (Generative Engine Optimization)
+# Allow all search engines AND AI crawlers to index the website
 
+# Default rule
 User-agent: *
 Allow: /
+Disallow: /_next/static/
+Disallow: /_next/image/
+Disallow: /api/
+
+# ===== AI SEARCH ENGINE CRAWLERS =====
+
+# OpenAI/ChatGPT - Critical for GEO
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Anthropic/Claude
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Google AI (Gemini/Bard)
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Microsoft Copilot (uses Bing)
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Common Crawl - used for AI training data
+User-agent: CCBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# You.com AI
+User-agent: YouBot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Apple AI (Siri, etc.)
+User-agent: Applebot
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+Disallow: /_next/
 
 # Host
 Host: https://www.konacoffeedonut.com
@@ -10,11 +102,6 @@ Host: https://www.konacoffeedonut.com
 # Sitemaps
 Sitemap: https://www.konacoffeedonut.com/sitemap.xml
 Sitemap: https://www.konacoffeedonut.com/image-sitemap.xml
-
-# Block access to build files and API routes
-Disallow: /_next/static/
-Disallow: /_next/image/
-Disallow: /api/
 
 # Allow important assets for indexing
 Allow: /images/

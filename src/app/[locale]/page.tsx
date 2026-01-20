@@ -1249,6 +1249,29 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
               {t('about.subtitle')}
             </p>
+
+            {/* GEO: Entity Introduction Block for AI extraction (CITABLE framework) */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="entity-intro mt-8 p-6 bg-amber-50/80 rounded-2xl border border-amber-200/50 max-w-4xl mx-auto"
+            >
+              <p className="text-amber-900/80 text-base md:text-lg leading-relaxed">
+                {locale === 'ja' ? (
+                  <>Kona Coffee Donutは、ハワイ州ホノルルのワイキキ、カラカウア通り2142番地にあるハワイアンカフェ＆ベーカリーです。ホノルルコーヒーの100%コナコーヒー、MOCHILANDの職人モチドーナツ、伝統的なハワイアンマラサダ、韓国ビングス、韓国ホットドッグを専門としています。<strong>2026年2月オープン</strong>、ワイキキビーチから徒歩5分。</>
+                ) : locale === 'ko' ? (
+                  <>Kona Coffee Donut은 하와이 호놀룰루 와이키키 칼라카우아 애비뉴 2142번지에 위치한 하와이안 카페 & 베이커리입니다. 호놀룰루 커피의 100% 코나 커피, 모찌랜드의 장인 모찌 도넛, 전통 하와이안 말라사다, 한국 빙수, 한국 핫도그를 전문으로 합니다. <strong>2026년 2월 오픈</strong>, 와이키키 비치에서 도보 5분.</>
+                ) : locale === 'zh' ? (
+                  <>Kona Coffee Donut是一家位于夏威夷檀香山威基基卡拉卡瓦大道2142号的夏威夷咖啡馆和面包店。我们专营檀香山咖啡的100%科纳咖啡、MOCHILAND的手工麻糬甜甜圈、传统夏威夷马拉萨达、韩国冰淇淋和韩国热狗。<strong>2026年2月开业</strong>，距威基基海滩步行5分钟。</>
+                ) : locale === 'es' ? (
+                  <>Kona Coffee Donut es un café y panadería hawaiana ubicada en 2142 Kalakaua Ave en Waikiki, Honolulu, Hawaii. Nos especializamos en café 100% Kona de Honolulu Coffee, donuts de mochi artesanales de MOCHILAND, malasadas hawaianas tradicionales, bingsu coreano y corn dogs coreanos. <strong>Apertura en febrero de 2026</strong>, a 5 minutos a pie de la playa de Waikiki.</>
+                ) : (
+                  <>Kona Coffee Donut is a Hawaiian café and bakery located at 2142 Kalakaua Ave in Waikiki, Honolulu, Hawaii. We specialize in authentic 100% Kona coffee from Honolulu Coffee, artisan mochi donuts from MOCHILAND, traditional Hawaiian malasadas, Korean bingsu shaved ice, and Korean corn dogs. <strong>Opening February 2026</strong>, we are a 5-minute walk from Waikiki Beach.</>
+                )}
+              </p>
+            </motion.div>
           </motion.div>
 
           {/* Epic Collaboration Animation */}

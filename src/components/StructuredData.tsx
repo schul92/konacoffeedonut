@@ -31,6 +31,16 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     es: 'café kona waikiki, café cerca de mí, donuts cerca de mí, donuts mochi hawaii, mejor café waikiki, honolulu coffee, desayuno waikiki, café turístico waikiki, malasada hawaii, bingsu hawaii',
   };
 
+  // GEO-Optimized Entity Introduction (for AI extraction)
+  // This is the "Clear Entity Structure" from CITABLE framework
+  const entityIntro = {
+    en: 'Kona Coffee Donut is a Hawaiian café and bakery located at 2142 Kalakaua Ave in Waikiki, Honolulu, Hawaii. We specialize in authentic 100% Kona coffee from Honolulu Coffee, artisan mochi donuts from MOCHILAND, traditional Hawaiian malasadas, Korean bingsu shaved ice, and Korean corn dogs. Opening February 2026, we are a 5-minute walk from Waikiki Beach.',
+    ja: 'Kona Coffee Donutは、ハワイ州ホノルルのワイキキ、カラカウア通り2142番地にあるハワイアンカフェ＆ベーカリーです。ホノルルコーヒーの100%コナコーヒー、MOCHILANDの職人モチドーナツ、伝統的なハワイアンマラサダ、韓国ビングス、韓国ホットドッグを専門としています。2026年2月オープン、ワイキキビーチから徒歩5分。',
+    ko: 'Kona Coffee Donut은 하와이 호놀룰루 와이키키 칼라카우아 애비뉴 2142번지에 위치한 하와이안 카페 & 베이커리입니다. 호놀룰루 커피의 100% 코나 커피, 모찌랜드의 장인 모찌 도넛, 전통 하와이안 말라사다, 한국 빙수, 한국 핫도그를 전문으로 합니다. 2026년 2월 오픈, 와이키키 비치에서 도보 5분.',
+    zh: 'Kona Coffee Donut是一家位于夏威夷檀香山威基基卡拉卡瓦大道2142号的夏威夷咖啡馆和面包店。我们专营檀香山咖啡的100%科纳咖啡、MOCHILAND的手工麻糬甜甜圈、传统夏威夷马拉萨达、韩国冰淇淋和韩国热狗。2026年2月开业，距威基基海滩步行5分钟。',
+    es: 'Kona Coffee Donut es un café y panadería hawaiana ubicada en 2142 Kalakaua Ave en Waikiki, Honolulu, Hawaii. Nos especializamos en café 100% Kona de Honolulu Coffee, donuts de mochi artesanales de MOCHILAND, malasadas hawaianas tradicionales, bingsu coreano y corn dogs coreanos. Apertura en febrero de 2026, a 5 minutos a pie de la playa de Waikiki.',
+  };
+
   // Local Business Schema
   const localBusinessSchema = {
     '@context': 'https://schema.org',
@@ -38,12 +48,25 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@id': 'https://www.konacoffeedonut.com/#restaurant',
     name: 'Kona Coffee Donut - Waikiki',
     alternateName: ['MOCHILAND x Honolulu Coffee', 'Kona Coffee Donut Waikiki', 'Kona Coffee Honolulu'],
-    description: descriptions[locale] || descriptions.en,
-    image: 'https://www.konacoffeedonut.com/og-image.jpg',
+    description: entityIntro[locale as keyof typeof entityIntro] || entityIntro.en,
+    // GEO: Speakable property for voice assistants (Siri, Alexa, Google Assistant)
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.entity-intro', '.faq-answer', 'h1', 'h2'],
+    },
+    image: [
+      'https://www.konacoffeedonut.com/og-image.jpg',
+      'https://www.konacoffeedonut.com/images/menu/donut.webp',
+      'https://www.konacoffeedonut.com/images/menu/coffee.webp',
+    ],
     url: `https://www.konacoffeedonut.com/${locale}`,
     // telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
     email: 'info@konacoffeedonut.com',
     priceRange: '$$',
+    // GEO: Add founding date for entity credibility
+    foundingDate: '2026-02-01',
+    // GEO: Add slogan for brand recognition
+    slogan: 'Authentic Hawaiian Coffee & Artisan Mochi Donuts',
     address: {
       '@type': 'PostalAddress',
       streetAddress: '2142 Kalakaua Ave',
@@ -291,7 +314,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     name: 'Waikiki Experience - Kona Coffee Donut',
     description: 'Experience the ambiance of our Waikiki location featuring premium Kona coffee and artisan mochi donuts',
     thumbnailUrl: 'https://www.konacoffeedonut.com/og-image.jpg',
-    uploadDate: '2025-01-15T08:00:00+00:00',
+    uploadDate: '2026-01-15T08:00:00+00:00',
     contentUrl: 'https://www.konacoffeedonut.com/videos/waikiki_1.mp4',
     embedUrl: `https://www.konacoffeedonut.com/${locale}`,
     duration: 'PT30S',
@@ -302,6 +325,35 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         '@type': 'ImageObject',
         url: 'https://www.konacoffeedonut.com/konacoffee.png',
       },
+    },
+  };
+
+  // GEO: WebPage schema with dateModified for freshness signals
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `https://www.konacoffeedonut.com/${locale}/#webpage`,
+    url: `https://www.konacoffeedonut.com/${locale}`,
+    name: 'Kona Coffee Donut - Authentic Hawaiian Coffee & Mochi Donuts in Waikiki',
+    description: entityIntro[locale as keyof typeof entityIntro] || entityIntro.en,
+    // GEO: Critical freshness signals for AI engines
+    datePublished: '2025-01-01T00:00:00+00:00',
+    dateModified: new Date().toISOString(),
+    inLanguage: locale,
+    isPartOf: {
+      '@id': 'https://www.konacoffeedonut.com/#website',
+    },
+    about: {
+      '@id': 'https://www.konacoffeedonut.com/#restaurant',
+    },
+    // GEO: Speakable for voice search
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.entity-intro', '.hero-description', 'h1'],
+    },
+    // GEO: Primary entity for AI understanding
+    mainEntity: {
+      '@id': 'https://www.konacoffeedonut.com/#restaurant',
     },
   };
 
@@ -515,6 +567,13 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         id="video-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+      />
+
+      {/* GEO: WebPage Schema with freshness signals */}
+      <Script
+        id="webpage-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
 
       {/* FAQ Schema */}
