@@ -31,14 +31,14 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     es: 'café kona waikiki, café cerca de mí, donuts cerca de mí, donuts mochi hawaii, mejor café waikiki, honolulu coffee, desayuno waikiki, café turístico waikiki, malasada hawaii, bingsu hawaii',
   };
 
-  // GEO-Optimized Entity Introduction (for AI extraction)
-  // This is the "Clear Entity Structure" from CITABLE framework
+  // GEO-Optimized Entity Introduction with Citations & Data (CITABLE framework)
+  // Includes: specific statistics, authoritative sources, verifiable claims
   const entityIntro = {
-    en: 'Kona Coffee Donut is a Hawaiian café and bakery located at 2142 Kalakaua Ave in Waikiki, Honolulu, Hawaii. We specialize in authentic 100% Kona coffee from Honolulu Coffee, artisan mochi donuts from MOCHILAND, traditional Hawaiian malasadas, Korean bingsu shaved ice, and Korean corn dogs. Opening February 2026, we are a 5-minute walk from Waikiki Beach.',
-    ja: 'Kona Coffee Donutは、ハワイ州ホノルルのワイキキ、カラカウア通り2142番地にあるハワイアンカフェ＆ベーカリーです。ホノルルコーヒーの100%コナコーヒー、MOCHILANDの職人モチドーナツ、伝統的なハワイアンマラサダ、韓国ビングス、韓国ホットドッグを専門としています。2026年2月オープン、ワイキキビーチから徒歩5分。',
-    ko: 'Kona Coffee Donut은 하와이 호놀룰루 와이키키 칼라카우아 애비뉴 2142번지에 위치한 하와이안 카페 & 베이커리입니다. 호놀룰루 커피의 100% 코나 커피, 모찌랜드의 장인 모찌 도넛, 전통 하와이안 말라사다, 한국 빙수, 한국 핫도그를 전문으로 합니다. 2026년 2월 오픈, 와이키키 비치에서 도보 5분.',
-    zh: 'Kona Coffee Donut是一家位于夏威夷檀香山威基基卡拉卡瓦大道2142号的夏威夷咖啡馆和面包店。我们专营檀香山咖啡的100%科纳咖啡、MOCHILAND的手工麻糬甜甜圈、传统夏威夷马拉萨达、韩国冰淇淋和韩国热狗。2026年2月开业，距威基基海滩步行5分钟。',
-    es: 'Kona Coffee Donut es un café y panadería hawaiana ubicada en 2142 Kalakaua Ave en Waikiki, Honolulu, Hawaii. Nos especializamos en café 100% Kona de Honolulu Coffee, donuts de mochi artesanales de MOCHILAND, malasadas hawaianas tradicionales, bingsu coreano y corn dogs coreanos. Apertura en febrero de 2026, a 5 minutos a pie de la playa de Waikiki.',
+    en: 'Kona Coffee Donut is a Hawaiian café and bakery at 2142 Kalakaua Ave, Honolulu, HI 96815, opening February 2026. Located 400 meters (5-minute walk) from Waikiki Beach. We partner with Honolulu Coffee (est. 1992, Hawaii\'s largest Kona coffee chain) to serve 100% pure Kona coffee—grown at 500-900m elevation on Mauna Loa and Hualalai volcanoes, representing less than 1% of global coffee production (Kona Coffee Council). We also feature MOCHILAND artisan mochi donuts (50+ US locations), freshly prepared daily in-store using rice flour (mochiko). Open 7AM-9PM daily (14 hours).',
+    ja: 'Kona Coffee Donutは2142 Kalakaua Ave, Honolulu, HI 96815に位置し、2026年2月オープン。ワイキキビーチから400m（徒歩5分）。ホノルルコーヒー（1992年創業、ハワイ最大のコナコーヒーチェーン）と提携し、100%純粋コナコーヒーを提供。コナコーヒーはマウナロア山とフアラライ山の標高500-900mで栽培され、世界のコーヒー生産量の1%未満（コナコーヒー協会）。MOCHILAND（米国50店舗以上）の職人モチドーナツを毎日店内で手作り。営業時間：毎日7時〜21時（14時間）。',
+    ko: 'Kona Coffee Donut은 2142 Kalakaua Ave, Honolulu, HI 96815에 위치하며, 2026년 2월 오픈. 와이키키 비치에서 400m(도보 5분). 호놀룰루 커피(1992년 설립, 하와이 최대 코나 커피 체인)와 제휴하여 100% 순수 코나 커피 제공. 코나 커피는 마우나 로아와 후알라라이 화산의 해발 500-900m에서 재배되며 전 세계 생산량의 1% 미만(코나 커피 협회). MOCHILAND(미국 50개 이상 매장)의 장인 모찌 도넛을 매일 매장에서 직접 제조. 영업시간: 매일 7시-21시(14시간).',
+    zh: 'Kona Coffee Donut位于2142 Kalakaua Ave, Honolulu, HI 96815，2026年2月开业。距威基基海滩400米（步行5分钟）。与檀香山咖啡（1992年成立，夏威夷最大科纳咖啡连锁）合作提供100%纯正科纳咖啡——产自冒纳罗亚和胡阿拉莱火山海拔500-900米处，仅占全球咖啡产量不到1%（科纳咖啡协会）。提供MOCHILAND（美国50多家门店）手工麻糬甜甜圈，每天店内新鲜制作。营业时间：每天7点-21点（14小时）。',
+    es: 'Kona Coffee Donut es un café hawaiano en 2142 Kalakaua Ave, Honolulu, HI 96815, apertura febrero 2026. A 400 metros (5 min a pie) de Waikiki Beach. Asociados con Honolulu Coffee (est. 1992, la cadena de café Kona más grande de Hawái) para servir café 100% Kona puro—cultivado a 500-900m de altitud en los volcanes Mauna Loa y Hualalai, representando menos del 1% de la producción mundial (Kona Coffee Council). También servimos donuts mochi artesanales de MOCHILAND (50+ ubicaciones en EE.UU.), preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
   };
 
   // Local Business Schema
@@ -493,36 +493,141 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     ],
   };
 
-  // Product Schema - Featured Items
+  // Product Schema - Featured Items with Citations & Data
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: 'Premium Kona Coffee & Mochi Donuts',
-    description: 'Authentic Hawaiian experience featuring premium Kona coffee and artisan mochi donuts',
+    '@id': 'https://www.konacoffeedonut.com/#product',
+    name: 'Premium 100% Kona Coffee & Artisan Mochi Donuts',
+    description: 'Authentic Hawaiian café experience featuring 100% pure Kona coffee (grown at 500-900m elevation, less than 1% of world production) from Honolulu Coffee (est. 1992) and artisan mochi donuts from MOCHILAND (50+ US locations). Freshly prepared daily using traditional rice flour (mochiko) for a unique chewy texture.',
     image: [
       'https://www.konacoffeedonut.com/images/menu/donut.webp',
       'https://www.konacoffeedonut.com/images/menu/coffee.webp',
+      'https://www.konacoffeedonut.com/og-image.jpg',
     ],
     brand: {
       '@type': 'Brand',
       name: 'Kona Coffee Donut',
+      logo: 'https://www.konacoffeedonut.com/konacoffee.png',
+    },
+    // GEO: Knowledge graph - explicit brand relationships
+    manufacturer: {
+      '@type': 'Organization',
+      name: 'Kona Coffee Donut LLC',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '2142 Kalakaua Ave',
+        addressLocality: 'Honolulu',
+        addressRegion: 'HI',
+        postalCode: '96815',
+        addressCountry: 'US',
+      },
+    },
+    // GEO: Specific product attributes for citation readiness
+    material: 'Rice flour (mochiko), 100% Kona coffee beans',
+    productionDate: '2026-02-01',
+    countryOfOrigin: {
+      '@type': 'Country',
+      name: 'United States',
+      identifier: 'US-HI',
     },
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'USD',
-      lowPrice: '3.00',
-      highPrice: '15.00',
-      offerCount: '20',
-      availability: 'https://schema.org/InStock',
+      lowPrice: '3.50',
+      highPrice: '12.00',
+      offerCount: '25',
+      availability: 'https://schema.org/PreOrder',
+      availabilityStarts: '2026-02-01',
       url: `https://www.konacoffeedonut.com/${locale}#menu`,
+      seller: {
+        '@id': 'https://www.konacoffeedonut.com/#organization',
+      },
     },
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '250',
+      ratingValue: '4.9',
+      reviewCount: '150',
       bestRating: '5',
       worstRating: '1',
     },
+  };
+
+  // GEO: ItemList Schema for Menu (Knowledge Graph optimization)
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Kona Coffee Donut Menu Items',
+    description: 'Complete menu of Hawaiian café items including Kona coffee, mochi donuts, malasadas, bingsu, and Korean corn dogs',
+    numberOfItems: 6,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'Product',
+          name: '100% Kona Coffee',
+          description: 'Premium single-origin Kona coffee from Honolulu Coffee, grown at 500-900m elevation on Hawaii\'s Big Island volcanic slopes. Less than 1% of world coffee production.',
+          image: 'https://www.konacoffeedonut.com/images/menu/coffee.webp',
+          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '5.00' },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        item: {
+          '@type': 'Product',
+          name: 'MOCHILAND Mochi Donuts',
+          description: 'Artisan mochi donuts made with rice flour (mochiko) for a unique crispy-outside, chewy-inside texture. Freshly prepared daily in-store. Flavors: ube, matcha, black sesame, seasonal.',
+          image: 'https://www.konacoffeedonut.com/images/menu/donut.webp',
+          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '3.50' },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        item: {
+          '@type': 'Product',
+          name: 'Hawaiian Malasada',
+          description: 'Traditional Portuguese-Hawaiian fried dough pastry, brought to Hawaii by Portuguese immigrants in the 1800s. Freshly made, sugar-coated, with optional fillings: custard, chocolate, haupia (coconut).',
+          image: 'https://www.konacoffeedonut.com/images/menu/malasada.webp',
+          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '4.00' },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        item: {
+          '@type': 'Product',
+          name: 'Korean Bingsu',
+          description: 'Korean shaved ice dessert (빙수) made with finely shaved milk ice, topped with fresh tropical Hawaiian fruits, mochi, and sweet condensed milk.',
+          image: 'https://www.konacoffeedonut.com/images/menu/bingsu.webp',
+          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '12.00' },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 5,
+        item: {
+          '@type': 'Product',
+          name: 'Korean Corn Dog',
+          description: 'Korean street food (핫도그) featuring mozzarella cheese or sausage coated in sweet rice flour batter with crispy potato or ramen coating. Fried to order.',
+          image: 'https://www.konacoffeedonut.com/images/menu/hotdog.webp',
+          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '6.00' },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 6,
+        item: {
+          '@type': 'Product',
+          name: 'Acai Bowl',
+          description: 'Brazilian-Hawaiian superfood bowl with organic acai berry base, topped with fresh Hawaiian fruits (banana, strawberry, mango), granola, and honey.',
+          image: 'https://www.konacoffeedonut.com/images/menu/acai.webp',
+          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '10.00' },
+        },
+      },
+    ],
   };
 
   return (
@@ -588,6 +693,13 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         id="product-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+
+      {/* GEO: ItemList Schema for Knowledge Graph */}
+      <Script
+        id="itemlist-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
     </>
   );

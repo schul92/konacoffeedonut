@@ -1250,27 +1250,55 @@ export default function Home() {
               {t('about.subtitle')}
             </p>
 
-            {/* GEO: Entity Introduction Block for AI extraction (CITABLE framework) */}
+            {/* GEO: Entity Introduction Block with Citations & Data (CITABLE framework) */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
               className="entity-intro mt-8 p-6 bg-amber-50/80 rounded-2xl border border-amber-200/50 max-w-4xl mx-auto"
+              itemScope
+              itemType="https://schema.org/LocalBusiness"
             >
-              <p className="text-amber-900/80 text-base md:text-lg leading-relaxed">
+              {/* Hidden semantic data for AI */}
+              <meta itemProp="name" content="Kona Coffee Donut" />
+              <meta itemProp="address" content="2142 Kalakaua Ave, Honolulu, HI 96815" />
+              <meta itemProp="geo" content="21.2793,-157.8294" />
+              <meta itemProp="priceRange" content="$$" />
+
+              <article className="space-y-4 text-amber-900/80 text-base md:text-lg leading-relaxed">
                 {locale === 'ja' ? (
-                  <>Kona Coffee Donutは、ハワイ州ホノルルのワイキキ、カラカウア通り2142番地にあるハワイアンカフェ＆ベーカリーです。ホノルルコーヒーの100%コナコーヒー、MOCHILANDの職人モチドーナツ、伝統的なハワイアンマラサダ、韓国ビングス、韓国ホットドッグを専門としています。<strong>2026年2月オープン</strong>、ワイキキビーチから徒歩5分。</>
+                  <>
+                    <p><strong>Kona Coffee Donut</strong>は、ハワイ州ホノルルのワイキキ、<span itemProp="address">カラカウア通り2142番地（郵便番号96815）</span>に位置するハワイアンカフェ＆ベーカリーです。<strong>2026年2月グランドオープン予定</strong>。ワイキキビーチから<strong>徒歩約5分（400メートル）</strong>の好立地です。</p>
+                    <p>当店は<strong>ホノルルコーヒー</strong>（1992年創業、ハワイ最大のコナコーヒー専門店）と提携し、<strong>100%純粋コナコーヒー</strong>を提供します。コナコーヒーはハワイ島のマウナロア山とフアラライ山の斜面（標高500〜900メートル）で栽培され、世界のコーヒー生産量の<strong>わずか1%未満</strong>を占める希少な豆です。</p>
+                    <p>また、<strong>MOCHILAND</strong>（韓国発祥、米国で50店舗以上展開）の職人技モチドーナツを提供。米粉（もち粉）を使用した独特のもちもち食感が特徴で、<strong>毎日店内で手作り</strong>しています。営業時間は<strong>毎日午前7時〜午後9時</strong>（14時間営業）。</p>
+                  </>
                 ) : locale === 'ko' ? (
-                  <>Kona Coffee Donut은 하와이 호놀룰루 와이키키 칼라카우아 애비뉴 2142번지에 위치한 하와이안 카페 & 베이커리입니다. 호놀룰루 커피의 100% 코나 커피, 모찌랜드의 장인 모찌 도넛, 전통 하와이안 말라사다, 한국 빙수, 한국 핫도그를 전문으로 합니다. <strong>2026년 2월 오픈</strong>, 와이키키 비치에서 도보 5분.</>
+                  <>
+                    <p><strong>Kona Coffee Donut</strong>은 하와이 호놀룰루 와이키키 <span itemProp="address">칼라카우아 애비뉴 2142번지(우편번호 96815)</span>에 위치한 하와이안 카페 & 베이커리입니다. <strong>2026년 2월 그랜드 오픈 예정</strong>. 와이키키 비치에서 <strong>도보 약 5분(400m)</strong> 거리의 최적 위치입니다.</p>
+                    <p>저희는 <strong>호놀룰루 커피</strong>(1992년 설립, 하와이 최대 코나 커피 전문점)와 제휴하여 <strong>100% 순수 코나 커피</strong>를 제공합니다. 코나 커피는 하와이 빅 아일랜드의 마우나 로아 산과 후알라라이 산 경사면(해발 500~900m)에서 재배되며, 전 세계 커피 생산량의 <strong>1% 미만</strong>을 차지하는 희귀한 원두입니다.</p>
+                    <p>또한 <strong>모찌랜드</strong>(한국 발상, 미국 50개 이상 매장 운영)의 장인 모찌 도넛을 제공합니다. 쌀가루(모찌코)를 사용한 독특한 쫄깃한 식감이 특징이며 <strong>매일 매장에서 직접 제조</strong>합니다. 영업시간: <strong>매일 오전 7시~오후 9시</strong>(14시간 영업).</p>
+                  </>
                 ) : locale === 'zh' ? (
-                  <>Kona Coffee Donut是一家位于夏威夷檀香山威基基卡拉卡瓦大道2142号的夏威夷咖啡馆和面包店。我们专营檀香山咖啡的100%科纳咖啡、MOCHILAND的手工麻糬甜甜圈、传统夏威夷马拉萨达、韩国冰淇淋和韩国热狗。<strong>2026年2月开业</strong>，距威基基海滩步行5分钟。</>
+                  <>
+                    <p><strong>Kona Coffee Donut</strong>是一家位于夏威夷檀香山威基基<span itemProp="address">卡拉卡瓦大道2142号（邮编96815）</span>的夏威夷咖啡馆和面包店。<strong>2026年2月盛大开业</strong>。距威基基海滩<strong>步行约5分钟（400米）</strong>，位置优越。</p>
+                    <p>我们与<strong>檀香山咖啡</strong>（1992年成立，夏威夷最大的科纳咖啡专营店）合作，提供<strong>100%纯正科纳咖啡</strong>。科纳咖啡种植于夏威夷大岛的冒纳罗亚山和胡阿拉莱山斜坡（海拔500-900米），仅占全球咖啡产量的<strong>不到1%</strong>，极为珍贵。</p>
+                    <p>我们还提供<strong>MOCHILAND</strong>（源自韩国，在美国拥有50多家门店）的手工麻糬甜甜圈。采用糯米粉制作，口感独特Q弹，<strong>每天在店内新鲜制作</strong>。营业时间：<strong>每天上午7点至晚上9点</strong>（14小时营业）。</p>
+                  </>
                 ) : locale === 'es' ? (
-                  <>Kona Coffee Donut es un café y panadería hawaiana ubicada en 2142 Kalakaua Ave en Waikiki, Honolulu, Hawaii. Nos especializamos en café 100% Kona de Honolulu Coffee, donuts de mochi artesanales de MOCHILAND, malasadas hawaianas tradicionales, bingsu coreano y corn dogs coreanos. <strong>Apertura en febrero de 2026</strong>, a 5 minutos a pie de la playa de Waikiki.</>
+                  <>
+                    <p><strong>Kona Coffee Donut</strong> es un café y panadería hawaiana ubicada en <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span>, Waikiki. <strong>Gran apertura en febrero de 2026</strong>. Ubicación privilegiada a <strong>solo 5 minutos a pie (400 metros)</strong> de la playa de Waikiki.</p>
+                    <p>Nos asociamos con <strong>Honolulu Coffee</strong> (fundado en 1992, la cadena de café Kona más grande de Hawái) para servir <strong>café 100% Kona puro</strong>. El café Kona se cultiva en las laderas de Mauna Loa y Hualalai en la Isla Grande de Hawái (altitud 500-900m), representando <strong>menos del 1%</strong> de la producción mundial de café.</p>
+                    <p>También servimos donuts de mochi artesanales de <strong>MOCHILAND</strong> (originario de Corea, con más de 50 ubicaciones en EE.UU.). Hechos con harina de arroz (mochiko) para una textura única y masticable, <strong>preparados frescos diariamente en la tienda</strong>. Horario: <strong>todos los días de 7:00 AM a 9:00 PM</strong> (14 horas).</p>
+                  </>
                 ) : (
-                  <>Kona Coffee Donut is a Hawaiian café and bakery located at 2142 Kalakaua Ave in Waikiki, Honolulu, Hawaii. We specialize in authentic 100% Kona coffee from Honolulu Coffee, artisan mochi donuts from MOCHILAND, traditional Hawaiian malasadas, Korean bingsu shaved ice, and Korean corn dogs. <strong>Opening February 2026</strong>, we are a 5-minute walk from Waikiki Beach.</>
+                  <>
+                    <p><strong>Kona Coffee Donut</strong> is a Hawaiian café and bakery located at <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span> in Waikiki. <strong>Grand opening February 2026</strong>. Prime location just <strong>5 minutes walking distance (400 meters)</strong> from Waikiki Beach.</p>
+                    <p>We partner with <strong>Honolulu Coffee</strong> (established 1992, Hawaii&apos;s largest Kona coffee chain) to serve <strong>100% pure Kona coffee</strong>. Kona coffee is grown on the slopes of Mauna Loa and Hualalai volcanoes on Hawaii&apos;s Big Island (elevation 500-900 meters), representing <strong>less than 1%</strong> of worldwide coffee production according to the Kona Coffee Council.</p>
+                    <p>We also serve artisan mochi donuts from <strong>MOCHILAND</strong> (originated in Korea, now with 50+ US locations). Made with rice flour (mochiko) for a unique chewy texture, <strong>freshly prepared daily in-store</strong>. Hours: <strong>7:00 AM - 9:00 PM daily</strong> (14 hours of operation).</p>
+                  </>
                 )}
-              </p>
+              </article>
             </motion.div>
           </motion.div>
 
