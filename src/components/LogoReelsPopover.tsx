@@ -7,7 +7,8 @@ import { createPortal } from 'react-dom';
 
 interface Reel {
   id: string;
-  videoSrc: string;
+  videoSrc?: string;
+  imageSrc?: string;
   instagramUrl: string;
   caption?: string;
 }
@@ -251,50 +252,63 @@ export default function LogoReelsPopover({
                     className={`relative rounded-xl overflow-hidden cursor-pointer group bg-gray-100 ${
                       reels.length === 1
                         ? isMobile
-                          ? 'w-full max-w-[200px] aspect-[9/16]'
-                          : 'w-[180px] aspect-[9/16]'
+                          ? 'w-full max-w-[200px] aspect-square'
+                          : 'w-[200px] aspect-square'
                         : 'aspect-[9/16]'
                     }`}
                     onClick={(e) => openInstagram(reel.instagramUrl, e)}
                   >
-                    <video
-                      ref={(el) => { videoRefs.current[reel.id] = el; }}
-                      src={reel.videoSrc}
-                      muted
-                      loop
-                      playsInline
-                      preload="metadata"
-                      className="w-full h-full object-cover"
-                    />
+                    {reel.imageSrc ? (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        src={reel.imageSrc}
+                        alt={reel.caption || 'Instagram post'}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : reel.videoSrc ? (
+                      <video
+                        ref={(el) => { videoRefs.current[reel.id] = el; }}
+                        src={reel.videoSrc}
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        className="w-full h-full object-cover"
+                      />
+                    ) : null}
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
-                      <div className={`rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center transition-opacity ${
-                        isMobile
-                          ? 'w-12 h-12 opacity-100'
-                          : reels.length === 1
-                            ? 'w-14 h-14 opacity-0 group-hover:opacity-100'
-                            : 'w-10 h-10 opacity-0 group-hover:opacity-100'
-                      }`}>
-                        <svg className={`text-white ml-0.5 ${isMobile ? 'w-6 h-6' : reels.length === 1 ? 'w-7 h-7' : 'w-5 h-5'}`} fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                    </div>
-                    <button
-                      onClick={(e) => toggleMute(reel.id, e)}
-                      className={`absolute bottom-2 right-2 rounded-full bg-black/50 text-white transition-opacity hover:bg-black/70 ${
-                        isMobile
-                          ? 'p-2 opacity-100'
-                          : reels.length === 1
-                            ? 'p-2 opacity-0 group-hover:opacity-100'
-                            : 'p-1.5 opacity-0 group-hover:opacity-100'
-                      }`}
-                    >
-                      {mutedVideos[reel.id] === false ? (
-                        <Volume2 className={isMobile ? 'w-4 h-4' : reels.length === 1 ? 'w-4 h-4' : 'w-3 h-3'} />
-                      ) : (
-                        <VolumeX className={isMobile ? 'w-4 h-4' : reels.length === 1 ? 'w-4 h-4' : 'w-3 h-3'} />
+                      {!reel.imageSrc && (
+                        <div className={`rounded-full bg-white/30 backdrop-blur-sm flex items-center justify-center transition-opacity ${
+                          isMobile
+                            ? 'w-12 h-12 opacity-100'
+                            : reels.length === 1
+                              ? 'w-14 h-14 opacity-0 group-hover:opacity-100'
+                              : 'w-10 h-10 opacity-0 group-hover:opacity-100'
+                        }`}>
+                          <svg className={`text-white ml-0.5 ${isMobile ? 'w-6 h-6' : reels.length === 1 ? 'w-7 h-7' : 'w-5 h-5'}`} fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </div>
                       )}
-                    </button>
+                    </div>
+                    {reel.videoSrc && !reel.imageSrc && (
+                      <button
+                        onClick={(e) => toggleMute(reel.id, e)}
+                        className={`absolute bottom-2 right-2 rounded-full bg-black/50 text-white transition-opacity hover:bg-black/70 ${
+                          isMobile
+                            ? 'p-2 opacity-100'
+                            : reels.length === 1
+                              ? 'p-2 opacity-0 group-hover:opacity-100'
+                              : 'p-1.5 opacity-0 group-hover:opacity-100'
+                        }`}
+                      >
+                        {mutedVideos[reel.id] === false ? (
+                          <Volume2 className={isMobile ? 'w-4 h-4' : reels.length === 1 ? 'w-4 h-4' : 'w-3 h-3'} />
+                        ) : (
+                          <VolumeX className={isMobile ? 'w-4 h-4' : reels.length === 1 ? 'w-4 h-4' : 'w-3 h-3'} />
+                        )}
+                      </button>
+                    )}
                     {reel.caption && (
                       <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/60 to-transparent">
                         <p className={`text-white truncate ${isMobile ? 'text-xs' : reels.length === 1 ? 'text-sm' : 'text-[10px]'}`}>{reel.caption}</p>
