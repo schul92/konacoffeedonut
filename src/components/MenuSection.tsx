@@ -21,19 +21,19 @@ const menuItems: MenuItem[] = [
   { id: 'coffee', menuImage: '/images/menu/coffee.webp', video: '/videos/coffee.mp4', iconImage: '/icons/honolulu_coffee.png', comingSoon: true },
   { id: 'bingsu', menuImage: '/images/menu/bingsu.webp', video: '/videos/bingsu.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'hotdog', menuImage: '/images/menu/hotdog.webp', video: '/videos/hotdog.mp4', iconImage: '/icons/mochi_land_circle.png' },
-  { id: 'acai', menuImage: '/images/menu/acai.webp', video: '/videos/acai.mp4', iconImage: '/icons/mochi_land_circle.png' },
+  { id: 'acai', menuImage: '/images/menu/acai.webp', video: '/videos/acai.mp4', iconImage: '/icons/mochi_land_circle.png', comingSoon: true },
 ];
 
 export default function MenuSection() {
   const t = useTranslations('menu');
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<{ image: string; title: string; comingSoon?: boolean } | null>(null);
+  const [currentMenu, setCurrentMenu] = useState<{ image: string; title: string; comingSoon?: boolean; id?: string } | null>(null);
   const [playingVideos, setPlayingVideos] = useState<Record<string, boolean>>({});
   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
-  const openMenu = (menuImage: string, title: string, comingSoon?: boolean) => {
-    setCurrentMenu({ image: menuImage, title, comingSoon });
+  const openMenu = (menuImage: string, title: string, comingSoon?: boolean, id?: string) => {
+    setCurrentMenu({ image: menuImage, title, comingSoon, id });
     setModalOpen(true);
 
     // Track menu view
@@ -43,6 +43,15 @@ export default function MenuSection() {
         interaction_type: 'modal_open',
         coming_soon: comingSoon || false,
       });
+    }
+  };
+
+  // Get emoji for coming soon items
+  const getComingSoonEmoji = (id?: string) => {
+    switch (id) {
+      case 'coffee': return '☕';
+      case 'acai': return '🍇';
+      default: return '✨';
     }
   };
 
@@ -102,7 +111,7 @@ export default function MenuSection() {
               className="relative group"
             >
               <button
-                onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`), item.comingSoon)}
+                onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`), item.comingSoon, item.id)}
                 className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:aspect-[4/3] md:hover:scale-[1.02]"
               >
                 {/* Video Background - Cinema Style - Auto-playing */}
@@ -301,7 +310,7 @@ export default function MenuSection() {
                         className="mb-8"
                       >
                         <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center shadow-2xl mb-6 mx-auto">
-                          <span className="text-5xl md:text-6xl">☕</span>
+                          <span className="text-5xl md:text-6xl">{getComingSoonEmoji(currentMenu.id)}</span>
                         </div>
                       </motion.div>
                       <motion.h3
