@@ -12,12 +12,13 @@ interface MenuItem {
   video?: string; // Optional video file path
   icon?: string;
   iconImage?: string;
+  comingSoon?: boolean; // Show "Coming Soon" instead of menu
 }
 
 const menuItems: MenuItem[] = [
   { id: 'donuts', menuImage: '/images/menu/donut.webp', video: '/videos/donut.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'malasada', menuImage: '/images/menu/malasada.webp', video: '/videos/malasada.mp4', iconImage: '/icons/mochi_land_circle.png' },
-  { id: 'coffee', menuImage: '/images/menu/coffee.webp', video: '/videos/coffee.mp4', iconImage: '/icons/honolulu_coffee.png' },
+  { id: 'coffee', menuImage: '/images/menu/coffee.webp', video: '/videos/coffee.mp4', iconImage: '/icons/honolulu_coffee.png', comingSoon: true },
   { id: 'bingsu', menuImage: '/images/menu/bingsu.webp', video: '/videos/bingsu.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'hotdog', menuImage: '/images/menu/hotdog.webp', video: '/videos/hotdog.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'acai', menuImage: '/images/menu/acai.webp', video: '/videos/acai.mp4', iconImage: '/icons/mochi_land_circle.png' },
@@ -27,12 +28,12 @@ export default function MenuSection() {
   const t = useTranslations('menu');
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<{ image: string; title: string } | null>(null);
+  const [currentMenu, setCurrentMenu] = useState<{ image: string; title: string; comingSoon?: boolean } | null>(null);
   const [playingVideos, setPlayingVideos] = useState<Record<string, boolean>>({});
   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
-  const openMenu = (menuImage: string, title: string) => {
-    setCurrentMenu({ image: menuImage, title });
+  const openMenu = (menuImage: string, title: string, comingSoon?: boolean) => {
+    setCurrentMenu({ image: menuImage, title, comingSoon });
     setModalOpen(true);
 
     // Track menu view
@@ -40,6 +41,7 @@ export default function MenuSection() {
       window.trackEvent('view_menu', {
         menu_category: title,
         interaction_type: 'modal_open',
+        coming_soon: comingSoon || false,
       });
     }
   };
@@ -100,7 +102,7 @@ export default function MenuSection() {
               className="relative group"
             >
               <button
-                onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`))}
+                onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`), item.comingSoon)}
                 className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:aspect-[4/3] md:hover:scale-[1.02]"
               >
                 {/* Video Background - Cinema Style - Auto-playing */}
@@ -280,25 +282,71 @@ export default function MenuSection() {
                   <X className="w-5 h-5 sm:w-6 sm:h-6" />
                 </button>
 
-                {/* Menu Image Viewer - Fit to view entire menu */}
+                {/* Menu Image Viewer or Coming Soon */}
                 <div
-                  className="w-full h-full bg-black rounded-lg overflow-auto shadow-2xl p-2 sm:p-4 flex items-start justify-center"
+                  className="w-full h-full bg-black rounded-lg overflow-auto shadow-2xl p-2 sm:p-4 flex items-center justify-center"
                   onClick={(e) => e.stopPropagation()}
                   style={{
                     overscrollBehavior: 'contain',
                     WebkitOverflowScrolling: 'touch'
                   }}
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={currentMenu.image}
-                    alt={currentMenu.title}
-                    className="max-w-[70%] h-auto object-contain"
-                    style={{
-                      touchAction: 'manipulation',
-                      userSelect: 'none'
-                    }}
-                  />
+                  {currentMenu.comingSoon ? (
+                    /* Coming Soon Display */
+                    <div className="flex flex-col items-center justify-center text-center px-8 py-16">
+                      <motion.div
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.5, type: 'spring' }}
+                        className="mb-8"
+                      >
+                        <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center shadow-2xl mb-6 mx-auto">
+                          <span className="text-5xl md:text-6xl">☕</span>
+                        </div>
+                      </motion.div>
+                      <motion.h3
+                        initial={{ y: 20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.2 }}
+                        className="text-3xl md:text-5xl font-black text-white mb-4"
+                      >
+                        Coming Soon!
+                      </motion.h3>
+                      <motion.p
+                        initial={{ y: 20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.3 }}
+                        className="text-lg md:text-xl text-white/70 max-w-md"
+                      >
+                        Our {currentMenu.title} menu is being crafted with care. Stay tuned for something special!
+                      </motion.p>
+                      <motion.div
+                        initial={{ y: 20, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.4 }}
+                        className="mt-8"
+                      >
+                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-full font-bold text-sm tracking-widest animate-pulse">
+                          <span className="w-2 h-2 bg-white rounded-full"></span>
+                          OPENING FEBRUARY 2026
+                        </div>
+                      </motion.div>
+                    </div>
+                  ) : (
+                    /* Menu Image */
+                    <>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={currentMenu.image}
+                        alt={currentMenu.title}
+                        className="max-w-[70%] h-auto object-contain"
+                        style={{
+                          touchAction: 'manipulation',
+                          userSelect: 'none'
+                        }}
+                      />
+                    </>
+                  )}
                 </div>
               </div>
             </motion.div>
