@@ -31,10 +31,10 @@ const mochilandReels = [
 
 const konaCoffeeReels = [
   {
-    id: 'konacoffee-post-1',
-    imageSrc: '/images/mochiland-collab.jpg',
-    instagramUrl: 'https://www.instagram.com/reel/DTy-gseCQUw/',
-    caption: 'Mochi Land x Honolulu Coffee',
+    id: 'konacoffee-reel-1',
+    videoSrc: '/videos/reels/konacoffee-reel-1.mp4',
+    instagramUrl: 'https://www.instagram.com/reel/DRivouBie_x/',
+    caption: 'Premium Kona Coffee',
   },
 ];
 
