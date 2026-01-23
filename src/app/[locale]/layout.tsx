@@ -80,8 +80,8 @@ export async function generateMetadata({
       // Kona Coffee Experience
       'kona coffee taste', 'kona coffee flavor', 'volcanic coffee hawaii',
       'hawaiian coffee beans', 'kona district coffee', 'honolulu coffee kona',
-      // Brand collaboration
-      'honolulu coffee collaboration', 'mochiland waikiki', 'bonepi waikiki',
+      // Brand partners
+      'honolulu coffee waikiki', 'mochiland waikiki', 'bonepi waikiki',
       'kona coffee donut shop', 'coffee donut pairing',
       // Experience & High-Priority Keywords
       'best coffee in waikiki', 'gourmet donuts hawaii', 'hawaiian cafe',

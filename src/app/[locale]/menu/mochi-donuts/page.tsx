@@ -22,7 +22,7 @@ const translations = {
         { title: "Premium Ingredients", desc: "Made fresh daily with high-quality mochiko rice flour" },
         { title: "Perfect Texture", desc: "Crispy golden exterior with a soft, chewy center" },
         { title: "Unique Flavors", desc: "Rotating selection of glazes and toppings" },
-        { title: "MOCHILAND Collaboration", desc: "Crafted in partnership with renowned mochi experts" },
+        { title: "MOCHILAND Quality", desc: "Crafted by renowned mochi donut experts" },
       ],
     },
     flavors: {

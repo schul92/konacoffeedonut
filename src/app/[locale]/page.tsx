@@ -607,9 +607,106 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* Collaboration Container with Enhanced Fusion Effect */}
-        <div className="relative z-10 flex flex-col items-center gap-0">
-          {/* Honolulu Coffee Badge - with Instagram Reels popover */}
+        {/* Brand Badges Container */}
+        <div className="relative z-10 flex flex-col items-center gap-3">
+          {/* Mochiland Badge - FIRST */}
+          <LogoReelsPopover
+            reels={mochilandReels}
+            username="mochinut_fortlee"
+            profileUrl="https://www.instagram.com/mochinut_fortlee/"
+            brandName="Mochiland"
+            brandColor="from-pink-500 via-rose-500 to-pink-600"
+          >
+            <motion.div
+              className="relative inline-flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-lg px-1.5 py-1.5 md:px-3 md:py-3 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto w-[190px] md:w-[350px]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 20px 40px rgba(236, 72, 153, 0.3)",
+                borderColor: "rgba(236, 72, 153, 0.5)",
+              }}
+              transition={{
+                opacity: { delay: 0.3, duration: 0.6 },
+                y: { delay: 0.3, duration: 0.6 },
+                scale: { duration: 0.3 },
+                boxShadow: { duration: 0.3 }
+              }}
+            >
+              {/* Logo with Glow Effect */}
+              <motion.div
+                className="relative w-8 h-8 md:w-16 md:h-16 flex-shrink-0 bg-white rounded-md md:rounded-xl p-0.5 md:p-2 shadow-lg overflow-hidden"
+                animate={{
+                  boxShadow: [
+                    "0 5px 15px rgba(236, 72, 153, 0.3)",
+                    "0 8px 25px rgba(236, 72, 153, 0.5)",
+                    "0 5px 15px rgba(236, 72, 153, 0.3)",
+                  ]
+                }}
+                whileHover={{
+                  rotate: [0, -5, 5, -5, 0],
+                }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  rotate: { duration: 0.5 }
+                }}
+              >
+                <Image
+                  src="/icons/bonepi.jpeg"
+                  alt="Bonepi"
+                  fill
+                  sizes="64px"
+                  priority
+                  className="object-cover rounded"
+                />
+              </motion.div>
+
+              {/* Text Content */}
+              <div className="text-left">
+                <p className="text-gray-600 font-medium text-[8px] md:text-sm mb-0 md:mb-0.5 tracking-wide">
+                  PROUDLY SERVING
+                </p>
+                <div className="font-black text-xs md:text-2xl tracking-tight leading-tight">
+                  <motion.span
+                    animate={{
+                      scale: [1, 1.05, 1],
+                      filter: [
+                        "drop-shadow(0 0 0px rgba(236, 72, 153, 0))",
+                        "drop-shadow(0 0 4px rgba(236, 72, 153, 0.6))",
+                        "drop-shadow(0 0 0px rgba(236, 72, 153, 0))",
+                      ]
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                    style={{ display: 'inline-block' }}
+                  >
+                    <Image
+                      src="/icons/mochiland.png"
+                      alt="MOCHILAND"
+                      width={240}
+                      height={60}
+                      sizes="(max-width: 768px) 64px, 240px"
+                      priority
+                      className="h-4 md:h-8 w-auto inline-block"
+                    />
+                  </motion.span>
+                </div>
+                <p className="text-pink-500 font-semibold text-[8px] md:text-sm">
+                  Artisan Mochi Donuts
+                </p>
+              </div>
+            </motion.div>
+          </LogoReelsPopover>
+
+          {/* Honolulu Coffee Badge - SECOND */}
           <LogoReelsPopover
             reels={konaCoffeeReels}
             username="konacoffeedonut"
@@ -630,8 +727,8 @@ export default function Home() {
                 borderColor: "rgba(251, 146, 60, 0.5)",
               }}
               transition={{
-                opacity: { delay: 0.3, duration: 0.6 },
-                y: { delay: 0.3, duration: 0.6 },
+                opacity: { delay: 0.5, duration: 0.6 },
+                y: { delay: 0.5, duration: 0.6 },
                 scale: { duration: 0.3 },
                 boxShadow: { duration: 0.3 }
               }}
@@ -653,6 +750,7 @@ export default function Home() {
                   duration: 2.5,
                   repeat: Infinity,
                   ease: "easeInOut",
+                  delay: 0.5,
                   rotate: { duration: 0.5 }
                 }}
               >
@@ -684,7 +782,8 @@ export default function Home() {
                     transition={{
                       duration: 2,
                       repeat: Infinity,
-                      ease: "easeInOut"
+                      ease: "easeInOut",
+                      delay: 0.3
                     }}
                     style={{ display: 'inline-block' }}
                     className="text-orange-500"
@@ -695,214 +794,6 @@ export default function Home() {
                 </p>
                 <p className="text-orange-500 font-semibold text-[8px] md:text-sm">
                   Premium Kona Coffee
-                </p>
-              </div>
-            </motion.div>
-          </LogoReelsPopover>
-
-          {/* Enhanced Fusion Animation - Connecting Element */}
-          <div className="relative w-full h-6 md:h-8 flex items-center justify-center my-1">
-            {/* Animated Gradient Line */}
-            <motion.div
-              className="absolute w-px h-full bg-gradient-to-b from-orange-400 via-pink-400 to-pink-500"
-              initial={{ scaleY: 0, opacity: 0 }}
-              animate={{
-                scaleY: 1,
-                opacity: [0.4, 0.7, 0.4]
-              }}
-              transition={{
-                scaleY: { delay: 0.6, duration: 0.4 },
-                opacity: { duration: 2, repeat: Infinity, ease: "easeInOut" }
-              }}
-            />
-
-            {/* Multiple Flowing Particles */}
-            {[...Array(5)].map((_, i) => (
-              <motion.div
-                key={i}
-                className="absolute w-1 h-1 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full"
-                animate={{
-                  y: ['-50%', '50%'],
-                  opacity: [0, 1, 0],
-                  scale: [0.3, 1, 0.3],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  delay: i * 0.4 + 0.7,
-                  ease: "easeInOut"
-                }}
-              />
-            ))}
-
-            {/* Modern × Symbol with Enhanced Glassmorphism */}
-            <motion.div
-              className="relative z-10 bg-white/90 backdrop-blur-md rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center shadow-lg border border-white/60"
-              initial={{ scale: 0 }}
-              animate={{
-                scale: 1,
-                y: [0, -2, 0]
-              }}
-              whileHover={{
-                scale: 1.3,
-                borderColor: "rgba(251, 146, 60, 0.6)",
-                boxShadow: "0 8px 30px rgba(251, 146, 60, 0.4)"
-              }}
-              transition={{
-                scale: { delay: 0.7, duration: 0.4, type: 'spring', stiffness: 200 },
-                y: { duration: 2, repeat: Infinity, ease: "easeInOut" }
-              }}
-            >
-              {/* Enhanced Pulse Effect */}
-              <motion.div
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-300/40 to-pink-300/40"
-                animate={{
-                  scale: [1, 1.2, 1],
-                  opacity: [0.3, 0.6, 0.3],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-              <motion.span
-                className="relative text-sm md:text-lg font-black bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent"
-                animate={{
-                  rotate: [0, 360],
-                  scale: [1, 1.15, 1]
-                }}
-                transition={{
-                  rotate: { duration: 10, repeat: Infinity, ease: "linear" },
-                  scale: { duration: 2, repeat: Infinity, ease: "easeInOut" }
-                }}
-              >
-                ×
-              </motion.span>
-            </motion.div>
-
-            {/* Dual Energy Rings with Stagger */}
-            <motion.div
-              className="absolute w-8 h-8 md:w-12 md:h-12 border border-orange-300/25 rounded-full"
-              animate={{
-                scale: [1, 1.4],
-                opacity: [0.5, 0],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeOut"
-              }}
-            />
-            <motion.div
-              className="absolute w-8 h-8 md:w-12 md:h-12 border border-pink-300/25 rounded-full"
-              animate={{
-                scale: [1, 1.4],
-                opacity: [0.5, 0],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeOut",
-                delay: 1
-              }}
-            />
-          </div>
-
-          {/* Mochiland × Bonepi Collaboration Badge - with Instagram Reels popover */}
-          <LogoReelsPopover
-            reels={mochilandReels}
-            username="mochinut_fortlee"
-            profileUrl="https://www.instagram.com/mochinut_fortlee/"
-            brandName="Mochiland"
-            brandColor="from-pink-500 via-rose-500 to-pink-600"
-          >
-            <motion.div
-              className="relative inline-flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-lg px-1.5 py-1.5 md:px-3 md:py-3 rounded-lg md:rounded-2xl border-2 border-white shadow-xl mx-auto w-[190px] md:w-[350px]"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 20px 40px rgba(236, 72, 153, 0.3)",
-                borderColor: "rgba(236, 72, 153, 0.5)",
-              }}
-              transition={{
-                opacity: { delay: 0.5, duration: 0.6 },
-                y: { delay: 0.5, duration: 0.6 },
-                scale: { duration: 0.3 },
-                boxShadow: { duration: 0.3 }
-              }}
-            >
-              {/* Bonepi Logo with Glow Effect */}
-              <motion.div
-                className="relative w-8 h-8 md:w-16 md:h-16 flex-shrink-0 bg-white rounded-md md:rounded-xl p-0.5 md:p-2 shadow-lg overflow-hidden"
-                animate={{
-                  boxShadow: [
-                    "0 5px 15px rgba(236, 72, 153, 0.3)",
-                    "0 8px 25px rgba(236, 72, 153, 0.5)",
-                    "0 5px 15px rgba(236, 72, 153, 0.3)",
-                  ]
-                }}
-                whileHover={{
-                  rotate: [0, -5, 5, -5, 0],
-                }}
-                transition={{
-                  duration: 2.5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 0.5,
-                  rotate: { duration: 0.5 }
-                }}
-              >
-                <Image
-                  src="/icons/bonepi.jpeg"
-                  alt="Bonepi"
-                  fill
-                  sizes="64px"
-                  priority
-                  className="object-cover rounded"
-                />
-              </motion.div>
-
-              {/* Text Content */}
-              <div className="text-left">
-                <p className="text-gray-600 font-medium text-[8px] md:text-sm mb-0 md:mb-0.5 tracking-wide">
-                  COLLABORATION WITH
-                </p>
-                <div className="font-black text-xs md:text-2xl tracking-tight leading-tight">
-                  <motion.span
-                    animate={{
-                      scale: [1, 1.05, 1],
-                      filter: [
-                        "drop-shadow(0 0 0px rgba(236, 72, 153, 0))",
-                        "drop-shadow(0 0 4px rgba(236, 72, 153, 0.6))",
-                        "drop-shadow(0 0 0px rgba(236, 72, 153, 0))",
-                      ]
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                      delay: 0.3
-                    }}
-                    style={{ display: 'inline-block' }}
-                  >
-                    <Image
-                      src="/icons/mochiland.png"
-                      alt="MOCHILAND"
-                      width={240}
-                      height={60}
-                      sizes="(max-width: 768px) 64px, 240px"
-                      priority
-                      className="h-4 md:h-8 w-auto inline-block"
-                    />
-                  </motion.span>
-                </div>
-                <p className="text-pink-500 font-semibold text-[8px] md:text-sm">
-                  Artisan Mochi Donuts
                 </p>
               </div>
             </motion.div>
@@ -1225,7 +1116,7 @@ export default function Home() {
       {/* Menu Section */}
       <MenuSection />
 
-      {/* About Us Section - Epic Collaboration Story */}
+      {/* About Us Section */}
       <section id="about" className="py-20 md:py-32 bg-gradient-to-b from-white via-orange-50 to-white overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
           {/* Header */}
@@ -1302,32 +1193,23 @@ export default function Home() {
             </motion.div>
           </motion.div>
 
-          {/* Epic Collaboration Animation */}
+          {/* Proudly Serving Section */}
           <div className="relative mb-20">
-            {/* Connecting Line Animation */}
             <motion.div
-              className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-orange-400 to-transparent -translate-y-1/2 z-0"
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
-              transition={{ duration: 1.5, delay: 0.3 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-            />
+              className="text-center mb-12"
+            >
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-600 mb-2">Proudly Serving</h3>
+            </motion.div>
 
-            {/* Energy Pulse */}
-            <motion.div
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-orange-400/20 blur-2xl z-0"
-              animate={{
-                scale: [1, 2, 1],
-                opacity: [0.5, 0.2, 0.5],
-              }}
-              transition={{ duration: 3, repeat: Infinity }}
-            />
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
               {/* MOCHILAND */}
               <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
                 className="text-center"
@@ -1340,7 +1222,7 @@ export default function Home() {
                   brandColor="from-pink-500 via-rose-500 to-pink-600"
                 >
                   <motion.div
-                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    whileHover={{ scale: 1.1 }}
                     className="relative inline-block mb-6"
                   >
                     <motion.div
@@ -1351,78 +1233,27 @@ export default function Home() {
                     <Image
                       src="/icons/mochi_land_circle_original.png"
                       alt="MOCHILAND - Artisan Mochi Donuts from Waikiki"
-                      width={200}
-                      height={200}
-                      sizes="200px"
+                      width={180}
+                      height={180}
+                      sizes="180px"
                       loading="lazy"
                       className="relative rounded-full shadow-2xl"
                     />
                   </motion.div>
                 </LogoReelsPopover>
                 <motion.h3
-                  className="text-3xl md:text-4xl font-black text-orange-600 mb-2 font-righteous"
-                  animate={{ scale: [1, 1.05, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
+                  className="text-2xl md:text-3xl font-black text-orange-600 mb-2 font-righteous"
                 >
                   MOCHILAND
                 </motion.h3>
-                <p className="text-lg text-gray-600 font-semibold">Artisan Mochi Donuts</p>
-              </motion.div>
-
-              {/* Center: Plus Symbol with Particles */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.5, type: 'spring' }}
-                viewport={{ once: true }}
-                className="text-center relative"
-              >
-                {/* Orbiting Particles */}
-                {[...Array(8)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    className="absolute top-1/2 left-1/2 w-2 h-2 bg-orange-400 rounded-full"
-                    style={{
-                      transformOrigin: '0 0',
-                    }}
-                    animate={{
-                      rotate: [i * 45, i * 45 + 360],
-                      x: [0, Math.cos((i * 45 * Math.PI) / 180) * 60],
-                      y: [0, Math.sin((i * 45 * Math.PI) / 180) * 60],
-                      opacity: [1, 0.2, 1],
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      delay: i * 0.1,
-                    }}
-                  />
-                ))}
-
-                <motion.div
-                  className="text-8xl md:text-9xl font-black text-orange-500"
-                  animate={{
-                    rotate: [0, 180, 360],
-                    scale: [1, 1.2, 1]
-                  }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                >
-                  +
-                </motion.div>
-                <motion.p
-                  className="text-xl md:text-2xl font-bold text-orange-600 mt-4 font-righteous"
-                  animate={{ opacity: [1, 0.5, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                >
-                  PERFECT COMBINATION
-                </motion.p>
+                <p className="text-base text-gray-600 font-semibold">Artisan Mochi Donuts</p>
               </motion.div>
 
               {/* HONOLULU COFFEE */}
               <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="text-center"
               >
@@ -1434,7 +1265,7 @@ export default function Home() {
                   brandColor="from-amber-600 via-orange-500 to-amber-600"
                 >
                   <motion.div
-                    whileHover={{ scale: 1.1, rotate: -5 }}
+                    whileHover={{ scale: 1.1 }}
                     className="relative inline-block mb-6"
                   >
                     <motion.div
@@ -1442,7 +1273,7 @@ export default function Home() {
                       animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
                       transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                     />
-                    <div className="relative w-[200px] h-[200px] flex items-center justify-center">
+                    <div className="relative w-[180px] h-[180px] flex items-center justify-center">
                       <Image
                         src="/icons/honolulu_coffee_original.webp"
                         alt="Honolulu Coffee - Premium Kona Coffee Beans from Hawaii"
@@ -1456,13 +1287,11 @@ export default function Home() {
                   </motion.div>
                 </LogoReelsPopover>
                 <motion.h3
-                  className="text-3xl md:text-4xl font-black text-amber-600 mb-2 font-righteous"
-                  animate={{ scale: [1, 1.05, 1] }}
-                  transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
+                  className="text-2xl md:text-3xl font-black text-amber-600 mb-2 font-righteous"
                 >
-                  HONOLULU<br />COFFEE
+                  HONOLULU COFFEE
                 </motion.h3>
-                <p className="text-lg text-gray-600 font-semibold">Premium Kona Beans</p>
+                <p className="text-base text-gray-600 font-semibold">Premium Kona Beans</p>
               </motion.div>
             </div>
           </div>
@@ -1686,47 +1515,6 @@ export default function Home() {
                   {locale === 'ja' ? '利用規約' : locale === 'ko' ? '이용약관' : locale === 'zh' ? '服务条款' : locale === 'es' ? 'Términos' : 'Terms'}
                 </Link>
               </div>
-            </div>
-          </div>
-
-          {/* Collaboration Partners */}
-          <div className="pt-8 border-t border-white/10">
-            <p className="text-center text-sm opacity-60 mb-6">{t('footer.collaboration')}</p>
-            <div className="flex justify-center items-center gap-8 md:gap-12 mb-8">
-              <LogoReelsPopover
-                reels={konaCoffeeReels}
-                username="konacoffeedonut"
-                profileUrl="https://www.instagram.com/konacoffeedonut/"
-                brandName="Kona Coffee Donut"
-                brandColor="from-amber-600 via-orange-500 to-amber-600"
-              >
-                <Image
-                  src="/icons/honolulu_coffee.png"
-                  alt="Honolulu Coffee"
-                  width={80}
-                  height={64}
-                  sizes="(max-width: 768px) 48px, 64px"
-                  loading="lazy"
-                  className="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
-                />
-              </LogoReelsPopover>
-              <LogoReelsPopover
-                reels={mochilandReels}
-                username="mochinut_fortlee"
-                profileUrl="https://www.instagram.com/mochinut_fortlee/"
-                brandName="Mochiland"
-                brandColor="from-pink-500 via-rose-500 to-pink-600"
-              >
-                <Image
-                  src="/icons/mochi_land_circle.png"
-                  alt="Mochiland"
-                  width={80}
-                  height={64}
-                  sizes="(max-width: 768px) 48px, 64px"
-                  loading="lazy"
-                  className="h-12 md:h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity cursor-pointer"
-                />
-              </LogoReelsPopover>
             </div>
           </div>
 
