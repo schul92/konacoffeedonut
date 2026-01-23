@@ -42,7 +42,7 @@ export default function CollaborationBanner() {
         {/* Header Section */}
         <div className="bg-gradient-to-r from-orange-50 via-amber-50 to-orange-50 py-3 md:py-4 border-b-2 border-orange-200">
           <p className="text-center text-gray-600 font-semibold text-xs md:text-base tracking-wide">
-            PROUDLY COLLABORATING WITH
+            PROUDLY SERVING
           </p>
         </div>
 

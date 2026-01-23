@@ -1206,7 +1206,7 @@ export default function Home() {
                 ) : (
                   <>
                     <p><strong>Kona Coffee Donut</strong> is a Hawaiian café and bakery located at <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span> in Waikiki. <strong>Grand opening February 2026</strong>. Prime location just <strong>5 minutes walking distance (400 meters)</strong> from Waikiki Beach.</p>
-                    <p>We partner with <strong>Honolulu Coffee</strong> (established 1992, Hawaii&apos;s largest Kona coffee chain) to serve <strong>100% pure Kona coffee</strong>. Kona coffee is grown on the slopes of Mauna Loa and Hualalai volcanoes on Hawaii&apos;s Big Island (elevation 500-900 meters), representing <strong>less than 1%</strong> of worldwide coffee production according to the Kona Coffee Council.</p>
+                    <p>We proudly serve <strong>Honolulu Coffee</strong> (established 1992, Hawaii&apos;s largest Kona coffee chain), featuring <strong>100% pure Kona coffee</strong>. Kona coffee is grown on the slopes of Mauna Loa and Hualalai volcanoes on Hawaii&apos;s Big Island (elevation 500-900 meters), representing <strong>less than 1%</strong> of worldwide coffee production according to the Kona Coffee Council.</p>
                     <p>We also serve artisan mochi donuts from <strong>MOCHILAND</strong> (originated in Korea, now with 50+ US locations). Made with rice flour (mochiko) for a unique chewy texture, <strong>freshly prepared daily in-store</strong>.</p>
                   </>
                 )}

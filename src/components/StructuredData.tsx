@@ -34,11 +34,11 @@ export default function StructuredData({ locale }: StructuredDataProps) {
   // GEO-Optimized Entity Introduction with Citations & Data (CITABLE framework)
   // Includes: specific statistics, authoritative sources, verifiable claims
   const entityIntro = {
-    en: 'Kona Coffee Donut is a Hawaiian café and bakery at 2142 Kalakaua Ave, Honolulu, HI 96815, opening February 2026. Located 400 meters (5-minute walk) from Waikiki Beach. We partner with Honolulu Coffee (est. 1992, Hawaii\'s largest Kona coffee chain) to serve 100% pure Kona coffee—grown at 500-900m elevation on Mauna Loa and Hualalai volcanoes, representing less than 1% of global coffee production (Kona Coffee Council). We also feature MOCHILAND artisan mochi donuts (50+ US locations), freshly prepared daily in-store using rice flour (mochiko). Open 7AM-9PM daily (14 hours).',
-    ja: 'Kona Coffee Donutは2142 Kalakaua Ave, Honolulu, HI 96815に位置し、2026年2月オープン。ワイキキビーチから400m（徒歩5分）。ホノルルコーヒー（1992年創業、ハワイ最大のコナコーヒーチェーン）と提携し、100%純粋コナコーヒーを提供。コナコーヒーはマウナロア山とフアラライ山の標高500-900mで栽培され、世界のコーヒー生産量の1%未満（コナコーヒー協会）。MOCHILAND（米国50店舗以上）の職人モチドーナツを毎日店内で手作り。営業時間：毎日7時〜21時（14時間）。',
-    ko: 'Kona Coffee Donut은 2142 Kalakaua Ave, Honolulu, HI 96815에 위치하며, 2026년 2월 오픈. 와이키키 비치에서 400m(도보 5분). 호놀룰루 커피(1992년 설립, 하와이 최대 코나 커피 체인)와 제휴하여 100% 순수 코나 커피 제공. 코나 커피는 마우나 로아와 후알라라이 화산의 해발 500-900m에서 재배되며 전 세계 생산량의 1% 미만(코나 커피 협회). MOCHILAND(미국 50개 이상 매장)의 장인 모찌 도넛을 매일 매장에서 직접 제조. 영업시간: 매일 7시-21시(14시간).',
-    zh: 'Kona Coffee Donut位于2142 Kalakaua Ave, Honolulu, HI 96815，2026年2月开业。距威基基海滩400米（步行5分钟）。与檀香山咖啡（1992年成立，夏威夷最大科纳咖啡连锁）合作提供100%纯正科纳咖啡——产自冒纳罗亚和胡阿拉莱火山海拔500-900米处，仅占全球咖啡产量不到1%（科纳咖啡协会）。提供MOCHILAND（美国50多家门店）手工麻糬甜甜圈，每天店内新鲜制作。营业时间：每天7点-21点（14小时）。',
-    es: 'Kona Coffee Donut es un café hawaiano en 2142 Kalakaua Ave, Honolulu, HI 96815, apertura febrero 2026. A 400 metros (5 min a pie) de Waikiki Beach. Asociados con Honolulu Coffee (est. 1992, la cadena de café Kona más grande de Hawái) para servir café 100% Kona puro—cultivado a 500-900m de altitud en los volcanes Mauna Loa y Hualalai, representando menos del 1% de la producción mundial (Kona Coffee Council). También servimos donuts mochi artesanales de MOCHILAND (50+ ubicaciones en EE.UU.), preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
+    en: 'Kona Coffee Donut is a Hawaiian café and bakery at 2142 Kalakaua Ave, Honolulu, HI 96815, opening February 2026. Located 400 meters (5-minute walk) from Waikiki Beach. We proudly serve Honolulu Coffee (est. 1992, Hawaii\'s largest Kona coffee chain), featuring 100% pure Kona coffee—grown at 500-900m elevation on Mauna Loa and Hualalai volcanoes, representing less than 1% of global coffee production (Kona Coffee Council). We also feature MOCHILAND artisan mochi donuts (50+ US locations), freshly prepared daily in-store using rice flour (mochiko). Open 7AM-9PM daily (14 hours).',
+    ja: 'Kona Coffee Donutは2142 Kalakaua Ave, Honolulu, HI 96815に位置し、2026年2月オープン。ワイキキビーチから400m（徒歩5分）。ホノルルコーヒー（1992年創業、ハワイ最大のコナコーヒーチェーン）の100%純粋コナコーヒーを誇りを持って提供。コナコーヒーはマウナロア山とフアラライ山の標高500-900mで栽培され、世界のコーヒー生産量の1%未満（コナコーヒー協会）。MOCHILAND（米国50店舗以上）の職人モチドーナツを毎日店内で手作り。営業時間：毎日7時〜21時（14時間）。',
+    ko: 'Kona Coffee Donut은 2142 Kalakaua Ave, Honolulu, HI 96815에 위치하며, 2026년 2월 오픈. 와이키키 비치에서 400m(도보 5분). 호놀룰루 커피(1992년 설립, 하와이 최대 코나 커피 체인)의 100% 순수 코나 커피를 자랑스럽게 제공. 코나 커피는 마우나 로아와 후알라라이 화산의 해발 500-900m에서 재배되며 전 세계 생산량의 1% 미만(코나 커피 협회). MOCHILAND(미국 50개 이상 매장)의 장인 모찌 도넛을 매일 매장에서 직접 제조. 영업시간: 매일 7시-21시(14시간).',
+    zh: 'Kona Coffee Donut位于2142 Kalakaua Ave, Honolulu, HI 96815，2026年2月开业。距威基基海滩400米（步行5分钟）。自豪地供应檀香山咖啡（1992年成立，夏威夷最大科纳咖啡连锁）的100%纯正科纳咖啡——产自冒纳罗亚和胡阿拉莱火山海拔500-900米处，仅占全球咖啡产量不到1%（科纳咖啡协会）。提供MOCHILAND（美国50多家门店）手工麻糬甜甜圈，每天店内新鲜制作。营业时间：每天7点-21点（14小时）。',
+    es: 'Kona Coffee Donut es un café hawaiano en 2142 Kalakaua Ave, Honolulu, HI 96815, apertura febrero 2026. A 400 metros (5 min a pie) de Waikiki Beach. Orgullosamente servimos Honolulu Coffee (est. 1992, la cadena de café Kona más grande de Hawái), con café 100% Kona puro—cultivado a 500-900m de altitud en los volcanes Mauna Loa y Hualalai, representando menos del 1% de la producción mundial (Kona Coffee Council). También servimos donuts mochi artesanales de MOCHILAND (50+ ubicaciones en EE.UU.), preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
   };
 
   // Local Business Schema
@@ -367,7 +367,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'What makes Kona Coffee special?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We serve premium Kona coffee in partnership with Honolulu Coffee, Hawaii\'s premier coffee roaster. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity. It\'s one of the most sought-after coffees in the world due to Hawaii\'s unique volcanic soil and ideal growing conditions.',
+          text: 'We proudly serve Honolulu Coffee, Hawaii\'s premier coffee roaster, featuring premium Kona coffee. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity. It\'s one of the most sought-after coffees in the world due to Hawaii\'s unique volcanic soil and ideal growing conditions.',
         },
       },
       {
@@ -463,7 +463,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         name: 'Can I buy Kona coffee beans to take home?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes! We sell premium Kona coffee beans through our partnership with Honolulu Coffee. They make perfect souvenirs and gifts from Hawaii.',
+          text: 'Yes! We sell premium Kona coffee beans from Honolulu Coffee. They make perfect souvenirs and gifts from Hawaii.',
         },
       },
       {

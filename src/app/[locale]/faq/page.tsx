@@ -20,7 +20,7 @@ const translations = {
       {
         category: "products",
         question: "What makes Kona Coffee special?",
-        answer: "We serve premium Kona coffee in partnership with Honolulu Coffee, Hawaii's premier coffee roaster. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity. It's one of the most sought-after coffees in the world due to Hawaii's unique volcanic soil and ideal growing conditions."
+        answer: "We proudly serve Honolulu Coffee, Hawaii's premier coffee roaster, featuring premium Kona coffee. Kona coffee is grown on the slopes of Mauna Loa in Hawaii and is known for its smooth, rich flavor with low acidity. It's one of the most sought-after coffees in the world due to Hawaii's unique volcanic soil and ideal growing conditions."
       },
       {
         category: "products",
@@ -50,7 +50,7 @@ const translations = {
       {
         category: "products",
         question: "Can I buy Kona coffee beans to take home?",
-        answer: "Yes! We sell premium Kona coffee beans through our partnership with Honolulu Coffee. They make perfect souvenirs and gifts from Hawaii."
+        answer: "Yes! We sell premium Kona coffee beans from Honolulu Coffee. They make perfect souvenirs and gifts from Hawaii."
       },
       {
         category: "products",

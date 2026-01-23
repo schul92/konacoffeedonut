@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true
+  },
+  "include": [
+    "specs/**/*.ts",
+    "specs/**/*.spec.ts",
+    "playwright.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*",
+    "next.config.ts",
+    "next-env.d.ts",
+    ".next/**/*",
+    "seed.spec.ts"
+  ]
+}
