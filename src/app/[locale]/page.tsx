@@ -68,6 +68,7 @@ export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [currentVideo, setCurrentVideo] = useState(1);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [isMuted, setIsMuted] = useState(true);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [bannerVisible, setBannerVisible] = useState(true);
   const t = useTranslations();
@@ -143,10 +144,19 @@ export default function Home() {
     if (typeof window !== 'undefined' && window.trackEvent) {
       window.trackEvent('video_interaction', {
         action: isPlaying ? 'pause' : 'play',
-        video_id: `waikiki_${currentVideo}`,
+        video_id: 'waikiki_1',
         location: 'hero_section',
       });
     }
+  };
+
+  // Toggle mute/unmute
+  const toggleMute = () => {
+    const videos = document.querySelectorAll('video') as NodeListOf<HTMLVideoElement>;
+    videos.forEach(video => {
+      video.muted = !isMuted;
+    });
+    setIsMuted(!isMuted);
   };
 
   // Switch between videos manually with smooth transition
@@ -564,15 +574,15 @@ export default function Home() {
       </nav>
 
       {/* Hero Section - padding adjusts based on banner visibility */}
-      <section className={`relative min-h-screen flex flex-col items-center justify-center overflow-hidden pb-16 md:pb-20 gap-4 md:gap-6 lg:gap-10 transition-all duration-300 ${bannerVisible ? 'pt-28 md:pt-36 lg:pt-44' : 'pt-20 md:pt-28 lg:pt-36'}`}>
+      <section className={`relative min-h-[100svh] sm:min-h-screen flex flex-col items-center justify-start sm:justify-center overflow-hidden pb-8 sm:pb-16 md:pb-20 gap-3 sm:gap-4 md:gap-6 lg:gap-10 transition-all duration-300 ${bannerVisible ? 'pt-36 sm:pt-28 md:pt-36 lg:pt-44' : 'pt-24 sm:pt-20 md:pt-28 lg:pt-36'}`}>
         {/* Gradient Background - Beach/Ocean Theme */}
         <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-sky-100 via-blue-50 to-amber-50"></div>
 
         {/* Full Background Image Frame - Covers entire hero area */}
         <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
           <Image
-            src="/images/background/background.webp"
-            alt="Waikiki beach and palm trees background for Kona Coffee Donut cafe"
+            src="/images/background/waikiki-illustrated.png"
+            alt="Illustrated Waikiki Beach scene with palm trees, pink flowers, and Diamond Head - Kona Coffee Donut Hawaiian cafe"
             fill
             sizes="100vw"
             className="object-cover opacity-40"
@@ -580,15 +590,15 @@ export default function Home() {
           />
         </div>
 
-        {/* Coming Soon Badge - Emphasized */}
+        {/* Coming Soon Badge - Emphasized (Hidden on mobile) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="relative z-10 mx-4"
+          className="relative z-10 mx-4 hidden sm:block"
         >
           <motion.div
-            className="inline-flex items-center gap-2 md:gap-2.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2 md:px-7 md:py-3 rounded-full font-bold text-sm md:text-base tracking-widest shadow-xl border-2 border-white/30"
+            className="inline-flex items-center gap-1.5 sm:gap-2 md:gap-2.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-3 py-1.5 sm:px-4 sm:py-2 md:px-7 md:py-3 rounded-full font-bold text-xs sm:text-sm md:text-base tracking-widest shadow-xl border-2 border-white/30"
             animate={{
               boxShadow: [
                 "0 4px 20px rgba(251, 146, 60, 0.4)",
@@ -607,8 +617,8 @@ export default function Home() {
           </motion.div>
         </motion.div>
 
-        {/* Brand Badges Container */}
-        <div className="relative z-10 flex flex-col items-center gap-3">
+        {/* Brand Badges Container - Hidden on mobile for cleaner layout */}
+        <div className="relative z-10 hidden sm:flex flex-col items-center gap-3">
           {/* Mochiland Badge - FIRST */}
           <LogoReelsPopover
             reels={mochilandReels}
@@ -805,7 +815,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.9 }}
-          className="relative z-10 w-full max-w-6xl mx-auto px-2 sm:px-4"
+          className="relative z-10 w-full max-w-6xl mx-auto px-4"
         >
           {/* Desktop/Tablet: Single Video */}
           <div className="hidden sm:block relative aspect-video rounded-lg md:rounded-2xl overflow-hidden shadow-2xl border-4 border-black/10 w-full">
@@ -824,19 +834,17 @@ export default function Home() {
 
             {/* Video with Fade Transition */}
             <motion.video
-              key={currentVideo}
               initial={{ opacity: 0 }}
-              animate={{ opacity: isTransitioning ? 0 : 1 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
               autoPlay
-              loop={currentVideo === 2}
-              muted
+              loop
+              muted={isMuted}
               playsInline
               preload="metadata"
-              onEnded={handleVideoEnd}
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src={`/videos/waikiki_${currentVideo}.mp4`} type="video/mp4" />
+              <source src="/videos/waikiki_1.mp4" type="video/mp4" />
             </motion.video>
 
             {/* LIVE indicator with animated sound waves */}
@@ -869,176 +877,187 @@ export default function Home() {
                   <p className="text-white/80 text-sm md:text-base">{getVideoContent().description}</p>
                 </div>
 
-                {/* Play/Pause Button - Bottom Right */}
-                <button
-                  onClick={togglePlayPause}
-                  className="w-10 h-10 md:w-12 md:h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-200 mb-2"
-                  aria-label={isPlaying ? 'Pause' : 'Play'}
-                >
-                  {isPlaying ? (
-                    <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                {/* Video Controls - Bottom Right */}
+                <div className="flex items-center gap-2 mb-2">
+                  {/* Mute/Unmute Button */}
+                  <button
+                    onClick={toggleMute}
+                    className="w-10 h-10 md:w-12 md:h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-200"
+                    aria-label={isMuted ? 'Unmute' : 'Mute'}
+                  >
+                    {isMuted ? (
+                      <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                      </svg>
+                    ) : (
+                      <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                      </svg>
+                    )}
+                  </button>
+                  {/* Play/Pause Button */}
+                  <button
+                    onClick={togglePlayPause}
+                    className="w-10 h-10 md:w-12 md:h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-200"
+                    aria-label={isPlaying ? 'Pause' : 'Play'}
+                  >
+                    {isPlaying ? (
+                      <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                      </svg>
+                    ) : (
+                      <svg className="w-5 h-5 md:w-6 md:h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
                     </svg>
-                  ) : (
-                    <svg className="w-5 h-5 md:w-6 md:h-6 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M8 5v14l11-7z"/>
-                    </svg>
-                  )}
-                </button>
-              </div>
-
-              {/* Video Dots - Center Bottom */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1">
-                <button
-                  onClick={() => switchVideo(1)}
-                  className="p-5 group"
-                  aria-label="Play video 1"
-                >
-                  <span className={`block w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
-                    currentVideo === 1
-                      ? 'bg-white scale-125'
-                      : 'bg-white/50 group-hover:bg-white/70'
-                  }`} />
-                </button>
-                <button
-                  onClick={() => switchVideo(2)}
-                  className="p-5 group"
-                  aria-label="Play video 2"
-                >
-                  <span className={`block w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all duration-300 ${
-                    currentVideo === 2
-                      ? 'bg-white scale-125'
-                      : 'bg-white/50 group-hover:bg-white/70'
-                  }`} />
-                </button>
+                    )}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Mobile: Split Screen Layout */}
-          <div className="sm:hidden grid grid-rows-2 gap-3 w-full">
-            {/* Top: Video with Special Border Effect */}
+          {/* Mobile: Full-width Video with Controls Below */}
+          <div className="sm:hidden w-full flex-1 flex flex-col justify-center">
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="relative"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="w-full"
             >
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl border-2 border-orange-500/30">
-                {/* Animated Border Gradient */}
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-orange-500/20 via-transparent to-orange-500/20 animate-pulse"></div>
-
-                {/* Cinema overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 z-10 pointer-events-none"></div>
-
-                {/* Video with Fade Transition */}
-                <motion.video
-                  key={currentVideo}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: isTransitioning ? 0 : 1 }}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
+              {/* Video Container - Full width, no cropping */}
+              <div className="relative w-full rounded-xl overflow-hidden shadow-2xl bg-black">
+                {/* Video */}
+                <video
                   autoPlay
-                  loop={currentVideo === 2}
-                  muted
+                  loop
+                  muted={isMuted}
                   playsInline
                   preload="metadata"
-                  onEnded={handleVideoEnd}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="w-full h-auto"
                 >
-                  <source src={`/videos/waikiki_${currentVideo}.mp4`} type="video/mp4" />
-                </motion.video>
+                  <source src="/videos/waikiki_1.mp4" type="video/mp4" />
+                </video>
 
-                {/* LIVE Badge */}
-                <div className="absolute top-2 left-2 z-30 flex items-center gap-1.5 bg-red-600 text-white px-2 py-1 rounded-full shadow-lg">
+                {/* LIVE Badge - Top Left */}
+                <div className="absolute top-3 left-3 z-30 flex items-center gap-1.5 bg-red-600 text-white px-2.5 py-1 rounded-full">
                   <div className="flex gap-0.5 items-center">
-                    <motion.div
-                      className="w-0.5 bg-white rounded-full"
-                      animate={{ height: [3, 8, 3] }}
-                      transition={{ duration: 0.6, repeat: Infinity, ease: "easeInOut" }}
-                    />
-                    <motion.div
-                      className="w-0.5 bg-white rounded-full"
-                      animate={{ height: [6, 3, 6] }}
-                      transition={{ duration: 0.6, repeat: Infinity, ease: "easeInOut", delay: 0.1 }}
-                    />
-                    <motion.div
-                      className="w-0.5 bg-white rounded-full"
-                      animate={{ height: [4, 7, 4] }}
-                      transition={{ duration: 0.6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
-                    />
+                    <motion.div className="w-0.5 bg-white rounded-full" animate={{ height: [3, 8, 3] }} transition={{ duration: 0.6, repeat: Infinity }} />
+                    <motion.div className="w-0.5 bg-white rounded-full" animate={{ height: [6, 3, 6] }} transition={{ duration: 0.6, repeat: Infinity, delay: 0.1 }} />
+                    <motion.div className="w-0.5 bg-white rounded-full" animate={{ height: [4, 7, 4] }} transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }} />
                   </div>
                   <span className="text-[10px] font-black tracking-wider">LIVE</span>
                 </div>
               </div>
-            </motion.div>
 
-            {/* Bottom: Controls Panel with Gradient Background */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-              className="relative rounded-lg overflow-hidden"
-            >
-              <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black p-6 rounded-lg shadow-xl border border-orange-500/20">
-                {/* Animated Glow Effect */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-amber-500/10 to-orange-500/10"
-                  animate={{
-                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  style={{ backgroundSize: '200% 100%' }}
-                />
-
-                <div className="relative z-10">
-                  {/* Title */}
-                  <h3 className="text-white text-lg font-bold mb-1">{getVideoContent().title}</h3>
-                  <p className="text-orange-400 text-xs font-semibold mb-3">{getVideoContent().description}</p>
-
-                  {/* Controls */}
+              {/* Styled Info Card Below Video */}
+              <div className="mt-3">
+                <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-3 border border-orange-200/50 shadow-sm">
                   <div className="flex items-center justify-between">
-                    {/* Video Dots */}
-                    <div className="flex gap-2">
-                      <button
-                        onClick={() => switchVideo(1)}
-                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                          currentVideo === 1
-                            ? 'bg-orange-500 scale-125 shadow-lg shadow-orange-500/50'
-                            : 'bg-white/40 hover:bg-white/60'
-                        }`}
-                        aria-label="Play video 1"
-                      />
-                      <button
-                        onClick={() => switchVideo(2)}
-                        className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                          currentVideo === 2
-                            ? 'bg-orange-500 scale-125 shadow-lg shadow-orange-500/50'
-                            : 'bg-white/40 hover:bg-white/60'
-                        }`}
-                        aria-label="Play video 2"
-                      />
+                    {/* Location Info */}
+                    <div className="flex items-center gap-2.5">
+                      {/* Location Pin Icon */}
+                      <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center shadow-md flex-shrink-0">
+                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-gray-900 text-sm font-bold leading-tight">{getVideoContent().title}</h3>
+                        <p className="text-orange-600 text-[11px] font-semibold">{getVideoContent().description}</p>
+                      </div>
                     </div>
 
-                    {/* Play/Pause Button */}
-                    <button
-                      onClick={togglePlayPause}
-                      className="w-12 h-12 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-all duration-200 shadow-lg shadow-orange-500/30"
-                      aria-label={isPlaying ? 'Pause' : 'Play'}
-                    >
-                      {isPlaying ? (
-                        <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
-                        </svg>
-                      ) : (
-                        <svg className="w-5 h-5 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
-                        </svg>
-                      )}
-                    </button>
+                    {/* Controls */}
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        onClick={toggleMute}
+                        className="w-8 h-8 bg-white hover:bg-gray-50 border border-gray-200 rounded-full flex items-center justify-center transition-colors shadow-sm"
+                        aria-label={isMuted ? 'Unmute' : 'Mute'}
+                      >
+                        {isMuted ? (
+                          <svg className="w-3.5 h-3.5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+                          </svg>
+                        ) : (
+                          <svg className="w-3.5 h-3.5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                          </svg>
+                        )}
+                      </button>
+                      <button
+                        onClick={togglePlayPause}
+                        className="w-8 h-8 bg-white hover:bg-gray-50 border border-gray-200 rounded-full flex items-center justify-center transition-colors shadow-sm"
+                        aria-label={isPlaying ? 'Pause' : 'Play'}
+                      >
+                        {isPlaying ? (
+                          <svg className="w-3.5 h-3.5 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                          </svg>
+                        ) : (
+                          <svg className="w-3.5 h-3.5 text-gray-600 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                          </svg>
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile: Coming Soon + Brand Badges */}
+              <div className="mt-4 space-y-3">
+                {/* Coming Soon Badge */}
+                <motion.div
+                  className="flex justify-center"
+                  animate={{ scale: [1, 1.02, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                >
+                  <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2 rounded-full font-bold text-xs tracking-widest shadow-lg border-2 border-white/30">
+                    <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                    COMING SOON
+                  </div>
+                </motion.div>
+
+                {/* Brand Badges */}
+                <div className="flex justify-center gap-3">
+                  {/* Mochiland */}
+                  <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-xl border border-pink-200/50 shadow-sm">
+                    <div className="w-8 h-8 relative rounded-lg overflow-hidden">
+                      <Image
+                        src="/icons/bonepi.jpeg"
+                        alt="Mochiland"
+                        fill
+                        sizes="32px"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-[10px] text-gray-500 font-medium leading-tight">PROUDLY SERVING</p>
+                      <Image
+                        src="/icons/mochiland.png"
+                        alt="MOCHILAND"
+                        width={60}
+                        height={16}
+                        className="h-3.5 w-auto"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Honolulu Coffee */}
+                  <div className="flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-xl border border-orange-200/50 shadow-sm">
+                    <div className="w-8 h-8 relative">
+                      <Image
+                        src="/icons/honolulu_coffee.png"
+                        alt="Honolulu Coffee"
+                        fill
+                        sizes="32px"
+                        className="object-contain"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-[10px] text-gray-500 font-medium leading-tight">PROUDLY SERVING</p>
+                      <p className="text-[11px] font-black text-orange-600 leading-tight">HONOLULU COFFEE</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1162,38 +1181,38 @@ export default function Home() {
                   <>
                     <p><strong>Kona Coffee Donut</strong>は、ハワイ州ホノルルのワイキキ、<span itemProp="address">カラカウア通り2142番地（郵便番号96815）</span>に位置するハワイアンカフェ＆ベーカリーです。<strong>2026年2月グランドオープン予定</strong>。ワイキキビーチから<strong>徒歩約5分（400メートル）</strong>の好立地です。</p>
                     <p>当店は<strong>ホノルルコーヒー</strong>（1992年創業、ハワイ最大のコナコーヒー専門店）と提携し、<strong>100%純粋コナコーヒー</strong>を提供します。コナコーヒーはハワイ島のマウナロア山とフアラライ山の斜面（標高500〜900メートル）で栽培され、世界のコーヒー生産量の<strong>わずか1%未満</strong>を占める希少な豆です。</p>
-                    <p>また、<strong>MOCHILAND</strong>（韓国発祥、米国で50店舗以上展開）の職人技モチドーナツを提供。米粉（もち粉）を使用した独特のもちもち食感が特徴で、<strong>毎日店内で手作り</strong>しています。営業時間は<strong>毎日午前7時〜午後9時</strong>（14時間営業）。</p>
+                    <p>また、<strong>MOCHILAND</strong>（韓国発祥、米国で50店舗以上展開）の職人技モチドーナツを提供。米粉（もち粉）を使用した独特のもちもち食感が特徴で、<strong>毎日店内で手作り</strong>しています。</p>
                   </>
                 ) : locale === 'ko' ? (
                   <>
                     <p><strong>Kona Coffee Donut</strong>은 하와이 호놀룰루 와이키키 <span itemProp="address">칼라카우아 애비뉴 2142번지(우편번호 96815)</span>에 위치한 하와이안 카페 & 베이커리입니다. <strong>2026년 2월 그랜드 오픈 예정</strong>. 와이키키 비치에서 <strong>도보 약 5분(400m)</strong> 거리의 최적 위치입니다.</p>
                     <p>저희는 <strong>호놀룰루 커피</strong>(1992년 설립, 하와이 최대 코나 커피 전문점)와 제휴하여 <strong>100% 순수 코나 커피</strong>를 제공합니다. 코나 커피는 하와이 빅 아일랜드의 마우나 로아 산과 후알라라이 산 경사면(해발 500~900m)에서 재배되며, 전 세계 커피 생산량의 <strong>1% 미만</strong>을 차지하는 희귀한 원두입니다.</p>
-                    <p>또한 <strong>모찌랜드</strong>(한국 발상, 미국 50개 이상 매장 운영)의 장인 모찌 도넛을 제공합니다. 쌀가루(모찌코)를 사용한 독특한 쫄깃한 식감이 특징이며 <strong>매일 매장에서 직접 제조</strong>합니다. 영업시간: <strong>매일 오전 7시~오후 9시</strong>(14시간 영업).</p>
+                    <p>또한 <strong>모찌랜드</strong>(한국 발상, 미국 50개 이상 매장 운영)의 장인 모찌 도넛을 제공합니다. 쌀가루(모찌코)를 사용한 독특한 쫄깃한 식감이 특징이며 <strong>매일 매장에서 직접 제조</strong>합니다.</p>
                   </>
                 ) : locale === 'zh' ? (
                   <>
                     <p><strong>Kona Coffee Donut</strong>是一家位于夏威夷檀香山威基基<span itemProp="address">卡拉卡瓦大道2142号（邮编96815）</span>的夏威夷咖啡馆和面包店。<strong>2026年2月盛大开业</strong>。距威基基海滩<strong>步行约5分钟（400米）</strong>，位置优越。</p>
                     <p>我们与<strong>檀香山咖啡</strong>（1992年成立，夏威夷最大的科纳咖啡专营店）合作，提供<strong>100%纯正科纳咖啡</strong>。科纳咖啡种植于夏威夷大岛的冒纳罗亚山和胡阿拉莱山斜坡（海拔500-900米），仅占全球咖啡产量的<strong>不到1%</strong>，极为珍贵。</p>
-                    <p>我们还提供<strong>MOCHILAND</strong>（源自韩国，在美国拥有50多家门店）的手工麻糬甜甜圈。采用糯米粉制作，口感独特Q弹，<strong>每天在店内新鲜制作</strong>。营业时间：<strong>每天上午7点至晚上9点</strong>（14小时营业）。</p>
+                    <p>我们还提供<strong>MOCHILAND</strong>（源自韩国，在美国拥有50多家门店）的手工麻糬甜甜圈。采用糯米粉制作，口感独特Q弹，<strong>每天在店内新鲜制作</strong>。</p>
                   </>
                 ) : locale === 'es' ? (
                   <>
                     <p><strong>Kona Coffee Donut</strong> es un café y panadería hawaiana ubicada en <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span>, Waikiki. <strong>Gran apertura en febrero de 2026</strong>. Ubicación privilegiada a <strong>solo 5 minutos a pie (400 metros)</strong> de la playa de Waikiki.</p>
                     <p>Nos asociamos con <strong>Honolulu Coffee</strong> (fundado en 1992, la cadena de café Kona más grande de Hawái) para servir <strong>café 100% Kona puro</strong>. El café Kona se cultiva en las laderas de Mauna Loa y Hualalai en la Isla Grande de Hawái (altitud 500-900m), representando <strong>menos del 1%</strong> de la producción mundial de café.</p>
-                    <p>También servimos donuts de mochi artesanales de <strong>MOCHILAND</strong> (originario de Corea, con más de 50 ubicaciones en EE.UU.). Hechos con harina de arroz (mochiko) para una textura única y masticable, <strong>preparados frescos diariamente en la tienda</strong>. Horario: <strong>todos los días de 7:00 AM a 9:00 PM</strong> (14 horas).</p>
+                    <p>También servimos donuts de mochi artesanales de <strong>MOCHILAND</strong> (originario de Corea, con más de 50 ubicaciones en EE.UU.). Hechos con harina de arroz (mochiko) para una textura única y masticable, <strong>preparados frescos diariamente en la tienda</strong>.</p>
                   </>
                 ) : (
                   <>
                     <p><strong>Kona Coffee Donut</strong> is a Hawaiian café and bakery located at <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span> in Waikiki. <strong>Grand opening February 2026</strong>. Prime location just <strong>5 minutes walking distance (400 meters)</strong> from Waikiki Beach.</p>
                     <p>We partner with <strong>Honolulu Coffee</strong> (established 1992, Hawaii&apos;s largest Kona coffee chain) to serve <strong>100% pure Kona coffee</strong>. Kona coffee is grown on the slopes of Mauna Loa and Hualalai volcanoes on Hawaii&apos;s Big Island (elevation 500-900 meters), representing <strong>less than 1%</strong> of worldwide coffee production according to the Kona Coffee Council.</p>
-                    <p>We also serve artisan mochi donuts from <strong>MOCHILAND</strong> (originated in Korea, now with 50+ US locations). Made with rice flour (mochiko) for a unique chewy texture, <strong>freshly prepared daily in-store</strong>. Hours: <strong>7:00 AM - 9:00 PM daily</strong> (14 hours of operation).</p>
+                    <p>We also serve artisan mochi donuts from <strong>MOCHILAND</strong> (originated in Korea, now with 50+ US locations). Made with rice flour (mochiko) for a unique chewy texture, <strong>freshly prepared daily in-store</strong>.</p>
                   </>
                 )}
               </article>
             </motion.div>
           </motion.div>
 
-          {/* Proudly Serving Section */}
+          {/* Our Brands Section */}
           <div className="relative mb-20">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -1202,7 +1221,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-600 mb-2">Proudly Serving</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-600 mb-2">Our Brands</h3>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
@@ -1416,110 +1435,54 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-12 md:py-16 bg-black text-white">
         <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
-            {/* Left: Logo + Instagram */}
-            <div className="flex flex-col items-start">
+          {/* Top: Two columns */}
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
+            {/* Left: Brand + Instagram */}
+            <div className="flex flex-col gap-3">
               <Image
                 src="/konacoffee.webp"
                 alt="Kona Coffee Donut"
-                width={300}
+                width={250}
                 height={32}
-                sizes="(max-width: 768px) 200px, 300px"
+                sizes="250px"
                 loading="lazy"
-                className="h-10 md:h-12 w-auto mb-2 brightness-0 invert"
+                className="h-8 md:h-10 w-auto brightness-0 invert"
               />
-              <p className="text-white/60 text-sm md:text-base mb-4">{t('footer.tagline')}</p>
-
-              {/* Instagram Links - Compact */}
-              <div className="flex flex-col gap-2">
-                <p className="text-white/70 text-xs font-semibold uppercase tracking-wider">Follow us</p>
-                <div className="flex flex-wrap gap-2">
-                  <a
-                    href="https://instagram.com/konacoffeedonut"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-1.5 px-3 py-1.5 bg-white/5 hover:bg-white/10 rounded-full transition-all text-xs"
-                    aria-label="Follow Kona Coffee Donut on Instagram"
-                  >
-                    <svg className="w-4 h-4 text-white/60 group-hover:text-pink-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    <span className="text-white/70 group-hover:text-pink-400 transition-colors">@konacoffeedonut</span>
-                  </a>
-                </div>
-                <p className="text-white/60 text-[10px] mt-1">MOCHILAND:</p>
-                <div className="flex flex-wrap gap-1.5 items-center">
-                  <a
-                    href="https://instagram.com/mochinut_fortlee"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-1 text-white/50 hover:text-pink-400 transition-colors text-xs"
-                    aria-label="Follow Mochinut Fort Lee on Instagram"
-                  >
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    @mochinut_fortlee
-                  </a>
-                  <span className="text-white/30">•</span>
-                  <a
-                    href="https://instagram.com/bonepi_mochiland"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-1 text-white/50 hover:text-pink-400 transition-colors text-xs"
-                    aria-label="Follow Bonepi Mochiland on Instagram"
-                  >
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    @bonepi_mochiland
-                  </a>
-                  <span className="text-white/30">•</span>
-                  <a
-                    href="https://instagram.com/bonepi_mochiland_official"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-1 text-white/50 hover:text-pink-400 transition-colors text-xs"
-                    aria-label="Follow Bonepi Mochiland Official on Instagram"
-                  >
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    @bonepi_mochiland_official
-                  </a>
-                </div>
-              </div>
+              <a
+                href="https://instagram.com/konacoffeedonut"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white/60 hover:text-pink-400 transition-colors text-sm"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                @konacoffeedonut
+              </a>
             </div>
 
             {/* Right: Navigation */}
-            <div className="flex flex-col gap-4">
-              <div className="flex gap-8 text-base">
-                <a href="#menu" className="opacity-60 hover:opacity-100 transition-opacity">
-                  {t('nav.menu')}
-                </a>
-                <a href="#about" className="opacity-60 hover:opacity-100 transition-opacity">
-                  {t('nav.about')}
-                </a>
-                <a href="#location" className="opacity-60 hover:opacity-100 transition-opacity">
-                  {t('nav.location')}
-                </a>
-              </div>
-              <div className="flex gap-6 text-sm">
-                <Link href={`/${locale}/faq`} className="opacity-50 hover:opacity-100 transition-opacity">
-                  FAQ
-                </Link>
-                <Link href={`/${locale}/privacy-policy`} className="opacity-50 hover:opacity-100 transition-opacity">
-                  {locale === 'ja' ? 'プライバシー' : locale === 'ko' ? '개인정보' : locale === 'zh' ? '隐私政策' : locale === 'es' ? 'Privacidad' : 'Privacy'}
-                </Link>
-                <Link href={`/${locale}/terms-of-service`} className="opacity-50 hover:opacity-100 transition-opacity">
-                  {locale === 'ja' ? '利用規約' : locale === 'ko' ? '이용약관' : locale === 'zh' ? '服务条款' : locale === 'es' ? 'Términos' : 'Terms'}
-                </Link>
-              </div>
+            <div className="flex flex-wrap gap-6 text-sm">
+              <a href="#menu" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.menu')}</a>
+              <a href="#about" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.about')}</a>
+              <a href="#location" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.location')}</a>
+              <Link href={`/${locale}/faq`} className="opacity-60 hover:opacity-100 transition-opacity">FAQ</Link>
+              <Link href={`/${locale}/privacy-policy`} className="opacity-60 hover:opacity-100 transition-opacity">
+                {locale === 'ja' ? 'プライバシー' : locale === 'ko' ? '개인정보' : locale === 'zh' ? '隐私政策' : locale === 'es' ? 'Privacidad' : 'Privacy'}
+              </Link>
             </div>
           </div>
 
-          <div className="pt-8 border-t border-white/10 text-center opacity-40 text-sm">
-            <p>{t('footer.copyright')}</p>
+          {/* Bottom: Logo + Copyright */}
+          <div className="pt-8 border-t border-white/10 flex flex-col items-center gap-4">
+            <Image
+              src="/icons/bonepi_hq.png"
+              alt="Bonepi Mochiland"
+              width={48}
+              height={48}
+              className="w-12 h-12 rounded-full"
+            />
+            <p className="text-white/40 text-sm">{t('footer.copyright')}</p>
           </div>
         </div>
       </footer>
