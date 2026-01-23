@@ -51,7 +51,7 @@ const instagramAccounts: AccountSection[] = [
       {
         id: 'konacoffee-reel-1',
         videoSrc: '/videos/reels/konacoffee-reel-1.mp4',
-        instagramUrl: 'https://www.instagram.com/reel/DRivouBie_x/',
+        instagramUrl: 'https://www.instagram.com/reel/DTy-gseCQUw/',
         caption: 'Premium Kona Coffee',
       },
     ],
