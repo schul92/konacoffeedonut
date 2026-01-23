@@ -313,9 +313,9 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@type': 'VideoObject',
     name: 'Waikiki Experience - Kona Coffee Donut',
     description: 'Experience the ambiance of our Waikiki location featuring premium Kona coffee and artisan mochi donuts',
-    thumbnailUrl: 'https://www.konacoffeedonut.com/og-image.jpg',
+    thumbnailUrl: 'https://www.konacoffeedonut.com/videos/waikiki_1_poster.jpg',
     uploadDate: '2026-01-15T08:00:00+00:00',
-    contentUrl: 'https://www.konacoffeedonut.com/videos/waikiki_1.mp4',
+    contentUrl: 'https://www.konacoffeedonut.com/videos/waikiki_1_optimized.mp4',
     embedUrl: `https://www.konacoffeedonut.com/${locale}`,
     duration: 'PT30S',
     publisher: {

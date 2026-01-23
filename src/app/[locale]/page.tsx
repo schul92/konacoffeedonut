@@ -581,7 +581,7 @@ export default function Home() {
         {/* Full Background Image Frame - Covers entire hero area */}
         <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
           <Image
-            src="/images/background/waikiki-illustrated.png"
+            src="/images/background/waikiki-illustrated.webp"
             alt="Illustrated Waikiki Beach scene with palm trees, pink flowers, and Diamond Head - Kona Coffee Donut Hawaiian cafe"
             fill
             sizes="100vw"
@@ -842,9 +842,10 @@ export default function Home() {
               muted={isMuted}
               playsInline
               preload="metadata"
+              poster="/videos/waikiki_1_poster.jpg"
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/videos/waikiki_1.mp4" type="video/mp4" />
+              <source src="/videos/waikiki_1_optimized.mp4" type="video/mp4" />
             </motion.video>
 
             {/* LIVE indicator with animated sound waves */}
@@ -933,9 +934,10 @@ export default function Home() {
                   muted={isMuted}
                   playsInline
                   preload="metadata"
+                  poster="/videos/waikiki_1_poster.jpg"
                   className="w-full h-auto"
                 >
-                  <source src="/videos/waikiki_1.mp4" type="video/mp4" />
+                  <source src="/videos/waikiki_1_optimized.mp4" type="video/mp4" />
                 </video>
 
                 {/* LIVE Badge - Top Left */}
