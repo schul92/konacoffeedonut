@@ -10,11 +10,11 @@ export async function generateMetadata({
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    en: 'Menu | Mochi Donuts, Coffee & More',
-    ja: 'メニュー | モチドーナツ、コーヒー等',
-    ko: '메뉴 | 모찌 도넛, 커피 등',
-    zh: '菜单 | 麻糬甜甜圈、咖啡等',
-    es: 'Menú | Mochi Donuts, Café y Más',
+    en: 'Menu | Kona Coffee & Mochi Donuts Waikiki, Honolulu',
+    ja: 'メニュー | コナコーヒー＆モチドーナツ ワイキキ',
+    ko: '메뉴 | 코나 커피 & 모찌 도넛 와이키키',
+    zh: '菜单 | 科纳咖啡和麻糬甜甜圈 威基基',
+    es: 'Menú | Café Kona y Mochi Donuts Waikiki',
   };
 
   const descriptions: Record<string, string> = {
