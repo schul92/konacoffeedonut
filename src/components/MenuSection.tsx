@@ -24,7 +24,11 @@ const menuItems: MenuItem[] = [
   { id: 'acai', menuImage: '/images/menu/acai.webp', video: '/videos/acai.mp4', iconImage: '/icons/mochi_land_circle.png', comingSoon: true },
 ];
 
-export default function MenuSection() {
+interface MenuSectionProps {
+  hideHeader?: boolean;
+}
+
+export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
   const t = useTranslations('menu');
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
@@ -85,17 +89,19 @@ export default function MenuSection() {
   return (
     <section id="menu" className="py-20 md:py-32 bg-gradient-to-b from-orange-50 to-white">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-5xl md:text-7xl font-bold mb-4">{t('title')}</h2>
-          <p className="text-2xl md:text-3xl text-gray-600">{t('subtitle')}</p>
-        </motion.div>
+        {/* Header - conditionally rendered */}
+        {!hideHeader && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-5xl md:text-7xl font-bold mb-4">{t('title')}</h2>
+            <p className="text-2xl md:text-3xl text-gray-600">{t('subtitle')}</p>
+          </motion.div>
+        )}
 
         {/* Menu Grid - 2x3 Layout - Movie Theater Style */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
