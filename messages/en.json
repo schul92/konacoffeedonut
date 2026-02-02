@@ -158,5 +158,17 @@
       "viewMenu": "View Our Menu",
       "getDirections": "Get Directions"
     }
+  },
+  "malasada": {
+    "meta": {
+      "title": "Malasada Hawaii | Fresh Hawaiian Donuts in Waikiki",
+      "description": "Try authentic Hawaiian malasada at Kona Coffee Donut in Waikiki. Fresh Portuguese donuts made daily with traditional recipes. Best malasada in Hawaii!"
+    }
+  },
+  "breakfast": {
+    "meta": {
+      "title": "Breakfast Waikiki | Best Morning Coffee & Donuts",
+      "description": "Best breakfast in Waikiki! Fresh Kona coffee, mochi donuts, malasadas & acai bowls. Open 7AM daily on Kalakaua Ave, walking distance from Waikiki Beach."
+    }
   }
 }

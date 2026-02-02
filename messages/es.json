@@ -158,5 +158,17 @@
       "viewMenu": "Ver Nuestro Menú",
       "getDirections": "Cómo Llegar"
     }
+  },
+  "malasada": {
+    "meta": {
+      "title": "Malasada Hawaii | Donuts Hawaianos Frescos en Waikiki",
+      "description": "Prueba la auténtica malasada hawaiana en Kona Coffee Donut en Waikiki. Donuts portugueses frescos hechos diariamente con recetas tradicionales."
+    }
+  },
+  "breakfast": {
+    "meta": {
+      "title": "Desayuno Waikiki | Mejor Café y Donuts de la Mañana",
+      "description": "¡El mejor desayuno en Waikiki! Café Kona fresco, donuts de mochi, malasadas y bowls de açaí. Abierto 7AM en Kalakaua Ave, cerca de Waikiki Beach."
+    }
   }
 }
