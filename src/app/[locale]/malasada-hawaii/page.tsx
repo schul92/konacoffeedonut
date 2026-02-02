@@ -46,7 +46,7 @@ const content = {
     },
     cta: {
       title: 'Try Our Fresh Malasada Today',
-      text: 'Visit us at 2142 Kalakaua Ave in Waikiki. Open daily 7AM-9PM.',
+      text: 'Visit us at 2142 Kalakaua Ave in Waikiki.',
       button: 'Get Directions'
     }
   },
@@ -88,7 +88,7 @@ const content = {
     },
     cta: {
       title: '今日、新鮮なマラサダをお試しください',
-      text: 'ワイキキ2142 Kalakaua Aveでお待ちしております。毎日7AM-9PM営業。',
+      text: 'ワイキキ2142 Kalakaua Aveでお待ちしております。',
       button: '道順を見る'
     }
   },
@@ -130,7 +130,7 @@ const content = {
     },
     cta: {
       title: '오늘 신선한 말라사다를 맛보세요',
-      text: '와이키키 2142 Kalakaua Ave에서 만나요. 매일 오전 7시-오후 9시 영업.',
+      text: '와이키키 2142 Kalakaua Ave에서 만나요.',
       button: '길찾기'
     }
   },
@@ -172,7 +172,7 @@ const content = {
     },
     cta: {
       title: '今天就来品尝新鲜马拉萨达',
-      text: '欢迎来到威基基2142 Kalakaua Ave。每日营业时间：上午7点至晚上9点。',
+      text: '欢迎来到威基基2142 Kalakaua Ave。',
       button: '获取路线'
     }
   },
@@ -214,7 +214,7 @@ const content = {
     },
     cta: {
       title: 'Prueba Nuestra Malasada Fresca Hoy',
-      text: 'Visítanos en 2142 Kalakaua Ave en Waikiki. Abierto diariamente 7AM-9PM.',
+      text: 'Visítanos en 2142 Kalakaua Ave en Waikiki.',
       button: 'Obtener Direcciones'
     }
   }
