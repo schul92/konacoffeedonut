@@ -404,8 +404,8 @@ export default function BreakfastWaikikiPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-amber-900/70 via-amber-800/60 to-amber-900/80 z-10" />
           <div className="absolute inset-0">
             <Image
-              src="/images/menu/coffee.webp"
-              alt="Best Breakfast in Waikiki - Premium Kona Coffee"
+              src="/images/background/waikiki-beach.png"
+              alt="Best Breakfast in Waikiki Beach Hawaii"
               fill
               className="object-cover"
               priority
