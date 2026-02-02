@@ -400,14 +400,14 @@ export default function BreakfastWaikikiPage() {
       
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-amber-800 via-orange-700 to-amber-900">
-          <div className="absolute inset-0 bg-black/30 z-10" />
+        <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-amber-900/70 via-amber-800/60 to-amber-900/80 z-10" />
           <div className="absolute inset-0">
             <Image
-              src="/konacoffee.webp"
-              alt="Best Breakfast in Waikiki - Kona Coffee and Donuts"
+              src="/images/menu/coffee.webp"
+              alt="Best Breakfast in Waikiki - Premium Kona Coffee"
               fill
-              className="object-cover opacity-60"
+              className="object-cover"
               priority
             />
           </div>
