@@ -15,7 +15,7 @@
     "categories": {
       "donuts": {
         "name": "Mochi Donuts",
-        "description": "Artisan mochi donuts made with rich rice flour for its uniqueness and crispy outside and chewy inside"
+        "description": "Artisan mochi donuts in Waikiki made with rich rice flour for a uniquely crispy outside and chewy inside texture"
       },
       "malasada": {
         "name": "Malasada",
@@ -45,7 +45,7 @@
     "coffeeDonutStory": "We're bringing together MOCHILAND and HONOLULU COFFEE to create the ultimate café experience! Coffee and donuts are the perfect combination - the rich, bold flavors of premium Kona coffee complement the sweet, delicate texture of artisan mochi donuts. Experience both exceptional brands in one amazing location in the heart of Waikiki!",
     "konaStory": "Kona coffee is world-renowned for its exceptional quality, grown exclusively on the volcanic slopes of Hawaii's Big Island. HONOLULU COFFEE sources only the finest premium Kona beans, delivering a smooth, rich flavor with subtle notes of chocolate and nuts. Combined with MOCHILAND's innovative mochi donuts, we offer the best of Hawaiian craftsmanship and quality.",
     "ctaTitle": "Experience The Perfect Pairing",
-    "ctaText": "Visit us in Waikiki and discover why KONA COFFEE + MOCHILAND DONUTS = the perfect match!",
+    "ctaText": "Visit us in Waikiki for the best breakfast spot! Discover why KONA COFFEE + MOCHILAND DONUTS = the perfect Hawaiian morning treat!",
     "visitButton": "Visit Us Today"
   },
   "location": {
