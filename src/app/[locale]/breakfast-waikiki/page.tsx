@@ -398,16 +398,16 @@ export default function BreakfastWaikikiPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breakfastSchema) }}
       />
       
-      <main className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
+      <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-900/80 to-amber-800/80 z-10" />
+        <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-amber-800 via-orange-700 to-amber-900">
+          <div className="absolute inset-0 bg-black/30 z-10" />
           <div className="absolute inset-0">
             <Image
               src="/konacoffee.webp"
               alt="Best Breakfast in Waikiki - Kona Coffee and Donuts"
               fill
-              className="object-cover"
+              className="object-cover opacity-60"
               priority
             />
           </div>
@@ -464,7 +464,7 @@ export default function BreakfastWaikikiPage() {
         </section>
 
         {/* Menu Highlights */}
-        <section className="py-16 px-4 bg-orange-50">
+        <section className="py-16 px-4 bg-amber-50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-orange-900 mb-12 text-center">
               {t.menu.title}

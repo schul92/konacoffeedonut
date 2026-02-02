@@ -269,16 +269,16 @@ export default function MalasadaHawaiiPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(malasadaSchema) }}
       />
       
-      <main className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+      <main className="min-h-screen bg-white">
         {/* Hero Section */}
-        <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-orange-800/80 z-10" />
+        <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-amber-800 via-orange-700 to-amber-900">
+          <div className="absolute inset-0 bg-black/30 z-10" />
           <div className="absolute inset-0">
             <Image
               src="/images/menu/malasada.webp"
               alt="Fresh Hawaiian Malasada at Kona Coffee Donut Waikiki"
               fill
-              className="object-cover"
+              className="object-cover opacity-60"
               priority
             />
           </div>
