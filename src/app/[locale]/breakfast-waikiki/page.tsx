@@ -48,7 +48,7 @@ const content = {
       title: 'Why Choose Us for Breakfast',
       points: [
         {
-          title: 'Open Early at 7 AM',
+          title: 'Early Morning Hours',
           description: 'Perfect for early risers and those wanting breakfast before hitting the beach.'
         },
         {
@@ -66,9 +66,9 @@ const content = {
       ]
     },
     hours: {
-      title: 'Breakfast Hours',
-      text: 'Open daily 7:00 AM - 9:00 PM',
-      note: 'Fresh donuts available all day! Best selection in the morning.'
+      title: 'Opening Soon',
+      text: 'Grand Opening February 2026',
+      note: 'Fresh donuts and premium Kona coffee coming to Waikiki!'
     },
     cta: {
       title: 'Start Your Day the Hawaiian Way',
@@ -116,7 +116,7 @@ const content = {
       title: '朝食に私たちを選ぶ理由',
       points: [
         {
-          title: '午前7時から営業',
+          title: '早朝営業',
           description: '早起きの方やビーチに行く前の朝食に最適。'
         },
         {
@@ -134,9 +134,9 @@ const content = {
       ]
     },
     hours: {
-      title: '朝食営業時間',
-      text: '毎日午前7時〜午後9時',
-      note: '新鮮なドーナツは終日利用可能！午前中が品揃え豊富。'
+      title: 'まもなくオープン',
+      text: '2026年2月グランドオープン',
+      note: '新鮮なドーナツとプレミアムコナコーヒーがワイキキに登場！'
     },
     cta: {
       title: 'ハワイアンスタイルで一日を始めよう',
@@ -184,7 +184,7 @@ const content = {
       title: '아침식사로 저희를 선택하는 이유',
       points: [
         {
-          title: '오전 7시부터 영업',
+          title: '이른 아침 영업',
           description: '일찍 일어나는 분과 해변 가기 전 아침식사에 완벽.'
         },
         {
@@ -202,9 +202,9 @@ const content = {
       ]
     },
     hours: {
-      title: '아침식사 영업시간',
-      text: '매일 오전 7시 - 오후 9시',
-      note: '신선한 도넛 하루 종일 가능! 오전에 가장 다양한 선택.'
+      title: '곧 오픈',
+      text: '2026년 2월 그랜드 오픈',
+      note: '신선한 도넛과 프리미엄 코나 커피가 와이키키에!'
     },
     cta: {
       title: '하와이안 스타일로 하루를 시작하세요',
@@ -252,7 +252,7 @@ const content = {
       title: '为什么选择我们的早餐',
       points: [
         {
-          title: '早上7点开门',
+          title: '清晨营业',
           description: '非常适合早起的人和想在去海滩前吃早餐的人。'
         },
         {
@@ -270,9 +270,9 @@ const content = {
       ]
     },
     hours: {
-      title: '早餐营业时间',
-      text: '每日上午7点至晚上9点',
-      note: '新鲜甜甜圈全天供应！早晨选择最丰富。'
+      title: '即将开业',
+      text: '2026年2月盛大开业',
+      note: '新鲜甜甜圈和优质科纳咖啡即将来到威基基！'
     },
     cta: {
       title: '以夏威夷方式开始新的一天',
@@ -320,7 +320,7 @@ const content = {
       title: 'Por Qué Elegirnos para el Desayuno',
       points: [
         {
-          title: 'Abrimos Temprano a las 7 AM',
+          title: 'Horario Matutino',
           description: 'Perfecto para madrugadores y quienes quieren desayunar antes de ir a la playa.'
         },
         {
@@ -338,9 +338,9 @@ const content = {
       ]
     },
     hours: {
-      title: 'Horario de Desayuno',
-      text: 'Abierto diariamente 7:00 AM - 9:00 PM',
-      note: '¡Donuts frescos disponibles todo el día! Mejor selección por la mañana.'
+      title: 'Próxima Apertura',
+      text: 'Gran Apertura Febrero 2026',
+      note: '¡Donuts frescos y café Kona premium llegan a Waikiki!'
     },
     cta: {
       title: 'Comienza Tu Día al Estilo Hawaiano',
