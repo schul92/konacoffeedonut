@@ -855,10 +855,10 @@ export default function Home() {
               muted={isMuted}
               playsInline
               preload="metadata"
-              poster="/videos/waikiki_1_poster.jpg"
+              poster="/videos/waikiki_1_poster.webp"
               className="absolute inset-0 w-full h-full object-cover"
             >
-              <source src="/videos/waikiki_1_optimized.mp4" type="video/mp4" />
+              <source src="/videos/waikiki_1_web.mp4" type="video/mp4" />
             </motion.video>
 
             {/* LIVE indicator with animated sound waves */}
@@ -947,10 +947,10 @@ export default function Home() {
                   muted={isMuted}
                   playsInline
                   preload="metadata"
-                  poster="/videos/waikiki_1_poster.jpg"
+                  poster="/videos/waikiki_1_poster.webp"
                   className="w-full h-auto"
                 >
-                  <source src="/videos/waikiki_1_optimized.mp4" type="video/mp4" />
+                  <source src="/videos/waikiki_1_web.mp4" type="video/mp4" />
                 </video>
 
                 {/* LIVE Badge - Top Left */}

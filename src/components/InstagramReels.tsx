@@ -252,7 +252,7 @@ export default function InstagramReels({ className = '' }: InstagramReelsProps) 
                             muted
                             loop
                             playsInline
-                            preload="auto"
+                            preload="none"
                             className="w-full h-full object-cover"
                           />
                           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
