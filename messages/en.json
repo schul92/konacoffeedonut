@@ -170,5 +170,52 @@
       "title": "Breakfast Waikiki | Best Morning Coffee & Donuts",
       "description": "Best breakfast in Waikiki! Fresh Kona coffee, mochi donuts, malasadas & acai bowls. Open 7AM daily on Kalakaua Ave, walking distance from Waikiki Beach."
     }
+  },
+  "farmToDonut": {
+    "meta": {
+      "title": "Farm to Donut | Our Story | Kona Coffee Donut",
+      "description": "Discover the journey of our Kona coffee from volcanic farms to your cup. Fresh, authentic, and crafted with aloha."
+    },
+    "hero": {
+      "title": "Farm to Donut",
+      "subtitle": "From volcanic soil to your first bite"
+    },
+    "journey": {
+      "title": "The Journey of Authentic Flavor",
+      "intro": "Every cup of coffee and every donut tells a story. Ours begins on the volcanic slopes of Hawaii's Big Island and ends with your first delicious bite in Waikiki.",
+      "step1": {
+        "label": "STEP 1",
+        "title": "Dawn at the Kona Coffee Farm",
+        "description": "Our journey begins before sunrise on the slopes of Mauna Loa, where rich volcanic soil and perfect climate create the world's finest coffee beans. Local farmers tend to each plant with generations of knowledge.",
+        "fact": "Kona coffee grows only in a 30-mile stretch of the Big Island - making it one of the rarest coffees in the world."
+      },
+      "step2": {
+        "label": "STEP 2",
+        "title": "Hand-Harvested with Care",
+        "description": "Unlike mass-produced coffee, every Kona cherry is hand-picked at peak ripeness. This labor of love ensures only the best beans make it to your cup.",
+        "point1": "100% Hawaiian-grown beans",
+        "point2": "Hand-selected for quality",
+        "point3": "Volcanic soil gives unique flavor"
+      },
+      "step3": {
+        "label": "STEP 3",
+        "title": "Waikiki Kitchen Magic",
+        "description": "Fresh ingredients meet artisan craftsmanship. Our donuts are made daily using locally-sourced ingredients, paired perfectly with freshly-roasted Kona coffee.",
+        "timing": "From farm to your plate in under 4 hours - that's true farm-to-table."
+      },
+      "step4": {
+        "label": "STEP 4",
+        "title": "Your First Bite",
+        "description": "This is the moment where all the care, craftsmanship, and aloha spirit come together. The taste you can't find anywhere else - authentic Hawaii in every bite.",
+        "quote": "You can't get this in Seoul, Tokyo, or anywhere else. This is the real taste of Hawaii.",
+        "cta": "Experience It Yourself"
+      }
+    },
+    "cta": {
+      "title": "Ready to Taste the Difference?",
+      "subtitle": "Visit us at 2142 Kalākaua Ave, Waikiki. Opening February 25, 2026",
+      "visitUs": "Visit Us",
+      "seeMenu": "See Our Menu"
+    }
   }
 }
