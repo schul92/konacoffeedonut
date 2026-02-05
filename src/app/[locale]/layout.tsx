@@ -295,6 +295,7 @@ export default async function LocaleLayout({
 
         {/* Preload critical assets only - removed videos to improve LCP */}
         <link rel="preload" href="/konacoffee.webp" as="image" type="image/webp" fetchPriority="high" />
+        <link rel="preload" href="/videos/waikiki_1_poster.webp" as="image" type="image/webp" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${righteous.variable} antialiased overflow-x-hidden`}

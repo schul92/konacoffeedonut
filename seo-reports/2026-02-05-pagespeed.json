@@ -1,0 +1,90 @@
+{
+  "date": "2026-02-05T14:00:00Z",
+  "url": "https://konacoffeedonut.com",
+  "mobile": {
+    "performance": 60,
+    "seo": 100,
+    "accessibility": 96,
+    "bestPractices": 100,
+    "coreWebVitals": {
+      "lcp": "10.0s",
+      "cls": "0",
+      "tbt": "240ms",
+      "fcp": "2.4s",
+      "speedIndex": "8.0s"
+    }
+  },
+  "desktop": {
+    "performance": 85,
+    "seo": 100,
+    "coreWebVitals": {
+      "lcp": "2.0s",
+      "cls": "0",
+      "tbt": "0ms",
+      "fcp": "0.7s"
+    }
+  },
+  "issues": {
+    "critical": [
+      {
+        "id": "mobile-lcp",
+        "description": "Mobile LCP is 10.0s (target <2.5s)",
+        "impact": "Users abandoning page before content loads"
+      },
+      {
+        "id": "total-byte-weight",
+        "description": "Page size is 25,792 KiB (~25MB)",
+        "impact": "Extremely slow on mobile networks"
+      },
+      {
+        "id": "redirects",
+        "description": "Multiple page redirects costing 1,530ms",
+        "impact": "Adds 1.5s to every page load"
+      }
+    ],
+    "moderate": [
+      {
+        "id": "unused-javascript",
+        "description": "228 KiB of unused JavaScript",
+        "savings": "228 KiB"
+      },
+      {
+        "id": "mainthread-work",
+        "description": "Main-thread work: 2.8s",
+        "impact": "Blocking user interaction"
+      },
+      {
+        "id": "render-blocking",
+        "description": "Render blocking requests",
+        "savings": "560ms"
+      }
+    ],
+    "minor": [
+      {
+        "id": "color-contrast",
+        "description": "Background/foreground colors lack sufficient contrast",
+        "type": "accessibility"
+      },
+      {
+        "id": "html-validation",
+        "description": "71 HTML validation errors (title/meta positioning)",
+        "type": "validation"
+      }
+    ]
+  },
+  "infrastructure": {
+    "robotsTxt": "OK - allows crawling",
+    "sitemap": "OK - 75+ URLs, 5 languages (en, ja, ko, zh, es), hreflang configured",
+    "ssl": "OK - HTTPS",
+    "redirect": "konacoffeedonut.com → www.konacoffeedonut.com"
+  },
+  "recommendations": [
+    "Compress and optimize all images (consider WebP format)",
+    "Consolidate redirects - use single canonical domain",
+    "Implement lazy loading for below-fold images",
+    "Remove or defer unused JavaScript (228KB)",
+    "Add preload hint for LCP hero image",
+    "Fix color contrast for accessibility compliance",
+    "Fix HTML validation - move title element to head"
+  ]
+}
