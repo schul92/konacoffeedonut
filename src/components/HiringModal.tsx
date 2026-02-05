@@ -139,6 +139,7 @@ export default function HiringModal({ locale = 'en' }: HiringModalProps) {
                 <button
                   onClick={handleClose}
                   className="absolute top-4 right-4 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors z-10"
+                  aria-label="Close hiring modal"
                 >
                   <X className="w-5 h-5 text-white" />
                 </button>
@@ -254,7 +255,7 @@ export default function HiringModal({ locale = 'en' }: HiringModalProps) {
                       onClick={handleApply}
                       className="flex-1 group relative overflow-hidden px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-xl sm:rounded-2xl font-bold text-white transition-all duration-300 shadow-lg hover:shadow-amber-500/25 hover:scale-[1.02] active:scale-[0.98]"
                     >
-                      <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/25 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                      <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/25 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
                       <span className="relative flex items-center justify-center gap-2 text-sm sm:text-base">
                         {t.applyNow}
                         <ExternalLink className="w-4 h-4" />

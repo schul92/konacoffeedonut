@@ -81,7 +81,7 @@ export default function LanguageSwitcher() {
         whileTap={{ scale: 0.95 }}
       >
         {/* Animated background gradient */}
-        <motion.div
+        <motion.span
           className="absolute inset-0 bg-gradient-to-r from-orange-50 to-amber-50"
           initial={{ opacity: 0, scale: 0.8 }}
           whileHover={{ opacity: 1, scale: 1 }}

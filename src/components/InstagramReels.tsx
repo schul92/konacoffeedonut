@@ -196,6 +196,7 @@ export default function InstagramReels({ className = '' }: InstagramReelsProps) 
                     <button
                       onClick={() => setIsOpen(false)}
                       className="p-2 rounded-full bg-white/20 hover:bg-white/30 transition-colors"
+                      aria-label="Close Instagram menu"
                     >
                       <X className="w-5 h-5 text-white" />
                     </button>
@@ -274,6 +275,7 @@ export default function InstagramReels({ className = '' }: InstagramReelsProps) 
                                 ? 'p-1.5 opacity-100'
                                 : 'p-1 opacity-0 group-hover:opacity-100'
                             }`}
+                            aria-label={mutedVideos[reel.id] === false ? 'Mute video' : 'Unmute video'}
                           >
                             {mutedVideos[reel.id] === false ? (
                               <Volume2 className={isMobile ? 'w-3.5 h-3.5' : 'w-2.5 h-2.5'} />
@@ -312,6 +314,7 @@ export default function InstagramReels({ className = '' }: InstagramReelsProps) 
         className="flex items-center gap-1.5 px-2 py-2 rounded-lg hover:bg-amber-50 transition-colors group"
         aria-expanded={isOpen}
         aria-haspopup="true"
+        aria-label="Instagram reels menu"
       >
         <Instagram className="w-5 h-5 text-pink-600 group-hover:scale-110 transition-transform" />
         <ChevronDown className={`w-3.5 h-3.5 text-gray-500 transition-transform ${isOpen ? 'rotate-180' : ''}`} />

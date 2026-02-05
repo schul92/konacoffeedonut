@@ -539,7 +539,7 @@ export default function CareersPage() {
               onClick={() => handleApply('careers_hero')}
               className="group relative inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 rounded-2xl font-bold text-white text-xl transition-all duration-300 shadow-2xl hover:shadow-amber-500/40 hover:scale-105 active:scale-100"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl" />
+              <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 rounded-2xl" />
               <span className="relative">{t.cta.button}</span>
               <ExternalLink className="w-6 h-6 relative" />
             </button>
