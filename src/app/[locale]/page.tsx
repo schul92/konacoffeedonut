@@ -579,26 +579,27 @@ export default function Home() {
         <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-sky-100 via-blue-50 to-amber-50"></div>
 
         {/* Full Background Image Frame - Covers entire hero area */}
-        {/* Mobile: 144KB optimized | Desktop: 459KB full quality */}
+        {/* Single responsive image with srcSet for optimal loading */}
         <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
-          {/* Mobile-optimized image (hidden on md+) */}
-          <Image
-            src="/images/background/waikiki-illustrated-mobile.webp"
-            alt="Illustrated Waikiki Beach scene with palm trees, pink flowers, and Diamond Head - Kona Coffee Donut Hawaiian cafe"
-            fill
-            sizes="(max-width: 768px) 100vw, 1px"
-            className="object-cover opacity-40 md:hidden"
-            priority
-          />
-          {/* Desktop full-quality image (hidden on mobile) */}
-          <Image
-            src="/images/background/waikiki-illustrated.webp"
-            alt="Illustrated Waikiki Beach scene with palm trees, pink flowers, and Diamond Head - Kona Coffee Donut Hawaiian cafe"
-            fill
-            sizes="(min-width: 769px) 100vw, 1px"
-            className="object-cover opacity-40 hidden md:block"
-            priority
-          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcSet="/images/background/waikiki-illustrated-mobile.webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 769px)"
+              srcSet="/images/background/waikiki-illustrated.webp"
+              type="image/webp"
+            />
+            <img
+              src="/images/background/waikiki-illustrated.webp"
+              alt="Illustrated Waikiki Beach scene with palm trees, pink flowers, and Diamond Head - Kona Coffee Donut Hawaiian cafe"
+              className="absolute inset-0 w-full h-full object-cover opacity-40"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
 
         {/* Coming Soon Badge - Emphasized (Hidden on mobile) */}
