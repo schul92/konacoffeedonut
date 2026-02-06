@@ -41,13 +41,13 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     es: 'Kona Coffee Donut es un café hawaiano en 2142 Kalakaua Ave, Honolulu, HI 96815, apertura febrero 2026. A 400 metros (5 min a pie) de Waikiki Beach. Orgullosamente servimos Honolulu Coffee (est. 1992, la cadena de café Kona más grande de Hawái), con café 100% Kona puro—cultivado a 500-900m de altitud en los volcanes Mauna Loa y Hualalai, representando menos del 1% de la producción mundial (Kona Coffee Council). También servimos donuts mochi artesanales de MOCHILAND (50+ ubicaciones en EE.UU.), preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
   };
 
-  // Local Business Schema
+  // Local Business Schema (Enhanced with Opening Date)
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': ['Restaurant', 'CafeOrCoffeeShop', 'Bakery'],
     '@id': 'https://www.konacoffeedonut.com/#restaurant',
     name: 'Kona Coffee Donut - Waikiki',
-    alternateName: ['MOCHILAND x Honolulu Coffee', 'Kona Coffee Donut Waikiki', 'Kona Coffee Honolulu'],
+    alternateName: ['코나커피도넛', 'MOCHILAND x Honolulu Coffee', 'Kona Coffee Donut Waikiki', 'Kona Coffee Honolulu', 'Waikiki Coffee Shop'],
     description: entityIntro[locale as keyof typeof entityIntro] || entityIntro.en,
     // GEO: Speakable property for voice assistants (Siri, Alexa, Google Assistant)
     speakable: {
@@ -80,12 +80,42 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       latitude: 21.2793,
       longitude: -157.8294,
     },
+    // Grand Opening Event
+    event: {
+      '@type': 'Event',
+      name: 'Grand Opening - Kona Coffee Donut Waikiki',
+      startDate: '2026-02-25T07:00:00-10:00',
+      endDate: '2026-02-25T21:00:00-10:00',
+      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      eventStatus: 'https://schema.org/EventScheduled',
+      location: {
+        '@type': 'Place',
+        name: 'Kona Coffee Donut - Waikiki',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: '2142 Kalakaua Ave',
+          addressLocality: 'Honolulu',
+          addressRegion: 'HI',
+          postalCode: '96815',
+          addressCountry: 'US',
+        },
+      },
+      description: 'Grand opening celebration! First 50 customers get FREE donut with coffee purchase. 20% off all menu items on opening day.',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+        validFrom: '2026-02-25T07:00:00-10:00',
+      },
+    },
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
         opens: '07:00',
         closes: '21:00',
+        validFrom: '2026-02-25',
       },
     ],
     servesCuisine: ['Coffee', 'Donuts', 'Desserts', 'Hawaiian'],

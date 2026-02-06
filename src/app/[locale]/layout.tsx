@@ -69,11 +69,14 @@ export async function generateMetadata({
       'malasada near me', 'mochi donuts near me', 'bingsu near me',
       'breakfast near me waikiki', 'dessert near me hawaii',
       // Location-based
-      'kona coffee waikiki', 'honolulu coffee shop', 'waikiki donuts', 'kalakaua ave coffee',
-      'hawaii coffee and donuts', 'oahu coffee shop', 'waikiki cafe',
+      'waikiki coffee shop', 'kona coffee waikiki', 'honolulu coffee shop', 'waikiki donuts', 
+      'kalakaua ave coffee', 'hawaii coffee and donuts', 'oahu coffee shop', 'waikiki cafe',
+      'best waikiki coffee shop', 'waikiki breakfast coffee shop',
       // Product-based
       'honolulu coffee', 'mochi donuts', 'artisanal donuts', 'mochiland', 'bonepi mochiland',
       'malasada hawaii', 'hawaiian malasada', 'malasada waikiki', 'best malasada hawaii',
+      'fresh malasadas', 'malasada near me waikiki', 'portuguese donuts hawaii',
+      'where to get malasadas in waikiki', 'authentic malasadas honolulu',
       'korean corn dogs', 'corn dog hawaii',
       'bingsu hawaii', 'korean bingsu', 'bingsu waikiki', 'shaved ice hawaii',
       'acai bowl waikiki', 'acai bowl near me',
