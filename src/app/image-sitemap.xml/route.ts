@@ -5,7 +5,7 @@ export async function GET() {
   const images = [
     // Hero images
     {
-      loc: `${baseUrl}/images/background/background.jpg`,
+      loc: `${baseUrl}/images/background/background.webp`,
       caption: 'Kona Coffee Donut - Waikiki Hawaii Background',
       title: 'Hawaiian Coffee Shop Ambiance',
       geoLocation: 'Waikiki, Honolulu, Hawaii',
