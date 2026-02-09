@@ -87,17 +87,54 @@ def git_push(dashboard_path="/Users/zoelumos/.openclaw/workspace/zoe-dashboard")
 
 def main():
     parser = argparse.ArgumentParser(description="Post to social media + record to calendar")
-    parser.add_argument("--date", required=True, help="Post date (YYYY-MM-DD)")
-    parser.add_argument("--theme", required=True, help="Post theme")
+    parser.add_argument("--from-drafts", help="Path to drafts JSON file (alternative to individual args)")
+    parser.add_argument("--date", help="Post date (YYYY-MM-DD)")
+    parser.add_argument("--theme", help="Post theme")
     parser.add_argument("--image", help="Image URL")
-    parser.add_argument("--twitter", required=True, help="Twitter content")
-    parser.add_argument("--facebook", required=True, help="Facebook content")
-    parser.add_argument("--google", required=True, help="Google Business content")
-    parser.add_argument("--threads", required=True, help="Threads content")
-    parser.add_argument("--bluesky", required=True, help="Bluesky content")
+    parser.add_argument("--twitter", help="Twitter content")
+    parser.add_argument("--facebook", help="Facebook content")
+    parser.add_argument("--google", help="Google Business content")
+    parser.add_argument("--threads", help="Threads content")
+    parser.add_argument("--bluesky", help="Bluesky content")
     parser.add_argument("--dry-run", action="store_true", help="Don't actually post, just show what would happen")
     
     args = parser.parse_args()
+    
+    # Load from drafts file if provided
+    if args.from_drafts:
+        try:
+            with open(args.from_drafts, 'r') as f:
+                drafts = json.load(f)
+            
+            # Check if approved
+            if not drafts.get('approved', False):
+                print("❌ Content not approved yet! Set 'approved: true' in drafts file.")
+                sys.exit(1)
+            
+            # Override args with drafts data
+            args.date = drafts.get('date')
+            args.theme = drafts.get('theme', 'Daily Post')
+            args.image = drafts.get('image')
+            args.twitter = drafts.get('twitter')
+            args.facebook = drafts.get('facebook')
+            args.google = drafts.get('google')
+            args.threads = drafts.get('instagram')  # Note: drafts use "instagram" key
+            args.bluesky = drafts.get('bluesky')
+            
+            print(f"📂 Loaded drafts from {args.from_drafts}")
+        except FileNotFoundError:
+            print(f"❌ Drafts file not found: {args.from_drafts}")
+            sys.exit(1)
+        except json.JSONDecodeError as e:
+            print(f"❌ Invalid JSON in drafts file: {e}")
+            sys.exit(1)
+    
+    # Validate required fields
+    if not all([args.date, args.twitter, args.facebook, args.google, args.threads, args.bluesky]):
+        print("❌ Missing required fields!")
+        if not args.from_drafts:
+            parser.print_help()
+        sys.exit(1)
     
     # Account IDs (from kona/api-keys)
     secrets = get_secret("kona/api-keys")
