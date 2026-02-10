@@ -16,6 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // SEO landing pages for high-value keywords
     '/fresh-donuts',
     '/gourmet-donuts',
+    '/breakfast-waikiki',
+    '/farm-to-donut',
+    '/malasada-hawaii',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -36,6 +39,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/terms-of-service': 0.3,
     '/fresh-donuts': 0.85, // High-value SEO keyword page
     '/gourmet-donuts': 0.85, // High-value SEO keyword page
+    '/breakfast-waikiki': 0.85, // High-value local SEO keyword page
+    '/farm-to-donut': 0.8, // Story/brand page
+    '/malasada-hawaii': 0.85, // High-value product SEO keyword page
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
     '/menu/kona-coffee': 0.85,
@@ -55,6 +61,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/terms-of-service': 'monthly',
     '/fresh-donuts': 'weekly',
     '/gourmet-donuts': 'weekly',
+    '/breakfast-waikiki': 'weekly',
+    '/farm-to-donut': 'monthly',
+    '/malasada-hawaii': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',
     '/menu/kona-coffee': 'weekly',
