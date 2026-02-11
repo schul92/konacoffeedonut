@@ -1491,11 +1491,12 @@ export default function Home() {
           {/* Bottom: Logo + Copyright */}
           <div className="pt-8 border-t border-white/10 flex flex-col items-center gap-4">
             <Image
-              src="/icons/bonepi_hq.png"
+              src="/icons/bonepi.jpeg"
               alt="Bonepi Mochiland"
               width={48}
               height={48}
-              className="w-12 h-12 rounded-full"
+              className="w-12 h-12 rounded-full object-cover"
+              loading="lazy"
             />
             <p className="text-white/40 text-sm">{t('footer.copyright')}</p>
           </div>
