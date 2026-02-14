@@ -62,17 +62,5 @@
       ]
     }
   ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.konacoffeedonut.com"
-        }
-      ],
-      "destination": "https://konacoffeedonut.com/:path*",
-      "permanent": true
-    }
-  ]
+  "redirects": []
 }
