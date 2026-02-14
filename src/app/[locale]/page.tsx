@@ -8,10 +8,18 @@ import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
-import HiringModal from '@/components/HiringModal';
 import { BANNER_VISIBILITY_EVENT, isBannerVisible } from '@/components/HiringBanner';
-import InstagramReels from '@/components/InstagramReels';
-import LogoReelsPopover from '@/components/LogoReelsPopover';
+
+// Dynamic imports for heavy client components to reduce initial JS bundle
+const HiringModal = dynamic(() => import('@/components/HiringModal'), { ssr: false });
+const InstagramReels = dynamic(() => import('@/components/InstagramReels'), {
+  ssr: false,
+  loading: () => <div className="w-8 h-8" />,
+});
+const LogoReelsPopover = dynamic(() => import('@/components/LogoReelsPopover'), {
+  ssr: false,
+  loading: () => <div />,
+});
 
 // Instagram reels data for logo hovers
 const mochilandReels = [

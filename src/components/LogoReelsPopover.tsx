@@ -272,7 +272,7 @@ export default function LogoReelsPopover({
                         muted
                         loop
                         playsInline
-                        preload="metadata"
+                        preload="none"
                         className="w-full h-full object-cover"
                       />
                     ) : null}
