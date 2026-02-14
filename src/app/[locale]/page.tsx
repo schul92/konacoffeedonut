@@ -1265,7 +1265,7 @@ export default function Home() {
                       transition={{ duration: 2, repeat: Infinity }}
                     />
                     <Image
-                      src="/icons/mochi_land_circle_hq.png"
+                      src="/icons/mochi_land_circle.png"
                       alt="MOCHILAND - Artisan Mochi Donuts from Waikiki"
                       width={180}
                       height={180}
@@ -1309,7 +1309,7 @@ export default function Home() {
                     />
                     <div className="relative w-[180px] h-[180px] flex items-center justify-center">
                       <Image
-                        src="/icons/honolulu_coffee_original.webp"
+                        src="/icons/honolulu_coffee.png"
                         alt="Honolulu Coffee - Premium Kona Coffee Beans from Hawaii"
                         width={200}
                         height={200}

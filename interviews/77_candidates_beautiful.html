@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>77 Candidates - Kona Coffee Donut</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 40px; }
+        .header { text-align: center; margin-bottom: 40px; border-bottom: 3px solid #8B4513; padding-bottom: 20px; }
+        .header h1 { color: #8B4513; font-size: 32px; }
+        .stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; margin-bottom: 40px; }
+        .stat-card { color: white; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-card.top { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .stat-card.strong { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .stat-card.good { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .stat-card.fair { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .stat-card.weak { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333; }
+        .stat-card .number { font-size: 36px; font-weight: bold; }
+        .stat-card .label { font-size: 14px; opacity: 0.9; }
+        .tier-header { color: white; padding: 15px 20px; font-size: 20px; font-weight: bold; margin-top: 30px; border-radius: 8px 8px 0 0; }
+        .tier-header.top { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .tier-header.strong { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .tier-header.good { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .tier-header.fair { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .tier-header.weak { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333; }
+        .candidate-card { border: 1px solid #ddd; border-top: none; padding: 20px; background: white; }
+        .candidate-header { display: flex; justify-content: space-between; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0; }
+        .candidate-name { font-size: 18px; font-weight: bold; color: #8B4513; }
+        .score-badge { background: #4CAF50; color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; }
+        .contact-info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 15px; }
+        .contact-item { padding: 8px; background: #f9f9f9; border-radius: 5px; font-size: 14px; }
+        .experience-section { margin-bottom: 10px; }
+        .experience-section .label { font-weight: bold; color: #666; }
+        .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+        .skill-badge { padding: 5px 10px; border-radius: 5px; font-size: 12px; text-align: center; }
+        .skill-badge.yes { background: #e8f5e9; color: #2e7d32; border: 1px solid #4caf50; }
+        .skill-badge.no { background: #ffebee; color: #c62828; border: 1px solid #f44336; }
+        .resume-link { margin-top: 10px; padding: 8px; background: #fff3e0; border-left: 3px solid #ff9800; font-size: 12px; }
+        .page-break { page-break-after: always; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>☕ 77 Candidates Summary</h1>
+            <div>Kona Coffee Donut - Waikiki Store #2142</div>
+            <div>February 9, 2026</div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card top">
+                <div class="number">39</div>
+                <div class="label">🌟 TOP<br>11/11</div>
+            </div>
+            <div class="stat-card strong">
+                <div class="number">7</div>
+                <div class="label">⭐ STRONG<br>9-10</div>
+            </div>
+            <div class="stat-card good">
+                <div class="number">12</div>
+                <div class="label">✅ GOOD<br>7-8</div>
+            </div>
+            <div class="stat-card fair">
+                <div class="number">11</div>
+                <div class="label">⚠️ FAIR<br>5-6</div>
+            </div>
+            <div class="stat-card weak">
+                <div class="number">8</div>
+                <div class="label">❌ TRAIN<br>&lt;5</div>
+            </div>
+        </div>
+
+        <div class="tier-header top">🌟 TOP TIER (39 candidates - All Qualifications Met)</div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">1. Sanjina Rao</div>
+                <div class="score-badge">13/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 269 7478</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-01</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier/Cook
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma or GED
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeSanjinaRao.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">2. Joshua Lee</div>
+                <div class="score-badge">13/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 464 2811</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-01</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Bartender
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Upper secondary education - Arts
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJoshuaLee.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">3. Pieter  (Kobus) Breet</div>
+                <div class="score-badge">12/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 612 599 3136</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-01</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Shift Supervisor
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumePieter(Kobus)Breet.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">4. Heather Fencl</div>
+                <div class="score-badge">12/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 226 0807</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-01</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Licensed Massage Therapist
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeHeatherFencl.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">5. Leilani Loveless</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 485 7865</div>
+                <div class="contact-item">📍 Honolulu</div>
+                <div class="contact-item">📅 2026-02-09</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier/Customer Service/Sales Associate/Stocker
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeLeilaniLoveless.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">6. Beyla Jones</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 970 497 6644</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-08</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Store Manager
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeBeylaJones.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">7. Catherine Piano</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 385 95 815 4518</div>
+                <div class="contact-item">📍 10000</div>
+                <div class="contact-item">📅 2026-02-08</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> SENIOR WAITRESS
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeCatherinePiano.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">8. Emily Newell</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 408 876 0313</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-08</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeEmilyNewell.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">9. Hallie Dugan</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 816 585 4140</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-08</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Game Guide
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma or GED
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeHallieDugan.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">10. Camilo Haro</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 437 9982</div>
+                <div class="contact-item">📍 Honolulu</div>
+                <div class="contact-item">📅 2026-02-08</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeCamiloHaro.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">11. Carla Silva</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 501 8640</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-07</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Server
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> College - Hotel and restaurant administration
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeCarlaSilva.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">12. Donna Sowell</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 562 6861</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-07</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> McDonalds Crew Member
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Graduate - Reatil
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeDonnaSowell.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">13. Nevaeh Berman</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 541 880 8743</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-06</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeNevaehBerman.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">14. An Li Allison</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 651 399 9193</div>
+                <div class="contact-item">📍 Honolulu, Hawaii</div>
+                <div class="contact-item">📅 2026-02-06</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAnLiAllison.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">15. Alexandra Xua</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 445 3589</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Whatcom community College - A.A.S.
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAlexandraXua.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">16. Ava Fairbrother</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 607 426 1260</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> College - Criminal Justice
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAvaFairbrother.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">17. LUCY POOL</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 818 621 5407</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Morning brew- barista
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeLUCYPOOL.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">18. Haruna Emmer</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 721 0938</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeHarunaEmmer.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">19. Kiley Butkus</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 949 212 4425</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Food Runner/Server
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeKileyButkus.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">20. Madison Pasaoa</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 348 4078</div>
+                <div class="contact-item">📍 Honolulu, Hi</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Gelato Server
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link" style="background: #ffebee; border-left-color: #f44336;">📄 Resume: Not found</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">21. Sayaka Gaspard</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 702 591 2265</div>
+                <div class="contact-item">📍 'Ewa Beach, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeSayakaGaspard.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">22. Honesty-Marie Riley</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 583 4590</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Sales Associate
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> GED
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeHonesty-MarieRiley.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">23. Hannah Quick</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 703 675 9743</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Hostess/Server
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma or GED
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeHannahQuick.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">24. MARIANA FIGUEROA</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 334 400 9616</div>
+                <div class="contact-item">📍 Honolulu, HI, 96822, US</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> barista
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeMARIANAFIGUEROA.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">25. kay ornatowski</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 574 374 8909</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Sales Associate
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: Resumekayornatowski.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">26. Alexis Shulga</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 304 3743</div>
+                <div class="contact-item">📍 Honolulu, Hawaii, US</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAlexisShulga.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">27. Kim Le</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 866 6078</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Upper secondary education
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeKimLe.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">28. Dorian Covahey</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 206 0972</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeDorianCovahey.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">29. Parrish Viator</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 360 390 1257</div>
+                <div class="contact-item">📍 Honolulu, HI, US</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeParrishViator.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">30. Dwayne Kahoonei</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 699 4319</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeDwayneKahoonei.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">31. Huyen - Tran Ha Dang</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 763 1183</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Retail Sales Associate/Cashier
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeHuyen-TranHaDang.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">32. Aurora Marcy</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 360 229 3800</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Photographer
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAuroraMarcy.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">33. Leah Kliem</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 619 607 8689</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> After School Program Manager
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Bachelor of Arts - Clinical Psychology
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeLeahKliem.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">34. EDMELYN HAZLEWOOD</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 485 9914</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Customer Service Reservation Agent
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Bachelor of Science - Information Technology
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeEDMELYNHAZLEWOOD.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">35. Ira Rose</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 321 2184</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Assistant Barista
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Greenbrier high school graduate
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeIraRose.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">36. Lawson McNeely</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 321 506 4212</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Bachelors - Psychology
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeLawsonMcNeely.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">37. Jason Riddle</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 203 464 3984</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Server
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJasonRiddle.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">38. Jaelah Muñoz</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 916 479 0569</div>
+                <div class="contact-item">📍 Honolulu, HI, US</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJaelahMuñoz.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">39. Marcela Naomi Huaccho Choque</div>
+                <div class="score-badge">11/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 206 1609</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-01</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeMarcelaNaomiHuacchoChoque.pdf</div>
+
+        </div>
+<div class="page-break"></div>
+
+        <div class="tier-header strong">⭐ STRONG (7 candidates - 9-10 Qualifications)</div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">1. Gary Basuil</div>
+                <div class="score-badge">10/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 779 3552</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-08</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Host
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school diploma
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeGaryBasuil.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">2. Jaylyn Wharton</div>
+                <div class="score-badge">10/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 452 3031</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-07</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJaylynWharton.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">3. BENJAMIN AQUINO</div>
+                <div class="score-badge">10/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 205 8546</div>
+                <div class="contact-item">📍 Honolulu, HI 96822</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeBENJAMINAQUINO.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">4. Isabella Mendoza</div>
+                <div class="score-badge">9/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 760 271 7936</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-06</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeIsabellaMendoza.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">5. Christian Melegrito</div>
+                <div class="score-badge">9/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 673 0306</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Sales Associate
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeChristianMelegrito.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">6. Tdlyn Frank</div>
+                <div class="score-badge">9/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 970 8165</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeTdlynFrank.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">7. Naomi Hosford</div>
+                <div class="score-badge">9/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 818 429 5146</div>
+                <div class="contact-item">📍 La Cañada Flintridge, CA</div>
+                <div class="contact-item">📅 2026-02-01</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeNaomiHosford.pdf</div>
+
+        </div>
+<div class="page-break"></div>
+
+        <div class="tier-header good">✅ GOOD (12 candidates - 7-8 Qualifications)</div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">1. Giang Tran</div>
+                <div class="score-badge">8/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 991 5208</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-08</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Crew Member
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High school
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge no">✗ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeGiangTran.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">2. Alana Image</div>
+                <div class="score-badge">8/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 415 954 2067</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Retail Sales Associate
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Undergraduate - Psychology, Art
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAlanaImage.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">3. Madison Beardsley</div>
+                <div class="score-badge">8/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 773 6392</div>
+                <div class="contact-item">📍 Pearl City, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Waitress/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeMadisonBeardsley.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">4. Emma Gretsch</div>
+                <div class="score-badge">8/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 760 840 0098</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Food Runner
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeEmmaGretsch.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">5. Rina Robert</div>
+                <div class="score-badge">8/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 393 1562</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Sales Associate/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge yes">✓ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeRinaRobert.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">6. Janelle Cabanit</div>
+                <div class="score-badge">7/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 670 9544</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-09</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJanelleCabanit.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">7. Sky Brown</div>
+                <div class="score-badge">7/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 743 1407</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-06</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeSkyBrown.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">8. Eliana Carnes</div>
+                <div class="score-badge">7/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 562 286 4506</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Barista
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeElianaCarnes.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">9. Austin M</div>
+                <div class="score-badge">7/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 379 8660</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAustinM.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">10. Emmanuel Ridgley</div>
+                <div class="score-badge">7/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 702 788 8397</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Sales Associate
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeEmmanuelRidgley.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">11. cheyenne Bailey</div>
+                <div class="score-badge">7/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 282 6775</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier/Customer Service
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Upper secondary education
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumecheyenneBailey.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">12. Mia Arreza</div>
+                <div class="score-badge">7/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 772 0356</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-01</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Bird Specialist
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeMiaArreza.pdf</div>
+
+        </div>
+<div class="page-break"></div>
+
+        <div class="tier-header fair">⚠️ FAIR (11 candidates - 5-6 Qualifications)</div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">1. Chantal Marie Cacpal</div>
+                <div class="score-badge">6/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 542 7453</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-08</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge yes">✓ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge no">✗ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeChantalMarieCacpal.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">2. Jasmine Boyd</div>
+                <div class="score-badge">6/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 980 358 9475</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-07</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Guest Services Representative
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> University - Marine Biology
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJasmineBoyd.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">3. Trucy Thomas</div>
+                <div class="score-badge">6/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 478 0683</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-06</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Forklift Operator
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Hawaii National Guard - HISET
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge no">✗ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeTrucyThomas.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">4. Hayden Bode</div>
+                <div class="score-badge">6/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 859 653 6910</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Tour Guide
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeHaydenBode.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">5. Rachanne Miquel</div>
+                <div class="score-badge">6/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 391 3222</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Popeyes crew member
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeRachanneMiquel.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">6. Jmark Rivera</div>
+                <div class="score-badge">6/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 254 290 4177</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJmarkRivera.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">7. Brooke Violette</div>
+                <div class="score-badge">6/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 541 852 1615</div>
+                <div class="contact-item">📍 2579 Dole Street Rm 452, Honolulu, HI 96822</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Deli Attendant
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeBrookeViolette.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">8. Tyler Crawford</div>
+                <div class="score-badge">5/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 858 605 8395</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Server Assistant
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> In college - Business
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeTylerCrawford.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">9. Jameson O'Connell</div>
+                <div class="score-badge">5/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 262 808 7822</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJamesonO'Connell.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">10. AUBREY GRIMES</div>
+                <div class="score-badge">5/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 512 638 5014</div>
+                <div class="contact-item">📍 Honolulu, HI, 96822, US</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Spa Attendant
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge yes">✓ Coffee experience</div>
+                    <div class="skill-badge yes">✓ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge no">✗ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAUBREYGRIMES.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">11. Hirut Denver</div>
+                <div class="score-badge">5/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 541 908 7194</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Drink Maker/Cashier
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeHirutDenver.pdf</div>
+
+        </div>
+<div class="page-break"></div>
+
+        <div class="tier-header weak">❌ NEEDS TRAINING (8 candidates - <5 Qualifications)</div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">1. Kenneth Liu</div>
+                <div class="score-badge">4/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 429 1346</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-05</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge yes">✓ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge no">✗ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeKennethLiu.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">2. Leila Zaragoza</div>
+                <div class="score-badge">4/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 805 514 4116</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-01</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Sales Associate
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Bachelor's degree - Mechanical Engineering
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeLeilaZaragoza.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">3. CAROLINE COOK</div>
+                <div class="score-badge">3/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 865 454 7323</div>
+                <div class="contact-item">📍 Fort Shafter, HI</div>
+                <div class="contact-item">📅 2026-02-06</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> Sales Associate
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> Certificate - Phlebotomy
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeCAROLINECOOK.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">4. Mayforeen Albert</div>
+                <div class="score-badge">3/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 520 6899</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">🎓 Education:</span> High School Education
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge no">✗ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeMayforeenAlbert.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">5. Ashley Miyata</div>
+                <div class="score-badge">3/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 286 3088</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge yes">✓ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeAshleyMiyata.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">6. James Reyes</div>
+                <div class="score-badge">2/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 849 3687</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-04</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJamesReyes.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">7. Jendelyn Duhaylongsod</div>
+                <div class="score-badge">2/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 425 1465</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-02</div>
+            </div>
+
+            <div class="experience-section">
+                <span class="label">💼 Experience:</span> None
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge yes">✓ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeJendelynDuhaylongsod.pdf</div>
+
+        </div>
+
+        <div class="candidate-card">
+            <div class="candidate-header">
+                <div class="candidate-name">8. Kainoa Valdez</div>
+                <div class="score-badge">1/11 ✅</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">📞 1 808 724 2683</div>
+                <div class="contact-item">📍 Honolulu, HI</div>
+                <div class="contact-item">📅 2026-02-03</div>
+            </div>
+
+            <div class="experience-section">
+                <div class="label">🔧 Key Skills:</div>
+                <div class="skills-grid">
+                    <div class="skill-badge no">✗ Food preparation</div>
+                    <div class="skill-badge no">✗ Coffee experience</div>
+                    <div class="skill-badge no">✗ Espresso coffee making</div>
+                    <div class="skill-badge no">✗ Coffee shop</div>
+                    <div class="skill-badge no">✗ Cold brew coffee making</div>
+                    <div class="skill-badge no">✗ Cash register</div>
+                    <div class="skill-badge no">✗ POS</div>
+
+                </div>
+            </div>
+
+            <div class="resume-link">📄 Resume: ResumeKainoaValdez.pdf</div>
+
+        </div>
+<div class="page-break"></div>
+
+    </div>
+</body>
+</html>

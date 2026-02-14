@@ -1,0 +1,32 @@
+SUBJECT: Update Regarding Your Interview at Kona Coffee Donut
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Dear Applicant,
+
+Thank you so much for your interest in joining our team at Kona Coffee Donut!
+
+We wanted to reach out regarding your scheduled interview. We've received an overwhelming response to our hiring announcement – far more applications than we initially anticipated. This is wonderful news, but it also means that reviewing all resumes and applications is taking longer than expected.
+
+We may not be able to conduct your interview at the originally scheduled time. However, please know that your application is important to us and we are carefully reviewing every resume.
+
+We will contact you shortly via email or phone call to confirm or reschedule your interview at a time that works for both of us.
+
+Thank you for your patience and understanding. We're excited about the possibility of having you join our team for our grand opening on February 25th!
+
+Best regards,
+
+Kona Coffee Donut Hiring Team
+2142 Kalākaua Ave
+Honolulu, HI 96815
+konacoffeedonut.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HOW TO SEND:
+1. Gmail → Compose
+2. TO: (leave blank)
+3. BCC: Paste all emails from feb9-16-bcc-emails.txt
+4. SUBJECT: Copy from above
+5. BODY: Copy message from "Dear Applicant" to "konacoffeedonut.com"
+6. Send!
