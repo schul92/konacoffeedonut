@@ -12,16 +12,16 @@ export async function generateMetadata({
   const titles: Record<string, string> = {
     en: 'About Kona Coffee | Premium Hawaiian Coffee',
     ja: 'コナコーヒーについて | プレミアムハワイアンコーヒー',
-    ko: '코나 커피 소개 | 프리미엄 하와이안 커피',
-    zh: '关于科纳咖啡 | 优质夏威夷咖啡',
+    ko: '하와이 코나 커피 완벽 가이드 | 와이키키 코나커피 & 도넛',
+    zh: '夏威夷科纳咖啡风味指南 | 威基基 Kona Coffee Donut',
     es: 'Sobre el Café Kona | Café Premium de Hawaii',
   };
 
   const descriptions: Record<string, string> = {
     en: 'Discover why Kona coffee is the world\'s premium Hawaiian coffee. Learn about volcanic soil growing conditions, hand-picked harvesting, and the unique flavor profile that makes Kona coffee special.',
     ja: 'コナコーヒーがなぜ世界最高のハワイアンコーヒーなのかをご紹介。火山土壌での栽培、手摘み収穫、そしてコナコーヒーを特別にするユニークな風味について。',
-    ko: '코나 커피가 왜 세계 최고의 하와이안 커피인지 알아보세요. 화산 토양 재배, 수작업 수확, 그리고 코나 커피를 특별하게 만드는 독특한 풍미에 대해.',
-    zh: '了解为什么科纳咖啡是世界顶级的夏威夷咖啡。火山土壤种植条件、手工采摘以及使科纳咖啡与众不同的独特风味。',
+    ko: '하와이 코나 커피의 풍미, 화산 토양 재배, 수작업 수확 스토리를 확인하세요. 와이키키 Kona Coffee Donut의 코나커피 메뉴와 함께 여행 전 필수 정보를 한눈에.',
+    zh: '了解夏威夷科纳咖啡风味、火山土壤种植与手工采摘特色。访问威基基 Kona Coffee Donut，查看科纳咖啡菜单与到店信息。',
     es: 'Descubre por qué el café Kona es el café premium de Hawaii. Conoce el cultivo en suelo volcánico, la cosecha manual y el perfil de sabor único.',
   };
 
