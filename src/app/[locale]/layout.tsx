@@ -10,6 +10,7 @@ import StructuredData from '@/components/StructuredData';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import MetaPixel from '@/components/MetaPixel';
 import HiringBanner from '@/components/HiringBanner';
+import { seoSameAsUrls } from '@/lib/socialLinks';
 import "../globals.css";
 
 const geistSans = Geist({
@@ -207,13 +208,7 @@ export async function generateMetadata({
     },
     other: {
       // Rich Snippets
-      'og:see_also': [
-        'https://www.instagram.com/konacoffeedonut',
-        'https://www.instagram.com/mochinut_fortlee',
-        'https://www.instagram.com/bonepi_mochiland',
-        'https://www.instagram.com/bonepi_mochiland_official',
-        'https://www.facebook.com/konacoffeedonut',
-      ],
+      'og:see_also': seoSameAsUrls,
       // Local Business
       'business:contact_data:street_address': '2142 Kalakaua Ave',
       'business:contact_data:locality': 'Honolulu',

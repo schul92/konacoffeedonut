@@ -43,10 +43,12 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
             if (!referrer) return 'direct';
 
             const domain = new URL(referrer).hostname;
+            if (domain.includes('share.google')) return 'google_business_profile';
             if (domain.includes('google')) return 'google';
             if (domain.includes('facebook') || domain.includes('fb')) return 'facebook';
             if (domain.includes('instagram')) return 'instagram';
-            if (domain.includes('twitter') || domain.includes('t.co')) return 'twitter';
+            if (domain.includes('x.com') || domain.includes('twitter') || domain.includes('t.co')) return 'x';
+            if (domain.includes('bsky.app')) return 'bluesky';
             if (domain.includes('yelp')) return 'yelp';
             if (domain.includes('tripadvisor')) return 'tripadvisor';
 
@@ -121,6 +123,27 @@ export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps)
               if (link.href.includes('instagram.com')) {
                 gtag('event', 'social_click', {
                   platform: 'instagram',
+                  location: link.closest('section')?.id || 'unknown',
+                });
+              }
+
+              if (link.href.includes('x.com') || link.href.includes('twitter.com') || link.href.includes('t.co')) {
+                gtag('event', 'social_click', {
+                  platform: 'x',
+                  location: link.closest('section')?.id || 'unknown',
+                });
+              }
+
+              if (link.href.includes('bsky.app')) {
+                gtag('event', 'social_click', {
+                  platform: 'bluesky',
+                  location: link.closest('section')?.id || 'unknown',
+                });
+              }
+
+              if (link.href.includes('share.google')) {
+                gtag('event', 'social_click', {
+                  platform: 'google_business_profile',
                   location: link.closest('section')?.id || 'unknown',
                 });
               }

@@ -1,4 +1,5 @@
 import Script from 'next/script';
+import { seoSameAsUrls } from '@/lib/socialLinks';
 
 interface StructuredDataProps {
   locale: string;
@@ -175,13 +176,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       },
     ],
     keywords: keywordsByLocale[locale] || keywordsByLocale.en,
-    sameAs: [
-      'https://www.instagram.com/konacoffeedonut',
-      'https://www.instagram.com/mochinut_fortlee',
-      'https://www.instagram.com/bonepi_mochiland',
-      'https://www.instagram.com/bonepi_mochiland_official',
-      'https://www.facebook.com/konacoffeedonut',
-    ],
+    sameAs: seoSameAsUrls,
     potentialAction: {
       '@type': 'OrderAction',
       target: {
@@ -220,13 +215,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       areaServed: 'US',
       availableLanguage: ['English', 'Japanese', 'Korean', 'Chinese', 'Spanish'],
     },
-    sameAs: [
-      'https://www.instagram.com/konacoffeedonut',
-      'https://www.instagram.com/mochinut_fortlee',
-      'https://www.instagram.com/bonepi_mochiland',
-      'https://www.instagram.com/bonepi_mochiland_official',
-      'https://www.facebook.com/konacoffeedonut',
-    ],
+    sameAs: seoSameAsUrls,
   };
 
   // Website Schema

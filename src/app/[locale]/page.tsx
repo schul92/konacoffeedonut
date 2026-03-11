@@ -9,6 +9,8 @@ import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { BANNER_VISIBILITY_EVENT, isBannerVisible } from '@/components/HiringBanner';
+import SocialIcon from '@/components/SocialIcon';
+import { konaSocialLinks, type SocialLink } from '@/lib/socialLinks';
 
 // Dynamic imports for heavy client components to reduce initial JS bundle
 const HiringModal = dynamic(() => import('@/components/HiringModal'), { ssr: false });
@@ -44,6 +46,22 @@ const konaCoffeeReels = [
     instagramUrl: 'https://www.instagram.com/reel/DRvx-1mCc_O/',
     caption: 'Premium Kona Coffee',
   },
+];
+
+const mobileMenuSocialLinks: SocialLink[] = [
+  konaSocialLinks[0],
+  {
+    platform: 'instagram',
+    label: 'Mochiland',
+    href: 'https://www.instagram.com/mochinut_fortlee/',
+    handle: '@mochinut_fortlee',
+    sublabel: 'Mochiland',
+    footerHoverClassName: 'hover:text-pink-400',
+    mobileGradientClassName: 'bg-gradient-to-r from-pink-50 via-rose-50 to-pink-50',
+    mobileIconClassName: 'bg-gradient-to-br from-pink-500 to-rose-500',
+    mobileHoverTextClassName: 'group-hover:text-pink-600',
+  },
+  ...konaSocialLinks.slice(1),
 ];
 
 // Dynamic imports for heavy components to improve initial page load
@@ -516,66 +534,38 @@ export default function Home() {
                   </svg>
                   Follow Us
                 </p>
-                <a
-                  href="https://www.instagram.com/konacoffeedonut/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMenuOpen(false)}
-                  className="relative block py-2.5 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
-                >
-                  <motion.span
-                    className="absolute inset-0 bg-gradient-to-r from-amber-50 via-orange-50 to-amber-50"
-                    initial={{ x: '-100%' }}
-                    whileHover={{ x: 0 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                  <span className="relative z-10 group-hover:text-orange-600 transition-colors select-none flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center">
-                      <svg className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                {mobileMenuSocialLinks.map((social) => (
+                  <a
+                    key={`${social.platform}-${social.href}`}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit ${social.handle} on ${social.label}`}
+                    onClick={() => setMenuOpen(false)}
+                    className="relative block py-2.5 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                  >
+                    <motion.span
+                      className={`absolute inset-0 ${social.mobileGradientClassName}`}
+                      initial={{ x: '-100%' }}
+                      whileHover={{ x: 0 }}
+                      transition={{ duration: 0.3 }}
+                    />
+                    <span className={`relative z-10 transition-colors select-none flex items-center gap-2 ${social.mobileHoverTextClassName}`}>
+                      <span className={`w-6 h-6 rounded-full ${social.mobileIconClassName} flex items-center justify-center`}>
+                        <SocialIcon platform={social.platform} className="w-3.5 h-3.5 text-white" />
+                      </span>
+                      <div>
+                        <span className="block text-sm">{social.handle}</span>
+                        <span className="block text-[10px] text-gray-500 font-normal">{social.sublabel}</span>
+                      </div>
+                    </span>
+                    <span className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                       </svg>
                     </span>
-                    <span>
-                      <span className="block text-sm">@konacoffeedonut</span>
-                      <span className="block text-[10px] text-gray-500 font-normal">Kona Coffee Donut</span>
-                    </span>
-                  </span>
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </span>
-                </a>
-                <a
-                  href="https://www.instagram.com/mochinut_fortlee/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMenuOpen(false)}
-                  className="relative block py-2.5 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
-                >
-                  <motion.span
-                    className="absolute inset-0 bg-gradient-to-r from-pink-50 via-rose-50 to-pink-50"
-                    initial={{ x: '-100%' }}
-                    whileHover={{ x: 0 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                  <span className="relative z-10 group-hover:text-pink-600 transition-colors select-none flex items-center gap-2">
-                    <span className="w-6 h-6 rounded-full bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center">
-                      <svg className="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                      </svg>
-                    </span>
-                    <span>
-                      <span className="block text-sm">@mochinut_fortlee</span>
-                      <span className="block text-[10px] text-gray-500 font-normal">Mochiland</span>
-                    </span>
-                  </span>
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <svg className="w-4 h-4 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </span>
-                </a>
+                  </a>
+                ))}
               </div>
             </div>
           </motion.div>
@@ -1471,17 +1461,21 @@ export default function Home() {
                 loading="lazy"
                 className="h-8 md:h-10 w-auto brightness-0 invert"
               />
-              <a
-                href="https://instagram.com/konacoffeedonut"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-white/60 hover:text-pink-400 transition-colors text-sm"
-              >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-                @konacoffeedonut
-              </a>
+              <div className="flex flex-wrap gap-2">
+                {konaSocialLinks.map((social) => (
+                  <a
+                    key={social.platform}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visit Kona Coffee Donut on ${social.label}`}
+                    className={`inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/70 transition-colors hover:border-white/25 ${social.footerHoverClassName}`}
+                  >
+                    <SocialIcon platform={social.platform} className="w-4 h-4" />
+                    <span>{social.label}</span>
+                  </a>
+                ))}
+              </div>
             </div>
 
             {/* Right: Navigation */}

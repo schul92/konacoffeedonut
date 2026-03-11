@@ -17,7 +17,7 @@ test.describe('Footer', () => {
     expect(footerContent).toBeTruthy();
 
     // Look for common footer elements (social links, copyright, etc.)
-    const socialLinks = footer.locator('a[href*="instagram"], a[href*="facebook"], a[href*="twitter"]');
+    const socialLinks = footer.locator('a[href*="instagram"], a[href*="facebook"], a[href*="twitter"], a[href*="x.com"], a[href*="bsky.app"], a[href*="share.google"]');
     const socialLinkCount = await socialLinks.count();
     // Social links are optional
     console.log(`Social links found: ${socialLinkCount}`);
