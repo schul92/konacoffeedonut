@@ -15,7 +15,7 @@ const translations = {
   en: {
     badge: "NOW HIRING",
     title: "Join Our Waikiki Team",
-    subtitle: "Grand Opening February 2026",
+    subtitle: "Grand Opening Early March 2026",
     description: "Full time & Part time positions available! Join Kona Coffee Donut in the heart of Waikiki.",
     positions: "Open Positions",
     positionList: ["Manager", "Assistant Manager", "Barista", "Counter Help / Cashier", "Baker (Donuts)", "Musubi Cook"],

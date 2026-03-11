@@ -44,7 +44,7 @@ const translations = {
       description: "Start your day with our refreshing acai bowls! Pair with our Kona coffee for the perfect Hawaiian breakfast.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening February 2026",
+      hours: "Opening Early March 2026",
     },
   },
   ja: {
