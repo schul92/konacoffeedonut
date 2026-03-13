@@ -44,7 +44,7 @@ const translations = {
       description: "Visit us in Waikiki to experience authentic Kona coffee paired with our fresh mochi donuts and Hawaiian treats.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening February 2026",
+      hours: "Opening Late March ~ Early April 2026",
     },
   },
   ja: {

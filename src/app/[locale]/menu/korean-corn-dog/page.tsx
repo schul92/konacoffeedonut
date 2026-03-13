@@ -44,7 +44,7 @@ const translations = {
       description: "Try Hawaii's best Korean corn dogs! Perfect with our Kona coffee for an unforgettable snack experience.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening February 2026",
+      hours: "Opening Late March ~ Early April 2026",
     },
   },
   ja: {

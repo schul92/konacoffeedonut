@@ -44,7 +44,7 @@ const translations = {
       description: "Beat the Hawaii heat with our refreshing bingsu! Pair it with our Kona coffee and mochi donuts for the ultimate treat.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening February 2026",
+      hours: "Opening Late March ~ Early April 2026",
     },
   },
   ja: {
