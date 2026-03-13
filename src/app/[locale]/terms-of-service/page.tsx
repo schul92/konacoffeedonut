@@ -8,7 +8,7 @@ import { ArrowLeft, FileText } from 'lucide-react';
 const translations = {
   en: {
     title: "Terms of Service",
-    lastUpdated: "Last updated: February 2026",
+    lastUpdated: "Last updated: March 2026",
     back: "Back to Home",
     sections: [
       {
@@ -51,7 +51,7 @@ const translations = {
   },
   ja: {
     title: "利用規約",
-    lastUpdated: "最終更新：2026年2月",
+    lastUpdated: "最終更新：2026年3月",
     back: "ホームに戻る",
     sections: [
       {
@@ -74,7 +74,7 @@ const translations = {
   },
   ko: {
     title: "이용약관",
-    lastUpdated: "최종 업데이트: 2026년 2월",
+    lastUpdated: "최종 업데이트: 2026년 3월",
     back: "홈으로 돌아가기",
     sections: [
       {
@@ -93,7 +93,7 @@ const translations = {
   },
   zh: {
     title: "服务条款",
-    lastUpdated: "最后更新：2026年2月",
+    lastUpdated: "最后更新：2026年3月",
     back: "返回首页",
     sections: [
       {
