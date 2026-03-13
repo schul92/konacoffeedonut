@@ -67,7 +67,7 @@ const content = {
     },
     hours: {
       title: 'Opening Soon',
-      text: 'Grand Opening February 2026',
+      text: 'Grand Opening Late March ~ Early April 2026',
       note: 'Fresh donuts and premium Kona coffee coming to Waikiki!'
     },
     cta: {

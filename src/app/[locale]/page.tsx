@@ -558,7 +558,6 @@ export default function Home() {
                         <span className="block text-sm">{social.handle}</span>
                         <span className="block text-[10px] text-gray-500 font-normal">{social.sublabel}</span>
                       </div>
-<<<<<<< HEAD
                     </span>
                     <span className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                       <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -85,8 +85,8 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     event: {
       '@type': 'Event',
       name: 'Grand Opening - Kona Coffee Donut Waikiki',
-      startDate: '2026-02-25T07:00:00-10:00',
-      endDate: '2026-02-25T21:00:00-10:00',
+      startDate: '2026-04-01T07:00:00-10:00',
+      endDate: '2026-04-01T21:00:00-10:00',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       eventStatus: 'https://schema.org/EventScheduled',
       location: {
@@ -107,7 +107,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        validFrom: '2026-02-25T07:00:00-10:00',
+        validFrom: '2026-04-01T07:00:00-10:00',
       },
     },
     openingHoursSpecification: [
@@ -116,7 +116,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
         opens: '07:00',
         closes: '21:00',
-        validFrom: '2026-02-25',
+        validFrom: '2026-04-01',
       },
     ],
     servesCuisine: ['Coffee', 'Donuts', 'Desserts', 'Hawaiian'],
@@ -544,7 +544,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     },
     // GEO: Specific product attributes for citation readiness
     material: 'Rice flour (mochiko), 100% Kona coffee beans',
-    productionDate: '2026-02-01',
+    productionDate: '2026-04-01',
     countryOfOrigin: {
       '@type': 'Country',
       name: 'United States',
@@ -557,7 +557,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       highPrice: '12.00',
       offerCount: '25',
       availability: 'https://schema.org/PreOrder',
-      availabilityStarts: '2026-02-01',
+      availabilityStarts: '2026-04-01',
       url: `https://www.konacoffeedonut.com/${locale}#menu`,
       seller: {
         '@id': 'https://www.konacoffeedonut.com/#organization',
