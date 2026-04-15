@@ -25,6 +25,10 @@
         "name": "Kona Coffee",
         "description": "Premium Kona coffee by Honolulu Coffee, Hawaii's number one premium Kona coffee roaster"
       },
+      "shavedice": {
+        "name": "Hawaiian Shaved Ice",
+        "description": "Authentic Hawaiian shaved ice with tropical fruit syrups - lilikoi, guava, coconut & more"
+      },
       "bingsu": {
         "name": "Bingsu",
         "description": "Hawaiian style bingsu made with fresh fruits and Korean style shaved ice"
@@ -62,7 +66,7 @@
   },
   "meta": {
     "title": "Best Donuts Near Me in Waikiki | Fresh Kona Coffee & Malasadas Daily",
-    "description": "🍩 Fresh artisan donuts & authentic Kona coffee in Waikiki! Try our famous mochi donuts, malasadas & bingsu. Grand Opening Late March at 2142 Kalākaua Ave. Order now for pickup!"
+    "description": "🍩 Fresh artisan donuts & authentic Kona coffee in Waikiki! Try our famous mochi donuts, malasadas & bingsu. Grand Opening Late April 2026 at 2142 Kalākaua Ave. Order now for pickup!"
   },
   "aboutKonaCoffee": {
     "hero": {
@@ -213,7 +217,7 @@
     },
     "cta": {
       "title": "Ready to Taste the Difference?",
-      "subtitle": "Visit us at 2142 Kalākaua Ave, Waikiki. Opening Late March 2026",
+      "subtitle": "Visit us at 2142 Kalākaua Ave, Waikiki. Opening Late April 2026",
       "visitUs": "Visit Us",
       "seeMenu": "See Our Menu"
     }

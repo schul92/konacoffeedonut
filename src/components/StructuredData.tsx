@@ -35,11 +35,11 @@ export default function StructuredData({ locale }: StructuredDataProps) {
   // GEO-Optimized Entity Introduction with Citations & Data (CITABLE framework)
   // Includes: specific statistics, authoritative sources, verifiable claims
   const entityIntro = {
-    en: 'Kona Coffee Donut is a Hawaiian café and bakery at 2142 Kalakaua Ave, Honolulu, HI 96815, opening Late March ~ Early April 2026. Located 400 meters (5-minute walk) from Waikiki Beach. We proudly serve Honolulu Coffee (est. 1992, Hawaii\'s largest Kona coffee chain), featuring 100% pure Kona coffee—grown at 500-900m elevation on Mauna Loa and Hualalai volcanoes, representing less than 1% of global coffee production (Kona Coffee Council). We also feature MOCHILAND artisan mochi donuts (50+ US locations), freshly prepared daily in-store using rice flour (mochiko). Open 7AM-9PM daily (14 hours).',
-    ja: 'Kona Coffee Donutは2142 Kalakaua Ave, Honolulu, HI 96815に位置し、2026年3月下旬〜4月上旬オープン。ワイキキビーチから400m（徒歩5分）。ホノルルコーヒー（1992年創業、ハワイ最大のコナコーヒーチェーン）の100%純粋コナコーヒーを誇りを持って提供。コナコーヒーはマウナロア山とフアラライ山の標高500-900mで栽培され、世界のコーヒー生産量の1%未満（コナコーヒー協会）。MOCHILAND（米国50店舗以上）の職人モチドーナツを毎日店内で手作り。営業時間：毎日7時〜21時（14時間）。',
-    ko: 'Kona Coffee Donut은 2142 Kalakaua Ave, Honolulu, HI 96815에 위치하며, 2026년 3월 말~4월 초 오픈. 와이키키 비치에서 400m(도보 5분). 호놀룰루 커피(1992년 설립, 하와이 최대 코나 커피 체인)의 100% 순수 코나 커피를 자랑스럽게 제공. 코나 커피는 마우나 로아와 후알라라이 화산의 해발 500-900m에서 재배되며 전 세계 생산량의 1% 미만(코나 커피 협회). MOCHILAND(미국 50개 이상 매장)의 장인 모찌 도넛을 매일 매장에서 직접 제조. 영업시간: 매일 7시-21시(14시간).',
-    zh: 'Kona Coffee Donut位于2142 Kalakaua Ave, Honolulu, HI 96815，2026年3月下旬至4月上旬开业。距威基基海滩400米（步行5分钟）。自豪地供应檀香山咖啡（1992年成立，夏威夷最大科纳咖啡连锁）的100%纯正科纳咖啡——产自冒纳罗亚和胡阿拉莱火山海拔500-900米处，仅占全球咖啡产量不到1%（科纳咖啡协会）。提供MOCHILAND（美国50多家门店）手工麻糬甜甜圈，每天店内新鲜制作。营业时间：每天7点-21点（14小时）。',
-    es: 'Kona Coffee Donut es un café hawaiano en 2142 Kalakaua Ave, Honolulu, HI 96815, apertura finales de marzo ~ principios de abril 2026. A 400 metros (5 min a pie) de Waikiki Beach. Orgullosamente servimos Honolulu Coffee (est. 1992, la cadena de café Kona más grande de Hawái), con café 100% Kona puro—cultivado a 500-900m de altitud en los volcanes Mauna Loa y Hualalai, representando menos del 1% de la producción mundial (Kona Coffee Council). También servimos donuts mochi artesanales de MOCHILAND (50+ ubicaciones en EE.UU.), preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
+    en: 'Kona Coffee Donut is a Hawaiian café and bakery at 2142 Kalakaua Ave, Honolulu, HI 96815, opening Late April 2026. Located 400 meters (5-minute walk) from Waikiki Beach. We proudly serve Honolulu Coffee (est. 1992, Hawaii\'s largest Kona coffee chain), featuring 100% pure Kona coffee—grown at 500-900m elevation on Mauna Loa and Hualalai volcanoes, representing less than 1% of global coffee production (Kona Coffee Council). We also feature MOCHILAND artisan mochi donuts (50+ US locations), freshly prepared daily in-store using rice flour (mochiko). Open 7AM-9PM daily (14 hours).',
+    ja: 'Kona Coffee Donutは2142 Kalakaua Ave, Honolulu, HI 96815に位置し、2026年4月下旬オープン。ワイキキビーチから400m（徒歩5分）。ホノルルコーヒー（1992年創業、ハワイ最大のコナコーヒーチェーン）の100%純粋コナコーヒーを誇りを持って提供。コナコーヒーはマウナロア山とフアラライ山の標高500-900mで栽培され、世界のコーヒー生産量の1%未満（コナコーヒー協会）。MOCHILAND（米国50店舗以上）の職人モチドーナツを毎日店内で手作り。営業時間：毎日7時〜21時（14時間）。',
+    ko: 'Kona Coffee Donut은 2142 Kalakaua Ave, Honolulu, HI 96815에 위치하며, 2026년 4월 말 오픈. 와이키키 비치에서 400m(도보 5분). 호놀룰루 커피(1992년 설립, 하와이 최대 코나 커피 체인)의 100% 순수 코나 커피를 자랑스럽게 제공. 코나 커피는 마우나 로아와 후알라라이 화산의 해발 500-900m에서 재배되며 전 세계 생산량의 1% 미만(코나 커피 협회). MOCHILAND(미국 50개 이상 매장)의 장인 모찌 도넛을 매일 매장에서 직접 제조. 영업시간: 매일 7시-21시(14시간).',
+    zh: 'Kona Coffee Donut位于2142 Kalakaua Ave, Honolulu, HI 96815，2026年4月下旬开业。距威基基海滩400米（步行5分钟）。自豪地供应檀香山咖啡（1992年成立，夏威夷最大科纳咖啡连锁）的100%纯正科纳咖啡——产自冒纳罗亚和胡阿拉莱火山海拔500-900米处，仅占全球咖啡产量不到1%（科纳咖啡协会）。提供MOCHILAND（美国50多家门店）手工麻糬甜甜圈，每天店内新鲜制作。营业时间：每天7点-21点（14小时）。',
+    es: 'Kona Coffee Donut es un café hawaiano en 2142 Kalakaua Ave, Honolulu, HI 96815, apertura finales de abril 2026. A 400 metros (5 min a pie) de Waikiki Beach. Orgullosamente servimos Honolulu Coffee (est. 1992, la cadena de café Kona más grande de Hawái), con café 100% Kona puro—cultivado a 500-900m de altitud en los volcanes Mauna Loa y Hualalai, representando menos del 1% de la producción mundial (Kona Coffee Council). También servimos donuts mochi artesanales de MOCHILAND (50+ ubicaciones en EE.UU.), preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
   };
 
   // Local Business Schema (Enhanced with Opening Date)
@@ -65,7 +65,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     email: 'info@konacoffeedonut.com',
     priceRange: '$$',
     // GEO: Add founding date for entity credibility
-    foundingDate: '2026-04-01',
+    foundingDate: '2026-04-25',
     // GEO: Add slogan for brand recognition
     slogan: 'Authentic Hawaiian Coffee & Artisan Mochi Donuts',
     address: {
@@ -85,8 +85,8 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     event: {
       '@type': 'Event',
       name: 'Grand Opening - Kona Coffee Donut Waikiki',
-      startDate: '2026-04-01T07:00:00-10:00',
-      endDate: '2026-04-01T21:00:00-10:00',
+      startDate: '2026-04-25T07:00:00-10:00',
+      endDate: '2026-04-25T21:00:00-10:00',
       eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
       eventStatus: 'https://schema.org/EventScheduled',
       location: {
@@ -107,7 +107,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        validFrom: '2026-04-01T07:00:00-10:00',
+        validFrom: '2026-04-25T07:00:00-10:00',
       },
     },
     openingHoursSpecification: [
@@ -116,7 +116,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
         opens: '07:00',
         closes: '21:00',
-        validFrom: '2026-04-01',
+        validFrom: '2026-04-25',
       },
     ],
     servesCuisine: ['Coffee', 'Donuts', 'Desserts', 'Hawaiian'],
@@ -544,7 +544,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     },
     // GEO: Specific product attributes for citation readiness
     material: 'Rice flour (mochiko), 100% Kona coffee beans',
-    productionDate: '2026-04-01',
+    productionDate: '2026-04-25',
     countryOfOrigin: {
       '@type': 'Country',
       name: 'United States',
@@ -557,7 +557,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       highPrice: '12.00',
       offerCount: '25',
       availability: 'https://schema.org/PreOrder',
-      availabilityStarts: '2026-04-01',
+      availabilityStarts: '2026-04-25',
       url: `https://www.konacoffeedonut.com/${locale}#menu`,
       seller: {
         '@id': 'https://www.konacoffeedonut.com/#organization',

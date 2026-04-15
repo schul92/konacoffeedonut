@@ -44,7 +44,7 @@ const translations = {
       description: "Visit us in Waikiki and experience authentic malasadas paired with our famous Kona coffee and mochi donuts.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening Late March ~ Early April 2026",
+      hours: "Opening Late April 2026",
     },
   },
   ja: {
@@ -83,7 +83,7 @@ const translations = {
       description: "ワイキキの当店で、コナコーヒーやモチドーナツと一緒に本格マラサダをお楽しみください。",
       button: "お店を訪問",
       location: "2142 カラカウア通り、ワイキキ",
-      hours: "2026年3月下旬オープン",
+      hours: "2026年4月下旬オープン",
     },
   },
   ko: {
@@ -122,7 +122,7 @@ const translations = {
       description: "와이키키 매장에서 코나 커피와 모찌 도넛과 함께 정통 말라사다를 경험하세요.",
       button: "매장 방문",
       location: "2142 칼라카우아 애비뉴, 와이키키",
-      hours: "2026년 3월 하순 오픈",
+      hours: "2026년 4월 말 오픈",
     },
   },
   zh: {
@@ -161,7 +161,7 @@ const translations = {
       description: "来威基基店品尝正宗马拉萨达，搭配科纳咖啡和麻糬甜甜圈。",
       button: "访问我们",
       location: "2142 卡拉卡瓦大道，威基基",
-      hours: "2026年3月下旬开业",
+      hours: "2026年4月下旬开业",
     },
   },
 };

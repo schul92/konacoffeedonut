@@ -20,14 +20,14 @@ import {
   ArrowLeft
 } from 'lucide-react';
 
-const APPLICATION_URL = 'https://docs.google.com/forms/d/1GT3pewI8J-HEk0Paz1dK41NfUP7VNtJeD8Zhq0Sawu8/viewform';
+const APPLICATION_URL = 'https://www.indeed.com/job/donut-coffee-team-member-a24bfbecbb5d83ee';
 
 const translations = {
   en: {
     hero: {
       badge: "NOW HIRING",
       title: "Join Our Waikiki Team",
-      subtitle: "Grand Opening Late March 2026",
+      subtitle: "Grand Opening Late April 2026",
       description: "Be part of something special! We're building an amazing team for our new Waikiki location. Full-time and part-time positions available.",
     },
     positions: {
@@ -88,7 +88,7 @@ const translations = {
     },
     cta: {
       title: "Ready to Apply?",
-      description: "Click below to fill out our application form. We review applications daily and will contact qualified candidates.",
+      description: "Click below to apply on Indeed. We review applications daily and will contact qualified candidates.",
       button: "Apply Now",
       note: "Applications are reviewed within 48 hours",
     },
@@ -103,7 +103,7 @@ const translations = {
     hero: {
       badge: "スタッフ募集中",
       title: "ワイキキチームに参加しよう",
-      subtitle: "2026年3月下旬グランドオープン",
+      subtitle: "4月下旬グランドオープン",
       description: "特別な瞬間の一員になりませんか！ワイキキの新店舗で素晴らしいチームを作っています。フルタイム・パートタイム募集中。",
     },
     positions: {
@@ -164,7 +164,7 @@ const translations = {
     },
     cta: {
       title: "応募する準備はできましたか？",
-      description: "下のボタンをクリックして応募フォームに記入してください。毎日応募を確認し、資格のある候補者に連絡します。",
+      description: "下のボタンからIndeedでご応募ください。毎日応募を確認し、資格のある候補者に連絡します。",
       button: "今すぐ応募",
       note: "48時間以内に応募を確認します",
     },
@@ -179,7 +179,7 @@ const translations = {
     hero: {
       badge: "채용 중",
       title: "와이키키 팀에 합류하세요",
-      subtitle: "2026년 3월 하순 그랜드 오픈",
+      subtitle: "4월 말 그랜드 오픈",
       description: "특별한 순간의 일원이 되세요! 와이키키 신규 매장을 위한 멋진 팀을 구성하고 있습니다. 풀타임 및 파트타임 모집 중.",
     },
     positions: {
@@ -240,7 +240,7 @@ const translations = {
     },
     cta: {
       title: "지원할 준비가 되셨나요?",
-      description: "아래 버튼을 클릭하여 지원서를 작성해 주세요. 매일 지원서를 검토하고 자격을 갖춘 후보자에게 연락드립니다.",
+      description: "아래 버튼을 눌러 Indeed에서 지원해 주세요. 매일 지원서를 검토하고 자격을 갖춘 후보자에게 연락드립니다.",
       button: "지금 지원하기",
       note: "48시간 이내에 지원서를 검토합니다",
     },
@@ -255,7 +255,7 @@ const translations = {
     hero: {
       badge: "正在招聘",
       title: "加入我们的威基基团队",
-      subtitle: "2026年3月下旬盛大开业",
+      subtitle: "4月下旬盛大开业",
       description: "成为特别时刻的一部分！我们正在为威基基新店组建一支出色的团队。全职和兼职职位招聘中。",
     },
     positions: {
@@ -316,7 +316,7 @@ const translations = {
     },
     cta: {
       title: "准备好申请了吗？",
-      description: "点击下方按钮填写申请表。我们每天审核申请，并会联系符合条件的候选人。",
+      description: "点击下方按钮前往Indeed申请。我们每天审核申请，并会联系符合条件的候选人。",
       button: "立即申请",
       note: "48小时内审核申请",
     },
@@ -348,7 +348,7 @@ export default function CareersPage() {
   const handleApply = (source: string = 'careers_page') => {
     // Track the conversion
     trackJobApplyClick(source, locale);
-    // Open application form
+    // Open Indeed job posting
     window.open(APPLICATION_URL, '_blank', 'noopener,noreferrer');
   };
 

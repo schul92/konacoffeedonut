@@ -53,7 +53,7 @@ Unfortunately, we won't be able to conduct your interview at the originally sche
 
 We will contact you shortly via email or phone call to reschedule your interview at a time that works for both of us.
 
-Thank you for your patience and understanding. We're excited about the possibility of having you join our team for our grand opening on February 25th!
+Thank you for your patience and understanding. We're excited about the possibility of having you join our team for our grand opening in late April 2026!
 
 Best regards,
 
@@ -93,7 +93,7 @@ konacoffeedonut.com
             
             <p><strong>We will contact you shortly via email or phone call</strong> to reschedule your interview at a time that works for both of us.</p>
             
-            <p>Thank you for your patience and understanding. We're excited about the possibility of having you join our team for our grand opening on <strong>February 25th</strong>!</p>
+            <p>Thank you for your patience and understanding. We're excited about the possibility of having you join our team for our grand opening in <strong>late April 2026</strong>!</p>
             
             <div class="signature">
                 <p>Best regards,</p>

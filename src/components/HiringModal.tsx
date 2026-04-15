@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { X, Coffee, Sparkles, MapPin, Calendar, ExternalLink } from 'lucide-react';
 import { trackJobApplyClick, trackHiringModalView, trackHiringModalDismiss } from '@/lib/analytics';
 
-const APPLICATION_URL = 'https://docs.google.com/forms/d/1GT3pewI8J-HEk0Paz1dK41NfUP7VNtJeD8Zhq0Sawu8/edit';
+const APPLICATION_URL = 'https://www.indeed.com/job/donut-coffee-team-member-a24bfbecbb5d83ee';
 
 interface HiringModalProps {
   locale?: string;
@@ -15,7 +15,7 @@ const translations = {
   en: {
     badge: "NOW HIRING",
     title: "Join Our Waikiki Team",
-    subtitle: "Grand Opening Late March 2026",
+    subtitle: "Grand Opening Late April 2026",
     description: "Full time & Part time positions available! Join Kona Coffee Donut in the heart of Waikiki.",
     positions: "Open Positions",
     positionList: ["Manager", "Assistant Manager", "Barista", "Counter Help / Cashier", "Baker (Donuts)", "Musubi Cook"],
@@ -23,13 +23,13 @@ const translations = {
     perkList: ["Flexible scheduling", "Employee discounts", "Fun team environment", "Growth opportunities"],
     location: "2142 Kalakaua Ave, Waikiki",
     applyNow: "Apply Now",
-    applyDescription: "Click to fill out our application form",
+    applyDescription: "Click to apply on Indeed",
     maybeLater: "Maybe Later",
   },
   ja: {
     badge: "スタッフ募集中",
     title: "ワイキキチームに参加しよう",
-    subtitle: "2026年3月下旬グランドオープン",
+    subtitle: "4月下旬グランドオープン",
     description: "フルタイム・パートタイム募集中！ワイキキの中心にあるKona Coffee Donutで働きませんか。",
     positions: "募集職種",
     positionList: ["マネージャー", "アシスタントマネージャー", "バリスタ", "カウンター/キャッシャー", "ベイカー（ドーナツ）", "むすびクック"],
@@ -37,13 +37,13 @@ const translations = {
     perkList: ["柔軟なシフト", "従業員割引", "楽しいチーム環境", "キャリアアップの機会"],
     location: "2142 カラカウア通り、ワイキキ",
     applyNow: "今すぐ応募",
-    applyDescription: "応募フォームに記入してください",
+    applyDescription: "Indeedで応募する",
     maybeLater: "後で",
   },
   ko: {
     badge: "채용 중",
     title: "와이키키 팀에 합류하세요",
-    subtitle: "2026년 3월 하순 그랜드 오픈",
+    subtitle: "4월 말 그랜드 오픈",
     description: "풀타임 & 파트타임 모집 중! 와이키키 중심부의 Kona Coffee Donut에서 함께해요.",
     positions: "모집 직종",
     positionList: ["매니저", "어시스턴트 매니저", "바리스타", "카운터/캐셔", "베이커 (도넛)", "무스비 쿡"],
@@ -51,13 +51,13 @@ const translations = {
     perkList: ["유연한 스케줄", "직원 할인", "즐거운 팀 환경", "성장 기회"],
     location: "2142 칼라카우아 애비뉴, 와이키키",
     applyNow: "지금 지원하기",
-    applyDescription: "지원서를 작성해 주세요",
+    applyDescription: "Indeed에서 지원하기",
     maybeLater: "나중에",
   },
   zh: {
     badge: "正在招聘",
     title: "加入我们的威基基团队",
-    subtitle: "2026年3月下旬盛大开业",
+    subtitle: "4月下旬盛大开业",
     description: "全职和兼职职位招聘中！加入位于威基基中心的Kona Coffee Donut。",
     positions: "招聘职位",
     positionList: ["经理", "助理经理", "咖啡师", "柜台/收银员", "面包师（甜甜圈）", "饭团厨师"],
@@ -65,7 +65,7 @@ const translations = {
     perkList: ["灵活排班", "员工折扣", "愉快的团队氛围", "成长机会"],
     location: "2142 卡拉卡瓦大道，威基基",
     applyNow: "立即申请",
-    applyDescription: "点击填写申请表",
+    applyDescription: "点击前往Indeed申请",
     maybeLater: "稍后再说",
   },
 };
@@ -100,7 +100,7 @@ export default function HiringModal({ locale = 'en' }: HiringModalProps) {
   const handleApply = () => {
     // Track conversion
     trackJobApplyClick('hiring_modal', locale);
-    // Open application form
+    // Open Indeed job posting
     window.open(APPLICATION_URL, '_blank', 'noopener,noreferrer');
   };
 
