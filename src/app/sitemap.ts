@@ -19,6 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/breakfast-waikiki',
     '/farm-to-donut',
     '/malasada-hawaii',
+    '/bingsu-waikiki',
+    '/korean-corn-dog-waikiki',
+    '/mochi-donuts-waikiki',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -42,6 +45,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/breakfast-waikiki': 0.85, // High-value local SEO keyword page
     '/farm-to-donut': 0.8, // Story/brand page
     '/malasada-hawaii': 0.85, // High-value product SEO keyword page
+    '/bingsu-waikiki': 0.85, // High-value product SEO keyword page
+    '/korean-corn-dog-waikiki': 0.85, // High-value product SEO keyword page
+    '/mochi-donuts-waikiki': 0.85, // High-value product SEO keyword page
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
     '/menu/kona-coffee': 0.85,
@@ -64,6 +70,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/breakfast-waikiki': 'weekly',
     '/farm-to-donut': 'monthly',
     '/malasada-hawaii': 'weekly',
+    '/bingsu-waikiki': 'weekly',
+    '/korean-corn-dog-waikiki': 'weekly',
+    '/mochi-donuts-waikiki': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',
     '/menu/kona-coffee': 'weekly',

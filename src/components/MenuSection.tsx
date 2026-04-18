@@ -19,6 +19,7 @@ const menuItems: MenuItem[] = [
   { id: 'donuts', menuImage: '/images/menu/donut.webp', video: '/videos/donut.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'malasada', menuImage: '/images/menu/malasada.webp', video: '/videos/malasada.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'coffee', menuImage: '/images/menu/coffee.webp', video: '/videos/coffee.mp4', iconImage: '/icons/honolulu_coffee.png', comingSoon: true },
+  { id: 'shavedice', menuImage: '/images/menu/shavedice.webp', video: '/videos/shavedice.mp4', icon: '🍧', comingSoon: true },
   { id: 'bingsu', menuImage: '/images/menu/bingsu.webp', video: '/videos/bingsu.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'hotdog', menuImage: '/images/menu/hotdog.webp', video: '/videos/hotdog.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'acai', menuImage: '/images/menu/acai.webp', video: '/videos/acai.mp4', iconImage: '/icons/mochi_land_circle.png', comingSoon: true },
@@ -55,6 +56,7 @@ export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
     switch (id) {
       case 'coffee': return '☕';
       case 'acai': return '🍇';
+      case 'shavedice': return '🍧';
       default: return '✨';
     }
   };

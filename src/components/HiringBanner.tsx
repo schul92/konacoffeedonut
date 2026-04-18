@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Sparkles, X } from 'lucide-react';
 import { useState, useEffect, useCallback } from 'react';
 import { trackJobApplyClick } from '@/lib/analytics';
@@ -51,16 +52,28 @@ export const isBannerVisible = (): boolean => {
   return !dismissed || dismissedTime < threeDaysAgo;
 };
 
+// Pages where banner should NOT be shown
+const HIDDEN_ON_PATHS = ['/menu'];
+
 export default function HiringBanner({ locale = 'en' }: HiringBannerProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
   const t = translations[locale as keyof typeof translations] || translations.en;
 
+  // Check if current path should hide the banner
+  const shouldHideOnPath = HIDDEN_ON_PATHS.some(path => pathname?.includes(path));
+
   useEffect(() => {
+    if (shouldHideOnPath) {
+      setIsVisible(false);
+      dispatchBannerEvent(false);
+      return;
+    }
     const shouldShow = isBannerVisible();
     setIsVisible(shouldShow);
     // Dispatch event on mount
     dispatchBannerEvent(shouldShow);
-  }, []);
+  }, [shouldHideOnPath]);
 
   const handleDismiss = useCallback(() => {
     setIsVisible(false);

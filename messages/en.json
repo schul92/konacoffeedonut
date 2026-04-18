@@ -175,6 +175,18 @@
       "description": "Best breakfast in Waikiki! Fresh Kona coffee, mochi donuts, malasadas & acai bowls. Open 7AM daily on Kalakaua Ave, walking distance from Waikiki Beach."
     }
   },
+  "koreanCornDog": {
+    "meta": {
+      "title": "Korean Corn Dogs in Waikiki | Crispy Cheese Dogs Hawaii",
+      "description": "Try authentic Korean corn dogs in Waikiki — crispy rice flour batter, stretchy mozzarella cheese, and crunchy coatings. 6 varieties fried fresh to order at Kona Coffee Donut on Kalakaua Ave."
+    }
+  },
+  "mochiDonutsWaikiki": {
+    "meta": {
+      "title": "Mochi Donuts Waikiki | Best Mochi Donuts in Hawaii | MOCHILAND",
+      "description": "Best mochi donuts in Waikiki! Freshly made daily with MOCHILAND. 12+ flavors including Ube, Matcha & Black Sesame. Chewy-crispy texture, steps from Waikiki Beach."
+    }
+  },
   "farmToDonut": {
     "meta": {
       "title": "Farm to Donut | Our Story | Kona Coffee Donut",

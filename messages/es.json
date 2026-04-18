@@ -25,6 +25,10 @@
         "name": "Café Kona",
         "description": "Café Kona premium de Honolulu Coffee, el tostador de café Kona número uno de Hawaii"
       },
+      "shavedice": {
+        "name": "Raspado Hawaiano",
+        "description": "Auténtico raspado hawaiano con jarabes de frutas tropicales - maracuyá, guayaba, coco y más"
+      },
       "bingsu": {
         "name": "Bingsu",
         "description": "Bingsu estilo hawaiano con frutas frescas y hielo raspado coreano"
@@ -169,6 +173,18 @@
     "meta": {
       "title": "Desayuno Waikiki | Mejor Café y Donuts de la Mañana",
       "description": "¡El mejor desayuno en Waikiki! Café Kona fresco, donuts de mochi, malasadas y bowls de açaí. Abierto 7AM en Kalakaua Ave, cerca de Waikiki Beach."
+    }
+  },
+  "koreanCornDog": {
+    "meta": {
+      "title": "Korean Corn Dogs en Waikiki | Crispy Cheese Dogs Hawaii",
+      "description": "Prueba auténticos Korean corn dogs en Waikiki — masa crujiente de harina de arroz, mozzarella elástico y coberturas crocantes. 6 variedades fritas al momento en Kona Coffee Donut, Kalakaua Ave."
+    }
+  },
+  "mochiDonutsWaikiki": {
+    "meta": {
+      "title": "Donuts de Mochi Waikiki | Mejores Donuts de Mochi en Hawaii | MOCHILAND",
+      "description": "Los mejores donuts de mochi en Waikiki! Hechos frescos diariamente con MOCHILAND. 12+ sabores incluyendo Ube, Matcha y Sesamo Negro. Textura masticable-crujiente, junto a Waikiki Beach."
     }
   }
 }
