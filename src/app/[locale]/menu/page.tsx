@@ -4,12 +4,114 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import MenuSection from '@/components/MenuSection';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+import SocialIcon from '@/components/SocialIcon';
+import { konaSocialLinks } from '@/lib/socialLinks';
 
 export default function MenuPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
-      {/* Hero Section - with top padding to account for fixed nav + banner */}
-      <section className="relative pt-32 sm:pt-36 pb-16 sm:pb-20 bg-gradient-to-br from-amber-100 via-orange-50 to-amber-50">
+      {/* Custom Header Navigation - Consistent with Landing Page */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4">
+          {/* Desktop Navigation */}
+          <div className="hidden md:grid grid-cols-3 items-center">
+            {/* Left: Navigation Links */}
+            <div className="flex gap-6 lg:gap-8 text-sm lg:text-base">
+              <Link
+                href="/"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg hover:scale-105"
+              >
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
+                  Home
+                </span>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </Link>
+              <Link
+                href="/#location"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg hover:scale-105"
+              >
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
+                  Location
+                </span>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </Link>
+              <Link
+                href="/#about"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg hover:scale-105"
+              >
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
+                  About
+                </span>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </Link>
+              <Link
+                href="/careers"
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg flex items-center gap-1.5 hover:scale-105"
+              >
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
+                  Careers
+                </span>
+                <span className="flex h-2 w-2 relative">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+              </Link>
+            </div>
+
+            {/* Center: Logo */}
+            <div className="flex justify-center">
+              <Link href="/">
+                <Image
+                  src="/konacoffee.webp"
+                  alt="Kona Coffee Donut"
+                  width={200}
+                  height={21}
+                  sizes="200px"
+                  priority
+                  className="h-7 w-auto"
+                />
+              </Link>
+            </div>
+
+            {/* Right: Language Switcher */}
+            <div className="flex justify-end items-center gap-4">
+              <LanguageSwitcher />
+            </div>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden flex justify-between items-center">
+            {/* Left: Back to Home */}
+            <Link href="/" className="text-gray-900 p-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </Link>
+
+            {/* Center: Logo */}
+            <Link href="/" className="flex-1 flex justify-center">
+              <Image
+                src="/konacoffee.webp"
+                alt="Kona Coffee Donut"
+                width={200}
+                height={21}
+                sizes="200px"
+                priority
+                className="h-7 w-auto max-w-full"
+              />
+            </Link>
+
+            {/* Right: Language Switcher */}
+            <div className="p-2">
+              <LanguageSwitcher />
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section - with top padding for fixed nav */}
+      <section className="relative pt-24 pb-16 sm:pt-28 sm:pb-20 bg-gradient-to-br from-amber-100 via-orange-50 to-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -17,7 +119,7 @@ export default function MenuPage() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-              Our Menu
+              Kona Coffee & Donuts Menu
             </h1>
             <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-6">
               Handcrafted with Aloha in Waikiki. Proudly serving Honolulu Coffee&apos;s premium Kona coffee and fresh MOCHILAND mochi donuts.
@@ -25,6 +127,7 @@ export default function MenuPage() {
             <div className="flex flex-wrap justify-center gap-3 text-sm text-gray-500">
               <span className="bg-white/80 px-3 py-1 rounded-full shadow-sm">Mochi Donuts</span>
               <span className="bg-white/80 px-3 py-1 rounded-full shadow-sm">Kona Coffee</span>
+              <span className="bg-white/80 px-3 py-1 rounded-full shadow-sm">Hawaiian Shaved Ice</span>
               <span className="bg-white/80 px-3 py-1 rounded-full shadow-sm">Malasadas</span>
               <span className="bg-white/80 px-3 py-1 rounded-full shadow-sm">Bingsu</span>
               <span className="bg-white/80 px-3 py-1 rounded-full shadow-sm">Acai Bowls</span>
@@ -119,12 +222,13 @@ export default function MenuPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-gray max-w-none">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Best Coffee & Donuts Menu in Waikiki, Honolulu
+              Best Coffee, Donuts & Hawaiian Shaved Ice in Waikiki, Honolulu
             </h2>
             <p className="text-gray-600 mb-4">
-              Kona Coffee Donut offers the best selection of premium Kona coffee and artisan donuts
-              in Waikiki, Honolulu. Our menu features a unique combination of Hawaiian favorites
-              and Korean-inspired treats, all made fresh daily at our Kalakaua Avenue location.
+              Kona Coffee Donut offers the best selection of premium Kona coffee, artisan donuts,
+              and authentic Hawaiian shaved ice in Waikiki, Honolulu. Our menu features a unique
+              combination of Hawaiian favorites and Korean-inspired treats, all made fresh daily
+              at our Kalakaua Avenue location.
             </p>
             <h3 className="text-xl font-semibold text-gray-800 mt-6 mb-3">
               Our Signature Offerings
@@ -146,14 +250,62 @@ export default function MenuPage() {
               pastries, coated in sugar and available with various fillings like custard,
               haupia (coconut), and chocolate.
             </p>
+            <p className="text-gray-600 mb-4">
+              <strong>Hawaiian Shaved Ice:</strong> Beat the Waikiki heat with our authentic
+              Hawaiian shaved ice! Made with finely shaved ice and topped with tropical fruit
+              syrups like lilikoi (passion fruit), guava, and coconut. A refreshing island
+              tradition perfect after a day at the beach.
+            </p>
             <p className="text-gray-600">
               <strong>Korean Favorites:</strong> Cool off with our refreshing bingsu (Korean
-              shaved ice) or enjoy our crispy Korean corn dogs – perfect for a snack while
-              exploring Waikiki Beach.
+              shaved ice with sweet toppings) or enjoy our crispy Korean corn dogs – perfect
+              for a snack while exploring Waikiki Beach.
             </p>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6">
+            <div className="flex items-center gap-2">
+              <Image
+                src="/konacoffee.png"
+                alt="Kona Coffee Donut"
+                width={32}
+                height={32}
+                className="rounded-lg"
+              />
+              <span className="font-semibold">Kona Coffee Donut</span>
+            </div>
+            <p className="text-gray-400 text-sm">
+              © 2025 Kona Coffee Donut. All rights reserved.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">
+                Privacy
+              </Link>
+              <Link href="/faq" className="text-gray-400 hover:text-white text-sm">
+                FAQ
+              </Link>
+              {konaSocialLinks.map((social) => (
+                <a
+                  key={social.platform}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit Kona Coffee Donut on ${social.label}`}
+                  className={`inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1.5 text-sm text-gray-400 transition-colors hover:border-white/20 hover:bg-white/5 ${social.footerHoverClassName}`}
+                >
+                  <SocialIcon platform={social.platform} className="w-4 h-4" />
+                  <span>{social.label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

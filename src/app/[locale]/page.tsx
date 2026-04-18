@@ -224,7 +224,7 @@ export default function Home() {
     <main className="min-h-screen bg-white text-black">
       {/* SEO H1 - Visually hidden but accessible to search engines */}
       <h1 className="sr-only">
-        {t('hero.welcome')} - {t('hero.subtitle')}
+        Kona Coffee & Mochi Donuts in Waikiki | Fresh Malasadas & Bingsu Daily
       </h1>
 
       {/* Hiring Modal */}
