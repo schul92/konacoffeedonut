@@ -35,6 +35,27 @@ const content = {
         excerpt: 'What sets 100% Kona coffee apart from the rest? A deep dive into origin, flavor, and why it\u2019s worth every sip.',
         readTime: 7,
       },
+      {
+        slug: 'korean-food-waikiki',
+        category: 'Food Guide',
+        title: 'Korean Food in Waikiki 2026: The Ultimate K-Food Guide',
+        excerpt: 'From corn dogs to bingsu, Korean BBQ to bibimbap \u2014 your complete guide to the K-food explosion in Waikiki.',
+        readTime: 7,
+      },
+      {
+        slug: 'cheap-eats-waikiki',
+        category: 'Budget Guide',
+        title: 'Cheap Eats in Waikiki Under $15: Best Budget Food 2026',
+        excerpt: 'Waikiki doesn\u2019t have to break the bank. The best affordable eats from $3 donuts to $10 plate lunches.',
+        readTime: 6,
+      },
+      {
+        slug: 'malasada-vs-mochi-donut',
+        category: 'Comparison',
+        title: 'Malasada vs Mochi Donut: Which Hawaiian Treat Wins?',
+        excerpt: 'Portuguese fluffy vs Japanese chewy \u2014 the ultimate Hawaiian donut showdown. Spoiler: you should try both.',
+        readTime: 5,
+      },
     ],
   },
   ja: {
@@ -66,6 +87,9 @@ const content = {
         excerpt: '100%\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u304C\u4ED6\u3068\u9055\u3046\u7406\u7531\u3068\u306F\uFF1F\u539F\u7523\u5730\u3001\u98A8\u5473\u3001\u305D\u306E\u4FA1\u5024\u306B\u8FEB\u308B\u8A73\u3057\u3044\u30AC\u30A4\u30C9\u3002',
         readTime: 7,
       },
+      { slug: 'korean-food-waikiki', category: 'K\u30D5\u30FC\u30C9', title: '\u30EF\u30A4\u30AD\u30AD\u306E\u97D3\u56FD\u6599\u7406 2026\uFF1AK\u30D5\u30FC\u30C9\u5B8C\u5168\u30AC\u30A4\u30C9', excerpt: '\u30B3\u30FC\u30F3\u30C9\u30C3\u30B0\u304B\u3089\u30D3\u30F3\u30B9\u3001\u97D3\u56FDBBQ\u304B\u3089\u30D3\u30D3\u30F3\u30D0\u307E\u3067\u3002\u30EF\u30A4\u30AD\u30AD\u306EK\u30D5\u30FC\u30C9\u9769\u547D\u3092\u5B8C\u5168\u7DB2\u7F85\u3002', readTime: 7 },
+      { slug: 'cheap-eats-waikiki', category: '\u7BC0\u7D04\u30AC\u30A4\u30C9', title: '\u30EF\u30A4\u30AD\u30AD\u306E\u5B89\u3046\u307E\u30B0\u30EB\u30E1 $15\u4EE5\u4E0B\uFF1A2026\u5E74\u7248', excerpt: '\u30EF\u30A4\u30AD\u30AD\u3067\u3082\u304A\u5F97\u306B\u98DF\u3079\u3089\u308C\u308B\uFF01$3\u306E\u30C9\u30FC\u30CA\u30C4\u304B\u3089$10\u306E\u30D7\u30EC\u30FC\u30C8\u30E9\u30F3\u30C1\u307E\u3067\u3002', readTime: 6 },
+      { slug: 'malasada-vs-mochi-donut', category: '\u6BD4\u8F03', title: '\u30DE\u30E9\u30B5\u30C0 vs \u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\uFF1A\u3069\u3061\u3089\u304C\u52DD\u3064\uFF1F', excerpt: '\u30DD\u30EB\u30C8\u30AC\u30EB\u306E\u3075\u308F\u3075\u308F vs \u65E5\u672C\u306E\u3082\u3061\u3082\u3061\u3002\u30CF\u30EF\u30A4\u306E\u30C9\u30FC\u30CA\u30C4\u5BFE\u6C7A\u3002\u7D50\u8AD6\uFF1A\u4E21\u65B9\u98DF\u3079\u308B\u3079\u304D\u3002', readTime: 5 },
     ],
   },
   ko: {
@@ -97,6 +121,9 @@ const content = {
         excerpt: '100% \uCF54\uB098 \uCEE4\uD53C\uAC00 \uB2E4\uB978 \uCEE4\uD53C\uC640 \uB2E4\uB978 \uC810\uC740? \uC6D0\uC0B0\uC9C0, \uD48D\uBBF8, \uADF8 \uAC00\uCE58\uC5D0 \uB300\uD55C \uC0C1\uC138 \uAC00\uC774\uB4DC.',
         readTime: 7,
       },
+      { slug: 'korean-food-waikiki', category: 'K-\uD478\uB4DC', title: '\uC640\uC774\uD0A4\uD0A4 \uD55C\uAD6D \uC74C\uC2DD 2026: K-\uD478\uB4DC \uC644\uBCBD \uAC00\uC774\uB4DC', excerpt: '\uCF58\uB3C4\uADF8\uBD80\uD130 \uBE59\uC218, \uD55C\uAD6DBBQ\uBD80\uD130 \uBE44\uBE54\uBC25\uAE4C\uC9C0. \uC640\uC774\uD0A4\uD0A4 K-\uD478\uB4DC \uD3ED\uBC1C \uC644\uBCBD \uC815\uB9AC.', readTime: 7 },
+      { slug: 'cheap-eats-waikiki', category: '\uC808\uC57D \uAC00\uC774\uB4DC', title: '\uC640\uC774\uD0A4\uD0A4 \uC54C\uB728 \uB9DB\uC9D1 $15 \uC774\uD558: 2026\uB144\uD310', excerpt: '\uC640\uC774\uD0A4\uD0A4\uB3C4 \uC800\uB834\uD558\uAC8C! $3 \uB3C4\uB11B\uBD80\uD130 $10 \uD50C\uB808\uC774\uD2B8 \uB7F0\uCE58\uAE4C\uC9C0 \uCD5C\uACE0\uC758 \uAC00\uC131\uBE44 \uB9DB\uC9D1.', readTime: 6 },
+      { slug: 'malasada-vs-mochi-donut', category: '\uBE44\uAD50', title: '\uB9D0\uB77C\uC0AC\uB2E4 vs \uBAA8\uCE58 \uB3C4\uB11B: \uC5B4\uB290 \uCABD\uC774 \uC2B9\uC790?', excerpt: '\uD3EC\uB974\uD22C\uAC08\uC758 \uD3ED\uC2E0 vs \uC77C\uBCF8\uC758 \uCABD\uB4DD. \uD558\uC640\uC774 \uB3C4\uB11B \uB300\uACB0. \uACB0\uB860: \uB458 \uB2E4 \uBA39\uC5B4\uBCF4\uC138\uC694.', readTime: 5 },
     ],
   },
   zh: {
@@ -128,6 +155,9 @@ const content = {
         excerpt: '100%\u79D1\u7EB3\u5496\u5561\u4E0E\u5176\u4ED6\u5496\u5561\u6709\u4EC0\u4E48\u4E0D\u540C\uFF1F\u6DF1\u5165\u4E86\u89E3\u5176\u4EA7\u5730\u3001\u98CE\u5473\u548C\u4EF7\u503C\u3002',
         readTime: 7,
       },
+      { slug: 'korean-food-waikiki', category: 'K-\u7F8E\u98DF', title: '\u5A01\u57FA\u57FA\u97E9\u56FD\u7F8E\u98DF 2026\uFF1AK-Food\u5B8C\u5168\u6307\u5357', excerpt: '\u4ECE\u7389\u7C73\u70ED\u72D7\u5230\u5228\u51B0\uFF0C\u97E9\u5F0FBBQ\u5230\u77F3\u9505\u62CC\u996D\u3002\u5A01\u57FA\u57FA\u97E9\u98DF\u9769\u547D\u5B8C\u5168\u7F51\u7F57\u3002', readTime: 7 },
+      { slug: 'cheap-eats-waikiki', category: '\u7701\u94B1\u6307\u5357', title: '\u5A01\u57FA\u57FA$15\u4EE5\u4E0B\u5E73\u4EF7\u7F8E\u98DF\uFF1A2026\u7248', excerpt: '\u5A01\u57FA\u57FA\u4E5F\u80FD\u5403\u5F97\u5B9E\u60E0\uFF01\u4ECE$3\u751C\u751C\u5708\u5230$10\u4FBF\u5F53\uFF0C\u6700\u4F73\u6027\u4EF7\u6BD4\u7F8E\u98DF\u3002', readTime: 6 },
+      { slug: 'malasada-vs-mochi-donut', category: '\u5BF9\u6BD4', title: '\u9A6C\u62C9\u8428\u8FBE vs \u9EBB\u85AF\u751C\u751C\u5708\uFF1A\u54EA\u4E2A\u66F4\u80DC\u4E00\u7B79\uFF1F', excerpt: '\u8461\u8404\u7259\u7684\u8F6F\u7EF5 vs \u65E5\u672C\u7684Q\u5F39\u3002\u590F\u5A01\u5937\u751C\u751C\u5708\u5927\u5BF9\u51B3\u3002\u7ED3\u8BBA\uFF1A\u4E24\u4E2A\u90FD\u8981\u5C1D\u3002', readTime: 5 },
     ],
   },
   es: {

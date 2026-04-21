@@ -27,6 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-donuts-waikiki',
     '/blog/what-is-bingsu',
     '/blog/kona-coffee-guide',
+    '/blog/korean-food-waikiki',
+    '/blog/cheap-eats-waikiki',
+    '/blog/malasada-vs-mochi-donut',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -56,7 +59,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog': 0.8,
     '/blog/best-donuts-waikiki': 0.85, // Blog post
     '/blog/what-is-bingsu': 0.85, // Blog post
-    '/blog/kona-coffee-guide': 0.85, // Blog post
+    '/blog/kona-coffee-guide': 0.85,
+    '/blog/korean-food-waikiki': 0.85,
+    '/blog/cheap-eats-waikiki': 0.85,
+    '/blog/malasada-vs-mochi-donut': 0.85,
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
     '/menu/kona-coffee': 0.85,
@@ -86,6 +92,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-donuts-waikiki': 'weekly',
     '/blog/what-is-bingsu': 'weekly',
     '/blog/kona-coffee-guide': 'weekly',
+    '/blog/korean-food-waikiki': 'weekly',
+    '/blog/cheap-eats-waikiki': 'weekly',
+    '/blog/malasada-vs-mochi-donut': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',
     '/menu/kona-coffee': 'weekly',
