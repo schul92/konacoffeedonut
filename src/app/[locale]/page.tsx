@@ -350,6 +350,24 @@ export default function Home() {
                 />
                 <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </motion.button>
+              <motion.a
+                href={`/${locale}/blog`}
+                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
+                  Blog
+                </span>
+                <motion.span
+                  className="absolute inset-0 bg-orange-50 rounded-lg -z-0"
+                  initial={{ scaleX: 0, opacity: 0 }}
+                  whileHover={{ scaleX: 1, opacity: 1 }}
+                  transition={{ duration: 0.2 }}
+                  style={{ originX: 0 }}
+                />
+                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </motion.a>
               <Link
                 href={`/${locale}/careers`}
                 className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg flex items-center gap-1.5 hover:scale-105 active:scale-95"
@@ -495,6 +513,26 @@ export default function Home() {
                 />
                 <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
                   About
+                </span>
+                <span className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </motion.button>
+              <motion.a
+                href={`/${locale}/blog`}
+                className="relative block py-3 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                whileTap={{ scale: 0.98 }}
+              >
+                <motion.span
+                  className="absolute inset-0 bg-orange-50"
+                  initial={{ x: '-100%' }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
+                  Blog
                 </span>
                 <span className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
                   <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
