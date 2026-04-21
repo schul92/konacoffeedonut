@@ -930,7 +930,7 @@ export default function CheapEatsWaikikiPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
       </div>
         {/* ── Hero ──────────────────────────────────────────────── */}
         <section className="relative bg-gradient-to-br from-emerald-800 via-teal-700 to-emerald-900 text-white overflow-hidden">

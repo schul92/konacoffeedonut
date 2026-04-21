@@ -722,7 +722,7 @@ export default function KoreanFoodWaikikiPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
       </div>
         {/* Hero Section */}
         <section className="relative min-h-[55vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-red-900 via-red-800 to-orange-900">

@@ -647,7 +647,7 @@ export default function KonaCoffeeGuidePage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
       </div>
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-amber-950 via-amber-900 to-yellow-900">

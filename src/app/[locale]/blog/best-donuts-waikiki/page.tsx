@@ -885,7 +885,7 @@ export default function BestDonutsWaikikiPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
       </div>
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 overflow-hidden">
@@ -1196,7 +1196,7 @@ export default function BestDonutsWaikikiPage() {
                 href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-amber-900/30 border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-900/50 transition-colors"
+                className="inline-block bg-[#1a1a1a] border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-900/50 transition-colors"
               >
                 {t.cta.directionsButton}
               </a>

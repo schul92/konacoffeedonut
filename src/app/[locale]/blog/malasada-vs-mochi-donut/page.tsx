@@ -479,7 +479,7 @@ export default function MalasadaVsMochiDonutPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
       </div>
         {/* ================================================================ */}
         {/*  HERO — split amber / pink-purple                                */}
