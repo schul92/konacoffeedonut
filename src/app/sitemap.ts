@@ -22,6 +22,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/bingsu-waikiki',
     '/korean-corn-dog-waikiki',
     '/mochi-donuts-waikiki',
+    // Blog pages
+    '/blog',
+    '/blog/best-donuts-waikiki',
+    '/blog/what-is-bingsu',
+    '/blog/kona-coffee-guide',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -48,6 +53,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/bingsu-waikiki': 0.85, // High-value product SEO keyword page
     '/korean-corn-dog-waikiki': 0.85, // High-value product SEO keyword page
     '/mochi-donuts-waikiki': 0.85, // High-value product SEO keyword page
+    '/blog': 0.8,
+    '/blog/best-donuts-waikiki': 0.85, // Blog post
+    '/blog/what-is-bingsu': 0.85, // Blog post
+    '/blog/kona-coffee-guide': 0.85, // Blog post
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
     '/menu/kona-coffee': 0.85,
@@ -73,6 +82,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/bingsu-waikiki': 'weekly',
     '/korean-corn-dog-waikiki': 'weekly',
     '/mochi-donuts-waikiki': 'weekly',
+    '/blog': 'weekly',
+    '/blog/best-donuts-waikiki': 'weekly',
+    '/blog/what-is-bingsu': 'weekly',
+    '/blog/kona-coffee-guide': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',
     '/menu/kona-coffee': 'weekly',

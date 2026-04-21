@@ -6,6 +6,7 @@ import { useParams } from 'next/navigation';
 import Script from 'next/script';
 import { MapPin, Clock, Sparkles, Cookie, Coffee, Star, ChevronRight } from 'lucide-react';
 import JoinTeamCTA from '@/components/JoinTeamCTA';
+import SubpageNav from '@/components/SubpageNav';
 
 const content = {
   en: {
@@ -656,6 +657,7 @@ export default function MochiDonutsWaikikiPage() {
       />
 
       <main className="min-h-screen bg-white">
+      <SubpageNav locale={locale} />
         {/* Hero Section — Pink/Purple Gradient */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-500 via-fuchsia-500 to-purple-600">
           <div className="absolute inset-0 opacity-20">

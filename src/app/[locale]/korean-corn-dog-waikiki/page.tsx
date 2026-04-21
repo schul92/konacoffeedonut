@@ -6,6 +6,7 @@ import { useParams } from 'next/navigation';
 import Script from 'next/script';
 import { Flame, ChefHat, Star, MapPin, Clock, Sparkles } from 'lucide-react';
 import JoinTeamCTA from '@/components/JoinTeamCTA';
+import SubpageNav from '@/components/SubpageNav';
 
 // SEO-optimized content for "korean corn dog waikiki" keyword (near-zero competition)
 const content = {
@@ -552,6 +553,7 @@ export default function KoreanCornDogWaikikiPage() {
       />
 
       <main className="min-h-screen bg-white">
+      <SubpageNav locale={locale} />
         {/* Hero Section */}
         <section className="relative h-[65vh] min-h-[450px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-red-900/80 via-orange-800/70 to-red-900/80 z-10" />
