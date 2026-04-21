@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
@@ -468,6 +469,18 @@ export default function MalasadaVsMochiDonutPage() {
 
       <main className="min-h-screen bg-white">
       <SubpageNav locale={locale} />
+      
+      {/* Hero Image */}
+      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+        <Image
+          src="/images/blog/malasada-vs-mochi-donut.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+      </div>
         {/* ================================================================ */}
         {/*  HERO — split amber / pink-purple                                */}
         {/* ================================================================ */}

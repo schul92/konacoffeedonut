@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { BookOpen, Clock, Globe, IceCreamCone, MapPin, Snowflake, Utensils, Users } from 'lucide-react';
 import Link from 'next/link';
@@ -927,6 +928,18 @@ export default function WhatIsBingsuPage() {
 
       <main className="min-h-screen bg-white">
       <SubpageNav locale={locale} />
+      
+      {/* Hero Image */}
+      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+        <Image
+          src="/images/blog/what-is-bingsu.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+      </div>
         {/* Breadcrumbs */}
         <nav className="max-w-4xl mx-auto px-4 pt-6 pb-2" aria-label="Breadcrumb">
           <ol className="flex items-center gap-2 text-sm text-gray-500">

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import SubpageNav from '@/components/SubpageNav';
 
@@ -16,6 +17,7 @@ const content = {
     posts: [
       {
         slug: 'best-donuts-waikiki',
+        image: '/images/blog/best-donuts-waikiki.png',
         category: 'Food Guide',
         title: 'Best Donuts in Waikiki 2026: A Local\u2019s Guide',
         excerpt: 'From crispy mochi donuts to sugar-dusted malasadas, discover the top donut spots in Waikiki handpicked by locals.',
@@ -23,6 +25,7 @@ const content = {
       },
       {
         slug: 'what-is-bingsu',
+        image: '/images/blog/what-is-bingsu.png',
         category: 'Korean Food',
         title: 'What is Bingsu? Your Guide to Korean Shaved Ice in Hawaii',
         excerpt: 'Learn about bingsu, Korea\u2019s beloved shaved ice dessert, and where to find the best bowls in Waikiki.',
@@ -30,6 +33,7 @@ const content = {
       },
       {
         slug: 'kona-coffee-guide',
+        image: '/images/blog/kona-coffee-guide.png',
         category: 'Coffee',
         title: 'Kona Coffee vs Regular Coffee: What Makes It Special',
         excerpt: 'What sets 100% Kona coffee apart from the rest? A deep dive into origin, flavor, and why it\u2019s worth every sip.',
@@ -37,6 +41,7 @@ const content = {
       },
       {
         slug: 'korean-food-waikiki',
+        image: '/images/blog/korean-food-waikiki.png',
         category: 'Food Guide',
         title: 'Korean Food in Waikiki 2026: The Ultimate K-Food Guide',
         excerpt: 'From corn dogs to bingsu, Korean BBQ to bibimbap \u2014 your complete guide to the K-food explosion in Waikiki.',
@@ -44,6 +49,7 @@ const content = {
       },
       {
         slug: 'cheap-eats-waikiki',
+        image: '/images/blog/cheap-eats-waikiki.png',
         category: 'Budget Guide',
         title: 'Cheap Eats in Waikiki Under $15: Best Budget Food 2026',
         excerpt: 'Waikiki doesn\u2019t have to break the bank. The best affordable eats from $3 donuts to $10 plate lunches.',
@@ -51,6 +57,7 @@ const content = {
       },
       {
         slug: 'malasada-vs-mochi-donut',
+        image: '/images/blog/malasada-vs-mochi-donut.png',
         category: 'Comparison',
         title: 'Malasada vs Mochi Donut: Which Hawaiian Treat Wins?',
         excerpt: 'Portuguese fluffy vs Japanese chewy \u2014 the ultimate Hawaiian donut showdown. Spoiler: you should try both.',
@@ -68,6 +75,7 @@ const content = {
     posts: [
       {
         slug: 'best-donuts-waikiki',
+        image: '/images/blog/best-donuts-waikiki.png',
         category: '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9',
         title: '\u30EF\u30A4\u30AD\u30AD\u306E\u30D9\u30B9\u30C8\u30C9\u30FC\u30CA\u30C4 2026\uFF1A\u5730\u5143\u6C11\u30AC\u30A4\u30C9',
         excerpt: '\u30B5\u30AF\u30B5\u30AF\u306E\u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\u304B\u3089\u7802\u7CD6\u304C\u304B\u304B\u3063\u305F\u30DE\u30E9\u30B5\u30C0\u307E\u3067\u3001\u5730\u5143\u306E\u4EBA\u304C\u9078\u3076\u30EF\u30A4\u30AD\u30AD\u306E\u30C8\u30C3\u30D7\u30C9\u30FC\u30CA\u30C4\u30B9\u30DD\u30C3\u30C8\u3002',
@@ -75,6 +83,7 @@ const content = {
       },
       {
         slug: 'what-is-bingsu',
+        image: '/images/blog/what-is-bingsu.png',
         category: '\u97D3\u56FD\u30D5\u30FC\u30C9',
         title: '\u30D3\u30F3\u30B9\u3068\u306F\uFF1F\u30CF\u30EF\u30A4\u3067\u697D\u3057\u3080\u97D3\u56FD\u304B\u304D\u6C37\u30AC\u30A4\u30C9',
         excerpt: '\u97D3\u56FD\u3067\u611B\u3055\u308C\u3066\u3044\u308B\u304B\u304D\u6C37\u30C7\u30B6\u30FC\u30C8\u300C\u30D3\u30F3\u30B9\u300D\u306B\u3064\u3044\u3066\u3001\u305D\u3057\u3066\u30EF\u30A4\u30AD\u30AD\u3067\u6700\u9AD8\u306E\u4E00\u676F\u3092\u898B\u3064\u3051\u308B\u65B9\u6CD5\u3002',
@@ -82,14 +91,18 @@ const content = {
       },
       {
         slug: 'kona-coffee-guide',
+        image: '/images/blog/kona-coffee-guide.png',
         category: '\u30B3\u30FC\u30D2\u30FC',
         title: '\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC vs \u666E\u901A\u306E\u30B3\u30FC\u30D2\u30FC\uFF1A\u4F55\u304C\u7279\u5225\u306A\u306E\u304B',
         excerpt: '100%\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u304C\u4ED6\u3068\u9055\u3046\u7406\u7531\u3068\u306F\uFF1F\u539F\u7523\u5730\u3001\u98A8\u5473\u3001\u305D\u306E\u4FA1\u5024\u306B\u8FEB\u308B\u8A73\u3057\u3044\u30AC\u30A4\u30C9\u3002',
         readTime: 7,
       },
-      { slug: 'korean-food-waikiki', category: 'K\u30D5\u30FC\u30C9', title: '\u30EF\u30A4\u30AD\u30AD\u306E\u97D3\u56FD\u6599\u7406 2026\uFF1AK\u30D5\u30FC\u30C9\u5B8C\u5168\u30AC\u30A4\u30C9', excerpt: '\u30B3\u30FC\u30F3\u30C9\u30C3\u30B0\u304B\u3089\u30D3\u30F3\u30B9\u3001\u97D3\u56FDBBQ\u304B\u3089\u30D3\u30D3\u30F3\u30D0\u307E\u3067\u3002\u30EF\u30A4\u30AD\u30AD\u306EK\u30D5\u30FC\u30C9\u9769\u547D\u3092\u5B8C\u5168\u7DB2\u7F85\u3002', readTime: 7 },
-      { slug: 'cheap-eats-waikiki', category: '\u7BC0\u7D04\u30AC\u30A4\u30C9', title: '\u30EF\u30A4\u30AD\u30AD\u306E\u5B89\u3046\u307E\u30B0\u30EB\u30E1 $15\u4EE5\u4E0B\uFF1A2026\u5E74\u7248', excerpt: '\u30EF\u30A4\u30AD\u30AD\u3067\u3082\u304A\u5F97\u306B\u98DF\u3079\u3089\u308C\u308B\uFF01$3\u306E\u30C9\u30FC\u30CA\u30C4\u304B\u3089$10\u306E\u30D7\u30EC\u30FC\u30C8\u30E9\u30F3\u30C1\u307E\u3067\u3002', readTime: 6 },
-      { slug: 'malasada-vs-mochi-donut', category: '\u6BD4\u8F03', title: '\u30DE\u30E9\u30B5\u30C0 vs \u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\uFF1A\u3069\u3061\u3089\u304C\u52DD\u3064\uFF1F', excerpt: '\u30DD\u30EB\u30C8\u30AC\u30EB\u306E\u3075\u308F\u3075\u308F vs \u65E5\u672C\u306E\u3082\u3061\u3082\u3061\u3002\u30CF\u30EF\u30A4\u306E\u30C9\u30FC\u30CA\u30C4\u5BFE\u6C7A\u3002\u7D50\u8AD6\uFF1A\u4E21\u65B9\u98DF\u3079\u308B\u3079\u304D\u3002', readTime: 5 },
+      { slug: 'korean-food-waikiki',
+        image: '/images/blog/korean-food-waikiki.png', category: 'K\u30D5\u30FC\u30C9', title: '\u30EF\u30A4\u30AD\u30AD\u306E\u97D3\u56FD\u6599\u7406 2026\uFF1AK\u30D5\u30FC\u30C9\u5B8C\u5168\u30AC\u30A4\u30C9', excerpt: '\u30B3\u30FC\u30F3\u30C9\u30C3\u30B0\u304B\u3089\u30D3\u30F3\u30B9\u3001\u97D3\u56FDBBQ\u304B\u3089\u30D3\u30D3\u30F3\u30D0\u307E\u3067\u3002\u30EF\u30A4\u30AD\u30AD\u306EK\u30D5\u30FC\u30C9\u9769\u547D\u3092\u5B8C\u5168\u7DB2\u7F85\u3002', readTime: 7 },
+      { slug: 'cheap-eats-waikiki',
+        image: '/images/blog/cheap-eats-waikiki.png', category: '\u7BC0\u7D04\u30AC\u30A4\u30C9', title: '\u30EF\u30A4\u30AD\u30AD\u306E\u5B89\u3046\u307E\u30B0\u30EB\u30E1 $15\u4EE5\u4E0B\uFF1A2026\u5E74\u7248', excerpt: '\u30EF\u30A4\u30AD\u30AD\u3067\u3082\u304A\u5F97\u306B\u98DF\u3079\u3089\u308C\u308B\uFF01$3\u306E\u30C9\u30FC\u30CA\u30C4\u304B\u3089$10\u306E\u30D7\u30EC\u30FC\u30C8\u30E9\u30F3\u30C1\u307E\u3067\u3002', readTime: 6 },
+      { slug: 'malasada-vs-mochi-donut',
+        image: '/images/blog/malasada-vs-mochi-donut.png', category: '\u6BD4\u8F03', title: '\u30DE\u30E9\u30B5\u30C0 vs \u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\uFF1A\u3069\u3061\u3089\u304C\u52DD\u3064\uFF1F', excerpt: '\u30DD\u30EB\u30C8\u30AC\u30EB\u306E\u3075\u308F\u3075\u308F vs \u65E5\u672C\u306E\u3082\u3061\u3082\u3061\u3002\u30CF\u30EF\u30A4\u306E\u30C9\u30FC\u30CA\u30C4\u5BFE\u6C7A\u3002\u7D50\u8AD6\uFF1A\u4E21\u65B9\u98DF\u3079\u308B\u3079\u304D\u3002', readTime: 5 },
     ],
   },
   ko: {
@@ -102,6 +115,7 @@ const content = {
     posts: [
       {
         slug: 'best-donuts-waikiki',
+        image: '/images/blog/best-donuts-waikiki.png',
         category: '\uD478\uB4DC \uAC00\uC774\uB4DC',
         title: '\uC640\uC774\uD0A4\uD0A4 \uBCA0\uC2A4\uD2B8 \uB3C4\uB11B 2026: \uB85C\uCEEC \uAC00\uC774\uB4DC',
         excerpt: '\uBC14\uC0AD\uD55C \uBAA8\uCE58 \uB3C4\uB11B\uBD80\uD130 \uC124\uD0D5\uC744 \uBFCC\uB9B0 \uB9D0\uB77C\uC0AC\uB2E4\uAE4C\uC9C0, \uD604\uC9C0\uC778\uC774 \uC120\uD0DD\uD55C \uC640\uC774\uD0A4\uD0A4 \uCD5C\uACE0\uC758 \uB3C4\uB11B \uC2A4\uD31F.',
@@ -109,6 +123,7 @@ const content = {
       },
       {
         slug: 'what-is-bingsu',
+        image: '/images/blog/what-is-bingsu.png',
         category: '\uD55C\uAD6D \uC74C\uC2DD',
         title: '\uBE59\uC218\uB780? \uD558\uC640\uC774\uC5D0\uC11C \uC990\uAE30\uB294 \uD55C\uAD6D \uBE59\uC218 \uAC00\uC774\uB4DC',
         excerpt: '\uD55C\uAD6D\uC5D0\uC11C \uC0AC\uB791\uBC1B\uB294 \uBE59\uC218 \uB514\uC800\uD2B8\uC5D0 \uB300\uD574 \uC54C\uC544\uBCF4\uACE0, \uC640\uC774\uD0A4\uD0A4\uC5D0\uC11C \uCD5C\uACE0\uC758 \uBE59\uC218\uB97C \uCC3E\uB294 \uBC29\uBC95.',
@@ -116,14 +131,18 @@ const content = {
       },
       {
         slug: 'kona-coffee-guide',
+        image: '/images/blog/kona-coffee-guide.png',
         category: '\uCEE4\uD53C',
         title: '\uCF54\uB098 \uCEE4\uD53C vs \uC77C\uBC18 \uCEE4\uD53C: \uBB34\uC5C7\uC774 \uD2B9\uBCC4\uD55C\uAC00',
         excerpt: '100% \uCF54\uB098 \uCEE4\uD53C\uAC00 \uB2E4\uB978 \uCEE4\uD53C\uC640 \uB2E4\uB978 \uC810\uC740? \uC6D0\uC0B0\uC9C0, \uD48D\uBBF8, \uADF8 \uAC00\uCE58\uC5D0 \uB300\uD55C \uC0C1\uC138 \uAC00\uC774\uB4DC.',
         readTime: 7,
       },
-      { slug: 'korean-food-waikiki', category: 'K-\uD478\uB4DC', title: '\uC640\uC774\uD0A4\uD0A4 \uD55C\uAD6D \uC74C\uC2DD 2026: K-\uD478\uB4DC \uC644\uBCBD \uAC00\uC774\uB4DC', excerpt: '\uCF58\uB3C4\uADF8\uBD80\uD130 \uBE59\uC218, \uD55C\uAD6DBBQ\uBD80\uD130 \uBE44\uBE54\uBC25\uAE4C\uC9C0. \uC640\uC774\uD0A4\uD0A4 K-\uD478\uB4DC \uD3ED\uBC1C \uC644\uBCBD \uC815\uB9AC.', readTime: 7 },
-      { slug: 'cheap-eats-waikiki', category: '\uC808\uC57D \uAC00\uC774\uB4DC', title: '\uC640\uC774\uD0A4\uD0A4 \uC54C\uB728 \uB9DB\uC9D1 $15 \uC774\uD558: 2026\uB144\uD310', excerpt: '\uC640\uC774\uD0A4\uD0A4\uB3C4 \uC800\uB834\uD558\uAC8C! $3 \uB3C4\uB11B\uBD80\uD130 $10 \uD50C\uB808\uC774\uD2B8 \uB7F0\uCE58\uAE4C\uC9C0 \uCD5C\uACE0\uC758 \uAC00\uC131\uBE44 \uB9DB\uC9D1.', readTime: 6 },
-      { slug: 'malasada-vs-mochi-donut', category: '\uBE44\uAD50', title: '\uB9D0\uB77C\uC0AC\uB2E4 vs \uBAA8\uCE58 \uB3C4\uB11B: \uC5B4\uB290 \uCABD\uC774 \uC2B9\uC790?', excerpt: '\uD3EC\uB974\uD22C\uAC08\uC758 \uD3ED\uC2E0 vs \uC77C\uBCF8\uC758 \uCABD\uB4DD. \uD558\uC640\uC774 \uB3C4\uB11B \uB300\uACB0. \uACB0\uB860: \uB458 \uB2E4 \uBA39\uC5B4\uBCF4\uC138\uC694.', readTime: 5 },
+      { slug: 'korean-food-waikiki',
+        image: '/images/blog/korean-food-waikiki.png', category: 'K-\uD478\uB4DC', title: '\uC640\uC774\uD0A4\uD0A4 \uD55C\uAD6D \uC74C\uC2DD 2026: K-\uD478\uB4DC \uC644\uBCBD \uAC00\uC774\uB4DC', excerpt: '\uCF58\uB3C4\uADF8\uBD80\uD130 \uBE59\uC218, \uD55C\uAD6DBBQ\uBD80\uD130 \uBE44\uBE54\uBC25\uAE4C\uC9C0. \uC640\uC774\uD0A4\uD0A4 K-\uD478\uB4DC \uD3ED\uBC1C \uC644\uBCBD \uC815\uB9AC.', readTime: 7 },
+      { slug: 'cheap-eats-waikiki',
+        image: '/images/blog/cheap-eats-waikiki.png', category: '\uC808\uC57D \uAC00\uC774\uB4DC', title: '\uC640\uC774\uD0A4\uD0A4 \uC54C\uB728 \uB9DB\uC9D1 $15 \uC774\uD558: 2026\uB144\uD310', excerpt: '\uC640\uC774\uD0A4\uD0A4\uB3C4 \uC800\uB834\uD558\uAC8C! $3 \uB3C4\uB11B\uBD80\uD130 $10 \uD50C\uB808\uC774\uD2B8 \uB7F0\uCE58\uAE4C\uC9C0 \uCD5C\uACE0\uC758 \uAC00\uC131\uBE44 \uB9DB\uC9D1.', readTime: 6 },
+      { slug: 'malasada-vs-mochi-donut',
+        image: '/images/blog/malasada-vs-mochi-donut.png', category: '\uBE44\uAD50', title: '\uB9D0\uB77C\uC0AC\uB2E4 vs \uBAA8\uCE58 \uB3C4\uB11B: \uC5B4\uB290 \uCABD\uC774 \uC2B9\uC790?', excerpt: '\uD3EC\uB974\uD22C\uAC08\uC758 \uD3ED\uC2E0 vs \uC77C\uBCF8\uC758 \uCABD\uB4DD. \uD558\uC640\uC774 \uB3C4\uB11B \uB300\uACB0. \uACB0\uB860: \uB458 \uB2E4 \uBA39\uC5B4\uBCF4\uC138\uC694.', readTime: 5 },
     ],
   },
   zh: {
@@ -136,6 +155,7 @@ const content = {
     posts: [
       {
         slug: 'best-donuts-waikiki',
+        image: '/images/blog/best-donuts-waikiki.png',
         category: '\u7F8E\u98DF\u6307\u5357',
         title: '\u5A01\u57FA\u57FA\u6700\u4F73\u751C\u751C\u5708 2026\uFF1A\u672C\u5730\u4EBA\u6307\u5357',
         excerpt: '\u4ECE\u9165\u8106\u7684\u9EBB\u85AF\u751C\u751C\u5708\u5230\u88F9\u7740\u7CD6\u7684\u9A6C\u62C9\u8428\u8FBE\uFF0C\u63A2\u7D22\u5F53\u5730\u4EBA\u7CBE\u9009\u7684\u5A01\u57FA\u57FA\u9876\u7EA7\u751C\u751C\u5708\u5E97\u3002',
@@ -143,6 +163,7 @@ const content = {
       },
       {
         slug: 'what-is-bingsu',
+        image: '/images/blog/what-is-bingsu.png',
         category: '\u97E9\u56FD\u7F8E\u98DF',
         title: '\u4EC0\u4E48\u662F\u5228\u51B0\uFF1F\u5728\u590F\u5A01\u5937\u54C1\u5C1D\u97E9\u56FD\u5228\u51B0\u6307\u5357',
         excerpt: '\u4E86\u89E3\u97E9\u56FD\u6700\u53D7\u6B22\u8FCE\u7684\u5228\u51B0\u7518\u54C1\uFF0C\u4EE5\u53CA\u5728\u5A01\u57FA\u57FA\u54EA\u91CC\u53EF\u4EE5\u627E\u5230\u6700\u597D\u7684\u4E00\u7897\u3002',
@@ -150,14 +171,18 @@ const content = {
       },
       {
         slug: 'kona-coffee-guide',
+        image: '/images/blog/kona-coffee-guide.png',
         category: '\u5496\u5561',
         title: '\u79D1\u7EB3\u5496\u5561 vs \u666E\u901A\u5496\u5561\uFF1A\u5B83\u4E3A\u4EC0\u4E48\u7279\u522B',
         excerpt: '100%\u79D1\u7EB3\u5496\u5561\u4E0E\u5176\u4ED6\u5496\u5561\u6709\u4EC0\u4E48\u4E0D\u540C\uFF1F\u6DF1\u5165\u4E86\u89E3\u5176\u4EA7\u5730\u3001\u98CE\u5473\u548C\u4EF7\u503C\u3002',
         readTime: 7,
       },
-      { slug: 'korean-food-waikiki', category: 'K-\u7F8E\u98DF', title: '\u5A01\u57FA\u57FA\u97E9\u56FD\u7F8E\u98DF 2026\uFF1AK-Food\u5B8C\u5168\u6307\u5357', excerpt: '\u4ECE\u7389\u7C73\u70ED\u72D7\u5230\u5228\u51B0\uFF0C\u97E9\u5F0FBBQ\u5230\u77F3\u9505\u62CC\u996D\u3002\u5A01\u57FA\u57FA\u97E9\u98DF\u9769\u547D\u5B8C\u5168\u7F51\u7F57\u3002', readTime: 7 },
-      { slug: 'cheap-eats-waikiki', category: '\u7701\u94B1\u6307\u5357', title: '\u5A01\u57FA\u57FA$15\u4EE5\u4E0B\u5E73\u4EF7\u7F8E\u98DF\uFF1A2026\u7248', excerpt: '\u5A01\u57FA\u57FA\u4E5F\u80FD\u5403\u5F97\u5B9E\u60E0\uFF01\u4ECE$3\u751C\u751C\u5708\u5230$10\u4FBF\u5F53\uFF0C\u6700\u4F73\u6027\u4EF7\u6BD4\u7F8E\u98DF\u3002', readTime: 6 },
-      { slug: 'malasada-vs-mochi-donut', category: '\u5BF9\u6BD4', title: '\u9A6C\u62C9\u8428\u8FBE vs \u9EBB\u85AF\u751C\u751C\u5708\uFF1A\u54EA\u4E2A\u66F4\u80DC\u4E00\u7B79\uFF1F', excerpt: '\u8461\u8404\u7259\u7684\u8F6F\u7EF5 vs \u65E5\u672C\u7684Q\u5F39\u3002\u590F\u5A01\u5937\u751C\u751C\u5708\u5927\u5BF9\u51B3\u3002\u7ED3\u8BBA\uFF1A\u4E24\u4E2A\u90FD\u8981\u5C1D\u3002', readTime: 5 },
+      { slug: 'korean-food-waikiki',
+        image: '/images/blog/korean-food-waikiki.png', category: 'K-\u7F8E\u98DF', title: '\u5A01\u57FA\u57FA\u97E9\u56FD\u7F8E\u98DF 2026\uFF1AK-Food\u5B8C\u5168\u6307\u5357', excerpt: '\u4ECE\u7389\u7C73\u70ED\u72D7\u5230\u5228\u51B0\uFF0C\u97E9\u5F0FBBQ\u5230\u77F3\u9505\u62CC\u996D\u3002\u5A01\u57FA\u57FA\u97E9\u98DF\u9769\u547D\u5B8C\u5168\u7F51\u7F57\u3002', readTime: 7 },
+      { slug: 'cheap-eats-waikiki',
+        image: '/images/blog/cheap-eats-waikiki.png', category: '\u7701\u94B1\u6307\u5357', title: '\u5A01\u57FA\u57FA$15\u4EE5\u4E0B\u5E73\u4EF7\u7F8E\u98DF\uFF1A2026\u7248', excerpt: '\u5A01\u57FA\u57FA\u4E5F\u80FD\u5403\u5F97\u5B9E\u60E0\uFF01\u4ECE$3\u751C\u751C\u5708\u5230$10\u4FBF\u5F53\uFF0C\u6700\u4F73\u6027\u4EF7\u6BD4\u7F8E\u98DF\u3002', readTime: 6 },
+      { slug: 'malasada-vs-mochi-donut',
+        image: '/images/blog/malasada-vs-mochi-donut.png', category: '\u5BF9\u6BD4', title: '\u9A6C\u62C9\u8428\u8FBE vs \u9EBB\u85AF\u751C\u751C\u5708\uFF1A\u54EA\u4E2A\u66F4\u80DC\u4E00\u7B79\uFF1F', excerpt: '\u8461\u8404\u7259\u7684\u8F6F\u7EF5 vs \u65E5\u672C\u7684Q\u5F39\u3002\u590F\u5A01\u5937\u751C\u751C\u5708\u5927\u5BF9\u51B3\u3002\u7ED3\u8BBA\uFF1A\u4E24\u4E2A\u90FD\u8981\u5C1D\u3002', readTime: 5 },
     ],
   },
   es: {
@@ -170,6 +195,7 @@ const content = {
     posts: [
       {
         slug: 'best-donuts-waikiki',
+        image: '/images/blog/best-donuts-waikiki.png',
         category: 'Gu\u00EDa Gastron\u00F3mica',
         title: 'Los Mejores Donuts en Waikiki 2026: Gu\u00EDa Local',
         excerpt: 'Desde crujientes donuts de mochi hasta malasadas espolvoreadas con az\u00FAcar, descubre los mejores spots de donuts en Waikiki.',
@@ -177,6 +203,7 @@ const content = {
       },
       {
         slug: 'what-is-bingsu',
+        image: '/images/blog/what-is-bingsu.png',
         category: 'Comida Coreana',
         title: '\u00BFQu\u00E9 es el Bingsu? Tu Gu\u00EDa del Hielo Raspado Coreano en Hawaii',
         excerpt: 'Conoce el bingsu, el postre de hielo raspado favorito de Corea, y d\u00F3nde encontrar los mejores en Waikiki.',
@@ -184,6 +211,7 @@ const content = {
       },
       {
         slug: 'kona-coffee-guide',
+        image: '/images/blog/kona-coffee-guide.png',
         category: 'Caf\u00E9',
         title: 'Caf\u00E9 Kona vs Caf\u00E9 Regular: \u00BFQu\u00E9 Lo Hace Especial?',
         excerpt: '\u00BFQu\u00E9 diferencia al caf\u00E9 100% Kona del resto? Una gu\u00EDa sobre su origen, sabor y por qu\u00E9 vale cada sorbo.',

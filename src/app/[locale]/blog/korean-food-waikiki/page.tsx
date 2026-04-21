@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { MapPin, Clock, Star, ChevronRight, Flame, UtensilsCrossed, IceCreamCone, Drumstick, Soup, ShoppingBag, Cake, Sandwich, Trophy, BookOpen } from 'lucide-react';
 import Link from 'next/link';
@@ -711,6 +712,18 @@ export default function KoreanFoodWaikikiPage() {
 
       <main className="min-h-screen bg-white">
       <SubpageNav locale={locale} />
+      
+      {/* Hero Image */}
+      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+        <Image
+          src="/images/blog/korean-food-waikiki.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+      </div>
         {/* Hero Section */}
         <section className="relative min-h-[55vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-red-900 via-red-800 to-orange-900">
           <div className="absolute inset-0 opacity-20">

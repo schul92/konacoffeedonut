@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { DollarSign, MapPin, Clock, Star, TrendingDown, Utensils, Coffee, ShoppingBag, ArrowRight, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
@@ -919,6 +920,18 @@ export default function CheapEatsWaikikiPage() {
 
       <main className="min-h-screen bg-white">
       <SubpageNav locale={locale} />
+      
+      {/* Hero Image */}
+      <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
+        <Image
+          src="/images/blog/cheap-eats-waikiki.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
+      </div>
         {/* ── Hero ──────────────────────────────────────────────── */}
         <section className="relative bg-gradient-to-br from-emerald-800 via-teal-700 to-emerald-900 text-white overflow-hidden">
           {/* decorative circles */}
