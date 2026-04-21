@@ -221,23 +221,34 @@ const content = {
   },
 };
 
-// Category color mapping
+// Category color mapping — luxury dark theme
 const categoryColors: Record<string, string> = {
-  'Food Guide': 'bg-amber-100 text-amber-800',
-  '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9': 'bg-amber-100 text-amber-800',
-  '\uD478\uB4DC \uAC00\uC774\uB4DC': 'bg-amber-100 text-amber-800',
-  '\u7F8E\u98DF\u6307\u5357': 'bg-amber-100 text-amber-800',
-  'Gu\u00EDa Gastron\u00F3mica': 'bg-amber-100 text-amber-800',
-  'Korean Food': 'bg-rose-100 text-rose-800',
-  '\u97D3\u56FD\u30D5\u30FC\u30C9': 'bg-rose-100 text-rose-800',
-  '\uD55C\uAD6D \uC74C\uC2DD': 'bg-rose-100 text-rose-800',
-  '\u97E9\u56FD\u7F8E\u98DF': 'bg-rose-100 text-rose-800',
-  'Comida Coreana': 'bg-rose-100 text-rose-800',
-  'Coffee': 'bg-orange-100 text-orange-800',
-  '\u30B3\u30FC\u30D2\u30FC': 'bg-orange-100 text-orange-800',
-  '\uCEE4\uD53C': 'bg-orange-100 text-orange-800',
-  '\u5496\u5561': 'bg-orange-100 text-orange-800',
-  'Caf\u00E9': 'bg-orange-100 text-orange-800',
+  'Food Guide': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
+  '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
+  '\uD478\uB4DC \uAC00\uC774\uB4DC': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
+  '\u7F8E\u98DF\u6307\u5357': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
+  'Gu\u00EDa Gastron\u00F3mica': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
+  'Korean Food': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
+  '\u97D3\u56FD\u30D5\u30FC\u30C9': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
+  '\uD55C\uAD6D \uC74C\uC2DD': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
+  '\u97E9\u56FD\u7F8E\u98DF': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
+  'Comida Coreana': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
+  'Coffee': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
+  '\u30B3\u30FC\u30D2\u30FC': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
+  '\uCEE4\uD53C': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
+  '\u5496\u5561': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
+  'Caf\u00E9': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
+  'Budget Guide': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
+  '\u7BC0\u7D04\u30AC\u30A4\u30C9': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
+  '\uC808\uC57D \uAC00\uC774\uB4DC': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
+  '\u7701\u94B1\u6307\u5357': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
+  'Comparison': 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
+  '\u6BD4\u8F03': 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
+  '\uBE44\uAD50': 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
+  '\u5BF9\u6BD4': 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
+  'K-\u7F8E\u98DF': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
+  'K-\uD478\uB4DC': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
+  'K\u30D5\u30FC\u30C9': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
 };
 
 export default function BlogPage() {
@@ -246,16 +257,24 @@ export default function BlogPage() {
   const t = content[locale as keyof typeof content] || content.en;
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0a0a0a]">
       <SubpageNav locale={locale} />
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-amber-900 via-amber-800 to-orange-900 py-20 px-4">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.15),transparent_60%)]" />
-        </div>
-        <div className="relative z-10 max-w-4xl mx-auto text-center text-white">
+
+      {/* Hero Section — dark luxury */}
+      <section className="relative py-28 md:py-36 px-4 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1208] via-[#0d0d0d] to-[#0a0a0a]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(180,130,60,0.08),transparent_60%)]" />
+        <div className="relative z-10 max-w-4xl mx-auto text-center">
+          <motion.div
+            className="inline-block mb-6 px-4 py-1.5 border border-amber-600/30 rounded-full text-amber-400/80 text-xs tracking-[0.2em] uppercase"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Kona Coffee Donut
+          </motion.div>
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-4"
+            className="text-5xl md:text-7xl font-bold text-white mb-5 tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -263,7 +282,7 @@ export default function BlogPage() {
             {t.hero.title}
           </motion.h1>
           <motion.p
-            className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto"
+            className="text-base md:text-lg text-white/50 max-w-xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -273,51 +292,77 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Blog Post Grid */}
-      <section className="py-16 px-4 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {t.posts.map((post, index) => (
+      {/* Featured Post (first post large) */}
+      {t.posts.length > 0 && (
+        <section className="px-4 max-w-6xl mx-auto -mt-8 mb-12">
+          <motion.article
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <Link href={`/${locale}/blog/${t.posts[0].slug}`} className="group block">
+              <div className="relative h-[400px] md:h-[480px] rounded-2xl overflow-hidden">
+                {t.posts[0].image && (
+                  <Image src={t.posts[0].image} alt={t.posts[0].title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+                  <span className={`inline-block text-[10px] font-semibold px-3 py-1 rounded-full mb-4 tracking-wider uppercase ${categoryColors[t.posts[0].category] || 'bg-white/10 text-white/70 border border-white/20'}`}>
+                    {t.posts[0].category}
+                  </span>
+                  <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 leading-tight">{t.posts[0].title}</h2>
+                  <p className="text-white/60 text-sm md:text-base max-w-2xl line-clamp-2">{t.posts[0].excerpt}</p>
+                  <div className="mt-4 text-amber-400 text-sm font-medium">{t.posts[0].readTime} {t.readTime} &middot; {t.readMore}</div>
+                </div>
+              </div>
+            </Link>
+          </motion.article>
+        </section>
+      )}
+
+      {/* Blog Post Grid — remaining posts */}
+      <section className="px-4 pb-24 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {t.posts.slice(1).map((post, index) => (
             <motion.article
               key={post.slug}
               className="group"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
               viewport={{ once: true }}
             >
               <Link href={`/${locale}/blog/${post.slug}`} className="block">
-                <div className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
-                  {/* Card Top Accent */}
-                  <div className="h-2 bg-gradient-to-r from-amber-500 to-orange-500" />
+                <div className="bg-[#141414] border border-white/[0.06] rounded-xl overflow-hidden hover:border-amber-600/20 transition-all duration-500 hover:shadow-[0_8px_40px_rgba(180,130,50,0.06)]">
+                  {/* Image */}
+                  {post.image && (
+                    <div className="relative h-48 overflow-hidden">
+                      <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-transparent" />
+                    </div>
+                  )}
 
-                  <div className="p-6">
-                    {/* Category Tag */}
-                    <span
-                      className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-4 ${
-                        categoryColors[post.category] || 'bg-gray-100 text-gray-800'
-                      }`}
-                    >
+                  <div className="p-5">
+                    {/* Category */}
+                    <span className={`inline-block text-[10px] font-semibold px-2.5 py-1 rounded-full mb-3 tracking-wider uppercase ${categoryColors[post.category] || 'bg-white/10 text-white/60 border border-white/10'}`}>
                       {post.category}
                     </span>
 
                     {/* Title */}
-                    <h2 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-orange-700 transition-colors leading-snug">
+                    <h2 className="text-base font-bold text-white/90 mb-2 group-hover:text-amber-400 transition-colors leading-snug line-clamp-2">
                       {post.title}
                     </h2>
 
                     {/* Excerpt */}
-                    <p className="text-sm text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                    <p className="text-sm text-white/40 mb-4 line-clamp-2 leading-relaxed">
                       {post.excerpt}
                     </p>
 
                     {/* Footer */}
-                    <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                      <span className="text-xs text-gray-400">
-                        {post.readTime} {t.readTime}
-                      </span>
-                      <span className="text-sm font-semibold text-orange-600 group-hover:text-orange-700 transition-colors">
-                        {t.readMore}
-                      </span>
+                    <div className="flex items-center justify-between pt-3 border-t border-white/[0.06]">
+                      <span className="text-[11px] text-white/25">{post.readTime} {t.readTime}</span>
+                      <span className="text-xs font-semibold text-amber-500/80 group-hover:text-amber-400 transition-colors">{t.readMore}</span>
                     </div>
                   </div>
                 </div>
