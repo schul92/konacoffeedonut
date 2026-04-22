@@ -539,7 +539,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </span>
-              </motion.button>
+              </motion.a>
               <Link
                 href={`/${locale}/careers`}
                 onClick={() => setMenuOpen(false)}

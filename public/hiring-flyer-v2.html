@@ -162,15 +162,16 @@
     font-variation-settings: 'opsz' 14;
     font-style: italic;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 11.5px;
     color: var(--ink-muted);
-    letter-spacing: .02em;
+    letter-spacing: .015em;
     text-align: center;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     white-space: nowrap;
   }
+  .brand-sub::before, .brand-sub::after { width: 28px; }
   .brand-sub::before,
   .brand-sub::after {
     content: "";
@@ -182,13 +183,44 @@
 
   /* ---------- HERO ---------- */
   .hero {
-    padding: 20px 0 16px;
+    margin: 14px -0.65in 14px;
+    padding: 28px 0.65in 24px;
+    background:
+      radial-gradient(ellipse 90% 120% at 20% 10%, rgba(255, 255, 255, .055), transparent 60%),
+      linear-gradient(160deg, #14304f 0%, #1f3f64 50%, #163657 100%);
+    color: #f3ecdd;
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 36px;
     align-items: end;
     position: relative;
   }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 8px; left: 0.65in; right: 0.65in;
+    height: 1px;
+    background: #c4a560;
+    opacity: .55;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: 8px; left: 0.65in; right: 0.65in;
+    height: 1px;
+    background: #c4a560;
+    opacity: .55;
+  }
+  .hero .eyebrow { color: #d9c287; }
+  .hero .eyebrow::before,
+  .hero .eyebrow::after { background: #c4a560; opacity: .7; }
+  .hero .aloha { color: #f6edd5; }
+  .hero .aloha .comma { color: #ea8070; }
+  .hero .aloha-sub { color: #ebdfc3; }
+  .hero .aloha-sub em { color: #f6edd5; }
+  .hero .hero-right .kicker { color: #d9c287; }
+  .hero .hero-right .dek { color: #ebe0c4; }
+  .hero .hero-right .dek::first-letter { color: #f6edd5; }
   .eyebrow {
     font-family: 'Tenor Sans', serif;
     font-size: 12px;
@@ -736,7 +768,7 @@
         <div class="left">Join&nbsp;&nbsp;the&nbsp;&nbsp;Team</div>
         <div class="brandline">
           <img class="brand-logo" src="konacoffee.png" alt="Kona Coffee Donut" />
-          <div class="brand-sub">Waikīkī</div>
+          <div class="brand-sub">Luxurious Dessert Café in the Core of Waikīkī</div>
         </div>
         <div class="right">Now&nbsp;&nbsp;Hiring</div>
       </div>

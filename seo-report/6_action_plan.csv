@@ -1,0 +1,16 @@
+Priority,Category,Action Item,Expected Impact,Effort,Status
+CRITICAL,Local SEO,"Set up Google Business Profile with all categories (bakery, cafe, coffee shop, dessert shop)","Unlocks 'near me' searches (donuts near me: 121 impr, coffee near me: 35 impr)",30 min,NOT DONE
+CRITICAL,Local SEO,Get first 10 Google reviews (ask friends/family/soft-launch guests),Reviews are #1 ranking factor for local. Competitors have 500-5000+,1 week,NOT DONE
+HIGH,CTR Optimization,"Rewrite /zh/about-kona-coffee title + meta (4,778 impressions, 0.1% CTR)",+50 clicks/month possible with 1% CTR,15 min,NOT DONE
+HIGH,CTR Optimization,"Rewrite /ko/about-kona-coffee meta description (1,280 impr, 0.9% CTR)",+15 clicks/month with better CTR,15 min,NOT DONE
+HIGH,Content,Expand KO blog content — Korean queries are 2nd strongest traffic source,"Korean tourists searching 코나커피, 말라사다, 하와이 코나 커피",2 hours,PARTIALLY DONE
+HIGH,Backlinks,"Pitch to Hawaii food listicle sites (nateeatshawaii.com, hawaii-guide.com)",Backlinks + referral traffic + brand mentions,1 hour,NOT DONE
+MEDIUM,SEO,Keep submitting to Google Indexing API (rate limit resets daily),Faster indexing of new/updated content,5 min/day,ONGOING
+MEDIUM,Content,Create more JA blog posts — Japan is 2nd country for clicks,Japanese tourists actively searching for Waikiki food,2 hours,PARTIALLY DONE
+MEDIUM,Technical,Improve desktop CTR (0.9% vs mobile 3.6%) — check desktop layout,"Desktop has 5,459 impressions but only 50 clicks",1 hour,NOT DONE
+MEDIUM,Social,"Post blog links on Instagram, Twitter, Facebook to seed traffic",Social signals + referral traffic boost SEO,30 min/week,NOT DONE
+MEDIUM,Content,Add more FAQ content in ZH — Chinese search impressions are huge,"4,778 impressions from Chinese search alone",1 hour,NOT DONE
+LOW,SEO,Submit sitemap to Bing Webmaster Tools separately,Bing traffic is small but growing,15 min,NOT DONE
+LOW,SEO,Create Naver blog for Korean audience,Naver is #1 search engine in Korea,2 hours,NOT DONE
+LOW,Content,Write blog: 'Best Coffee in Waikiki 2026',Target coffee near me + best coffee waikiki keywords,2 hours,NOT DONE
+LOW,Content,Write blog: 'Best Poke in Waikiki 2026',"High search volume, internal link to your menu",2 hours,NOT DONE
