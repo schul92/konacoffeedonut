@@ -1521,6 +1521,7 @@ export default function Home() {
               <a href="#menu" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.menu')}</a>
               <a href="#about" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.about')}</a>
               <a href="#location" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.location')}</a>
+              <Link href={`/${locale}/blog`} className="opacity-60 hover:opacity-100 transition-opacity">Blog</Link>
               <Link href={`/${locale}/faq`} className="opacity-60 hover:opacity-100 transition-opacity">FAQ</Link>
               <Link href={`/${locale}/privacy-policy`} className="opacity-60 hover:opacity-100 transition-opacity">
                 {locale === 'ja' ? 'プライバシー' : locale === 'ko' ? '개인정보' : locale === 'zh' ? '隐私政策' : locale === 'es' ? 'Privacidad' : 'Privacy'}
