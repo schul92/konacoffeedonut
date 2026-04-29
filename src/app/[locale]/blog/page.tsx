@@ -271,27 +271,27 @@ const categoryColors: Record<string, string> = {
   '\uD478\uB4DC \uAC00\uC774\uB4DC': 'bg-amber-500/20 text-amber-700 border border-amber-500/30',
   '\u7F8E\u98DF\u6307\u5357': 'bg-amber-500/20 text-amber-700 border border-amber-500/30',
   'Gu\u00EDa Gastron\u00F3mica': 'bg-amber-500/20 text-amber-700 border border-amber-500/30',
-  'Korean Food': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
-  '\u97D3\u56FD\u30D5\u30FC\u30C9': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
-  '\uD55C\uAD6D \uC74C\uC2DD': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
-  '\u97E9\u56FD\u7F8E\u98DF': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
-  'Comida Coreana': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
-  'Coffee': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
-  '\u30B3\u30FC\u30D2\u30FC': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
-  '\uCEE4\uD53C': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
-  '\u5496\u5561': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
-  'Caf\u00E9': 'bg-orange-500/20 text-orange-300 border border-orange-500/30',
-  'Budget Guide': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
-  '\u7BC0\u7D04\u30AC\u30A4\u30C9': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
-  '\uC808\uC57D \uAC00\uC774\uB4DC': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
-  '\u7701\u94B1\u6307\u5357': 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30',
-  'Comparison': 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
-  '\u6BD4\u8F03': 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
-  '\uBE44\uAD50': 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
-  '\u5BF9\u6BD4': 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
-  'K-\u7F8E\u98DF': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
-  'K-\uD478\uB4DC': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
-  'K\u30D5\u30FC\u30C9': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
+  'Korean Food': 'bg-rose-500/20 text-rose-700 border border-rose-500/30',
+  '\u97D3\u56FD\u30D5\u30FC\u30C9': 'bg-rose-500/20 text-rose-700 border border-rose-500/30',
+  '\uD55C\uAD6D \uC74C\uC2DD': 'bg-rose-500/20 text-rose-700 border border-rose-500/30',
+  '\u97E9\u56FD\u7F8E\u98DF': 'bg-rose-500/20 text-rose-700 border border-rose-500/30',
+  'Comida Coreana': 'bg-rose-500/20 text-rose-700 border border-rose-500/30',
+  'Coffee': 'bg-orange-500/20 text-orange-700 border border-orange-500/30',
+  '\u30B3\u30FC\u30D2\u30FC': 'bg-orange-500/20 text-orange-700 border border-orange-500/30',
+  '\uCEE4\uD53C': 'bg-orange-500/20 text-orange-700 border border-orange-500/30',
+  '\u5496\u5561': 'bg-orange-500/20 text-orange-700 border border-orange-500/30',
+  'Caf\u00E9': 'bg-orange-500/20 text-orange-700 border border-orange-500/30',
+  'Budget Guide': 'bg-emerald-500/20 text-emerald-700 border border-emerald-500/30',
+  '\u7BC0\u7D04\u30AC\u30A4\u30C9': 'bg-emerald-500/20 text-emerald-700 border border-emerald-500/30',
+  '\uC808\uC57D \uAC00\uC774\uB4DC': 'bg-emerald-500/20 text-emerald-700 border border-emerald-500/30',
+  '\u7701\u94B1\u6307\u5357': 'bg-emerald-500/20 text-emerald-700 border border-emerald-500/30',
+  'Comparison': 'bg-purple-500/20 text-purple-700 border border-purple-500/30',
+  '\u6BD4\u8F03': 'bg-purple-500/20 text-purple-700 border border-purple-500/30',
+  '\uBE44\uAD50': 'bg-purple-500/20 text-purple-700 border border-purple-500/30',
+  '\u5BF9\u6BD4': 'bg-purple-500/20 text-purple-700 border border-purple-500/30',
+  'K-\u7F8E\u98DF': 'bg-rose-500/20 text-rose-700 border border-rose-500/30',
+  'K-\uD478\uB4DC': 'bg-rose-500/20 text-rose-700 border border-rose-500/30',
+  'K\u30D5\u30FC\u30C9': 'bg-rose-500/20 text-rose-700 border border-rose-500/30',
 };
 
 export default function BlogPage() {
@@ -303,13 +303,13 @@ export default function BlogPage() {
     <main className="min-h-screen bg-[#faf8f5]">
       <SubpageNav locale={locale} />
 
-      {/* Hero Section — dark luxury */}
+      {/* Hero Section */}
       <section className="relative py-28 md:py-36 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a1208] via-[#0d0d0d] to-[#0a0a0a]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(180,130,60,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50/50 to-amber-100/30" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(180,130,60,0.06),transparent_60%)]" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <motion.div
-            className="inline-block mb-6 px-4 py-1.5 border border-amber-600/30 rounded-full text-amber-700/80 text-xs tracking-[0.2em] uppercase"
+            className="inline-block mb-6 px-4 py-1.5 border border-amber-400/50 rounded-full text-amber-700 text-xs tracking-[0.2em] uppercase bg-white/60"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -349,7 +349,7 @@ export default function BlogPage() {
                 {t.posts[0].image && (
                   <Image src={t.posts[0].image} alt={t.posts[0].title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
                   <span className={`inline-block text-[10px] font-semibold px-3 py-1 rounded-full mb-4 tracking-wider uppercase ${categoryColors[t.posts[0].category] || 'bg-white text-gray-900/70 border border-gray-200'}`}>
                     {t.posts[0].category}
@@ -382,7 +382,7 @@ export default function BlogPage() {
                   {post.image && (
                     <div className="relative h-48 overflow-hidden">
                       <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#141414] via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent" />
                     </div>
                   )}
 
