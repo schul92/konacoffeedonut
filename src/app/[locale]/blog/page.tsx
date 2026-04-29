@@ -349,14 +349,14 @@ export default function BlogPage() {
                 {t.posts[0].image && (
                   <Image src={t.posts[0].image} alt={t.posts[0].title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                  <span className={`inline-block text-[10px] font-semibold px-3 py-1 rounded-full mb-4 tracking-wider uppercase ${categoryColors[t.posts[0].category] || 'bg-white text-gray-900/70 border border-gray-200'}`}>
+                  <span className="inline-block text-[10px] font-semibold px-3 py-1 rounded-full mb-4 tracking-wider uppercase bg-white/20 text-white border border-white/30 backdrop-blur-sm">
                     {t.posts[0].category}
                   </span>
-                  <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 leading-tight">{t.posts[0].title}</h2>
-                  <p className="text-gray-900/60 text-sm md:text-base max-w-2xl line-clamp-2">{t.posts[0].excerpt}</p>
-                  <div className="mt-4 text-amber-700 text-sm font-medium">{t.posts[0].readTime} {t.readTime} &middot; {t.readMore}</div>
+                  <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 leading-tight drop-shadow-lg" style={{textShadow: '0 2px 8px rgba(0,0,0,0.5)'}}>{t.posts[0].title}</h2>
+                  <p className="text-white/80 text-sm md:text-base max-w-2xl line-clamp-2 drop-shadow-md">{t.posts[0].excerpt}</p>
+                  <div className="mt-4 text-amber-300 text-sm font-semibold drop-shadow-md">{t.posts[0].readTime} {t.readTime} &middot; {t.readMore}</div>
                 </div>
               </div>
             </Link>
