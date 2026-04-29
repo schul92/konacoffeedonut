@@ -711,9 +711,9 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
       >
         <span className="text-lg font-semibold text-amber-100 pr-4">{question}</span>
         {isOpen ? (
-          <ChevronUp className="w-5 h-5 text-amber-400 flex-shrink-0" />
+          <ChevronUp className="w-5 h-5 text-amber-700 flex-shrink-0" />
         ) : (
-          <ChevronDown className="w-5 h-5 text-amber-400 flex-shrink-0" />
+          <ChevronDown className="w-5 h-5 text-amber-700 flex-shrink-0" />
         )}
       </button>
       {isOpen && (
@@ -747,7 +747,7 @@ export default function BestDessertsWaikikiPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <main className="min-h-screen bg-[#0a0a0a]">
+      <main className="min-h-screen bg-[#faf8f5]">
         <SubpageNav locale={locale} />
 
         {/* Hero Section */}
@@ -768,14 +768,14 @@ export default function BestDessertsWaikikiPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="mb-4 flex items-center justify-center gap-3 text-amber-300/80 text-sm"
+              className="mb-4 flex items-center justify-center gap-3 text-amber-700/80 text-sm"
             >
               <span>{t.hero.date}</span>
               <span className="w-1 h-1 rounded-full bg-amber-400" />
               <span>{t.hero.readTime}</span>
             </motion.div>
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -828,8 +828,8 @@ export default function BestDessertsWaikikiPage() {
                 <div
                   className={`px-6 py-4 flex items-center justify-between ${
                     shop.rank === 1
-                      ? 'bg-gradient-to-r from-amber-700 to-orange-600 text-white'
-                      : 'bg-gradient-to-r from-[#1a1a1a] to-[#222222] text-white'
+                      ? 'bg-gradient-to-r from-amber-700 to-orange-600 text-gray-900'
+                      : 'bg-gradient-to-r from-[#1a1a1a] to-[#222222] text-gray-900'
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -838,7 +838,7 @@ export default function BestDessertsWaikikiPage() {
                       <h2 className="text-xl md:text-2xl font-bold">{shop.name}</h2>
                     </div>
                   </div>
-                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-white/15 text-white">
+                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-gray-50 text-gray-900">
                     {shop.badge}
                   </span>
                 </div>
@@ -848,22 +848,22 @@ export default function BestDessertsWaikikiPage() {
                   {/* Meta Info */}
                   <div className="flex flex-wrap gap-4 mb-4 text-sm text-gray-400">
                     <div className="flex items-center gap-1.5">
-                      <MapPin className="w-4 h-4 text-amber-500" />
+                      <MapPin className="w-4 h-4 text-amber-700" />
                       <span>{shop.location}</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <Clock className="w-4 h-4 text-amber-500" />
+                      <Clock className="w-4 h-4 text-amber-700" />
                       <span>{shop.hours}</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <DollarSign className="w-4 h-4 text-amber-500" />
+                      <DollarSign className="w-4 h-4 text-amber-700" />
                       <span>{shop.priceRange}</span>
                     </div>
                   </div>
 
                   {/* Known For */}
                   <div className="mb-4">
-                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-400">
+                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700">
                       <Award className="w-4 h-4" />
                       {shop.knownFor}
                     </span>
@@ -891,32 +891,32 @@ export default function BestDessertsWaikikiPage() {
                     <div className="mt-4 flex flex-wrap gap-3">
                       <Link
                         href={`/${locale}/menu`}
-                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors underline decoration-amber-700 underline-offset-2"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-700 transition-colors underline decoration-amber-700 underline-offset-2"
                       >
                         <Coffee className="w-4 h-4" />
                         Full Menu
                       </Link>
                       <Link
                         href={`/${locale}/menu/mochi-donuts`}
-                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors underline decoration-amber-700 underline-offset-2"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-700 transition-colors underline decoration-amber-700 underline-offset-2"
                       >
                         Mochi Donuts
                       </Link>
                       <Link
                         href={`/${locale}/menu/malasada`}
-                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors underline decoration-amber-700 underline-offset-2"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-700 transition-colors underline decoration-amber-700 underline-offset-2"
                       >
                         Malasada
                       </Link>
                       <Link
                         href={`/${locale}/menu/bingsu`}
-                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors underline decoration-amber-700 underline-offset-2"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-700 transition-colors underline decoration-amber-700 underline-offset-2"
                       >
                         Bingsu
                       </Link>
                       <Link
                         href={`/${locale}/menu/acai-bowl`}
-                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors underline decoration-amber-700 underline-offset-2"
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber-700 hover:text-amber-700 transition-colors underline decoration-amber-700 underline-offset-2"
                       >
                         Acai Bowl
                       </Link>
@@ -938,7 +938,7 @@ export default function BestDessertsWaikikiPage() {
               viewport={{ once: true }}
               className="text-center mb-8"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
                 {t.comparison.title}
               </h2>
               <p className="text-gray-400">{t.comparison.subtitle}</p>
@@ -950,9 +950,9 @@ export default function BestDessertsWaikikiPage() {
               viewport={{ once: true }}
               className="overflow-x-auto"
             >
-              <table className="w-full bg-[#1a1a1a] rounded-2xl shadow-lg overflow-hidden border border-gray-800">
+              <table className="w-full bg-[#f9f6f2] rounded-2xl shadow-lg overflow-hidden border border-gray-800">
                 <thead>
-                  <tr className="bg-gradient-to-r from-amber-800 to-amber-700 text-white">
+                  <tr className="bg-gradient-to-r from-amber-800 to-amber-700 text-gray-900">
                     {t.comparison.headers.map((header, i) => (
                       <th
                         key={i}
@@ -968,7 +968,7 @@ export default function BestDessertsWaikikiPage() {
                     <tr
                       key={i}
                       className={`${
-                        i % 2 === 0 ? 'bg-[#1a1a1a]' : 'bg-[#151515]'
+                        i % 2 === 0 ? 'bg-[#f9f6f2]' : 'bg-[#151515]'
                       } border-b border-gray-800 last:border-b-0`}
                     >
                       {row.map((cell, j) => (
@@ -976,7 +976,7 @@ export default function BestDessertsWaikikiPage() {
                           key={j}
                           className={`px-4 py-3 text-sm ${
                             j === 0
-                              ? 'font-semibold text-amber-300'
+                              ? 'font-semibold text-amber-700'
                               : 'text-gray-300'
                           }`}
                         >
@@ -995,7 +995,7 @@ export default function BestDessertsWaikikiPage() {
         <section className="py-12 md:py-16 px-4">
           <div className="max-w-3xl mx-auto">
             <motion.h2
-              className="text-3xl md:text-4xl font-bold text-white mb-8 text-center"
+              className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -1003,7 +1003,7 @@ export default function BestDessertsWaikikiPage() {
             >
               {t.faq.title}
             </motion.h2>
-            <div className="bg-[#141414] rounded-2xl shadow-lg p-6 border border-gray-800">
+            <div className="bg-[#ffffff] rounded-2xl shadow-lg p-6 border border-gray-800">
               {t.faq.items.map((item, index) => (
                 <FAQItem key={index} question={item.q} answer={item.a} />
               ))}
@@ -1012,7 +1012,7 @@ export default function BestDessertsWaikikiPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 px-4 bg-gradient-to-r from-amber-800 via-orange-700 to-amber-800 text-white">
+        <section className="py-16 md:py-20 px-4 bg-gradient-to-r from-amber-800 via-orange-700 to-amber-800 text-gray-900">
           <motion.div
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -1038,7 +1038,7 @@ export default function BestDessertsWaikikiPage() {
                 href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#1a1a1a] border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-900/50 transition-colors"
+                className="inline-block bg-[#f9f6f2] border-2 border-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-900/50 transition-colors"
               >
                 {t.cta.directionsButton}
               </a>

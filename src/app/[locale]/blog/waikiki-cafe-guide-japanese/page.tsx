@@ -669,7 +669,7 @@ export default function WaikikiCafeGuideJapanesePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <main className="min-h-screen bg-[#0a0a0a] text-gray-100">
+      <main className="min-h-screen bg-[#faf8f5] text-gray-100">
         <SubpageNav locale={locale} />
 
         {/* Hero Section */}
@@ -684,10 +684,10 @@ export default function WaikikiCafeGuideJapanesePage() {
               priority
             />
           </div>
-          <div className="relative z-20 text-center text-white px-4 max-w-4xl mx-auto">
+          <div className="relative z-20 text-center text-gray-900 px-4 max-w-4xl mx-auto">
             {/* Breadcrumb */}
             <motion.nav
-              className="flex items-center justify-center gap-2 text-sm text-amber-300/80 mb-6"
+              className="flex items-center justify-center gap-2 text-sm text-amber-700/80 mb-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4 }}
@@ -700,7 +700,7 @@ export default function WaikikiCafeGuideJapanesePage() {
                 {t.hero.breadcrumb}
               </Link>
               <ChevronRight className="w-3 h-3" />
-              <span className="text-white/60">{t.hero.breadcrumbCurrent}</span>
+              <span className="text-gray-900/60">{t.hero.breadcrumbCurrent}</span>
             </motion.nav>
 
             <motion.h1
@@ -726,7 +726,7 @@ export default function WaikikiCafeGuideJapanesePage() {
         <section className="py-16 md:py-20 px-4">
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeIn}>
-              <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-700 mb-8 text-center">
                 {t.intro.title}
               </h2>
               {t.intro.paragraphs.map((p, i) => (
@@ -743,8 +743,8 @@ export default function WaikikiCafeGuideJapanesePage() {
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeIn}>
               <div className="flex items-center justify-center gap-3 mb-8">
-                <Coffee className="w-8 h-8 text-amber-400" />
-                <h2 className="text-3xl md:text-4xl font-bold text-amber-400">
+                <Coffee className="w-8 h-8 text-amber-700" />
+                <h2 className="text-3xl md:text-4xl font-bold text-amber-700">
                   {t.konaSection.title}
                 </h2>
               </div>
@@ -761,7 +761,7 @@ export default function WaikikiCafeGuideJapanesePage() {
         <section className="py-16 md:py-20 px-4">
           <div className="max-w-4xl mx-auto">
             <motion.div {...fadeIn} className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-700 mb-4">
                 {t.ranking.title}
               </h2>
               <p className="text-gray-400 text-lg">{t.ranking.subtitle}</p>
@@ -774,7 +774,7 @@ export default function WaikikiCafeGuideJapanesePage() {
                   className={`rounded-2xl p-6 md:p-8 border ${
                     cafe.isFeatured
                       ? 'bg-gradient-to-r from-amber-900/40 to-amber-800/20 border-amber-500/50 shadow-lg shadow-amber-900/20'
-                      : 'bg-white/5 border-white/10 hover:border-amber-500/30'
+                      : 'bg-white/80 border-gray-200 hover:border-amber-500/30'
                   } transition-all duration-300`}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -786,16 +786,16 @@ export default function WaikikiCafeGuideJapanesePage() {
                       className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl ${
                         cafe.isFeatured
                           ? 'bg-amber-500 text-black'
-                          : 'bg-white/10 text-amber-400'
+                          : 'bg-white text-amber-700'
                       }`}
                     >
                       #{cafe.rank}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl md:text-2xl font-bold text-white mb-1">
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-1">
                         {cafe.name}
                         {cafe.isFeatured && (
-                          <Star className="inline w-5 h-5 text-amber-400 ml-2 -mt-1" />
+                          <Star className="inline w-5 h-5 text-amber-700 ml-2 -mt-1" />
                         )}
                       </h3>
                       <div className="flex items-center gap-1 text-gray-400 text-sm mb-3">
@@ -804,7 +804,7 @@ export default function WaikikiCafeGuideJapanesePage() {
                       </div>
                       <p className="text-gray-300 leading-relaxed mb-4">{cafe.description}</p>
                       <div className="flex flex-wrap items-center gap-3 text-sm">
-                        <span className="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                        <span className="px-3 py-1 rounded-full bg-amber-500/20 text-amber-700 border border-amber-500/30">
                           {cafe.highlight}
                         </span>
                         <span className="flex items-center gap-1 text-green-400">
@@ -824,7 +824,7 @@ export default function WaikikiCafeGuideJapanesePage() {
         <section className="py-16 md:py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#0d0a12]">
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeIn}>
-              <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-700 mb-8 text-center">
                 {t.mochiDonut.title}
               </h2>
               {t.mochiDonut.paragraphs.map((p, i) => (
@@ -840,7 +840,7 @@ export default function WaikikiCafeGuideJapanesePage() {
         <section className="py-16 md:py-20 px-4">
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeIn}>
-              <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-700 mb-8 text-center">
                 {t.malasada.title}
               </h2>
               {t.malasada.paragraphs.map((p, i) => (
@@ -856,7 +856,7 @@ export default function WaikikiCafeGuideJapanesePage() {
         <section className="py-16 md:py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#0a0d12]">
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeIn}>
-              <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-700 mb-8 text-center">
                 {t.bingsu.title}
               </h2>
               {t.bingsu.paragraphs.map((p, i) => (
@@ -872,21 +872,21 @@ export default function WaikikiCafeGuideJapanesePage() {
         <section className="py-16 md:py-20 px-4">
           <div className="max-w-4xl mx-auto">
             <motion.div {...fadeIn}>
-              <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-10 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-700 mb-10 text-center">
                 {t.practical.title}
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {t.practical.sections.map((section, index) => (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white/80 border border-gray-200 rounded-xl p-6"
                   >
                     <div className="flex items-center gap-2 mb-3">
-                      {index === 0 && <Clock className="w-5 h-5 text-amber-400" />}
-                      {index === 1 && <MapPin className="w-5 h-5 text-amber-400" />}
-                      {index === 2 && <DollarSign className="w-5 h-5 text-amber-400" />}
-                      {index === 3 && <DollarSign className="w-5 h-5 text-amber-400" />}
-                      <h3 className="text-lg font-bold text-white">{section.subtitle}</h3>
+                      {index === 0 && <Clock className="w-5 h-5 text-amber-700" />}
+                      {index === 1 && <MapPin className="w-5 h-5 text-amber-700" />}
+                      {index === 2 && <DollarSign className="w-5 h-5 text-amber-700" />}
+                      {index === 3 && <DollarSign className="w-5 h-5 text-amber-700" />}
+                      <h3 className="text-lg font-bold text-gray-900">{section.subtitle}</h3>
                     </div>
                     <p className="text-gray-400 leading-relaxed text-sm">{section.text}</p>
                   </div>
@@ -900,16 +900,16 @@ export default function WaikikiCafeGuideJapanesePage() {
         <section className="py-16 md:py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#12080a]">
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeIn}>
-              <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-10 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold text-amber-700 mb-10 text-center">
                 {t.faq.title}
               </h2>
               <div className="space-y-4">
                 {t.faq.items.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-white/5 border border-white/10 rounded-xl p-6"
+                    className="bg-white/80 border border-gray-200 rounded-xl p-6"
                   >
-                    <h3 className="text-lg font-semibold text-white mb-3">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
                       Q. {item.question}
                     </h3>
                     <p className="text-gray-400 leading-relaxed">
@@ -926,10 +926,10 @@ export default function WaikikiCafeGuideJapanesePage() {
         <section className="py-16 md:py-20 px-4">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div {...fadeIn}>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 {t.cta.title}
               </h2>
-              <p className="text-xl text-amber-300/80 mb-8">{t.cta.text}</p>
+              <p className="text-xl text-amber-700/80 mb-8">{t.cta.text}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
@@ -941,7 +941,7 @@ export default function WaikikiCafeGuideJapanesePage() {
                 </a>
                 <Link
                   href={`/${locale}/menu`}
-                  className="inline-block bg-white/10 text-white border border-white/20 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-colors"
+                  className="inline-block bg-white text-gray-900 border border-gray-200 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors"
                 >
                   {t.cta.menuButton}
                 </Link>

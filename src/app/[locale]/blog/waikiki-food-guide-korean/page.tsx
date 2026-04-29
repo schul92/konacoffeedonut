@@ -815,7 +815,7 @@ export default function WaikikiFoodGuideKoreanPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <main className="min-h-screen bg-[#0a0a0a] text-gray-100">
+      <main className="min-h-screen bg-[#faf8f5] text-gray-100">
         <SubpageNav locale={locale} />
 
         {/* Hero Section */}
@@ -832,7 +832,7 @@ export default function WaikikiFoodGuideKoreanPage() {
           </div>
           <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
             <motion.span
-              className="inline-block px-4 py-1.5 bg-amber-500/20 border border-amber-500/40 rounded-full text-amber-300 text-sm font-medium mb-6"
+              className="inline-block px-4 py-1.5 bg-amber-500/20 border border-amber-500/40 rounded-full text-amber-700 text-sm font-medium mb-6"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -862,12 +862,12 @@ export default function WaikikiFoodGuideKoreanPage() {
 
         {/* Table of Contents */}
         <section className="py-10 px-4">
-          <div className="max-w-3xl mx-auto bg-[#141414] border border-gray-800 rounded-2xl p-6 md:p-8">
-            <h2 className="text-lg font-semibold text-amber-300 mb-4">{t.tableOfContents.title}</h2>
+          <div className="max-w-3xl mx-auto bg-[#ffffff] border border-gray-800 rounded-2xl p-6 md:p-8">
+            <h2 className="text-lg font-semibold text-amber-700 mb-4">{t.tableOfContents.title}</h2>
             <ol className="space-y-2">
               {t.tableOfContents.items.map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-300 hover:text-amber-200 transition-colors">
-                  <span className="text-amber-500/70 font-mono text-sm">{String(i + 1).padStart(2, '0')}</span>
+                  <span className="text-amber-700/70 font-mono text-sm">{String(i + 1).padStart(2, '0')}</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -888,14 +888,14 @@ export default function WaikikiFoodGuideKoreanPage() {
               {t.intro.highlights.map((h, i) => (
                 <motion.div
                   key={i}
-                  className="bg-[#1a1a1a] border border-gray-800 rounded-xl p-4 text-center"
+                  className="bg-[#f9f6f2] border border-gray-800 rounded-xl p-4 text-center"
                   variants={fadeIn}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                 >
-                  <div className="flex justify-center mb-2 text-amber-400">{getIcon(h.icon)}</div>
+                  <div className="flex justify-center mb-2 text-amber-700">{getIcon(h.icon)}</div>
                   <h3 className="text-sm font-semibold text-amber-200 mb-1">{h.label}</h3>
                   <p className="text-xs text-gray-400">{h.desc}</p>
                 </motion.div>
@@ -909,7 +909,7 @@ export default function WaikikiFoodGuideKoreanPage() {
           <div className="max-w-3xl mx-auto">
             <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6 }}>
               <div className="flex items-center gap-3 mb-6">
-                <Coffee className="w-7 h-7 text-amber-400" />
+                <Coffee className="w-7 h-7 text-amber-700" />
                 <h2 className="text-2xl md:text-3xl font-bold text-amber-100">{t.konaCoffee.title}</h2>
               </div>
               <p className="text-gray-300 leading-relaxed mb-4">{t.konaCoffee.p1}</p>
@@ -919,9 +919,9 @@ export default function WaikikiFoodGuideKoreanPage() {
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 {t.konaCoffee.stats.map((stat, i) => (
-                  <div key={i} className="bg-[#1a1a1a] border border-amber-900/30 rounded-lg p-3 text-center">
+                  <div key={i} className="bg-[#f9f6f2] border border-amber-900/30 rounded-lg p-3 text-center">
                     <p className="text-xs text-gray-500 mb-1">{stat.label}</p>
-                    <p className="text-sm font-semibold text-amber-300">{stat.value}</p>
+                    <p className="text-sm font-semibold text-amber-700">{stat.value}</p>
                   </div>
                 ))}
               </div>
@@ -929,7 +929,7 @@ export default function WaikikiFoodGuideKoreanPage() {
               {/* Tip Box */}
               <div className="bg-amber-900/20 border border-amber-700/30 rounded-xl p-4">
                 <p className="text-sm text-amber-200/90 flex items-start gap-2">
-                  <span className="text-amber-400 mt-0.5">TIP</span>
+                  <span className="text-amber-700 mt-0.5">TIP</span>
                   {t.konaCoffee.tip}
                 </p>
               </div>
@@ -957,7 +957,7 @@ export default function WaikikiFoodGuideKoreanPage() {
           <div className="max-w-3xl mx-auto">
             <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 0.6 }}>
               <div className="flex items-center gap-3 mb-6">
-                <Sparkles className="w-7 h-7 text-amber-400" />
+                <Sparkles className="w-7 h-7 text-amber-700" />
                 <h2 className="text-2xl md:text-3xl font-bold text-amber-100">{t.mochiDonut.title}</h2>
               </div>
               <p className="text-gray-300 leading-relaxed mb-4">{t.mochiDonut.p1}</p>
@@ -997,7 +997,7 @@ export default function WaikikiFoodGuideKoreanPage() {
                   className={`rounded-2xl p-6 md:p-8 border ${
                     shop.highlight
                       ? 'bg-gradient-to-br from-amber-900/30 to-[#1a1a1a] border-amber-600/40'
-                      : 'bg-[#141414] border-gray-800'
+                      : 'bg-[#ffffff] border-gray-800'
                   }`}
                   variants={fadeIn}
                   initial="hidden"
@@ -1024,7 +1024,7 @@ export default function WaikikiFoodGuideKoreanPage() {
                         {shop.mustTry.map((item, j) => (
                           <span key={j} className={`px-3 py-1 rounded-full text-xs font-medium ${
                             shop.highlight
-                              ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30'
+                              ? 'bg-amber-500/20 text-amber-700 border border-amber-500/30'
                               : 'bg-gray-800 text-gray-400'
                           }`}>
                             {item}
@@ -1051,7 +1051,7 @@ export default function WaikikiFoodGuideKoreanPage() {
               {t.pricing.categories.map((cat, i) => (
                 <motion.div
                   key={i}
-                  className="bg-[#141414] border border-gray-800 rounded-xl overflow-hidden"
+                  className="bg-[#ffffff] border border-gray-800 rounded-xl overflow-hidden"
                   variants={fadeIn}
                   initial="hidden"
                   whileInView="visible"
@@ -1066,7 +1066,7 @@ export default function WaikikiFoodGuideKoreanPage() {
                       <div key={j}>
                         <div className="flex justify-between items-center mb-0.5">
                           <span className="text-sm text-gray-300">{item.item}</span>
-                          <span className="text-sm font-semibold text-amber-300">{item.price}</span>
+                          <span className="text-sm font-semibold text-amber-700">{item.price}</span>
                         </div>
                         <p className="text-xs text-gray-500">{item.krw}</p>
                       </div>
@@ -1078,7 +1078,7 @@ export default function WaikikiFoodGuideKoreanPage() {
 
             {/* Tip Culture */}
             <motion.div
-              className="bg-[#141414] border border-gray-800 rounded-xl p-6"
+              className="bg-[#ffffff] border border-gray-800 rounded-xl p-6"
               variants={fadeIn}
               initial="hidden"
               whileInView="visible"
@@ -1092,7 +1092,7 @@ export default function WaikikiFoodGuideKoreanPage() {
               <ul className="space-y-2">
                 {t.pricing.tipInfo.tips.map((tip, i) => (
                   <li key={i} className="text-sm text-gray-400 flex items-start gap-2">
-                    <ChevronRight className="w-4 h-4 text-amber-500/50 mt-0.5 flex-shrink-0" />
+                    <ChevronRight className="w-4 h-4 text-amber-700/50 mt-0.5 flex-shrink-0" />
                     {tip}
                   </li>
                 ))}
@@ -1117,7 +1117,7 @@ export default function WaikikiFoodGuideKoreanPage() {
               {t.practicalInfo.items.map((item, i) => (
                 <motion.div
                   key={i}
-                  className="bg-[#141414] border border-gray-800 rounded-xl p-5"
+                  className="bg-[#ffffff] border border-gray-800 rounded-xl p-5"
                   variants={fadeIn}
                   initial="hidden"
                   whileInView="visible"
@@ -1125,7 +1125,7 @@ export default function WaikikiFoodGuideKoreanPage() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                 >
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-9 h-9 rounded-lg bg-amber-900/30 flex items-center justify-center text-amber-400">
+                    <div className="w-9 h-9 rounded-lg bg-amber-900/30 flex items-center justify-center text-amber-700">
                       {getIcon(item.icon)}
                     </div>
                     <h3 className="font-semibold text-amber-200">{item.title}</h3>
@@ -1153,7 +1153,7 @@ export default function WaikikiFoodGuideKoreanPage() {
               {t.faq.items.map((item, i) => (
                 <motion.div
                   key={i}
-                  className="bg-[#141414] border border-gray-800 rounded-xl p-6"
+                  className="bg-[#ffffff] border border-gray-800 rounded-xl p-6"
                   variants={fadeIn}
                   initial="hidden"
                   whileInView="visible"
@@ -1161,7 +1161,7 @@ export default function WaikikiFoodGuideKoreanPage() {
                   transition={{ duration: 0.5, delay: i * 0.05 }}
                 >
                   <h3 className="text-base font-semibold text-amber-200 mb-3 flex items-start gap-2">
-                    <span className="text-amber-500 font-bold">Q.</span>
+                    <span className="text-amber-700 font-bold">Q.</span>
                     {item.q}
                   </h3>
                   <p className="text-sm text-gray-400 leading-relaxed pl-6">{item.a}</p>
@@ -1193,7 +1193,7 @@ export default function WaikikiFoodGuideKoreanPage() {
                 </a>
                 <Link
                   href={`/${locale}/menu`}
-                  className="inline-flex items-center justify-center gap-2 bg-transparent border border-amber-500/50 hover:border-amber-400 text-amber-300 hover:text-amber-200 px-8 py-4 rounded-full font-semibold text-base transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-transparent border border-amber-500/50 hover:border-amber-400 text-amber-700 hover:text-amber-200 px-8 py-4 rounded-full font-semibold text-base transition-colors"
                 >
                   {t.cta.menuButton}
                   <ChevronRight className="w-5 h-5" />

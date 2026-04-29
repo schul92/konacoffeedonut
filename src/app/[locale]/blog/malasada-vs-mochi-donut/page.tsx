@@ -479,7 +479,7 @@ export default function MalasadaVsMochiDonutPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
         {/* ================================================================ */}
         {/*  HERO — split amber / pink-purple                                */}
@@ -492,10 +492,10 @@ export default function MalasadaVsMochiDonutPage() {
           </div>
           {/* Decorative diagonal line */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="w-px h-[120%] bg-white/20 rotate-12" />
+            <div className="w-px h-[120%] bg-gray-100 rotate-12" />
           </div>
 
-          <div className="relative z-10 py-20 md:py-28 px-4 text-center text-white max-w-4xl mx-auto">
+          <div className="relative z-10 py-20 md:py-28 px-4 text-center text-gray-900 max-w-4xl mx-auto">
             <motion.p
               className="text-sm uppercase tracking-widest opacity-70 mb-4"
               initial={{ opacity: 0 }}
@@ -529,7 +529,7 @@ export default function MalasadaVsMochiDonutPage() {
         <section className="py-12 px-4 max-w-3xl mx-auto">
           <motion.div {...fadeUp} className="bg-amber-50 border-l-4 border-amber-500 rounded-lg p-6 md:p-8">
             <h2 className="text-lg font-bold text-amber-900 mb-2 flex items-center gap-2">
-              <Star className="w-5 h-5 text-amber-500" />
+              <Star className="w-5 h-5 text-amber-700" />
               {t.quickAnswer.title}
             </h2>
             <p className="text-gray-700 leading-relaxed">{t.quickAnswer.text}</p>
@@ -585,7 +585,7 @@ export default function MalasadaVsMochiDonutPage() {
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeUp} className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center">
-                <Utensils className="w-5 h-5 text-white" />
+                <Utensils className="w-5 h-5 text-gray-900" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-amber-900">
                 {t.malasadaCase.title}
@@ -625,7 +625,7 @@ export default function MalasadaVsMochiDonutPage() {
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeUp} className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-purple-500 flex items-center justify-center">
-                <Trophy className="w-5 h-5 text-white" />
+                <Trophy className="w-5 h-5 text-gray-900" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-purple-900">
                 {t.mochiCase.title}
@@ -665,7 +665,7 @@ export default function MalasadaVsMochiDonutPage() {
           <div className="max-w-3xl mx-auto">
             <motion.div {...fadeUp} className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-gradient-to-r from-amber-500 to-purple-500 flex items-center justify-center">
-                <Coffee className="w-5 h-5 text-white" />
+                <Coffee className="w-5 h-5 text-gray-900" />
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 {t.whyNotBoth.title}
@@ -734,7 +734,7 @@ export default function MalasadaVsMochiDonutPage() {
         {/* ================================================================ */}
         {/*  CTA                                                             */}
         {/* ================================================================ */}
-        <section className="py-16 px-4 bg-gradient-to-r from-amber-600 via-orange-500 to-purple-600 text-white">
+        <section className="py-16 px-4 bg-gradient-to-r from-amber-600 via-orange-500 to-purple-600 text-gray-900">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2
               {...fadeUp}
@@ -756,7 +756,7 @@ export default function MalasadaVsMochiDonutPage() {
                 href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white/20 backdrop-blur text-white border-2 border-white/50 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 transition-colors"
+                className="inline-block bg-gray-100 backdrop-blur text-gray-900 border-2 border-white/50 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 transition-colors"
               >
                 {t.cta.buttonDirections}
               </a>

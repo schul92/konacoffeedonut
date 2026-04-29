@@ -722,16 +722,16 @@ export default function KoreanFoodWaikikiPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
         {/* Hero Section */}
         <section className="relative min-h-[55vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-red-900 via-red-800 to-orange-900">
           <div className="absolute inset-0 opacity-20">
             <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 25% 50%, rgba(255,100,50,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 50%, rgba(255,50,50,0.2) 0%, transparent 50%)' }} />
           </div>
-          <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto py-20">
+          <div className="relative z-10 text-center text-gray-900 px-4 max-w-5xl mx-auto py-20">
             <motion.span
-              className="inline-block bg-white/20 backdrop-blur-sm text-white text-sm font-medium px-4 py-1.5 rounded-full mb-6"
+              className="inline-block bg-gray-100 backdrop-blur-sm text-gray-900 text-sm font-medium px-4 py-1.5 rounded-full mb-6"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -798,7 +798,7 @@ export default function KoreanFoodWaikikiPage() {
                     viewport={{ once: true }}
                   >
                     <div className="flex items-start gap-4">
-                      <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg ${item.highlight ? 'bg-red-600 text-white' : 'bg-red-100 text-red-700'}`}>
+                      <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg ${item.highlight ? 'bg-red-600 text-gray-900' : 'bg-red-100 text-red-700'}`}>
                         {item.rank}
                       </div>
                       <div className="flex-1">
@@ -827,7 +827,7 @@ export default function KoreanFoodWaikikiPage() {
                           <div className="mt-4 flex flex-wrap gap-3">
                             <Link
                               href={`/${locale}/menu/korean-corn-dog`}
-                              className="inline-flex items-center gap-1 bg-red-600 text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-red-700 transition-colors"
+                              className="inline-flex items-center gap-1 bg-red-600 text-gray-900 text-sm font-medium px-4 py-2 rounded-full hover:bg-red-700 transition-colors"
                             >
                               <UtensilsCrossed className="w-4 h-4" />
                               {locale === 'ko' ? '핫도그 메뉴' : locale === 'ja' ? 'コーンドッグメニュー' : locale === 'zh' ? '玉米热狗菜单' : 'Corn Dog Menu'}
@@ -904,7 +904,7 @@ export default function KoreanFoodWaikikiPage() {
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="bg-red-600 text-white">
+                    <tr className="bg-red-600 text-gray-900">
                       {t.cheatSheet.headers.map((header, i) => (
                         <th key={i} className="px-4 md:px-6 py-4 text-left font-semibold text-sm md:text-base">{header}</th>
                       ))}
@@ -959,7 +959,7 @@ export default function KoreanFoodWaikikiPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 px-4 bg-gradient-to-r from-red-700 to-red-900 text-white">
+        <section className="py-16 px-4 bg-gradient-to-r from-red-700 to-red-900 text-gray-900">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -981,13 +981,13 @@ export default function KoreanFoodWaikikiPage() {
                 </Link>
                 <Link
                   href={`/${locale}/korean-corn-dog-waikiki`}
-                  className="inline-block bg-red-600 text-white border border-white/30 px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition-colors"
+                  className="inline-block bg-red-600 text-gray-900 border border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition-colors"
                 >
                   {t.cta.cornDogBtn}
                 </Link>
                 <Link
                   href={`/${locale}/bingsu-waikiki`}
-                  className="inline-block bg-red-600 text-white border border-white/30 px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition-colors"
+                  className="inline-block bg-red-600 text-gray-900 border border-gray-300 px-6 py-3 rounded-full font-semibold hover:bg-red-500 transition-colors"
                 >
                   {t.cta.bingsuBtn}
                 </Link>
@@ -995,7 +995,7 @@ export default function KoreanFoodWaikikiPage() {
                   href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-transparent text-white border border-white/50 px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors"
+                  className="inline-flex items-center gap-2 bg-transparent text-gray-900 border border-white/50 px-6 py-3 rounded-full font-semibold hover:bg-white transition-colors"
                 >
                   <Clock className="w-4 h-4" />
                   {t.cta.directionsBtn}

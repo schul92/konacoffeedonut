@@ -266,11 +266,11 @@ const content = {
 
 // Category color mapping — luxury dark theme
 const categoryColors: Record<string, string> = {
-  'Food Guide': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
-  '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
-  '\uD478\uB4DC \uAC00\uC774\uB4DC': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
-  '\u7F8E\u98DF\u6307\u5357': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
-  'Gu\u00EDa Gastron\u00F3mica': 'bg-amber-500/20 text-amber-300 border border-amber-500/30',
+  'Food Guide': 'bg-amber-500/20 text-amber-700 border border-amber-500/30',
+  '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9': 'bg-amber-500/20 text-amber-700 border border-amber-500/30',
+  '\uD478\uB4DC \uAC00\uC774\uB4DC': 'bg-amber-500/20 text-amber-700 border border-amber-500/30',
+  '\u7F8E\u98DF\u6307\u5357': 'bg-amber-500/20 text-amber-700 border border-amber-500/30',
+  'Gu\u00EDa Gastron\u00F3mica': 'bg-amber-500/20 text-amber-700 border border-amber-500/30',
   'Korean Food': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
   '\u97D3\u56FD\u30D5\u30FC\u30C9': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
   '\uD55C\uAD6D \uC74C\uC2DD': 'bg-rose-500/20 text-rose-300 border border-rose-500/30',
@@ -300,7 +300,7 @@ export default function BlogPage() {
   const t = content[locale as keyof typeof content] || content.en;
 
   return (
-    <main className="min-h-screen bg-[#0a0a0a]">
+    <main className="min-h-screen bg-[#faf8f5]">
       <SubpageNav locale={locale} />
 
       {/* Hero Section — dark luxury */}
@@ -309,7 +309,7 @@ export default function BlogPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(180,130,60,0.08),transparent_60%)]" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <motion.div
-            className="inline-block mb-6 px-4 py-1.5 border border-amber-600/30 rounded-full text-amber-400/80 text-xs tracking-[0.2em] uppercase"
+            className="inline-block mb-6 px-4 py-1.5 border border-amber-600/30 rounded-full text-amber-700/80 text-xs tracking-[0.2em] uppercase"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -317,7 +317,7 @@ export default function BlogPage() {
             Kona Coffee Donut
           </motion.div>
           <motion.h1
-            className="text-5xl md:text-7xl font-bold text-white mb-5 tracking-tight"
+            className="text-5xl md:text-7xl font-bold text-gray-900 mb-5 tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -325,7 +325,7 @@ export default function BlogPage() {
             {t.hero.title}
           </motion.h1>
           <motion.p
-            className="text-base md:text-lg text-white/50 max-w-xl mx-auto leading-relaxed"
+            className="text-base md:text-lg text-gray-900/50 max-w-xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -351,12 +351,12 @@ export default function BlogPage() {
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                  <span className={`inline-block text-[10px] font-semibold px-3 py-1 rounded-full mb-4 tracking-wider uppercase ${categoryColors[t.posts[0].category] || 'bg-white/10 text-white/70 border border-white/20'}`}>
+                  <span className={`inline-block text-[10px] font-semibold px-3 py-1 rounded-full mb-4 tracking-wider uppercase ${categoryColors[t.posts[0].category] || 'bg-white text-gray-900/70 border border-gray-200'}`}>
                     {t.posts[0].category}
                   </span>
-                  <h2 className="text-2xl md:text-4xl font-bold text-white mb-3 leading-tight">{t.posts[0].title}</h2>
-                  <p className="text-white/60 text-sm md:text-base max-w-2xl line-clamp-2">{t.posts[0].excerpt}</p>
-                  <div className="mt-4 text-amber-400 text-sm font-medium">{t.posts[0].readTime} {t.readTime} &middot; {t.readMore}</div>
+                  <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 leading-tight">{t.posts[0].title}</h2>
+                  <p className="text-gray-900/60 text-sm md:text-base max-w-2xl line-clamp-2">{t.posts[0].excerpt}</p>
+                  <div className="mt-4 text-amber-700 text-sm font-medium">{t.posts[0].readTime} {t.readTime} &middot; {t.readMore}</div>
                 </div>
               </div>
             </Link>
@@ -377,7 +377,7 @@ export default function BlogPage() {
               viewport={{ once: true }}
             >
               <Link href={`/${locale}/blog/${post.slug}`} className="block">
-                <div className="bg-[#141414] border border-white/[0.06] rounded-xl overflow-hidden hover:border-amber-600/20 transition-all duration-500 hover:shadow-[0_8px_40px_rgba(180,130,50,0.06)]">
+                <div className="bg-[#ffffff] border border-gray-200 rounded-xl overflow-hidden hover:border-amber-300 transition-all duration-500 hover:shadow-[0_8px_40px_rgba(180,130,50,0.06)]">
                   {/* Image */}
                   {post.image && (
                     <div className="relative h-48 overflow-hidden">
@@ -388,24 +388,24 @@ export default function BlogPage() {
 
                   <div className="p-5">
                     {/* Category */}
-                    <span className={`inline-block text-[10px] font-semibold px-2.5 py-1 rounded-full mb-3 tracking-wider uppercase ${categoryColors[post.category] || 'bg-white/10 text-white/60 border border-white/10'}`}>
+                    <span className={`inline-block text-[10px] font-semibold px-2.5 py-1 rounded-full mb-3 tracking-wider uppercase ${categoryColors[post.category] || 'bg-white text-gray-900/60 border border-gray-200'}`}>
                       {post.category}
                     </span>
 
                     {/* Title */}
-                    <h2 className="text-base font-bold text-white/90 mb-2 group-hover:text-amber-400 transition-colors leading-snug line-clamp-2">
+                    <h2 className="text-base font-bold text-gray-900/90 mb-2 group-hover:text-amber-700 transition-colors leading-snug line-clamp-2">
                       {post.title}
                     </h2>
 
                     {/* Excerpt */}
-                    <p className="text-sm text-white/40 mb-4 line-clamp-2 leading-relaxed">
+                    <p className="text-sm text-gray-900/40 mb-4 line-clamp-2 leading-relaxed">
                       {post.excerpt}
                     </p>
 
                     {/* Footer */}
-                    <div className="flex items-center justify-between pt-3 border-t border-white/[0.06]">
-                      <span className="text-[11px] text-white/25">{post.readTime} {t.readTime}</span>
-                      <span className="text-xs font-semibold text-amber-500/80 group-hover:text-amber-400 transition-colors">{t.readMore}</span>
+                    <div className="flex items-center justify-between pt-3 border-t border-gray-200">
+                      <span className="text-[11px] text-gray-900/25">{post.readTime} {t.readTime}</span>
+                      <span className="text-xs font-semibold text-amber-600 group-hover:text-amber-700 transition-colors">{t.readMore}</span>
                     </div>
                   </div>
                 </div>

@@ -938,7 +938,7 @@ export default function WhatIsBingsuPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
         {/* Breadcrumbs */}
         <nav className="max-w-4xl mx-auto px-4 pt-6 pb-2" aria-label="Breadcrumb">
@@ -1045,7 +1045,7 @@ export default function WhatIsBingsuPage() {
             >
               <table className="w-full border-collapse bg-white">
                 <thead>
-                  <tr className="bg-gradient-to-r from-sky-600 to-indigo-600 text-white">
+                  <tr className="bg-gradient-to-r from-sky-600 to-indigo-600 text-gray-900">
                     <th className="p-4 text-left font-semibold">{t.comparison.headers.feature}</th>
                     <th className="p-4 text-left font-semibold">{t.comparison.headers.bingsu}</th>
                     <th className="p-4 text-left font-semibold">{t.comparison.headers.shavedIce}</th>
@@ -1145,7 +1145,7 @@ export default function WhatIsBingsuPage() {
 
             <motion.div
               {...fadeUp}
-              className="bg-gradient-to-br from-sky-600 to-indigo-700 rounded-3xl p-8 md:p-10 text-white"
+              className="bg-gradient-to-br from-sky-600 to-indigo-700 rounded-3xl p-8 md:p-10 text-gray-900"
             >
               <h3 className="text-2xl font-bold mb-2">{t.whereToGet.shop.name}</h3>
               <p className="text-sky-200 mb-4 flex items-center gap-2">
@@ -1266,7 +1266,7 @@ export default function WhatIsBingsuPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-4 bg-gradient-to-r from-sky-600 via-indigo-600 to-purple-600 text-white">
+        <section className="py-16 px-4 bg-gradient-to-r from-sky-600 via-indigo-600 to-purple-600 text-gray-900">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -1288,7 +1288,7 @@ export default function WhatIsBingsuPage() {
                   href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition-colors"
+                  className="inline-block bg-transparent border-2 border-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white transition-colors"
                 >
                   {t.cta.directionsButton}
                 </a>

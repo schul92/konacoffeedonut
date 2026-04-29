@@ -647,7 +647,7 @@ export default function KonaCoffeeGuidePage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 overflow-hidden bg-gradient-to-br from-amber-950 via-amber-900 to-yellow-900">
@@ -657,7 +657,7 @@ export default function KonaCoffeeGuidePage() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
             {/* Breadcrumb */}
             <motion.nav
-              className="flex items-center justify-center gap-2 text-amber-300/80 text-sm mb-8"
+              className="flex items-center justify-center gap-2 text-amber-700/80 text-sm mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4 }}
@@ -680,7 +680,7 @@ export default function KonaCoffeeGuidePage() {
             </motion.div>
 
             <motion.h1
-              className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -758,7 +758,7 @@ export default function KonaCoffeeGuidePage() {
             >
               <table className="w-full text-left">
                 <thead>
-                  <tr className="bg-amber-900 text-white">
+                  <tr className="bg-amber-900 text-gray-900">
                     {t.comparisonTable.headers.map((h, i) => (
                       <th key={i} className="px-5 py-4 font-semibold text-sm md:text-base">
                         {h}
@@ -883,7 +883,7 @@ export default function KonaCoffeeGuidePage() {
             <motion.div className="space-y-4 mb-8" {...fadeIn}>
               {t.brewing.steps.map((step, i) => (
                 <div key={i} className="flex items-start gap-4 bg-white border border-amber-100 rounded-lg p-4">
-                  <span className="flex-shrink-0 w-8 h-8 bg-amber-900 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                  <span className="flex-shrink-0 w-8 h-8 bg-amber-900 text-gray-900 rounded-full flex items-center justify-center text-sm font-bold">
                     {i + 1}
                   </span>
                   <div>
@@ -928,7 +928,7 @@ export default function KonaCoffeeGuidePage() {
             <motion.div className="mt-8" {...fadeIn}>
               <Link
                 href={`/${locale}/menu/kona-coffee`}
-                className="inline-flex items-center gap-2 bg-amber-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-800 transition-colors"
+                className="inline-flex items-center gap-2 bg-amber-900 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-800 transition-colors"
               >
                 <Coffee className="w-5 h-5" />
                 {t.whereTo.cta}
@@ -977,7 +977,7 @@ export default function KonaCoffeeGuidePage() {
             >
               {t.cta.learnMore}
             </Link>
-            <span className="text-amber-300">|</span>
+            <span className="text-amber-700">|</span>
             <Link
               href={`/${locale}/menu/kona-coffee`}
               className="text-amber-700 hover:text-amber-900 underline underline-offset-4 transition-colors"
@@ -988,7 +988,7 @@ export default function KonaCoffeeGuidePage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 px-4 bg-gradient-to-r from-amber-900 to-amber-800 text-white">
+        <section className="py-16 px-4 bg-gradient-to-r from-amber-900 to-amber-800 text-gray-900">
           <div className="max-w-4xl mx-auto text-center">
             <motion.h2
               className="text-3xl md:text-4xl font-bold mb-4"

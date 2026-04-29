@@ -558,7 +558,7 @@ export default function KonaCoffeeChineseGuidePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <main className="min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#111] to-[#0a0a0a]">
+      <main className="min-h-screen bg-gradient-to-b from-[#faf8f5] via-[#f5f0eb] to-[#faf8f5]">
         <SubpageNav locale={locale} />
 
         {/* Hero Section */}
@@ -569,20 +569,20 @@ export default function KonaCoffeeChineseGuidePage() {
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             {/* Breadcrumb */}
             <motion.nav
-              className="flex items-center justify-center gap-2 text-sm text-amber-400/60 mb-8"
+              className="flex items-center justify-center gap-2 text-sm text-amber-700/60 mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4 }}
             >
-              <Link href={`/${locale}`} className="hover:text-amber-400 transition-colors">Home</Link>
+              <Link href={`/${locale}`} className="hover:text-amber-700 transition-colors">Home</Link>
               <ChevronRight className="w-3 h-3" />
-              <Link href={`/${locale}/blog`} className="hover:text-amber-400 transition-colors">{t.hero.breadcrumb}</Link>
+              <Link href={`/${locale}/blog`} className="hover:text-amber-700 transition-colors">{t.hero.breadcrumb}</Link>
               <ChevronRight className="w-3 h-3" />
-              <span className="text-amber-400/80">{t.hero.breadcrumbCurrent}</span>
+              <span className="text-amber-700/80">{t.hero.breadcrumbCurrent}</span>
             </motion.nav>
 
             <motion.h1
-              className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -605,9 +605,9 @@ export default function KonaCoffeeChineseGuidePage() {
           <motion.div className="max-w-4xl mx-auto" {...fadeIn}>
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-amber-600/20 rounded-xl flex items-center justify-center">
-                <Coffee className="w-6 h-6 text-amber-400" />
+                <Coffee className="w-6 h-6 text-amber-700" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white">{t.intro.title}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{t.intro.title}</h2>
             </div>
             <div className="space-y-5">
               {t.intro.paragraphs.map((p, i) => (
@@ -625,7 +625,7 @@ export default function KonaCoffeeChineseGuidePage() {
                 <div className="w-12 h-12 bg-orange-600/20 rounded-xl flex items-center justify-center">
                   <Star className="w-6 h-6 text-orange-400" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white">{t.flavor.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{t.flavor.title}</h2>
               </div>
               <p className="text-gray-300 leading-relaxed mb-10 text-base md:text-lg">{t.flavor.intro}</p>
             </motion.div>
@@ -635,13 +635,13 @@ export default function KonaCoffeeChineseGuidePage() {
               {t.flavor.notes.map((note, i) => (
                 <motion.div
                   key={i}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/8 transition-colors"
+                  className="bg-white/80 border border-gray-200 rounded-2xl p-6 hover:bg-white/8 transition-colors"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.08 }}
                 >
-                  <h3 className="text-lg font-semibold text-amber-300 mb-3">{note.name}</h3>
+                  <h3 className="text-lg font-semibold text-amber-700 mb-3">{note.name}</h3>
                   <p className="text-gray-400 leading-relaxed text-sm md:text-base">{note.description}</p>
                 </motion.div>
               ))}
@@ -649,13 +649,13 @@ export default function KonaCoffeeChineseGuidePage() {
 
             {/* Comparison Table */}
             <motion.div {...fadeIn}>
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-6">{t.flavor.comparisonTitle}</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">{t.flavor.comparisonTitle}</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
                     <tr>
                       {t.flavor.comparisonHeaders.map((h, i) => (
-                        <th key={i} className={`py-4 px-4 text-left text-sm font-semibold border-b border-white/10 ${i === 1 ? 'text-amber-300 bg-amber-600/10' : 'text-gray-400'}`}>
+                        <th key={i} className={`py-4 px-4 text-left text-sm font-semibold border-b border-gray-200 ${i === 1 ? 'text-amber-700 bg-amber-600/10' : 'text-gray-400'}`}>
                           {h}
                         </th>
                       ))}
@@ -686,7 +686,7 @@ export default function KonaCoffeeChineseGuidePage() {
                 <div className="w-12 h-12 bg-green-600/20 rounded-xl flex items-center justify-center">
                   <ThumbsUp className="w-6 h-6 text-green-400" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white">{t.americano.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{t.americano.title}</h2>
               </div>
 
               {/* Bold Answer */}
@@ -704,13 +704,13 @@ export default function KonaCoffeeChineseGuidePage() {
                 {t.americano.reasons.map((reason, i) => (
                   <motion.div
                     key={i}
-                    className="bg-white/5 border border-white/10 rounded-2xl p-6"
+                    className="bg-white/80 border border-gray-200 rounded-2xl p-6"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
                   >
-                    <h3 className="text-lg font-semibold text-amber-300 mb-2">{reason.title}</h3>
+                    <h3 className="text-lg font-semibold text-amber-700 mb-2">{reason.title}</h3>
                     <p className="text-gray-400 leading-relaxed text-sm md:text-base">{reason.text}</p>
                   </motion.div>
                 ))}
@@ -719,7 +719,7 @@ export default function KonaCoffeeChineseGuidePage() {
               {/* Recommendation */}
               <div className="bg-amber-900/20 border border-amber-500/20 rounded-2xl p-6">
                 <div className="flex items-start gap-3">
-                  <Award className="w-6 h-6 text-amber-400 mt-1 flex-shrink-0" />
+                  <Award className="w-6 h-6 text-amber-700 mt-1 flex-shrink-0" />
                   <p className="text-amber-200/90 leading-relaxed text-sm md:text-base">{t.americano.recommendation}</p>
                 </div>
               </div>
@@ -735,7 +735,7 @@ export default function KonaCoffeeChineseGuidePage() {
                 <div className="w-12 h-12 bg-blue-600/20 rounded-xl flex items-center justify-center">
                   <Droplets className="w-6 h-6 text-blue-400" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white">{t.brewing.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{t.brewing.title}</h2>
               </div>
               <p className="text-gray-300 leading-relaxed mb-10 text-base md:text-lg">{t.brewing.subtitle}</p>
             </motion.div>
@@ -744,7 +744,7 @@ export default function KonaCoffeeChineseGuidePage() {
               {t.brewing.methods.map((method, i) => (
                 <motion.div
                   key={i}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8"
+                  className="bg-white/80 border border-gray-200 rounded-2xl p-6 md:p-8"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -755,10 +755,10 @@ export default function KonaCoffeeChineseGuidePage() {
                     {method.icon === 'frenchpress' && <Bean className="w-5 h-5 text-orange-400" />}
                     {method.icon === 'coldbrew' && <Droplets className="w-5 h-5 text-cyan-400" />}
                     {method.icon === 'espresso' && <Flame className="w-5 h-5 text-red-400" />}
-                    <h3 className="text-xl font-semibold text-white">{method.name}</h3>
+                    <h3 className="text-xl font-semibold text-gray-900">{method.name}</h3>
                   </div>
                   <div className="bg-black/30 rounded-lg px-4 py-2 mb-4 inline-block">
-                    <span className="text-amber-400/80 text-sm font-mono">{method.params}</span>
+                    <span className="text-amber-700/80 text-sm font-mono">{method.params}</span>
                   </div>
                   <p className="text-gray-300 leading-relaxed text-sm md:text-base">{method.description}</p>
                 </motion.div>
@@ -775,7 +775,7 @@ export default function KonaCoffeeChineseGuidePage() {
                 <div className="w-12 h-12 bg-rose-600/20 rounded-xl flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-rose-400" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white">{t.whereToBuy.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{t.whereToBuy.title}</h2>
               </div>
 
               {t.whereToBuy.paragraphs.map((p, i) => (
@@ -784,13 +784,13 @@ export default function KonaCoffeeChineseGuidePage() {
 
               {/* Shop Card */}
               <div className="mt-8 bg-gradient-to-br from-amber-900/30 to-orange-900/20 border border-amber-500/30 rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-amber-300 mb-2">{t.whereToBuy.shopInfo.name}</h3>
+                <h3 className="text-2xl font-bold text-amber-700 mb-2">{t.whereToBuy.shopInfo.name}</h3>
                 <p className="text-gray-300 mb-3">{t.whereToBuy.shopInfo.address}</p>
                 <p className="text-amber-200/80 mb-6">{t.whereToBuy.shopInfo.highlight}</p>
                 <div className="flex flex-wrap gap-4">
                   <Link
                     href={`/${locale}/menu`}
-                    className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-white px-6 py-3 rounded-full font-semibold transition-colors"
+                    className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-gray-900 px-6 py-3 rounded-full font-semibold transition-colors"
                   >
                     <Coffee className="w-4 h-4" />
                     {t.whereToBuy.shopInfo.cta}
@@ -799,7 +799,7 @@ export default function KonaCoffeeChineseGuidePage() {
                     href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 border border-amber-500/50 hover:bg-amber-900/30 text-amber-300 px-6 py-3 rounded-full font-semibold transition-colors"
+                    className="inline-flex items-center gap-2 border border-amber-500/50 hover:bg-amber-900/30 text-amber-700 px-6 py-3 rounded-full font-semibold transition-colors"
                   >
                     <MapPin className="w-4 h-4" />
                     {t.cta.directions}
@@ -818,7 +818,7 @@ export default function KonaCoffeeChineseGuidePage() {
                 <div className="w-12 h-12 bg-purple-600/20 rounded-xl flex items-center justify-center">
                   <HelpCircle className="w-6 h-6 text-purple-400" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white">{t.faq.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{t.faq.title}</h2>
               </div>
             </motion.div>
 
@@ -826,13 +826,13 @@ export default function KonaCoffeeChineseGuidePage() {
               {t.faq.items.map((item, i) => (
                 <motion.div
                   key={i}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-6"
+                  className="bg-white/80 border border-gray-200 rounded-2xl p-6"
                   initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.08 }}
                 >
-                  <h3 className="text-lg font-semibold text-amber-300 mb-3">{item.question}</h3>
+                  <h3 className="text-lg font-semibold text-amber-700 mb-3">{item.question}</h3>
                   <p className="text-gray-400 leading-relaxed text-sm md:text-base">{item.answer}</p>
                 </motion.div>
               ))}
@@ -849,12 +849,12 @@ export default function KonaCoffeeChineseGuidePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t.cta.title}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t.cta.title}</h2>
             <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">{t.cta.text}</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href={`/${locale}/menu`}
-                className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors"
+                className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-colors"
               >
                 <Coffee className="w-5 h-5" />
                 {t.cta.button}
@@ -863,7 +863,7 @@ export default function KonaCoffeeChineseGuidePage() {
                 href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-amber-500/50 hover:bg-amber-900/30 text-amber-300 px-8 py-4 rounded-full font-semibold text-lg transition-colors"
+                className="inline-flex items-center gap-2 border border-amber-500/50 hover:bg-amber-900/30 text-amber-700 px-8 py-4 rounded-full font-semibold text-lg transition-colors"
               >
                 <MapPin className="w-5 h-5" />
                 {t.cta.directions}

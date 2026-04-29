@@ -930,17 +930,17 @@ export default function CheapEatsWaikikiPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
         {/* ── Hero ──────────────────────────────────────────────── */}
-        <section className="relative bg-gradient-to-br from-emerald-800 via-teal-700 to-emerald-900 text-white overflow-hidden">
+        <section className="relative bg-gradient-to-br from-emerald-800 via-teal-700 to-emerald-900 text-gray-900 overflow-hidden">
           {/* decorative circles */}
           <div className="absolute -top-20 -right-20 w-72 h-72 bg-emerald-600/20 rounded-full blur-3xl" />
           <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-teal-500/20 rounded-full blur-3xl" />
 
           <div className="relative z-10 max-w-4xl mx-auto px-4 py-20 md:py-28 text-center">
             <motion.span
-              className="inline-block bg-white/15 backdrop-blur-sm text-white text-sm font-medium px-4 py-1.5 rounded-full mb-6"
+              className="inline-block bg-gray-50 backdrop-blur-sm text-gray-900 text-sm font-medium px-4 py-1.5 rounded-full mb-6"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
@@ -967,7 +967,7 @@ export default function CheapEatsWaikikiPage() {
             </motion.p>
 
             <motion.p
-              className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-8"
+              className="text-base md:text-lg text-gray-900/80 max-w-2xl mx-auto mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -1027,7 +1027,7 @@ export default function CheapEatsWaikikiPage() {
                   viewport={{ once: true }}
                 >
                   {/* rank badge */}
-                  <div className="absolute top-0 left-0 bg-emerald-700 text-white w-12 h-12 flex items-center justify-center text-xl font-bold rounded-br-2xl">
+                  <div className="absolute top-0 left-0 bg-emerald-700 text-gray-900 w-12 h-12 flex items-center justify-center text-xl font-bold rounded-br-2xl">
                     #{spot.rank}
                   </div>
 
@@ -1039,7 +1039,7 @@ export default function CheapEatsWaikikiPage() {
                           <Utensils className="w-3.5 h-3.5" /> {spot.type}
                         </p>
                       </div>
-                      <span className={`${tagColors[spot.tag] || 'bg-emerald-600'} text-white text-xs font-semibold px-3 py-1 rounded-full`}>
+                      <span className={`${tagColors[spot.tag] || 'bg-emerald-600'} text-gray-900 text-xs font-semibold px-3 py-1 rounded-full`}>
                         {spot.tag}
                       </span>
                     </div>
@@ -1141,7 +1141,7 @@ export default function CheapEatsWaikikiPage() {
             >
               <table className="w-full bg-white text-sm md:text-base">
                 <thead>
-                  <tr className="bg-emerald-700 text-white">
+                  <tr className="bg-emerald-700 text-gray-900">
                     {t.priceTable.headers.map((h, i) => (
                       <th key={i} className="px-4 py-3 text-left font-semibold">{h}</th>
                     ))}
@@ -1194,12 +1194,12 @@ export default function CheapEatsWaikikiPage() {
         </section>
 
         {/* ── CTA ─────────────────────────────────────────────── */}
-        <section className="py-16 px-4 bg-gradient-to-r from-emerald-700 to-teal-600 text-white">
+        <section className="py-16 px-4 bg-gradient-to-r from-emerald-700 to-teal-600 text-gray-900">
           <div className="max-w-4xl mx-auto text-center">
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
               <Coffee className="w-10 h-10 mx-auto mb-4 opacity-80" />
               <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.cta.title}</h2>
-              <p className="text-lg mb-8 text-white/85 max-w-2xl mx-auto">{t.cta.text}</p>
+              <p className="text-lg mb-8 text-gray-900/85 max-w-2xl mx-auto">{t.cta.text}</p>
 
               <div className="flex flex-wrap items-center justify-center gap-4">
                 <Link
@@ -1211,7 +1211,7 @@ export default function CheapEatsWaikikiPage() {
                 </Link>
                 <Link
                   href={`/${locale}/breakfast-waikiki`}
-                  className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white border border-white/30 px-7 py-3.5 rounded-full font-semibold hover:bg-white/25 transition-colors"
+                  className="inline-flex items-center gap-2 bg-gray-50 backdrop-blur-sm text-gray-900 border border-gray-300 px-7 py-3.5 rounded-full font-semibold hover:bg-white/25 transition-colors"
                 >
                   {t.cta.breakfastBtn}
                 </Link>
@@ -1219,7 +1219,7 @@ export default function CheapEatsWaikikiPage() {
                   href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm text-white border border-white/30 px-7 py-3.5 rounded-full font-semibold hover:bg-white/25 transition-colors"
+                  className="inline-flex items-center gap-2 bg-gray-50 backdrop-blur-sm text-gray-900 border border-gray-300 px-7 py-3.5 rounded-full font-semibold hover:bg-white/25 transition-colors"
                 >
                   <MapPin className="w-4 h-4" />
                   {t.cta.directionsBtn}

@@ -885,7 +885,7 @@ export default function BestDonutsWaikikiPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
       </div>
         {/* Hero Section */}
         <section className="relative py-20 md:py-28 overflow-hidden">
@@ -905,7 +905,7 @@ export default function BestDonutsWaikikiPage() {
               <span>{t.hero.readTime}</span>
             </motion.div>
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -958,8 +958,8 @@ export default function BestDonutsWaikikiPage() {
                 <div
                   className={`px-6 py-4 flex items-center justify-between ${
                     shop.rank === 1
-                      ? 'bg-gradient-to-r from-amber-600 to-orange-500 text-white'
-                      : 'bg-gradient-to-r from-amber-800 to-amber-700 text-white'
+                      ? 'bg-gradient-to-r from-amber-600 to-orange-500 text-gray-900'
+                      : 'bg-gradient-to-r from-amber-800 to-amber-700 text-gray-900'
                   }`}
                 >
                   <div className="flex items-center gap-3">
@@ -971,8 +971,8 @@ export default function BestDonutsWaikikiPage() {
                   <span
                     className={`text-xs font-semibold px-3 py-1 rounded-full ${
                       shop.rank === 1
-                        ? 'bg-white/20 text-white'
-                        : 'bg-white/20 text-white'
+                        ? 'bg-gray-100 text-gray-900'
+                        : 'bg-gray-100 text-gray-900'
                     }`}
                   >
                     {shop.badge}
@@ -1076,7 +1076,7 @@ export default function BestDonutsWaikikiPage() {
             >
               <table className="w-full bg-white rounded-2xl shadow-lg overflow-hidden">
                 <thead>
-                  <tr className="bg-gradient-to-r from-amber-700 to-amber-600 text-white">
+                  <tr className="bg-gradient-to-r from-amber-700 to-amber-600 text-gray-900">
                     {t.comparison.headers.map((header, i) => (
                       <th
                         key={i}
@@ -1171,7 +1171,7 @@ export default function BestDonutsWaikikiPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-20 px-4 bg-gradient-to-r from-amber-700 via-orange-600 to-amber-700 text-white">
+        <section className="py-16 md:py-20 px-4 bg-gradient-to-r from-amber-700 via-orange-600 to-amber-700 text-gray-900">
           <motion.div
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -1196,7 +1196,7 @@ export default function BestDonutsWaikikiPage() {
                 href="https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#1a1a1a] border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-900/50 transition-colors"
+                className="inline-block bg-[#f9f6f2] border-2 border-white text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-amber-900/50 transition-colors"
               >
                 {t.cta.directionsButton}
               </a>
