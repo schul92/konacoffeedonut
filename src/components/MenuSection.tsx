@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Play, X } from 'lucide-react';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 interface MenuItem {
   id: string;
@@ -37,8 +39,18 @@ export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
   const openMenu = (menuImage: string, title: string, comingSoon?: boolean, id?: string) => {
-    setCurrentMenu({ image: menuImage, title, comingSoon, id });
-    setModalOpen(true);
+    if (comingSoon) {
+      setCurrentMenu({ image: menuImage, title, comingSoon, id });
+      setModalOpen(true);
+    } else {
+      // Use react-photo-view — trigger by clicking hidden PhotoView
+      setCurrentMenu({ image: menuImage, title, comingSoon, id });
+      // Small delay to let state update, then trigger the photo view
+      setTimeout(() => {
+        const trigger = document.getElementById('photo-view-trigger');
+        if (trigger) trigger.click();
+      }, 50);
+    }
 
     // Track menu view
     if (typeof window !== 'undefined' && window.trackEvent) {
@@ -267,11 +279,23 @@ export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
         </motion.div>
       </div>
 
-      {/* Menu Image Modal - Mobile Optimized */}
+      {/* Photo Viewer — pinch-to-zoom, pan, swipe on mobile + desktop */}
+      <PhotoProvider
+        maskOpacity={0.95}
+        bannerVisible={false}
+        photoClosable
+      >
+        {currentMenu && !currentMenu.comingSoon && (
+          <PhotoView src={currentMenu.image}>
+            <button id="photo-view-trigger" className="hidden" aria-hidden="true" />
+          </PhotoView>
+        )}
+      </PhotoProvider>
+
+      {/* Coming Soon Modal — only for items marked comingSoon */}
       <AnimatePresence>
-        {modalOpen && currentMenu && (
+        {modalOpen && currentMenu?.comingSoon && (
           <>
-            {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -279,91 +303,24 @@ export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
               onClick={() => setModalOpen(false)}
               className="fixed inset-0 bg-black/95 z-50"
             />
-
-            {/* Modal */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4"
+              className="fixed inset-0 z-50 flex items-center justify-center p-4"
               onClick={() => setModalOpen(false)}
             >
-              <div className="relative w-full max-w-6xl h-[85vh] sm:h-auto sm:max-h-[90vh]">
-                {/* Close Button */}
-                <button
-                  onClick={() => setModalOpen(false)}
-                  className="absolute -top-10 sm:-top-12 right-0 p-2 sm:p-3 text-white hover:text-orange-500 transition-colors bg-black/70 rounded-full z-10"
-                  aria-label="Close"
-                >
-                  <X className="w-5 h-5 sm:w-6 sm:h-6" />
-                </button>
-
-                {/* Menu Image Viewer or Coming Soon */}
-                <div
-                  className="w-full h-full bg-black rounded-lg overflow-auto shadow-2xl p-2 sm:p-4 flex items-center justify-center"
-                  onClick={(e) => e.stopPropagation()}
-                  style={{
-                    overscrollBehavior: 'contain',
-                    WebkitOverflowScrolling: 'touch'
-                  }}
-                >
-                  {currentMenu.comingSoon ? (
-                    /* Coming Soon Display */
-                    <div className="flex flex-col items-center justify-center text-center px-8 py-16">
-                      <motion.div
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        transition={{ duration: 0.5, type: 'spring' }}
-                        className="mb-8"
-                      >
-                        <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center shadow-2xl mb-6 mx-auto">
-                          <span className="text-5xl md:text-6xl">{getComingSoonEmoji(currentMenu.id)}</span>
-                        </div>
-                      </motion.div>
-                      <motion.h3
-                        initial={{ y: 20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                        className="text-3xl md:text-5xl font-black text-white mb-4"
-                      >
-                        Coming Soon!
-                      </motion.h3>
-                      <motion.p
-                        initial={{ y: 20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.3 }}
-                        className="text-lg md:text-xl text-white/70 max-w-md"
-                      >
-                        Our {currentMenu.title} menu is being crafted with care. Stay tuned for something special!
-                      </motion.p>
-                      <motion.div
-                        initial={{ y: 20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.4 }}
-                        className="mt-8"
-                      >
-                        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-full font-bold text-sm tracking-widest animate-pulse">
-                          <span className="w-2 h-2 bg-white rounded-full"></span>
-                          OPENING FEBRUARY 2026
-                        </div>
-                      </motion.div>
-                    </div>
-                  ) : (
-                    /* Menu Image — full-width, pinch-to-zoom on mobile */
-                    <>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={currentMenu.image}
-                        alt={currentMenu.title}
-                        className="w-full max-w-full h-auto object-contain cursor-zoom-in"
-                        style={{
-                          touchAction: 'manipulation',
-                          userSelect: 'none'
-                        }}
-                      />
-                    </>
-                  )}
+              <div className="flex flex-col items-center justify-center text-center px-8 py-16" onClick={(e) => e.stopPropagation()}>
+                <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center shadow-2xl mb-6">
+                  <span className="text-5xl md:text-6xl">{getComingSoonEmoji(currentMenu.id)}</span>
                 </div>
+                <h3 className="text-3xl md:text-5xl font-black text-white mb-4">Coming Soon!</h3>
+                <p className="text-lg md:text-xl text-white/70 max-w-md">
+                  Our {currentMenu.title} menu is being crafted with care. Stay tuned!
+                </p>
+                <button onClick={() => setModalOpen(false)} className="mt-8 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full font-medium transition-colors">
+                  Close
+                </button>
               </div>
             </motion.div>
           </>
