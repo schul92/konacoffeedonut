@@ -19,8 +19,7 @@ const menuItems: MenuItem[] = [
   { id: 'donuts', menuImage: '/images/menu/donut.webp', video: '/videos/donut.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'malasada', menuImage: '/images/menu/malasada.webp', video: '/videos/malasada.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'coffee', menuImage: '/images/menu/coffee-menu-full.png', video: '/videos/coffee.mp4', iconImage: '/icons/honolulu_coffee.png' },
-  { id: 'shavedice', menuImage: '/images/menu/bingsu-menu-full.png', video: '/videos/shavedice.mp4', icon: '🍧' },
-  { id: 'bingsu', menuImage: '/images/menu/bingsu.webp', video: '/videos/bingsu.mp4', iconImage: '/icons/mochi_land_circle.png' },
+  { id: 'shavedice', menuImage: '/images/menu/bingsu-menu-full.png', video: '/videos/bingsu.mp4', icon: '🍧' },
   { id: 'hotdog', menuImage: '/images/menu/hotdog.webp', video: '/videos/hotdog.mp4', iconImage: '/icons/mochi_land_circle.png' },
   { id: 'acai', menuImage: '/images/menu/acai.webp', video: '/videos/acai.mp4', iconImage: '/icons/mochi_land_circle.png', comingSoon: true },
 ];
