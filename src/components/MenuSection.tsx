@@ -349,13 +349,13 @@ export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
                       </motion.div>
                     </div>
                   ) : (
-                    /* Menu Image */
+                    /* Menu Image — full-width, pinch-to-zoom on mobile */
                     <>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={currentMenu.image}
                         alt={currentMenu.title}
-                        className="max-w-[70%] h-auto object-contain"
+                        className="w-full max-w-full h-auto object-contain cursor-zoom-in"
                         style={{
                           touchAction: 'manipulation',
                           userSelect: 'none'
