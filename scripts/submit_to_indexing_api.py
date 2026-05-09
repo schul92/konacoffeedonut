@@ -7,10 +7,9 @@ also indexes other pages submitted via URL_UPDATED. We send URL_UPDATED notifica
 for our newly published blog posts.
 """
 
-import json
 import sys
+import time
 from pathlib import Path
-from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
@@ -51,15 +50,19 @@ def build_url_list():
     return urls
 
 
-def submit(svc, url: str) -> tuple[str, str]:
-    try:
-        resp = svc.urlNotifications().publish(
-            body={"url": url, "type": "URL_UPDATED"}
-        ).execute()
-        ts = resp.get("urlNotificationMetadata", {}).get("latestUpdate", {}).get("notifyTime", "ok")
-        return (url, f"OK {ts}")
-    except Exception as e:
-        return (url, f"ERR {type(e).__name__}: {e}")
+def submit_with_retry(svc, url: str, attempts: int = 3) -> str:
+    """Submit one URL sequentially with retries. Concurrent submission causes SSL/timeout
+    failures against the Indexing API — sequential with light delay is reliable."""
+    last_err = None
+    for i in range(attempts):
+        try:
+            svc.urlNotifications().publish(body={"url": url, "type": "URL_UPDATED"}).execute()
+            return "OK"
+        except Exception as e:
+            last_err = f"{type(e).__name__}: {str(e)[:80]}"
+            if i < attempts - 1:
+                time.sleep(1.5)
+    return f"ERR {last_err}"
 
 
 def main():
@@ -70,22 +73,21 @@ def main():
     svc = build("indexing", "v3", credentials=creds, cache_discovery=False)
 
     urls = build_url_list()
-    print(f"submitting {len(urls)} URLs to Google Indexing API")
+    print(f"submitting {len(urls)} URLs to Google Indexing API (sequential + retries)")
     print(f"({len(NEW_SLUGS)} new blogs × {len(LOCALES)} locales + {len(UPDATED_PAGES)} updated pages × {len(LOCALES)} locales)")
     print()
 
     success = fail = 0
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        futures = [pool.submit(submit, svc, u) for u in urls]
-        for f in as_completed(futures):
-            url, status = f.result()
-            short = url.replace(SITE, "")
-            if status.startswith("OK"):
-                success += 1
-                print(f"  ✓ {short}")
-            else:
-                fail += 1
-                print(f"  ✗ {short}  →  {status}")
+    for url in urls:
+        short = url.replace(SITE, "")
+        status = submit_with_retry(svc, url)
+        if status == "OK":
+            success += 1
+            print(f"  ✓ {short}", flush=True)
+        else:
+            fail += 1
+            print(f"  ✗ {short}  →  {status}", flush=True)
+        time.sleep(0.3)  # gentle pacing
 
     print()
     print(f"summary: {success} succeeded, {fail} failed")
