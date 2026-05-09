@@ -4,20 +4,20 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 
 const meta = {
   en: {
-    title: 'What is Bingsu? Complete Guide to Korean Shaved Ice Dessert | Kona Coffee Donut',
-    description: 'What is bingsu? Learn everything about Korea\'s iconic shaved ice dessert — history, types (patbingsu, injeolmi, fruit), how it compares to kakigori, and where to get bingsu in Waikiki.',
+    title: 'What is Bingsu? Korean Shaved Ice Dessert + How to Eat It (2026)',
+    description: "What is bingsu? Korea's snow-soft shaved milk ice topped with fresh fruit, mochi & red bean. Learn the types, how to eat bingsu the right way, and where to try authentic bingsu in Waikiki.",
   },
   ja: {
-    title: 'ビンスとは？韓国かき氷デザート完全ガイド | Kona Coffee Donut',
-    description: 'ビンス(빙수)とは？韓国発の人気かき氷デザートの歴史・種類・食べ方を徹底解説。新大久保で大人気のK-フードトレンド、ワイキキでも楽しめます。',
+    title: 'ビンスとは？韓国かき氷の食べ方とワイキキで食べられる場所',
+    description: 'ビンス(빙수)とは？ふわふわミルク氷に新鮮なフルーツ・餅・あずきを乗せた韓国発デザート。種類・歴史・正しい食べ方、そしてワイキキで本場のビンスが食べられる場所まで徹底解説。',
   },
   ko: {
-    title: '빙수란? 한국 대표 빙수 완벽 가이드 | Kona Coffee Donut',
-    description: '빙수의 역사부터 종류(팥빙수, 인절미빙수, 과일빙수), 먹는 법까지 완벽 정리. 조선시대 빙고에서 시작된 빙수의 모든 것. 와이키키에서 빙수를 즐기세요.',
+    title: '빙수란? 종류·먹는 법·와이키키에서 즐기는 곳 (2026)',
+    description: '빙수는 우유 얼음을 곱게 갈아 과일·떡·팥을 올린 한국 대표 디저트. 종류, 역사, 제대로 먹는 법, 와이키키에서 정통 빙수를 즐길 수 있는 곳까지 완벽 정리.',
   },
   zh: {
-    title: '什么是韩式刨冰(Bingsu)？韩国刨冰甜品完全指南 | Kona Coffee Donut',
-    description: '什么是韩式刨冰？了解韩国经典刨冰甜品的历史、种类（红豆刨冰、年糕刨冰、水果刨冰）、与日式刨冰的区别，以及在威基基哪里可以品尝到。',
+    title: '什么是雪冰 (Bingsu)？韩国刨冰种类·吃法·威基基品尝指南',
+    description: '雪冰是韩国传统冰品，将冷冻牛奶刨成绵密雪花，再加水果、年糕、红豆。本指南介绍雪冰的种类、历史、正确吃法，以及在威基基哪里能品尝到正宗韩式雪冰。',
   },
 };
 

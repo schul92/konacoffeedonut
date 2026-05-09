@@ -369,6 +369,35 @@ export default function KonaCoffeePage() {
         </div>
       </section>
 
+      {/* Related Reading — internal SEO linking to blog buyer-intent posts */}
+      <section className="py-12 px-4 bg-gradient-to-b from-amber-950/30 to-amber-950/60">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-sm uppercase tracking-wider text-amber-300 font-semibold mb-4 text-center">
+            Learn More About Kona Coffee
+          </h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              href={`/${locale}/blog/where-to-try-kona-coffee-waikiki`}
+              className="inline-flex items-center gap-2 bg-amber-900/50 border-2 border-amber-400/60 text-amber-100 px-5 py-2.5 rounded-full font-medium hover:bg-amber-800/60 transition-colors"
+            >
+              Where to Try Real Kona Coffee →
+            </Link>
+            <Link
+              href={`/${locale}/blog/kona-coffee-guide`}
+              className="inline-flex items-center gap-2 bg-amber-900/50 border-2 border-amber-400/60 text-amber-100 px-5 py-2.5 rounded-full font-medium hover:bg-amber-800/60 transition-colors"
+            >
+              Kona Coffee Guide →
+            </Link>
+            <Link
+              href={`/${locale}/blog/kona-affogato-waikiki`}
+              className="inline-flex items-center gap-2 bg-amber-900/50 border-2 border-amber-400/60 text-amber-100 px-5 py-2.5 rounded-full font-medium hover:bg-amber-800/60 transition-colors"
+            >
+              Kona Affogato →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Join Team CTA */}
       <JoinTeamCTA locale={locale} />
 

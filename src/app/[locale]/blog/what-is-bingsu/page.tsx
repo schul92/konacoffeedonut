@@ -1245,6 +1245,12 @@ export default function WhatIsBingsuPage() {
         <section className="py-8 px-4">
           <div className="max-w-4xl mx-auto flex flex-wrap gap-4 justify-center">
             <Link
+              href={`/${locale}/blog/best-bingsu-waikiki`}
+              className="text-sky-600 hover:text-sky-800 underline underline-offset-4 font-semibold transition-colors"
+            >
+              → Best Bingsu in Waikiki (Where to Try It)
+            </Link>
+            <Link
               href={`/${locale}/bingsu-waikiki`}
               className="text-sky-600 hover:text-sky-800 underline underline-offset-4 transition-colors"
             >

@@ -365,6 +365,35 @@ export default function MochiDonutsPage() {
         </div>
       </section>
 
+      {/* Related Reading — internal SEO linking to blog buyer-intent posts */}
+      <section className="py-12 px-4 bg-gradient-to-b from-pink-950/30 to-pink-950/60">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-sm uppercase tracking-wider text-pink-300 font-semibold mb-4 text-center">
+            Learn More About Mochi Donuts
+          </h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              href={`/${locale}/blog/mochi-donut-flavors-waikiki`}
+              className="inline-flex items-center gap-2 bg-pink-900/50 border-2 border-pink-400/60 text-pink-100 px-5 py-2.5 rounded-full font-medium hover:bg-pink-800/60 transition-colors"
+            >
+              All Mochi Donut Flavors →
+            </Link>
+            <Link
+              href={`/${locale}/blog/best-donuts-waikiki`}
+              className="inline-flex items-center gap-2 bg-pink-900/50 border-2 border-pink-400/60 text-pink-100 px-5 py-2.5 rounded-full font-medium hover:bg-pink-800/60 transition-colors"
+            >
+              Best Donuts in Waikiki →
+            </Link>
+            <Link
+              href={`/${locale}/blog/malasada-vs-mochi-donut-waikiki`}
+              className="inline-flex items-center gap-2 bg-pink-900/50 border-2 border-pink-400/60 text-pink-100 px-5 py-2.5 rounded-full font-medium hover:bg-pink-800/60 transition-colors"
+            >
+              Malasada vs Mochi Donut →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Join Team CTA */}
       <JoinTeamCTA locale={locale} />
 

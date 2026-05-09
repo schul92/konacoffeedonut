@@ -369,6 +369,35 @@ export default function BingsuPage() {
         </div>
       </section>
 
+      {/* Related Reading — internal SEO linking to blog buyer-intent posts */}
+      <section className="py-12 px-4 bg-gradient-to-b from-sky-50/40 to-white">
+        <div className="max-w-4xl mx-auto">
+          <h3 className="text-sm uppercase tracking-wider text-sky-700 font-semibold mb-4 text-center">
+            Learn More About Bingsu
+          </h3>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              href={`/${locale}/blog/best-bingsu-waikiki`}
+              className="inline-flex items-center gap-2 bg-white border-2 border-sky-300 text-sky-700 px-5 py-2.5 rounded-full font-medium hover:bg-sky-50 transition-colors"
+            >
+              Best Bingsu in Waikiki →
+            </Link>
+            <Link
+              href={`/${locale}/blog/what-is-bingsu`}
+              className="inline-flex items-center gap-2 bg-white border-2 border-sky-300 text-sky-700 px-5 py-2.5 rounded-full font-medium hover:bg-sky-50 transition-colors"
+            >
+              What is Bingsu? →
+            </Link>
+            <Link
+              href={`/${locale}/blog/best-desserts-waikiki`}
+              className="inline-flex items-center gap-2 bg-white border-2 border-sky-300 text-sky-700 px-5 py-2.5 rounded-full font-medium hover:bg-sky-50 transition-colors"
+            >
+              Best Desserts in Waikiki →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Join Team CTA */}
       <JoinTeamCTA locale={locale} />
 

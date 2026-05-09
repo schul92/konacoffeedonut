@@ -13,10 +13,10 @@ interface HiringModalProps {
 
 const translations = {
   en: {
-    badge: "NOW HIRING",
-    title: "Join Our Waikiki Team",
-    subtitle: "Grand Opening Late April 2026",
-    description: "Full time & Part time positions available! Join Kona Coffee Donut in the heart of Waikiki.",
+    badge: "SOFT OPENING NOW",
+    title: "We're Open — & Still Hiring!",
+    subtitle: "Soft Opening Now • Join Our Team",
+    description: "We're soft opening now and still hiring! Full time & part time positions available. Join Kona Coffee Donut in the heart of Waikiki.",
     positions: "Open Positions",
     positionList: ["Manager", "Assistant Manager", "Barista", "Counter Help / Cashier", "Baker (Donuts)", "Musubi Cook"],
     perks: "What We Offer",
@@ -27,10 +27,10 @@ const translations = {
     maybeLater: "Maybe Later",
   },
   ja: {
-    badge: "スタッフ募集中",
-    title: "ワイキキチームに参加しよう",
-    subtitle: "4月下旬グランドオープン",
-    description: "フルタイム・パートタイム募集中！ワイキキの中心にあるKona Coffee Donutで働きませんか。",
+    badge: "プレオープン中",
+    title: "オープン中！スタッフ募集中",
+    subtitle: "プレオープン中・チームメンバー募集",
+    description: "現在プレオープン中、引き続きスタッフを募集しています！フルタイム・パートタイム募集中。ワイキキの中心にあるKona Coffee Donutで働きませんか。",
     positions: "募集職種",
     positionList: ["マネージャー", "アシスタントマネージャー", "バリスタ", "カウンター/キャッシャー", "ベイカー（ドーナツ）", "むすびクック"],
     perks: "待遇",
@@ -41,10 +41,10 @@ const translations = {
     maybeLater: "後で",
   },
   ko: {
-    badge: "채용 중",
-    title: "와이키키 팀에 합류하세요",
-    subtitle: "4월 말 그랜드 오픈",
-    description: "풀타임 & 파트타임 모집 중! 와이키키 중심부의 Kona Coffee Donut에서 함께해요.",
+    badge: "소프트 오픈 중",
+    title: "오픈 중! 여전히 채용합니다",
+    subtitle: "소프트 오픈 중 • 팀 합류 모집",
+    description: "현재 소프트 오픈 중이며 채용을 계속 진행하고 있습니다! 풀타임 & 파트타임 모집. 와이키키 중심부의 Kona Coffee Donut에서 함께해요.",
     positions: "모집 직종",
     positionList: ["매니저", "어시스턴트 매니저", "바리스타", "카운터/캐셔", "베이커 (도넛)", "무스비 쿡"],
     perks: "혜택",
@@ -55,10 +55,10 @@ const translations = {
     maybeLater: "나중에",
   },
   zh: {
-    badge: "正在招聘",
-    title: "加入我们的威基基团队",
-    subtitle: "4月下旬盛大开业",
-    description: "全职和兼职职位招聘中！加入位于威基基中心的Kona Coffee Donut。",
+    badge: "试营业中",
+    title: "已开业 — 持续招聘中！",
+    subtitle: "试营业中 • 加入我们团队",
+    description: "我们正在试营业中，并持续招聘！全职和兼职职位招聘中。加入位于威基基中心的Kona Coffee Donut。",
     positions: "招聘职位",
     positionList: ["经理", "助理经理", "咖啡师", "柜台/收银员", "面包师（甜甜圈）", "饭团厨师"],
     perks: "我们提供",
@@ -76,7 +76,7 @@ export default function HiringModal({ locale = 'en' }: HiringModalProps) {
 
   useEffect(() => {
     // Check if user has dismissed the modal before
-    const dismissed = localStorage.getItem('hiring-modal-dismissed');
+    const dismissed = localStorage.getItem('hiring-modal-dismissed-soft-open');
     const dismissedTime = dismissed ? parseInt(dismissed) : 0;
     const fourHoursAgo = Date.now() - 4 * 60 * 60 * 1000;
 
@@ -93,7 +93,7 @@ export default function HiringModal({ locale = 'en' }: HiringModalProps) {
 
   const handleClose = () => {
     setIsOpen(false);
-    localStorage.setItem('hiring-modal-dismissed', Date.now().toString());
+    localStorage.setItem('hiring-modal-dismissed-soft-open', Date.now().toString());
     trackHiringModalDismiss(locale);
   };
 

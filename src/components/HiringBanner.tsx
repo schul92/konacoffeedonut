@@ -15,23 +15,23 @@ interface HiringBannerProps {
 
 const translations = {
   en: {
-    text: "We're Hiring!",
-    cta: "Join Our Waikiki Team",
+    text: "Soft Opening Now!",
+    cta: "Still Hiring — Join Our Waikiki Team",
     positions: "Manager, Barista, Baker & More",
   },
   ja: {
-    text: "スタッフ募集中！",
-    cta: "ワイキキチームに参加",
+    text: "プレオープン中！",
+    cta: "スタッフ募集中 - ワイキキチームに参加",
     positions: "マネージャー、バリスタ、ベイカーなど",
   },
   ko: {
-    text: "채용 중!",
-    cta: "와이키키 팀에 합류하세요",
+    text: "소프트 오픈 중!",
+    cta: "채용 중 - 와이키키 팀에 합류하세요",
     positions: "매니저, 바리스타, 베이커 등",
   },
   zh: {
-    text: "正在招聘！",
-    cta: "加入威基基团队",
+    text: "试营业中！",
+    cta: "持续招聘中 - 加入威基基团队",
     positions: "经理、咖啡师、面包师等",
   },
 };
@@ -46,7 +46,7 @@ const dispatchBannerEvent = (visible: boolean) => {
 // Helper to check if banner should be visible
 export const isBannerVisible = (): boolean => {
   if (typeof window === 'undefined') return false;
-  const dismissed = localStorage.getItem('hiring-banner-dismissed');
+  const dismissed = localStorage.getItem('hiring-banner-dismissed-soft-open');
   const dismissedTime = dismissed ? parseInt(dismissed) : 0;
   const threeDaysAgo = Date.now() - 3 * 24 * 60 * 60 * 1000;
   return !dismissed || dismissedTime < threeDaysAgo;
@@ -77,7 +77,7 @@ export default function HiringBanner({ locale = 'en' }: HiringBannerProps) {
 
   const handleDismiss = useCallback(() => {
     setIsVisible(false);
-    localStorage.setItem('hiring-banner-dismissed', Date.now().toString());
+    localStorage.setItem('hiring-banner-dismissed-soft-open', Date.now().toString());
     // Dispatch event when dismissed
     dispatchBannerEvent(false);
   }, []);

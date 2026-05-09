@@ -43,3 +43,9 @@ next-env.d.ts
 .env.local
 .env*.local
 google-service-account.json
+
+# Locally generated assets (Gemini-produced kiosk/menu images for Clover upload, not for the website)
+/generated/
+
+# Claude Code local state
+/.claude/
