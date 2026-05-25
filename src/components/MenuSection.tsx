@@ -4,27 +4,12 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { Play, X } from 'lucide-react';
+import { Play } from 'lucide-react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import { menuCategories } from '@/lib/menuData';
 
-interface MenuItem {
-  id: string;
-  menuImage: string; // Menu image file (JPEG)
-  video?: string; // Optional video file path
-  icon?: string;
-  iconImage?: string;
-  comingSoon?: boolean; // Show "Coming Soon" instead of menu
-}
-
-const menuItems: MenuItem[] = [
-  { id: 'donuts', menuImage: '/images/menu/donut.webp', video: '/videos/donut.mp4', iconImage: '/icons/mochi_land_circle.png' },
-  { id: 'malasada', menuImage: '/images/menu/malasada.webp', video: '/videos/malasada.mp4', iconImage: '/icons/mochi_land_circle.png' },
-  { id: 'coffee', menuImage: '/images/menu/coffee-menu-full.png', video: '/videos/coffee.mp4', iconImage: '/icons/honolulu_coffee.png' },
-  { id: 'shavedice', menuImage: '/images/menu/bingsu-menu-full.png', video: '/videos/bingsu.mp4', icon: '🍧' },
-  { id: 'hotdog', menuImage: '/images/menu/hotdog.webp', video: '/videos/hotdog.mp4', iconImage: '/icons/mochi_land_circle.png' },
-  { id: 'acai', menuImage: '/images/menu/acai.webp', video: '/videos/acai.mp4', iconImage: '/icons/mochi_land_circle.png', comingSoon: true },
-];
+const menuItems = menuCategories;
 
 interface MenuSectionProps {
   hideHeader?: boolean;
