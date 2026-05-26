@@ -170,7 +170,11 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
                         fill
                         loading="eager"
                         sizes="(max-width: 640px) 45vw, (max-width: 1024px) 22vw, 16vw"
-                        className="object-contain"
+                        // Every category now ships transparent-background photoreal cutouts
+                        // (see scripts/process_menu_item_cutouts.py + process_mochi_donut_cutouts.py),
+                        // so each card gets a soft warm drop-shadow to anchor the subject to
+                        // the page background instead of floating in an invisible square box.
+                        className="object-contain [filter:drop-shadow(0_10px_14px_rgba(120,80,30,0.18))]"
                       />
                     </div>
                     <p className="mt-2 sm:mt-3 text-sm sm:text-[15px] font-semibold text-stone-900 leading-tight">
