@@ -66,60 +66,177 @@ class Donut:
 
 DONUTS: list[Donut] = [
     Donut(
-        "donut-original-glaze",
-        "Original Glaze",
-        ("A glossy pale vanilla sugar glaze coating the entire ring. The glaze is "
-         "translucent ivory-cream, smooth, slightly drippy at the bottom edge of "
-         "each ball, with a subtle sheen catching the light. The dough beneath "
-         "shows a hint of warm golden color through the glaze."),
+        "donut-plain",
+        "Plain",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "a glossy plain golden honey glaze, simple smooth amber-yellow finish "
+         "like the board item labeled Plain, no sprinkles or crumbs."),
     ),
     Donut(
-        "donut-chocolate",
-        "Chocolate",
-        ("A rich dark chocolate ganache glaze, deep cocoa brown, coating the "
-         "entire ring with a smooth glossy finish and a few natural drips down "
-         "the sides. Very slight gloss reflection along the top of each ball."),
+        "donut-cookies-and-creme",
+        "Cookies & Creme",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "white vanilla cream glaze covered with fine black cookie crumbs, plus "
+         "one small dark sandwich-cookie half as garnish, clearly "
+         "cookies-and-cream."),
+    ),
+    Donut(
+        "donut-nutella",
+        "Nutella",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "glossy milk-chocolate hazelnut spread glaze, a few pale hazelnut wafer "
+         "pieces and thin white drizzle, clearly Nutella/hazelnut chocolate."),
+    ),
+    Donut(
+        "donut-injeolmi",
+        "Injeolmi",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "tan roasted soybean powder coating over the entire ring, dusty matte "
+         "kinako texture with a few tiny rice-cake crumbs, Korean injeolmi "
+         "flavor."),
+    ),
+    Donut(
+        "donut-ube",
+        "Ube",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "vivid glossy purple ube glaze, rich violet color with a small white "
+         "coconut drizzle accent."),
+    ),
+    Donut(
+        "donut-ube-churro",
+        "Ube Churro",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "clearly UBE PURPLE base glaze, deep violet-purple not pink and not "
+         "strawberry-colored, dusted generously with tan cinnamon-sugar churro "
+         "crystals so it reads as ube plus churro. Must stay visibly purple."),
+    ),
+    Donut(
+        "donut-dark-chocolate",
+        "Dark Chocolate",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "deep dark chocolate ganache glaze, nearly black-brown glossy finish "
+         "with a few cocoa nibs and one yellow custard-like center accent."),
+    ),
+    Donut(
+        "donut-vietnamese-coffee",
+        "Vietnamese Coffee",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "caramel coffee-brown glaze with condensed-milk white dots/drizzle, a "
+         "small biscuit wafer garnish, clearly Vietnamese coffee flavor."),
+    ),
+    Donut(
+        "donut-yuzu",
+        "Yuzu",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "bright glossy YUZU citrus glaze in pale lemon-yellow, with visible "
+         "yellow yuzu peel zest curls and tiny citrus segments. Absolutely no "
+         "rainbow sprinkles, no funfetti, no cereal; it must read as Japanese yuzu."),
+    ),
+    Donut(
+        "donut-black-sesame",
+        "Black Sesame",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "white glaze heavily speckled with black sesame seeds and charcoal-gray "
+         "sesame crumbs, monochrome black sesame appearance."),
+    ),
+    Donut(
+        "donut-matcha",
+        "Matcha",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "vibrant jade-green matcha glaze, smooth glossy finish with fine matcha "
+         "powder dusting and a small green leaf-like accent."),
+    ),
+    Donut(
+        "donut-coconut",
+        "Coconut",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "white coconut cream glaze covered with toasted coconut flakes, "
+         "snowy/tropical coconut appearance."),
+    ),
+    Donut(
+        "donut-yogurt-pebble",
+        "Yogurt Pebble",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "white yogurt glaze covered with colorful Fruity Pebbles cereal pieces, "
+         "bright rainbow cereal topping."),
+    ),
+    Donut(
+        "donut-blueberry",
+        "Blueberry",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "glossy deep purple-blue blueberry glaze with a few small whole "
+         "blueberries as garnish, no black sesame."),
+    ),
+    Donut(
+        "donut-churro",
+        "Churro",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "golden cinnamon-sugar coating, matte sandy texture, no glaze color "
+         "except warm cinnamon sugar."),
+    ),
+    Donut(
+        "donut-guava-pineapple",
+        "Guava Pineapple",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "pink guava glaze with tiny yellow pineapple bits and pastel sprinkles, "
+         "tropical pink-yellow identity."),
+    ),
+    Donut(
+        "donut-taro",
+        "Taro",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "pale lavender taro glaze with small purple taro cream accents, softer "
+         "lavender than ube."),
+    ),
+    Donut(
+        "donut-milk-tea",
+        "Milk Tea",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "cream beige milk-tea glaze with dark brown boba pearls or tapioca-like "
+         "dots as garnish and thin chocolate drizzle."),
+    ),
+    Donut(
+        "donut-peanut-butter",
+        "Peanut Butter",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "glossy peanut-butter caramel-brown glaze with chopped peanut pieces "
+         "and a small peanut-butter cup garnish, nutty look."),
     ),
     Donut(
         "donut-strawberry",
         "Strawberry",
-        ("A soft pink strawberry glaze, slightly opaque, coating the entire ring "
-         "with a glossy fresh-poured look. Sprinkled with a few tiny freeze-dried "
-         "strawberry crumbs and a couple of subtle white sugar specks. The pink "
-         "is natural strawberry pink, not neon."),
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "strong clearly STRAWBERRY pink glaze covering the entire ring, medium "
+         "berry-pink/red-pink not white, with freeze-dried strawberry crumbs and "
+         "a couple of tiny strawberry pieces. Must read strawberry immediately."),
     ),
     Donut(
-        "donut-matcha-green-tea",
-        "Matcha Green Tea",
-        ("A vibrant matcha green tea glaze in natural ceremonial-grade green "
-         "color (warm jade, not neon), glossy and smooth, with a light dusting "
-         "of fine matcha powder across the top of the ring."),
+        "donut-pistachio",
+        "Pistachio",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "pale pistachio-green glaze with chopped pistachio crumbs and a few "
+         "tiny red accent dots, nutty green flavor."),
     ),
     Donut(
-        "donut-ube-purple-yam",
-        "Ube Purple Yam",
-        ("A vivid ube purple yam glaze in natural Filipino-ube violet-purple "
-         "(rich lavender-purple, not blue), glossy and smooth across the ring, "
-         "with a small drizzle of white coconut cream stripes on top."),
+        "donut-white-choco-raspberry",
+        "White Choco Raspberry",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "white chocolate glaze with red raspberry powder speckles and one fresh "
+         "raspberry garnish, white-red contrast."),
     ),
     Donut(
-        "donut-brown-sugar",
-        "Brown Sugar",
-        ("A warm caramel brown sugar glaze, glossy amber-brown like molten "
-         "Okinawan kuromitsu, coating the ring with natural drips. A subtle "
-         "sprinkle of fine brown sugar crystals on top. Warm caramel sheen, no "
-         "boba pearls, no text, no cup."),
+        "donut-mango",
+        "Mango",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "bright golden mango glaze with tiny red and green tropical fruit "
+         "accents, sunny yellow-orange color."),
     ),
     Donut(
-        "donut-seasonal-special",
-        "Seasonal Special",
-        ("A single intact pon-de-ring mochi donut, exactly 8 connected dough balls "
-         "forming one circular ring with a clean center hole. It must NOT be a round "
-         "powdered yeast donut, cake donut, filled donut, malasada, or any smooth disk. "
-         "Use a tropical limited-edition glaze: soft golden mango-passionfruit glaze "
-         "covering every ball, with a tasteful scattering of multicolored pastel "
-         "sprinkles (pink, yellow, white) and a tiny edible tropical flower petal on "
-         "one ball. Cheerful but tasteful, not cluttered."),
+        "donut-banana",
+        "Banana",
+        ("A single intact pon-de-ring mochi donut matching the printed menu board: "
+         "pale yellow banana glaze with small banana-chip garnish pieces and "
+         "cream drizzle, clearly banana flavor."),
     ),
 ]
 

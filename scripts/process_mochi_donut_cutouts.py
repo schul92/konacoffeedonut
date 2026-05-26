@@ -25,15 +25,38 @@ from PIL import Image, ImageFilter
 SRC_DIR = Path("public/images/menu/items/gemini-mochi")
 OUT_DIR = SRC_DIR / "cutouts"
 
-DONUTS = [
-    "donut-original-glaze",
-    "donut-chocolate",
-    "donut-strawberry",
-    "donut-matcha-green-tea",
-    "donut-ube-purple-yam",
-    "donut-brown-sugar",
-    "donut-seasonal-special",
-]
+try:
+    from generate_mochi_donut_gemini_images import DONUTS as GENERATED_DONUTS
+
+    DONUTS = [d.slug for d in GENERATED_DONUTS]
+except Exception:  # noqa: BLE001
+    # Keep the processor usable even if the generator dependencies are missing.
+    DONUTS = [
+        "donut-plain",
+        "donut-cookies-and-creme",
+        "donut-nutella",
+        "donut-injeolmi",
+        "donut-ube",
+        "donut-ube-churro",
+        "donut-dark-chocolate",
+        "donut-vietnamese-coffee",
+        "donut-yuzu",
+        "donut-black-sesame",
+        "donut-matcha",
+        "donut-coconut",
+        "donut-yogurt-pebble",
+        "donut-blueberry",
+        "donut-churro",
+        "donut-guava-pineapple",
+        "donut-taro",
+        "donut-milk-tea",
+        "donut-peanut-butter",
+        "donut-strawberry",
+        "donut-pistachio",
+        "donut-white-choco-raspberry",
+        "donut-mango",
+        "donut-banana",
+    ]
 
 # Distance from the estimated cream background, in 0..~441 (sqrt(3*255^2)) units.
 BG_THRESHOLD = 18.0   # closer than this → definitely background

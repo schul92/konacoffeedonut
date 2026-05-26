@@ -53,17 +53,39 @@ const hotdogItem = geminiItem('hotdog');
 
 export const menuItemCategories: MenuItemCategory[] = [
   {
+    // Flavors and order match the printed menu board in
+    // public/images/menu/donut.webp (24 mochi pon-de-ring flavors). Prices on
+    // the board are pack-based — 3PC $9.75 / 6PC $19.50 / 12PC $39.00 — not
+    // per-flavor, so we deliberately omit MenuItem.price here rather than
+    // inventing individual prices.
     id: 'donuts',
     title: 'Mochi Donuts',
     detailSlug: 'mochi-donuts',
     items: [
-      { name: 'Original Glaze', image: donutItem('donut-original-glaze') },
-      { name: 'Chocolate', image: donutItem('donut-chocolate') },
+      { name: 'Plain', image: donutItem('donut-plain') },
+      { name: 'Cookies & Creme', image: donutItem('donut-cookies-and-creme') },
+      { name: 'Nutella', image: donutItem('donut-nutella') },
+      { name: 'Injeolmi', image: donutItem('donut-injeolmi') },
+      { name: 'Ube', image: donutItem('donut-ube') },
+      { name: 'Ube Churro', image: donutItem('donut-ube-churro') },
+      { name: 'Dark Chocolate', image: donutItem('donut-dark-chocolate') },
+      { name: 'Vietnamese Coffee', image: donutItem('donut-vietnamese-coffee') },
+      { name: 'Yuzu', image: donutItem('donut-yuzu') },
+      { name: 'Black Sesame', image: donutItem('donut-black-sesame') },
+      { name: 'Matcha', image: donutItem('donut-matcha') },
+      { name: 'Coconut', image: donutItem('donut-coconut') },
+      { name: 'Yogurt Pebble', image: donutItem('donut-yogurt-pebble') },
+      { name: 'Blueberry', image: donutItem('donut-blueberry') },
+      { name: 'Churro', image: donutItem('donut-churro') },
+      { name: 'Guava Pineapple', image: donutItem('donut-guava-pineapple') },
+      { name: 'Taro', image: donutItem('donut-taro') },
+      { name: 'Milk Tea', image: donutItem('donut-milk-tea') },
+      { name: 'Peanut Butter', image: donutItem('donut-peanut-butter') },
       { name: 'Strawberry', image: donutItem('donut-strawberry') },
-      { name: 'Matcha Green Tea', image: donutItem('donut-matcha-green-tea') },
-      { name: 'Ube Purple Yam', image: donutItem('donut-ube-purple-yam') },
-      { name: 'Brown Sugar', image: donutItem('donut-brown-sugar') },
-      { name: 'Seasonal Special', image: donutItem('donut-seasonal-special') },
+      { name: 'Pistachio', image: donutItem('donut-pistachio') },
+      { name: 'White Choco Raspberry', image: donutItem('donut-white-choco-raspberry') },
+      { name: 'Mango', image: donutItem('donut-mango') },
+      { name: 'Banana', image: donutItem('donut-banana') },
     ],
   },
   {
