@@ -113,10 +113,13 @@ DONUTS: list[Donut] = [
     Donut(
         "donut-seasonal-special",
         "Seasonal Special",
-        ("A tropical limited-edition glaze: a soft golden mango-passionfruit "
-         "glaze covering the ring, with a tasteful scattering of multicolored "
-         "pastel sprinkles (pink, yellow, white) and a tiny edible tropical "
-         "flower petal on one ball. Cheerful but tasteful, not cluttered."),
+        ("A single intact pon-de-ring mochi donut, exactly 8 connected dough balls "
+         "forming one circular ring with a clean center hole. It must NOT be a round "
+         "powdered yeast donut, cake donut, filled donut, malasada, or any smooth disk. "
+         "Use a tropical limited-edition glaze: soft golden mango-passionfruit glaze "
+         "covering every ball, with a tasteful scattering of multicolored pastel "
+         "sprinkles (pink, yellow, white) and a tiny edible tropical flower petal on "
+         "one ball. Cheerful but tasteful, not cluttered."),
     ),
 ]
 

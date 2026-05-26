@@ -188,17 +188,21 @@ ITEMS: list[Item] = [
           "bottom, vibrant ceremonial-grade jade-green matcha poured on top forming a smooth "
           "soft-edged transition. Light frothy matcha bubbles on top. Centered.")),
     Item("matcha", "matcha-hojicha-latte", "Hojicha Latte",
-         ("A single tall clear glass hojicha (roasted green tea) latte: warm caramel-brown "
-          "roasted tea on top, creamy white milk on the bottom, with a soft tan foam crown on "
+         ("A single tall clear glass hojicha roasted-tea latte: the visible tea layer "
+          "must be warm amber, tan, caramel, or roasted brown — absolutely NOT green "
+          "and not matcha-colored. Show creamy white milk on the bottom, a distinct "
+          "caramel-brown roasted hojicha layer above, and a soft tan foam crown on "
           "top. Centered, no spoon.")),
     Item("matcha", "matcha-guava", "Guava Matcha",
          ("A single tall clear glass iced matcha drink with layered fruit: vibrant pink-coral "
           "guava puree at the bottom, white milk and ice in the middle, jade-green matcha on "
           "top. Ice cubes visible. Centered.")),
     Item("matcha", "matcha-lilikoi", "Lilikoi Matcha",
-         ("A single tall clear glass iced matcha drink with layered fruit: bright golden "
-          "passionfruit (lilikoi) puree with a few tiny dark seeds at the bottom, milk and "
-          "ice in the middle, jade-green matcha on top. Ice cubes visible. Centered.")),
+         ("A single tall clear glass iced matcha drink with layered passionfruit: "
+          "the lilikoi layer must be bright golden yellow to orange-yellow, never "
+          "pink/red/strawberry colored. Show golden passionfruit puree with a few "
+          "tiny dark seeds at the bottom, white milk and ice in the middle, and "
+          "jade-green matcha on top. Centered, clear visual yellow lilikoi identity.")),
     Item("matcha", "matcha-mango", "Mango Matcha",
          ("A single tall clear glass iced matcha drink with layered fruit: vibrant orange "
           "mango puree at the bottom, white milk and ice in the middle, jade-green matcha on "
