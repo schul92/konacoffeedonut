@@ -89,16 +89,22 @@ export const menuItemCategories: MenuItemCategory[] = [
     ],
   },
   {
+    // Flavors and prices match the printed reference board in
+    // public/images/menu/malasada.webp. Classic malasadas are whole sugar-coated
+    // pastries; cream malasadas are cut open to show the filling.
     id: 'malasada',
     title: 'Malasada',
     detailSlug: 'malasada',
     items: [
-      { name: 'Original', image: malasadaItem('malasada-original') },
-      { name: 'Cinnamon Sugar', image: malasadaItem('malasada-cinnamon-sugar') },
-      { name: 'Haupia (Coconut)', image: malasadaItem('malasada-haupia-coconut') },
-      { name: 'Chocolate', image: malasadaItem('malasada-chocolate') },
-      { name: 'Custard', image: malasadaItem('malasada-custard') },
-      { name: 'Li Hing Mui', image: malasadaItem('malasada-li-hing-mui') },
+      { name: 'Original', image: malasadaItem('malasada-original'), price: '1PC 2.95 / 3PC 8.85 / 6PC 17.70 / 12PC 35.40' },
+      { name: 'Cinnamon', image: malasadaItem('malasada-cinnamon'), price: '1PC 2.95 / 3PC 8.85 / 6PC 17.70 / 12PC 35.40' },
+      { name: 'Ube', image: malasadaItem('malasada-ube'), price: '1PC 2.95 / 3PC 8.85 / 6PC 17.70 / 12PC 35.40' },
+      { name: 'Custard', image: malasadaItem('malasada-custard'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
+      { name: 'Ube Cream', image: malasadaItem('malasada-ube-cream'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
+      { name: 'Nutella', image: malasadaItem('malasada-nutella'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
+      { name: 'Macadamia Nut', image: malasadaItem('malasada-macadamia-nut'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
+      { name: 'Coconut', image: malasadaItem('malasada-coconut'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
+      { name: 'Red Bean', image: malasadaItem('malasada-red-bean'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
     ],
   },
   {

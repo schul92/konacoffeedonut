@@ -74,31 +74,46 @@ class Item:
 
 ITEMS: list[Item] = [
     # ---------- Malasada (Portuguese donuts, round, no hole, soft dough) ----------
+    # Matches the printed reference board in public/images/menu/malasada.webp.
+    # Classic items are whole closed malasadas; cream items are cut open to show filling.
     Item("malasada", "malasada-original", "Original Malasada",
-         ("A single freshly-fried Portuguese malasada: a round golden-brown yeast donut "
-          "with a slightly irregular pillow shape, no hole in the middle, generously dusted "
-          "with fine white granulated sugar all over. Soft fluffy interior implied. "
-          "Top-down or slight 3/4 angle.")),
-    Item("malasada", "malasada-cinnamon-sugar", "Cinnamon Sugar Malasada",
-         ("A single freshly-fried Portuguese malasada: round golden-brown yeast donut, no hole, "
-          "coated all over with cinnamon-sugar (warm tan-brown speckled coating of fine sugar "
-          "tinted with ground cinnamon). Slight 3/4 angle, soft glow.")),
-    Item("malasada", "malasada-haupia-coconut", "Haupia Coconut Malasada",
-         ("A single round golden malasada with the top half cut open and a generous swirl of "
-          "white coconut haupia cream filling visible from above, dusted with fine white sugar "
-          "and a light sprinkle of toasted coconut flakes on top. No hole through the donut.")),
-    Item("malasada", "malasada-chocolate", "Chocolate Malasada",
-         ("A single round golden malasada with a glossy dark chocolate ganache glaze covering "
-          "the top half, smooth and shiny with a couple of natural drips. The bottom of the "
-          "donut shows golden fried dough. No hole through the donut.")),
-    Item("malasada", "malasada-custard", "Custard Malasada",
-         ("A single round golden malasada with a pale yellow vanilla custard cream visibly "
-          "piped into the top, with a soft swirl peak of custard rising above. The donut is "
-          "dusted with fine white sugar around the custard. No hole through the donut.")),
-    Item("malasada", "malasada-li-hing-mui", "Li Hing Mui Malasada",
-         ("A single round golden malasada coated with li hing mui powder: a fine reddish-pink "
-          "Hawaiian dried-plum sugar coating, tangy pink-red hue. Slight 3/4 angle, no hole, "
-          "appetizing soft glow.")),
+         ("A single freshly-fried classic Portuguese malasada matching a menu-board reference: "
+          "one whole closed round golden-brown yeast donut ball, no hole, no cut, no visible filling, "
+          "generously dusted with fine white granulated sugar. Slight 3/4 angle, soft fluffy pillow shape.")),
+    Item("malasada", "malasada-cinnamon", "Cinnamon Malasada",
+         ("A single classic cinnamon malasada matching a menu-board reference: one whole closed "
+          "round golden-brown yeast donut ball, no hole, no cut, no visible filling, coated all over "
+          "with warm cinnamon sugar, tan-brown speckled surface, slightly darker than original.")),
+    Item("malasada", "malasada-ube", "Ube Classic Malasada",
+         ("A single classic ube malasada matching a menu-board reference: one whole closed round "
+          "yeast donut ball, no hole, no cut, no visible filling, coated with pale purple-pink ube sugar "
+          "powder over golden fried dough. It should look like a whole closed ball, not cut open.")),
+    Item("malasada", "malasada-custard", "Custard Cream Malasada",
+         ("A cream malasada matching a menu-board reference: exactly two golden sugar-dusted malasada pieces, "
+          "one clearly sliced open with a visible cross-section and a generous pale yellow vanilla custard cream "
+          "filling spilling from inside. Absolutely not a closed whole ball and not just a swirl on top; the cut "
+          "opening and custard inside must be obvious. No hole, no glaze.")),
+    Item("malasada", "malasada-ube-cream", "Ube Cream Malasada",
+         ("A cream malasada matching a menu-board reference: golden sugar-dusted malasada cut open with "
+          "vivid purple ube cream filling clearly visible inside, a second half nearby. No hole, not a mochi donut, "
+          "not a purple glaze; the purple must be filling inside the cut pastry.")),
+    Item("malasada", "malasada-nutella", "Nutella Cream Malasada",
+         ("A cream malasada matching a menu-board reference: golden sugar-dusted malasada cut open with "
+          "glossy dark brown chocolate-hazelnut Nutella filling visible inside, a second half nearby. No top glaze, "
+          "no hole, the brown filling must be inside the cut pastry.")),
+    Item("malasada", "malasada-macadamia-nut", "Macadamia Nut Cream Malasada",
+         ("A cream malasada matching a menu-board reference: golden sugar-dusted malasada cut open with "
+          "pale ivory macadamia nut cream filling visible inside, with tiny beige nut bits in the cream, "
+          "a second half nearby. No hole, no glaze.")),
+    Item("malasada", "malasada-coconut", "Coconut Cream Malasada",
+         ("A cream malasada matching a menu-board reference: exactly two golden sugar-dusted malasada pieces, "
+          "one clearly sliced open with a visible cross-section and white coconut cream filling inside, a few fine "
+          "coconut shreds embedded in the cream. The pastry must be isolated on a plain cream studio background, "
+          "with no plate, no rectangular paper, no napkin, no box, no shadow block, and no external coconut pile.")),
+    Item("malasada", "malasada-red-bean", "Red Bean Cream Malasada",
+         ("A cream malasada matching a menu-board reference: golden sugar-dusted malasada cut open with "
+          "dark red-brown sweet red bean paste filling visible inside, textured paste, a second half nearby. "
+          "No hole, no chocolate glaze; filling color should read as red bean.")),
 
     # ---------- Korean Corn Dogs (battered hot dog on a stick) ----------
     Item("hotdog", "corn-dog-classic-sausage", "Classic Sausage Corn Dog",
