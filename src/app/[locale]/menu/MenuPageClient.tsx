@@ -91,8 +91,8 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-stone-950/42 via-stone-950/24 to-stone-950/50" />
           <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 [text-shadow:0_3px_18px_rgba(0,0,0,0.75)]">
-            <h1 className="font-black tracking-[0.2em] text-white text-4xl sm:text-5xl md:text-6xl">
-              MENU
+            <h1 className="font-black tracking-[0.08em] text-white text-3xl sm:text-5xl md:text-6xl uppercase">
+              Kona Coffee Donut Menu | Waikiki
             </h1>
             <p className="mt-3 text-white/85 text-xs sm:text-sm md:text-base tracking-wider uppercase">
               Kona Coffee Donut<span aria-hidden>?</span> · Waikiki
@@ -166,7 +166,7 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
                     <div className="relative w-full aspect-square">
                       <Image
                         src={it.image}
-                        alt={it.name}
+                        alt={`${it.name} – ${cat.title}`}
                         fill
                         loading="eager"
                         sizes="(max-width: 640px) 45vw, (max-width: 1024px) 22vw, 16vw"
