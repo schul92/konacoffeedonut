@@ -143,7 +143,7 @@ export default function AboutKonaCoffee() {
               {t('hero.subtitle')}
             </p>
             <Link
-              href={`/${locale}#menu`}
+              href={`/${locale}/menu`}
               className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full transition-colors"
             >
               {t('hero.cta')}
@@ -349,7 +349,7 @@ export default function AboutKonaCoffee() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href={`/${locale}#menu`}
+                href={`/${locale}/menu`}
                 className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-full transition-colors"
               >
                 {t('finalCta.viewMenu')}

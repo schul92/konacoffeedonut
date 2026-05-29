@@ -224,7 +224,7 @@ export default function GourmetDonutsPage() {
               {t.hero.subtitle}
             </h2>
             <Link
-              href={`/${locale}#menu`}
+              href={`/${locale}/menu`}
               className="inline-flex items-center gap-2 bg-amber-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-700 transition-colors shadow-lg"
             >
               {t.hero.cta}
@@ -454,7 +454,7 @@ export default function GourmetDonutsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href={`/${locale}#menu`}
+                href={`/${locale}/menu`}
                 className="inline-flex items-center justify-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-100 transition-colors"
               >
                 {t.finalCta.menuButton}

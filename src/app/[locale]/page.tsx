@@ -278,30 +278,32 @@ export default function Home() {
           <div className="hidden md:grid grid-cols-3 items-center">
             {/* Left: Menu & About Links */}
             <div className="flex gap-6 lg:gap-8 text-sm lg:text-base">
-              <motion.button
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' });
-                  if (typeof window !== 'undefined' && window.trackEvent) {
-                    window.trackEvent('navigation_click', { section: 'menu', device: 'desktop' });
-                  }
-                }}
-                className="relative text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
-                  Menu
-                </span>
-                <motion.span
-                  className="absolute inset-0 bg-orange-50 rounded-lg -z-0"
-                  initial={{ scaleX: 0, opacity: 0 }}
-                  whileHover={{ scaleX: 1, opacity: 1 }}
-                  transition={{ duration: 0.2 }}
-                  style={{ originX: 0 }}
-                />
-                <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-              </motion.button>
+                <Link
+                  href={`/${locale}/menu`}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && window.trackEvent) {
+                      window.trackEvent('navigation_click', { section: 'menu', device: 'desktop' });
+                    }
+                  }}
+                  className="relative block text-gray-900 font-semibold transition-colors cursor-pointer group px-3 py-2 -mx-3 -my-2 rounded-lg"
+                >
+                  <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
+                    Menu
+                  </span>
+                  <motion.span
+                    className="absolute inset-0 bg-orange-50 rounded-lg -z-0"
+                    initial={{ scaleX: 0, opacity: 0 }}
+                    whileHover={{ scaleX: 1, opacity: 1 }}
+                    transition={{ duration: 0.2 }}
+                    style={{ originX: 0 }}
+                  />
+                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                </Link>
+              </motion.div>
               <motion.button
                 onClick={(e) => {
                   e.preventDefault();
@@ -439,33 +441,33 @@ export default function Home() {
             className="md:hidden bg-white border-t border-gray-100"
           >
             <div className="px-4 py-3 space-y-1">
-              <motion.button
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' });
-                  if (typeof window !== 'undefined' && window.trackEvent) {
-                    window.trackEvent('navigation_click', { section: 'menu', device: 'mobile' });
-                  }
-                  setMenuOpen(false);
-                }}
-                className="relative block py-3 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
-                whileTap={{ scale: 0.98 }}
-              >
-                <motion.span
-                  className="absolute inset-0 bg-orange-50"
-                  initial={{ x: '-100%' }}
-                  whileHover={{ x: 0 }}
-                  transition={{ duration: 0.3 }}
-                />
-                <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
-                  Menu
-                </span>
-                <span className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
-              </motion.button>
+              <motion.div whileTap={{ scale: 0.98 }}>
+                <Link
+                  href={`/${locale}/menu`}
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && window.trackEvent) {
+                      window.trackEvent('navigation_click', { section: 'menu', device: 'mobile' });
+                    }
+                    setMenuOpen(false);
+                  }}
+                  className="relative block py-3 px-4 text-left w-full text-gray-900 font-semibold rounded-lg transition-all cursor-pointer group overflow-hidden"
+                >
+                  <motion.span
+                    className="absolute inset-0 bg-orange-50"
+                    initial={{ x: '-100%' }}
+                    whileHover={{ x: 0 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                  <span className="relative z-10 group-hover:text-orange-500 transition-colors select-none">
+                    Menu
+                  </span>
+                  <span className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <svg className="w-4 h-4 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </Link>
+              </motion.div>
               <motion.button
                 onClick={(e) => {
                   e.preventDefault();
@@ -1518,7 +1520,7 @@ export default function Home() {
 
             {/* Right: Navigation */}
             <div className="flex flex-wrap gap-6 text-sm">
-              <a href="#menu" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.menu')}</a>
+              <Link href={`/${locale}/menu`} className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.menu')}</Link>
               <a href="#about" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.about')}</a>
               <a href="#location" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.location')}</a>
               <Link href={`/${locale}/blog`} className="opacity-60 hover:opacity-100 transition-opacity">Blog</Link>

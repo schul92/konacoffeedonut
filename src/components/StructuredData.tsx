@@ -120,7 +120,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       },
     ],
     servesCuisine: ['Coffee', 'Donuts', 'Desserts', 'Hawaiian'],
-    menu: `https://www.konacoffeedonut.com/${locale}#menu`,
+    menu: `https://www.konacoffeedonut.com/${locale}/menu`,
     acceptsReservations: 'False',
     paymentAccepted: 'Cash, Credit Card, Debit Card',
     currenciesAccepted: 'USD',
@@ -181,7 +181,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       '@type': 'OrderAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `https://www.konacoffeedonut.com/${locale}#menu`,
+        urlTemplate: `https://www.konacoffeedonut.com/${locale}/menu`,
         inLanguage: locale,
         actionPlatform: [
           'http://schema.org/DesktopWebPlatform',
@@ -558,7 +558,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       offerCount: '25',
       availability: 'https://schema.org/PreOrder',
       availabilityStarts: '2026-04-25',
-      url: `https://www.konacoffeedonut.com/${locale}#menu`,
+      url: `https://www.konacoffeedonut.com/${locale}/menu`,
       seller: {
         '@id': 'https://www.konacoffeedonut.com/#organization',
       },

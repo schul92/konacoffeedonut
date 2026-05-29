@@ -1,7 +1,7 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export async function generateMetadata({
   params,
@@ -20,6 +20,7 @@ export async function generateMetadata({
 
 export default function FarmToDonutPage() {
   const t = useTranslations('farmToDonut');
+  const locale = useLocale();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
@@ -150,14 +151,14 @@ export default function FarmToDonutPage() {
               {t('journey.step4.description')}
             </p>
             <blockquote className="border-l-4 border-pink-500 pl-4 italic text-gray-700 mb-6">
-              "{t('journey.step4.quote')}"
+              &ldquo;{t('journey.step4.quote')}&rdquo;
             </blockquote>
-            <a 
-              href="/menu" 
+            <Link
+              href={`/${locale}/menu`}
               className="inline-block bg-pink-500 text-white px-8 py-3 rounded-full font-bold hover:bg-pink-600 transition"
             >
               {t('journey.step4.cta')}
-            </a>
+            </Link>
           </div>
           <div>
             <div className="bg-pink-100 rounded-lg h-64 flex items-center justify-center">
@@ -178,18 +179,18 @@ export default function FarmToDonutPage() {
             {t('cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/location" 
+            <Link
+              href={`/${locale}#location`}
               className="bg-white text-amber-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition"
             >
               {t('cta.visitUs')}
-            </a>
-            <a 
-              href="/menu" 
+            </Link>
+            <Link
+              href={`/${locale}/menu`}
               className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition"
             >
               {t('cta.seeMenu')}
-            </a>
+            </Link>
           </div>
         </div>
       </section>

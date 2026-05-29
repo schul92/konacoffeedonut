@@ -157,8 +157,9 @@ DONUTS: list[Donut] = [
         "donut-yogurt-pebble",
         "Yogurt Pebble",
         ("A single intact pon-de-ring mochi donut matching the printed menu board: "
-         "white yogurt glaze covered with colorful Fruity Pebbles cereal pieces, "
-         "bright rainbow cereal topping."),
+         "smooth white yogurt glaze covered with irregular flat Fruity Pebbles cereal flakes, "
+         "not round nonpareil sprinkles, not sugar pearls; use many small jagged cereal shards "
+         "in bright red, orange, yellow, green, blue, and purple, like cereal flakes stuck to the glaze."),
     ),
     Donut(
         "donut-blueberry",
