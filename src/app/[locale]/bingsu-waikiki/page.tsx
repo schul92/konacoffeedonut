@@ -142,7 +142,7 @@ const content = {
     cta: {
       title: 'Find Us in the Heart of Waikiki',
       address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-      opening: 'Opening Late April 2026',
+      opening: 'Open now in Waikiki',
       note: 'The best Korean shaved ice in Hawaii is almost here!',
       directions: 'Get Directions',
     },
@@ -269,7 +269,7 @@ const content = {
     cta: {
       title: 'ワイキキの中心でお待ちしています',
       address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-      opening: '2026年4月下旬オープン',
+      opening: 'ワイキキで営業中',
       note: 'ハワイ最高の韓国かき氷がまもなく登場！',
       directions: '道順を見る',
     },
@@ -396,7 +396,7 @@ const content = {
     cta: {
       title: '와이키키 한복판에서 만나요',
       address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-      opening: '2026년 4월 말 오픈',
+      opening: '와이키키에서 영업 중',
       note: '하와이 최고의 한국 빙수가 곧 찾아옵니다!',
       directions: '길찾기',
     },
@@ -521,7 +521,7 @@ const content = {
     cta: {
       title: '在威基基中心等您',
       address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-      opening: '2026年4月下旬开业',
+      opening: '威基基现已营业',
       note: '夏威夷最好的韩式刨冰即将到来！',
       directions: '获取路线',
     },

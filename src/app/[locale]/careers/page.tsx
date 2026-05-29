@@ -27,7 +27,7 @@ const translations = {
     hero: {
       badge: "NOW HIRING",
       title: "Join Our Waikiki Team",
-      subtitle: "Grand Opening Late April 2026",
+      subtitle: "Grand Open now in Waikiki",
       description: "Be part of something special! We're building an amazing team for our new Waikiki location. Full-time and part-time positions available.",
     },
     positions: {

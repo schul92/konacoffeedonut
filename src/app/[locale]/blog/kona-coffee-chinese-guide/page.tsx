@@ -182,7 +182,7 @@ const content = {
       paragraphs: [
         'Hawaii Kona Coffee is one of the world\'s most celebrated specialty coffees, grown exclusively on the western coast of Hawaii\'s Big Island in the Kona District. This narrow coffee belt spans just 30 miles long and 2 miles wide, situated on the slopes of Mauna Loa and Hualalai volcanoes at elevations between 500 and 900 meters.',
         'Kona coffee cultivation dates back to 1828. Nearly two centuries of growing in unique volcanic soil, mild tropical climate, and consistent afternoon cloud cover have created ideal conditions found nowhere else on Earth. The soil is rich in minerals with excellent drainage; afternoon clouds provide natural shade; moderate rainfall and frost-free temperatures complete this perfect combination.',
-        'Today, approximately 800 small farms produce the entire world\'s supply of genuine Kona coffee — less than 1% of global production. Every cherry is hand-picked at peak ripeness, and Hawaii\'s Department of Agriculture enforces strict grading standards.',
+        'Today, approximately 800 small farms produce the entire world\'s supply of Kona-grown coffee — less than 1% of global production. Every cherry is hand-picked at peak ripeness, and Hawaii\'s Department of Agriculture enforces strict grading standards.',
         'These factors — unique terroir, artisanal harvesting, and rigorous quality control — make Kona coffee the "liquid gold" of the coffee world.',
       ],
     },
@@ -251,7 +251,7 @@ const content = {
       title: 'Frequently Asked Questions',
       items: [
         { question: 'Why is Kona coffee so expensive?', answer: 'Limited supply (less than 1% of global production), hand-picking, Hawaii labor costs, and strict quality grading. Expect $30-50 per pound for Honolulu Coffee.' },
-        { question: 'What\'s the difference between Honolulu Coffee and Kona Blend?', answer: 'Honolulu Coffee means every bean is from the Kona District. "Kona Blend" may contain as little as 10% Kona beans with 90% cheap imports.' },
+        { question: 'What\'s the difference between Honolulu Coffee and Kona Blend?', answer: '100% Kona coffee means the coffee is from the Kona District. "Kona Blend" may contain as little as 10% Kona beans with 90% cheap imports.' },
         { question: 'What\'s the best brewing method for Kona?', answer: 'Americano for smoothness, pour-over for tasting notes, French press for body, cold brew for sweetness. Medium roast at 90-96°C.' },
         { question: 'Is Kona coffee good for sensitive stomachs?', answer: 'Yes! Kona\'s very low acidity (pH ~5.0-5.1) makes it much gentler on the stomach than African or Central American coffees.' },
         { question: 'Where can I try real Kona coffee in Waikiki?', answer: 'Kona Coffee Donut at 2142 Kalakaua Ave serves Honolulu Coffee in Americano, pour-over, latte, and cold brew styles.' },

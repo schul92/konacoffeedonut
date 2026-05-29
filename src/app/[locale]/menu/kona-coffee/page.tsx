@@ -10,13 +10,13 @@ import JoinTeamCTA from '@/components/JoinTeamCTA';
 const translations = {
   en: {
     hero: {
-      badge: "100% HAWAIIAN",
-      title: "Kona Coffee",
-      subtitle: "Experience the world's finest coffee from Hawaii's volcanic slopes",
+      badge: "100% KONA COFFEE AVAILABLE",
+      title: "Kona Coffee in Waikiki",
+      subtitle: "Coffee, iced drinks, and 100% Kona coffee available steps from Waikiki Beach",
     },
     intro: {
       title: "What is Kona Coffee?",
-      description: "Kona coffee is grown on the slopes of Hualalai and Mauna Loa in the North and South Kona Districts of the Big Island of Hawaii. The unique microclimate—sunny mornings, cloudy afternoons, little wind, and mild nights—combined with mineral-rich volcanic soil creates coffee beans with an extraordinary smooth, rich flavor that coffee lovers worldwide cherish.",
+      description: "Kona coffee is grown on the slopes of Hualalai and Mauna Loa in the North and South Kona Districts of the Big Island of Hawaii. At Kona Coffee Donut?, 100% Kona coffee is available alongside our espresso drinks, iced coffee, and donut pairings for Waikiki visitors looking for a true Hawaii coffee stop.",
       history: "Hawaiian coffee cultivation began in 1828 when Reverend Samuel Ruggles brought Brazilian coffee trees to Kona. Nearly 200 years later, Kona remains one of the most prestigious and sought-after coffee-growing regions in the world.",
     },
     features: {
@@ -35,16 +35,16 @@ const translations = {
         { name: "Kona Coffee (Iced)", desc: "Cold brewed for smooth, refreshing taste" },
         { name: "Kona Latte", desc: "Espresso with steamed milk, Kona style" },
         { name: "Kona Cappuccino", desc: "Rich espresso with foamed milk" },
-        { name: "Kona Americano", desc: "Espresso with hot water, pure & bold" },
+        { name: "Kona Americano", desc: "Espresso with hot water, smooth & bold" },
         { name: "Kona Mocha", desc: "Chocolate meets Kona coffee perfection" },
       ],
     },
     cta: {
       title: "Taste the Aloha Spirit",
-      description: "Visit us in Waikiki to experience Honolulu Coffee paired with our fresh mochi donuts and Hawaiian treats.",
+      description: "Visit us in Waikiki for 100% Kona coffee available with fresh mochi donuts, malasadas, and Hawaiian-inspired treats.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
-      hours: "Opening Late April 2026",
+      hours: "Open daily in Waikiki",
     },
   },
   ja: {
@@ -61,7 +61,7 @@ const translations = {
     features: {
       title: "コナコーヒーが特別な理由",
       items: [
-        { icon: "leaf", title: "シングルオリジン", desc: "ビッグアイランド産100%純粋コナ豆" },
+        { icon: "leaf", title: "シングルオリジン", desc: "100% Kona coffee available in Waikiki" },
         { icon: "award", title: "世界的評価", desc: "世界最高のコーヒーとして常に評価" },
         { icon: "thermometer", title: "完璧な気候", desc: "火山斜面の理想的な栽培条件" },
         { icon: "coffee", title: "豊かな風味", desc: "チョコレートとナッツの香り、滑らかな味" },
@@ -83,7 +83,7 @@ const translations = {
       description: "ワイキキの当店で、新鮮なモチドーナツとハワイアンスイーツと一緒に本格的なコナコーヒーをお楽しみください。",
       button: "お店を訪問",
       location: "2142 カラカウア通り、ワイキキ",
-      hours: "2026年4月下旬オープン",
+      hours: "ワイキキで営業中",
     },
   },
   ko: {
@@ -100,7 +100,7 @@ const translations = {
     features: {
       title: "코나 커피가 특별한 이유",
       items: [
-        { icon: "leaf", title: "싱글 오리진", desc: "빅 아일랜드 농장의 100% 순수 코나 원두" },
+        { icon: "leaf", title: "싱글 오리진", desc: "와이키키에서 100% Kona coffee available" },
         { icon: "award", title: "세계적 명성", desc: "세계 최고의 커피로 꾸준히 평가" },
         { icon: "thermometer", title: "완벽한 기후", desc: "화산 경사면의 이상적인 재배 조건" },
         { icon: "coffee", title: "풍부한 맛", desc: "초콜릿과 견과류 향의 부드러운 맛" },
@@ -122,7 +122,7 @@ const translations = {
       description: "와이키키 매장에서 신선한 모찌 도넛과 하와이안 디저트와 함께 정통 코나 커피를 즐겨보세요.",
       button: "매장 방문",
       location: "2142 칼라카우아 애비뉴, 와이키키",
-      hours: "2026년 4월 말 오픈",
+      hours: "와이키키에서 영업 중",
     },
   },
   zh: {
@@ -139,7 +139,7 @@ const translations = {
     features: {
       title: "科纳咖啡的特别之处",
       items: [
-        { icon: "leaf", title: "单一产地", desc: "来自大岛农场的100%纯科纳豆" },
+        { icon: "leaf", title: "单一产地", desc: "威基基可选 100% Kona coffee" },
         { icon: "award", title: "世界闻名", desc: "始终被评为世界顶级咖啡" },
         { icon: "thermometer", title: "完美气候", desc: "火山斜坡的理想种植条件" },
         { icon: "coffee", title: "醇厚风味", desc: "带有巧克力和坚果香气的顺滑口感" },
@@ -161,7 +161,7 @@ const translations = {
       description: "来威基基店品尝正宗科纳咖啡，搭配我们新鲜的麻糬甜甜圈和夏威夷美食。",
       button: "访问我们",
       location: "2142 卡拉卡瓦大道，威基基",
-      hours: "2026年4月下旬开业",
+      hours: "威基基现已营业",
     },
   },
 };
@@ -329,6 +329,50 @@ export default function KonaCoffeePage() {
         </div>
       </section>
 
+      {/* FAQ Section — captures 100% Kona coffee and near-me tourist queries */}
+      <section className="py-16 md:py-24 bg-amber-900/30">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2
+            className="text-3xl sm:text-4xl font-bold text-white text-center mb-10"
+            style={{ fontFamily: 'var(--font-righteous)' }}
+          >
+            100% Kona Coffee in Waikiki FAQ
+          </h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: 'Do you serve 100% Kona coffee?',
+                a: 'Yes — 100% Kona coffee is available at Kona Coffee Donut? alongside our espresso drinks, iced coffee, and donut pairings.',
+              },
+              {
+                q: 'Where can I get Kona coffee near Waikiki Beach?',
+                a: 'Visit us at 2142 Kalākaua Ave in Waikiki, a convenient stop for coffee, donuts, bingsu, and grab-and-go desserts near Waikiki Beach.',
+              },
+              {
+                q: 'What goes best with Kona coffee?',
+                a: 'Tourists and Honolulu locals often pair Kona coffee with mochi donuts, malasadas, or Korean bingsu for a Waikiki dessert café stop.',
+              },
+            ].map((item) => (
+              <div key={item.q} className="rounded-2xl border border-amber-500/30 bg-amber-950/50 p-5">
+                <h3 className="text-lg font-bold text-amber-100 mb-2">{item.q}</h3>
+                <p className="text-amber-100/75 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link href={`/${locale}/menu`} className="rounded-full bg-amber-500 px-5 py-3 font-bold text-white hover:bg-amber-400">
+              View Full Waikiki Menu
+            </Link>
+            <Link href={`/${locale}/menu/mochi-donuts`} className="rounded-full border border-amber-400 px-5 py-3 font-bold text-amber-100 hover:bg-amber-900/60">
+              Pair with Mochi Donuts
+            </Link>
+            <Link href={`/${locale}/menu/bingsu`} className="rounded-full border border-amber-400 px-5 py-3 font-bold text-amber-100 hover:bg-amber-900/60">
+              Try Bingsu in Waikiki
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-amber-900/50 to-amber-950">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -409,7 +453,7 @@ export default function KonaCoffeePage() {
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Kona Coffee",
-            "description": "100% Hawaiian Kona Coffee from Big Island farms. Experience the world's finest coffee with smooth, rich flavor and low acidity.",
+            "description": "100% Kona coffee available at Kona Coffee Donut? in Waikiki, served alongside espresso drinks, iced coffee, fresh donuts, malasadas, and bingsu.",
             "brand": {
               "@type": "Brand",
               "name": "Kona Coffee Donut"
@@ -424,6 +468,33 @@ export default function KonaCoffeePage() {
               "ratingValue": "4.9",
               "reviewCount": "200"
             }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Do you serve 100% Kona coffee?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — 100% Kona coffee is available at Kona Coffee Donut? alongside espresso drinks, iced coffee, and donut pairings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I get Kona coffee near Waikiki Beach?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Visit Kona Coffee Donut? at 2142 Kalākaua Ave in Waikiki for coffee, donuts, bingsu, and grab-and-go desserts near Waikiki Beach."
+                }
+              }
+            ]
           })
         }}
       />

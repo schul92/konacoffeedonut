@@ -66,8 +66,8 @@ const content = {
       ]
     },
     hours: {
-      title: 'Opening Soon',
-      text: 'Grand Opening Late April 2026',
+      title: 'Open Now',
+      text: 'Grand Open now in Waikiki',
       note: 'Fresh donuts and premium Kona coffee coming to Waikiki!'
     },
     cta: {
@@ -135,7 +135,7 @@ const content = {
     },
     hours: {
       title: 'まもなくオープン',
-      text: '2026年4月下旬グランドオープン',
+      text: 'ワイキキで営業中',
       note: '新鮮なドーナツとプレミアムコナコーヒーがワイキキに登場！'
     },
     cta: {
@@ -271,7 +271,7 @@ const content = {
     },
     hours: {
       title: '即将开业',
-      text: '2026年4月下旬盛大开业',
+      text: '威基基现已营业',
       note: '新鲜甜甜圈和优质科纳咖啡即将来到威基基！'
     },
     cta: {

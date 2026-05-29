@@ -9,14 +9,14 @@ const config = {
   imageAlt: 'Pour-over Kona coffee at Kona Coffee Donut Waikiki',
   schemaHeadline: 'Where to Try Real Kona Coffee in Waikiki 2026',
   schemaDescription:
-    'A guide to finding authentic Honolulu Coffee in Waikiki — what to look for, how to spot real Kona, and where to taste pour-over and espresso on Kalākaua Avenue.',
+    'A guide to finding Kona coffee in Waikiki — what to look for, how to spot real Kona, and where to taste pour-over and espresso on Kalākaua Avenue.',
 };
 
 const content: Record<Locale, BlogContent> = {
   en: {
     hero: {
       title: 'Where to Try Real Kona Coffee in Waikiki',
-      subtitle: 'Beyond the big chains — finding authentic Honolulu Coffee on Kalākaua Avenue.',
+      subtitle: 'Beyond the big chains — finding Kona coffee on Kalākaua Avenue.',
       date: 'Updated May 2026',
       readTime: '6 min read',
       badge: 'Coffee Guide',
@@ -83,7 +83,7 @@ const content: Record<Locale, BlogContent> = {
       },
     ],
     faq: [
-      { q: 'Where can I get authentic Honolulu Coffee in Waikiki?', a: 'Kona Coffee Donut at 2142 Kalākaua Ave brews Honolulu Coffee sourced through Honolulu Coffee. No blends or fillers. Walking distance from Waikiki Beach.' },
+      { q: 'Where can I get Kona coffee in Waikiki?', a: 'Kona Coffee Donut at 2142 Kalākaua Ave brews Honolulu Coffee sourced through Honolulu Coffee. 100% Kona coffee available. Walking distance from Waikiki Beach.' },
       { q: 'What is the difference between Kona blend and Honolulu Coffee?', a: 'Hawaii law allows "Kona Blend" labels with as little as 10% real Kona beans. At Kona Coffee Donut?, guests can ask for our Honolulu Coffee offerings and current whole-bean options.' },
       { q: 'Why is Kona coffee so expensive?', a: 'Kona is grown in a small region (about 6 miles wide) with limited yield, hand-picked at peak ripeness, and processed with care. The unique volcanic soil and microclimate produce a smooth, complex cup that\'s impossible to replicate elsewhere.' },
       { q: 'Can I take Kona coffee beans home from Waikiki?', a: 'Yes — Kona Coffee Donut sells whole-bean Honolulu Coffee by the bag. Coffee travels well, holds flavor, and makes an excellent Hawaii souvenir.' },

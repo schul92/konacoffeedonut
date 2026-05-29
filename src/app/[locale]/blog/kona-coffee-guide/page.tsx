@@ -19,14 +19,14 @@ const content = {
     },
     quickAnswer: {
       title: 'Quick Answer',
-      text: '<strong>Kona coffee is grown exclusively on the volcanic slopes of Mauna Loa and Hualalai in Hawaii\'s Kona District</strong>, representing <strong>less than 1% of the world\'s coffee production</strong>. Hand-picked and sun-dried, it delivers a <strong>uniquely smooth, low-acid flavor with chocolate and nutty notes</strong> that regular mass-produced coffee cannot replicate. Expect to pay $30-50 per pound for authentic Honolulu Coffee.',
+      text: '<strong>Kona coffee is grown exclusively on the volcanic slopes of Mauna Loa and Hualalai in Hawaii\'s Kona District</strong>, representing <strong>less than 1% of the world\'s coffee production</strong>. Hand-picked and sun-dried, it delivers a <strong>uniquely smooth, low-acid flavor with chocolate and nutty notes</strong> that regular mass-produced coffee cannot replicate. Expect to pay premium pricing for 100% Kona coffee.',
     },
     whatIsKona: {
       title: 'What Is Kona Coffee?',
       paragraphs: [
         'Kona coffee is a premium single-origin coffee grown exclusively in the North and South Kona Districts on the Big Island of Hawaii. The coffee belt stretches along the western slopes of two volcanic mountains — Mauna Loa and Hualalai — at elevations between 500 and 900 meters above sea level.',
         'What makes this region so special is a rare combination of natural conditions: rich volcanic soil packed with minerals, consistent cloud cover that rolls in each afternoon providing natural shade, gentle tropical rainfall, and mild temperatures that never freeze. This microclimate exists nowhere else on Earth and creates ideal growing conditions for Coffea arabica.',
-        'Kona coffee has been cultivated since the 1820s, making it one of the oldest commercial coffee-growing regions in the United States. Today, approximately 800 small farms — most under 5 acres — produce the entire world\'s supply of genuine Kona coffee. Every cherry is hand-picked at peak ripeness, a labor-intensive process that ensures only the best beans make it to your cup.',
+        'Kona coffee has been cultivated since the 1820s, making it one of the oldest commercial coffee-growing regions in the United States. Today, approximately 800 small farms — most under 5 acres — produce the entire world\'s supply of Kona-grown coffee. Every cherry is hand-picked at peak ripeness, a labor-intensive process that ensures only the best beans make it to your cup.',
         'The Kona Coffee Council and the Hawaii Department of Agriculture enforce strict grading standards. To be labeled "Honolulu Coffee," every bean must be grown, harvested, and processed within the Kona District. This level of traceability and quality control is virtually unmatched in the coffee world.',
       ],
     },
@@ -71,7 +71,7 @@ const content = {
       intro: 'The biggest trap for consumers is the "Kona Blend" label. Here\'s what you need to know:',
       warning: {
         title: '"Kona Blend" Warning',
-        text: 'Hawaii law allows coffee containing as little as 10% Kona beans to be marketed as a "Kona Blend." The remaining 90% is typically cheap imported coffee from Central or South America. Many tourists unknowingly buy these blends thinking they\'re getting genuine Kona coffee. Major grocery store brands frequently sell Kona blends at premium prices.',
+        text: 'Hawaii law allows coffee containing as little as 10% Kona beans to be marketed as a "Kona Blend." The remaining 90% is typically cheap imported coffee from Central or South America. Many tourists unknowingly buy these blends thinking they\'re getting Kona-grown coffee. Major grocery store brands frequently sell Kona blends at premium prices.',
       },
       tips: [
         'Always look for "Honolulu Coffee" on the label — not just "Kona" or "Kona Blend"',
@@ -100,7 +100,7 @@ const content = {
     whereTo: {
       title: 'Where to Try Real Kona Coffee in Waikiki',
       paragraphs: [
-        'Finding authentic Honolulu Coffee in Waikiki can be surprisingly difficult. Many cafes and hotel restaurants serve Kona blends (remember, only 10% real Kona) or skip Kona entirely due to cost.',
+        'Finding Kona coffee in Waikiki can be surprisingly difficult. Many cafes and hotel restaurants serve Kona blends (remember, only 10% real Kona) or skip Kona entirely due to cost.',
         'At Kona Coffee Donut, we serve genuine Honolulu Coffee sourced through our partnership with Honolulu Coffee, established in 1992 and one of Hawaii\'s most respected coffee companies. Every cup we pour is made from beans grown on the volcanic slopes of the Kona District — no blends, no shortcuts.',
         'We pair our Kona coffee with freshly made mochi donuts, malasadas, and other Hawaiian-inspired pastries at our location on Kalakaua Avenue, steps from Waikiki Beach. Whether you\'re a first-time visitor or a returning coffee enthusiast, tasting real Kona coffee the way it was meant to be enjoyed — freshly brewed, pure, and served with aloha — is an experience you won\'t forget.',
       ],
@@ -127,13 +127,13 @@ const content = {
         },
         {
           q: 'Where can I buy real Honolulu Coffee in Waikiki?',
-          a: 'Kona Coffee Donut on Kalakaua Avenue in Waikiki serves authentic Honolulu Coffee through our partnership with Honolulu Coffee (est. 1992). You can also find genuine Kona at specialty retailers, but always verify the "Honolulu Coffee" label and check for a specific farm origin.',
+          a: 'Kona Coffee Donut? on Kalākaua Avenue in Waikiki serves Honolulu Coffee and has 100% Kona coffee available. You can also find Kona-grown coffee at specialty retailers, but always verify the label percentage and specific farm origin.',
         },
       ],
     },
     cta: {
       title: 'Taste the Difference at Kona Coffee Donut',
-      text: 'Experience authentic Honolulu Coffee at 2142 Kalakaua Ave, Waikiki. Freshly brewed, never blended.',
+      text: 'Experience Kona coffee at 2142 Kalākaua Ave, Waikiki. 100% Kona coffee available with fresh donuts and desserts.',
       button: 'Visit Us Today',
       learnMore: 'Learn More About Our Coffee',
     },
@@ -604,7 +604,7 @@ const faqSchema = {
       name: 'Where can I buy real Honolulu Coffee in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kona Coffee Donut on Kalakaua Avenue in Waikiki serves authentic Honolulu Coffee through their partnership with Honolulu Coffee (est. 1992). Always verify the "Honolulu Coffee" label.',
+        text: 'Kona Coffee Donut? on Kalākaua Avenue in Waikiki serves Honolulu Coffee and has 100% Kona coffee available. Always verify label percentage when buying Kona coffee retail.',
       },
     },
   ],

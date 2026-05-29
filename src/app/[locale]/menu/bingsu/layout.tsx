@@ -12,8 +12,8 @@ export async function generateMetadata({
   // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "Bingsu | Best Korean Shaved Ice in Waikiki",
-      description: "Try authentic Korean bingsu in Waikiki! Fluffy shaved ice with premium toppings - injeolmi, mango, strawberry & more. Perfect refreshing treat! Visit Kalakaua Ave!",
+      title: "Bingsu in Waikiki | Korean Shaved Ice Desserts",
+      description: "Korean bingsu in Waikiki — milk snow shaved ice topped with mango, matcha, injeolmi, Oreo, and seasonal fruit. Cool down near Waikiki Beach.",
     },
     ja: {
       title: "ビンス | ワイキキで人気の韓国かき氷",
@@ -37,7 +37,7 @@ export async function generateMetadata({
 
   const keywords = [
     // English
-    'bingsu waikiki', 'bingsu hawaii', 'korean shaved ice waikiki',
+    'bingsu waikiki', 'korean shaved ice waikiki', 'how to eat bingsu', 'what is bingsu', 'bingsu near me', 'bingsu hawaii',
     'korean shaved ice hawaii', 'bingsu near me', 'patbingsu hawaii',
     'korean dessert waikiki', 'shaved ice honolulu', 'best bingsu oahu',
     'injeolmi bingsu', 'mango bingsu', 'korean ice cream waikiki',

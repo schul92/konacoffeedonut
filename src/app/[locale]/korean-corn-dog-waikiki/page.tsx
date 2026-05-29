@@ -87,8 +87,8 @@ const content = {
       highlight: 'Pro tip: Pair a Half & Half Dog with our signature Kona Coffee for the perfect sweet-savory combo.'
     },
     hours: {
-      title: 'Opening Soon',
-      text: 'Opening Late April 2026',
+      title: 'Open Now',
+      text: 'Open now in Waikiki',
       note: 'Korean corn dogs, fresh donuts & premium Kona coffee — all under one roof in Waikiki!'
     },
     cta: {
@@ -175,7 +175,7 @@ const content = {
     },
     hours: {
       title: 'まもなくオープン',
-      text: '2026年4月下旬オープン',
+      text: 'ワイキキで営業中',
       note: '韓国式チーズドッグ、新鮮なドーナツ＆プレミアムコナコーヒー — ワイキキで全部揃います！'
     },
     cta: {
@@ -262,7 +262,7 @@ const content = {
     },
     hours: {
       title: '곧 오픈',
-      text: '2026년 4월 말 오픈',
+      text: '와이키키에서 영업 중',
       note: '한국식 핫도그, 신선한 도넛 & 프리미엄 코나 커피 — 와이키키에서 한 곳에!'
     },
     cta: {
@@ -349,7 +349,7 @@ const content = {
     },
     hours: {
       title: '即将开业',
-      text: '2026年4月下旬开业',
+      text: '威基基现已营业',
       note: '韩式热狗、新鲜甜甜圈 & 优质科纳咖啡——威基基一站式享受！'
     },
     cta: {

@@ -111,7 +111,7 @@ const content = {
     cta: {
       title: 'Try Waikiki\'s Best Mochi Donuts',
       address: '2142 Kalakaua Ave, Waikiki',
-      opening: 'Opening Late April 2026',
+      opening: 'Open now in Waikiki',
       note: 'Fresh mochi donuts + premium Kona coffee — the ultimate Waikiki treat.',
       button: 'Get Directions',
     },
@@ -218,7 +218,7 @@ const content = {
     cta: {
       title: 'ワイキキ最高のモチドーナツを体験',
       address: '2142 Kalakaua Ave, ワイキキ',
-      opening: '2026年4月下旬グランドオープン',
+      opening: 'ワイキキで営業中',
       note: '焼きたてモチドーナツ + プレミアムコナコーヒー — ワイキキの至福スイーツ。',
       button: '道順を見る',
     },
@@ -432,7 +432,7 @@ const content = {
     cta: {
       title: '来威基基品尝最好的麻糬甜甜圈',
       address: '2142 Kalakaua Ave, 威基基',
-      opening: '2026年4月下旬盛大开业',
+      opening: '威基基现已营业',
       note: '新鲜麻糬甜甜圈 + 优质科纳咖啡 — 威基基终极甜点体验。',
       button: '获取路线',
     },

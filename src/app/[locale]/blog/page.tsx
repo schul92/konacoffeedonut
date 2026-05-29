@@ -84,7 +84,7 @@ const content = {
         image: '/images/blog/where-to-try-kona-coffee-waikiki.jpeg',
         category: 'Coffee',
         title: 'Where to Try Real Kona Coffee in Waikiki 2026',
-        excerpt: 'Skip the chains. Find authentic Honolulu Coffee in Waikiki \u2014 pour-over, espresso, lattes, and beans to take home.',
+        excerpt: 'Skip the chains. Find Kona coffee in Waikiki \u2014 pour-over, espresso, lattes, and beans to take home.',
         readTime: 6,
       },
       {

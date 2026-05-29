@@ -26,9 +26,11 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'menu' });
 
-  const title = `${t('title')} | Kona Coffee Donut?`;
+  const title = locale === 'en' ? 'Menu | Donuts, Bingsu & 100% Kona Coffee Available in Waikiki | Kona Coffee Donut?' : `${t('title')} | Kona Coffee Donut?`;
   const description =
-    'Mochi donuts, malasadas, Kona coffee, Hawaiian shaved ice & bingsu, Korean corn dogs, and acai bowls — handcrafted with aloha in Waikiki at 2142 Kalākaua Ave, Honolulu.';
+    locale === 'en'
+      ? 'Browse our Waikiki menu: mochi donuts, malasadas, Korean bingsu, acai bowls, Korean corn dogs, and 100% Kona coffee available near Waikiki Beach.'
+      : 'Mochi donuts, malasadas, Kona coffee, Hawaiian shaved ice & bingsu, Korean corn dogs, and acai bowls — handcrafted with aloha in Waikiki at 2142 Kalākaua Ave, Honolulu.';
 
   return {
     title,

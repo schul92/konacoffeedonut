@@ -4,8 +4,8 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 
 const meta = {
   en: {
-    title: 'What is Bingsu? Korean Shaved Ice Dessert + How to Eat It (2026)',
-    description: "What is bingsu? Korea's snow-soft shaved milk ice topped with fresh fruit, mochi & red bean. Learn the types, how to eat bingsu the right way, and where to try authentic bingsu in Waikiki.",
+    title: 'What Is Bingsu? Korean Shaved Ice + Where to Try It in Waikiki (2026)',
+    description: "What is bingsu? Learn how to eat Korean shaved ice, popular toppings, and where to try bingsu in Waikiki near Kalākaua Ave and Waikiki Beach.",
   },
   ja: {
     title: 'ビンスとは？韓国かき氷の食べ方とワイキキで食べられる場所',

@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const descriptions: Record<string, string> = {
     zh: '夏威夷科纳咖啡风味详细介绍：黑糖、巧克力、坚果的丰富层次。科纳适合冲美式吗？完全适合！了解科纳咖啡的产地、种植、烘焙、手冲与法压壶冲泡方法，以及在威基基哪里能喝到正宗檀香山咖啡。',
-    en: 'Complete guide to Hawaii Kona coffee flavor profile, brewing methods, and tasting notes. Learn why Kona is perfect for Americano, pour-over, and French press. Try authentic Honolulu Coffee in Waikiki.',
+    en: 'Complete guide to Hawaii Kona coffee flavor profile, brewing methods, and tasting notes. Learn why Kona is perfect for Americano, pour-over, and French press. Try Kona coffee in Waikiki.',
     ja: 'ハワイ コナコーヒーの風味プロファイル、淹れ方、テイスティングノートの完全ガイド。コナがアメリカーノ、ハンドドリップ、フレンチプレスに最適な理由を解説。ワイキキで本物のホノルルコーヒーを。',
     ko: '하와이 코나 커피 풍미 프로필, 브루잉 방법, 테이스팅 노트 완벽 가이드. 코나가 아메리카노, 핸드드립, 프렌치프레스에 완벽한 이유. 와이키키에서 정통 호놀룰루 커피를 맛보세요.',
   };

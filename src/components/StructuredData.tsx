@@ -14,15 +14,6 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     es: 'Español',
   };
 
-  // Locale-specific descriptions for better SEO
-  const descriptions: Record<string, string> = {
-    en: 'Best Kona coffee and mochi donuts in Waikiki, Honolulu. Coffee near me, donuts near me. Featuring premium Kona coffee by Honolulu Coffee and artisan mochi donuts by MOCHILAND. Perfect for tourists visiting Hawaii.',
-    ja: 'ワイキキで最高のコナコーヒーとモチドーナツ。近くのカフェ、近くのドーナツ。ホノルルコーヒーのプレミアムコナコーヒーとモチランドの職人モチドーナツ。ハワイ観光に最適。',
-    ko: '와이키키 최고의 코나 커피와 모찌 도넛. 근처 카페, 근처 도넛. 호놀룰루 커피의 프리미엄 코나 커피와 모찌랜드의 장인 모찌 도넛. 하와이 여행객에게 완벽.',
-    zh: '威基基最好的科纳咖啡和麻糬甜甜圈。附近咖啡店，附近甜甜圈。檀香山咖啡的优质科纳咖啡和MOCHILAND的手工麻糬甜甜圈。非常适合来夏威夷旅游的游客。',
-    es: 'El mejor café Kona y donuts de mochi en Waikiki, Honolulu. Café cerca de mí, donuts cerca de mí. Café Kona premium de Honolulu Coffee y donuts de mochi artesanales de MOCHILAND. Perfecto para turistas que visitan Hawaii.',
-  };
-
   // Locale-specific keywords for better local SEO
   const keywordsByLocale: Record<string, string> = {
     en: 'kona coffee waikiki, coffee near me, donuts near me, mochi donuts hawaii, best coffee waikiki, honolulu coffee, waikiki breakfast, tourist cafe waikiki, malasada near me, bingsu near me',
@@ -35,11 +26,11 @@ export default function StructuredData({ locale }: StructuredDataProps) {
   // GEO-Optimized Entity Introduction with Citations & Data (CITABLE framework)
   // Includes: specific statistics, authoritative sources, verifiable claims
   const entityIntro = {
-    en: 'Kona Coffee Donut is a Hawaiian café and bakery at 2142 Kalakaua Ave, Honolulu, HI 96815, opening Late April 2026. Located 400 meters (5-minute walk) from Waikiki Beach. We proudly serve Honolulu Coffee (est. 1992, Hawaii\'s largest Kona coffee chain), featuring Honolulu Coffee—grown at 500-900m elevation on Mauna Loa and Hualalai volcanoes, representing less than 1% of global coffee production (Kona Coffee Council). We also feature MOCHILAND artisan mochi donuts (50+ US locations), freshly prepared daily in-store using rice flour (mochiko). Open 7AM-9PM daily (14 hours).',
-    ja: 'Kona Coffee Donutは2142 Kalakaua Ave, Honolulu, HI 96815に位置し、2026年4月下旬オープン。ワイキキビーチから400m（徒歩5分）。ホノルルコーヒー（1992年創業、ハワイ最大のコナコーヒーチェーン）のホノルルコーヒーを誇りを持って提供。コナコーヒーはマウナロア山とフアラライ山の標高500-900mで栽培され、世界のコーヒー生産量の1%未満（コナコーヒー協会）。MOCHILAND（米国50店舗以上）の職人モチドーナツを毎日店内で手作り。営業時間：毎日7時〜21時（14時間）。',
-    ko: 'Kona Coffee Donut은 2142 Kalakaua Ave, Honolulu, HI 96815에 위치하며, 2026년 4월 말 오픈. 와이키키 비치에서 400m(도보 5분). 호놀룰루 커피(1992년 설립, 하와이 최대 코나 커피 체인)의 호놀룰루 커피를 자랑스럽게 제공. 코나 커피는 마우나 로아와 후알라라이 화산의 해발 500-900m에서 재배되며 전 세계 생산량의 1% 미만(코나 커피 협회). MOCHILAND(미국 50개 이상 매장)의 장인 모찌 도넛을 매일 매장에서 직접 제조. 영업시간: 매일 7시-21시(14시간).',
-    zh: 'Kona Coffee Donut位于2142 Kalakaua Ave, Honolulu, HI 96815，2026年4月下旬开业。距威基基海滩400米（步行5分钟）。自豪地供应檀香山咖啡（1992年成立，夏威夷最大科纳咖啡连锁）的檀香山咖啡——产自冒纳罗亚和胡阿拉莱火山海拔500-900米处，仅占全球咖啡产量不到1%（科纳咖啡协会）。提供MOCHILAND（美国50多家门店）手工麻糬甜甜圈，每天店内新鲜制作。营业时间：每天7点-21点（14小时）。',
-    es: 'Kona Coffee Donut es un café hawaiano en 2142 Kalakaua Ave, Honolulu, HI 96815, apertura finales de abril 2026. A 400 metros (5 min a pie) de Waikiki Beach. Orgullosamente servimos Honolulu Coffee (est. 1992, la cadena de café Kona más grande de Hawái), con café Honolulu Coffee—cultivado a 500-900m de altitud en los volcanes Mauna Loa y Hualalai, representando menos del 1% de la producción mundial (Kona Coffee Council). También servimos donuts mochi artesanales de MOCHILAND (50+ ubicaciones en EE.UU.), preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
+    en: 'Kona Coffee Donut? is an open-now Hawaiian café and bakery at 2142 Kalakaua Ave, Honolulu, HI 96815. Located 400 meters (5-minute walk) from Waikiki Beach. We proudly serve Honolulu Coffee (est. 1992, Hawaii\'s largest Kona coffee chain), featuring Honolulu Coffee—grown at 500-900m elevation on Mauna Loa and Hualalai volcanoes, representing less than 1% of global coffee production (Kona Coffee Council). We also feature MOCHILAND artisan mochi donuts (50+ US locations), freshly prepared daily in-store using rice flour (mochiko). Open 7AM-9PM daily (14 hours).',
+    ja: 'Kona Coffee Donut?は2142 Kalakaua Ave, Honolulu, HI 96815に位置し、ワイキキで営業中。ワイキキビーチから400m（徒歩5分）。ホノルルコーヒー（1992年創業、ハワイ最大のコナコーヒーチェーン）のホノルルコーヒーを誇りを持って提供。コナコーヒーはマウナロア山とフアラライ山の標高500-900mで栽培され、世界のコーヒー生産量の1%未満（コナコーヒー協会）。MOCHILAND（米国50店舗以上）の職人モチドーナツを毎日店内で手作り。営業時間：毎日7時〜21時（14時間）。',
+    ko: 'Kona Coffee Donut?은 2142 Kalakaua Ave, Honolulu, HI 96815에 위치하며, 와이키키에서 영업 중입니다. 와이키키 비치에서 400m(도보 5분). 호놀룰루 커피(1992년 설립, 하와이 최대 코나 커피 체인)의 호놀룰루 커피를 자랑스럽게 제공. 코나 커피는 마우나 로아와 후알라라이 화산의 해발 500-900m에서 재배되며 전 세계 생산량의 1% 미만(코나 커피 협회). MOCHILAND(미국 50개 이상 매장)의 장인 모찌 도넛을 매일 매장에서 직접 제조. 영업시간: 매일 7시-21시(14시간).',
+    zh: 'Kona Coffee Donut?位于2142 Kalakaua Ave, Honolulu, HI 96815，威基基现已营业。距威基基海滩400米（步行5分钟）。自豪地供应檀香山咖啡（1992年成立，夏威夷最大科纳咖啡连锁）的檀香山咖啡——产自冒纳罗亚和胡阿拉莱火山海拔500-900米处，仅占全球咖啡产量不到1%（科纳咖啡协会）。提供MOCHILAND（美国50多家门店）手工麻糬甜甜圈，每天店内新鲜制作。营业时间：每天7点-21点（14小时）。',
+    es: 'Kona Coffee Donut? es un café hawaiano abierto ahora en 2142 Kalakaua Ave, Honolulu, HI 96815. A 400 metros (5 min a pie) de Waikiki Beach. Servimos Honolulu Coffee y 100% Kona coffee available, además de donuts mochi artesanales de MOCHILAND, preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
   };
 
   // Local Business Schema (Enhanced with Opening Date)
@@ -80,35 +71,6 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       '@type': 'GeoCoordinates',
       latitude: 21.2793,
       longitude: -157.8294,
-    },
-    // Grand Opening Event
-    event: {
-      '@type': 'Event',
-      name: 'Grand Opening - Kona Coffee Donut Waikiki',
-      startDate: '2026-04-25T07:00:00-10:00',
-      endDate: '2026-04-25T21:00:00-10:00',
-      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-      eventStatus: 'https://schema.org/EventScheduled',
-      location: {
-        '@type': 'Place',
-        name: 'Kona Coffee Donut - Waikiki',
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: '2142 Kalakaua Ave',
-          addressLocality: 'Honolulu',
-          addressRegion: 'HI',
-          postalCode: '96815',
-          addressCountry: 'US',
-        },
-      },
-      description: 'Grand opening celebration! First 50 customers get FREE donut with coffee purchase. 20% off all menu items on opening day.',
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'USD',
-        availability: 'https://schema.org/InStock',
-        validFrom: '2026-04-25T07:00:00-10:00',
-      },
     },
     openingHoursSpecification: [
       {

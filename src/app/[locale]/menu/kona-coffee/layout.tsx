@@ -12,24 +12,24 @@ export async function generateMetadata({
   // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "Kona Coffee | Best Hawaiian Coffee in Waikiki",
-      description: "Experience authentic Honolulu Coffee in Waikiki! Hawaii's finest coffee from Big Island farms. Smooth, rich flavor with hints of chocolate. Visit us on Kalakaua Ave!",
+      title: "100% Kona Coffee Available in Waikiki",
+      description: "Order Kona coffee in Waikiki — espresso, drip, iced coffee, and lattes. 100% Kona coffee available with fresh donuts near Waikiki Beach on Kalākaua Ave.",
     },
     ja: {
-      title: "コナコーヒー | ワイキキ最高のハワイアンコーヒー",
-      description: "ワイキキで本格的なコナコーヒーを！ビッグアイランド産ホノルルコーヒー使用。チョコレートの香りが漂う滑らかで豊かな味わい。カラカウア通りでお待ちしています！",
+      title: "ワイキキで100%コナコーヒーも楽しめるカフェ",
+      description: "ワイキキでコナコーヒー、アイスコーヒー、ラテを。100% Kona coffee available。カラカウア通り近くでドーナツと一緒にどうぞ。",
     },
     ko: {
-      title: "코나 커피 | 와이키키 최고의 하와이안 커피",
-      description: "와이키키에서 정통 호놀룰루 커피를! 빅 아일랜드 농장의 하와이 최고급 커피. 초콜릿 향이 나는 부드럽고 풍부한 맛. 칼라카우아 애비뉴에서 만나요!",
+      title: "와이키키 100% 코나 커피도 가능한 카페",
+      description: "와이키키에서 코나 커피, 아이스커피, 라떼를 즐기세요. 100% Kona coffee available. 칼라카우아 애비뉴 근처 도넛 카페입니다.",
     },
     zh: {
-      title: "科纳咖啡 | 威基基最好的夏威夷咖啡",
-      description: "在威基基体验正宗檀香山咖啡！来自大岛农场的夏威夷顶级咖啡。带有巧克力香气的顺滑浓郁风味。卡拉卡瓦大道等你来！",
+      title: "威基基可选100%科纳咖啡的咖啡店",
+      description: "在威基基享用科纳咖啡、冰咖啡和拿铁。100% Kona coffee available。卡拉卡瓦大道附近，适合搭配新鲜甜甜圈。",
     },
     es: {
-      title: "Café Kona | El Mejor Café Hawaiano en Waikiki",
-      description: "¡Experimenta Honolulu Coffee en Waikiki! Café de Hawaii de las granjas de Big Island. Sabor suave y rico con notas de chocolate. ¡Visítanos!",
+      title: "100% Kona Coffee Available in Waikiki",
+      description: "Coffee in Waikiki with espresso, iced coffee, lattes, and 100% Kona coffee available. Pair your cup with fresh donuts near Waikiki Beach.",
     },
   };
 
@@ -38,7 +38,7 @@ export async function generateMetadata({
   // Keywords targeting tourists and coffee lovers
   const keywords = [
     // English
-    'kona coffee waikiki', 'kona coffee hawaii', 'best coffee waikiki',
+    '100% kona coffee available', '100% kona coffee waikiki', 'kona coffee waikiki', 'kona coffee hawaii', 'best coffee waikiki',
     'hawaiian coffee shop', 'kona coffee near me', 'coffee waikiki',
     'best kona coffee honolulu', 'honolulu coffee waikiki', 'kona coffee cafe',
     'coffee shop kalakaua', 'hawaii coffee', 'big island coffee',
