@@ -42,9 +42,9 @@ const content = {
         location: '2142 Kalakaua Ave, Waikiki',
         hours: '7:00 AM - 9:00 PM Daily',
         priceRange: '$$',
-        knownFor: 'Mochi donuts, malasadas, and premium 100% Kona coffee',
+        knownFor: 'Mochi donuts, malasadas, and premium Honolulu Coffee',
         description:
-          "Our home base and Waikiki's newest must-visit cafe. We've partnered with MOCHILAND to bring you the chewiest, crispiest mochi donuts on the island, paired with authentic 100% Kona coffee from Honolulu Coffee. Each mochi donut features the signature eight-ball shape with a satisfying crispy exterior and impossibly chewy center made from premium rice flour. Our malasadas are fried fresh every morning \u2014 golden, pillowy, and dusted in sugar or filled with haupia cream, lilikoi custard, or Nutella.",
+          "Our home base and Waikiki's newest must-visit cafe. We've partnered with MOCHILAND to bring you the chewiest, crispiest mochi donuts on the island, paired with Honolulu Coffee. Each mochi donut features the signature eight-ball shape with a satisfying crispy exterior and impossibly chewy center made from premium rice flour. Our malasadas are fried fresh every morning \u2014 golden, pillowy, and dusted in sugar or filled with haupia cream, lilikoi custard, or Nutella.",
         mustTry: 'Ube Mochi Donut + Kona Coffee Latte combo',
         whyVisit:
           "The only spot in Waikiki where you can pair artisan MOCHILAND mochi donuts with genuine premium Kona coffee. We're steps from the beach, making it the perfect first stop before a morning on the sand. With 12+ rotating mochi donut flavors including Matcha, Black Sesame, Mango, and seasonal specials, there's always something new to try.",
@@ -202,7 +202,7 @@ const content = {
     cta: {
       title: 'Visit Kona Coffee Donut',
       address: '2142 Kalakaua Ave, Waikiki',
-      text: 'Start your Waikiki morning with fresh MOCHILAND mochi donuts and premium 100% Kona coffee. Steps from the beach, open daily at 7 AM.',
+      text: 'Start your Waikiki morning with fresh MOCHILAND mochi donuts and premium Honolulu Coffee. Steps from the beach, open daily at 7 AM.',
       menuButton: 'View Our Full Menu',
       directionsButton: 'Get Directions',
     },
@@ -225,9 +225,9 @@ const content = {
         location: '2142 Kalakaua Ave, ワイキキ',
         hours: '毎日 7:00 AM - 9:00 PM',
         priceRange: '$$',
-        knownFor: 'モチドーナツ、マラサダ、プレミアム100%コナコーヒー',
+        knownFor: 'モチドーナツ、マラサダ、プレミアムホノルルコーヒー',
         description:
-          '私たちのホームベースであり、ワイキキ最新の必訪カフェ。MOCHILANDと提携し、島で最もモチモチでサクサクのモチドーナツを、ホノルルコーヒーの本格100%コナコーヒーと共にお届けします。各モチドーナツは、プレミアム米粉で作られた満足感のあるサクサクの外側と驚くほどモチモチの中心を持つ、シグネチャーの八つ玉形状が特徴です。マラサダは毎朝揚げたて \u2014 黄金色でふわふわ、砂糖をまぶしたり、ハウピアクリーム、リリコイカスタード、ヌテラのフィリングも。',
+          '私たちのホームベースであり、ワイキキ最新の必訪カフェ。MOCHILANDと提携し、島で最もモチモチでサクサクのモチドーナツを、ホノルルコーヒーの本格ホノルルコーヒーと共にお届けします。各モチドーナツは、プレミアム米粉で作られた満足感のあるサクサクの外側と驚くほどモチモチの中心を持つ、シグネチャーの八つ玉形状が特徴です。マラサダは毎朝揚げたて \u2014 黄金色でふわふわ、砂糖をまぶしたり、ハウピアクリーム、リリコイカスタード、ヌテラのフィリングも。',
         mustTry: '紫芋モチドーナツ + コナコーヒーラテ セット',
         whyVisit:
           'ワイキキで唯一、MOCHILANDの職人モチドーナツと本格プレミアムコナコーヒーのペアリングが楽しめるスポット。ビーチからすぐの場所にあり、朝の砂浜散歩の前の完璧な最初の立ち寄り先。抹茶、黒ごま、マンゴー、季節限定など12種類以上のモチドーナツフレーバーがあり、いつでも新しい味に出会えます。',
@@ -385,7 +385,7 @@ const content = {
     cta: {
       title: 'コナコーヒードーナツを訪れよう',
       address: '2142 Kalakaua Ave, ワイキキ',
-      text: '新鮮なMOCHILANDモチドーナツとプレミアム100%コナコーヒーでワイキキの朝を。ビーチからすぐ、毎日朝7時オープン。',
+      text: '新鮮なMOCHILANDモチドーナツとプレミアムホノルルコーヒーでワイキキの朝を。ビーチからすぐ、毎日朝7時オープン。',
       menuButton: 'フルメニューを見る',
       directionsButton: '道順を見る',
     },
@@ -408,9 +408,9 @@ const content = {
         location: '2142 Kalakaua Ave, 와이키키',
         hours: '매일 7:00 AM - 9:00 PM',
         priceRange: '$$',
-        knownFor: '모찌 도넛, 말라사다, 프리미엄 100% 코나 커피',
+        knownFor: '모찌 도넛, 말라사다, 프리미엄 호놀룰루 커피',
         description:
-          '저희의 홈베이스이자 와이키키 최신 필수 방문 카페. MOCHILAND와 파트너십을 맺어 섬에서 가장 쫄깃하고 바삭한 모찌 도넛을 호놀룰루 커피의 정통 100% 코나 커피와 함께 제공합니다. 각 모찌 도넛은 프리미엄 쌀가루로 만든 만족스러운 바삭한 겉면과 놀랍도록 쫄깃한 속을 가진 시그니처 팔각 모양이 특징입니다. 말라사다는 매일 아침 갓 튀겨 \u2014 황금빛, 폭신하고, 설탕을 뿌리거나 하우피아 크림, 릴리코이 커스터드, 누텔라 필링도 있습니다.',
+          '저희의 홈베이스이자 와이키키 최신 필수 방문 카페. MOCHILAND와 파트너십을 맺어 섬에서 가장 쫄깃하고 바삭한 모찌 도넛을 호놀룰루 커피의 정통 호놀룰루 커피와 함께 제공합니다. 각 모찌 도넛은 프리미엄 쌀가루로 만든 만족스러운 바삭한 겉면과 놀랍도록 쫄깃한 속을 가진 시그니처 팔각 모양이 특징입니다. 말라사다는 매일 아침 갓 튀겨 \u2014 황금빛, 폭신하고, 설탕을 뿌리거나 하우피아 크림, 릴리코이 커스터드, 누텔라 필링도 있습니다.',
         mustTry: '우베 모찌 도넛 + 코나 커피 라떼 콤보',
         whyVisit:
           '와이키키에서 유일하게 MOCHILAND 장인 모찌 도넛과 정통 프리미엄 코나 커피 페어링을 즐길 수 있는 곳. 해변에서 바로 가까워 아침 모래사장 산책 전 완벽한 첫 번째 들릴 곳. 말차, 흑임자, 망고, 시즌 스페셜 등 12가지 이상의 모찌 도넛 맛이 있어 항상 새로운 맛을 만날 수 있습니다.',
@@ -568,7 +568,7 @@ const content = {
     cta: {
       title: '코나커피도넛 방문하기',
       address: '2142 Kalakaua Ave, 와이키키',
-      text: '신선한 MOCHILAND 모찌 도넛과 프리미엄 100% 코나 커피로 와이키키의 아침을. 해변에서 가까운 곳, 매일 오전 7시 오픈.',
+      text: '신선한 MOCHILAND 모찌 도넛과 프리미엄 호놀룰루 커피로 와이키키의 아침을. 해변에서 가까운 곳, 매일 오전 7시 오픈.',
       menuButton: '전체 메뉴 보기',
       directionsButton: '길찾기',
     },
@@ -591,9 +591,9 @@ const content = {
         location: '2142 Kalakaua Ave, 威基基',
         hours: '每天 7:00 AM - 9:00 PM',
         priceRange: '$$',
-        knownFor: '麻糬甜甜圈、马拉萨达、优质100%科纳咖啡',
+        knownFor: '麻糬甜甜圈、马拉萨达、优质檀香山咖啡',
         description:
-          '我们的大本营，威基基最新的必访咖啡馆。我们与MOCHILAND合作，为您带来岛上最Q弹、最酥脆的麻糬甜甜圈，搭配檀香山咖啡的正宗100%科纳咖啡。每个麻糬甜甜圈都采用优质米粉制成，具有标志性的八球形状，外层酥脆满足，内心Q弹得不可思议。马拉萨达每天早上新鲜油炸——金黄、松软，裹上糖粉或填充椰奶油、百香果卡仕达、或榛子巧克力酱。',
+          '我们的大本营，威基基最新的必访咖啡馆。我们与MOCHILAND合作，为您带来岛上最Q弹、最酥脆的麻糬甜甜圈，搭配檀香山咖啡的正宗檀香山咖啡。每个麻糬甜甜圈都采用优质米粉制成，具有标志性的八球形状，外层酥脆满足，内心Q弹得不可思议。马拉萨达每天早上新鲜油炸——金黄、松软，裹上糖粉或填充椰奶油、百香果卡仕达、或榛子巧克力酱。',
         mustTry: '紫薯麻糬甜甜圈 + 科纳拿铁套餐',
         whyVisit:
           '威基基唯一可以品尝MOCHILAND工匠麻糬甜甜圈搭配正宗优质科纳咖啡的地方。距离海滩仅几步之遥，是早晨去沙滩前的完美第一站。抹茶、黑芝麻、芒果、季节限定等12种以上麻糬甜甜圈口味，总有新口味等你发现。',
@@ -751,7 +751,7 @@ const content = {
     cta: {
       title: '访问科纳咖啡甜甜圈',
       address: '2142 Kalakaua Ave, 威基基',
-      text: '用新鲜的MOCHILAND麻糬甜甜圈和优质100%科纳咖啡开启威基基的早晨。海滩近在咫尺，每天早上7点营业。',
+      text: '用新鲜的MOCHILAND麻糬甜甜圈和优质檀香山咖啡开启威基基的早晨。海滩近在咫尺，每天早上7点营业。',
       menuButton: '查看完整菜单',
       directionsButton: '获取路线',
     },

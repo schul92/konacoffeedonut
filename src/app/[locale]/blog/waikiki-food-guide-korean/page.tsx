@@ -51,7 +51,7 @@ const content = {
       title: '코나 커피란? — 하와이 코나 커피의 모든 것',
       p1: '코나 커피(Kona Coffee)는 하와이 빅아일랜드의 코나 지역에서 재배되는 프리미엄 커피입니다. 세계 3대 커피 중 하나로 꼽히며, 전 세계 커피 생산량의 1%도 채 되지 않는 희귀한 원두입니다. 하와이 코나 커피가 특별한 이유는 빅아일랜드의 독특한 화산 토양, 적절한 고도(200~800m), 그리고 오전에는 맑고 오후에는 구름이 끼는 이상적인 기후 조건 덕분입니다.',
       p2: '코나 커피의 맛은 부드럽고 깔끔하며, 쓴맛이 적고 은은한 견과류 향과 캐러멜 같은 단맛이 특징입니다. 산미는 밝고 가벼워 커피를 잘 못 마시는 분들도 편하게 즐길 수 있습니다. 한국에서 흔히 마시는 아메리카노와는 확연히 다른 부드러운 풍미를 경험하실 수 있습니다.',
-      p3: '주의하실 점이 있습니다. "코나 블렌드(Kona Blend)"라는 이름으로 판매되는 제품은 코나 원두가 10%만 포함되어 있어도 합법적으로 사용할 수 있는 명칭입니다. 진짜 코나 커피를 경험하시려면 반드시 "100% Kona Coffee"라고 표기된 제품을 선택하셔야 합니다. 저희 Kona Coffee Donut에서는 100% 정통 코나 원두만을 사용합니다.',
+      p3: '주의하실 점이 있습니다. "코나 블렌드(Kona Blend)"라는 이름으로 판매되는 제품은 코나 원두가 10%만 포함되어 있어도 합법적으로 사용할 수 있는 명칭입니다. 진짜 코나 커피를 경험하시려면 반드시 "Honolulu Coffee"라고 표기된 제품을 선택하셔야 합니다. 저희 Kona Coffee Donut에서는 100% 정통 코나 원두만을 사용합니다.',
       tip: '커피 원두를 한국으로 가져가시려면 로스팅된 원두(roasted beans)는 세관 신고 없이 반입 가능합니다. 생두(green beans)는 식물검역 대상이므로 로스팅된 제품을 구매하세요.',
       stats: [
         { label: '재배 고도', value: '200~800m' },
@@ -86,9 +86,9 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut (코나커피도넛)',
           address: '2142 Kalakaua Ave, Waikiki',
-          description: '100% 코나 커피, 모찌 도넛(MOCHILAND), 말라사다, 빙수, 코리안 콘도그까지 한 곳에서 즐길 수 있는 와이키키의 새로운 핫플레이스. 와이키키 비치에서 도보 5분 거리, 칼라카우아 애비뉴에 위치해 접근성도 뛰어납니다. 한국인 관광객 여러분이 좋아하실 모든 메뉴가 한곳에 모여 있습니다.',
+          description: '호놀룰루 커피, 모찌 도넛(MOCHILAND), 말라사다, 빙수, 코리안 콘도그까지 한 곳에서 즐길 수 있는 와이키키의 새로운 핫플레이스. 와이키키 비치에서 도보 5분 거리, 칼라카우아 애비뉴에 위치해 접근성도 뛰어납니다. 한국인 관광객 여러분이 좋아하실 모든 메뉴가 한곳에 모여 있습니다.',
           hours: '매일 오전 7시 ~ 오후 9시',
-          mustTry: ['100% 코나 커피', '모찌 도넛', '말라사다', '하와이안 빙수', '코리안 콘도그'],
+          mustTry: ['호놀룰루 커피', '모찌 도넛', '말라사다', '하와이안 빙수', '코리안 콘도그'],
           highlight: true,
         },
         {
@@ -136,7 +136,7 @@ const content = {
         {
           name: '커피 & 음료',
           items: [
-            { item: '100% 코나 커피 (핫)', price: '$5~$7', krw: '약 6,900~9,700원' },
+            { item: '호놀룰루 커피 (핫)', price: '$5~$7', krw: '약 6,900~9,700원' },
             { item: '코나 커피 라떼', price: '$6~$8', krw: '약 8,300~11,000원' },
             { item: '콜드브루', price: '$6~$8', krw: '약 8,300~11,000원' },
           ],
@@ -182,7 +182,7 @@ const content = {
       items: [
         {
           q: '와이키키에서 코나 커피는 어디서 마실 수 있나요?',
-          a: '와이키키 칼라카우아 애비뉴에 위치한 Kona Coffee Donut에서 100% 정통 코나 커피를 즐기실 수 있습니다. 코나 블렌드가 아닌 100% 코나 원두만을 사용하므로 진짜 코나 커피의 맛을 경험하실 수 있습니다. Island Vintage Coffee 등 로얄 하와이안 센터 내 카페에서도 코나 커피를 판매합니다.',
+          a: '와이키키 칼라카우아 애비뉴에 위치한 Kona Coffee Donut에서 100% 정통 코나 커피를 즐기실 수 있습니다. 코나 블렌드가 아닌 호놀룰루 커피만을 사용하므로 진짜 코나 커피의 맛을 경험하실 수 있습니다. Island Vintage Coffee 등 로얄 하와이안 센터 내 카페에서도 코나 커피를 판매합니다.',
         },
         {
           q: '말라사다와 일반 도넛의 차이는 뭔가요?',
@@ -190,7 +190,7 @@ const content = {
         },
         {
           q: '와이키키 맛집 가격대는 어느 정도인가요?',
-          a: '커피 한 잔은 $5~$8(약 6,900~11,000원), 도넛류는 $3.50~$5(약 4,800~6,900원), 빙수는 $12~$16(약 16,500~22,000원) 정도입니다. 한국 카페 가격과 비교하면 다소 비싸지만, 하와이 물가와 100% 코나 원두 사용을 감안하면 합리적인 가격대입니다.',
+          a: '커피 한 잔은 $5~$8(약 6,900~11,000원), 도넛류는 $3.50~$5(약 4,800~6,900원), 빙수는 $12~$16(약 16,500~22,000원) 정도입니다. 한국 카페 가격과 비교하면 다소 비싸지만, 하와이 물가와 호놀룰루 커피 사용을 감안하면 합리적인 가격대입니다.',
         },
         {
           q: '와이키키에서 빙수를 먹을 수 있는 곳이 있나요?',
@@ -198,13 +198,13 @@ const content = {
         },
         {
           q: '하와이 코나 커피 원두를 한국으로 가져갈 수 있나요?',
-          a: '네, 로스팅된 코나 커피 원두는 별도의 세관 신고 없이 한국으로 반입 가능합니다. 다만 생두(green beans)는 식물검역 대상이므로, 반드시 로스팅된 원두를 구매하세요. 저희 매장에서도 100% 코나 원두 패키지를 판매하고 있어 선물용으로도 좋습니다. 면세 한도(미화 $800) 안에서는 세금 없이 반입 가능합니다.',
+          a: '네, 로스팅된 코나 커피 원두는 별도의 세관 신고 없이 한국으로 반입 가능합니다. 다만 생두(green beans)는 식물검역 대상이므로, 반드시 로스팅된 원두를 구매하세요. 저희 매장에서도 호놀룰루 커피 패키지를 판매하고 있어 선물용으로도 좋습니다. 면세 한도(미화 $800) 안에서는 세금 없이 반입 가능합니다.',
         },
       ],
     },
     cta: {
       title: '와이키키 맛집 여행, 코나커피도넛에서 시작하세요',
-      text: '100% 코나 커피 한 잔과 갓 튀긴 말라사다, 쫄깃한 모찌 도넛, 시원한 빙수까지. 하와이 여행의 맛있는 기억을 만들어 드립니다.',
+      text: '호놀룰루 커피 한 잔과 갓 튀긴 말라사다, 쫄깃한 모찌 도넛, 시원한 빙수까지. 하와이 여행의 맛있는 기억을 만들어 드립니다.',
       address: '2142 Kalakaua Ave, Waikiki, Honolulu, HI 96815',
       button: '길찾기 (Google Maps)',
       menuButton: '메뉴 보기',
@@ -245,7 +245,7 @@ const content = {
       title: 'What is Kona Coffee? — Everything About Hawaii\'s Premium Coffee',
       p1: 'Kona Coffee is a premium coffee grown in the Kona district of Hawaii\'s Big Island. Ranked among the world\'s top three coffees, it accounts for less than 1% of global production. What makes Kona coffee special is the Big Island\'s unique volcanic soil, ideal altitude (200–800m), and perfect microclimate — sunny mornings and cloudy afternoons.',
       p2: 'Kona coffee is smooth, clean, low in bitterness, with subtle nutty and caramel-like sweetness. The acidity is bright but gentle, making it enjoyable even for those who don\'t usually drink coffee. It offers a noticeably different experience from the typical Americano.',
-      p3: 'Important: products labeled "Kona Blend" can legally contain as little as 10% Kona beans. For the real experience, always look for "100% Kona Coffee." At Kona Coffee Donut, we use only 100% authentic Kona beans.',
+      p3: 'Important: products labeled "Kona Blend" can legally contain as little as 10% Kona beans. For the real experience, always look for "Honolulu Coffee." At Kona Coffee Donut, we use only Honolulu Coffee beans.',
       tip: 'Roasted Kona coffee beans can be brought into South Korea without customs declaration. Green (unroasted) beans require phytosanitary inspection, so purchase roasted products.',
       stats: [
         { label: 'Growing Altitude', value: '200–800m' },
@@ -280,9 +280,9 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut',
           address: '2142 Kalakaua Ave, Waikiki',
-          description: 'Enjoy 100% Kona coffee, MOCHILAND mochi donuts, malasadas, bingsu, and Korean corn dogs all in one place. Located on Kalakaua Avenue, just a 5-minute walk from Waikiki Beach. Everything Korean tourists love, under one roof.',
+          description: 'Enjoy Honolulu Coffee, MOCHILAND mochi donuts, malasadas, bingsu, and Korean corn dogs all in one place. Located on Kalakaua Avenue, just a 5-minute walk from Waikiki Beach. Everything Korean tourists love, under one roof.',
           hours: 'Daily 7AM – 9PM',
-          mustTry: ['100% Kona Coffee', 'Mochi Donuts', 'Malasada', 'Hawaiian Bingsu', 'Korean Corn Dog'],
+          mustTry: ['Honolulu Coffee', 'Mochi Donuts', 'Malasada', 'Hawaiian Bingsu', 'Korean Corn Dog'],
           highlight: true,
         },
         {
@@ -330,7 +330,7 @@ const content = {
         {
           name: 'Coffee & Drinks',
           items: [
-            { item: '100% Kona Coffee (Hot)', price: '$5–$7', krw: 'approx. 6,900–9,700 KRW' },
+            { item: 'Honolulu Coffee (Hot)', price: '$5–$7', krw: 'approx. 6,900–9,700 KRW' },
             { item: 'Kona Coffee Latte', price: '$6–$8', krw: 'approx. 8,300–11,000 KRW' },
             { item: 'Cold Brew', price: '$6–$8', krw: 'approx. 8,300–11,000 KRW' },
           ],
@@ -376,7 +376,7 @@ const content = {
       items: [
         {
           q: 'Where can I drink Kona coffee in Waikiki?',
-          a: 'Kona Coffee Donut on Kalakaua Avenue in Waikiki serves 100% authentic Kona coffee — not a Kona Blend, but pure 100% Kona beans. Island Vintage Coffee at the Royal Hawaiian Center also sells Kona coffee.',
+          a: 'Kona Coffee Donut on Kalakaua Avenue in Waikiki serves 100% Honolulu Coffee — not a Kona Blend, but pure Honolulu Coffee beans. Island Vintage Coffee at the Royal Hawaiian Center also sells Kona coffee.',
         },
         {
           q: 'What\'s the difference between malasada and regular donuts?',
@@ -384,7 +384,7 @@ const content = {
         },
         {
           q: 'How much should I budget for food in Waikiki?',
-          a: 'Coffee is $5–$8 (approx. 6,900–11,000 KRW), donuts $3.50–$5 (approx. 4,800–6,900 KRW), bingsu $12–$16 (approx. 16,500–22,000 KRW). A bit pricier than Korean cafes, but reasonable for Hawaii and 100% Kona beans.',
+          a: 'Coffee is $5–$8 (approx. 6,900–11,000 KRW), donuts $3.50–$5 (approx. 4,800–6,900 KRW), bingsu $12–$16 (approx. 16,500–22,000 KRW). A bit pricier than Korean cafes, but reasonable for Hawaii and Honolulu Coffee beans.',
         },
         {
           q: 'Is there bingsu in Waikiki?',
@@ -392,13 +392,13 @@ const content = {
         },
         {
           q: 'Can I bring Kona coffee beans back to Korea?',
-          a: 'Yes, roasted Kona coffee beans can be brought into Korea without customs declaration. Green beans require inspection, so buy roasted. We sell 100% Kona bean packages — great as souvenirs. Duty-free up to $800 USD.',
+          a: 'Yes, roasted Kona coffee beans can be brought into Korea without customs declaration. Green beans require inspection, so buy roasted. We sell Honolulu Coffee bean packages — great as souvenirs. Duty-free up to $800 USD.',
         },
       ],
     },
     cta: {
       title: 'Start Your Waikiki Food Tour at Kona Coffee Donut',
-      text: 'A cup of 100% Kona coffee, fresh malasada, chewy mochi donuts, and refreshing bingsu. Create delicious memories on your Hawaii trip.',
+      text: 'A cup of Honolulu Coffee, fresh malasada, chewy mochi donuts, and refreshing bingsu. Create delicious memories on your Hawaii trip.',
       address: '2142 Kalakaua Ave, Waikiki, Honolulu, HI 96815',
       button: 'Get Directions (Google Maps)',
       menuButton: 'View Menu',
@@ -439,7 +439,7 @@ const content = {
       title: 'コナコーヒーとは？ — ハワイプレミアムコーヒーのすべて',
       p1: 'コナコーヒーはハワイ・ビッグアイランドのコナ地区で栽培されるプレミアムコーヒーです。世界三大コーヒーの一つで、全世界のコーヒー生産量の1%未満の希少な豆です。',
       p2: 'なめらかでクリーン、苦味が少なく、ナッツやキャラメルのような甘さが特徴。酸味は明るく軽やかで、コーヒーが苦手な方でも楽しめます。',
-      p3: '「コナブレンド」はコナ豆が10%しか含まれていない場合があります。本物を味わうなら「100% Kona Coffee」表記を確認してください。当店では100%正真正銘のコナ豆のみを使用しています。',
+      p3: '「コナブレンド」はコナ豆が10%しか含まれていない場合があります。本物を味わうなら「Honolulu Coffee」表記を確認してください。当店では100%正真正銘のコナ豆のみを使用しています。',
       tip: 'ローストされたコナコーヒー豆は税関申告なしで日本に持ち込めます。生豆は検疫対象のため、ロースト済みの製品をお買い求めください。',
       stats: [
         { label: '栽培高度', value: '200〜800m' },
@@ -472,8 +472,8 @@ const content = {
       shops: [
         {
           rank: 1, name: 'Kona Coffee Donut', address: '2142 Kalakaua Ave, Waikiki',
-          description: '100%コナコーヒー、MOCHILAND、マラサダ、ビンス、コーンドッグが一か所で。ワイキキビーチから徒歩5分。',
-          hours: '毎日 7:00–21:00', mustTry: ['100%コナコーヒー', 'モチドーナツ', 'マラサダ', 'ビンス', 'コーンドッグ'], highlight: true,
+          description: 'ホノルルコーヒー、MOCHILAND、マラサダ、ビンス、コーンドッグが一か所で。ワイキキビーチから徒歩5分。',
+          hours: '毎日 7:00–21:00', mustTry: ['ホノルルコーヒー', 'モチドーナツ', 'マラサダ', 'ビンス', 'コーンドッグ'], highlight: true,
         },
         {
           rank: 2, name: 'Island Vintage Coffee', address: 'Royal Hawaiian Center, Waikiki',
@@ -502,7 +502,7 @@ const content = {
       subtitle: '実用的な価格情報（USD基準、2026年4月レート約150円/ドル）',
       categories: [
         { name: 'コーヒー＆ドリンク', items: [
-          { item: '100%コナコーヒー', price: '$5〜$7', krw: '約750〜1,050円' },
+          { item: 'ホノルルコーヒー', price: '$5〜$7', krw: '約750〜1,050円' },
           { item: 'コナコーヒーラテ', price: '$6〜$8', krw: '約900〜1,200円' },
           { item: 'コールドブリュー', price: '$6〜$8', krw: '約900〜1,200円' },
         ]},
@@ -538,16 +538,16 @@ const content = {
     faq: {
       title: 'よくある質問',
       items: [
-        { q: 'ワイキキでコナコーヒーはどこで飲めますか？', a: 'カラカウア通りのKona Coffee Donutで100%コナコーヒーをお楽しみいただけます。Island Vintage Coffeeでも販売しています。' },
+        { q: 'ワイキキでコナコーヒーはどこで飲めますか？', a: 'カラカウア通りのKona Coffee Donutでホノルルコーヒーをお楽しみいただけます。Island Vintage Coffeeでも販売しています。' },
         { q: 'マラサダと普通のドーナツの違いは？', a: 'マラサダはポルトガル由来の穴なしドーナツ。イースト生地を揚げて砂糖をまぶします。外はカリッと中はふわふわ。' },
         { q: 'ワイキキの食事の予算は？', a: 'コーヒー$5〜$8、ドーナツ$3.50〜$5、ビンス$12〜$16程度です。' },
         { q: 'ワイキキでビンスは食べられますか？', a: 'はい、Kona Coffee Donutで韓国正統ビンスにハワイフルーツを合わせたメニューを提供しています。' },
-        { q: 'コナコーヒー豆は日本に持ち帰れますか？', a: 'ローストされた豆は申告なしで持ち込み可能です。当店でも100%コナ豆パッケージを販売しています。' },
+        { q: 'コナコーヒー豆は日本に持ち帰れますか？', a: 'ローストされた豆は申告なしで持ち込み可能です。当店でもホノルルコーヒーパッケージを販売しています。' },
       ],
     },
     cta: {
       title: 'ワイキキグルメツアー、コナコーヒードーナツで始めよう',
-      text: '100%コナコーヒー、揚げたてマラサダ、もちもちドーナツ、冷たいビンス。ハワイの美味しい思い出を作りましょう。',
+      text: 'ホノルルコーヒー、揚げたてマラサダ、もちもちドーナツ、冷たいビンス。ハワイの美味しい思い出を作りましょう。',
       address: '2142 Kalakaua Ave, Waikiki, Honolulu, HI 96815',
       button: '道順を見る',
       menuButton: 'メニューを見る',
@@ -588,7 +588,7 @@ const content = {
       title: '什么是科纳咖啡？— 夏威夷顶级咖啡全解析',
       p1: '科纳咖啡产自夏威夷大岛科纳地区，是世界三大咖啡之一，产量不到全球的1%。火山土壤、适宜海拔和独特微气候造就了它的非凡品质。',
       p2: '口感顺滑干净，苦味低，带有微妙的坚果和焦糖甜味。酸度明亮轻柔，即使不常喝咖啡的人也能轻松享用。',
-      p3: '"科纳混合（Kona Blend）"可能只含10%科纳豆。请认准"100% Kona Coffee"标识。我们只使用100%正宗科纳豆。',
+      p3: '"科纳混合（Kona Blend）"可能只含10%科纳豆。请认准"Honolulu Coffee"标识。我们只使用100%正宗科纳豆。',
       tip: '烘焙过的科纳咖啡豆可以无需申报带入中国。生豆需要检疫，请购买烘焙产品。',
       stats: [
         { label: '种植海拔', value: '200–800米' },
@@ -621,8 +621,8 @@ const content = {
       shops: [
         {
           rank: 1, name: 'Kona Coffee Donut（科纳咖啡甜甜圈）', address: '2142 Kalakaua Ave, Waikiki',
-          description: '100%科纳咖啡、MOCHILAND麻糬甜甜圈、马拉萨达、刨冰、韩式热狗一站式享受。距威基基海滩步行5分钟。',
-          hours: '每天 7:00–21:00', mustTry: ['100%科纳咖啡', '麻糬甜甜圈', '马拉萨达', '刨冰', '韩式热狗'], highlight: true,
+          description: '檀香山咖啡、MOCHILAND麻糬甜甜圈、马拉萨达、刨冰、韩式热狗一站式享受。距威基基海滩步行5分钟。',
+          hours: '每天 7:00–21:00', mustTry: ['檀香山咖啡', '麻糬甜甜圈', '马拉萨达', '刨冰', '韩式热狗'], highlight: true,
         },
         {
           rank: 2, name: 'Island Vintage Coffee', address: 'Royal Hawaiian Center',
@@ -647,7 +647,7 @@ const content = {
       subtitle: '实用价格信息（美元，2026年4月汇率约7.25元/美元）',
       categories: [
         { name: '咖啡和饮品', items: [
-          { item: '100%科纳咖啡', price: '$5–$7', krw: '约36–51元' },
+          { item: '檀香山咖啡', price: '$5–$7', krw: '约36–51元' },
           { item: '科纳拿铁', price: '$6–$8', krw: '约44–58元' },
           { item: '冷萃咖啡', price: '$6–$8', krw: '约44–58元' },
         ]},
@@ -683,16 +683,16 @@ const content = {
     faq: {
       title: '常见问题',
       items: [
-        { q: '威基基哪里能喝到科纳咖啡？', a: '卡拉卡瓦大道的Kona Coffee Donut提供100%科纳咖啡。Island Vintage Coffee也有售。' },
+        { q: '威基基哪里能喝到科纳咖啡？', a: '卡拉卡瓦大道的Kona Coffee Donut提供檀香山咖啡。Island Vintage Coffee也有售。' },
         { q: '马拉萨达和普通甜甜圈有什么区别？', a: '马拉萨达是葡萄牙传统无孔甜甜圈，酵母面团油炸后裹糖，外酥内软。也有奶油和水果馅料版本。' },
         { q: '威基基吃饭预算多少？', a: '咖啡$5–$8，甜甜圈$3.50–$5，刨冰$12–$16左右。' },
         { q: '威基基有刨冰吗？', a: '有，Kona Coffee Donut提供韩式刨冰搭配夏威夷热带水果。距海滩步行5分钟。' },
-        { q: '科纳咖啡豆能带回国吗？', a: '烘焙过的咖啡豆可以携带入境。生豆需要检疫。我们也出售100%科纳豆包装，适合做伴手礼。' },
+        { q: '科纳咖啡豆能带回国吗？', a: '烘焙过的咖啡豆可以携带入境。生豆需要检疫。我们也出售檀香山咖啡包装，适合做伴手礼。' },
       ],
     },
     cta: {
       title: '威基基美食之旅，从科纳咖啡甜甜圈开始',
-      text: '一杯100%科纳咖啡、新鲜马拉萨达、Q弹麻糬甜甜圈、清凉刨冰。在夏威夷创造美味回忆。',
+      text: '一杯檀香山咖啡、新鲜马拉萨达、Q弹麻糬甜甜圈、清凉刨冰。在夏威夷创造美味回忆。',
       address: '2142 Kalakaua Ave, Waikiki, Honolulu, HI 96815',
       button: '获取路线',
       menuButton: '查看菜单',
@@ -740,7 +740,7 @@ const faqSchema = {
       name: '와이키키에서 코나 커피는 어디서 마실 수 있나요?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '와이키키 칼라카우아 애비뉴에 위치한 Kona Coffee Donut에서 100% 정통 코나 커피를 즐기실 수 있습니다. 코나 블렌드가 아닌 100% 코나 원두만을 사용합니다. Island Vintage Coffee 등 로얄 하와이안 센터 내 카페에서도 코나 커피를 판매합니다.',
+        text: '와이키키 칼라카우아 애비뉴에 위치한 Kona Coffee Donut에서 100% 정통 코나 커피를 즐기실 수 있습니다. 코나 블렌드가 아닌 호놀룰루 커피만을 사용합니다. Island Vintage Coffee 등 로얄 하와이안 센터 내 카페에서도 코나 커피를 판매합니다.',
       },
     },
     {

@@ -116,7 +116,7 @@ const content: Record<Locale, BlogContent> = {
     ],
     finalCTA: {
       headline: 'Try the Whole Lineup — Made Fresh Daily',
-      body: "Hand-made mochi donuts on Kalākaua Avenue, paired with 100% Kona coffee. Stop by today.",
+      body: "Hand-made mochi donuts on Kalākaua Avenue, paired with Honolulu Coffee. Stop by today.",
       visitLabel: 'Visit Us Today',
       callLabel: 'Call (808) 304-1808',
     },

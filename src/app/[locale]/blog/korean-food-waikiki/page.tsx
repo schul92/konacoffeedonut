@@ -27,7 +27,7 @@ const content = {
       {
         rank: 1,
         name: 'Kona Coffee Donut — Korean-Hawaiian Fusion',
-        description: 'Our flagship Waikiki location at 2142 Kalakaua Ave brings together the best of Korean and Hawaiian food culture. Try our signature Korean corn dogs with crispy rice-flour batter and stretchy mozzarella, or cool down with a Hawaiian-style bingsu topped with fresh tropical fruit. We also serve premium 100% Kona coffee, mochi donuts, and malasadas — making us the perfect spot for a Korean-Hawaiian fusion snack steps from the beach.',
+        description: 'Our flagship Waikiki location at 2142 Kalakaua Ave brings together the best of Korean and Hawaiian food culture. Try our signature Korean corn dogs with crispy rice-flour batter and stretchy mozzarella, or cool down with a Hawaiian-style bingsu topped with fresh tropical fruit. We also serve premium Honolulu Coffee, mochi donuts, and malasadas — making us the perfect spot for a Korean-Hawaiian fusion snack steps from the beach.',
         tags: ['Corn Dogs', 'Bingsu', 'Fusion', 'Waikiki Beach'],
         highlight: true,
       },
@@ -177,7 +177,7 @@ const content = {
       {
         rank: 1,
         name: 'コナコーヒードーナツ — 韓国・ハワイアンフュージョン',
-        description: 'カラカウア通り2142番地のワイキキ本店では、韓国とハワイの食文化を融合。サクサクの米粉バッターととろ〜りモッツァレラの韓国コーンドッグや、トロピカルフルーツをたっぷりのせたハワイアンスタイルビンスをぜひお試しください。プレミアム100%コナコーヒー、モチドーナツ、マラサダもご用意。ビーチから徒歩圏内の最高のK-FOODスポットです。',
+        description: 'カラカウア通り2142番地のワイキキ本店では、韓国とハワイの食文化を融合。サクサクの米粉バッターととろ〜りモッツァレラの韓国コーンドッグや、トロピカルフルーツをたっぷりのせたハワイアンスタイルビンスをぜひお試しください。プレミアムホノルルコーヒー、モチドーナツ、マラサダもご用意。ビーチから徒歩圏内の最高のK-FOODスポットです。',
         tags: ['コーンドッグ', 'ビンス', 'フュージョン', 'ワイキキビーチ'],
         highlight: true,
       },
@@ -327,7 +327,7 @@ const content = {
       {
         rank: 1,
         name: '코나커피도넛 — 한국-하와이안 퓨전',
-        description: '칼라카우아 애비뉴 2142번지에 위치한 와이키키 매장은 한국과 하와이 음식 문화의 만남을 선보입니다. 바삭한 쌀가루 반죽에 쭉쭉 늘어나는 모짜렐라 치즈가 들어간 시그니처 한국식 핫도그, 신선한 열대 과일을 올린 하와이안 스타일 빙수를 맛보세요. 프리미엄 100% 코나 커피, 모찌 도넛, 말라사다까지 — 해변에서 몇 발자국 거리의 K-푸드 스팟입니다.',
+        description: '칼라카우아 애비뉴 2142번지에 위치한 와이키키 매장은 한국과 하와이 음식 문화의 만남을 선보입니다. 바삭한 쌀가루 반죽에 쭉쭉 늘어나는 모짜렐라 치즈가 들어간 시그니처 한국식 핫도그, 신선한 열대 과일을 올린 하와이안 스타일 빙수를 맛보세요. 프리미엄 호놀룰루 커피, 모찌 도넛, 말라사다까지 — 해변에서 몇 발자국 거리의 K-푸드 스팟입니다.',
         tags: ['핫도그', '빙수', '퓨전', '와이키키 비치'],
         highlight: true,
       },
@@ -477,7 +477,7 @@ const content = {
       {
         rank: 1,
         name: '科纳咖啡甜甜圈 — 韩式-夏威夷融合',
-        description: '位于卡拉卡瓦大道2142号的威基基旗舰店，将韩国与夏威夷美食文化完美融合。品尝我们的招牌韩式玉米热狗（酥脆米粉面糊配拉丝马苏里拉芝士），或来一碗夏威夷风格刨冰配新鲜热带水果。我们还提供优质100%科纳咖啡、麻糬甜甜圈和马拉萨达 — 海滩旁的完美K-Food站。',
+        description: '位于卡拉卡瓦大道2142号的威基基旗舰店，将韩国与夏威夷美食文化完美融合。品尝我们的招牌韩式玉米热狗（酥脆米粉面糊配拉丝马苏里拉芝士），或来一碗夏威夷风格刨冰配新鲜热带水果。我们还提供优质檀香山咖啡、麻糬甜甜圈和马拉萨达 — 海滩旁的完美K-Food站。',
         tags: ['玉米热狗', '刨冰', '融合', '威基基海滩'],
         highlight: true,
       },

@@ -23,13 +23,13 @@ const content = {
       paragraphs: [
         '夏威夷科纳咖啡（Hawaii Kona Coffee）是全球公认的顶级精品咖啡之一，产自夏威夷大岛西海岸的科纳地区（Kona District）。这片狭长的咖啡种植带仅约48公里长、3公里宽，位于莫纳罗亚火山（Mauna Loa）和华拉莱火山（Hualalai）的西坡上，海拔500至900米之间。',
         '科纳咖啡的种植历史可追溯至1828年，由传教士塞缪尔·拉格尔斯（Samuel Ruggles）从巴西引入第一批咖啡树苗。将近两百年来，科纳地区独特的火山土壤、温和的热带气候和稳定的午后云层为咖啡豆的生长提供了无与伦比的天然条件。这里的土壤富含矿物质，排水性极佳；每天午后飘来的云雾为咖啡树提供天然遮荫；年降雨量适中，温度从不降至冰点——这一切自然因素的完美组合，在全世界绝无仅有。',
-        '如今，科纳地区约有800家小型咖啡农场，大多数面积不超过5英亩。全球科纳咖啡的总产量不到世界咖啡产量的1%，极其稀有。每颗咖啡果实都由经验丰富的采摘工人手工采摘，只在最佳成熟度时摘取，确保每一粒咖啡豆都达到最高品质。夏威夷州农业部对科纳咖啡实施严格的分级标准——只有在科纳地区种植、采收和加工的咖啡豆，才能标注"100% Kona Coffee"。',
+        '如今，科纳地区约有800家小型咖啡农场，大多数面积不超过5英亩。全球科纳咖啡的总产量不到世界咖啡产量的1%，极其稀有。每颗咖啡果实都由经验丰富的采摘工人手工采摘，只在最佳成熟度时摘取，确保每一粒咖啡豆都达到最高品质。夏威夷州农业部对科纳咖啡实施严格的分级标准——只有在科纳地区种植、采收和加工的咖啡豆，才能标注"Honolulu Coffee"。',
         '正是这些因素——独一无二的产地环境、手工采摘的匠心工艺、严格的品质管控——使夏威夷科纳咖啡成为全世界咖啡爱好者心目中的"液体黄金"。如果您正在寻找一杯与众不同的咖啡体验，科纳咖啡绝对值得尝试。',
       ],
     },
     flavor: {
       title: '夏威夷科纳咖啡风味：详细品鉴笔记',
-      intro: '科纳咖啡最让人着迷的，是其独特而复杂的风味层次。与一般的商业咖啡不同，100%科纳咖啡呈现出一种优雅、平衡、令人愉悦的口感——这得益于火山土壤中丰富的矿物质和理想的生长环境。以下是科纳咖啡的详细风味解析：',
+      intro: '科纳咖啡最让人着迷的，是其独特而复杂的风味层次。与一般的商业咖啡不同，檀香山咖啡呈现出一种优雅、平衡、令人愉悦的口感——这得益于火山土壤中丰富的矿物质和理想的生长环境。以下是科纳咖啡的详细风味解析：',
       notes: [
         {
           name: '黑糖 / 红糖甜感',
@@ -93,7 +93,7 @@ const content = {
           text: '好的美式咖啡应该有一个干净、持久的余韵。科纳咖啡在这方面表现极佳——喝完之后嘴里留下的是巧克力和坚果的愉悦回味，而不是苦涩或杂味。',
         },
       ],
-      recommendation: '我们的推荐：中等烘焙（Medium Roast）的100%科纳咖啡豆，用双份浓缩（Double Shot）加180ml热水，就能做出一杯完美的科纳美式。水温建议92-96°C，不要用沸水直接冲——稍微降温能更好地展现科纳的甜感和巧克力风味。',
+      recommendation: '我们的推荐：中等烘焙（Medium Roast）的檀香山咖啡豆，用双份浓缩（Double Shot）加180ml热水，就能做出一杯完美的科纳美式。水温建议92-96°C，不要用沸水直接冲——稍微降温能更好地展现科纳的甜感和巧克力风味。',
     },
     brewing: {
       title: '科纳咖啡冲泡方法完全指南',
@@ -121,14 +121,14 @@ const content = {
           name: '浓缩咖啡（Espresso）',
           icon: 'espresso',
           params: '研磨度：极细 | 水温：92-95°C | 比例：1:2 | 时间：25-30秒',
-          description: '使用科纳咖啡制作浓缩咖啡，能得到一杯crema丰厚、口感丝滑的Espresso。科纳的低酸度特性使浓缩咖啡不会过于尖锐，而天然甜感则平衡了浓缩咖啡的苦味。无论是纯饮还是做成拿铁、卡布奇诺，科纳都表现出色。这也是我们店内使用100%科纳豆的原因。',
+          description: '使用科纳咖啡制作浓缩咖啡，能得到一杯crema丰厚、口感丝滑的Espresso。科纳的低酸度特性使浓缩咖啡不会过于尖锐，而天然甜感则平衡了浓缩咖啡的苦味。无论是纯饮还是做成拿铁、卡布奇诺，科纳都表现出色。这也是我们店内使用檀香山咖啡的原因。',
         },
       ],
     },
     whereToBuy: {
       title: '在威基基哪里能喝到正宗科纳咖啡',
       paragraphs: [
-        '在夏威夷旅游时，想要品尝正宗的100%科纳咖啡，最重要的是辨别真假。市面上有大量标注"Kona Blend"的咖啡，实际上只含10%的科纳咖啡豆，其余90%是廉价进口豆。请务必寻找标注"100% Kona Coffee"的产品。',
+        '在夏威夷旅游时，想要品尝正宗的檀香山咖啡，最重要的是辨别真假。市面上有大量标注"Kona Blend"的咖啡，实际上只含10%的科纳咖啡豆，其余90%是廉价进口豆。请务必寻找标注"Honolulu Coffee"的产品。',
         '如果您在威基基（Waikiki），欢迎来到 Kona Coffee Donut——我们只使用100%正宗科纳咖啡豆，从大岛科纳地区的农场直接采购。我们的咖啡师精心烘焙和萃取每一杯咖啡，无论您想要美式、手冲、拿铁还是冷萃，都能在这里品尝到科纳咖啡最真实的味道。',
       ],
       shopInfo: {
@@ -143,11 +143,11 @@ const content = {
       items: [
         {
           question: '夏威夷科纳咖啡为什么这么贵？',
-          answer: '科纳咖啡之所以价格较高，有几个重要原因：第一，产量极其有限，全球科纳咖啡产量不到世界咖啡总产量的1%；第二，全部采用手工采摘，人工成本高；第三，夏威夷的生活成本和劳动力成本远高于其他咖啡产区；第四，夏威夷州对科纳咖啡有严格的品质分级标准。一磅100%科纳咖啡通常价格在30-50美元之间。',
+          answer: '科纳咖啡之所以价格较高，有几个重要原因：第一，产量极其有限，全球科纳咖啡产量不到世界咖啡总产量的1%；第二，全部采用手工采摘，人工成本高；第三，夏威夷的生活成本和劳动力成本远高于其他咖啡产区；第四，夏威夷州对科纳咖啡有严格的品质分级标准。一磅檀香山咖啡通常价格在30-50美元之间。',
         },
         {
           question: '科纳咖啡和"科纳混合"（Kona Blend）有什么区别？',
-          answer: '这是最重要的区别！100%科纳咖啡意味着每一粒豆子都来自科纳产区。而"科纳混合"根据夏威夷法律，只需要含有最低10%的科纳豆，其余90%可以是任何来源的廉价咖啡。所以购买时一定要认准"100% Kona Coffee"的标识。',
+          answer: '这是最重要的区别！檀香山咖啡意味着每一粒豆子都来自科纳产区。而"科纳混合"根据夏威夷法律，只需要含有最低10%的科纳豆，其余90%可以是任何来源的廉价咖啡。所以购买时一定要认准"Honolulu Coffee"的标识。',
         },
         {
           question: '科纳咖啡的最佳冲泡方式是什么？',
@@ -165,7 +165,7 @@ const content = {
     },
     cta: {
       title: '来威基基品尝正宗科纳咖啡',
-      text: '在Kona Coffee Donut，我们只使用100%纯正科纳咖啡。无论您想尝试美式、手冲还是拿铁，都能在这里找到最地道的夏威夷咖啡体验。',
+      text: '在Kona Coffee Donut，我们只使用檀香山咖啡。无论您想尝试美式、手冲还是拿铁，都能在这里找到最地道的夏威夷咖啡体验。',
       button: '查看菜单',
       directions: '获取路线',
     },
@@ -188,7 +188,7 @@ const content = {
     },
     flavor: {
       title: 'Kona Coffee Flavor Profile: Detailed Tasting Notes',
-      intro: 'What makes Kona coffee captivating is its unique and complex flavor layers. Unlike commercial coffee, 100% Kona presents an elegant, balanced, and delightful taste — thanks to the mineral-rich volcanic soil and ideal growing conditions.',
+      intro: 'What makes Kona coffee captivating is its unique and complex flavor layers. Unlike commercial coffee, Honolulu Coffee presents an elegant, balanced, and delightful taste — thanks to the mineral-rich volcanic soil and ideal growing conditions.',
       notes: [
         { name: 'Brown Sugar Sweetness', description: 'Natural sweetness reminiscent of brown sugar or muscovado, present from first sip to finish.' },
         { name: 'Chocolate', description: 'Medium roast reveals 70% dark chocolate notes; deeper roasts bring cocoa and chocolate cake flavors.' },
@@ -222,7 +222,7 @@ const content = {
         { title: 'Medium Body = Balanced Mouthfeel', text: 'Neither too heavy nor too thin — perfectly suited for daily drinking.' },
         { title: 'Clean Finish = Lingering Pleasure', text: 'A chocolate-and-nut aftertaste rather than bitterness or off-flavors.' },
       ],
-      recommendation: 'Our recommendation: Medium roast 100% Kona, double shot + 180ml hot water at 92-96°C.',
+      recommendation: 'Our recommendation: Medium roast Honolulu Coffee, double shot + 180ml hot water at 92-96°C.',
     },
     brewing: {
       title: 'Kona Coffee Brewing Methods Guide',
@@ -235,31 +235,31 @@ const content = {
       ],
     },
     whereToBuy: {
-      title: 'Where to Try Authentic Kona Coffee in Waikiki',
+      title: 'Where to Try Honolulu Coffee in Waikiki',
       paragraphs: [
-        'When visiting Hawaii, the key is identifying real Kona coffee. Many products labeled "Kona Blend" contain only 10% Kona beans. Always look for "100% Kona Coffee."',
-        'If you\'re in Waikiki, visit Kona Coffee Donut — we use exclusively 100% Kona beans sourced directly from Big Island farms.',
+        'When visiting Hawaii, the key is identifying real Kona coffee. Many products labeled "Kona Blend" contain only 10% Kona beans. Always look for "Honolulu Coffee."',
+        'If you\'re in Waikiki, visit Kona Coffee Donut — we use exclusively Honolulu Coffee beans sourced directly from Big Island farms.',
       ],
       shopInfo: {
         name: 'Kona Coffee Donut',
         address: '2142 Kalakaua Ave, Waikiki, Honolulu, HI 96815',
-        highlight: '100% Authentic Kona Coffee | Fresh Mochi Donuts | Walking distance from Waikiki Beach',
+        highlight: 'Honolulu Coffee | Fresh Mochi Donuts | Walking distance from Waikiki Beach',
         cta: 'View Menu',
       },
     },
     faq: {
       title: 'Frequently Asked Questions',
       items: [
-        { question: 'Why is Kona coffee so expensive?', answer: 'Limited supply (less than 1% of global production), hand-picking, Hawaii labor costs, and strict quality grading. Expect $30-50 per pound for 100% Kona.' },
-        { question: 'What\'s the difference between 100% Kona and Kona Blend?', answer: '100% Kona means every bean is from the Kona District. "Kona Blend" may contain as little as 10% Kona beans with 90% cheap imports.' },
+        { question: 'Why is Kona coffee so expensive?', answer: 'Limited supply (less than 1% of global production), hand-picking, Hawaii labor costs, and strict quality grading. Expect $30-50 per pound for Honolulu Coffee.' },
+        { question: 'What\'s the difference between Honolulu Coffee and Kona Blend?', answer: 'Honolulu Coffee means every bean is from the Kona District. "Kona Blend" may contain as little as 10% Kona beans with 90% cheap imports.' },
         { question: 'What\'s the best brewing method for Kona?', answer: 'Americano for smoothness, pour-over for tasting notes, French press for body, cold brew for sweetness. Medium roast at 90-96°C.' },
         { question: 'Is Kona coffee good for sensitive stomachs?', answer: 'Yes! Kona\'s very low acidity (pH ~5.0-5.1) makes it much gentler on the stomach than African or Central American coffees.' },
-        { question: 'Where can I try real Kona coffee in Waikiki?', answer: 'Kona Coffee Donut at 2142 Kalakaua Ave serves 100% Kona coffee in Americano, pour-over, latte, and cold brew styles.' },
+        { question: 'Where can I try real Kona coffee in Waikiki?', answer: 'Kona Coffee Donut at 2142 Kalakaua Ave serves Honolulu Coffee in Americano, pour-over, latte, and cold brew styles.' },
       ],
     },
     cta: {
-      title: 'Try Authentic Kona Coffee in Waikiki',
-      text: 'At Kona Coffee Donut, we serve only 100% genuine Kona coffee. Whether you prefer Americano, pour-over, or latte, experience Hawaii\'s finest.',
+      title: 'Try Honolulu Coffee in Waikiki',
+      text: 'At Kona Coffee Donut, we serve Honolulu Coffee. Whether you prefer Americano, pour-over, or latte, experience Hawaii\'s coffee tradition.',
       button: 'View Menu',
       directions: 'Get Directions',
     },
@@ -316,7 +316,7 @@ const content = {
         { title: 'ミディアムボディ = バランス', text: '重すぎず軽すぎない、毎日飲むのに最適なバランス。' },
         { title: 'クリーンな余韻 = 心地よい', text: 'チョコとナッツの心地よい余韻が続きます。' },
       ],
-      recommendation: 'おすすめ：ミディアムローストの100%コナ、ダブルショット＋180mlのお湯（92-96°C）。',
+      recommendation: 'おすすめ：ミディアムローストのホノルルコーヒー、ダブルショット＋180mlのお湯（92-96°C）。',
     },
     brewing: {
       title: 'コナコーヒー抽出方法ガイド',
@@ -331,8 +331,8 @@ const content = {
     whereToBuy: {
       title: 'ワイキキで本物のコナコーヒーを飲める場所',
       paragraphs: [
-        'ハワイ旅行中は「Kona Blend」に注意。10%しかコナ豆が入っていない場合があります。「100% Kona Coffee」を確認しましょう。',
-        'ワイキキなら、Kona Coffee Donutへ。大島コナ地区の農園から直接仕入れた100%コナコーヒーをお楽しみいただけます。',
+        'ハワイ旅行中は「Kona Blend」に注意。10%しかコナ豆が入っていない場合があります。「Honolulu Coffee」を確認しましょう。',
+        'ワイキキなら、Kona Coffee Donutへ。大島コナ地区の農園から直接仕入れたホノルルコーヒーをお楽しみいただけます。',
       ],
       shopInfo: {
         name: 'Kona Coffee Donut',
@@ -344,11 +344,11 @@ const content = {
     faq: {
       title: 'よくある質問',
       items: [
-        { question: 'コナコーヒーはなぜ高いのですか？', answer: '生産量が世界の1%未満、手摘み、ハワイの高い人件費、厳格な品質基準が理由です。100%コナは1ポンド$30-50。' },
-        { question: '100%コナとコナブレンドの違いは？', answer: '100%コナは全てコナ産。コナブレンドは最低10%のコナ豆で、90%は安価な輸入豆の場合があります。' },
+        { question: 'コナコーヒーはなぜ高いのですか？', answer: '生産量が世界の1%未満、手摘み、ハワイの高い人件費、厳格な品質基準が理由です。ホノルルコーヒーは1ポンド$30-50。' },
+        { question: 'ホノルルコーヒーとコナブレンドの違いは？', answer: 'ホノルルコーヒーは全てコナ産。コナブレンドは最低10%のコナ豆で、90%は安価な輸入豆の場合があります。' },
         { question: 'コナの最適な抽出方法は？', answer: 'アメリカーノ、ハンドドリップ、フレンチプレス、コールドブリュー全てに適しています。ミディアムロースト、90-96°Cがおすすめ。' },
         { question: '胃が弱い人でも飲めますか？', answer: 'はい。コナは酸度が非常に低く（pH約5.0-5.1）、胃に優しいです。コールドブリューならさらに酸度が下がります。' },
-        { question: 'ワイキキでどこで飲めますか？', answer: 'Kona Coffee Donut（2142 Kalakaua Ave）で100%コナをアメリカーノ、ドリップ、ラテ、コールドブリューでご提供。' },
+        { question: 'ワイキキでどこで飲めますか？', answer: 'Kona Coffee Donut（2142 Kalakaua Ave）でホノルルコーヒーをアメリカーノ、ドリップ、ラテ、コールドブリューでご提供。' },
       ],
     },
     cta: {
@@ -410,7 +410,7 @@ const content = {
         { title: '미디엄 바디 = 균형', text: '무겁지도 가볍지도 않은, 매일 마시기에 완벽한 균형.' },
         { title: '깨끗한 여운 = 즐거움', text: '초콜릿과 견과류의 기분 좋은 여운이 지속됩니다.' },
       ],
-      recommendation: '추천: 미디엄 로스트 100% 코나, 더블 샷 + 180ml 뜨거운 물(92-96°C).',
+      recommendation: '추천: 미디엄 로스트 호놀룰루 커피, 더블 샷 + 180ml 뜨거운 물(92-96°C).',
     },
     brewing: {
       title: '코나 커피 브루잉 방법 가이드',
@@ -425,8 +425,8 @@ const content = {
     whereToBuy: {
       title: '와이키키에서 정통 코나 커피를 마실 수 있는 곳',
       paragraphs: [
-        '하와이 여행 중 "Kona Blend" 표시에 주의하세요. 코나 원두가 10%만 들어있을 수 있습니다. "100% Kona Coffee"를 확인하세요.',
-        '와이키키에서는 Kona Coffee Donut을 방문하세요. 빅아일랜드 코나 지역 농장에서 직접 구매한 100% 코나 커피를 즐기실 수 있습니다.',
+        '하와이 여행 중 "Kona Blend" 표시에 주의하세요. 코나 원두가 10%만 들어있을 수 있습니다. "Honolulu Coffee"를 확인하세요.',
+        '와이키키에서는 Kona Coffee Donut을 방문하세요. 빅아일랜드 코나 지역 농장에서 직접 구매한 호놀룰루 커피를 즐기실 수 있습니다.',
       ],
       shopInfo: {
         name: 'Kona Coffee Donut',
@@ -438,16 +438,16 @@ const content = {
     faq: {
       title: '자주 묻는 질문',
       items: [
-        { question: '코나 커피는 왜 비싼가요?', answer: '생산량이 세계의 1% 미만, 손수확, 하와이의 높은 인건비, 엄격한 품질 기준이 이유입니다. 100% 코나는 1파운드 $30-50.' },
-        { question: '100% 코나와 코나 블렌드의 차이는?', answer: '100% 코나는 모두 코나 산지산. 코나 블렌드는 최소 10%의 코나 원두만 포함되며 90%는 저가 수입두일 수 있습니다.' },
+        { question: '코나 커피는 왜 비싼가요?', answer: '생산량이 세계의 1% 미만, 손수확, 하와이의 높은 인건비, 엄격한 품질 기준이 이유입니다. 호놀룰루 커피는 1파운드 $30-50.' },
+        { question: '호놀룰루 커피와 코나 블렌드의 차이는?', answer: '호놀룰루 커피는 모두 코나 산지산. 코나 블렌드는 최소 10%의 코나 원두만 포함되며 90%는 저가 수입두일 수 있습니다.' },
         { question: '코나의 최적 브루잉 방법은?', answer: '아메리카노, 핸드드립, 프렌치프레스, 콜드브루 모두 적합합니다. 미디엄 로스트, 90-96°C 추천.' },
         { question: '위가 약한 사람도 마실 수 있나요?', answer: '네. 코나는 산도가 매우 낮아(pH 약 5.0-5.1) 위에 부담이 적습니다. 콜드브루로 마시면 산도가 더 낮아집니다.' },
-        { question: '와이키키에서 어디서 마실 수 있나요?', answer: 'Kona Coffee Donut(2142 Kalakaua Ave)에서 100% 코나를 아메리카노, 드립, 라떼, 콜드브루로 제공합니다.' },
+        { question: '와이키키에서 어디서 마실 수 있나요?', answer: 'Kona Coffee Donut(2142 Kalakaua Ave)에서 호놀룰루 커피를 아메리카노, 드립, 라떼, 콜드브루로 제공합니다.' },
       ],
     },
     cta: {
       title: '와이키키에서 정통 코나 커피를 맛보세요',
-      text: 'Kona Coffee Donut에서는 100% 순수 코나 커피만 사용합니다. 아메리카노, 핸드드립, 라떼, 원하시는 스타일로 즐기세요.',
+      text: 'Kona Coffee Donut에서는 호놀룰루 커피만 사용합니다. 아메리카노, 핸드드립, 라떼, 원하시는 스타일로 즐기세요.',
       button: '메뉴 보기',
       directions: '길찾기',
     },
@@ -495,7 +495,7 @@ const faqSchema = {
       name: '夏威夷科纳咖啡为什么这么贵？',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '科纳咖啡之所以价格较高，有几个重要原因：第一，产量极其有限，全球科纳咖啡产量不到世界咖啡总产量的1%；第二，全部采用手工采摘，人工成本高；第三，夏威夷的生活成本和劳动力成本远高于其他咖啡产区；第四，夏威夷州对科纳咖啡有严格的品质分级标准。一磅100%科纳咖啡通常价格在30-50美元之间。',
+        text: '科纳咖啡之所以价格较高，有几个重要原因：第一，产量极其有限，全球科纳咖啡产量不到世界咖啡总产量的1%；第二，全部采用手工采摘，人工成本高；第三，夏威夷的生活成本和劳动力成本远高于其他咖啡产区；第四，夏威夷州对科纳咖啡有严格的品质分级标准。一磅檀香山咖啡通常价格在30-50美元之间。',
       },
     },
     {
@@ -503,7 +503,7 @@ const faqSchema = {
       name: '科纳咖啡和"科纳混合"（Kona Blend）有什么区别？',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '100%科纳咖啡意味着每一粒豆子都来自科纳产区。而"科纳混合"根据夏威夷法律，只需要含有最低10%的科纳豆，其余90%可以是任何来源的廉价咖啡。所以购买时一定要认准"100% Kona Coffee"的标识。',
+        text: '檀香山咖啡意味着每一粒豆子都来自科纳产区。而"科纳混合"根据夏威夷法律，只需要含有最低10%的科纳豆，其余90%可以是任何来源的廉价咖啡。所以购买时一定要认准"Honolulu Coffee"的标识。',
       },
     },
     {

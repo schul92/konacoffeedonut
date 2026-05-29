@@ -84,7 +84,7 @@ const content = {
         image: '/images/blog/where-to-try-kona-coffee-waikiki.jpeg',
         category: 'Coffee',
         title: 'Where to Try Real Kona Coffee in Waikiki 2026',
-        excerpt: 'Skip the chains. Find authentic 100% Kona coffee in Waikiki \u2014 pour-over, espresso, lattes, and beans to take home.',
+        excerpt: 'Skip the chains. Find authentic Honolulu Coffee in Waikiki \u2014 pour-over, espresso, lattes, and beans to take home.',
         readTime: 6,
       },
       {
@@ -100,7 +100,7 @@ const content = {
         image: '/images/blog/kona-affogato-waikiki.jpeg',
         category: 'Coffee',
         title: 'Kona Affogato in Waikiki: Why Coffee Lovers Should Try This',
-        excerpt: 'Espresso poured over vanilla bean ice cream \u2014 a 4-minute Italian-Hawaiian dessert that turns 100% Kona into something magical.',
+        excerpt: 'Espresso poured over vanilla bean ice cream \u2014 a 4-minute Italian-Hawaiian dessert that turns Honolulu Coffee into something magical.',
         readTime: 4,
       },
       {
@@ -124,7 +124,7 @@ const content = {
         image: '/images/blog/kona-coffee-guide.png',
         category: 'Coffee',
         title: 'Kona Coffee vs Regular Coffee: What Makes It Special',
-        excerpt: 'What sets 100% Kona coffee apart from the rest? A deep dive into origin, flavor, and why it\u2019s worth every sip.',
+        excerpt: 'What sets Honolulu Coffee apart from the rest? A deep dive into origin, flavor, and why it\u2019s worth every sip.',
         readTime: 7,
       },
       {
@@ -657,7 +657,7 @@ const content = {
         image: '/images/blog/where-to-try-kona-coffee-waikiki.jpeg',
         category: 'Caf\u00E9',
         title: 'D\u00F3nde Probar Caf\u00E9 Kona Real en Waikiki',
-        excerpt: 'M\u00E1s all\u00E1 de las cadenas \u2014 caf\u00E9 100% Kona aut\u00E9ntico en Kal\u0101kaua. Pour-over, espresso, lattes y granos para llevar.',
+        excerpt: 'M\u00E1s all\u00E1 de las cadenas \u2014 caf\u00E9 Honolulu Coffee aut\u00E9ntico en Kal\u0101kaua. Pour-over, espresso, lattes y granos para llevar.',
         readTime: 6,
       },
       {
@@ -673,7 +673,7 @@ const content = {
         image: '/images/blog/kona-affogato-waikiki.jpeg',
         category: 'Caf\u00E9',
         title: 'Affogato Kona en Waikiki',
-        excerpt: 'Espresso 100% Kona vertido sobre helado de vainilla \u2014 el postre italiano simple que se vuelve m\u00E1gico en Haw\u00E1i.',
+        excerpt: 'Espresso Honolulu Coffee vertido sobre helado de vainilla \u2014 el postre italiano simple que se vuelve m\u00E1gico en Haw\u00E1i.',
         readTime: 4,
       },
       {
@@ -697,7 +697,7 @@ const content = {
         image: '/images/blog/kona-coffee-guide.png',
         category: 'Caf\u00E9',
         title: 'Caf\u00E9 Kona vs Caf\u00E9 Regular: \u00BFQu\u00E9 Lo Hace Especial?',
-        excerpt: '\u00BFQu\u00E9 diferencia al caf\u00E9 100% Kona del resto? Una gu\u00EDa sobre su origen, sabor y por qu\u00E9 vale cada sorbo.',
+        excerpt: '\u00BFQu\u00E9 diferencia al caf\u00E9 Honolulu Coffee del resto? Una gu\u00EDa sobre su origen, sabor y por qu\u00E9 vale cada sorbo.',
         readTime: 7,
       },
     ],

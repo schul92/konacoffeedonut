@@ -14,7 +14,7 @@ export async function generateMetadata({
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    keywords: ['farm to cup', 'kona coffee origin', 'volcanic soil coffee', 'hawaiian coffee farms', 'authentic kona', 'bean to cup'],
+    keywords: ['farm to cup', 'kona coffee origin', 'volcanic soil coffee', 'hawaiian coffee farms', 'honolulu coffee waikiki', 'bean to cup'],
   };
 }
 

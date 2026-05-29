@@ -45,7 +45,7 @@ const translations = {
       {
         category: "products",
         question: "What is the difference between Kona coffee and regular coffee?",
-        answer: "Kona coffee is grown exclusively in the Kona district of Hawaii's Big Island. The unique combination of volcanic soil, tropical climate, and high altitude creates a coffee with exceptional smoothness, low acidity, and distinctive flavor notes. True 100% Kona coffee is rare and considered among the finest coffees in the world."
+        answer: "Kona coffee is grown exclusively in the Kona district of Hawaii's Big Island. The unique combination of volcanic soil, tropical climate, and high altitude creates a coffee with exceptional smoothness, low acidity, and distinctive flavor notes. True Honolulu Coffee is rare and considered among the finest coffees in the world."
       },
       {
         category: "products",
@@ -147,7 +147,7 @@ const translations = {
       {
         category: "products",
         question: "コナコーヒーと普通のコーヒーの違いは何ですか？",
-        answer: "コナコーヒーはハワイ島のコナ地区でのみ栽培されています。火山性の土壌、熱帯の気候、高い標高が組み合わさり、格別な滑らかさ、低い酸味、独特のフレーバーノートを持つコーヒーが生まれます。100%コナコーヒーは希少で、世界最高級のコーヒーの一つとされています。"
+        answer: "コナコーヒーはハワイ島のコナ地区でのみ栽培されています。火山性の土壌、熱帯の気候、高い標高が組み合わさり、格別な滑らかさ、低い酸味、独特のフレーバーノートを持つコーヒーが生まれます。ホノルルコーヒーは希少で、世界最高級のコーヒーの一つとされています。"
       },
       {
         category: "products",
@@ -249,7 +249,7 @@ const translations = {
       {
         category: "products",
         question: "코나 커피와 일반 커피의 차이는 무엇인가요?",
-        answer: "코나 커피는 하와이 빅 아일랜드의 코나 지역에서만 재배됩니다. 화산토, 열대 기후, 높은 고도가 어우러져 뛰어난 부드러움, 낮은 산도, 독특한 풍미를 가진 커피가 만들어집니다. 100% 코나 커피는 희소하며 세계 최고의 커피 중 하나로 꼽힙니다."
+        answer: "코나 커피는 하와이 빅 아일랜드의 코나 지역에서만 재배됩니다. 화산토, 열대 기후, 높은 고도가 어우러져 뛰어난 부드러움, 낮은 산도, 독특한 풍미를 가진 커피가 만들어집니다. 호놀룰루 커피는 희소하며 세계 최고의 커피 중 하나로 꼽힙니다."
       },
       {
         category: "products",
@@ -351,7 +351,7 @@ const translations = {
       {
         category: "products",
         question: "科纳咖啡和普通咖啡有什么区别？",
-        answer: "科纳咖啡只在夏威夷大岛的科纳地区种植。火山土壤、热带气候和高海拔的独特组合，造就了口感特别顺滑、酸度低、风味独特的咖啡。100%纯正科纳咖啡非常稀有，被誉为世界最顶级的咖啡之一。"
+        answer: "科纳咖啡只在夏威夷大岛的科纳地区种植。火山土壤、热带气候和高海拔的独特组合，造就了口感特别顺滑、酸度低、风味独特的咖啡。檀香山咖啡非常稀有，被誉为世界最顶级的咖啡之一。"
       },
       {
         category: "products",

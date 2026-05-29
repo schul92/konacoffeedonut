@@ -144,10 +144,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'Located in the heart of Waikiki on Kalakaua Avenue, Kona Coffee Donut serves Hawaiian-style bingsu made with fresh tropical fruits and premium milk ice. What makes our bingsu special? We pair it with authentic 100% Kona coffee from Honolulu Coffee — the perfect combination of icy sweetness and rich Hawaiian coffee.',
+        description: 'Located in the heart of Waikiki on Kalakaua Avenue, Kona Coffee Donut serves Hawaiian-style bingsu made with fresh tropical fruits and premium milk ice. What makes our bingsu special? We pair it with Honolulu Coffee — the perfect combination of icy sweetness and rich Hawaiian coffee.',
         highlights: [
           'Fresh fruit bingsu with tropical Hawaiian flavors',
-          'Paired perfectly with premium 100% Kona coffee',
+          'Paired perfectly with premium Honolulu Coffee',
           'Walking distance from Waikiki Beach',
           'Open daily — perfect for an afternoon treat',
         ],
@@ -345,10 +345,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut（コナコーヒードーナツ）',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心部、カラカウア通りに位置するコナコーヒードーナツは、新鮮なトロピカルフルーツとプレミアムミルク氷で作るハワイアンスタイルビンスを提供。私たちのビンスの特別なところは、ホノルルコーヒーの100%コナコーヒーとのペアリング。冷たいビンスの甘さと、芳醇なハワイアンコーヒーの組み合わせは最高です。',
+        description: 'ワイキキの中心部、カラカウア通りに位置するコナコーヒードーナツは、新鮮なトロピカルフルーツとプレミアムミルク氷で作るハワイアンスタイルビンスを提供。私たちのビンスの特別なところは、ホノルルコーヒーのホノルルコーヒーとのペアリング。冷たいビンスの甘さと、芳醇なハワイアンコーヒーの組み合わせは最高です。',
         highlights: [
           'トロピカルハワイアンフレーバーのフルーツビンス',
-          'プレミアム100%コナコーヒーとの完璧なペアリング',
+          'プレミアムホノルルコーヒーとの完璧なペアリング',
           'ワイキキビーチから徒歩圏内',
           '毎日営業 — 午後のおやつに最適',
         ],
@@ -546,10 +546,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut (코나커피도넛)',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '와이키키의 중심, 칼라카우아 애비뉴에 위치한 코나커피도넛은 신선한 열대과일과 프리미엄 우유 얼음으로 만든 하와이안 스타일 빙수를 제공합니다. 저희 빙수의 특별한 점은? 호놀룰루 커피의 100% 코나 커피와 함께 즐길 수 있다는 것. 시원한 빙수의 달콤함과 풍부한 하와이안 커피의 환상 조합을 경험해보세요.',
+        description: '와이키키의 중심, 칼라카우아 애비뉴에 위치한 코나커피도넛은 신선한 열대과일과 프리미엄 우유 얼음으로 만든 하와이안 스타일 빙수를 제공합니다. 저희 빙수의 특별한 점은? 호놀룰루 커피의 호놀룰루 커피와 함께 즐길 수 있다는 것. 시원한 빙수의 달콤함과 풍부한 하와이안 커피의 환상 조합을 경험해보세요.',
         highlights: [
           '하와이 열대 과일로 만든 신선한 과일빙수',
-          '프리미엄 100% 코나 커피와의 퍼펙트 페어링',
+          '프리미엄 호놀룰루 커피와의 퍼펙트 페어링',
           '와이키키 비치에서 도보 거리',
           '매일 영업 — 오후 간식으로 딱!',
         ],
@@ -747,10 +747,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut（科纳咖啡甜甜圈）',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '位于威基基卡拉卡瓦大道中心地段，科纳咖啡甜甜圈提供以新鲜热带水果和优质牛奶冰制作的夏威夷风格韩式刨冰。我们的刨冰有何特别之处？搭配檀香山咖啡的正宗100%科纳咖啡——冰爽甜蜜与醇厚夏威夷咖啡的完美组合。',
+        description: '位于威基基卡拉卡瓦大道中心地段，科纳咖啡甜甜圈提供以新鲜热带水果和优质牛奶冰制作的夏威夷风格韩式刨冰。我们的刨冰有何特别之处？搭配檀香山咖啡的正宗檀香山咖啡——冰爽甜蜜与醇厚夏威夷咖啡的完美组合。',
         highlights: [
           '热带夏威夷风味的新鲜水果刨冰',
-          '与优质100%科纳咖啡完美搭配',
+          '与优质檀香山咖啡完美搭配',
           '距威基基海滩步行可达',
           '每天营业——午后甜品的最佳选择',
         ],

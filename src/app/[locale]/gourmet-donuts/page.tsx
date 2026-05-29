@@ -38,7 +38,7 @@ const content = {
         },
         {
           title: 'Perfect Coffee Pairing',
-          description: 'Our gourmet donuts are specifically designed to complement 100% Kona coffee—Hawaii\'s premium coffee known for its smooth, rich flavor.'
+          description: 'Our gourmet donuts are specifically designed to complement Honolulu Coffee—Hawaii\'s premium coffee known for its smooth, rich flavor.'
         },
         {
           title: 'Small-Batch Quality',
@@ -68,7 +68,7 @@ const content = {
     pairing: {
       title: 'The Gourmet Experience: Donuts + Kona Coffee',
       subtitle: 'Hawaii\'s Perfect Pairing',
-      description: 'Our gourmet donuts are crafted to pair perfectly with premium 100% Kona coffee. The subtle sweetness of our mochi donuts complements the smooth, chocolatey notes of authentic Hawaiian coffee. It\'s not just a snack—it\'s a culinary experience.',
+      description: 'Our gourmet donuts are crafted to pair perfectly with premium Honolulu Coffee. The subtle sweetness of our mochi donuts complements the smooth, chocolatey notes of authentic Hawaiian coffee. It\'s not just a snack—it\'s a culinary experience.',
       coffeeCta: 'Discover Our Kona Coffee',
       coffeeLink: '/menu/kona-coffee'
     },

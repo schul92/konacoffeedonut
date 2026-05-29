@@ -22,7 +22,7 @@ const translations = {
     features: {
       title: "Why Kona Coffee is Special",
       items: [
-        { icon: "leaf", title: "Single Origin", desc: "100% pure Kona beans from Big Island farms" },
+        { icon: "leaf", title: "Single Origin", desc: "Honolulu Coffee beans from Big Island farms" },
         { icon: "award", title: "World Renowned", desc: "Consistently rated among the world's best coffees" },
         { icon: "thermometer", title: "Perfect Climate", desc: "Ideal growing conditions on volcanic slopes" },
         { icon: "coffee", title: "Rich Flavor", desc: "Smooth, low acidity with hints of chocolate & nuts" },
@@ -31,7 +31,7 @@ const translations = {
     menu: {
       title: "Our Coffee Menu",
       items: [
-        { name: "Kona Coffee (Hot)", desc: "Classic brewed 100% Kona coffee" },
+        { name: "Kona Coffee (Hot)", desc: "Classic brewed Honolulu Coffee" },
         { name: "Kona Coffee (Iced)", desc: "Cold brewed for smooth, refreshing taste" },
         { name: "Kona Latte", desc: "Espresso with steamed milk, Kona style" },
         { name: "Kona Cappuccino", desc: "Rich espresso with foamed milk" },
@@ -41,7 +41,7 @@ const translations = {
     },
     cta: {
       title: "Taste the Aloha Spirit",
-      description: "Visit us in Waikiki to experience authentic Kona coffee paired with our fresh mochi donuts and Hawaiian treats.",
+      description: "Visit us in Waikiki to experience Honolulu Coffee paired with our fresh mochi donuts and Hawaiian treats.",
       button: "Visit Us",
       location: "2142 Kalakaua Ave, Waikiki",
       hours: "Opening Late April 2026",
@@ -70,7 +70,7 @@ const translations = {
     menu: {
       title: "コーヒーメニュー",
       items: [
-        { name: "コナコーヒー（ホット）", desc: "100%コナコーヒーをドリップで" },
+        { name: "コナコーヒー（ホット）", desc: "ホノルルコーヒーをドリップで" },
         { name: "コナコーヒー（アイス）", desc: "水出しで滑らかな味わい" },
         { name: "コナラテ", desc: "エスプレッソとスチームミルク" },
         { name: "コナカプチーノ", desc: "リッチなエスプレッソとフォームミルク" },
@@ -109,7 +109,7 @@ const translations = {
     menu: {
       title: "커피 메뉴",
       items: [
-        { name: "코나 커피 (핫)", desc: "클래식 드립 100% 코나 커피" },
+        { name: "코나 커피 (핫)", desc: "클래식 드립 호놀룰루 커피" },
         { name: "코나 커피 (아이스)", desc: "콜드브루로 부드럽고 상쾌한 맛" },
         { name: "코나 라떼", desc: "에스프레소와 스팀 밀크" },
         { name: "코나 카푸치노", desc: "리치한 에스프레소와 거품 밀크" },
@@ -148,7 +148,7 @@ const translations = {
     menu: {
       title: "咖啡菜单",
       items: [
-        { name: "科纳咖啡（热）", desc: "经典滴滤100%科纳咖啡" },
+        { name: "科纳咖啡（热）", desc: "经典滴滤檀香山咖啡" },
         { name: "科纳咖啡（冰）", desc: "冷萃顺滑清爽" },
         { name: "科纳拿铁", desc: "浓缩咖啡配蒸奶" },
         { name: "科纳卡布奇诺", desc: "浓郁浓缩咖啡配奶泡" },

@@ -82,7 +82,7 @@ const content = {
     },
     experience: {
       title: 'The Ultimate Waikiki Street Food Experience',
-      paragraph1: 'Picture this: a golden, freshly fried Korean corn dog in one hand and a smooth cup of 100% Kona coffee in the other, strolling down Kalakaua Avenue with the warm Hawaiian breeze and Diamond Head in the distance. That is the Kona Coffee Donut experience — where Korean street food culture meets Hawaiian aloha.',
+      paragraph1: 'Picture this: a golden, freshly fried Korean corn dog in one hand and a smooth cup of Honolulu Coffee in the other, strolling down Kalakaua Avenue with the warm Hawaiian breeze and Diamond Head in the distance. That is the Kona Coffee Donut experience — where Korean street food culture meets Hawaiian aloha.',
       paragraph2: 'Korean corn dogs are the perfect grab-and-go snack for exploring Waikiki. They are portable, fun to eat, and endlessly shareable. Pair a crispy Mozzarella Cheese Dog with our iced Kona latte for an afternoon pick-me-up, or grab a Sugar Dog after a beach session for a sweet treat that hits different. Whether you are a first-time visitor or a Waikiki regular, our Korean corn dogs add a delicious new chapter to your Hawaiian adventure.',
       highlight: 'Pro tip: Pair a Half & Half Dog with our signature Kona Coffee for the perfect sweet-savory combo.'
     },
@@ -169,7 +169,7 @@ const content = {
     },
     experience: {
       title: 'ワイキキ究極のストリートフード体験',
-      paragraph1: '揚げたての韓国式チーズドッグを片手に、もう片方には100%コナコーヒー。ダイヤモンドヘッドを眺めながらカラカウア通りをお散歩 — これがコナコーヒードーナツならではの体験です。韓国ストリートフード文化とハワイアンアロハが出会う場所。',
+      paragraph1: '揚げたての韓国式チーズドッグを片手に、もう片方にはホノルルコーヒー。ダイヤモンドヘッドを眺めながらカラカウア通りをお散歩 — これがコナコーヒードーナツならではの体験です。韓国ストリートフード文化とハワイアンアロハが出会う場所。',
       paragraph2: '韓国式チーズドッグはワイキキ散策にぴったりの食べ歩きスナック。モッツァレラチーズドッグとアイスコナラテの組み合わせは午後のリフレッシュに最適。ビーチの後にはシュガードッグで甘いご褒美を。初めてのハワイでもリピーターでも、新しいワイキキの味をお楽しみください。',
       highlight: 'おすすめ：ハーフ＆ハーフドッグと当店自慢のコナコーヒーで、甘じょっぱいコンビをぜひ。'
     },
@@ -256,7 +256,7 @@ const content = {
     },
     experience: {
       title: '와이키키 최고의 길거리 음식 체험',
-      paragraph1: '한 손에는 갓 튀긴 바삭한 한국식 핫도그, 다른 손에는 부드러운 100% 코나 커피. 다이아몬드 헤드를 바라보며 칼라카우아 거리를 걸어보세요 — 이것이 코나커피도넛만의 경험입니다. 한국 길거리 음식 문화와 하와이안 알로하가 만나는 곳.',
+      paragraph1: '한 손에는 갓 튀긴 바삭한 한국식 핫도그, 다른 손에는 부드러운 호놀룰루 커피. 다이아몬드 헤드를 바라보며 칼라카우아 거리를 걸어보세요 — 이것이 코나커피도넛만의 경험입니다. 한국 길거리 음식 문화와 하와이안 알로하가 만나는 곳.',
       paragraph2: '한국식 핫도그는 와이키키 산책에 딱 맞는 길거리 간식이에요. 모짜렐라 치즈 핫도그와 아이스 코나 라떼로 오후 에너지를 충전하거나, 해변 놀이 후 슈가 핫도그로 달콤한 보상을. 처음 방문이든 단골이든, 와이키키의 새로운 맛을 만나보세요.',
       highlight: '꿀팁: 반반 핫도그와 시그니처 코나 커피의 달짭 조합을 꼭 드셔보세요.'
     },
@@ -343,7 +343,7 @@ const content = {
     },
     experience: {
       title: '威基基终极街头美食体验',
-      paragraph1: '想象一下：一手拿着刚出锅的金黄韩式热狗，另一手端着醇厚的100%科纳咖啡，漫步卡拉卡瓦大道，远眺钻石山——这就是科纳咖啡甜甜圈的独特体验，韩国街头美食文化与夏威夷阿罗哈精神的完美邂逅。',
+      paragraph1: '想象一下：一手拿着刚出锅的金黄韩式热狗，另一手端着醇厚的檀香山咖啡，漫步卡拉卡瓦大道，远眺钻石山——这就是科纳咖啡甜甜圈的独特体验，韩国街头美食文化与夏威夷阿罗哈精神的完美邂逅。',
       paragraph2: '韩式热狗是探索威基基的完美便携小吃。搭配一杯冰科纳拿铁享用马苏里拉芝士热狗，是午后最佳选择；海滩归来后来一根糖衣热狗，甜蜜犒赏自己。无论初次到访还是常客，韩式热狗为您的夏威夷之旅增添美味新篇章。',
       highlight: '小贴士：半半热狗搭配招牌科纳咖啡，甜咸完美组合不容错过。'
     },
@@ -430,7 +430,7 @@ const content = {
     },
     experience: {
       title: 'La Experiencia Definitiva de Street Food en Waikiki',
-      paragraph1: 'Imagina: un corn dog coreano recién frito en una mano y un café 100% Kona en la otra, paseando por Kalakaua Avenue con Diamond Head de fondo. Esa es la experiencia Kona Coffee Donut — donde la cultura K-food se encuentra con el aloha hawaiano.',
+      paragraph1: 'Imagina: un corn dog coreano recién frito en una mano y un café Honolulu Coffee en la otra, paseando por Kalakaua Avenue con Diamond Head de fondo. Esa es la experiencia Kona Coffee Donut — donde la cultura K-food se encuentra con el aloha hawaiano.',
       paragraph2: 'Los corn dogs coreanos son el snack perfecto para explorar Waikiki. Acompaña un Mozzarella Cheese Dog con nuestro latte Kona helado para un break por la tarde, o disfruta un Sugar Dog después de la playa. Tu aventura hawaiana tiene un nuevo capítulo delicioso.',
       highlight: 'Consejo: El Mitad y Mitad con nuestro café Kona es la combinación dulce-salada perfecta.'
     },
@@ -489,7 +489,7 @@ const faqSchema = {
       name: 'Can I pair Korean corn dogs with coffee?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Absolutely! At Kona Coffee Donut in Waikiki, we recommend pairing our Korean corn dogs with our signature 100% Kona coffee. The savory, crispy corn dog pairs perfectly with smooth Hawaiian coffee. Try the Half & Half Dog with an iced Kona latte for the ultimate sweet-savory combination.'
+        text: 'Absolutely! At Kona Coffee Donut in Waikiki, we recommend pairing our Korean corn dogs with our signature Honolulu Coffee. The savory, crispy corn dog pairs perfectly with smooth Hawaiian coffee. Try the Half & Half Dog with an iced Kona latte for the ultimate sweet-savory combination.'
       }
     }
   ]
@@ -500,7 +500,7 @@ const restaurantSchema = {
   '@context': 'https://schema.org',
   '@type': 'Restaurant',
   name: 'Kona Coffee Donut - Korean Corn Dogs Waikiki',
-  description: 'Authentic Korean corn dogs fried fresh to order in Waikiki. 6 varieties including mozzarella cheese, potato, and ramen dogs. Paired with premium 100% Kona coffee.',
+  description: 'Authentic Korean corn dogs fried fresh to order in Waikiki. 6 varieties including mozzarella cheese, potato, and ramen dogs. Paired with premium Honolulu Coffee.',
   image: 'https://www.konacoffeedonut.com/og-image.jpg',
   servesCuisine: ['Korean', 'Street Food', 'Coffee', 'Donuts'],
   address: {

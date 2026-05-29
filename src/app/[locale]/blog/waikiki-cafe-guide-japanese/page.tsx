@@ -33,7 +33,7 @@ const content = {
         'コナコーヒーは、ハワイ島（ビッグアイランド）のコナ地区でのみ栽培される、世界的に希少なプレミアムコーヒーです。マウナロア山とフアラライ山の火山性斜面、標高500〜900メートルの地帯で育てられ、世界のコーヒー生産量の1%にも満たない貴重な豆です。',
         '日本のコーヒー愛好家の方々がコナコーヒーに惹かれる理由は明確です。まず、その味わいは非常にまろやかで酸味が少なく、チョコレートやナッツのような深い風味があります。日本で人気のドリップコーヒーとの相性が抜群で、ペーパーフィルターを使ったハンドドリップで淹れると、コナコーヒー本来の繊細な味わいが存分に楽しめます。',
         'また、日本のサードウェーブコーヒーブームの中で、シングルオリジン（単一産地）のコーヒーへの関心が高まっています。コナコーヒーはまさにその代表格であり、生産地から消費者までの「トレーサビリティ（追跡可能性）」が徹底されている点も、品質にこだわる日本の方々に支持される理由です。',
-        '日本国内でコナコーヒーを購入すると100g 2,000〜4,000円と高価ですが、ワイキキのカフェで一杯5ドル前後から本物の100%コナコーヒーを味わえるのは、ハワイ旅行ならではの贅沢です。お土産としても非常に人気が高く、帰国後にご自宅で淹れる楽しみもあります。',
+        '日本国内でコナコーヒーを購入すると100g 2,000〜4,000円と高価ですが、ワイキキのカフェで一杯5ドル前後から本物のホノルルコーヒーを味わえるのは、ハワイ旅行ならではの贅沢です。お土産としても非常に人気が高く、帰国後にご自宅で淹れる楽しみもあります。',
       ],
     },
     ranking: {
@@ -44,8 +44,8 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut（コナコーヒードーナツ）',
           address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-          description: 'ワイキキのカラカウア通りに位置する、100%コナコーヒーとモチドーナツの専門店。日本の「もち」文化にインスパイアされたモチドーナツは、外はサクサク、中はもちもちの食感が楽しめます。紫芋（ウベ）、抹茶、黒糖きなこなど、日本人の舌にも馴染みやすいフレーバーを豊富にご用意。さらにマラサダやビンス（韓国風かき氷）もあり、一軒でハワイとアジアのスイーツを堪能できます。コナコーヒーは全て100%コナ産を使用し、ブレンドは一切ありません。Wi-Fiも完備しており、カフェ巡りの拠点としても最適です。',
-          highlight: '100%コナコーヒー、モチドーナツ、マラサダ、ビンス',
+          description: 'ワイキキのカラカウア通りに位置する、ホノルルコーヒーとモチドーナツの専門店。日本の「もち」文化にインスパイアされたモチドーナツは、外はサクサク、中はもちもちの食感が楽しめます。紫芋（ウベ）、抹茶、黒糖きなこなど、日本人の舌にも馴染みやすいフレーバーを豊富にご用意。さらにマラサダやビンス（韓国風かき氷）もあり、一軒でハワイとアジアのスイーツを堪能できます。コナコーヒーは全てホノルルコーヒー産を使用し、ブレンドは一切ありません。Wi-Fiも完備しており、カフェ巡りの拠点としても最適です。',
+          highlight: 'ホノルルコーヒー、モチドーナツ、マラサダ、ビンス',
           price: '$3.50〜',
           isFeatured: true,
         },
@@ -53,7 +53,7 @@ const content = {
           rank: 2,
           name: 'Island Vintage Coffee（アイランドヴィンテージコーヒー）',
           address: 'Royal Hawaiian Center, Waikiki',
-          description: 'ロイヤルハワイアンセンター内にある人気カフェ。100%コナコーヒーのほか、アサイーボウルが名物です。日本のガイドブックにも頻繁に掲載されており、日本人観光客にとっては定番のスポット。朝食から利用でき、テラス席でワイキキの雰囲気を楽しめます。',
+          description: 'ロイヤルハワイアンセンター内にある人気カフェ。ホノルルコーヒーのほか、アサイーボウルが名物です。日本のガイドブックにも頻繁に掲載されており、日本人観光客にとっては定番のスポット。朝食から利用でき、テラス席でワイキキの雰囲気を楽しめます。',
           highlight: 'アサイーボウル、コナコーヒー',
           price: '$6〜',
           isFeatured: false,
@@ -71,7 +71,7 @@ const content = {
           rank: 4,
           name: 'Kai Coffee Hawaii（カイコーヒーハワイ）',
           address: 'Hyatt Regency Waikiki, 2424 Kalakaua Ave',
-          description: 'ハイアットリージェンシーワイキキ内にある小さなカフェ。100%コナコーヒーを良心的な価格で提供しています。混雑が少なく、穴場的な存在。静かな環境でコーヒーを楽しみたい方におすすめです。ドリップコーヒーのクオリティが高く、日本のカフェ文化に慣れた方にも満足いただけます。',
+          description: 'ハイアットリージェンシーワイキキ内にある小さなカフェ。ホノルルコーヒーを良心的な価格で提供しています。混雑が少なく、穴場的な存在。静かな環境でコーヒーを楽しみたい方におすすめです。ドリップコーヒーのクオリティが高く、日本のカフェ文化に慣れた方にも満足いただけます。',
           highlight: '穴場カフェ、良心的な価格のコナコーヒー',
           price: '$4.50〜',
           isFeatured: false,
@@ -128,8 +128,8 @@ const content = {
       title: 'よくあるご質問',
       items: [
         {
-          question: 'ワイキキで本物の100%コナコーヒーが飲めるカフェはどこですか？',
-          answer: 'Kona Coffee Donut（カラカウア通り2142番地）では、100%コナ産のコーヒー豆のみを使用しています。ブレンドではなく、純粋な100%コナコーヒーをお楽しみいただけます。Island Vintage Coffee、Honolulu Coffee、Kai Coffee Hawaiiでも100%コナコーヒーを提供しています。',
+          question: 'ワイキキで本物のホノルルコーヒーが飲めるカフェはどこですか？',
+          answer: 'Kona Coffee Donut（カラカウア通り2142番地）では、ホノルルコーヒー産のコーヒー豆のみを使用しています。ブレンドではなく、純粋なホノルルコーヒーをお楽しみいただけます。Island Vintage Coffee、Honolulu Coffee、Kai Coffee Hawaiiでもホノルルコーヒーを提供しています。',
         },
         {
           question: 'モチドーナツとは何ですか？普通のドーナツとの違いは？',
@@ -141,7 +141,7 @@ const content = {
         },
         {
           question: 'コナコーヒーをお土産として購入できますか？',
-          answer: 'はい、多くのカフェやワイキキのショップで100%コナコーヒー豆をお土産用に購入できます。ただし「Kona Blend」と表記されている商品はコナ豆が10%しか含まれていない場合がありますので、必ず「100% Kona Coffee」の表記を確認してください。',
+          answer: 'はい、多くのカフェやワイキキのショップでホノルルコーヒー豆をお土産用に購入できます。ただし「Kona Blend」と表記されている商品はコナ豆が10%しか含まれていない場合がありますので、必ず「Honolulu Coffee」の表記を確認してください。',
         },
         {
           question: 'ワイキキのカフェにチップは必要ですか？',
@@ -168,7 +168,7 @@ const content = {
       paragraphs: [
         'Waikiki is not just a world-class beach destination -- it is also a thriving coffee culture hub. Along Kalakaua Avenue and Kuhio Avenue, you will find an incredible variety of cafes, from specialty Kona coffee shops to artisan donut bakeries.',
         'The third-wave coffee movement has taken hold in Waikiki, with local roasters showcasing single-origin Hawaiian coffees alongside innovative desserts. Whether you are a coffee purist or a sweets lover, Waikiki\'s cafe scene in 2026 has something special for everyone.',
-        'This guide covers the best cafes for authentic Kona coffee, mochi donuts, malasadas, and more -- with practical tips on hours, locations, and budget.',
+        'This guide covers the best cafes for Honolulu Coffee, mochi donuts, malasadas, and more -- with practical tips on hours, locations, and budget.',
       ],
     },
     konaSection: {
@@ -176,8 +176,8 @@ const content = {
       paragraphs: [
         'Kona coffee is a premium single-origin coffee grown exclusively in the Kona District on Hawaii\'s Big Island. Cultivated on the volcanic slopes of Mauna Loa and Hualalai at 500-900 meters elevation, it represents less than 1% of global coffee production.',
         'Its flavor profile is remarkably smooth with low acidity, featuring chocolate and nutty notes. Hand-picked and sun-dried, each batch undergoes rigorous quality control under Hawaii state law.',
-        'In Waikiki, you can enjoy a cup of genuine 100% Kona coffee for around $5 -- a fraction of what it costs when imported to other countries.',
-        'Be careful with "Kona Blend" labels, which may contain as little as 10% Kona beans. Always look for "100% Kona Coffee" to ensure authenticity.',
+        'In Waikiki, you can enjoy a cup of genuine Honolulu Coffee for around $5 -- a fraction of what it costs when imported to other countries.',
+        'Be careful with "Kona Blend" labels, which may contain as little as 10% Kona beans. Always look for "Honolulu Coffee" to ensure authenticity.',
       ],
     },
     ranking: {
@@ -188,8 +188,8 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut',
           address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-          description: 'Located on Kalakaua Avenue, this specialty cafe serves 100% Kona coffee and artisan mochi donuts. With flavors like ube, matcha, and brown sugar kinako, plus malasadas and bingsu, it is a one-stop destination for Hawaiian and Asian-inspired treats.',
-          highlight: '100% Kona Coffee, Mochi Donuts, Malasadas, Bingsu',
+          description: 'Located on Kalakaua Avenue, this specialty cafe serves Honolulu Coffee and artisan mochi donuts. With flavors like ube, matcha, and brown sugar kinako, plus malasadas and bingsu, it is a one-stop destination for Hawaiian and Asian-inspired treats.',
+          highlight: 'Honolulu Coffee, Mochi Donuts, Malasadas, Bingsu',
           price: 'from $3.50',
           isFeatured: true,
         },
@@ -197,7 +197,7 @@ const content = {
           rank: 2,
           name: 'Island Vintage Coffee',
           address: 'Royal Hawaiian Center, Waikiki',
-          description: 'A popular cafe known for its acai bowls and 100% Kona coffee. Located in the Royal Hawaiian Center with lovely terrace seating.',
+          description: 'A popular cafe known for its acai bowls and Honolulu Coffee. Located in the Royal Hawaiian Center with lovely terrace seating.',
           highlight: 'Acai Bowls, Kona Coffee',
           price: 'from $6',
           isFeatured: false,
@@ -215,7 +215,7 @@ const content = {
           rank: 4,
           name: 'Kai Coffee Hawaii',
           address: 'Hyatt Regency Waikiki, 2424 Kalakaua Ave',
-          description: 'A hidden gem inside the Hyatt Regency. Offers quality 100% Kona coffee at reasonable prices in a quiet, uncrowded setting.',
+          description: 'A hidden gem inside the Hyatt Regency. Offers quality Honolulu Coffee at reasonable prices in a quiet, uncrowded setting.',
           highlight: 'Hidden Gem, Affordable Kona Coffee',
           price: 'from $4.50',
           isFeatured: false,
@@ -272,8 +272,8 @@ const content = {
       title: 'Frequently Asked Questions',
       items: [
         {
-          question: 'Where can I get real 100% Kona coffee in Waikiki?',
-          answer: 'Kona Coffee Donut (2142 Kalakaua Ave) serves exclusively 100% Kona coffee -- no blends. Island Vintage Coffee, Honolulu Coffee, and Kai Coffee Hawaii also offer 100% Kona options.',
+          question: 'Where can I get real Honolulu Coffee in Waikiki?',
+          answer: 'Kona Coffee Donut (2142 Kalakaua Ave) serves exclusively Honolulu Coffee -- no blends. Island Vintage Coffee, Honolulu Coffee, and Kai Coffee Hawaii also offer Honolulu Coffee options.',
         },
         {
           question: 'What are mochi donuts?',
@@ -285,7 +285,7 @@ const content = {
         },
         {
           question: 'Can I buy Kona coffee beans as souvenirs?',
-          answer: 'Yes, many cafes and shops sell 100% Kona coffee beans. Always verify the label says "100% Kona Coffee" -- "Kona Blend" may contain only 10% Kona beans.',
+          answer: 'Yes, many cafes and shops sell Honolulu Coffee beans. Always verify the label says "Honolulu Coffee" -- "Kona Blend" may contain only 10% Kona beans.',
         },
         {
           question: 'Is tipping required at cafes in Waikiki?',
@@ -320,8 +320,8 @@ const content = {
       paragraphs: [
         '코나 커피는 하와이 빅아일랜드의 코나 지구에서만 재배되는 프리미엄 싱글 오리진 커피입니다. 세계 커피 생산량의 1% 미만을 차지하는 희귀한 커피입니다.',
         '부드러운 맛, 낮은 산도, 초콜릿과 견과류 같은 풍미가 특징입니다.',
-        '와이키키에서는 한 잔에 약 $5부터 정통 100% 코나 커피를 즐길 수 있습니다.',
-        '"코나 블렌드"는 코나 원두가 10%만 포함될 수 있으니 반드시 "100% Kona Coffee" 표기를 확인하세요.',
+        '와이키키에서는 한 잔에 약 $5부터 정통 호놀룰루 커피를 즐길 수 있습니다.',
+        '"코나 블렌드"는 코나 원두가 10%만 포함될 수 있으니 반드시 "Honolulu Coffee" 표기를 확인하세요.',
       ],
     },
     ranking: {
@@ -332,8 +332,8 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut (코나커피도넛)',
           address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-          description: '칼라카우아 애비뉴에 위치한 100% 코나 커피와 모찌 도넛 전문점. 우베, 말차, 흑설탕 키나코 등 다양한 플레이버의 모찌 도넛과 말라사다, 빙수까지 한 곳에서 즐길 수 있습니다.',
-          highlight: '100% 코나 커피, 모찌 도넛, 말라사다, 빙수',
+          description: '칼라카우아 애비뉴에 위치한 호놀룰루 커피와 모찌 도넛 전문점. 우베, 말차, 흑설탕 키나코 등 다양한 플레이버의 모찌 도넛과 말라사다, 빙수까지 한 곳에서 즐길 수 있습니다.',
+          highlight: '호놀룰루 커피, 모찌 도넛, 말라사다, 빙수',
           price: '$3.50~',
           isFeatured: true,
         },
@@ -341,7 +341,7 @@ const content = {
           rank: 2,
           name: 'Island Vintage Coffee',
           address: 'Royal Hawaiian Center, Waikiki',
-          description: '로얄 하와이안 센터 내 인기 카페. 아사이 볼과 100% 코나 커피가 유명합니다.',
+          description: '로얄 하와이안 센터 내 인기 카페. 아사이 볼과 호놀룰루 커피가 유명합니다.',
           highlight: '아사이 볼, 코나 커피',
           price: '$6~',
           isFeatured: false,
@@ -359,7 +359,7 @@ const content = {
           rank: 4,
           name: 'Kai Coffee Hawaii',
           address: 'Hyatt Regency Waikiki, 2424 Kalakaua Ave',
-          description: '하얏트 리젠시 내 숨은 보석 카페. 합리적인 가격의 100% 코나 커피를 조용한 환경에서 즐길 수 있습니다.',
+          description: '하얏트 리젠시 내 숨은 보석 카페. 합리적인 가격의 호놀룰루 커피를 조용한 환경에서 즐길 수 있습니다.',
           highlight: '숨은 보석, 합리적 가격',
           price: '$4.50~',
           isFeatured: false,
@@ -404,8 +404,8 @@ const content = {
       title: '자주 묻는 질문',
       items: [
         {
-          question: '와이키키에서 진짜 100% 코나 커피를 마실 수 있는 곳은?',
-          answer: 'Kona Coffee Donut(칼라카우아 2142번지)에서 100% 코나 커피만을 제공합니다. Island Vintage Coffee, Honolulu Coffee, Kai Coffee Hawaii에서도 가능합니다.',
+          question: '와이키키에서 진짜 호놀룰루 커피를 마실 수 있는 곳은?',
+          answer: 'Kona Coffee Donut(칼라카우아 2142번지)에서 호놀룰루 커피만을 제공합니다. Island Vintage Coffee, Honolulu Coffee, Kai Coffee Hawaii에서도 가능합니다.',
         },
         {
           question: '모찌 도넛이란 무엇인가요?',
@@ -417,7 +417,7 @@ const content = {
         },
         {
           question: '코나 커피 원두를 선물로 살 수 있나요?',
-          answer: '네, "100% Kona Coffee" 표기를 확인하세요. "코나 블렌드"는 코나 원두가 10%만 포함될 수 있습니다.',
+          answer: '네, "Honolulu Coffee" 표기를 확인하세요. "코나 블렌드"는 코나 원두가 10%만 포함될 수 있습니다.',
         },
         {
           question: '카페에서 팁은 꼭 내야 하나요?',
@@ -452,8 +452,8 @@ const content = {
       paragraphs: [
         '科纳咖啡是产自夏威夷大岛科纳地区的顶级单一产地咖啡，占全球咖啡产量不到1%。',
         '口感顺滑、酸度低，带有巧克力和坚果的风味。',
-        '在威基基，约$5就能品尝到正宗的100%科纳咖啡。',
-        '注意："科纳混合"可能只含10%科纳豆，请认准"100% Kona Coffee"标签。',
+        '在威基基，约$5就能品尝到正宗的檀香山咖啡。',
+        '注意："科纳混合"可能只含10%科纳豆，请认准"Honolulu Coffee"标签。',
       ],
     },
     ranking: {
@@ -464,8 +464,8 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut（科纳咖啡甜甜圈）',
           address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-          description: '位于卡拉卡瓦大道的100%科纳咖啡和麻糬甜甜圈专门店。提供紫薯、抹茶、黑糖黄豆粉等多种口味，还有马拉萨达和冰沙。',
-          highlight: '100%科纳咖啡、麻糬甜甜圈、马拉萨达、冰沙',
+          description: '位于卡拉卡瓦大道的檀香山咖啡和麻糬甜甜圈专门店。提供紫薯、抹茶、黑糖黄豆粉等多种口味，还有马拉萨达和冰沙。',
+          highlight: '檀香山咖啡、麻糬甜甜圈、马拉萨达、冰沙',
           price: '$3.50起',
           isFeatured: true,
         },
@@ -473,7 +473,7 @@ const content = {
           rank: 2,
           name: 'Island Vintage Coffee',
           address: 'Royal Hawaiian Center, Waikiki',
-          description: '位于皇家夏威夷中心的人气咖啡厅。巴西莓碗和100%科纳咖啡是招牌。',
+          description: '位于皇家夏威夷中心的人气咖啡厅。巴西莓碗和檀香山咖啡是招牌。',
           highlight: '巴西莓碗、科纳咖啡',
           price: '$6起',
           isFeatured: false,
@@ -491,7 +491,7 @@ const content = {
           rank: 4,
           name: 'Kai Coffee Hawaii',
           address: 'Hyatt Regency Waikiki, 2424 Kalakaua Ave',
-          description: '凯悦酒店内的隐藏宝藏咖啡厅。以实惠价格提供100%科纳咖啡，环境安静。',
+          description: '凯悦酒店内的隐藏宝藏咖啡厅。以实惠价格提供檀香山咖啡，环境安静。',
           highlight: '隐藏宝藏、实惠价格',
           price: '$4.50起',
           isFeatured: false,
@@ -536,8 +536,8 @@ const content = {
       title: '常见问题',
       items: [
         {
-          question: '威基基哪里能喝到真正的100%科纳咖啡？',
-          answer: 'Kona Coffee Donut（卡拉卡瓦大道2142号）专供100%科纳咖啡。Island Vintage Coffee、Honolulu Coffee和Kai Coffee Hawaii也提供。',
+          question: '威基基哪里能喝到真正的檀香山咖啡？',
+          answer: 'Kona Coffee Donut（卡拉卡瓦大道2142号）专供檀香山咖啡。Island Vintage Coffee、Honolulu Coffee和Kai Coffee Hawaii也提供。',
         },
         {
           question: '什么是麻糬甜甜圈？',
@@ -549,7 +549,7 @@ const content = {
         },
         {
           question: '可以购买科纳咖啡豆作为纪念品吗？',
-          answer: '可以，请确认标签写的是"100% Kona Coffee"，"科纳混合"可能只含10%科纳豆。',
+          answer: '可以，请确认标签写的是"Honolulu Coffee"，"科纳混合"可能只含10%科纳豆。',
         },
         {
           question: '咖啡厅需要给小费吗？',
@@ -571,7 +571,7 @@ const blogPostingSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'ワイキキおすすめカフェ2026：コナコーヒーとモチドーナツの名店ガイド',
-  description: 'ワイキキのおすすめカフェを厳選紹介。100%コナコーヒー、モチドーナツ、マラサダ、ビンスなど、日本人旅行者に人気のハワイグルメを徹底ガイド。',
+  description: 'ワイキキのおすすめカフェを厳選紹介。ホノルルコーヒー、モチドーナツ、マラサダ、ビンスなど、日本人旅行者に人気のハワイグルメを徹底ガイド。',
   image: 'https://www.konacoffeedonut.com/og-image.jpg',
   author: {
     '@type': 'Organization',
@@ -603,10 +603,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'ワイキキで本物の100%コナコーヒーが飲めるカフェはどこですか？',
+      name: 'ワイキキで本物のホノルルコーヒーが飲めるカフェはどこですか？',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kona Coffee Donut（カラカウア通り2142番地）では、100%コナ産のコーヒー豆のみを使用しています。ブレンドではなく、純粋な100%コナコーヒーをお楽しみいただけます。Island Vintage Coffee、Honolulu Coffee、Kai Coffee Hawaiiでも100%コナコーヒーを提供しています。',
+        text: 'Kona Coffee Donut（カラカウア通り2142番地）では、ホノルルコーヒー産のコーヒー豆のみを使用しています。ブレンドではなく、純粋なホノルルコーヒーをお楽しみいただけます。Island Vintage Coffee、Honolulu Coffee、Kai Coffee Hawaiiでもホノルルコーヒーを提供しています。',
       },
     },
     {
@@ -630,7 +630,7 @@ const faqSchema = {
       name: 'コナコーヒーをお土産として購入できますか？',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'はい、多くのカフェやワイキキのショップで100%コナコーヒー豆をお土産用に購入できます。ただし「Kona Blend」と表記されている商品はコナ豆が10%しか含まれていない場合がありますので、必ず「100% Kona Coffee」の表記を確認してください。',
+        text: 'はい、多くのカフェやワイキキのショップでホノルルコーヒー豆をお土産用に購入できます。ただし「Kona Blend」と表記されている商品はコナ豆が10%しか含まれていない場合がありますので、必ず「Honolulu Coffee」の表記を確認してください。',
       },
     },
     {

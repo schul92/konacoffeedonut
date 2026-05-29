@@ -62,7 +62,7 @@ export async function generateMetadata({
     referrer: 'origin-when-cross-origin',
     keywords: [
       // Kona Coffee - Primary Keywords
-      'kona coffee', 'authentic kona coffee', 'hawaiian kona coffee',
+      'kona coffee', 'honolulu coffee', 'hawaiian kona coffee',
       'premium kona coffee', 'kona coffee beans', 'kona coffee waikiki',
       'best kona coffee hawaii', 'where to buy kona coffee', 'kona coffee near me',
       // Location-based "Near Me" searches
@@ -93,7 +93,7 @@ export async function generateMetadata({
       // High-Priority Target Keywords (Low Difficulty)
       'fresh donuts', 'fresh donuts hawaii', 'fresh donuts waikiki',
       'gourmet donuts', 'gourmet donuts near me', 'gourmet coffee and donuts',
-      '100% kona coffee', 'authentic kona coffee', 'best kona coffee',
+      'honolulu coffee waikiki', 'honolulu coffee', 'best kona coffee',
       'hawaiian bakery', 'hawaiian bakery waikiki', 'hawaiian pastries',
       'kona coffee donuts', 'hawaiian coffee and donuts', 'coffee donut gift',
       // Japanese Keywords - "Near Me" searches (近くの = near me)
@@ -105,7 +105,7 @@ export async function generateMetadata({
       // Japanese High-Priority Keywords (揚げたてドーナツ = fresh donuts, 高級ドーナツ = gourmet donuts)
       '揚げたてドーナツ', '焼きたてドーナツ', '新鮮なドーナツ', 'できたてドーナツ',
       '高級ドーナツ', 'グルメドーナツ', 'プレミアムドーナツ', '職人ドーナツ',
-      '100%コナコーヒー', '本格コナコーヒー', 'ハワイアンベーカリー',
+      'ホノルルコーヒー', '本格コナコーヒー', 'ハワイアンベーカリー',
       'ハワイアンペストリー', 'コナコーヒードーナツ', 'ハワイお土産ドーナツ',
       // Korean Keywords - "Near Me" searches (근처 = nearby, 내 근처 = near me)
       '코나 커피', '와이키키 도넛', '호놀룰루 커피', '모찌 도넛',
@@ -116,7 +116,7 @@ export async function generateMetadata({
       // Korean High-Priority Keywords (갓 구운 도넛 = fresh donuts, 고급 도넛 = gourmet donuts)
       '갓 구운 도넛', '신선한 도넛', '매일 만드는 도넛', '수제 도넛',
       '고급 도넛', '프리미엄 도넛', '장인 도넛', '아티산 도넛',
-      '100% 코나 커피', '정통 코나 커피', '하와이안 베이커리',
+      '호놀룰루 커피', '정통 코나 커피', '하와이안 베이커리',
       '하와이 빵집', '코나 커피 도넛', '하와이 선물 도넛', '하와이 기념품',
       // Chinese Keywords - "Near Me" searches (附近 = nearby)
       '科纳咖啡', '威基基甜甜圈', '檀香山咖啡', '麻糬甜甜圈',
@@ -127,7 +127,7 @@ export async function generateMetadata({
       // Chinese High-Priority Keywords (新鲜甜甜圈 = fresh donuts, 高级甜甜圈 = gourmet donuts)
       '新鲜甜甜圈', '现做甜甜圈', '每日新鲜甜甜圈', '手工甜甜圈',
       '高级甜甜圈', '精品甜甜圈', '美食家甜甜圈', '工匠甜甜圈',
-      '100%科纳咖啡', '正宗科纳咖啡', '夏威夷面包店', '夏威夷烘焙店',
+      '檀香山咖啡', '正宗科纳咖啡', '夏威夷面包店', '夏威夷烘焙店',
       '夏威夷糕点', '科纳咖啡甜甜圈', '夏威夷伴手礼', '威基基特产',
       // Spanish Keywords - "Near Me" searches (cerca de mí = near me)
       'café kona', 'donuts waikiki', 'café honolulu', 'donuts de mochi',
@@ -138,7 +138,7 @@ export async function generateMetadata({
       // Spanish High-Priority Keywords (donuts frescos = fresh donuts, donuts gourmet = gourmet donuts)
       'donuts frescos', 'donuts recién hechos', 'donuts del día', 'donuts hechos a mano',
       'donuts gourmet', 'donuts premium', 'donuts de lujo', 'donuts artesanos',
-      '100% café kona', 'café kona auténtico', 'panadería hawaiana',
+      'café honolulu waikiki', 'café kona auténtico', 'panadería hawaiana',
       'repostería hawaiana', 'café kona y donuts', 'regalos de hawaii', 'souvenirs waikiki',
     ],
     authors: [{ name: 'Kona Coffee Donut', url: 'https://www.konacoffeedonut.com' }],

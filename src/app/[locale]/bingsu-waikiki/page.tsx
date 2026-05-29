@@ -117,7 +117,7 @@ const content = {
           name: 'The Waikiki Chill',
           items: 'Injeolmi Bingsu + Iced Kona Latte',
           description:
-            'The nutty sweetness of injeolmi meets the smooth richness of 100% Kona coffee. Our most popular pairing — the roasted soybean and coffee flavors complement each other beautifully.',
+            'The nutty sweetness of injeolmi meets the smooth richness of Honolulu Coffee. Our most popular pairing — the roasted soybean and coffee flavors complement each other beautifully.',
         },
         {
           name: 'Tropical Duo',
@@ -244,7 +244,7 @@ const content = {
           name: 'ワイキキ チル',
           items: 'インジョルミビンス + アイスコナラテ',
           description:
-            'きな粉の香ばしさと100%コナコーヒーの豊かな味わいが出会う、一番人気の組み合わせ。',
+            'きな粉の香ばしさとホノルルコーヒーの豊かな味わいが出会う、一番人気の組み合わせ。',
         },
         {
           name: 'トロピカルデュオ',
@@ -371,7 +371,7 @@ const content = {
           name: '와이키키 칠',
           items: '인절미 빙수 + 아이스 코나 라떼',
           description:
-            '인절미의 고소함과 100% 코나 커피의 깊은 풍미가 만나는 최고의 조합. 콩고물과 커피 향이 놀랍도록 잘 어울립니다.',
+            '인절미의 고소함과 호놀룰루 커피의 깊은 풍미가 만나는 최고의 조합. 콩고물과 커피 향이 놀랍도록 잘 어울립니다.',
         },
         {
           name: '트로피컬 듀오',
@@ -496,7 +496,7 @@ const content = {
           name: '威基基清凉组合',
           items: '年糕黄豆粉Bingsu + 冰科纳拿铁',
           description:
-            '黄豆粉的醇香与100%科纳咖啡的浓郁完美交融。最受欢迎的搭配。',
+            '黄豆粉的醇香与檀香山咖啡的浓郁完美交融。最受欢迎的搭配。',
         },
         {
           name: '热带双享',

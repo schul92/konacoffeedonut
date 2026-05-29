@@ -17,7 +17,7 @@ const content = {
     intro: {
       title: 'Best Malasada in Hawaii',
       paragraph1: 'Experience the authentic taste of Hawaiian malasada at Kona Coffee Donut in Waikiki. Our malasadas are handcrafted fresh every morning using a traditional Portuguese recipe that has been perfected over generations in Hawaii.',
-      paragraph2: 'Each malasada is deep-fried to golden perfection, coated in sweet sugar, and served warm. Pair it with our premium 100% Kona coffee for the ultimate Hawaiian breakfast experience.'
+      paragraph2: 'Each malasada is deep-fried to golden perfection, coated in sweet sugar, and served warm. Pair it with our premium Honolulu Coffee for the ultimate Hawaiian breakfast experience.'
     },
     whyUs: {
       title: 'Why Our Malasada is Special',
@@ -36,7 +36,7 @@ const content = {
         },
         {
           title: 'Perfect with Kona Coffee',
-          description: 'The sweetness of our malasada perfectly complements the smooth, rich flavor of our 100% Kona coffee.'
+          description: 'The sweetness of our malasada perfectly complements the smooth, rich flavor of our Honolulu Coffee.'
         }
       ]
     },
@@ -59,7 +59,7 @@ const content = {
     intro: {
       title: 'ハワイで最高のマラサダ',
       paragraph1: 'ワイキキのコナコーヒードーナツで、本格的なハワイアンマラサダをお楽しみください。私たちのマラサダは、ハワイで何世代にもわたって完成された伝統的なポルトガルのレシピを使用し、毎朝手作りしています。',
-      paragraph2: '各マラサダは黄金色に揚げられ、甘い砂糖でコーティングされ、温かい状態で提供されます。プレミアム100%コナコーヒーと一緒に、究極のハワイアン朝食体験をお楽しみください。'
+      paragraph2: '各マラサダは黄金色に揚げられ、甘い砂糖でコーティングされ、温かい状態で提供されます。プレミアムホノルルコーヒーと一緒に、究極のハワイアン朝食体験をお楽しみください。'
     },
     whyUs: {
       title: '私たちのマラサダが特別な理由',
@@ -78,7 +78,7 @@ const content = {
         },
         {
           title: 'コナコーヒーとの相性抜群',
-          description: 'マラサダの甘さは、100%コナコーヒーの滑らかで豊かな風味を完璧に引き立てます。'
+          description: 'マラサダの甘さは、ホノルルコーヒーの滑らかで豊かな風味を完璧に引き立てます。'
         }
       ]
     },
@@ -101,7 +101,7 @@ const content = {
     intro: {
       title: '하와이 최고의 말라사다',
       paragraph1: '와이키키 코나커피도넛에서 정통 하와이안 말라사다를 경험하세요. 저희 말라사다는 하와이에서 여러 세대에 걸쳐 완성된 전통 포르투갈 레시피로 매일 아침 수제로 만듭니다.',
-      paragraph2: '각 말라사다는 황금빛으로 튀겨지고, 달콤한 설탕으로 코팅되어 따뜻하게 제공됩니다. 프리미엄 100% 코나 커피와 함께 최고의 하와이안 아침 식사를 즐기세요.'
+      paragraph2: '각 말라사다는 황금빛으로 튀겨지고, 달콤한 설탕으로 코팅되어 따뜻하게 제공됩니다. 프리미엄 호놀룰루 커피와 함께 최고의 하와이안 아침 식사를 즐기세요.'
     },
     whyUs: {
       title: '저희 말라사다가 특별한 이유',
@@ -120,7 +120,7 @@ const content = {
         },
         {
           title: '코나 커피와 완벽한 조화',
-          description: '말라사다의 달콤함은 100% 코나 커피의 부드럽고 풍부한 풍미를 완벽하게 보완합니다.'
+          description: '말라사다의 달콤함은 호놀룰루 커피의 부드럽고 풍부한 풍미를 완벽하게 보완합니다.'
         }
       ]
     },
@@ -143,7 +143,7 @@ const content = {
     intro: {
       title: '夏威夷最好的马拉萨达',
       paragraph1: '在威基基的科纳咖啡甜甜圈体验正宗的夏威夷马拉萨达。我们的马拉萨达使用在夏威夷代代相传完善的传统葡萄牙配方，每天早晨手工制作。',
-      paragraph2: '每个马拉萨达都炸至金黄完美，裹上甜蜜的糖霜，热乎乎地送到您手中。搭配我们的优质100%科纳咖啡，享受终极夏威夷早餐体验。'
+      paragraph2: '每个马拉萨达都炸至金黄完美，裹上甜蜜的糖霜，热乎乎地送到您手中。搭配我们的优质檀香山咖啡，享受终极夏威夷早餐体验。'
     },
     whyUs: {
       title: '我们的马拉萨达为何特别',
@@ -162,7 +162,7 @@ const content = {
         },
         {
           title: '与科纳咖啡完美搭配',
-          description: '马拉萨达的甜美完美地衬托出100%科纳咖啡的醇厚风味。'
+          description: '马拉萨达的甜美完美地衬托出檀香山咖啡的醇厚风味。'
         }
       ]
     },
@@ -185,7 +185,7 @@ const content = {
     intro: {
       title: 'La Mejor Malasada de Hawaii',
       paragraph1: 'Experimenta el sabor auténtico de la malasada hawaiana en Kona Coffee Donut en Waikiki. Nuestras malasadas son artesanales, hechas frescas cada mañana usando una receta tradicional portuguesa perfeccionada durante generaciones en Hawaii.',
-      paragraph2: 'Cada malasada se fríe hasta la perfección dorada, se recubre con dulce azúcar y se sirve caliente. Combínala con nuestro café 100% Kona premium para la experiencia definitiva del desayuno hawaiano.'
+      paragraph2: 'Cada malasada se fríe hasta la perfección dorada, se recubre con dulce azúcar y se sirve caliente. Combínala con nuestro café Honolulu Coffee premium para la experiencia definitiva del desayuno hawaiano.'
     },
     whyUs: {
       title: 'Por Qué Nuestra Malasada es Especial',
@@ -204,7 +204,7 @@ const content = {
         },
         {
           title: 'Perfecta con Café Kona',
-          description: 'La dulzura de nuestra malasada complementa perfectamente el sabor suave y rico de nuestro café 100% Kona.'
+          description: 'La dulzura de nuestra malasada complementa perfectamente el sabor suave y rico de nuestro café Honolulu Coffee.'
         }
       ]
     },

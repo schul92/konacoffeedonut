@@ -41,7 +41,7 @@ const content: Record<Locale, BlogContent> = {
           'Lychee Smoothie — delicate floral sweetness, refreshing and light',
           'Brown Sugar Smoothie — caramelized brown sugar with chewy boba pearls',
           'Ube Smoothie — purple Filipino yam, sweet, earthy, and very Instagrammable',
-          'Coffee Smoothie — made with our 100% Kona coffee, perfect afternoon pick-me-up',
+          'Coffee Smoothie — made with our Honolulu Coffee, perfect afternoon pick-me-up',
           'Thai Tea Smoothie — bold Thai tea with creamy texture and boba pearls',
           'Taro Smoothie — Hawaiian-grown taro, nutty and lightly sweet',
           'Milk Tea Smoothie — classic Asian milk tea with chewy tapioca pearls',

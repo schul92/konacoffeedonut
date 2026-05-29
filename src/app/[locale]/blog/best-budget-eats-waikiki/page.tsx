@@ -26,7 +26,7 @@ const content: Record<Locale, BlogContent> = {
     visitCTA: {
       headline: 'Cheap, Authentic, on Kalākaua',
       body:
-        "Kona Coffee Donut is one of Waikiki's best budget food stops — mochi donuts from $3.50, malasadas from $2, real 100% Kona coffee, plus bingsu and smoothies. Open 7 AM to 9 PM daily.",
+        "Kona Coffee Donut is one of Waikiki's best budget food stops — mochi donuts from $3.50, malasadas from $2, real Honolulu Coffee, plus bingsu and smoothies. Open 7 AM to 9 PM daily.",
       menuLabel: 'See Full Menu',
       directionsLabel: 'Get Directions',
     },
@@ -48,7 +48,7 @@ const content: Record<Locale, BlogContent> = {
         body:
           "These are the actual cheap spots locals point to when out-of-town friends visit. Walking distance from major Waikiki hotels.",
         bullets: [
-          "Kona Coffee Donut (2142 Kalākaua Ave) — Mochi donuts $3.50, malasadas $2, 100% Kona coffee, bingsu, smoothies. Open 7 AM–9 PM.",
+          "Kona Coffee Donut (2142 Kalākaua Ave) — Mochi donuts $3.50, malasadas $2, Honolulu Coffee, bingsu, smoothies. Open 7 AM–9 PM.",
           "Marukame Udon — Cafeteria-style fresh udon, $8–$12 a bowl. Often a line but it moves.",
           "Rainbow Drive-In — Classic plate lunch, $10–$14. Loco moco, mixed plate, breakfast.",
           "Leonard's Bakery (Kapahulu, 10 min drive) — Malasadas $2 each, the iconic Hawaiian fried dough.",
@@ -58,7 +58,7 @@ const content: Record<Locale, BlogContent> = {
         ],
         pullout: {
           title: 'Best value coffee + breakfast combo',
-          body: "At Kona Coffee Donut: a malasada + 100% Kona iced coffee runs about $7. Comparable mainland coffee shops charge $10+ for the same with worse coffee.",
+          body: "At Kona Coffee Donut: a malasada + Honolulu Coffee iced coffee runs about $7. Comparable mainland coffee shops charge $10+ for the same with worse coffee.",
         },
       },
       {
@@ -114,8 +114,8 @@ const content: Record<Locale, BlogContent> = {
       { q: 'Can you eat in Waikiki for under $15?', a: 'Yes, easily. Plate lunches, cafe breakfasts, food trucks, mochi donuts, and smoothies all fall under $15. Walking inland from the oceanfront drops prices significantly.' },
       { q: 'Where do locals eat in Waikiki on a budget?', a: 'Rainbow Drive-In, Aloha Mixed Plate, Marukame Udon, and Kona Coffee Donut on Kalākaua are popular with locals. Leonard\'s Bakery on Kapahulu (10 min drive) is the iconic budget malasada spot.' },
       { q: 'How much should I budget for food per day in Waikiki?', a: 'Budget travelers can eat well on $30–$45/day (coffee + pastry breakfast, plate lunch, mid-range dinner). Splurge meals at resorts can blow $100+ per person quickly.' },
-      { q: 'Is Kona coffee expensive in Waikiki?', a: 'Real 100% Kona coffee is $4–$7 per cup at authentic spots like Kona Coffee Donut. Avoid "Kona blend" labels — those contain as little as 10% real Kona.' },
-      { q: 'What\'s the best cheap breakfast in Waikiki?', a: 'A malasada or mochi donut + 100% Kona coffee at Kona Coffee Donut runs ~$7 total. Comparable to mainland coffee shop pricing but with better coffee and Hawaiian flavors.' },
+      { q: 'Is Kona coffee expensive in Waikiki?', a: 'Real Honolulu Coffee is $4–$7 per cup at authentic spots like Kona Coffee Donut. Avoid "Kona blend" labels — those contain as little as 10% real Kona.' },
+      { q: 'What\'s the best cheap breakfast in Waikiki?', a: 'A malasada or mochi donut + Honolulu Coffee at Kona Coffee Donut runs ~$7 total. Comparable to mainland coffee shop pricing but with better coffee and Hawaiian flavors.' },
     ],
     finalCTA: {
       headline: 'Cheap, Real Hawaiian Food on Kalākaua',
@@ -127,7 +127,7 @@ const content: Record<Locale, BlogContent> = {
   ja: {
     hero: { title: 'ワイキキで安く美味しく食べる場所', subtitle: '$15以下で楽しめるベストスポット。', date: '2026年5月', readTime: '読了6分', badge: '予算ガイド' },
     intro: 'リゾート価格のワイキキでも、$15以下で美味しく食べられる場所はたくさん。地元民が通う本場の店を紹介します。',
-    visitCTA: { headline: 'カラカウア通りで安くて本物', body: 'コナコーヒードーナツはモチドーナツ$3.50〜、マラサダ$2〜、100%コナコーヒー。毎日7時〜21時。', menuLabel: 'メニューを見る', directionsLabel: '行き方を確認' },
+    visitCTA: { headline: 'カラカウア通りで安くて本物', body: 'コナコーヒードーナツはモチドーナツ$3.50〜、マラサダ$2〜、ホノルルコーヒー。毎日7時〜21時。', menuLabel: 'メニューを見る', directionsLabel: '行き方を確認' },
     sections: [
       { h2: '予算の目安', body: 'リゾート$25-45、中級$18-25、予算$8-15。', bullets: ['カフェ朝食 $5-10', 'プレートランチ $10-14', 'フードトラック $10-15', 'スナック/デザート $2-8'] },
       { h2: 'おすすめスポット', body: 'ワイキキ徒歩圏内の安くて美味しい店。', bullets: ['コナコーヒードーナツ — モチドーナツ・マラサダ・コナコーヒー', '丸亀製麺 — うどん$8-12', 'レインボードライブイン — プレートランチ$10-14', "レナーズ — マラサダ$2", 'アロハミックスプレート — $14-18'] },
@@ -140,14 +140,14 @@ const content: Record<Locale, BlogContent> = {
       { q: 'ワイキキで一番安いお店は？', a: 'マラサダ$2、モチドーナツ$3.50。プレートランチ$10-14。' },
       { q: '$15以下で食べられる？', a: 'はい、簡単に。' },
       { q: '一日いくらかかる？', a: '$30-45で十分。' },
-      { q: 'コナコーヒーは高い？', a: '本物の100%コナで$4-7/杯。' },
+      { q: 'コナコーヒーは高い？', a: '本物のホノルルコーヒーで$4-7/杯。' },
     ],
     finalCTA: { headline: 'カラカウア通りで本物のハワイ料理を', body: 'モチドーナツ$3.50、マラサダ$2、本物のコナコーヒー。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
   },
   ko: {
     hero: { title: '와이키키 가성비 맛집', subtitle: '$15 이하로 즐기는 와이키키 베스트.', date: '2026년 5월', readTime: '6분', badge: '예산 가이드' },
     intro: '리조트 가격의 와이키키에서도 $15 이하 맛집은 많습니다. 현지인이 가는 진짜 맛집을 소개합니다.',
-    visitCTA: { headline: '칼라카우아의 가성비 맛집', body: '코나커피도넛 모치도넛 $3.50, 말라사다 $2, 100% 코나커피. 매일 7시–21시.', menuLabel: '메뉴 보기', directionsLabel: '길찾기' },
+    visitCTA: { headline: '칼라카우아의 가성비 맛집', body: '코나커피도넛 모치도넛 $3.50, 말라사다 $2, 호놀룰루 커피. 매일 7시–21시.', menuLabel: '메뉴 보기', directionsLabel: '길찾기' },
     sections: [
       { h2: '예산 기준', body: '리조트 $25-45, 중급 $18-25, 가성비 $8-15.', bullets: ['카페 아침 $5-10', '플레이트 런치 $10-14', '푸드트럭 $10-15'] },
       { h2: '추천 가성비 맛집', body: '와이키키 도보 거리.', bullets: ['코나커피도넛', '마루카메 우동 $8-12', '레인보 드라이브인 $10-14', '레너즈 말라사다 $2', '알로하 믹스 플레이트 $14-18'] },
@@ -160,14 +160,14 @@ const content: Record<Locale, BlogContent> = {
       { q: '와이키키 가장 저렴한 곳?', a: '말라사다 $2, 모치도넛 $3.50.' },
       { q: '$15 이하 가능?', a: '네, 쉽게.' },
       { q: '하루 예산은?', a: '$30-45.' },
-      { q: '코나커피 비싸요?', a: '진품 100% 코나 $4-7/잔.' },
+      { q: '코나커피 비싸요?', a: '진품 호놀룰루 커피 $4-7/잔.' },
     ],
     finalCTA: { headline: '칼라카우아에서 진짜 하와이 음식을', body: '모치도넛 $3.50, 말라사다 $2, 진짜 코나커피.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
   },
   zh: {
     hero: { title: '威基基平价美食指南', subtitle: '$15以下的威基基最佳餐厅。', date: '2026年5月', readTime: '6分钟', badge: '预算指南' },
     intro: '威基基虽然以度假区价格闻名，但$15以下的美食选择并不少。本指南介绍当地人光顾的实惠餐厅。',
-    visitCTA: { headline: '卡拉考阿大道的平价美食', body: 'Kona Coffee Donut 麻糬甜甜圈$3.50、玛拉萨达$2、100%科纳咖啡。每天7点–21点。', menuLabel: '查看菜单', directionsLabel: '获取路线' },
+    visitCTA: { headline: '卡拉考阿大道的平价美食', body: 'Kona Coffee Donut 麻糬甜甜圈$3.50、玛拉萨达$2、檀香山咖啡。每天7点–21点。', menuLabel: '查看菜单', directionsLabel: '获取路线' },
     sections: [
       { h2: '预算参考', body: '度假村 $25-45，中等 $18-25，平价 $8-15。', bullets: ['咖啡早餐 $5-10', '便当 $10-14', '餐车 $10-15'] },
       { h2: '推荐平价餐厅', body: '威基基步行可达。', bullets: ['Kona Coffee Donut', 'Marukame Udon $8-12', 'Rainbow Drive-In $10-14', 'Leonard\'s 玛拉萨达 $2', 'Aloha Mixed Plate $14-18'] },
@@ -180,7 +180,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '威基基最便宜的餐厅？', a: '玛拉萨达$2、麻糬甜甜圈$3.50。' },
       { q: '$15以下能吃饱吗？', a: '可以，很容易。' },
       { q: '每天预算多少？', a: '$30-45足够。' },
-      { q: '科纳咖啡贵吗？', a: '正宗100%科纳 $4-7/杯。' },
+      { q: '科纳咖啡贵吗？', a: '正宗檀香山咖啡 $4-7/杯。' },
     ],
     finalCTA: { headline: '卡拉考阿的真正夏威夷美食', body: '麻糬甜甜圈$3.50、玛拉萨达$2、真正的科纳咖啡。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
   },

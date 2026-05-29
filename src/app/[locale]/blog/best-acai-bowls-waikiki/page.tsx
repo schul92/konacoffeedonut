@@ -91,7 +91,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'What is acai?', a: 'Acai (ah-sigh-EE) is a small dark purple berry from the Amazon. It\'s blended frozen with banana into a thick smoothie-like base, then topped with granola, fruit, and honey. Rich in antioxidants, naturally tart.' },
       { q: 'Are acai bowls healthy?', a: 'Acai itself is very nutritious. Bowls can be healthy or not depending on toppings — granola + fruit + honey is balanced. Heavy add-ons like Nutella or whipped cream turn it into dessert.' },
       { q: 'Is acai bowl good for breakfast in Hawaii?', a: 'Yes — acai bowls are a Hawaii breakfast staple. Cold, refreshing, and filling without being heavy. Perfect before or after a beach day.' },
-      { q: 'Do acai bowls have caffeine?', a: 'Trace amounts only. If you want a caffeine kick, pair your acai bowl with a coffee. At Kona Coffee Donut you can pair with 100% Kona coffee for the full morning combo.' },
+      { q: 'Do acai bowls have caffeine?', a: 'Trace amounts only. If you want a caffeine kick, pair your acai bowl with a coffee. At Kona Coffee Donut you can pair with Honolulu Coffee for the full morning combo.' },
     ],
     finalCTA: {
       headline: 'Fresh Acai Bowl + Kona Coffee = Perfect Waikiki Morning',

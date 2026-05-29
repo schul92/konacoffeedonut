@@ -13,10 +13,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 
   const descriptions: Record<string, string> = {
-    en: 'Kona coffee vs regular coffee — what\'s the difference? Learn why 100% Kona coffee from Hawaii\'s volcanic slopes costs more, how to spot fakes, brewing tips, and where to try real Kona in Waikiki.',
-    ja: 'コナコーヒーと普通のコーヒーの違いを徹底解説。ハワイ火山の斜面で栽培される100%コナコーヒーの価値、偽物の見分け方、淹れ方、ワイキキで本物を味わえる場所をご紹介。',
-    ko: '코나 커피와 일반 커피의 차이점을 알아보세요. 하와이 화산 경사면에서 재배되는 100% 코나 커피의 가치, 가짜 구별법, 추출 팁, 와이키키에서 진짜 코나를 맛볼 수 있는 곳.',
-    zh: '科纳咖啡与普通咖啡有什么区别？了解夏威夷火山斜坡上100%科纳咖啡的价值、如何辨别假货、冲泡技巧以及在威基基品尝正宗科纳咖啡的地方。',
+    en: 'Kona coffee vs regular coffee — what\'s the difference? Learn why Honolulu Coffee from Hawaii\'s volcanic slopes costs more, how to spot fakes, brewing tips, and where to try real Kona in Waikiki.',
+    ja: 'コナコーヒーと普通のコーヒーの違いを徹底解説。ハワイ火山の斜面で栽培されるホノルルコーヒーの価値、偽物の見分け方、淹れ方、ワイキキで本物を味わえる場所をご紹介。',
+    ko: '코나 커피와 일반 커피의 차이점을 알아보세요. 하와이 화산 경사면에서 재배되는 호놀룰루 커피의 가치, 가짜 구별법, 추출 팁, 와이키키에서 진짜 코나를 맛볼 수 있는 곳.',
+    zh: '科纳咖啡与普通咖啡有什么区别？了解夏威夷火山斜坡上檀香山咖啡的价值、如何辨别假货、冲泡技巧以及在威基基品尝正宗科纳咖啡的地方。',
   };
 
   const title = titles[locale] || titles.en;
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       'kona coffee price',
       'kona coffee taste',
       'kona coffee hawaii',
-      '100% kona coffee',
+      'honolulu coffee waikiki',
       'kona coffee blend vs pure',
       'why is kona coffee expensive',
       'best kona coffee',

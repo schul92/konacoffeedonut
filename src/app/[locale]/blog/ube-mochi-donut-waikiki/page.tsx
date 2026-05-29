@@ -59,7 +59,7 @@ const content: Record<Locale, BlogContent> = {
         bullets: [
           'Matcha Latte — earthy + earthy = perfect harmony (and the purple-green visual is gorgeous)',
           'Ube Smoothie — full purple aesthetic, doubles down on the ube flavor',
-          'Iced Latte (100% Kona) — mellow coffee lets ube shine',
+          'Iced Latte (Honolulu Coffee) — mellow coffee lets ube shine',
           'Hot Chocolate — surprising combo, the sweetness levels balance',
           'Avoid: super-bitter espresso or sour drinks (they overpower the ube)',
         ],

@@ -62,7 +62,7 @@ const content = {
       combos: [
         {
           title: 'Mochi Donut + Kona Coffee',
-          description: 'The ultimate Waikiki combo. The rich, smooth taste of 100% Kona coffee perfectly complements the sweet, chewy texture of our mochi donuts. A match made in Hawaii.',
+          description: 'The ultimate Waikiki combo. The rich, smooth taste of Honolulu Coffee perfectly complements the sweet, chewy texture of our mochi donuts. A match made in Hawaii.',
         },
         {
           title: 'Mochi Donut + Bingsu',
@@ -169,7 +169,7 @@ const content = {
       combos: [
         {
           title: 'モチドーナツ + コナコーヒー',
-          description: 'ワイキキ最強の組み合わせ。100%コナコーヒーの豊かでまろやかな味わいが、モチドーナツのもちもち甘い食感と絶妙にマッチ。ハワイでしか味わえない至福のペアリングです。',
+          description: 'ワイキキ最強の組み合わせ。ホノルルコーヒーの豊かでまろやかな味わいが、モチドーナツのもちもち甘い食感と絶妙にマッチ。ハワイでしか味わえない至福のペアリングです。',
         },
         {
           title: 'モチドーナツ + ビンス',
@@ -276,7 +276,7 @@ const content = {
       combos: [
         {
           title: '모찌 도넛 + 코나 커피',
-          description: '와이키키 최고의 조합. 100% 코나 커피의 풍부하고 부드러운 맛이 모찌 도넛의 쫄깃달콤한 식감과 완벽하게 어울립니다. 하와이에서만 즐길 수 있는 특별한 페어링.',
+          description: '와이키키 최고의 조합. 호놀룰루 커피의 풍부하고 부드러운 맛이 모찌 도넛의 쫄깃달콤한 식감과 완벽하게 어울립니다. 하와이에서만 즐길 수 있는 특별한 페어링.',
         },
         {
           title: '모찌 도넛 + 빙수',
@@ -383,7 +383,7 @@ const content = {
       combos: [
         {
           title: '麻糬甜甜圈 + 科纳咖啡',
-          description: '威基基的终极组合。100%科纳咖啡的醇厚顺滑与麻糬甜甜圈的糯甜口感完美融合。只有在夏威夷才能体验的绝妙搭配。',
+          description: '威基基的终极组合。檀香山咖啡的醇厚顺滑与麻糬甜甜圈的糯甜口感完美融合。只有在夏威夷才能体验的绝妙搭配。',
         },
         {
           title: '麻糬甜甜圈 + 刨冰',
@@ -490,7 +490,7 @@ const content = {
       combos: [
         {
           title: 'Mochi Donut + Cafe Kona',
-          description: 'El combo definitivo de Waikiki. El sabor rico del cafe 100% Kona complementa perfectamente la textura dulce y masticable de nuestros donuts de mochi.',
+          description: 'El combo definitivo de Waikiki. El sabor rico del café Honolulu Coffee complementa perfectamente la textura dulce y masticable de nuestros donuts de mochi.',
         },
         {
           title: 'Mochi Donut + Bingsu',
@@ -565,7 +565,7 @@ const mochiDonutSchema = {
   '@context': 'https://schema.org',
   '@type': 'Restaurant',
   name: 'Kona Coffee Donut - Best Mochi Donuts in Waikiki',
-  description: 'Freshly made mochi donuts in Waikiki by MOCHILAND. 12+ rotating flavors including Ube, Matcha, and Black Sesame. Paired with premium 100% Kona coffee.',
+  description: 'Freshly made mochi donuts in Waikiki by MOCHILAND. 12+ rotating flavors including Ube, Matcha, and Black Sesame. Paired with premium Honolulu Coffee.',
   image: 'https://www.konacoffeedonut.com/og-image.jpg',
   servesCuisine: ['Mochi Donuts', 'Japanese-Hawaiian Fusion', 'Coffee', 'Desserts'],
   address: {

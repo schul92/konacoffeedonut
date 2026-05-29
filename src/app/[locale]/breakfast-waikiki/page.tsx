@@ -16,7 +16,7 @@ const content = {
     },
     intro: {
       title: 'Your Perfect Waikiki Breakfast Spot',
-      paragraph1: 'Looking for the best breakfast in Waikiki? Kona Coffee Donut offers an unforgettable morning experience with premium 100% Kona coffee and freshly made artisan donuts. We\'re located just steps from Waikiki Beach on Kalakaua Avenue.',
+      paragraph1: 'Looking for the best breakfast in Waikiki? Kona Coffee Donut offers an unforgettable morning experience with premium Honolulu Coffee and freshly made artisan donuts. We\'re located just steps from Waikiki Beach on Kalakaua Avenue.',
       paragraph2: 'Whether you\'re an early riser catching the sunrise or looking for a mid-morning treat, our café opens at 7 AM daily with fresh coffee brewing and warm donuts coming out of the kitchen.'
     },
     menu: {
@@ -24,7 +24,7 @@ const content = {
       items: [
         {
           name: 'Kona Coffee',
-          description: '100% pure Kona coffee from Hawaii\'s Big Island. Smooth, rich, and perfect for your morning.',
+          description: 'Honolulu Coffee from Hawaii\'s Big Island. Smooth, rich, and perfect for your morning.',
           price: 'from $5'
         },
         {
@@ -57,7 +57,7 @@ const content = {
         },
         {
           title: 'Authentic Hawaiian Coffee',
-          description: 'We serve only genuine 100% Kona coffee—Hawaii\'s finest.'
+          description: 'We serve only genuine Honolulu Coffee—Hawaii\'s finest.'
         },
         {
           title: 'Fresh Made Daily',
@@ -84,7 +84,7 @@ const content = {
     },
     intro: {
       title: 'ワイキキの完璧な朝食スポット',
-      paragraph1: 'ワイキキで最高の朝食をお探しですか？コナコーヒードーナツは、プレミアム100%コナコーヒーと新鮮な手作りドーナツで忘れられないモーニング体験を提供します。カラカウア通りのワイキキビーチからすぐの場所にあります。',
+      paragraph1: 'ワイキキで最高の朝食をお探しですか？コナコーヒードーナツは、プレミアムホノルルコーヒーと新鮮な手作りドーナツで忘れられないモーニング体験を提供します。カラカウア通りのワイキキビーチからすぐの場所にあります。',
       paragraph2: '日の出を見る早起きの方も、遅めの朝のおやつをお探しの方も、毎日午前7時から新鮮なコーヒーと焼きたてのドーナツをご用意しています。'
     },
     menu: {
@@ -92,7 +92,7 @@ const content = {
       items: [
         {
           name: 'コナコーヒー',
-          description: 'ハワイ島産100%純粋コナコーヒー。滑らかで豊かな朝にぴったりの一杯。',
+          description: 'ハワイ島産ホノルルコーヒー。滑らかで豊かな朝にぴったりの一杯。',
           price: '$5から'
         },
         {
@@ -125,7 +125,7 @@ const content = {
         },
         {
           title: '本格ハワイアンコーヒー',
-          description: '本物の100%コナコーヒーのみを提供—ハワイ最高品質。'
+          description: '本物のホノルルコーヒーのみを提供—ハワイ最高品質。'
         },
         {
           title: '毎日新鮮に作られる',
@@ -152,7 +152,7 @@ const content = {
     },
     intro: {
       title: '와이키키 완벽한 아침식사 장소',
-      paragraph1: '와이키키에서 최고의 아침식사를 찾고 계신가요? 코나커피도넛은 프리미엄 100% 코나 커피와 신선한 수제 도넛으로 잊을 수 없는 아침 경험을 제공합니다. 칼라카우아 애비뉴의 와이키키 비치에서 가까운 곳에 위치해 있습니다.',
+      paragraph1: '와이키키에서 최고의 아침식사를 찾고 계신가요? 코나커피도넛은 프리미엄 호놀룰루 커피와 신선한 수제 도넛으로 잊을 수 없는 아침 경험을 제공합니다. 칼라카우아 애비뉴의 와이키키 비치에서 가까운 곳에 위치해 있습니다.',
       paragraph2: '일출을 보는 일찍 일어나는 분이든 늦은 아침 간식을 찾는 분이든, 저희 카페는 매일 오전 7시에 신선한 커피와 따뜻한 도넛과 함께 문을 엽니다.'
     },
     menu: {
@@ -160,7 +160,7 @@ const content = {
       items: [
         {
           name: '코나 커피',
-          description: '하와이 빅아일랜드산 100% 순수 코나 커피. 부드럽고 풍부하며 아침에 완벽.',
+          description: '하와이 빅아일랜드산 호놀룰루 커피. 부드럽고 풍부하며 아침에 완벽.',
           price: '$5부터'
         },
         {
@@ -193,7 +193,7 @@ const content = {
         },
         {
           title: '정통 하와이안 커피',
-          description: '진짜 100% 코나 커피만 제공—하와이 최고 품질.'
+          description: '진짜 호놀룰루 커피만 제공—하와이 최고 품질.'
         },
         {
           title: '매일 신선하게 제조',
@@ -220,7 +220,7 @@ const content = {
     },
     intro: {
       title: '您的完美威基基早餐地点',
-      paragraph1: '在威基基寻找最好的早餐？科纳咖啡甜甜圈以优质100%科纳咖啡和新鲜手工甜甜圈为您提供难忘的早晨体验。我们位于卡拉卡瓦大道，距离威基基海滩仅几步之遥。',
+      paragraph1: '在威基基寻找最好的早餐？科纳咖啡甜甜圈以优质檀香山咖啡和新鲜手工甜甜圈为您提供难忘的早晨体验。我们位于卡拉卡瓦大道，距离威基基海滩仅几步之遥。',
       paragraph2: '无论您是早起看日出还是寻找上午点心，我们的咖啡厅每天早上7点开门，新鲜咖啡和温暖的甜甜圈等着您。'
     },
     menu: {
@@ -228,7 +228,7 @@ const content = {
       items: [
         {
           name: '科纳咖啡',
-          description: '来自夏威夷大岛的100%纯正科纳咖啡。顺滑、浓郁，完美的早晨之选。',
+          description: '来自夏威夷大岛的檀香山咖啡。顺滑、浓郁，完美的早晨之选。',
           price: '$5起'
         },
         {
@@ -261,7 +261,7 @@ const content = {
         },
         {
           title: '正宗夏威夷咖啡',
-          description: '我们只提供正宗100%科纳咖啡——夏威夷最优质。'
+          description: '我们只提供正宗檀香山咖啡——夏威夷最优质。'
         },
         {
           title: '每日新鲜制作',
@@ -288,7 +288,7 @@ const content = {
     },
     intro: {
       title: 'Tu Lugar Perfecto para Desayunar en Waikiki',
-      paragraph1: '¿Buscas el mejor desayuno en Waikiki? Kona Coffee Donut ofrece una experiencia matutina inolvidable con café 100% Kona premium y donuts artesanales recién hechos. Estamos ubicados a pocos pasos de Waikiki Beach en Kalakaua Avenue.',
+      paragraph1: '¿Buscas el mejor desayuno en Waikiki? Kona Coffee Donut ofrece una experiencia matutina inolvidable con café Honolulu Coffee premium y donuts artesanales recién hechos. Estamos ubicados a pocos pasos de Waikiki Beach en Kalakaua Avenue.',
       paragraph2: 'Ya seas madrugador para ver el amanecer o busques un snack a media mañana, nuestro café abre a las 7 AM todos los días con café fresco y donuts calientes.'
     },
     menu: {
@@ -329,7 +329,7 @@ const content = {
         },
         {
           title: 'Café Hawaiano Auténtico',
-          description: 'Solo servimos genuino café 100% Kona—lo mejor de Hawaii.'
+          description: 'Solo servimos genuino café Honolulu Coffee—lo mejor de Hawaii.'
         },
         {
           title: 'Hecho Fresco Diariamente',
@@ -355,7 +355,7 @@ const breakfastSchema = {
   '@context': 'https://schema.org',
   '@type': 'Restaurant',
   name: 'Kona Coffee Donut - Best Breakfast in Waikiki',
-  description: 'Best breakfast spot in Waikiki featuring premium 100% Kona coffee, fresh mochi donuts, malasadas, and acai bowls. Open daily at 7AM.',
+  description: 'Best breakfast spot in Waikiki featuring premium Honolulu Coffee, fresh mochi donuts, malasadas, and acai bowls. Open daily at 7AM.',
   image: 'https://www.konacoffeedonut.com/og-image.jpg',
   servesCuisine: ['Coffee', 'Donuts', 'Breakfast', 'Hawaiian'],
   address: {

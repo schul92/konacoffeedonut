@@ -16,7 +16,7 @@ const content = {
     intro: {
       title: 'The Freshest Donuts in Hawaii',
       paragraph1: 'At Kona Coffee Donut in Waikiki, we believe fresh donuts taste better. That\'s why we bake our artisan mochi donuts and malasadas fresh every single day, using premium ingredients and traditional Hawaiian recipes.',
-      paragraph2: 'Our fresh donuts are made with rice flour for that perfect chewy texture—crispy on the outside, soft and pillowy on the inside. Paired with our 100% Kona coffee, it\'s the ultimate Hawaiian breakfast or afternoon treat.'
+      paragraph2: 'Our fresh donuts are made with rice flour for that perfect chewy texture—crispy on the outside, soft and pillowy on the inside. Paired with our Honolulu Coffee, it\'s the ultimate Hawaiian breakfast or afternoon treat.'
     },
     whyFresh: {
       title: 'Why Our Fresh Donuts Stand Out',
@@ -57,7 +57,7 @@ const content = {
     },
     pairing: {
       title: 'The Perfect Pairing: Fresh Donuts + Kona Coffee',
-      description: 'There\'s nothing quite like biting into a warm, fresh donut while sipping on premium 100% Kona coffee. The rich, smooth flavors of Hawaiian coffee complement our sweet, chewy donuts perfectly.',
+      description: 'There\'s nothing quite like biting into a warm, fresh donut while sipping on premium Honolulu Coffee. The rich, smooth flavors of Hawaiian coffee complement our sweet, chewy donuts perfectly.',
       cta: 'Try Our Kona Coffee'
     },
     location: {

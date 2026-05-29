@@ -26,7 +26,7 @@ const content: Record<Locale, BlogContent> = {
     visitCTA: {
       headline: 'Try Both at Kona Coffee Donut',
       body:
-        "On Kalākaua Avenue, we serve both fresh malasadas and pon-de-ring mochi donuts under one roof. Compare them side by side, pair with 100% Kona coffee, and walk back to Waikiki Beach. Open daily 7 AM to 9 PM.",
+        "On Kalākaua Avenue, we serve both fresh malasadas and pon-de-ring mochi donuts under one roof. Compare them side by side, pair with Honolulu Coffee, and walk back to Waikiki Beach. Open daily 7 AM to 9 PM.",
       menuLabel: 'See Donut Menu',
       directionsLabel: 'Get Directions',
     },
@@ -89,7 +89,7 @@ const content: Record<Locale, BlogContent> = {
     ],
     finalCTA: {
       headline: 'Try Both — In One Stop on Kalākaua',
-      body: 'Fresh malasadas and pon-de-ring mochi donuts under one roof, paired with 100% Kona coffee.',
+      body: 'Fresh malasadas and pon-de-ring mochi donuts under one roof, paired with Honolulu Coffee.',
       visitLabel: 'Visit Us Today',
       callLabel: 'Call (808) 304-1808',
     },
@@ -97,7 +97,7 @@ const content: Record<Locale, BlogContent> = {
   ja: {
     hero: { title: 'マラサダ vs モチドーナツ', subtitle: 'ハワイで愛される2大ドーナツを徹底比較。', date: '2026年5月更新', readTime: '読了5分', badge: '比較ガイド' },
     intro: 'ワイキキで滞在中、マラサダとモチドーナツのどちらを選ぶべきか迷う方へ。同じ「ドーナツ」と呼ばれていても、まったく別物。本記事ではフレーバー・食感・どこで食べるかを比較します。',
-    visitCTA: { headline: '両方コナコーヒードーナツで', body: 'カラカウア通りで、揚げたてマラサダと手作りモチドーナツを同時に楽しめます。100%コナコーヒーともペアリング可能。毎日朝7時〜夜9時。', menuLabel: 'ドーナツメニュー', directionsLabel: '行き方を確認' },
+    visitCTA: { headline: '両方コナコーヒードーナツで', body: 'カラカウア通りで、揚げたてマラサダと手作りモチドーナツを同時に楽しめます。ホノルルコーヒーともペアリング可能。毎日朝7時〜夜9時。', menuLabel: 'ドーナツメニュー', directionsLabel: '行き方を確認' },
     sections: [
       { h2: '一目でわかる違い', body: '初めての方向けの早見表。', bullets: ['マラサダ — ポルトガル系、小麦粉、砂糖まぶし、ふわふわ', 'モチドーナツ — 日本×ハワイ、もち米粉、もちもち、グレーズ', 'マラサダの食感：ふわふわで口でとろける', 'モチドーナツの食感：もちもちで弾力あり', 'マラサダの味：シンプルな砂糖、フィリング入りも', 'モチドーナツの味：ウベ・抹茶・チョコなど多彩'] },
       { h2: 'マラサダ — ポルトガル発祥のハワイ伝統', body: '19世紀にポルトガル系移民が持ち込んだ伝統。揚げたて30分以内が一番美味しい。', pullout: { title: '相性◎', body: 'コーヒー。ホットコナとの相性は抜群です。' } },

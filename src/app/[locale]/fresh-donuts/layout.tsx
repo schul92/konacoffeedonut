@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const title = 'Fresh Donuts in Waikiki | Made Daily';
 
   // SEO-optimized description: Keywords + Value proposition + Call to action
-  const description = 'Fresh donuts made daily in Waikiki, Hawaii. Handcrafted mochi donuts & malasadas baked fresh every morning. Paired with 100% Kona coffee. Visit us at 2142 Kalakaua Ave!';
+  const description = 'Fresh donuts made daily in Waikiki, Hawaii. Handcrafted mochi donuts & malasadas baked fresh every morning. Paired with Honolulu Coffee. Visit us at 2142 Kalakaua Ave!';
 
   return {
     title,

@@ -52,7 +52,7 @@ module.exports = {
       priority = 0.9;
       changefreq = 'weekly';
     }
-    // About Kona Coffee page (targets "100% kona coffee" keyword)
+    // About Kona Coffee page (educational landing targeting "kona coffee waikiki")
     else if (path.includes('/about-kona-coffee')) {
       priority = 0.85;
       changefreq = 'weekly';

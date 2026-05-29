@@ -52,7 +52,7 @@ const content = {
     whyNotBoth: {
       title: 'Why Not Both?',
       p1: 'Here is the secret that only a place like Kona Coffee Donut can share: you do not have to choose. We are one of the only shops in Waikiki where you can order a warm malasada AND a freshly glazed mochi donut and enjoy them side by side. That is the whole point \u2014 these are two completely different donut experiences, and comparing them is half the fun.',
-      p2: 'We suggest what we call a "Donut Flight": pick one malasada (we recommend the classic sugar or the haupia-filled) and one mochi donut (try the ube or matcha for your first time). Pair them with a cup of our 100% Kona coffee from Honolulu Coffee, and you have the ultimate Waikiki tasting experience. The rich, smooth Kona coffee cuts through the sweetness of both donuts beautifully, creating a pairing that is greater than the sum of its parts.',
+      p2: 'We suggest what we call a "Donut Flight": pick one malasada (we recommend the classic sugar or the haupia-filled) and one mochi donut (try the ube or matcha for your first time). Pair them with a cup of our Honolulu Coffee, and you have the ultimate Waikiki tasting experience. The rich, smooth Hawaiian coffee cuts through the sweetness of both donuts beautifully, creating a pairing that is greater than the sum of its parts.',
       p3: 'Whether you are a first-time visitor to Hawaii or a returning local, the malasada-versus-mochi-donut debate is one you can settle for yourself at our shop. Grab a friend, order both, and discover which side you land on \u2014 or, like most of our customers, decide that both deserve a permanent spot in your life.',
     },
     verdict: {
@@ -72,7 +72,7 @@ const content = {
         },
         {
           q: 'Where can I get both malasadas and mochi donuts in Waikiki?',
-          a: 'Kona Coffee Donut at 2142 Kalakaua Ave in Waikiki serves both fresh malasadas and MOCHILAND mochi donuts alongside premium 100% Kona coffee from Honolulu Coffee. It is one of the only spots where you can try both in a single visit.',
+          a: 'Kona Coffee Donut at 2142 Kalakaua Ave in Waikiki serves both fresh malasadas and MOCHILAND mochi donuts alongside premium Honolulu Coffee. It is one of the only spots where you can try both in a single visit.',
         },
         {
           q: 'What does QQ texture mean?',
@@ -137,7 +137,7 @@ const content = {
     whyNotBoth: {
       title: '両方食べればいいじゃない？',
       p1: 'コナコーヒードーナツだからこそお伝えできる秘密があります \u2014 選ぶ必要はないのです。ワイキキで温かいマラサダと新鮮なグレーズのモチドーナツの両方を注文できる数少ないお店の一つです。2つの全く異なるドーナツ体験を並べて比較すること、それ自体が楽しいのです。',
-      p2: '私たちがおすすめする「ドーナツフライト」をお試しください。マラサダ1つ（クラシックシュガーかハウピアフィリングがおすすめ）とモチドーナツ1つ（初めての方は紅芋か抹茶を）を選び、ホノルルコーヒーの100%コナコーヒーとペアリング。ワイキキ究極のテイスティング体験の完成です。',
+      p2: '私たちがおすすめする「ドーナツフライト」をお試しください。マラサダ1つ（クラシックシュガーかハウピアフィリングがおすすめ）とモチドーナツ1つ（初めての方は紅芋か抹茶を）を選び、ホノルルコーヒーのホノルルコーヒーとペアリング。ワイキキ究極のテイスティング体験の完成です。',
       p3: 'ハワイ初訪問の方もリピーターの方も、マラサダ対モチドーナツの論争はご自身の舌で決着をつけてください。友人を誘って、両方注文して、どちら派かを見つけましょう \u2014 あるいは、多くのお客様のように、両方とも人生のレギュラーメンバーに認定してしまいましょう。',
     },
     verdict: {
@@ -157,7 +157,7 @@ const content = {
         },
         {
           q: 'ワイキキでマラサダとモチドーナツの両方を食べられる場所は？',
-          a: 'ワイキキのカラカウア通り2142番地のコナコーヒードーナツでは、新鮮なマラサダとMOCHILANDのモチドーナツの両方を、ホノルルコーヒーのプレミアム100%コナコーヒーとともにお楽しみいただけます。',
+          a: 'ワイキキのカラカウア通り2142番地のコナコーヒードーナツでは、新鮮なマラサダとMOCHILANDのモチドーナツの両方を、ホノルルコーヒーのプレミアムホノルルコーヒーとともにお楽しみいただけます。',
         },
         {
           q: 'QQ食感とは何ですか？',
@@ -222,7 +222,7 @@ const content = {
     whyNotBoth: {
       title: '둘 다 먹으면 되잖아?',
       p1: '코나커피도넛만이 알려줄 수 있는 비밀이 있습니다 \u2014 굳이 하나만 선택할 필요가 없다는 것. 와이키키에서 따뜻한 말라사다와 신선한 글레이즈의 모찌 도넛을 동시에 주문할 수 있는 몇 안 되는 곳 중 하나입니다. 완전히 다른 두 가지 도넛 경험을 나란히 비교하는 것 자체가 즐거움입니다.',
-      p2: '저희가 추천하는 "도넛 플라이트"를 시도해보세요. 말라사다 1개(클래식 설탕이나 하우피아 필링 추천)와 모찌 도넛 1개(처음이라면 우베나 말차 추천)를 골라 호놀룰루 커피의 100% 코나 커피와 페어링하세요. 와이키키 최고의 테이스팅 경험이 완성됩니다.',
+      p2: '저희가 추천하는 "도넛 플라이트"를 시도해보세요. 말라사다 1개(클래식 설탕이나 하우피아 필링 추천)와 모찌 도넛 1개(처음이라면 우베나 말차 추천)를 골라 호놀룰루 커피의 호놀룰루 커피와 페어링하세요. 와이키키 최고의 테이스팅 경험이 완성됩니다.',
       p3: '하와이 첫 방문이든 재방문이든, 말라사다 대 모찌 도넛 논쟁은 직접 맛보고 결정하세요. 친구와 함께 둘 다 주문하고, 어느 쪽이 당신의 마음을 사로잡는지 확인하세요 \u2014 아니면 대부분의 고객처럼, 둘 다 인생 디저트로 등극시키세요.',
     },
     verdict: {
@@ -242,7 +242,7 @@ const content = {
         },
         {
           q: '와이키키에서 말라사다와 모찌 도넛을 모두 먹을 수 있는 곳은?',
-          a: '와이키키 칼라카우아 애비뉴 2142번지의 코나커피도넛에서 신선한 말라사다와 MOCHILAND 모찌 도넛을 호놀룰루 커피의 프리미엄 100% 코나 커피와 함께 즐길 수 있습니다.',
+          a: '와이키키 칼라카우아 애비뉴 2142번지의 코나커피도넛에서 신선한 말라사다와 MOCHILAND 모찌 도넛을 호놀룰루 커피의 프리미엄 호놀룰루 커피와 함께 즐길 수 있습니다.',
         },
         {
           q: 'QQ 식감이란 무엇인가요?',
@@ -307,7 +307,7 @@ const content = {
     whyNotBoth: {
       title: '为什么不两个都尝？',
       p1: '这里有一个只有科纳咖啡甜甜圈才能分享的秘密——你根本不需要二选一。我们是威基基为数不多的既能点到热腾腾的马拉萨达，又能吃到新鲜糖霜麻糬甜甜圈的店铺之一。把两种完全不同的甜甜圈体验放在一起比较，本身就是最大的乐趣。',
-      p2: '我们推荐"甜甜圈品鉴组合"：选一个马拉萨达（推荐经典砂糖款或椰子布丁夹心）和一个麻糬甜甜圈（第一次尝试推荐紫薯或抹茶），再搭配一杯我们的100%科纳咖啡。浓郁顺滑的科纳咖啡完美地平衡了两种甜甜圈的甜度，创造出超越总和的美妙体验。',
+      p2: '我们推荐"甜甜圈品鉴组合"：选一个马拉萨达（推荐经典砂糖款或椰子布丁夹心）和一个麻糬甜甜圈（第一次尝试推荐紫薯或抹茶），再搭配一杯我们的檀香山咖啡。浓郁顺滑的科纳咖啡完美地平衡了两种甜甜圈的甜度，创造出超越总和的美妙体验。',
       p3: '无论你是第一次来夏威夷的游客还是回头客，马拉萨达对麻糬甜甜圈的争论都可以在我们店里亲自了结。叫上朋友，两种都点，看看你站哪边——或者像我们大多数顾客一样，决定两者都值得成为人生常客。',
     },
     verdict: {
@@ -327,7 +327,7 @@ const content = {
         },
         {
           q: '在威基基哪里可以同时吃到马拉萨达和麻糬甜甜圈？',
-          a: '威基基卡拉卡瓦大道2142号的科纳咖啡甜甜圈同时供应新鲜马拉萨达和MOCHILAND麻糬甜甜圈，还有檀香山咖啡的100%科纳咖啡。是少数能一站式品尝两者的地方。',
+          a: '威基基卡拉卡瓦大道2142号的科纳咖啡甜甜圈同时供应新鲜马拉萨达和MOCHILAND麻糬甜甜圈，还有檀香山咖啡的檀香山咖啡。是少数能一站式品尝两者的地方。',
         },
         {
           q: 'QQ口感是什么意思？',
@@ -411,7 +411,7 @@ const faqSchema = {
       name: 'Where can I get both malasadas and mochi donuts in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kona Coffee Donut at 2142 Kalakaua Ave in Waikiki serves both fresh malasadas and MOCHILAND mochi donuts alongside premium 100% Kona coffee from Honolulu Coffee.',
+        text: 'Kona Coffee Donut at 2142 Kalakaua Ave in Waikiki serves both fresh malasadas and MOCHILAND mochi donuts alongside premium Honolulu Coffee.',
       },
     },
     {

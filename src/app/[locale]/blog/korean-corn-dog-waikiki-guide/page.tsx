@@ -85,7 +85,7 @@ const content: Record<Locale, BlogContent> = {
         body:
           "Korean corn dogs are rich and salty. The right drink balances:",
         bullets: [
-          'Iced Americano (100% Kona) — bitter coffee cuts through the fried richness',
+          'Iced Americano (Honolulu Coffee) — bitter coffee cuts through the fried richness',
           'Korean Milk Tea Smoothie — classic K-food pairing',
           'Brown Sugar Boba Smoothie — sweetness balances the savory',
           'Strawberry or Mango Smoothie — fruity contrast',

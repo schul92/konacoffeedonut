@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const title = 'Gourmet Donuts | Artisan Mochi Donuts in Waikiki';
 
   // SEO-optimized description: Primary + secondary keywords + CTA (150-160 chars ideal)
-  const description = 'Gourmet donuts handcrafted daily in Waikiki. Artisan mochi donuts & Hawaiian malasadas with premium ingredients. Paired with 100% Kona coffee. Visit us today!';
+  const description = 'Gourmet donuts handcrafted daily in Waikiki. Artisan mochi donuts & Hawaiian malasadas with premium ingredients. Paired with Honolulu Coffee. Visit us today!';
 
   return {
     title,

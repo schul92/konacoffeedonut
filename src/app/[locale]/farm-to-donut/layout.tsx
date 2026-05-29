@@ -7,14 +7,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   const title = 'Farm to Donut: Kona Coffee Journey | From Volcanic Slopes to Waikiki';
 
-  const description = 'Discover the journey from Hawaii\'s volcanic farms to our Waikiki donut shop. Learn how 100% Kona coffee beans and fresh ingredients become our handcrafted mochi donuts and malasadas daily.';
+  const description = 'Discover the journey from Hawaii\'s volcanic farms to our Waikiki donut shop. Learn how Honolulu Coffee beans and fresh ingredients become our handcrafted mochi donuts and malasadas daily.';
 
   return {
     title,
     description,
     keywords: [
       'farm to cup', 'kona coffee origin', 'volcanic soil coffee',
-      'hawaiian coffee farms', 'authentic kona', 'bean to cup',
+      'hawaiian coffee farms', 'honolulu coffee waikiki', 'bean to cup',
       'kona coffee journey', 'coffee sourcing hawaii',
       'farm to table hawaii', 'kona coffee process'
     ],

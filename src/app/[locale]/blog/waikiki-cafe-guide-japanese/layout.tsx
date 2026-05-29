@@ -13,10 +13,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 
   const descriptions: Record<string, string> = {
-    ja: 'ワイキキのおすすめカフェを厳選紹介。100%コナコーヒー、モチドーナツ、マラサダ、ビンスなど、日本人旅行者に人気のハワイグルメを徹底ガイド。営業時間・場所・予算目安も。',
-    en: 'Best cafes in Waikiki for 2026. Explore 100% Kona coffee, mochi donuts, malasadas, and bingsu. Complete guide with hours, locations, and budget tips.',
-    ko: '2026 와이키키 추천 카페 가이드. 100% 코나 커피, 모찌 도넛, 말라사다, 빙수 등 인기 하와이 디저트를 소개합니다.',
-    zh: '2026威基基最佳咖啡厅指南。100%科纳咖啡、麻糬甜甜圈、马拉萨达、冰沙等夏威夷美食完全攻略。',
+    ja: 'ワイキキのおすすめカフェを厳選紹介。ホノルルコーヒー、モチドーナツ、マラサダ、ビンスなど、日本人旅行者に人気のハワイグルメを徹底ガイド。営業時間・場所・予算目安も。',
+    en: 'Best cafes in Waikiki for 2026. Explore Honolulu Coffee, mochi donuts, malasadas, and bingsu. Complete guide with hours, locations, and budget tips.',
+    ko: '2026 와이키키 추천 카페 가이드. 호놀룰루 커피, 모찌 도넛, 말라사다, 빙수 등 인기 하와이 디저트를 소개합니다.',
+    zh: '2026威基基最佳咖啡厅指南。檀香山咖啡、麻糬甜甜圈、马拉萨达、冰沙等夏威夷美食完全攻略。',
   };
 
   const title = titles[locale] || titles.ja;
