@@ -38,7 +38,7 @@ export async function generateMetadata({
       type: 'website',
       images: [
         {
-          url: '/images/menu/donut.webp',
+          url: '/images/menu/hawaii-menu-hero.webp',
           width: 1200,
           height: 630,
           alt: 'Kona Coffee Donut? menu — Mochi donuts, malasadas, Kona coffee, bingsu',
@@ -49,7 +49,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: ['/images/menu/donut.webp'],
+      images: ['/images/menu/hawaii-menu-hero.webp'],
     },
   };
 }

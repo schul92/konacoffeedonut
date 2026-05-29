@@ -82,15 +82,15 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
       <section className="relative isolate overflow-hidden">
         <div className="relative h-[40vh] min-h-[280px] md:h-[52vh] md:min-h-[380px] w-full">
           <Image
-            src="/images/menu/donut.jpeg"
-            alt="Kona Coffee Donut? menu"
+            src="/images/menu/hawaii-menu-hero.webp"
+            alt="Kona Coffee Donut? menu with Hawaiian mochi donuts, Honolulu coffee, and Waikiki ocean light"
             fill
             priority
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-stone-950/55 via-stone-950/40 to-stone-950/65" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+          <div className="absolute inset-0 bg-gradient-to-b from-stone-950/42 via-stone-950/24 to-stone-950/50" />
+          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 [text-shadow:0_3px_18px_rgba(0,0,0,0.75)]">
             <h1 className="font-black tracking-[0.2em] text-white text-4xl sm:text-5xl md:text-6xl">
               MENU
             </h1>
