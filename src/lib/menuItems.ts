@@ -40,7 +40,10 @@ const ACAI_IMG = '/images/menu/acai.webp';
 // Photoreal Gemini-generated product shots with the cream studio background
 // removed (see scripts/process_menu_item_cutouts.py + process_mochi_donut_cutouts.py)
 // so each item renders as a transparent cutout floating on the page's warm bg.
-const donutItem = (name: string) => `/images/menu/items/gemini-mochi/cutouts/${name}.webp`;
+// Real studio product photos with the white background removed
+// (see scripts/process_real_mochi_cutouts.py) — replaces the earlier
+// Gemini-generated mochi renders.
+const donutItem = (name: string) => `/images/menu/items/mochinut/cutouts/${name}.webp`;
 const geminiItem = (category: string) => (name: string) =>
   `/images/menu/items/gemini/${category}/cutouts/${name}.webp`;
 const malasadaItem = geminiItem('malasada');
