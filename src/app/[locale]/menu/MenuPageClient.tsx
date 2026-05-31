@@ -143,7 +143,9 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
             ref={(el) => {
               sectionRefs.current[cat.id] = el;
             }}
-            className={idx === 0 ? '' : 'pt-12 md:pt-16'}
+            // scroll-mt clears the sticky header + category tabs so cross-page
+            // hash links (e.g. /menu#donuts from the homepage) land correctly.
+            className={`scroll-mt-28 md:scroll-mt-32 ${idx === 0 ? '' : 'pt-12 md:pt-16'}`}
           >
             <div className="border-t border-stone-300/70 pt-6 md:pt-8">
               <div className="flex flex-wrap items-baseline justify-between gap-3 mb-6 md:mb-8">

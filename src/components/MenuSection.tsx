@@ -1,15 +1,24 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
+import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Play } from 'lucide-react';
-import { PhotoProvider, PhotoView } from 'react-photo-view';
-import 'react-photo-view/dist/react-photo-view.css';
 import { menuCategories } from '@/lib/menuData';
 
 const menuItems = menuCategories;
+
+// Maps each homepage card id to its section anchor on the full /menu page.
+const MENU_ANCHORS: Record<string, string> = {
+  donuts: 'donuts',
+  malasada: 'malasada',
+  coffee: 'coffee',
+  shavedice: 'bingsu',
+  hotdog: 'hotdog',
+  acai: 'acai',
+};
 
 interface MenuSectionProps {
   hideHeader?: boolean;
@@ -17,43 +26,20 @@ interface MenuSectionProps {
 
 export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
   const t = useTranslations('menu');
+  const locale = useLocale();
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [currentMenu, setCurrentMenu] = useState<{ image: string; title: string; comingSoon?: boolean; id?: string } | null>(null);
   const [playingVideos, setPlayingVideos] = useState<Record<string, boolean>>({});
   const videoRefs = useRef<Record<string, HTMLVideoElement | null>>({});
 
-  const openMenu = (menuImage: string, title: string, comingSoon?: boolean, id?: string) => {
-    if (comingSoon) {
-      setCurrentMenu({ image: menuImage, title, comingSoon, id });
-      setModalOpen(true);
-    } else {
-      // Use react-photo-view — trigger by clicking hidden PhotoView
-      setCurrentMenu({ image: menuImage, title, comingSoon, id });
-      // Small delay to let state update, then trigger the photo view
-      setTimeout(() => {
-        const trigger = document.getElementById('photo-view-trigger');
-        if (trigger) trigger.click();
-      }, 50);
-    }
+  // Link straight to the matching section on the full /menu page.
+  const menuHref = (id: string) => `/${locale}/menu#${MENU_ANCHORS[id] ?? ''}`;
 
-    // Track menu view
+  const trackView = (id: string) => {
     if (typeof window !== 'undefined' && window.trackEvent) {
       window.trackEvent('view_menu', {
-        menu_category: title,
-        interaction_type: 'modal_open',
-        coming_soon: comingSoon || false,
+        menu_category: t(`categories.${id}.name`),
+        interaction_type: 'navigate_to_menu_page',
       });
-    }
-  };
-
-  // Get emoji for coming soon items
-  const getComingSoonEmoji = (id?: string) => {
-    switch (id) {
-      case 'coffee': return '☕';
-      case 'acai': return '🍇';
-      case 'shavedice': return '🍧';
-      default: return '✨';
     }
   };
 
@@ -114,9 +100,11 @@ export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
               onHoverEnd={() => setSelectedItem(null)}
               className="relative group"
             >
-              <button
-                onClick={() => openMenu(item.menuImage, t(`categories.${item.id}.name`), item.comingSoon, item.id)}
-                className="w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:aspect-[4/3] md:hover:scale-[1.02]"
+              <Link
+                href={menuHref(item.id)}
+                onClick={() => trackView(item.id)}
+                aria-label={t(`categories.${item.id}.name`)}
+                className="block w-full relative overflow-hidden rounded-2xl bg-black shadow-2xl hover:shadow-orange-500/50 transition-all duration-500 aspect-[16/10] md:aspect-[4/3] md:hover:scale-[1.02]"
               >
                 {/* Video Background - Cinema Style - Auto-playing */}
                 {item.video && (
@@ -245,7 +233,7 @@ export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
                   }}
                   transition={{ duration: 0.3 }}
                 />
-              </button>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -263,54 +251,6 @@ export default function MenuSection({ hideHeader = false }: MenuSectionProps) {
           </p>
         </motion.div>
       </div>
-
-      {/* Photo Viewer — pinch-to-zoom, pan, swipe on mobile + desktop */}
-      <PhotoProvider
-        maskOpacity={0.95}
-        bannerVisible={false}
-        photoClosable
-      >
-        {currentMenu && !currentMenu.comingSoon && (
-          <PhotoView src={currentMenu.image}>
-            <button id="photo-view-trigger" className="hidden" aria-hidden="true" />
-          </PhotoView>
-        )}
-      </PhotoProvider>
-
-      {/* Coming Soon Modal — only for items marked comingSoon */}
-      <AnimatePresence>
-        {modalOpen && currentMenu?.comingSoon && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setModalOpen(false)}
-              className="fixed inset-0 bg-black/95 z-50"
-            />
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              className="fixed inset-0 z-50 flex items-center justify-center p-4"
-              onClick={() => setModalOpen(false)}
-            >
-              <div className="flex flex-col items-center justify-center text-center px-8 py-16" onClick={(e) => e.stopPropagation()}>
-                <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center shadow-2xl mb-6">
-                  <span className="text-5xl md:text-6xl">{getComingSoonEmoji(currentMenu.id)}</span>
-                </div>
-                <h3 className="text-3xl md:text-5xl font-black text-white mb-4">Coming Soon!</h3>
-                <p className="text-lg md:text-xl text-white/70 max-w-md">
-                  Our {currentMenu.title} menu is being crafted with care. Stay tuned!
-                </p>
-                <button onClick={() => setModalOpen(false)} className="mt-8 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full font-medium transition-colors">
-                  Close
-                </button>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
     </section>
   );
 }
