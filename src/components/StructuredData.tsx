@@ -515,11 +515,17 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'USD',
+      price: '3.50',
       lowPrice: '3.50',
       highPrice: '12.00',
       offerCount: '25',
       availability: 'https://schema.org/InStock',
       url: `https://www.konacoffeedonut.com/${locale}/menu`,
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        price: '3.50',
+        priceCurrency: 'USD',
+      },
       seller: {
         '@id': 'https://www.konacoffeedonut.com/#organization',
       },
