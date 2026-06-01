@@ -7,93 +7,93 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // ===== AI SEARCH ENGINE CRAWLERS =====
       // OpenAI/ChatGPT - Critical for GEO
       {
         userAgent: 'GPTBot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       {
         userAgent: 'ChatGPT-User',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       {
         userAgent: 'OAI-SearchBot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // Perplexity AI
       {
         userAgent: 'PerplexityBot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // Anthropic/Claude
       {
         userAgent: 'ClaudeBot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       {
         userAgent: 'anthropic-ai',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // Google AI (Gemini/Bard)
       {
         userAgent: 'Google-Extended',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // Microsoft Copilot (uses Bing)
       {
         userAgent: 'Bingbot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // Common Crawl - used for AI training data
       {
         userAgent: 'CCBot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // Cohere AI
       {
         userAgent: 'cohere-ai',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // Meta AI
       {
         userAgent: 'FacebookBot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       {
         userAgent: 'meta-externalagent',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // You.com AI
       {
         userAgent: 'YouBot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       // Apple AI (Siri, etc.)
       {
         userAgent: 'Applebot',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
       {
         userAgent: 'Applebot-Extended',
         allow: '/',
-        disallow: ['/api/', '/_next/data/'],
+        disallow: ['/api/'],
       },
     ],
     sitemap: [
