@@ -41,6 +41,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/where-to-try-kona-coffee-waikiki',
     '/blog/malasada-vs-mochi-donut-waikiki',
     '/blog/kona-affogato-waikiki',
+    // Third batch (June 2026)
+    '/blog/best-mochi-donuts-waikiki',
     // Second batch (May 2026)
     '/blog/how-to-eat-bingsu',
     '/blog/best-budget-eats-waikiki',
@@ -90,6 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/where-to-try-kona-coffee-waikiki': 0.9,
     '/blog/malasada-vs-mochi-donut-waikiki': 0.85,
     '/blog/kona-affogato-waikiki': 0.8,
+    '/blog/best-mochi-donuts-waikiki': 0.9, // buyer-intent: "best mochi donuts waikiki"
     '/blog/how-to-eat-bingsu': 0.9, // captures 1,464 mo "how to eat bingsu" impressions
     '/blog/best-budget-eats-waikiki': 0.9, // pos #1 for "best places to eat in waikiki on a budget"
     '/blog/best-acai-bowls-waikiki': 0.85,
@@ -137,6 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/where-to-try-kona-coffee-waikiki': 'weekly',
     '/blog/malasada-vs-mochi-donut-waikiki': 'weekly',
     '/blog/kona-affogato-waikiki': 'weekly',
+    '/blog/best-mochi-donuts-waikiki': 'weekly',
     '/blog/how-to-eat-bingsu': 'weekly',
     '/blog/best-budget-eats-waikiki': 'weekly',
     '/blog/best-acai-bowls-waikiki': 'weekly',

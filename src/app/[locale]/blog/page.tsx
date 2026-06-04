@@ -16,6 +16,14 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'best-mochi-donuts-waikiki',
+        image: '/images/blog/best-mochi-donuts-waikiki.jpeg',
+        category: 'Mochi Donuts',
+        title: 'Best Mochi Donuts in Waikiki: 24 Fresh Rice-Flour Flavors',
+        excerpt: 'Crispy-outside, chewy-inside rice-flour mochi donuts in 24 flavors on Kalākaua Ave — what makes them special, the flavors to try, and how to order.',
+        readTime: 5,
+      },
+      {
         slug: 'how-to-eat-bingsu',
         image: '/images/blog/best-bingsu-waikiki.jpeg',
         category: 'Korean Food',
@@ -193,6 +201,14 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'best-mochi-donuts-waikiki',
+        image: '/images/blog/best-mochi-donuts-waikiki.jpeg',
+        category: '\u30E2\u30C1\u30C9\u30FC\u30CA\u30C4',
+        title: '\u30EF\u30A4\u30AD\u30AD\u3067\u4EBA\u6C17\u306E\u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\uFF5C\u7C73\u7C89\u306E24\u30D5\u30EC\u30FC\u30D0\u30FC',
+        excerpt: '\u5916\u306F\u30AB\u30EA\u30C3\u3001\u4E2D\u306F\u30E2\u30C1\u30E2\u30C1\u3002\u7C73\u7C89\u3067\u4F5C\u308B24\u7A2E\u985E\u306E\u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\u306E\u9B45\u529B\u3001\u304A\u3059\u3059\u3081\u30D5\u30EC\u30FC\u30D0\u30FC\u3001\u6CE8\u6587\u65B9\u6CD5\u3092\u3054\u7D39\u4ECB\u3057\u307E\u3059\u3002',
+        readTime: 5,
+      },
+      {
         slug: 'how-to-eat-bingsu',
         image: '/images/blog/best-bingsu-waikiki.jpeg',
         category: '\u97D3\u56FD\u30D5\u30FC\u30C9',
@@ -324,6 +340,14 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'best-mochi-donuts-waikiki',
+        image: '/images/blog/best-mochi-donuts-waikiki.jpeg',
+        category: '\uBAA8\uCC0C\uB3C4\uB11B',
+        title: '\uC640\uC774\uD0A4\uD0A4 \uBAA8\uCC0C\uB3C4\uB11B \uB9DB\uC9D1\uFF5C\uC300\uAC00\uB8E8 24\uAC00\uC9C0 \uB9DB',
+        excerpt: '\uAC89\uBC14\uC18D\uCAC4, \uC300\uAC00\uB8E8\uB85C \uB9CC\uB4E0 24\uAC00\uC9C0 \uBAA8\uCC0C\uB3C4\uB11B. \uBB34\uC5C7\uC774 \uD2B9\uBCC4\uD55C\uC9C0, \uCD94\uCC9C \uB9DB, \uC8FC\uBB38 \uBC29\uBC95\uAE4C\uC9C0 \uD55C\uB208\uC5D0 \uC815\uB9AC\uD588\uC2B5\uB2C8\uB2E4.',
+        readTime: 5,
+      },
       {
         slug: 'how-to-eat-bingsu',
         image: '/images/blog/best-bingsu-waikiki.jpeg',
@@ -457,6 +481,14 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'best-mochi-donuts-waikiki',
+        image: '/images/blog/best-mochi-donuts-waikiki.jpeg',
+        category: '\u9EBB\u7CEC\u751C\u751C\u5708',
+        title: '\u5A01\u57FA\u57FA\u6700\u597D\u5403\u7684\u9EBB\u7CEC\u751C\u751C\u5708\uFF5C\u7C73\u7C8924\u79CD\u53E3\u5473',
+        excerpt: '\u5916\u9165\u5185Q\u3001\u7528\u7C73\u7C89\u5236\u4F5C\u768424\u79CD\u9EBB\u7CEC\u751C\u751C\u5708\u2014\u2014\u7279\u522B\u4E4B\u5904\u3001\u5FC5\u8BD5\u53E3\u5473\u4E0E\u70B9\u5355\u65B9\u6CD5\u4E00\u6B21\u770B\u61C2\u3002',
+        readTime: 5,
+      },
+      {
         slug: 'how-to-eat-bingsu',
         image: '/images/blog/best-bingsu-waikiki.jpeg',
         category: '\u97E9\u56FD\u7F8E\u98DF',
@@ -588,6 +620,14 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'best-mochi-donuts-waikiki',
+        image: '/images/blog/best-mochi-donuts-waikiki.jpeg',
+        category: 'Mochi Donuts',
+        title: 'Mejores Mochi Donuts en Waikiki: 24 Sabores de Harina de Arroz',
+        excerpt: 'Mochi donuts de harina de arroz, crujientes por fuera y masticables por dentro, en 24 sabores en Kalākaua Ave — qué los hace especiales y cómo pedir.',
+        readTime: 5,
+      },
       {
         slug: 'how-to-eat-bingsu',
         image: '/images/blog/best-bingsu-waikiki.jpeg',
