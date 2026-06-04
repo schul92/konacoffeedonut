@@ -4,20 +4,20 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 
 const meta = {
   en: {
-    title: 'What Is Bingsu? Korean Shaved Ice + Where to Try It in Waikiki (2026)',
-    description: "What is bingsu? Learn how to eat Korean shaved ice, popular toppings, and where to try bingsu in Waikiki near Kalākaua Ave and Waikiki Beach.",
+    title: 'What Is Bingsu? Korean Shaved Ice Explained — Types & How to Eat It',
+    description: 'Bingsu (빙수) is Korean shaved ice — fluffy frozen-milk snow piled with red bean, fresh fruit, mochi, and condensed milk. See the popular types, how to eat it, and where to try fresh bingsu in Waikiki.',
   },
   ja: {
-    title: 'ビンスとは？韓国かき氷の食べ方とワイキキで食べられる場所',
-    description: 'ビンス(빙수)とは？ふわふわミルク氷に新鮮なフルーツ・餅・あずきを乗せた韓国発デザート。種類・歴史・正しい食べ方、そしてワイキキで本場のビンスが食べられる場所まで徹底解説。',
+    title: 'ビンスとは？韓国かき氷を徹底解説 — 種類・トッピング・食べ方',
+    description: 'ビンス(빙수)とは、ふわふわに削った練乳氷にあずき・フルーツ・餅・練乳をのせた韓国発のデザート。人気の種類や正しい食べ方、そしてワイキキで本場のビンスが味わえる場所まで分かりやすく解説します。',
   },
   ko: {
-    title: '빙수란? 종류·먹는 법·와이키키에서 즐기는 곳 (2026)',
-    description: '빙수는 우유 얼음을 곱게 갈아 과일·떡·팥을 올린 한국 대표 디저트. 종류, 역사, 제대로 먹는 법, 와이키키에서 정통 빙수를 즐길 수 있는 곳까지 완벽 정리.',
+    title: '빙수란? 한국 빙수 완벽 정리 — 종류·토핑·먹는 법 (2026)',
+    description: '빙수는 우유 얼음을 곱게 갈아 팥·생과일·떡·연유를 올린 한국 대표 디저트입니다. 인기 종류와 제대로 먹는 법, 와이키키에서 갓 만든 빙수를 맛볼 수 있는 곳까지 한눈에 정리했습니다.',
   },
   zh: {
-    title: '什么是雪冰 (Bingsu)？韩国刨冰种类·吃法·威基基品尝指南',
-    description: '雪冰是韩国传统冰品，将冷冻牛奶刨成绵密雪花，再加水果、年糕、红豆。本指南介绍雪冰的种类、历史、正确吃法，以及在威基基哪里能品尝到正宗韩式雪冰。',
+    title: '什么是雪冰 (Bingsu)？韩式刨冰完全解析 — 种类·配料·吃法',
+    description: '雪冰 (빙수) 是韩国经典冰品：把冷冻牛奶刨成绵密雪花，再铺上红豆、鲜果、年糕与炼乳。本文解析雪冰的种类与正确吃法，以及在威基基哪里能吃到新鲜雪冰。',
   },
 };
 
