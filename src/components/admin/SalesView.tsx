@@ -2,6 +2,7 @@ import type { SalesData } from '@/lib/clover';
 import { Card, Kpi, money, money2, num } from './ui';
 import { RevenueBars, HorizontalItemBars, TenderDonut, Heatmap } from './charts';
 import RangeSelector from './RangeSelector';
+import LiveControls from './LiveControls';
 
 export default function SalesView({ data }: { data: SalesData }) {
   if (!data.configured) {
@@ -22,9 +23,7 @@ export default function SalesView({ data }: { data: SalesData }) {
     <>
       <div className="flex flex-wrap items-center justify-between gap-3">
         <RangeSelector active={data.range.key} />
-        <span className="text-xs text-stone-400">
-          {data.range.start} → {data.range.end} (HST)
-        </span>
+        <LiveControls generatedAt={data.generatedAt} />
       </div>
 
       <section>

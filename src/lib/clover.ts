@@ -1,4 +1,5 @@
 import 'server-only';
+import { CLOVER_TAG, CLOVER_ITEMS_TAG } from './cacheTags';
 
 // Clover POS data layer — aggregates sales analytics directly from the V3 REST
 // API (Clover has no reporting endpoint). Money is integer cents and times are
@@ -83,10 +84,12 @@ async function cloverPaginate<T>(resource: string, query: string, revalidate: nu
   return out;
 }
 
+// 2-minute cache on transaction data: fresh enough for a live dashboard while
+// staying far under Clover's 16 req/s limit (a single shop is a few pages).
 const fetchOrders = (sinceMs: number) =>
-  cloverPaginate<CloverOrder>('orders', `expand=lineItems,payments.tender&filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`, 600, 'clover');
+  cloverPaginate<CloverOrder>('orders', `expand=lineItems,payments.tender&filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`, 120, CLOVER_TAG);
 const fetchRefunds = (sinceMs: number) =>
-  cloverPaginate<CloverRefund>('refunds', `filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`, 600, 'clover');
+  cloverPaginate<CloverRefund>('refunds', `filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`, 120, CLOVER_TAG);
 
 // item id → category name (changes rarely → daily cache)
 async function fetchItemCategories(): Promise<Map<string, string>> {
@@ -94,7 +97,7 @@ async function fetchItemCategories(): Promise<Map<string, string>> {
     'items',
     'expand=categories',
     86400,
-    'clover-items'
+    CLOVER_ITEMS_TAG
   );
   const map = new Map<string, string>();
   for (const it of items) map.set(it.id, it.categories?.elements?.[0]?.name ?? 'Uncategorized');
@@ -105,6 +108,7 @@ async function fetchItemCategories(): Promise<Map<string, string>> {
 export interface SalesData {
   configured: boolean;
   error?: string;
+  generatedAt: number;
   range: { key: string; label: string; days: number; start: string; end: string };
   kpis: {
     revenue: number;
@@ -134,6 +138,7 @@ function emptyData(key: string, configured: boolean, error?: string): SalesData 
   return {
     configured,
     error,
+    generatedAt: Date.now(),
     range: emptyRange(key),
     kpis: { revenue: 0, net: 0, orders: 0, aov: 0, refunds: 0, refundCount: 0, tax: 0, tips: 0, deltaRevenue: null, deltaOrders: null, deltaNet: null },
     revenueByDay: [],
@@ -267,6 +272,7 @@ export async function getSalesData(opts: { range?: RangeKey; start?: string; end
 
   return {
     configured: true,
+    generatedAt: Date.now(),
     range: { key: w.key, label: w.label, days: w.days, start: hstDay(w.startMs), end: hstDay(w.endMs) },
     kpis: {
       revenue: cents(revenue),
