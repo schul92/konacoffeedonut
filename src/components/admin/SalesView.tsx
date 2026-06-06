@@ -16,6 +16,15 @@ export default function SalesView({ data, compare = false }: { data: SalesData; 
   if (data.error) {
     return <div className="rounded-2xl border border-red-200 bg-red-50 p-6 text-sm text-red-700">Could not load Clover data: {data.error}</div>;
   }
+  if (data.warming) {
+    return (
+      <div className="rounded-2xl border border-[var(--ad-border)] bg-[var(--ad-card)] p-6 text-center">
+        <div className="mx-auto mb-3 h-6 w-6 animate-spin rounded-full border-2 border-[var(--ad-border)] border-t-orange-500" />
+        <p className="text-sm font-medium text-[var(--ad-fg)]">Catching up with Clover…</p>
+        <p className="mt-1 text-xs text-[var(--ad-fg-muted)]">Live sales are loading. This refreshes on its own in a moment.</p>
+      </div>
+    );
+  }
 
   const k = data.kpis;
   const rangeLabel = data.range.key === 'custom' ? data.range.label : `last ${data.range.label.toLowerCase()}`;
@@ -42,7 +51,14 @@ export default function SalesView({ data, compare = false }: { data: SalesData; 
         </div>
         <LiveControls generatedAt={data.generatedAt} />
       </div>
-      <p className="-mt-3 text-xs text-[var(--ad-fg-muted)]">Showing {data.range.desc}</p>
+      <p className="-mt-3 flex flex-wrap items-center gap-2 text-xs text-[var(--ad-fg-muted)]">
+        Showing {data.range.desc}
+        {data.stale && (
+          <span className="inline-flex items-center gap-1 rounded-full border border-amber-300/60 bg-amber-50 px-2 py-0.5 text-[11px] font-medium text-amber-700">
+            recent snapshot · live data catching up
+          </span>
+        )}
+      </p>
 
       {/* Insights strip */}
       {insights.length > 0 && (

@@ -92,22 +92,32 @@ function release() {
 // Note: order pages exceed Next's 2 MB fetch-cache limit, so we do NOT cache the
 // raw responses (cache: 'no-store'). Instead the small *computed* SalesData is
 // cached via unstable_cache below, so Clover is hit at most once per TTL.
+const MAX_RETRIES = 8;
 async function cloverFetch(url: string): Promise<Response> {
   for (let attempt = 0; ; attempt++) {
     await acquire();
-    let res: Response;
+    let res: Response | null = null;
     try {
       res = await fetch(url, {
         headers: { Authorization: `Bearer ${TOKEN}`, Accept: 'application/json' },
         cache: 'no-store',
       });
+    } catch {
+      // Network blip (DNS/TLS/connection reset) — treat like a retryable error.
     } finally {
       release();
     }
-    if (res.status !== 429 || attempt >= 5) return res;
-    // Respect Retry-After if present, otherwise exponential backoff + jitter.
-    const retryAfter = Number(res.headers.get('retry-after'));
-    const wait = retryAfter > 0 ? retryAfter * 1000 : Math.min(8000, 400 * 2 ** attempt) + Math.floor(Math.random() * 250);
+    // Success or a non-retryable status (4xx other than 429) → return as-is.
+    if (res && res.status !== 429 && res.status < 500) return res;
+    // Otherwise it's retryable (429, 5xx, or a network error with res === null).
+    if (attempt >= MAX_RETRIES) {
+      if (res) return res;
+      throw new Error('Clover request failed (network)');
+    }
+    // Respect Retry-After if present, otherwise exponential backoff + jitter,
+    // capped at 15s. 8 attempts of growing backoff outlasts any normal burst.
+    const retryAfter = res ? Number(res.headers.get('retry-after')) : 0;
+    const wait = retryAfter > 0 ? retryAfter * 1000 : Math.min(15000, 500 * 2 ** attempt) + Math.floor(Math.random() * 300);
     await new Promise((r) => setTimeout(r, wait));
   }
 }
@@ -150,6 +160,10 @@ const getItemCategories = () => unstable_cache(fetchItemCategories, ['clover-ite
 export interface SalesData {
   configured: boolean;
   error?: string;
+  /** True when we served the last good snapshot because a fresh pull failed. */
+  stale?: boolean;
+  /** True on a cold miss that couldn't reach Clover yet (no snapshot to fall back to). */
+  warming?: boolean;
   generatedAt: number;
   range: { key: string; label: string; days: number; start: string; end: string; desc: string };
   kpis: {
@@ -178,10 +192,11 @@ export interface SalesData {
 function emptyRange(key: string): SalesData['range'] {
   return { key, label: '', days: 0, start: '', end: '', desc: '' };
 }
-function emptyData(key: string, configured: boolean, error?: string): SalesData {
+function emptyData(key: string, configured: boolean, error?: string, warming?: boolean): SalesData {
   return {
     configured,
     error,
+    warming,
     generatedAt: Date.now(),
     range: emptyRange(key),
     kpis: { revenue: 0, net: 0, orders: 0, aov: 0, refunds: 0, refundCount: 0, tax: 0, tips: 0, deltaRevenue: null, deltaOrders: null, deltaNet: null },
@@ -198,17 +213,45 @@ function emptyData(key: string, configured: boolean, error?: string): SalesData 
 
 const timeFmt = new Intl.DateTimeFormat('en-US', { timeZone: CLOVER_TZ, hour: 'numeric', minute: '2-digit' });
 const niceDate = new Intl.DateTimeFormat('en-US', { timeZone: CLOVER_TZ, month: 'short', day: 'numeric' });
+const niceDateTime = new Intl.DateTimeFormat('en-US', { timeZone: CLOVER_TZ, month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
 const hstMidnightMs = (ms: number) => new Date(`${dayFmt.format(new Date(ms))}T00:00:00${HST_OFFSET}`).getTime();
 
-// Resolve a range key (or custom YYYY-MM-DD start/end) into epoch-ms windows.
-// `desc` is a human-friendly window label; `priorEndMs` lets us compare against
-// the SAME elapsed window in the prior period (important for a partial "Today").
+// Parse a custom bound that may be a date (YYYY-MM-DD) OR a datetime
+// (YYYY-MM-DDTHH:mm from an <input type="datetime-local">). Bare dates default
+// to the start/end of the day so a date-only range still covers the full days.
+function parseHstBound(s: string, kind: 'start' | 'end'): { ms: number; hasTime: boolean } {
+  if (s.includes('T')) {
+    const withSecs = s.length === 16 ? `${s}:00` : s; // datetime-local omits seconds
+    return { ms: new Date(`${withSecs}${HST_OFFSET}`).getTime(), hasTime: true };
+  }
+  return { ms: new Date(`${s}T${kind === 'start' ? '00:00:00' : '23:59:59'}${HST_OFFSET}`).getTime(), hasTime: false };
+}
+
+// Resolve a range key (or custom start/end, date or datetime) into epoch-ms
+// windows. `desc` is a human-friendly window label; `priorEndMs` lets us compare
+// against the SAME elapsed window in the prior period (matters for a partial
+// "Today" or a sub-day time window).
 function resolveWindow(opts: { range?: RangeKey; start?: string; end?: string }) {
   if (opts.start && opts.end) {
-    const startMs = new Date(`${opts.start}T00:00:00${HST_OFFSET}`).getTime();
-    const endMs = new Date(`${opts.end}T23:59:59${HST_OFFSET}`).getTime();
-    const days = Math.max(1, Math.round((endMs - startMs) / 86_400_000));
-    return { key: 'custom', label: `${opts.start} → ${opts.end}`, days, startMs, endMs, priorStartMs: startMs - days * 86_400_000, priorEndMs: startMs, desc: `${niceDate.format(new Date(startMs))} – ${niceDate.format(new Date(endMs))} (HST)` };
+    const a = parseHstBound(opts.start, 'start');
+    const b = parseHstBound(opts.end, 'end');
+    const startMs = Math.min(a.ms, b.ms);
+    const endMs = Math.max(a.ms, b.ms);
+    const spanMs = Math.max(60_000, endMs - startMs); // floor at 1 min
+    const days = Math.max(1, Math.round(spanMs / 86_400_000));
+    const withTime = a.hasTime || b.hasTime;
+    const fmt = withTime ? niceDateTime : niceDate;
+    const cleanLabel = `${fmt.format(new Date(startMs))} – ${fmt.format(new Date(endMs))}`;
+    return {
+      key: 'custom',
+      label: cleanLabel,
+      days,
+      startMs,
+      endMs,
+      priorStartMs: startMs - spanMs, // same-length window immediately before
+      priorEndMs: startMs,
+      desc: `${cleanLabel} HST`,
+    };
   }
   const now = Date.now();
   if (opts.range === 'today') {
@@ -231,19 +274,32 @@ function resolveWindow(opts: { range?: RangeKey; start?: string; end?: string })
   return { key: r.key, label: r.label, days: r.days, startMs, endMs, priorStartMs: startMs - r.days * 86_400_000, priorEndMs: startMs, desc: `${niceDate.format(new Date(startMs))} – ${niceDate.format(new Date(endMs))} (HST)` };
 }
 
+// Last successful snapshot per range key, kept in module memory. When a fresh
+// pull fails (e.g. a Clover 429), we serve this instead of an error so the
+// dashboard never shows a scary failure — at worst a small "snapshot" badge.
+const lastGood = new Map<string, SalesData>();
+
 export async function getSalesData(opts: { range?: RangeKey; start?: string; end?: string } = {}): Promise<SalesData> {
   if (!cloverConfigured()) return emptyData(opts.range ?? '30d', false);
-  // Cache the small computed result (raw order pages are too big for the fetch
-  // cache), so Clover is only hit on a miss — at most once per TTL per range.
-  // computeSalesData throws on a fetch error so a transient 429 is NOT cached;
-  // we catch here and return an (uncached) error result so the next load retries.
   const key = opts.start && opts.end ? `c:${opts.start}:${opts.end}` : `r:${opts.range ?? '30d'}`;
   try {
-    // Bump the version suffix whenever SalesData's shape changes so a deploy
-    // never serves an old-shaped object from the persisted cache.
-    return await unstable_cache(() => computeSalesData(opts), ['clover-sales-v3', key], { revalidate: 600, tags: [CLOVER_TAG] })();
+    // unstable_cache does time-based stale-while-revalidate: once `revalidate`
+    // seconds pass it returns the cached value INSTANTLY and refreshes in the
+    // background, so reads almost never block on a live Clover fetch. A failed
+    // background refresh is swallowed (the old value is kept). The version
+    // suffix is bumped whenever SalesData's shape changes so a deploy never
+    // serves an old-shaped object from the persisted cache.
+    const data = await unstable_cache(() => computeSalesData(opts), ['clover-sales-v4', key], { revalidate: 300, tags: [CLOVER_TAG] })();
+    lastGood.set(key, data);
+    return data;
   } catch (e) {
-    return emptyData(opts.range ?? '30d', true, e instanceof Error ? e.message : String(e));
+    // Blocking miss that couldn't reach Clover (e.g. 429 after every retry).
+    // Serve the last good snapshot if we have one; otherwise a gentle "warming"
+    // state — never the raw error. (Still log it for diagnostics.)
+    console.error('[clover] getSalesData fell back:', e instanceof Error ? e.message : e);
+    const prev = lastGood.get(key);
+    if (prev) return { ...prev, stale: true };
+    return emptyData(opts.range ?? '30d', true, undefined, true);
   }
 }
 
@@ -372,7 +428,7 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   const FULL: Record<string, string> = { Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday' };
   const ap = (h: number) => (h === 0 ? '12 AM' : h < 12 ? `${h} AM` : h === 12 ? '12 PM' : `${h - 12} PM`);
   const insights: SalesData['insights'] = [];
-  const periodWord = w.key === 'today' ? 'same time yesterday' : `previous ${w.label.toLowerCase()}`;
+  const periodWord = w.key === 'today' ? 'same time yesterday' : w.key === 'custom' ? 'prior period' : `previous ${w.label.toLowerCase()}`;
   const dRev = delta(revenue, priorRevenue);
   if (dRev !== null && Math.abs(dRev) >= 1) insights.push({ tone: dRev >= 0 ? 'good' : 'bad', text: `Revenue is ${dRev >= 0 ? 'up' : 'down'} ${Math.abs(Math.round(dRev))}% vs the ${periodWord}.` });
   if (topItems[0]) insights.push({ tone: 'good', text: `${topItems[0].name} is your top earner — ${usd(topItems[0].revenue)} (${topItems[0].units} sold).` });
