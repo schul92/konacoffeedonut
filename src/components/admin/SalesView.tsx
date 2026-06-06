@@ -27,8 +27,11 @@ export default function SalesView({ data, compare = false }: { data: SalesData; 
   }
 
   const k = data.kpis;
-  const rangeLabel = data.range.key === 'custom' ? data.range.label : `last ${data.range.label.toLowerCase()}`;
   const isToday = data.range.key === 'today';
+  const isYesterday = data.range.key === 'yesterday';
+  const isSingleDay = isToday || isYesterday; // show the hourly chart for a single day
+  const rangeLabel =
+    isToday ? 'today' : isYesterday ? 'yesterday' : data.range.key === 'custom' ? data.range.label : `last ${data.range.label.toLowerCase()}`;
   const insights = data.insights ?? [];
   const revenueByHour = data.revenueByHour ?? [];
   const revSpark = data.revenueByDay.map((d) => d.revenue);
@@ -47,7 +50,7 @@ export default function SalesView({ data, compare = false }: { data: SalesData; 
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-2">
           <RangeSelector active={data.range.key} />
-          {!isToday && <CompareToggle active={compare} />}
+          {!isSingleDay && <CompareToggle active={compare} />}
         </div>
         <LiveControls generatedAt={data.generatedAt} />
       </div>
@@ -74,9 +77,9 @@ export default function SalesView({ data, compare = false }: { data: SalesData; 
 
       <section>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <Kpi label="Revenue" value={money2(k.revenue)} delta={k.deltaRevenue} hero spark={isToday ? undefined : revSpark} />
-          <Kpi label="Net sales" value={money2(k.net)} delta={k.deltaNet} spark={isToday ? undefined : revSpark} />
-          <Kpi label="Orders" value={num(k.orders)} delta={k.deltaOrders} spark={isToday ? undefined : ordSpark} />
+          <Kpi label="Revenue" value={money2(k.revenue)} delta={k.deltaRevenue} hero spark={isSingleDay ? undefined : revSpark} />
+          <Kpi label="Net sales" value={money2(k.net)} delta={k.deltaNet} spark={isSingleDay ? undefined : revSpark} />
+          <Kpi label="Orders" value={num(k.orders)} delta={k.deltaOrders} spark={isSingleDay ? undefined : ordSpark} />
           <Kpi label="Avg. order" value={money2(k.aov)} sub={rangeLabel} />
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mt-3 sm:mt-4">
@@ -95,8 +98,8 @@ export default function SalesView({ data, compare = false }: { data: SalesData; 
 
       <section className="grid lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2">
-          <Card title={isToday ? 'Revenue by hour (today, HST)' : `Revenue by day (${rangeLabel})`}>
-            {isToday ? (
+          <Card title={isSingleDay ? `Revenue by hour (${isToday ? 'today' : 'yesterday'}, HST)` : `Revenue by day (${rangeLabel})`}>
+            {isSingleDay ? (
               <RevenueBars data={revenueByHour} xKey="label" height={260} />
             ) : (
               <RevenueChart data={data.revenueByDay} compare={compare} height={280} />

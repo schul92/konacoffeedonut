@@ -5,10 +5,16 @@ import { useEffect, useState, useTransition } from 'react';
 
 const PRESETS = [
   { key: 'today', label: 'Today' },
+  { key: 'yesterday', label: 'Yesterday' },
   { key: '7d', label: '7 Days' },
   { key: '30d', label: '30 Days' },
   { key: '90d', label: '90 Days' },
 ];
+
+// Shop hours (HST) — the custom picker defaults to a full business day.
+const OPEN = '07:00';
+const CLOSE = '21:00';
+const hstToday = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Pacific/Honolulu' }).format(new Date()); // YYYY-MM-DD in HST
 
 export default function RangeSelector({ active }: { active: string }) {
   const router = useRouter();
@@ -37,17 +43,31 @@ export default function RangeSelector({ active }: { active: string }) {
     if (start && end) go('custom', `/admin?start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}`);
   };
 
+  // Opening the custom picker pre-fills a full business day (today, 7 AM → 9 PM
+  // HST) so the owner just tweaks the date and the hours are already sensible.
+  const toggleCustom = () => {
+    setOpen((o) => {
+      const next = !o;
+      if (next && (!start || !end)) {
+        const day = hstToday();
+        if (!start) setStart(`${day}T${OPEN}`);
+        if (!end) setEnd(`${day}T${CLOSE}`);
+      }
+      return next;
+    });
+  };
+
   return (
     <div className="flex flex-col gap-2" aria-busy={isPending}>
       <div className="flex flex-wrap items-center gap-2">
-        <div className="inline-flex rounded-xl border border-[var(--ad-border)] bg-[var(--ad-card)] p-1 shadow-sm">
+        <div className="flex max-w-full overflow-x-auto scrollbar-hide rounded-xl border border-[var(--ad-border)] bg-[var(--ad-card)] p-1 shadow-sm">
           {PRESETS.map((p) => {
             const on = current === p.key;
             return (
               <button
                 key={p.key}
                 onClick={() => go(p.key, `/admin?range=${p.key}`)}
-                className={`px-2.5 sm:px-3 py-1.5 text-sm font-semibold rounded-lg transition-colors ${
+                className={`shrink-0 px-2.5 sm:px-3 py-1.5 text-sm font-semibold rounded-lg transition-colors ${
                   on ? 'bg-orange-500 text-white' : 'text-[var(--ad-fg-muted)] hover:bg-[var(--ad-track)]'
                 }`}
               >
@@ -58,7 +78,7 @@ export default function RangeSelector({ active }: { active: string }) {
         </div>
 
         <button
-          onClick={() => setOpen((o) => !o)}
+          onClick={toggleCustom}
           aria-expanded={open}
           className={`inline-flex items-center gap-1.5 rounded-xl border px-3 py-1.5 text-sm font-semibold shadow-sm transition-colors ${
             isCustom ? 'border-orange-500 bg-orange-500 text-white' : 'border-[var(--ad-border)] bg-[var(--ad-card)] text-[var(--ad-fg-muted)] hover:bg-[var(--ad-track)]'

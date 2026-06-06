@@ -4,7 +4,7 @@ import { getSalesData, type RangeKey } from '@/lib/clover';
 import AdminShell from '@/components/admin/AdminShell';
 import SalesView from '@/components/admin/SalesView';
 
-const VALID: RangeKey[] = ['today', '7d', '30d', '90d'];
+const VALID: RangeKey[] = ['today', 'yesterday', '7d', '30d', '90d'];
 
 export default async function AdminSalesPage({
   searchParams,

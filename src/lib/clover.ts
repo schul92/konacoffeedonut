@@ -17,13 +17,18 @@ export function cloverConfigured() {
 }
 
 // ---- Ranges ----
-export type RangeKey = 'today' | '7d' | '30d' | '90d';
+export type RangeKey = 'today' | 'yesterday' | '7d' | '30d' | '90d';
 export const RANGES: { key: RangeKey; label: string; days: number }[] = [
   { key: 'today', label: 'Today', days: 1 },
+  { key: 'yesterday', label: 'Yesterday', days: 1 },
   { key: '7d', label: '7 Days', days: 7 },
   { key: '30d', label: '30 Days', days: 30 },
   { key: '90d', label: '90 Days', days: 90 },
 ];
+
+// Shop hours (HST), used to default the custom picker and bound "yesterday".
+export const OPEN_HOUR = 7; // 7:00 AM
+export const CLOSE_HOUR = 21; // 9:00 PM
 
 // ---- Raw Clover shapes (only the fields we use) ----
 interface CloverPayment {
@@ -266,6 +271,21 @@ function resolveWindow(opts: { range?: RangeKey; start?: string; end?: string })
       priorStartMs: startMs - 86_400_000,
       priorEndMs: startMs - 86_400_000 + elapsed, // same time yesterday → fair delta
       desc: `Today · ${timeFmt.format(new Date(startMs))} – ${timeFmt.format(new Date(now))} HST`,
+    };
+  }
+  if (opts.range === 'yesterday') {
+    const todayStart = hstMidnightMs(now);
+    const startMs = todayStart - 86_400_000; // yesterday 00:00 HST
+    const endMs = todayStart - 1; // through 23:59:59.999 yesterday
+    return {
+      key: 'yesterday',
+      label: 'Yesterday',
+      days: 1,
+      startMs,
+      endMs,
+      priorStartMs: startMs - 86_400_000, // the day before
+      priorEndMs: startMs,
+      desc: `Yesterday · ${niceDate.format(new Date(startMs))} HST`,
     };
   }
   const r = RANGES.find((x) => x.key === opts.range) ?? RANGES[2];

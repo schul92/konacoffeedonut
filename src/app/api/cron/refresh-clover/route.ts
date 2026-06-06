@@ -23,5 +23,6 @@ export async function GET(request: NextRequest) {
   await getSalesData({ range: '30d' });
   await getSalesData({ range: '7d' });
   await getSalesData({ range: 'today' });
+  await getSalesData({ range: 'yesterday' });
   return Response.json({ ok: true, warmedAt: Date.now() });
 }
