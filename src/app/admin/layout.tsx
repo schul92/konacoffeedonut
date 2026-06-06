@@ -18,7 +18,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <head>
         <script dangerouslySetInnerHTML={{ __html: noFlash }} />
       </head>
-      <body className="min-h-screen bg-[var(--ad-bg)] text-[var(--ad-fg)] antialiased [background-image:radial-gradient(120%_80%_at_50%_-10%,var(--ad-bg2),transparent)]">
+      <body className="min-h-screen antialiased">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

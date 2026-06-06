@@ -128,3 +128,13 @@ body {
   --ad-pos: #34d399;
   --ad-neg: #fb7185;
 }
+
+/* The admin area keeps its own palette regardless of the OS color scheme — the
+   unlayered `body { background: var(--background) }` rule above would otherwise
+   force a dark background when the user's system is in dark mode. Higher
+   specificity (.admin-theme body) wins over the bare `body` rule. */
+.admin-theme body {
+  background-color: var(--ad-bg);
+  background-image: radial-gradient(120% 80% at 50% -10%, var(--ad-bg2), transparent);
+  color: var(--ad-fg);
+}

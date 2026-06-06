@@ -68,12 +68,21 @@ const WEEK = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 // Clover allows ~16 req/s and only 5 concurrent requests per token. We cap our
 // own concurrency well under that and retry with backoff on 429 so bursts
 // (multiple cards/ranges/cron all paginating at once) never error out.
-const MAX_CONCURRENT = 3;
+// Serialize all Clover requests (one at a time) so we can never approach the
+// 5-concurrent / 16-req-per-sec limits, even if multiple ranges/cron/users miss
+// the cache at once. Combined with the result cache, Clover load stays tiny.
+const MAX_CONCURRENT = 1;
+const MIN_INTERVAL_MS = 90; // pace to ~11 req/s, comfortably under Clover's 16/s
 let inFlight = 0;
+let lastReqAt = 0;
 const waiters: (() => void)[] = [];
 async function acquire() {
   if (inFlight >= MAX_CONCURRENT) await new Promise<void>((r) => waiters.push(r));
   inFlight++;
+  // Pace requests so back-to-back small calls can't burst over the rate limit.
+  const wait = lastReqAt + MIN_INTERVAL_MS - Date.now();
+  if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+  lastReqAt = Date.now();
 }
 function release() {
   inFlight--;
@@ -126,13 +135,16 @@ const fetchOrders = (sinceMs: number) =>
 const fetchRefunds = (sinceMs: number) =>
   cloverPaginate<CloverRefund>('refunds', `filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`);
 
-// item id → category name
-async function fetchItemCategories(): Promise<Map<string, string>> {
+// item id → category name. Cached separately for an hour (it's range-independent
+// and changes rarely) so we don't re-fetch the whole catalog on every range's
+// cache miss. Returns a plain object so unstable_cache can serialize it.
+async function fetchItemCategories(): Promise<Record<string, string>> {
   const items = await cloverPaginate<{ id: string; categories?: { elements?: { name?: string }[] } }>('items', 'expand=categories');
-  const map = new Map<string, string>();
-  for (const it of items) map.set(it.id, it.categories?.elements?.[0]?.name ?? 'Uncategorized');
-  return map;
+  const obj: Record<string, string> = {};
+  for (const it of items) obj[it.id] = it.categories?.elements?.[0]?.name ?? 'Uncategorized';
+  return obj;
 }
+const getItemCategories = () => unstable_cache(fetchItemCategories, ['clover-item-categories'], { revalidate: 3600, tags: [CLOVER_TAG] })();
 
 // ---- Output types (money already in dollars) ----
 export interface SalesData {
@@ -215,7 +227,7 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   // Errors propagate so a transient failure isn't cached (getSalesData catches).
   const orders = await fetchOrders(w.priorStartMs);
   const refunds = await fetchRefunds(w.priorStartMs);
-  const catMap = await fetchItemCategories();
+  const catMap = await getItemCategories();
 
   const paid = orders.filter((o) => (o.payments?.elements ?? []).some((p) => p.result === 'SUCCESS'));
 
@@ -254,7 +266,7 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
         cur.units += 1;
         cur.revenue += li.price ?? 0;
         itemMap.set(name, cur);
-        const cat = catMap.get(li.item?.id ?? '') ?? 'Uncategorized';
+        const cat = catMap[li.item?.id ?? ''] ?? 'Uncategorized';
         catRev.set(cat, (catRev.get(cat) ?? 0) + (li.price ?? 0));
       }
       for (const p of o.payments?.elements ?? []) {
