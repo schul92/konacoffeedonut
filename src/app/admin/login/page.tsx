@@ -15,10 +15,10 @@ export default async function AdminLoginPage({
   const accessDenied = error === 'AccessDenied';
 
   return (
-    <main className="min-h-screen flex items-center justify-center px-4">
-      <div className="w-full max-w-sm rounded-2xl border border-slate-200 bg-white p-8 shadow-sm text-center">
-        <h1 className="text-2xl font-extrabold tracking-tight">Kona Coffee Donut</h1>
-        <p className="mt-1 text-sm text-slate-500">Admin · Analytics Dashboard</p>
+    <main className="min-h-screen flex items-center justify-center px-4 bg-slate-950">
+      <div className="w-full max-w-sm rounded-2xl border border-slate-800 bg-slate-900 p-8 shadow-xl text-center">
+        <h1 className="text-2xl font-extrabold tracking-tight text-slate-50">Kona Coffee Donut</h1>
+        <p className="mt-1 text-sm text-slate-400">Admin · Analytics Dashboard</p>
 
         {accessDenied && (
           <div className="mt-5 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">

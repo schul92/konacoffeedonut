@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body className="bg-slate-50 text-slate-900 antialiased">{children}</body>
+      <body className="bg-slate-950 text-slate-100 antialiased">{children}</body>
     </html>
   );
 }

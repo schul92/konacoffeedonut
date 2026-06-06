@@ -69,7 +69,7 @@ export default function SalesView({ data }: { data: SalesData }) {
         </Card>
       </section>
 
-      <p className="text-xs text-slate-400">
+      <p className="text-xs text-slate-500">
         Live from Clover POS · merchant KONA COFFEE DONUT? · times in Hawaiʻi (HST) · net = revenue − tax − refunds.
       </p>
     </>

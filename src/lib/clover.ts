@@ -16,11 +16,11 @@ export function cloverConfigured() {
 }
 
 // ---- Ranges ----
-export type RangeKey = 'today' | '7d' | '28d' | '90d';
+export type RangeKey = 'today' | '7d' | '30d' | '90d';
 export const RANGES: { key: RangeKey; label: string; days: number }[] = [
   { key: 'today', label: 'Today', days: 1 },
   { key: '7d', label: '7 Days', days: 7 },
-  { key: '28d', label: '28 Days', days: 28 },
+  { key: '30d', label: '30 Days', days: 30 },
   { key: '90d', label: '90 Days', days: 90 },
 ];
 
@@ -165,7 +165,7 @@ function resolveWindow(opts: { range?: RangeKey; start?: string; end?: string })
 }
 
 export async function getSalesData(opts: { range?: RangeKey; start?: string; end?: string } = {}): Promise<SalesData> {
-  if (!cloverConfigured()) return emptyData(opts.range ?? '28d', false);
+  if (!cloverConfigured()) return emptyData(opts.range ?? '30d', false);
 
   const w = resolveWindow(opts);
   let orders: CloverOrder[];

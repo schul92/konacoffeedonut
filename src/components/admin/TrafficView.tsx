@@ -20,10 +20,10 @@ export default function TrafficView({ data }: { data: Ga4Data | null }) {
           <table className="w-full text-sm">
             <tbody>
               {data.topPages.map((r, i) => (
-                <tr key={i} className="border-b border-slate-100 last:border-0">
-                  <td className="py-1.5 pr-2 text-slate-700 truncate max-w-[320px]">{r.path}</td>
+                <tr key={i} className="border-b border-slate-800 last:border-0">
+                  <td className="py-1.5 pr-2 text-slate-300 truncate max-w-[320px]">{r.path}</td>
                   <td className="text-right tabular-nums">{num(r.views)}</td>
-                  <td className="text-right tabular-nums text-slate-500 w-16">{num(r.users)}</td>
+                  <td className="text-right tabular-nums text-slate-400 w-16">{num(r.users)}</td>
                 </tr>
               ))}
             </tbody>
@@ -33,10 +33,10 @@ export default function TrafficView({ data }: { data: Ga4Data | null }) {
           <table className="w-full text-sm">
             <tbody>
               {data.channels.map((r, i) => (
-                <tr key={i} className="border-b border-slate-100 last:border-0">
-                  <td className="py-1.5 pr-2 text-slate-700">{r.channel}</td>
+                <tr key={i} className="border-b border-slate-800 last:border-0">
+                  <td className="py-1.5 pr-2 text-slate-300">{r.channel}</td>
                   <td className="text-right tabular-nums">{num(r.sessions)}</td>
-                  <td className="text-right tabular-nums text-slate-500 w-16">{num(r.users)}</td>
+                  <td className="text-right tabular-nums text-slate-400 w-16">{num(r.users)}</td>
                 </tr>
               ))}
             </tbody>

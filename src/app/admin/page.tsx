@@ -4,7 +4,7 @@ import { getSalesData, type RangeKey } from '@/lib/clover';
 import AdminShell from '@/components/admin/AdminShell';
 import SalesView from '@/components/admin/SalesView';
 
-const VALID: RangeKey[] = ['today', '7d', '28d', '90d'];
+const VALID: RangeKey[] = ['today', '7d', '30d', '90d'];
 
 export default async function AdminSalesPage({
   searchParams,
@@ -16,7 +16,7 @@ export default async function AdminSalesPage({
 
   const sp = await searchParams;
   const range = VALID.includes(sp.range as RangeKey) ? (sp.range as RangeKey) : undefined;
-  const data = await getSalesData(sp.start && sp.end ? { start: sp.start, end: sp.end } : { range: range ?? '28d' });
+  const data = await getSalesData(sp.start && sp.end ? { start: sp.start, end: sp.end } : { range: range ?? '30d' });
 
   return (
     <AdminShell active="sales" user={session.user} subtitle="Sales · live from Clover POS">

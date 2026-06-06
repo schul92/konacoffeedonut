@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
   // the ranges the dashboard loads (revalidateTag alone is lazy).
   revalidateTag(CLOVER_TAG, 'max');
   try {
-    await Promise.all([getSalesData({ range: '28d' }), getSalesData({ range: '7d' }), getSalesData({ range: 'today' })]);
+    await Promise.all([getSalesData({ range: '30d' }), getSalesData({ range: '7d' }), getSalesData({ range: 'today' })]);
   } catch (e) {
     return Response.json({ ok: false, error: e instanceof Error ? e.message : String(e) }, { status: 500 });
   }

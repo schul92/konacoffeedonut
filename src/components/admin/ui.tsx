@@ -14,12 +14,12 @@ export function pct(x: number) {
 }
 
 export function DeltaChip({ delta }: { delta: number | null }) {
-  if (delta === null || !isFinite(delta)) return <span className="text-xs text-slate-400">— no prior data</span>;
+  if (delta === null || !isFinite(delta)) return <span className="text-xs text-slate-500">— no prior data</span>;
   const up = delta >= 0;
   return (
-    <span className={`text-[13px] font-semibold tabular-nums ${up ? 'text-green-700' : 'text-red-700'}`}>
+    <span className={`text-[13px] font-semibold tabular-nums ${up ? 'text-emerald-400' : 'text-rose-400'}`}>
       {up ? '▲' : '▼'} {delta >= 0 ? '+' : ''}
-      {delta.toFixed(0)}% <span className="font-normal text-slate-400">vs prior</span>
+      {delta.toFixed(0)}% <span className="font-normal text-slate-500">vs prior</span>
     </span>
   );
 }
@@ -38,9 +38,9 @@ export function Kpi({
   hero?: boolean;
 }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-      <p className="text-[13px] font-medium uppercase tracking-wide text-slate-500">{label}</p>
-      <p className={`mt-1.5 font-semibold tracking-tight tabular-nums text-slate-900 ${hero ? 'text-4xl' : 'text-3xl'}`}>{value}</p>
+    <div className="rounded-xl border border-slate-800 bg-slate-900 p-5 transition-colors hover:border-slate-700">
+      <p className="text-[13px] font-medium uppercase tracking-wide text-slate-300">{label}</p>
+      <p className={`mt-1.5 font-semibold tracking-tight tabular-nums text-slate-50 ${hero ? 'text-4xl' : 'text-3xl'}`}>{value}</p>
       <div className="mt-1.5 min-h-[18px]">
         {delta !== undefined ? <DeltaChip delta={delta} /> : sub ? <span className="text-xs text-slate-400">{sub}</span> : null}
       </div>
@@ -50,8 +50,8 @@ export function Kpi({
 
 export function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-      <h3 className="mb-4 text-sm font-semibold text-slate-900">{title}</h3>
+    <div className="rounded-xl border border-slate-800 bg-slate-900 p-5">
+      <h3 className="mb-4 text-sm font-semibold text-slate-100">{title}</h3>
       {children}
     </div>
   );
