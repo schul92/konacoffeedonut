@@ -86,6 +86,21 @@ export function RevenueBars({
   );
 }
 
+export function Sparkline({ data, height = 28 }: { data: number[]; height?: number }) {
+  const c = useC();
+  if (data.length < 2) return null;
+  const max = Math.max(...data);
+  const min = Math.min(...data);
+  const range = max - min || 1;
+  const W = 100;
+  const pts = data.map((v, i) => `${(i / (data.length - 1)) * W},${height - ((v - min) / range) * (height - 3) - 1.5}`).join(' ');
+  return (
+    <svg viewBox={`0 0 ${W} ${height}`} width="100%" height={height} preserveAspectRatio="none" className="mt-2 block">
+      <polyline points={pts} fill="none" stroke={c.primary} strokeWidth="2" vectorEffect="non-scaling-stroke" strokeLinejoin="round" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function HorizontalItemBars({ data }: { data: { name: string; revenue: number; units?: number }[] }) {
   const c = useC();
   const max = Math.max(1, ...data.map((d) => d.revenue));
@@ -114,16 +129,22 @@ export function TenderDonut({ data }: { data: { tender: string; amount: number }
   const total = data.reduce((s, d) => s + d.amount, 0) || 1;
   return (
     <div className="flex items-center gap-4">
-      <ResponsiveContainer width="50%" height={180}>
-        <PieChart>
-          <Pie data={data} dataKey="amount" nameKey="tender" cx="50%" cy="50%" innerRadius={44} outerRadius={72} paddingAngle={2} stroke={c.cardBg} strokeWidth={2}>
-            {data.map((_, i) => (
-              <Cell key={i} fill={c.palette[i % c.palette.length]} />
-            ))}
-          </Pie>
-          <Tooltip formatter={(value) => usd0(Number(value))} contentStyle={tip(c)} />
-        </PieChart>
-      </ResponsiveContainer>
+      <div className="relative" style={{ width: '50%' }}>
+        <ResponsiveContainer width="100%" height={180}>
+          <PieChart>
+            <Pie data={data} dataKey="amount" nameKey="tender" cx="50%" cy="50%" innerRadius={48} outerRadius={74} paddingAngle={2} stroke={c.cardBg} strokeWidth={2}>
+              {data.map((_, i) => (
+                <Cell key={i} fill={c.palette[i % c.palette.length]} />
+              ))}
+            </Pie>
+            <Tooltip formatter={(value) => usd0(Number(value))} contentStyle={tip(c)} />
+          </PieChart>
+        </ResponsiveContainer>
+        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+          <span className="text-[10px] uppercase tracking-wide text-[var(--ad-fg-subtle)]">Total</span>
+          <span className="text-base font-bold tabular-nums text-[var(--ad-fg)]">{usd0(total)}</span>
+        </div>
+      </div>
       <ul className="flex-1 space-y-1.5 text-sm">
         {data.map((d, i) => (
           <li key={d.tender} className="flex items-center gap-2">

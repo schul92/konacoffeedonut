@@ -1,5 +1,6 @@
 // Shared presentational helpers for the admin dashboard. Colors come from CSS
 // variables (--ad-*) so the light/dark toggle flips everything at once.
+import { Sparkline } from './charts';
 
 export function money(n: number) {
   return `$${n.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
@@ -31,20 +32,23 @@ export function Kpi({
   delta,
   sub,
   hero = false,
+  spark,
 }: {
   label: string;
   value: string;
   delta?: number | null;
   sub?: string;
   hero?: boolean;
+  spark?: number[];
 }) {
   return (
-    <div className="rounded-xl border border-[var(--ad-border)] bg-[var(--ad-card)] p-4 sm:p-5 shadow-sm transition-colors">
+    <div className="rounded-xl border border-[var(--ad-border)] bg-[var(--ad-card)] p-4 sm:p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">
       <p className="text-[12px] sm:text-[13px] font-medium uppercase tracking-wide text-[var(--ad-fg-muted)]">{label}</p>
       <p className={`mt-1.5 font-semibold tracking-tight tabular-nums text-[var(--ad-fg)] ${hero ? 'text-2xl sm:text-4xl' : 'text-2xl sm:text-3xl'}`}>{value}</p>
       <div className="mt-1.5 min-h-[18px]">
         {delta !== undefined ? <DeltaChip delta={delta} /> : sub ? <span className="text-xs text-[var(--ad-fg-subtle)]">{sub}</span> : null}
       </div>
+      {spark && spark.length >= 3 && <Sparkline data={spark} />}
     </div>
   );
 }

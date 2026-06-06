@@ -165,12 +165,14 @@ export interface SalesData {
     deltaOrders: number | null;
     deltaNet: number | null;
   };
-  revenueByDay: { day: string; label: string; revenue: number }[];
+  revenueByDay: { day: string; label: string; revenue: number; orders: number }[];
+  revenueByHour: { hour: number; label: string; revenue: number }[];
   heatmap: { weekday: string; hours: number[] }[];
   heatmapMax: number;
   topItems: { name: string; units: number; revenue: number }[];
   categoryMix: { category: string; revenue: number }[];
   tenderMix: { tender: string; amount: number }[];
+  insights: { tone: 'good' | 'bad' | 'neutral'; text: string }[];
 }
 
 function emptyRange(key: string): SalesData['range'] {
@@ -184,11 +186,13 @@ function emptyData(key: string, configured: boolean, error?: string): SalesData 
     range: emptyRange(key),
     kpis: { revenue: 0, net: 0, orders: 0, aov: 0, refunds: 0, refundCount: 0, tax: 0, tips: 0, deltaRevenue: null, deltaOrders: null, deltaNet: null },
     revenueByDay: [],
+    revenueByHour: [],
     heatmap: [],
     heatmapMax: 0,
     topItems: [],
     categoryMix: [],
     tenderMix: [],
+    insights: [],
   };
 }
 
@@ -235,7 +239,9 @@ export async function getSalesData(opts: { range?: RangeKey; start?: string; end
   // we catch here and return an (uncached) error result so the next load retries.
   const key = opts.start && opts.end ? `c:${opts.start}:${opts.end}` : `r:${opts.range ?? '30d'}`;
   try {
-    return await unstable_cache(() => computeSalesData(opts), ['clover-sales', key], { revalidate: 600, tags: [CLOVER_TAG] })();
+    // Bump the version suffix whenever SalesData's shape changes so a deploy
+    // never serves an old-shaped object from the persisted cache.
+    return await unstable_cache(() => computeSalesData(opts), ['clover-sales-v2', key], { revalidate: 600, tags: [CLOVER_TAG] })();
   } catch (e) {
     return emptyData(opts.range ?? '30d', true, e instanceof Error ? e.message : String(e));
   }
@@ -265,6 +271,8 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   let priorTax = 0;
 
   const dayRev = new Map<string, number>();
+  const dayOrders = new Map<string, number>();
+  const curHour = new Array(24).fill(0);
   const heat: number[][] = WEEK.map(() => new Array(24).fill(0));
   const itemMap = new Map<string, { units: number; revenue: number }>();
   const catRev = new Map<string, number>();
@@ -278,6 +286,8 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
       orderCount += 1;
       const day = hstDay(ms);
       dayRev.set(day, (dayRev.get(day) ?? 0) + total);
+      dayOrders.set(day, (dayOrders.get(day) ?? 0) + 1);
+      curHour[hstHour(ms)] += total;
       const wd = WEEK.indexOf(hstWeekday(ms));
       if (wd >= 0) heat[wd][hstHour(ms)] += total;
       for (const li of o.lineItems?.elements ?? []) {
@@ -324,8 +334,12 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   for (let i = dayCount - 1; i >= 0; i--) {
     const ms = w.endMs - i * 86_400_000;
     const day = hstDay(ms);
-    revenueByDay.push({ day, label: monDay.format(new Date(ms)), revenue: cents(dayRev.get(day) ?? 0) });
+    revenueByDay.push({ day, label: monDay.format(new Date(ms)), revenue: cents(dayRev.get(day) ?? 0), orders: dayOrders.get(day) ?? 0 });
   }
+
+  // Hourly revenue (6am–10pm) for the current window — used for the "Today" view.
+  const hLabel = (h: number) => `${((h + 11) % 12) + 1}${h < 12 ? 'a' : 'p'}`;
+  const revenueByHour = Array.from({ length: 17 }, (_, i) => i + 6).map((h) => ({ hour: h, label: hLabel(h), revenue: cents(curHour[h]) }));
 
   const heatmap = WEEK.map((weekday, i) => ({ weekday, hours: heat[i].map((v) => cents(v)) }));
   const heatmapMax = Math.max(0, ...heat.flat().map((v) => cents(v)));
@@ -342,6 +356,25 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   const tenderMix = Array.from(tenderMap.entries())
     .map(([tender, amount]) => ({ tender, amount: cents(amount) }))
     .sort((a, b) => b.amount - a.amount);
+
+  // Plain-English insights from the aggregates (no extra Clover calls).
+  const usd = (n: number) => `$${Math.round(n).toLocaleString('en-US')}`;
+  const FULL: Record<string, string> = { Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday' };
+  const ap = (h: number) => (h === 0 ? '12 AM' : h < 12 ? `${h} AM` : h === 12 ? '12 PM' : `${h - 12} PM`);
+  const insights: SalesData['insights'] = [];
+  const periodWord = w.key === 'today' ? 'same time yesterday' : `previous ${w.label.toLowerCase()}`;
+  const dRev = delta(revenue, priorRevenue);
+  if (dRev !== null && Math.abs(dRev) >= 1) insights.push({ tone: dRev >= 0 ? 'good' : 'bad', text: `Revenue is ${dRev >= 0 ? 'up' : 'down'} ${Math.abs(Math.round(dRev))}% vs the ${periodWord}.` });
+  if (topItems[0]) insights.push({ tone: 'good', text: `${topItems[0].name} is your top earner — ${usd(topItems[0].revenue)} (${topItems[0].units} sold).` });
+  if (w.key !== 'today') {
+    const wdTot = WEEK.map((_, i) => heat[i].reduce((s, v) => s + v, 0));
+    const hrTot = new Array(24).fill(0);
+    for (let i = 0; i < 7; i++) for (let h = 0; h < 24; h++) hrTot[h] += heat[i][h];
+    const bd = wdTot.indexOf(Math.max(...wdTot));
+    const bh = hrTot.indexOf(Math.max(...hrTot));
+    if (wdTot[bd] > 0) insights.push({ tone: 'neutral', text: `Busiest around ${FULL[WEEK[bd]]} ${ap(bh)}.` });
+  }
+  if (refundCount > 0) insights.push({ tone: refundTotal >= revenue * 0.02 ? 'bad' : 'neutral', text: `${refundCount} refund${refundCount === 1 ? '' : 's'} — ${usd(refundTotal)}.` });
 
   return {
     configured: true,
@@ -361,6 +394,8 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
       deltaNet: delta(net, priorNet),
     },
     revenueByDay,
+    revenueByHour,
+    insights,
     heatmap,
     heatmapMax,
     topItems,

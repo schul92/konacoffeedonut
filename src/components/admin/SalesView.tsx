@@ -18,6 +18,19 @@ export default function SalesView({ data }: { data: SalesData }) {
 
   const k = data.kpis;
   const rangeLabel = data.range.key === 'custom' ? data.range.label : `last ${data.range.label.toLowerCase()}`;
+  const isToday = data.range.key === 'today';
+  const insights = data.insights ?? [];
+  const revenueByHour = data.revenueByHour ?? [];
+  const revSpark = data.revenueByDay.map((d) => d.revenue);
+  const ordSpark = data.revenueByDay.map((d) => d.orders ?? 0);
+  const zeroToday = isToday && k.orders === 0;
+
+  const toneClass = (t: string) =>
+    t === 'good'
+      ? 'border-green-300/50 bg-green-500/10 text-[var(--ad-fg)]'
+      : t === 'bad'
+        ? 'border-red-300/50 bg-red-500/10 text-[var(--ad-fg)]'
+        : 'border-[var(--ad-border)] bg-[var(--ad-track)] text-[var(--ad-fg)]';
 
   return (
     <>
@@ -27,11 +40,23 @@ export default function SalesView({ data }: { data: SalesData }) {
       </div>
       <p className="-mt-3 text-xs text-[var(--ad-fg-muted)]">Showing {data.range.desc}</p>
 
+      {/* Insights strip */}
+      {insights.length > 0 && (
+        <section className="flex flex-wrap gap-2">
+          {insights.map((ins, i) => (
+            <span key={i} className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm ${toneClass(ins.tone)}`}>
+              <span aria-hidden="true">{ins.tone === 'good' ? '📈' : ins.tone === 'bad' ? '⚠️' : '🔥'}</span>
+              {ins.text}
+            </span>
+          ))}
+        </section>
+      )}
+
       <section>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <Kpi label="Revenue" value={money2(k.revenue)} delta={k.deltaRevenue} hero />
-          <Kpi label="Net sales" value={money2(k.net)} delta={k.deltaNet} />
-          <Kpi label="Orders" value={num(k.orders)} delta={k.deltaOrders} />
+          <Kpi label="Revenue" value={money2(k.revenue)} delta={k.deltaRevenue} hero spark={isToday ? undefined : revSpark} />
+          <Kpi label="Net sales" value={money2(k.net)} delta={k.deltaNet} spark={isToday ? undefined : revSpark} />
+          <Kpi label="Orders" value={num(k.orders)} delta={k.deltaOrders} spark={isToday ? undefined : ordSpark} />
           <Kpi label="Avg. order" value={money2(k.aov)} sub={rangeLabel} />
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mt-3 sm:mt-4">
@@ -42,10 +67,16 @@ export default function SalesView({ data }: { data: SalesData }) {
         </div>
       </section>
 
+      {zeroToday && (
+        <div className="rounded-xl border border-[var(--ad-border)] bg-[var(--ad-card)] p-6 text-center text-sm text-[var(--ad-fg-muted)]">
+          ☕ No sales yet today — the shop opens at 7 AM HST. Numbers will fill in through the day.
+        </div>
+      )}
+
       <section className="grid lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2">
-          <Card title={`Revenue by day (${rangeLabel})`}>
-            <RevenueBars data={data.revenueByDay} xKey="label" height={260} />
+          <Card title={isToday ? 'Revenue by hour (today, HST)' : `Revenue by day (${rangeLabel})`}>
+            <RevenueBars data={isToday ? revenueByHour : data.revenueByDay} xKey="label" height={260} />
           </Card>
         </div>
         <Card title="Payment mix">
