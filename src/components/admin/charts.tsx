@@ -5,6 +5,8 @@ import {
   BarChart,
   CartesianGrid,
   Cell,
+  ComposedChart,
+  Line,
   Pie,
   PieChart,
   ResponsiveContainer,
@@ -83,6 +85,73 @@ export function RevenueBars({
         <Bar dataKey="revenue" fill={c.primary} radius={[5, 5, 0, 0]} maxBarSize={44} />
       </BarChart>
     </ResponsiveContainer>
+  );
+}
+
+// By-day revenue: bars + a 7-day moving-average trend line, and (when compare is
+// on) a faded dashed line for the matching prior period. The moving average is
+// computed client-side so the server payload stays tiny.
+type DayRow = { day: string; label: string; revenue: number; orders: number; prior: number };
+
+function RevTooltip({ active, payload, compare }: { active?: boolean; payload?: { payload: DayRow & { trend: number } }[]; compare: boolean }) {
+  const c = useC();
+  if (!active || !payload?.length) return null;
+  const row = payload[0].payload;
+  const delta = compare && row.prior > 0 ? ((row.revenue - row.prior) / row.prior) * 100 : null;
+  return (
+    <div style={tip(c)}>
+      <div className="font-semibold mb-1">{row.label}</div>
+      <div className="flex items-center justify-between gap-4">
+        <span style={{ color: c.axis }}>Revenue</span>
+        <span className="font-semibold tabular-nums">{usd0(row.revenue)}</span>
+      </div>
+      <div className="flex items-center justify-between gap-4">
+        <span style={{ color: c.axis }}>{row.orders} orders · 7-day avg</span>
+        <span className="tabular-nums">{usd0(row.trend)}</span>
+      </div>
+      {compare && (
+        <div className="flex items-center justify-between gap-4 mt-0.5 pt-0.5" style={{ borderTop: `1px solid ${c.grid}` }}>
+          <span style={{ color: c.axis }}>Prior period</span>
+          <span className="tabular-nums">
+            {usd0(row.prior)}
+            {delta !== null && <span style={{ color: delta >= 0 ? 'var(--ad-pos)' : 'var(--ad-neg)' }}> {delta >= 0 ? '+' : ''}{delta.toFixed(0)}%</span>}
+          </span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function RevenueChart({ data, compare = false, height = 300 }: { data: DayRow[]; compare?: boolean; height?: number }) {
+  const c = useC();
+  // 7-day trailing moving average (uses up to 7 prior points; fewer near the start).
+  const rows = data.map((d, i) => {
+    const from = Math.max(0, i - 6);
+    const slice = data.slice(from, i + 1);
+    const trend = slice.reduce((s, x) => s + x.revenue, 0) / slice.length;
+    return { ...d, trend };
+  });
+  return (
+    <div>
+      <div className="-mt-1 mb-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ad-fg-muted)]">
+        <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: c.primary }} />Revenue</span>
+        <span className="inline-flex items-center gap-1.5"><span className="h-[3px] w-4 rounded-full" style={{ background: c.palette[1] }} />7-day average</span>
+        {compare && (
+          <span className="inline-flex items-center gap-1.5"><span className="h-0 w-4 border-t-2 border-dashed" style={{ borderColor: c.axis }} />Prior period</span>
+        )}
+      </div>
+      <ResponsiveContainer width="100%" height={height}>
+        <ComposedChart data={rows} margin={{ top: 8, right: 8, bottom: 0, left: -12 }}>
+          <CartesianGrid vertical={false} stroke={c.grid} />
+          <XAxis dataKey="label" tick={{ fontSize: 11, fill: c.axis }} interval="preserveStartEnd" tickLine={false} axisLine={false} dy={6} />
+          <YAxis tick={{ fontSize: 11, fill: c.axis }} tickFormatter={usdK} tickLine={false} axisLine={false} width={46} />
+          <Tooltip cursor={{ fill: 'rgba(148,163,184,0.12)' }} content={<RevTooltip compare={compare} />} />
+          <Bar dataKey="revenue" fill={c.primary} radius={[5, 5, 0, 0]} maxBarSize={44} />
+          {compare && <Line type="monotone" dataKey="prior" stroke={c.axis} strokeWidth={1.5} strokeDasharray="4 4" dot={false} opacity={0.7} />}
+          <Line type="monotone" dataKey="trend" stroke={c.palette[1]} strokeWidth={2.5} dot={false} />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </div>
   );
 }
 

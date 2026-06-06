@@ -1,10 +1,11 @@
 import type { SalesData } from '@/lib/clover';
 import { Card, Kpi, money, money2, num } from './ui';
-import { RevenueBars, HorizontalItemBars, TenderDonut, Heatmap } from './charts';
+import { RevenueBars, RevenueChart, HorizontalItemBars, TenderDonut, Heatmap } from './charts';
 import RangeSelector from './RangeSelector';
+import CompareToggle from './CompareToggle';
 import LiveControls from './LiveControls';
 
-export default function SalesView({ data }: { data: SalesData }) {
+export default function SalesView({ data, compare = false }: { data: SalesData; compare?: boolean }) {
   if (!data.configured) {
     return (
       <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6 text-sm text-amber-800">
@@ -35,7 +36,10 @@ export default function SalesView({ data }: { data: SalesData }) {
   return (
     <>
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <RangeSelector active={data.range.key} />
+        <div className="flex flex-wrap items-center gap-2">
+          <RangeSelector active={data.range.key} />
+          {!isToday && <CompareToggle active={compare} />}
+        </div>
         <LiveControls generatedAt={data.generatedAt} />
       </div>
       <p className="-mt-3 text-xs text-[var(--ad-fg-muted)]">Showing {data.range.desc}</p>
@@ -76,7 +80,11 @@ export default function SalesView({ data }: { data: SalesData }) {
       <section className="grid lg:grid-cols-3 gap-4">
         <div className="lg:col-span-2">
           <Card title={isToday ? 'Revenue by hour (today, HST)' : `Revenue by day (${rangeLabel})`}>
-            <RevenueBars data={isToday ? revenueByHour : data.revenueByDay} xKey="label" height={260} />
+            {isToday ? (
+              <RevenueBars data={revenueByHour} xKey="label" height={260} />
+            ) : (
+              <RevenueChart data={data.revenueByDay} compare={compare} height={280} />
+            )}
           </Card>
         </div>
         <Card title="Payment mix">

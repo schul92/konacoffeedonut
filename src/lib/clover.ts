@@ -165,7 +165,7 @@ export interface SalesData {
     deltaOrders: number | null;
     deltaNet: number | null;
   };
-  revenueByDay: { day: string; label: string; revenue: number; orders: number }[];
+  revenueByDay: { day: string; label: string; revenue: number; orders: number; prior: number }[];
   revenueByHour: { hour: number; label: string; revenue: number }[];
   heatmap: { weekday: string; hours: number[] }[];
   heatmapMax: number;
@@ -241,7 +241,7 @@ export async function getSalesData(opts: { range?: RangeKey; start?: string; end
   try {
     // Bump the version suffix whenever SalesData's shape changes so a deploy
     // never serves an old-shaped object from the persisted cache.
-    return await unstable_cache(() => computeSalesData(opts), ['clover-sales-v2', key], { revalidate: 600, tags: [CLOVER_TAG] })();
+    return await unstable_cache(() => computeSalesData(opts), ['clover-sales-v3', key], { revalidate: 600, tags: [CLOVER_TAG] })();
   } catch (e) {
     return emptyData(opts.range ?? '30d', true, e instanceof Error ? e.message : String(e));
   }
@@ -272,6 +272,7 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
 
   const dayRev = new Map<string, number>();
   const dayOrders = new Map<string, number>();
+  const allDayRev = new Map<string, number>(); // every paid day (cur + prior) → for comparison overlay
   const curHour = new Array(24).fill(0);
   const heat: number[][] = WEEK.map(() => new Array(24).fill(0));
   const itemMap = new Map<string, { units: number; revenue: number }>();
@@ -281,6 +282,7 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   for (const o of paid) {
     const ms = o.createdTime ?? 0;
     const total = o.total ?? 0;
+    allDayRev.set(hstDay(ms), (allDayRev.get(hstDay(ms)) ?? 0) + total);
     if (inCur(ms)) {
       revenue += total;
       orderCount += 1;
@@ -328,13 +330,21 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   const priorNet = priorRevenue - priorTax - priorRefund;
   const delta = (cur: number, prev: number) => (prev > 0 ? ((cur - prev) / prev) * 100 : null);
 
-  // Build day series across the window
+  // Build day series across the window, with the aligned prior-period day for comparison.
   const revenueByDay: SalesData['revenueByDay'] = [];
   const dayCount = Math.min(w.days, 92);
+  const windowMs = w.days * 86_400_000;
   for (let i = dayCount - 1; i >= 0; i--) {
     const ms = w.endMs - i * 86_400_000;
     const day = hstDay(ms);
-    revenueByDay.push({ day, label: monDay.format(new Date(ms)), revenue: cents(dayRev.get(day) ?? 0), orders: dayOrders.get(day) ?? 0 });
+    const priorDay = hstDay(ms - windowMs);
+    revenueByDay.push({
+      day,
+      label: monDay.format(new Date(ms)),
+      revenue: cents(dayRev.get(day) ?? 0),
+      orders: dayOrders.get(day) ?? 0,
+      prior: cents(allDayRev.get(priorDay) ?? 0),
+    });
   }
 
   // Hourly revenue (6am–10pm) for the current window — used for the "Today" view.

@@ -20,10 +20,14 @@ function ago(ms: number) {
 export default function LiveControls({ generatedAt, intervalMs = 45_000 }: { generatedAt: number; intervalMs?: number }) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
+  const [mounted, setMounted] = useState(false);
   const [, tick] = useState(0);
 
-  // Re-render every second so the "updated Xs ago" label counts up.
+  // Re-render every second so the "updated Xs ago" label counts up. We also flip
+  // `mounted` so the relative time only renders client-side — otherwise the server's
+  // value and the (slightly later) hydration value mismatch and React bails the tree.
   useEffect(() => {
+    setMounted(true);
     const id = setInterval(() => tick((n) => n + 1), 1000);
     return () => clearInterval(id);
   }, []);
@@ -65,7 +69,7 @@ export default function LiveControls({ generatedAt, intervalMs = 45_000 }: { gen
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
           <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
         </span>
-        Updated {ago(generatedAt)}
+        Updated {mounted ? ago(generatedAt) : 'just now'}
       </span>
       <button
         onClick={refreshNow}
