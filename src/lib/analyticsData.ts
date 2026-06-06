@@ -3,6 +3,21 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { google } from 'googleapis';
 
+// googleapis/gaxios emits a harmless `zlib.bytesRead` deprecation (DEP0108)
+// while decompressing responses, which Next's dev error overlay surfaces as a
+// "Server Console Error" and makes the Search/Traffic tabs look broken. Filter
+// just that one warning (once).
+const g = globalThis as unknown as { __zlibWarnPatched?: boolean };
+if (!g.__zlibWarnPatched) {
+  g.__zlibWarnPatched = true;
+  const original = process.emitWarning.bind(process);
+  process.emitWarning = ((warning: string | Error, ...rest: unknown[]) => {
+    const msg = typeof warning === 'string' ? warning : warning?.message ?? '';
+    if (msg.includes('zlib.bytesRead')) return;
+    return (original as (...a: unknown[]) => void)(warning, ...rest);
+  }) as typeof process.emitWarning;
+}
+
 // ---- Config ----
 const GSC_PROPERTY = 'sc-domain:konacoffeedonut.com';
 const GA4_PROPERTY_ID = process.env.GA4_PROPERTY_ID || '508368220';

@@ -105,14 +105,14 @@ body {
 
 /* ===== Admin dashboard theming — Kona Hawaii light (default) + dark toggle ===== */
 .admin-theme {
-  --ad-bg: #fdf6ec;          /* warm sand */
-  --ad-bg2: #fbeedd;         /* slightly deeper sand for gradient */
+  --ad-bg: #fffbf3;          /* bright warm white */
+  --ad-bg2: #fef4e6;         /* faint sunrise tint for the gradient */
   --ad-card: #ffffff;
-  --ad-border: #eee0cc;
+  --ad-border: #f0e4d2;
   --ad-fg: #1c1917;          /* warm near-black */
   --ad-fg-muted: #6b6359;
   --ad-fg-subtle: #a8a096;
-  --ad-track: #f1e7d6;
+  --ad-track: #f5ecdd;
   --ad-pos: #15803d;
   --ad-neg: #b91c1c;
 }

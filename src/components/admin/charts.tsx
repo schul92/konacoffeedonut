@@ -24,10 +24,10 @@ const THEME = {
     axis: '#8A7F70',
     cardBg: '#ffffff',
     tipText: '#1C1917',
-    heatEmpty: '#F1E7D6',
-    heatA: [254, 235, 200], // warm cream
-    heatB: [154, 52, 18], // deep sunset
-    cellText: '#ffffff',
+    heatEmpty: '#f5ecdd',
+    heatA: [255, 240, 222], // bright cream
+    heatB: [251, 146, 60], // bright vivid orange (no dark cells)
+    cellText: '#7c2d12', // dark warm text reads on the bright orange cells
   },
   dark: {
     primary: '#60A5FA',
