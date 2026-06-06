@@ -69,12 +69,20 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "konacoffeedonut.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "konacoffeedonut.com"
+        }
+      ],
       "destination": "https://www.konacoffeedonut.com/:path*",
       "permanent": true
     }
   ],
   "crons": [
-    { "path": "/api/cron/refresh-clover", "schedule": "*/10 * * * *" }
+    {
+      "path": "/api/cron/refresh-clover",
+      "schedule": "*/5 * * * *"
+    }
   ]
 }

@@ -151,7 +151,7 @@ export interface SalesData {
   configured: boolean;
   error?: string;
   generatedAt: number;
-  range: { key: string; label: string; days: number; start: string; end: string };
+  range: { key: string; label: string; days: number; start: string; end: string; desc: string };
   kpis: {
     revenue: number;
     net: number;
@@ -174,7 +174,7 @@ export interface SalesData {
 }
 
 function emptyRange(key: string): SalesData['range'] {
-  return { key, label: '', days: 0, start: '', end: '' };
+  return { key, label: '', days: 0, start: '', end: '', desc: '' };
 }
 function emptyData(key: string, configured: boolean, error?: string): SalesData {
   return {
@@ -192,18 +192,39 @@ function emptyData(key: string, configured: boolean, error?: string): SalesData 
   };
 }
 
+const timeFmt = new Intl.DateTimeFormat('en-US', { timeZone: CLOVER_TZ, hour: 'numeric', minute: '2-digit' });
+const niceDate = new Intl.DateTimeFormat('en-US', { timeZone: CLOVER_TZ, month: 'short', day: 'numeric' });
+const hstMidnightMs = (ms: number) => new Date(`${dayFmt.format(new Date(ms))}T00:00:00${HST_OFFSET}`).getTime();
+
 // Resolve a range key (or custom YYYY-MM-DD start/end) into epoch-ms windows.
+// `desc` is a human-friendly window label; `priorEndMs` lets us compare against
+// the SAME elapsed window in the prior period (important for a partial "Today").
 function resolveWindow(opts: { range?: RangeKey; start?: string; end?: string }) {
   if (opts.start && opts.end) {
     const startMs = new Date(`${opts.start}T00:00:00${HST_OFFSET}`).getTime();
     const endMs = new Date(`${opts.end}T23:59:59${HST_OFFSET}`).getTime();
     const days = Math.max(1, Math.round((endMs - startMs) / 86_400_000));
-    return { key: 'custom', label: `${opts.start} → ${opts.end}`, days, startMs, endMs, priorStartMs: startMs - days * 86_400_000 };
+    return { key: 'custom', label: `${opts.start} → ${opts.end}`, days, startMs, endMs, priorStartMs: startMs - days * 86_400_000, priorEndMs: startMs, desc: `${niceDate.format(new Date(startMs))} – ${niceDate.format(new Date(endMs))} (HST)` };
+  }
+  const now = Date.now();
+  if (opts.range === 'today') {
+    const startMs = hstMidnightMs(now);
+    const elapsed = now - startMs;
+    return {
+      key: 'today',
+      label: 'Today',
+      days: 1,
+      startMs,
+      endMs: now,
+      priorStartMs: startMs - 86_400_000,
+      priorEndMs: startMs - 86_400_000 + elapsed, // same time yesterday → fair delta
+      desc: `Today · ${timeFmt.format(new Date(startMs))} – ${timeFmt.format(new Date(now))} HST`,
+    };
   }
   const r = RANGES.find((x) => x.key === opts.range) ?? RANGES[2];
-  const endMs = Date.now();
+  const endMs = now;
   const startMs = endMs - r.days * 86_400_000;
-  return { key: r.key, label: r.label, days: r.days, startMs, endMs, priorStartMs: startMs - r.days * 86_400_000 };
+  return { key: r.key, label: r.label, days: r.days, startMs, endMs, priorStartMs: startMs - r.days * 86_400_000, priorEndMs: startMs, desc: `${niceDate.format(new Date(startMs))} – ${niceDate.format(new Date(endMs))} (HST)` };
 }
 
 export async function getSalesData(opts: { range?: RangeKey; start?: string; end?: string } = {}): Promise<SalesData> {
@@ -214,7 +235,7 @@ export async function getSalesData(opts: { range?: RangeKey; start?: string; end
   // we catch here and return an (uncached) error result so the next load retries.
   const key = opts.start && opts.end ? `c:${opts.start}:${opts.end}` : `r:${opts.range ?? '30d'}`;
   try {
-    return await unstable_cache(() => computeSalesData(opts), ['clover-sales', key], { revalidate: 300, tags: [CLOVER_TAG] })();
+    return await unstable_cache(() => computeSalesData(opts), ['clover-sales', key], { revalidate: 600, tags: [CLOVER_TAG] })();
   } catch (e) {
     return emptyData(opts.range ?? '30d', true, e instanceof Error ? e.message : String(e));
   }
@@ -232,7 +253,7 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   const paid = orders.filter((o) => (o.payments?.elements ?? []).some((p) => p.result === 'SUCCESS'));
 
   const inCur = (ms: number) => ms >= w.startMs && ms <= w.endMs;
-  const inPrior = (ms: number) => ms >= w.priorStartMs && ms < w.startMs;
+  const inPrior = (ms: number) => ms >= w.priorStartMs && ms < w.priorEndMs;
 
   // Current-window aggregates
   let revenue = 0;
@@ -325,7 +346,7 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   return {
     configured: true,
     generatedAt: Date.now(),
-    range: { key: w.key, label: w.label, days: w.days, start: hstDay(w.startMs), end: hstDay(w.endMs) },
+    range: { key: w.key, label: w.label, days: w.days, start: hstDay(w.startMs), end: hstDay(w.endMs), desc: w.desc },
     kpis: {
       revenue: cents(revenue),
       net: cents(net),

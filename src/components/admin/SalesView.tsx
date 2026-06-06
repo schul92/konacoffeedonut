@@ -25,6 +25,7 @@ export default function SalesView({ data }: { data: SalesData }) {
         <RangeSelector active={data.range.key} />
         <LiveControls generatedAt={data.generatedAt} />
       </div>
+      <p className="-mt-3 text-xs text-[var(--ad-fg-muted)]">Showing {data.range.desc}</p>
 
       <section>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">

@@ -18,7 +18,9 @@ export async function GET(request: NextRequest) {
   // repopulate the cache without bursting past Clover's rate limit.
   revalidateTag(CLOVER_TAG, 'max');
   try {
-    await getSalesData({ range: '30d' }); // the default dashboard view
+    // Warm the commonly-toggled ranges (sequentially) so switching is instant.
+    await getSalesData({ range: '30d' });
+    await getSalesData({ range: '7d' });
     await getSalesData({ range: 'today' });
   } catch (e) {
     return Response.json({ ok: false, error: e instanceof Error ? e.message : String(e) }, { status: 500 });
