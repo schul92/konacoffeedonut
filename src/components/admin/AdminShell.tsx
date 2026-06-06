@@ -20,16 +20,16 @@ export default function AdminShell({
 }) {
   return (
     <div className="min-h-screen">
-      <header className="border-b border-stone-200 bg-white">
+      <header className="border-b border-slate-200 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-4 flex items-center justify-between gap-4">
           <div>
-            <h1 className="text-lg font-extrabold tracking-tight">Kona Coffee Donut · Admin</h1>
-            {subtitle && <p className="text-xs text-stone-500">{subtitle}</p>}
+            <h1 className="text-lg font-bold tracking-tight text-slate-900">Kona Coffee Donut · Admin</h1>
+            {subtitle && <p className="text-xs text-slate-500">{subtitle}</p>}
           </div>
           <div className="flex items-center gap-3">
             <div className="text-right hidden sm:block">
-              <p className="text-sm font-medium leading-tight">{user.name}</p>
-              <p className="text-xs text-stone-500 leading-tight">{user.email}</p>
+              <p className="text-sm font-medium leading-tight text-slate-900">{user.name}</p>
+              <p className="text-xs text-slate-500 leading-tight">{user.email}</p>
             </div>
             <form
               action={async () => {
@@ -37,7 +37,7 @@ export default function AdminShell({
                 await signOut({ redirectTo: '/admin/login' });
               }}
             >
-              <button className="rounded-lg border border-stone-300 px-3 py-1.5 text-sm font-medium hover:bg-stone-50">
+              <button className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50">
                 Sign out
               </button>
             </form>
@@ -52,7 +52,7 @@ export default function AdminShell({
                 key={t.key}
                 href={t.href}
                 className={`px-4 py-2 text-sm font-semibold border-b-2 -mb-px transition-colors ${
-                  isActive ? 'border-orange-500 text-stone-900' : 'border-transparent text-stone-500 hover:text-stone-800'
+                  isActive ? 'border-orange-500 text-slate-900' : 'border-transparent text-slate-500 hover:text-slate-800'
                 }`}
               >
                 {t.label}
@@ -62,7 +62,7 @@ export default function AdminShell({
         </nav>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-6 space-y-8">{children}</main>
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-7 space-y-8">{children}</main>
     </div>
   );
 }

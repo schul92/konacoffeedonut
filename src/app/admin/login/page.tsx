@@ -16,9 +16,9 @@ export default async function AdminLoginPage({
 
   return (
     <main className="min-h-screen flex items-center justify-center px-4">
-      <div className="w-full max-w-sm rounded-2xl border border-stone-200 bg-white p-8 shadow-sm text-center">
+      <div className="w-full max-w-sm rounded-2xl border border-slate-200 bg-white p-8 shadow-sm text-center">
         <h1 className="text-2xl font-extrabold tracking-tight">Kona Coffee Donut</h1>
-        <p className="mt-1 text-sm text-stone-500">Admin · Analytics Dashboard</p>
+        <p className="mt-1 text-sm text-slate-500">Admin · Analytics Dashboard</p>
 
         {accessDenied && (
           <div className="mt-5 rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700">
@@ -39,7 +39,7 @@ export default async function AdminLoginPage({
         >
           <button
             type="submit"
-            className="mt-6 inline-flex w-full items-center justify-center gap-3 rounded-xl border border-stone-300 bg-white px-4 py-3 font-semibold text-stone-800 shadow-sm transition hover:bg-stone-50"
+            className="mt-6 inline-flex w-full items-center justify-center gap-3 rounded-xl border border-slate-300 bg-white px-4 py-3 font-semibold text-slate-700 shadow-sm transition hover:bg-slate-50"
           >
             <svg className="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1Z" />
@@ -51,7 +51,7 @@ export default async function AdminLoginPage({
           </button>
         </form>
 
-        <p className="mt-5 text-xs text-stone-400">Access is limited to approved accounts.</p>
+        <p className="mt-5 text-xs text-slate-400">Access is limited to approved accounts.</p>
       </div>
     </main>
   );

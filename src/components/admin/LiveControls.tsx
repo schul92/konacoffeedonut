@@ -59,7 +59,7 @@ export default function LiveControls({ generatedAt, intervalMs = 45_000 }: { gen
     });
 
   return (
-    <div className="flex items-center gap-2.5 text-xs text-stone-500">
+    <div className="flex items-center gap-2.5 text-xs text-slate-500">
       <span className="flex items-center gap-1.5">
         <span className="relative flex h-2 w-2">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
@@ -70,7 +70,7 @@ export default function LiveControls({ generatedAt, intervalMs = 45_000 }: { gen
       <button
         onClick={refreshNow}
         disabled={isPending}
-        className="rounded-lg border border-stone-300 px-2.5 py-1 font-medium text-stone-700 hover:bg-stone-50 disabled:opacity-50"
+        className="rounded-lg border border-slate-300 px-2.5 py-1 font-medium text-slate-700 transition-colors hover:bg-slate-50 disabled:opacity-50"
       >
         {isPending ? 'Refreshing…' : 'Refresh'}
       </button>

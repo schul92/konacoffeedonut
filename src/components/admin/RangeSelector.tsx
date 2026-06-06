@@ -19,7 +19,7 @@ export default function RangeSelector({ active }: { active: string }) {
 
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <div className="inline-flex rounded-xl border border-stone-200 bg-white p-1 shadow-sm">
+      <div className="inline-flex rounded-xl border border-slate-200 bg-white p-1 shadow-sm">
         {PRESETS.map((p) => {
           const on = active === p.key;
           return (
@@ -27,7 +27,7 @@ export default function RangeSelector({ active }: { active: string }) {
               key={p.key}
               onClick={() => router.push(`/admin?range=${p.key}`)}
               className={`px-3 py-1.5 text-sm font-semibold rounded-lg transition-colors ${
-                on ? 'bg-orange-500 text-white' : 'text-stone-600 hover:bg-stone-100'
+                on ? 'bg-orange-500 text-white' : 'text-slate-600 hover:bg-slate-100'
               }`}
             >
               {p.label}
@@ -43,13 +43,13 @@ export default function RangeSelector({ active }: { active: string }) {
         }}
         className="flex items-center gap-1.5"
       >
-        <input type="date" value={start} onChange={(e) => setStart(e.target.value)} className="rounded-lg border border-stone-200 px-2 py-1.5 text-sm" />
-        <span className="text-stone-400 text-sm">→</span>
-        <input type="date" value={end} onChange={(e) => setEnd(e.target.value)} className="rounded-lg border border-stone-200 px-2 py-1.5 text-sm" />
+        <input type="date" value={start} onChange={(e) => setStart(e.target.value)} className="rounded-lg border border-slate-200 px-2 py-1.5 text-sm text-slate-700" />
+        <span className="text-slate-400 text-sm">→</span>
+        <input type="date" value={end} onChange={(e) => setEnd(e.target.value)} className="rounded-lg border border-slate-200 px-2 py-1.5 text-sm text-slate-700" />
         <button
           type="submit"
-          className={`px-3 py-1.5 text-sm font-semibold rounded-lg border ${
-            isCustom ? 'bg-orange-500 text-white border-orange-500' : 'border-stone-200 text-stone-600 hover:bg-stone-100'
+          className={`px-3 py-1.5 text-sm font-semibold rounded-lg border transition-colors ${
+            isCustom ? 'bg-orange-500 text-white border-orange-500' : 'border-slate-200 text-slate-600 hover:bg-slate-100'
           }`}
         >
           Apply
