@@ -73,5 +73,8 @@
       "destination": "https://www.konacoffeedonut.com/:path*",
       "permanent": true
     }
+  ],
+  "crons": [
+    { "path": "/api/cron/refresh-clover", "schedule": "*/10 * * * *" }
   ]
 }
