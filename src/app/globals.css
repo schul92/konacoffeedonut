@@ -102,3 +102,29 @@ body {
     display: none;
   }
 }
+
+/* ===== Admin dashboard theming — Kona Hawaii light (default) + dark toggle ===== */
+.admin-theme {
+  --ad-bg: #fdf6ec;          /* warm sand */
+  --ad-bg2: #fbeedd;         /* slightly deeper sand for gradient */
+  --ad-card: #ffffff;
+  --ad-border: #eee0cc;
+  --ad-fg: #1c1917;          /* warm near-black */
+  --ad-fg-muted: #6b6359;
+  --ad-fg-subtle: #a8a096;
+  --ad-track: #f1e7d6;
+  --ad-pos: #15803d;
+  --ad-neg: #b91c1c;
+}
+.admin-theme.dark {
+  --ad-bg: #020617;
+  --ad-bg2: #0b1220;
+  --ad-card: #0f172a;
+  --ad-border: #1e293b;
+  --ad-fg: #f8fafc;
+  --ad-fg-muted: #cbd5e1;
+  --ad-fg-subtle: #94a3b8;
+  --ad-track: #1e293b;
+  --ad-pos: #34d399;
+  --ad-neg: #fb7185;
+}

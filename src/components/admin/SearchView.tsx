@@ -7,7 +7,7 @@ function GscTable({ title, rows, keyHead }: { title: string; rows: GscData['topQ
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-slate-400 text-xs border-b border-slate-800">
+            <tr className="text-[var(--ad-fg-muted)] text-xs border-b border-[var(--ad-border)]">
               <th className="text-left font-medium py-1.5">{keyHead}</th>
               <th className="text-right font-medium">Clicks</th>
               <th className="text-right font-medium">Impr</th>
@@ -17,12 +17,12 @@ function GscTable({ title, rows, keyHead }: { title: string; rows: GscData['topQ
           </thead>
           <tbody>
             {rows.map((r, i) => (
-              <tr key={i} className="border-b border-slate-800 last:border-0">
-                <td className="py-1.5 pr-2 text-slate-300 truncate max-w-[260px]">{r.key}</td>
+              <tr key={i} className="border-b border-[var(--ad-border)] last:border-0">
+                <td className="py-1.5 pr-2 text-[var(--ad-fg)] truncate max-w-[260px]">{r.key}</td>
                 <td className="text-right tabular-nums">{num(r.clicks)}</td>
-                <td className="text-right tabular-nums text-slate-500">{num(r.impressions)}</td>
-                <td className="text-right tabular-nums text-slate-500">{pct(r.ctr)}</td>
-                <td className="text-right tabular-nums text-slate-500">{r.position.toFixed(1)}</td>
+                <td className="text-right tabular-nums text-[var(--ad-fg-subtle)]">{num(r.impressions)}</td>
+                <td className="text-right tabular-nums text-[var(--ad-fg-subtle)]">{pct(r.ctr)}</td>
+                <td className="text-right tabular-nums text-[var(--ad-fg-subtle)]">{r.position.toFixed(1)}</td>
               </tr>
             ))}
           </tbody>

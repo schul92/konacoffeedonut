@@ -19,7 +19,7 @@ export default function RangeSelector({ active }: { active: string }) {
 
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <div className="inline-flex rounded-xl border border-slate-700 bg-slate-900 p-1 shadow-sm">
+      <div className="inline-flex rounded-xl border border-[var(--ad-border)] bg-[var(--ad-card)] p-1 shadow-sm">
         {PRESETS.map((p) => {
           const on = active === p.key;
           return (
@@ -27,7 +27,7 @@ export default function RangeSelector({ active }: { active: string }) {
               key={p.key}
               onClick={() => router.push(`/admin?range=${p.key}`)}
               className={`px-3 py-1.5 text-sm font-semibold rounded-lg transition-colors ${
-                on ? 'bg-orange-500 text-white' : 'text-slate-300 hover:bg-slate-800'
+                on ? 'bg-orange-500 text-white' : 'text-[var(--ad-fg-muted)] hover:bg-[var(--ad-track)]'
               }`}
             >
               {p.label}
@@ -43,13 +43,13 @@ export default function RangeSelector({ active }: { active: string }) {
         }}
         className="flex items-center gap-1.5"
       >
-        <input type="date" value={start} onChange={(e) => setStart(e.target.value)} className="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1.5 text-sm text-slate-200" />
-        <span className="text-slate-500 text-sm">→</span>
-        <input type="date" value={end} onChange={(e) => setEnd(e.target.value)} className="rounded-lg border border-slate-700 bg-slate-900 px-2 py-1.5 text-sm text-slate-200" />
+        <input type="date" value={start} onChange={(e) => setStart(e.target.value)} className="rounded-lg border border-[var(--ad-border)] bg-[var(--ad-card)] px-2 py-1.5 text-sm text-[var(--ad-fg)]" />
+        <span className="text-[var(--ad-fg-subtle)] text-sm">→</span>
+        <input type="date" value={end} onChange={(e) => setEnd(e.target.value)} className="rounded-lg border border-[var(--ad-border)] bg-[var(--ad-card)] px-2 py-1.5 text-sm text-[var(--ad-fg)]" />
         <button
           type="submit"
           className={`px-3 py-1.5 text-sm font-semibold rounded-lg border transition-colors ${
-            isCustom ? 'bg-orange-500 text-white border-orange-500' : 'border-slate-700 text-slate-300 hover:bg-slate-800'
+            isCustom ? 'bg-orange-500 text-white border-orange-500' : 'border-[var(--ad-border)] text-[var(--ad-fg-muted)] hover:bg-[var(--ad-track)]'
           }`}
         >
           Apply

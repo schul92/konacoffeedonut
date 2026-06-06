@@ -48,28 +48,28 @@ export default function SalesView({ data }: { data: SalesData }) {
           </Card>
         </div>
         <Card title="Payment mix">
-          {data.tenderMix.length ? <TenderDonut data={data.tenderMix} /> : <p className="text-sm text-slate-400">No data.</p>}
+          {data.tenderMix.length ? <TenderDonut data={data.tenderMix} /> : <p className="text-sm text-[var(--ad-fg-muted)]">No data.</p>}
         </Card>
       </section>
 
       <Card title="When you're busiest — revenue by weekday × hour (HST)">
-        {data.heatmapMax > 0 ? <Heatmap data={data.heatmap} max={data.heatmapMax} /> : <p className="text-sm text-slate-400">No data in this range.</p>}
+        {data.heatmapMax > 0 ? <Heatmap data={data.heatmap} max={data.heatmapMax} /> : <p className="text-sm text-[var(--ad-fg-muted)]">No data in this range.</p>}
       </Card>
 
       <section className="grid lg:grid-cols-2 gap-4">
         <Card title="Top items (by revenue)">
-          {data.topItems.length ? <HorizontalItemBars data={data.topItems} /> : <p className="text-sm text-slate-400">No data.</p>}
+          {data.topItems.length ? <HorizontalItemBars data={data.topItems} /> : <p className="text-sm text-[var(--ad-fg-muted)]">No data.</p>}
         </Card>
         <Card title="Revenue by category">
           {data.categoryMix.length ? (
             <HorizontalItemBars data={data.categoryMix.map((c) => ({ name: c.category, revenue: c.revenue }))} />
           ) : (
-            <p className="text-sm text-slate-400">No data.</p>
+            <p className="text-sm text-[var(--ad-fg-muted)]">No data.</p>
           )}
         </Card>
       </section>
 
-      <p className="text-xs text-slate-500">
+      <p className="text-xs text-[var(--ad-fg-subtle)]">
         Live from Clover POS · merchant KONA COFFEE DONUT? · times in Hawaiʻi (HST) · net = revenue − tax − refunds.
       </p>
     </>

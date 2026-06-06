@@ -12,28 +12,56 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { useTheme } from './ThemeProvider';
 
-// Dark theme — brighter blue primary so marks pop against the dark surface,
-// with a vivid, distinct categorical palette for multi-series charts.
-const PRIMARY = '#60A5FA';
-const PALETTE = ['#60A5FA', '#F59E0B', '#34D399', '#E879F9', '#22D3EE', '#FB7185'];
-const GRID = 'rgba(148,163,184,0.14)';
-const AXIS = '#CBD5E1';
-const CARD_BG = '#0F172A';
+// Per-theme chart colors. Light = Kona Hawaii (ocean teal + sunset + palm),
+// dark = cool blues. Tailwind/HTML bits use the --ad-* CSS vars instead.
+const THEME = {
+  light: {
+    primary: '#0E7490', // ocean teal
+    palette: ['#0E7490', '#EA580C', '#15803D', '#DB2777', '#0284C7', '#CA8A04'],
+    grid: '#ECE0CE',
+    axis: '#8A7F70',
+    cardBg: '#ffffff',
+    tipText: '#1C1917',
+    heatEmpty: '#F1E7D6',
+    heatA: [254, 235, 200], // warm cream
+    heatB: [154, 52, 18], // deep sunset
+    cellText: '#ffffff',
+  },
+  dark: {
+    primary: '#60A5FA',
+    palette: ['#60A5FA', '#F59E0B', '#34D399', '#E879F9', '#22D3EE', '#FB7185'],
+    grid: 'rgba(148,163,184,0.16)',
+    axis: '#CBD5E1',
+    cardBg: '#0F172A',
+    tipText: '#E2E8F0',
+    heatEmpty: '#1E293B',
+    heatA: [30, 58, 95],
+    heatB: [56, 189, 248],
+    cellText: '#0F172A',
+  },
+};
 
 const usd0 = (n: number) => `$${Math.round(n).toLocaleString('en-US')}`;
 const hourLabel = (h: number) => `${((h + 11) % 12) + 1}${h < 12 ? 'a' : 'p'}`;
 
-const tooltipStyle = {
-  borderRadius: 10,
-  border: '1px solid #1E293B',
-  background: CARD_BG,
-  color: '#E2E8F0',
-  boxShadow: '0 8px 24px rgba(0,0,0,0.5)',
-  fontSize: 12,
-  fontVariantNumeric: 'tabular-nums',
-  padding: '8px 12px',
-} as const;
+function useC() {
+  const { theme } = useTheme();
+  return THEME[theme];
+}
+function tip(c: ReturnType<typeof useC>) {
+  return {
+    borderRadius: 10,
+    border: '1px solid var(--ad-border)',
+    background: c.cardBg,
+    color: c.tipText,
+    boxShadow: '0 8px 24px rgba(0,0,0,0.18)',
+    fontSize: 12,
+    fontVariantNumeric: 'tabular-nums',
+    padding: '8px 12px',
+  } as const;
+}
 
 export function RevenueBars({
   data,
@@ -44,40 +72,36 @@ export function RevenueBars({
   xKey: string;
   height?: number;
 }) {
+  const c = useC();
   return (
     <ResponsiveContainer width="100%" height={height}>
       <BarChart data={data} margin={{ top: 8, right: 8, bottom: 0, left: -12 }}>
-        <CartesianGrid vertical={false} stroke={GRID} />
-        <XAxis dataKey={xKey} tick={{ fontSize: 11, fill: AXIS }} interval="preserveStartEnd" tickLine={false} axisLine={false} dy={6} />
-        <YAxis
-          tick={{ fontSize: 11, fill: AXIS }}
-          tickFormatter={(v) => (v >= 1000 ? `$${Math.round(v / 1000)}k` : `$${v}`)}
-          tickLine={false}
-          axisLine={false}
-          width={46}
-        />
-        <Tooltip cursor={{ fill: 'rgba(148,163,184,0.08)' }} formatter={(value) => [usd0(Number(value)), 'Revenue']} contentStyle={tooltipStyle} />
-        <Bar dataKey="revenue" fill={PRIMARY} radius={[5, 5, 0, 0]} maxBarSize={44} />
+        <CartesianGrid vertical={false} stroke={c.grid} />
+        <XAxis dataKey={xKey} tick={{ fontSize: 11, fill: c.axis }} interval="preserveStartEnd" tickLine={false} axisLine={false} dy={6} />
+        <YAxis tick={{ fontSize: 11, fill: c.axis }} tickFormatter={(v) => (v >= 1000 ? `$${Math.round(v / 1000)}k` : `$${v}`)} tickLine={false} axisLine={false} width={46} />
+        <Tooltip cursor={{ fill: 'rgba(148,163,184,0.12)' }} formatter={(value) => [usd0(Number(value)), 'Revenue']} contentStyle={tip(c)} />
+        <Bar dataKey="revenue" fill={c.primary} radius={[5, 5, 0, 0]} maxBarSize={44} />
       </BarChart>
     </ResponsiveContainer>
   );
 }
 
 export function HorizontalItemBars({ data }: { data: { name: string; revenue: number; units?: number }[] }) {
+  const c = useC();
   const max = Math.max(1, ...data.map((d) => d.revenue));
   return (
     <ul className="space-y-2.5">
       {data.map((d) => (
         <li key={d.name}>
           <div className="flex justify-between text-sm mb-1">
-            <span className="text-slate-200 truncate pr-2">{d.name}</span>
-            <span className="tabular-nums text-slate-300 shrink-0">
+            <span className="text-[var(--ad-fg)] truncate pr-2">{d.name}</span>
+            <span className="tabular-nums text-[var(--ad-fg-muted)] shrink-0">
               {usd0(d.revenue)}
-              {d.units ? <span className="text-slate-400"> · {d.units}x</span> : null}
+              {d.units ? <span className="text-[var(--ad-fg-subtle)]"> · {d.units}x</span> : null}
             </span>
           </div>
-          <div className="h-2 rounded-full bg-slate-800 overflow-hidden">
-            <div className="h-full rounded-full" style={{ width: `${(d.revenue / max) * 100}%`, background: PRIMARY }} />
+          <div className="h-2 rounded-full bg-[var(--ad-track)] overflow-hidden">
+            <div className="h-full rounded-full" style={{ width: `${(d.revenue / max) * 100}%`, background: c.primary }} />
           </div>
         </li>
       ))}
@@ -86,25 +110,26 @@ export function HorizontalItemBars({ data }: { data: { name: string; revenue: nu
 }
 
 export function TenderDonut({ data }: { data: { tender: string; amount: number }[] }) {
+  const c = useC();
   const total = data.reduce((s, d) => s + d.amount, 0) || 1;
   return (
     <div className="flex items-center gap-4">
       <ResponsiveContainer width="50%" height={180}>
         <PieChart>
-          <Pie data={data} dataKey="amount" nameKey="tender" cx="50%" cy="50%" innerRadius={44} outerRadius={72} paddingAngle={2} stroke={CARD_BG} strokeWidth={2}>
+          <Pie data={data} dataKey="amount" nameKey="tender" cx="50%" cy="50%" innerRadius={44} outerRadius={72} paddingAngle={2} stroke={c.cardBg} strokeWidth={2}>
             {data.map((_, i) => (
-              <Cell key={i} fill={PALETTE[i % PALETTE.length]} />
+              <Cell key={i} fill={c.palette[i % c.palette.length]} />
             ))}
           </Pie>
-          <Tooltip formatter={(value) => usd0(Number(value))} contentStyle={tooltipStyle} />
+          <Tooltip formatter={(value) => usd0(Number(value))} contentStyle={tip(c)} />
         </PieChart>
       </ResponsiveContainer>
       <ul className="flex-1 space-y-1.5 text-sm">
         {data.map((d, i) => (
           <li key={d.tender} className="flex items-center gap-2">
-            <span className="h-2.5 w-2.5 rounded-full shrink-0" style={{ background: PALETTE[i % PALETTE.length] }} />
-            <span className="text-slate-200 flex-1 truncate">{d.tender}</span>
-            <span className="tabular-nums text-slate-300">{Math.round((d.amount / total) * 100)}%</span>
+            <span className="h-2.5 w-2.5 rounded-full shrink-0" style={{ background: c.palette[i % c.palette.length] }} />
+            <span className="text-[var(--ad-fg)] flex-1 truncate">{d.tender}</span>
+            <span className="tabular-nums text-[var(--ad-fg-muted)]">{Math.round((d.amount / total) * 100)}%</span>
           </li>
         ))}
       </ul>
@@ -112,25 +137,19 @@ export function TenderDonut({ data }: { data: { tender: string; amount: number }
   );
 }
 
-// Dim → vivid ramp for the heatmap; empty cells get a flat dark neutral so
-// "no sales" never looks like a low-but-real value.
-const EMPTY_CELL = '#1E293B';
-function ramp(intensity: number) {
-  // dim navy #1E3A5F → vivid sky #38BDF8
-  const a = [30, 58, 95];
-  const b = [56, 189, 248];
-  const t = Math.max(0, Math.min(1, intensity));
-  const c = a.map((x, i) => Math.round(x + (b[i] - x) * t));
-  return `rgb(${c[0]},${c[1]},${c[2]})`;
-}
 const FULL_DAY: Record<string, string> = { Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday' };
 const ampm = (h: number) => (h === 0 ? '12 AM' : h < 12 ? `${h} AM` : h === 12 ? '12 PM' : `${h - 12} PM`);
 const usdK = (n: number) => (n >= 1000 ? `$${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}k` : `$${Math.round(n)}`);
 
 export function Heatmap({ data, max }: { data: { weekday: string; hours: number[] }[]; max: number }) {
+  const c = useC();
   const hours = Array.from({ length: 15 }, (_, i) => i + 7); // 7am–9pm
+  const ramp = (t: number) => {
+    const tt = Math.max(0, Math.min(1, t));
+    const rgb = c.heatA.map((x, i) => Math.round(x + (c.heatB[i] - x) * tt));
+    return `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`;
+  };
 
-  // Marginal sums + peak so the busiest day and time are unmistakable.
   const dayTotals = data.map((r) => hours.reduce((s, h) => s + r.hours[h], 0));
   const maxDayTotal = Math.max(1, ...dayTotals);
   const hourTotals = hours.map((h) => data.reduce((s, r) => s + r.hours[h], 0));
@@ -141,32 +160,29 @@ export function Heatmap({ data, max }: { data: { weekday: string; hours: number[
 
   return (
     <div>
-      {/* Plain-English callout */}
       {peak.v > 0 && (
         <div className="mb-4 flex flex-wrap gap-x-6 gap-y-1 text-sm">
-          <span className="text-slate-400">Busiest day <span className="font-semibold text-sky-300">{FULL_DAY[busiestDay] ?? busiestDay}</span></span>
-          <span className="text-slate-400">Busiest hour <span className="font-semibold text-sky-300">{ampm(busiestHour)}</span></span>
-          <span className="text-slate-400">Single peak <span className="font-semibold text-sky-300">{FULL_DAY[peak.wd] ?? peak.wd} {ampm(peak.h)}</span> · <span className="tabular-nums text-slate-200">{usd0(peak.v)}</span></span>
+          <span className="text-[var(--ad-fg-muted)]">Busiest day <span className="font-semibold text-[var(--ad-fg)]">{FULL_DAY[busiestDay] ?? busiestDay}</span></span>
+          <span className="text-[var(--ad-fg-muted)]">Busiest hour <span className="font-semibold text-[var(--ad-fg)]">{ampm(busiestHour)}</span></span>
+          <span className="text-[var(--ad-fg-muted)]">Single peak <span className="font-semibold text-[var(--ad-fg)]">{FULL_DAY[peak.wd] ?? peak.wd} {ampm(peak.h)}</span> · <span className="tabular-nums text-[var(--ad-fg)]">{usd0(peak.v)}</span></span>
         </div>
       )}
 
       <div className="overflow-x-auto">
         <div className="min-w-[620px]">
-          {/* hour header */}
           <div className="flex items-end">
             <div className="w-10 shrink-0" />
             {hours.map((h) => (
-              <div key={h} className="flex-1 text-center text-[11px] text-slate-400">{(h - 7) % 2 === 0 ? hourLabel(h) : ''}</div>
+              <div key={h} className="flex-1 text-center text-[11px] text-[var(--ad-fg-muted)]">{(h - 7) % 2 === 0 ? hourLabel(h) : ''}</div>
             ))}
-            <div className="w-24 shrink-0 pl-2 text-[11px] text-slate-400">Day total</div>
+            <div className="w-24 shrink-0 pl-2 text-[11px] text-[var(--ad-fg-muted)]">Day total</div>
           </div>
 
-          {/* rows */}
           {data.map((row, ri) => {
             const isBusiestDay = row.weekday === busiestDay;
             return (
               <div key={row.weekday} className="flex items-center">
-                <div className={`w-10 shrink-0 text-xs font-semibold ${isBusiestDay ? 'text-sky-300' : 'text-slate-300'}`}>{row.weekday}</div>
+                <div className={`w-10 shrink-0 text-xs font-semibold ${isBusiestDay ? 'text-[var(--ad-fg)]' : 'text-[var(--ad-fg-muted)]'}`}>{row.weekday}</div>
                 {hours.map((h) => {
                   const v = row.hours[h];
                   const intensity = max > 0 ? v / max : 0;
@@ -176,29 +192,27 @@ export function Heatmap({ data, max }: { data: { weekday: string; hours: number[
                     <div
                       key={h}
                       title={`${FULL_DAY[row.weekday]} ${ampm(h)} · ${usd0(v)}`}
-                      className={`relative flex-1 h-9 m-[1.5px] rounded-[4px] flex items-center justify-center ${isPeak ? 'ring-2 ring-sky-200' : ''}`}
-                      style={{ background: v <= 0 ? EMPTY_CELL : ramp(0.18 + 0.82 * intensity) }}
+                      className={`relative flex-1 h-9 m-[1.5px] rounded-[4px] flex items-center justify-center ${isPeak ? 'ring-2 ring-orange-400' : ''}`}
+                      style={{ background: v <= 0 ? c.heatEmpty : ramp(0.18 + 0.82 * intensity) }}
                     >
-                      {showVal && <span className="text-[10px] font-semibold tabular-nums text-slate-900">{usdK(v)}</span>}
+                      {showVal && <span className="text-[10px] font-semibold tabular-nums" style={{ color: c.cellText }}>{usdK(v)}</span>}
                     </div>
                   );
                 })}
-                {/* day-total bar */}
                 <div className="w-24 shrink-0 pl-2 flex items-center gap-1.5">
-                  <div className="h-2 flex-1 rounded-full bg-slate-800 overflow-hidden">
-                    <div className="h-full rounded-full bg-sky-400" style={{ width: `${(dayTotals[ri] / maxDayTotal) * 100}%` }} />
+                  <div className="h-2 flex-1 rounded-full bg-[var(--ad-track)] overflow-hidden">
+                    <div className="h-full rounded-full" style={{ width: `${(dayTotals[ri] / maxDayTotal) * 100}%`, background: c.primary }} />
                   </div>
-                  <span className="w-10 text-right text-[11px] tabular-nums text-slate-300">{usdK(dayTotals[ri])}</span>
+                  <span className="w-10 text-right text-[11px] tabular-nums text-[var(--ad-fg-muted)]">{usdK(dayTotals[ri])}</span>
                 </div>
               </div>
             );
           })}
 
-          {/* legend */}
-          <div className="mt-3 flex items-center gap-2 pl-10 text-[11px] text-slate-400">
+          <div className="mt-3 flex items-center gap-2 pl-10 text-[11px] text-[var(--ad-fg-muted)]">
             <span>Quieter</span>
             {[0, 0.25, 0.5, 0.75, 1].map((t) => (
-              <span key={t} className="h-3 w-6 rounded-sm" style={{ background: t === 0 ? EMPTY_CELL : ramp(0.18 + 0.82 * t) }} />
+              <span key={t} className="h-3 w-6 rounded-sm" style={{ background: t === 0 ? c.heatEmpty : ramp(0.18 + 0.82 * t) }} />
             ))}
             <span>Busier</span>
           </div>

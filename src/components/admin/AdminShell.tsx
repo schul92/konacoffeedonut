@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { signOut } from '@/auth';
+import { ThemeToggle } from './ThemeProvider';
 
 const TABS = [
   { href: '/admin', label: 'Sales', key: 'sales' },
@@ -20,39 +21,40 @@ export default function AdminShell({
 }) {
   return (
     <div className="min-h-screen">
-      <header className="border-b border-slate-800 bg-slate-900">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-4 flex items-center justify-between gap-4">
-          <div>
-            <h1 className="text-lg font-bold tracking-tight text-slate-50">Kona Coffee Donut · Admin</h1>
-            {subtitle && <p className="text-xs text-slate-300">{subtitle}</p>}
+      <header className="border-b border-[var(--ad-border)] bg-[var(--ad-card)]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-3 sm:pt-4 flex items-center justify-between gap-3">
+          <div className="min-w-0">
+            <h1 className="text-base sm:text-lg font-bold tracking-tight text-[var(--ad-fg)] truncate">Kona Coffee Donut · Admin</h1>
+            {subtitle && <p className="text-xs text-[var(--ad-fg-muted)] truncate">{subtitle}</p>}
           </div>
-          <div className="flex items-center gap-3">
-            <div className="text-right hidden sm:block">
-              <p className="text-sm font-medium leading-tight text-slate-100">{user.name}</p>
-              <p className="text-xs text-slate-300 leading-tight">{user.email}</p>
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            <div className="text-right hidden md:block">
+              <p className="text-sm font-medium leading-tight text-[var(--ad-fg)]">{user.name}</p>
+              <p className="text-xs text-[var(--ad-fg-muted)] leading-tight">{user.email}</p>
             </div>
+            <ThemeToggle />
             <form
               action={async () => {
                 'use server';
                 await signOut({ redirectTo: '/admin/login' });
               }}
             >
-              <button className="rounded-lg border border-slate-700 px-3 py-1.5 text-sm font-medium text-slate-200 transition-colors hover:bg-slate-800">
+              <button className="rounded-lg border border-[var(--ad-border)] px-2.5 sm:px-3 py-1.5 text-sm font-medium text-[var(--ad-fg-muted)] transition-colors hover:bg-[var(--ad-track)]">
                 Sign out
               </button>
             </form>
           </div>
         </div>
-        {/* Tabs */}
-        <nav className="max-w-6xl mx-auto px-4 sm:px-6 flex gap-1 mt-3">
+        {/* Tabs (scroll horizontally on small screens) */}
+        <nav className="max-w-6xl mx-auto px-4 sm:px-6 flex gap-1 mt-3 overflow-x-auto scrollbar-hide">
           {TABS.map((t) => {
             const isActive = t.key === active;
             return (
               <Link
                 key={t.key}
                 href={t.href}
-                className={`px-4 py-2 text-sm font-semibold border-b-2 -mb-px transition-colors ${
-                  isActive ? 'border-orange-500 text-slate-50' : 'border-transparent text-slate-400 hover:text-slate-200'
+                className={`shrink-0 px-4 py-2 text-sm font-semibold border-b-2 -mb-px transition-colors ${
+                  isActive ? 'border-orange-500 text-[var(--ad-fg)]' : 'border-transparent text-[var(--ad-fg-muted)] hover:text-[var(--ad-fg)]'
                 }`}
               >
                 {t.label}
@@ -62,7 +64,7 @@ export default function AdminShell({
         </nav>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-7 space-y-8">{children}</main>
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 py-5 sm:py-7 space-y-6 sm:space-y-8">{children}</main>
     </div>
   );
 }

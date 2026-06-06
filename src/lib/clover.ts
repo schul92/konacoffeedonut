@@ -1,5 +1,6 @@
 import 'server-only';
-import { CLOVER_TAG, CLOVER_ITEMS_TAG } from './cacheTags';
+import { unstable_cache } from 'next/cache';
+import { CLOVER_TAG } from './cacheTags';
 
 // Clover POS data layer — aggregates sales analytics directly from the V3 REST
 // API (Clover has no reporting endpoint). Money is integer cents and times are
@@ -63,16 +64,52 @@ const hstWeekday = (ms: number) => wdFmt.format(new Date(ms));
 const cents = (n: number) => Math.round(n) / 100;
 const WEEK = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
-// ---- Paginated fetch helpers (cached) ----
-async function cloverPaginate<T>(resource: string, query: string, revalidate: number, tag: string): Promise<T[]> {
+// ---- Rate-limit-safe fetch ----
+// Clover allows ~16 req/s and only 5 concurrent requests per token. We cap our
+// own concurrency well under that and retry with backoff on 429 so bursts
+// (multiple cards/ranges/cron all paginating at once) never error out.
+const MAX_CONCURRENT = 3;
+let inFlight = 0;
+const waiters: (() => void)[] = [];
+async function acquire() {
+  if (inFlight >= MAX_CONCURRENT) await new Promise<void>((r) => waiters.push(r));
+  inFlight++;
+}
+function release() {
+  inFlight--;
+  waiters.shift()?.();
+}
+
+// Note: order pages exceed Next's 2 MB fetch-cache limit, so we do NOT cache the
+// raw responses (cache: 'no-store'). Instead the small *computed* SalesData is
+// cached via unstable_cache below, so Clover is hit at most once per TTL.
+async function cloverFetch(url: string): Promise<Response> {
+  for (let attempt = 0; ; attempt++) {
+    await acquire();
+    let res: Response;
+    try {
+      res = await fetch(url, {
+        headers: { Authorization: `Bearer ${TOKEN}`, Accept: 'application/json' },
+        cache: 'no-store',
+      });
+    } finally {
+      release();
+    }
+    if (res.status !== 429 || attempt >= 5) return res;
+    // Respect Retry-After if present, otherwise exponential backoff + jitter.
+    const retryAfter = Number(res.headers.get('retry-after'));
+    const wait = retryAfter > 0 ? retryAfter * 1000 : Math.min(8000, 400 * 2 ** attempt) + Math.floor(Math.random() * 250);
+    await new Promise((r) => setTimeout(r, wait));
+  }
+}
+
+// ---- Paginated fetch helpers ----
+async function cloverPaginate<T>(resource: string, query: string): Promise<T[]> {
   const out: T[] = [];
   let offset = 0;
   for (;;) {
     const url = `${BASE}/v3/merchants/${MID}/${resource}?${query}&limit=1000&offset=${offset}`;
-    const res = await fetch(url, {
-      headers: { Authorization: `Bearer ${TOKEN}`, Accept: 'application/json' },
-      next: { revalidate, tags: [tag] },
-    });
+    const res = await cloverFetch(url);
     if (!res.ok) throw new Error(`Clover ${resource} → HTTP ${res.status}`);
     const data = (await res.json()) as { elements?: T[] };
     const els = data.elements ?? [];
@@ -84,21 +121,14 @@ async function cloverPaginate<T>(resource: string, query: string, revalidate: nu
   return out;
 }
 
-// 2-minute cache on transaction data: fresh enough for a live dashboard while
-// staying far under Clover's 16 req/s limit (a single shop is a few pages).
 const fetchOrders = (sinceMs: number) =>
-  cloverPaginate<CloverOrder>('orders', `expand=lineItems,payments.tender&filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`, 120, CLOVER_TAG);
+  cloverPaginate<CloverOrder>('orders', `expand=lineItems,payments.tender&filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`);
 const fetchRefunds = (sinceMs: number) =>
-  cloverPaginate<CloverRefund>('refunds', `filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`, 120, CLOVER_TAG);
+  cloverPaginate<CloverRefund>('refunds', `filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`);
 
-// item id → category name (changes rarely → daily cache)
+// item id → category name
 async function fetchItemCategories(): Promise<Map<string, string>> {
-  const items = await cloverPaginate<{ id: string; categories?: { elements?: { name?: string }[] } }>(
-    'items',
-    'expand=categories',
-    86400,
-    CLOVER_ITEMS_TAG
-  );
+  const items = await cloverPaginate<{ id: string; categories?: { elements?: { name?: string }[] } }>('items', 'expand=categories');
   const map = new Map<string, string>();
   for (const it of items) map.set(it.id, it.categories?.elements?.[0]?.name ?? 'Uncategorized');
   return map;
@@ -166,16 +196,26 @@ function resolveWindow(opts: { range?: RangeKey; start?: string; end?: string })
 
 export async function getSalesData(opts: { range?: RangeKey; start?: string; end?: string } = {}): Promise<SalesData> {
   if (!cloverConfigured()) return emptyData(opts.range ?? '30d', false);
-
-  const w = resolveWindow(opts);
-  let orders: CloverOrder[];
-  let refunds: CloverRefund[];
-  let catMap: Map<string, string>;
+  // Cache the small computed result (raw order pages are too big for the fetch
+  // cache), so Clover is only hit on a miss — at most once per TTL per range.
+  // computeSalesData throws on a fetch error so a transient 429 is NOT cached;
+  // we catch here and return an (uncached) error result so the next load retries.
+  const key = opts.start && opts.end ? `c:${opts.start}:${opts.end}` : `r:${opts.range ?? '30d'}`;
   try {
-    [orders, refunds, catMap] = await Promise.all([fetchOrders(w.priorStartMs), fetchRefunds(w.priorStartMs), fetchItemCategories()]);
+    return await unstable_cache(() => computeSalesData(opts), ['clover-sales', key], { revalidate: 300, tags: [CLOVER_TAG] })();
   } catch (e) {
-    return emptyData(w.key, true, e instanceof Error ? e.message : String(e));
+    return emptyData(opts.range ?? '30d', true, e instanceof Error ? e.message : String(e));
   }
+}
+
+async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: string }): Promise<SalesData> {
+  const w = resolveWindow(opts);
+  // Fetch SEQUENTIALLY (not Promise.all) so only one Clover request is ever in
+  // flight — bursting all three resources at once is what trips the rate limit.
+  // Errors propagate so a transient failure isn't cached (getSalesData catches).
+  const orders = await fetchOrders(w.priorStartMs);
+  const refunds = await fetchRefunds(w.priorStartMs);
+  const catMap = await fetchItemCategories();
 
   const paid = orders.filter((o) => (o.payments?.elements ?? []).some((p) => p.result === 'SUCCESS'));
 
