@@ -179,7 +179,7 @@ const translations = {
     hero: {
       badge: "채용 중",
       title: "와이키키 팀에 합류하세요",
-      subtitle: "4월 말 그랜드 오픈",
+      subtitle: "와이키키에서 영업 중",
       description: "특별한 순간의 일원이 되세요! 와이키키 신규 매장을 위한 멋진 팀을 구성하고 있습니다. 풀타임 및 파트타임 모집 중.",
     },
     positions: {

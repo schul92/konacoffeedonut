@@ -100,7 +100,7 @@ const translations = {
     features: {
       title: "코나 커피가 특별한 이유",
       items: [
-        { icon: "leaf", title: "싱글 오리진", desc: "와이키키에서 100% Kona coffee available" },
+        { icon: "leaf", title: "싱글 오리진", desc: "와이키키에서 100% 코나 커피도 선택 가능" },
         { icon: "award", title: "세계적 명성", desc: "세계 최고의 커피로 꾸준히 평가" },
         { icon: "thermometer", title: "완벽한 기후", desc: "화산 경사면의 이상적인 재배 조건" },
         { icon: "coffee", title: "풍부한 맛", desc: "초콜릿과 견과류 향의 부드러운 맛" },

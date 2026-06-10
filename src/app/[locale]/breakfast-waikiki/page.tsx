@@ -57,7 +57,7 @@ const content = {
         },
         {
           title: 'Authentic Hawaiian Coffee',
-          description: 'We serve only genuine Honolulu Coffee—Hawaii\'s finest.'
+          description: 'We serve Honolulu Coffee with 100% Kona coffee available in Waikiki.'
         },
         {
           title: 'Fresh Made Daily',
@@ -134,7 +134,7 @@ const content = {
       ]
     },
     hours: {
-      title: 'まもなくオープン',
+      title: '営業中',
       text: 'ワイキキで営業中',
       note: '新鮮なドーナツとプレミアムコナコーヒーがワイキキに登場！'
     },
@@ -202,8 +202,8 @@ const content = {
       ]
     },
     hours: {
-      title: '곧 오픈',
-      text: '2026년 4월 말 그랜드 오픈',
+      title: '영업 중',
+      text: '와이키키에서 영업 중',
       note: '신선한 도넛과 프리미엄 코나 커피가 와이키키에!'
     },
     cta: {
@@ -270,7 +270,7 @@ const content = {
       ]
     },
     hours: {
-      title: '即将开业',
+      title: '现已营业',
       text: '威基基现已营业',
       note: '新鲜甜甜圈和优质科纳咖啡即将来到威基基！'
     },
@@ -338,8 +338,8 @@ const content = {
       ]
     },
     hours: {
-      title: 'Próxima Apertura',
-      text: 'Gran Apertura Febrero 2026',
+      title: 'Abierto ahora',
+      text: 'Abierto ahora en Waikiki',
       note: '¡Donuts frescos y café Kona premium llegan a Waikiki!'
     },
     cta: {

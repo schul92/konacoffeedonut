@@ -43,6 +43,14 @@ export default auth((request) => {
     return NextResponse.next();
   }
 
+  // Force the bare root to the canonical default-locale URL with a permanent redirect.
+  // This makes GSC's root-domain redirect signal explicit and avoids next-intl's temporary hop.
+  if (pathname === '/') {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${defaultLocale}`;
+    return NextResponse.redirect(url, 308);
+  }
+
   // Check if the pathname already has a locale prefix
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`

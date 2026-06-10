@@ -47,7 +47,7 @@ const content = {
           "Our home base and Waikiki's newest must-visit cafe. We've partnered with MOCHILAND to bring you the chewiest, crispiest mochi donuts on the island, paired with Honolulu Coffee. Each mochi donut features the signature eight-ball shape with a satisfying crispy exterior and impossibly chewy center made from premium rice flour. Our malasadas are fried fresh every morning \u2014 golden, pillowy, and dusted in sugar or filled with haupia cream, lilikoi custard, or Nutella.",
         mustTry: 'Ube Mochi Donut + Kona Coffee Latte combo',
         whyVisit:
-          "The only spot in Waikiki where you can pair artisan MOCHILAND mochi donuts with genuine premium Kona coffee. We're steps from the beach, making it the perfect first stop before a morning on the sand. With 12+ rotating mochi donut flavors including Matcha, Black Sesame, Mango, and seasonal specials, there's always something new to try.",
+          "A Waikiki spot where you can pair artisan MOCHILAND mochi donuts with Honolulu Coffee and 100% Kona coffee available. We're steps from the beach, making it the perfect first stop before a morning on the sand. With 12+ rotating mochi donut flavors including Matcha, Black Sesame, Mango, and seasonal specials, there's always something new to try.",
         menuLinks: true,
       },
       {

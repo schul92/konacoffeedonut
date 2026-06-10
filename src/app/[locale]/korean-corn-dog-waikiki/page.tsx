@@ -174,7 +174,7 @@ const content = {
       highlight: 'おすすめ：ハーフ＆ハーフドッグと当店自慢のコナコーヒーで、甘じょっぱいコンビをぜひ。'
     },
     hours: {
-      title: 'まもなくオープン',
+      title: '営業中',
       text: 'ワイキキで営業中',
       note: '韓国式チーズドッグ、新鮮なドーナツ＆プレミアムコナコーヒー — ワイキキで全部揃います！'
     },
@@ -261,7 +261,7 @@ const content = {
       highlight: '꿀팁: 반반 핫도그와 시그니처 코나 커피의 달짭 조합을 꼭 드셔보세요.'
     },
     hours: {
-      title: '곧 오픈',
+      title: '영업 중',
       text: '와이키키에서 영업 중',
       note: '한국식 핫도그, 신선한 도넛 & 프리미엄 코나 커피 — 와이키키에서 한 곳에!'
     },
@@ -348,7 +348,7 @@ const content = {
       highlight: '小贴士：半半热狗搭配招牌科纳咖啡，甜咸完美组合不容错过。'
     },
     hours: {
-      title: '即将开业',
+      title: '现已营业',
       text: '威基基现已营业',
       note: '韩式热狗、新鲜甜甜圈 & 优质科纳咖啡——威基基一站式享受！'
     },
@@ -435,8 +435,8 @@ const content = {
       highlight: 'Consejo: El Mitad y Mitad con nuestro café Kona es la combinación dulce-salada perfecta.'
     },
     hours: {
-      title: 'Próxima Apertura',
-      text: 'Apertura Finales de Abril 2026',
+      title: 'Abierto ahora',
+      text: 'Abierto ahora en Waikiki',
       note: '¡Korean corn dogs, donuts frescos y café Kona premium — todo en un solo lugar en Waikiki!'
     },
     cta: {

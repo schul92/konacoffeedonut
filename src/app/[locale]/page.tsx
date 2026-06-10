@@ -664,7 +664,7 @@ export default function Home() {
             }}
           >
             <span className="w-2 h-2 md:w-2.5 md:h-2.5 bg-white rounded-full animate-pulse"></span>
-            COMING SOON
+            OPEN NOW
           </motion.div>
         </motion.div>
 
@@ -1067,7 +1067,7 @@ export default function Home() {
                 >
                   <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2 rounded-full font-bold text-xs tracking-widest shadow-lg border-2 border-white/30">
                     <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                    COMING SOON
+                    OPEN NOW
                   </div>
                 </motion.div>
 
@@ -1238,7 +1238,7 @@ export default function Home() {
                   </>
                 ) : locale === 'ko' ? (
                   <>
-                    <p><strong>Kona Coffee Donut</strong>은 하와이 호놀룰루 와이키키 <span itemProp="address">칼라카우아 애비뉴 2142번지(우편번호 96815)</span>에 위치한 하와이안 카페 & 베이커리입니다. <strong>2026년 4월 말 그랜드 오픈 예정</strong>. 와이키키 비치에서 <strong>도보 약 5분(400m)</strong> 거리의 최적 위치입니다.</p>
+                    <p><strong>Kona Coffee Donut</strong>은 하와이 호놀룰루 와이키키 <span itemProp="address">칼라카우아 애비뉴 2142번지(우편번호 96815)</span>에 위치한 하와이안 카페 & 베이커리입니다. <strong>와이키키에서 영업 중</strong>. 와이키키 비치에서 <strong>도보 약 5분(400m)</strong> 거리의 최적 위치입니다.</p>
                     <p>저희는 <strong>호놀룰루 커피</strong>(1992년 설립, 하와이 최대 코나 커피 전문점)와 제휴하여 <strong>호놀룰루 커피</strong>를 제공합니다. 코나 커피는 하와이 빅 아일랜드의 마우나 로아 산과 후알라라이 산 경사면(해발 500~900m)에서 재배되며, 전 세계 커피 생산량의 <strong>1% 미만</strong>을 차지하는 희귀한 원두입니다.</p>
                     <p>또한 <strong>모찌랜드</strong>(한국 발상, 미국 50개 이상 매장 운영)의 장인 모찌 도넛을 제공합니다. 쌀가루(모찌코)를 사용한 독특한 쫄깃한 식감이 특징이며 <strong>매일 매장에서 직접 제조</strong>합니다.</p>
                   </>
@@ -1250,7 +1250,7 @@ export default function Home() {
                   </>
                 ) : locale === 'es' ? (
                   <>
-                    <p><strong>Kona Coffee Donut</strong> es un café y panadería hawaiana ubicada en <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span>, Waikiki. <strong>Gran apertura a finales de abril de 2026</strong>. Ubicación privilegiada a <strong>solo 5 minutos a pie (400 metros)</strong> de la playa de Waikiki.</p>
+                    <p><strong>Kona Coffee Donut</strong> es un café y panadería hawaiana ubicada en <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span>, Waikiki. <strong>Abierto ahora en Waikiki</strong>. Ubicación privilegiada a <strong>solo 5 minutos a pie (400 metros)</strong> de la playa de Waikiki.</p>
                     <p>Nos asociamos con <strong>Honolulu Coffee</strong> (fundado en 1992, la cadena de café Kona más grande de Hawái) para servir <strong>café Honolulu Coffee</strong>. El café Kona se cultiva en las laderas de Mauna Loa y Hualalai en la Isla Grande de Hawái (altitud 500-900m), representando <strong>menos del 1%</strong> de la producción mundial de café.</p>
                     <p>También servimos donuts de mochi artesanales de <strong>MOCHILAND</strong> (originario de Corea, con más de 50 ubicaciones en EE.UU.). Hechos con harina de arroz (mochiko) para una textura única y masticable, <strong>preparados frescos diariamente en la tienda</strong>.</p>
                   </>

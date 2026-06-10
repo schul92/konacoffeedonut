@@ -1,18 +1,25 @@
 {
   "name": "Kona Coffee Donut - Waikiki",
   "short_name": "KonaDonut",
-  "description": "Authentic Hawaiian café serving premium Kona coffee from Honolulu Coffee and artisan mochi donuts from MOCHILAND. Located at 2142 Kalakaua Ave, Waikiki. Grand opening Late April 2026.",
+  "description": "Kona Coffee Donut? is open now in Waikiki at 2142 Kalākaua Ave, serving Honolulu Coffee, 100% Kona coffee available, fresh mochi donuts, malasadas, bingsu, and island desserts.",
   "start_url": "/en",
   "scope": "/",
   "id": "kona-coffee-donut-waikiki",
   "display": "standalone",
-  "display_override": ["standalone", "minimal-ui"],
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
   "background_color": "#fefefe",
   "theme_color": "#8b4513",
   "orientation": "portrait-primary",
   "lang": "en",
   "dir": "ltr",
-  "categories": ["food", "shopping", "lifestyle"],
+  "categories": [
+    "food",
+    "shopping",
+    "lifestyle"
+  ],
   "icons": [
     {
       "src": "/favicon-16x16.png",
@@ -60,14 +67,24 @@
       "short_name": "Menu",
       "description": "Browse our coffee and donuts menu",
       "url": "/en/menu",
-      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Careers",
       "short_name": "Jobs",
       "description": "Join our team in Waikiki",
       "url": "/en/careers",
-      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ],
   "related_applications": [],

@@ -3,7 +3,14 @@ import { locales } from '@/i18n';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.konacoffeedonut.com';
-  const currentDate = new Date();
+  const defaultLastModified = new Date('2026-06-06T00:00:00.000Z');
+  const routeLastModified: Record<string, Date> = {
+    '': new Date('2026-06-09T00:00:00.000Z'),
+    '/menu': new Date('2026-06-09T00:00:00.000Z'),
+    '/menu/kona-coffee': new Date('2026-06-09T00:00:00.000Z'),
+    '/menu/bingsu': new Date('2026-06-09T00:00:00.000Z'),
+    '/blog/what-is-bingsu': new Date('2026-06-09T00:00:00.000Z'),
+  };
 
   const routes = [
     '',
@@ -158,15 +165,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Add all routes for each locale with enhanced metadata
   locales.forEach((locale) => {
     routes.forEach((route) => {
+      const languageAlternates = Object.fromEntries(
+        locales.map((loc) => [loc, `${baseUrl}/${loc}${route}`])
+      );
+      languageAlternates['x-default'] = `${baseUrl}/en${route}`;
+
       sitemap.push({
         url: `${baseUrl}/${locale}${route}`,
-        lastModified: currentDate,
+        lastModified: routeLastModified[route] || defaultLastModified,
         changeFrequency: changeFreqMap[route] || 'weekly',
         priority: priorityMap[route] || 0.8,
         alternates: {
-          languages: Object.fromEntries(
-            locales.map((loc) => [loc, `${baseUrl}/${loc}${route}`])
-          ),
+          languages: languageAlternates,
         },
       });
     });

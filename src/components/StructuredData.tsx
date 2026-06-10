@@ -30,7 +30,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     ja: 'Kona Coffee Donut?は2142 Kalakaua Ave, Honolulu, HI 96815に位置し、ワイキキで営業中。ワイキキビーチから400m（徒歩5分）。ホノルルコーヒー（1992年創業、ハワイ最大のコナコーヒーチェーン）のホノルルコーヒーを誇りを持って提供。コナコーヒーはマウナロア山とフアラライ山の標高500-900mで栽培され、世界のコーヒー生産量の1%未満（コナコーヒー協会）。MOCHILAND（米国50店舗以上）の職人モチドーナツを毎日店内で手作り。営業時間：毎日7時〜21時（14時間）。',
     ko: 'Kona Coffee Donut?은 2142 Kalakaua Ave, Honolulu, HI 96815에 위치하며, 와이키키에서 영업 중입니다. 와이키키 비치에서 400m(도보 5분). 호놀룰루 커피(1992년 설립, 하와이 최대 코나 커피 체인)의 호놀룰루 커피를 자랑스럽게 제공. 코나 커피는 마우나 로아와 후알라라이 화산의 해발 500-900m에서 재배되며 전 세계 생산량의 1% 미만(코나 커피 협회). MOCHILAND(미국 50개 이상 매장)의 장인 모찌 도넛을 매일 매장에서 직접 제조. 영업시간: 매일 7시-21시(14시간).',
     zh: 'Kona Coffee Donut?位于2142 Kalakaua Ave, Honolulu, HI 96815，威基基现已营业。距威基基海滩400米（步行5分钟）。自豪地供应檀香山咖啡（1992年成立，夏威夷最大科纳咖啡连锁）的檀香山咖啡——产自冒纳罗亚和胡阿拉莱火山海拔500-900米处，仅占全球咖啡产量不到1%（科纳咖啡协会）。提供MOCHILAND（美国50多家门店）手工麻糬甜甜圈，每天店内新鲜制作。营业时间：每天7点-21点（14小时）。',
-    es: 'Kona Coffee Donut? es un café hawaiano abierto ahora en 2142 Kalakaua Ave, Honolulu, HI 96815. A 400 metros (5 min a pie) de Waikiki Beach. Servimos Honolulu Coffee y 100% Kona coffee available, además de donuts mochi artesanales de MOCHILAND, preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
+    es: 'Kona Coffee Donut? es un café hawaiano abierto ahora en 2142 Kalakaua Ave, Honolulu, HI 96815. A 400 metros (5 min a pie) de Waikiki Beach. Servimos Honolulu Coffee y café 100% Kona disponible, además de donuts mochi artesanales de MOCHILAND, preparados frescos diariamente. Horario: 7AM-9PM diario (14 horas).',
   };
 
   // Local Business Schema (Enhanced with Opening Date)

@@ -53,8 +53,8 @@
     "visitButton": "Visit Us Today"
   },
   "location": {
-    "title": "GRAND OPENING",
-    "subtitle": "Opening Soon",
+    "title": "OPEN NOW",
+    "subtitle": "Open Now",
     "address": "2142 Kalakaua Ave",
     "city": "Honolulu, HI 96815",
     "directions": "Get Directions"
@@ -66,7 +66,7 @@
   },
   "meta": {
     "title": "Best Donuts Near Me in Waikiki | Fresh Kona Coffee & Malasadas Daily",
-    "description": "🍩 Fresh artisan donuts & Honolulu Coffee in Waikiki! Try our famous mochi donuts, malasadas & bingsu. Grand Opening Late April 2026 at 2142 Kalākaua Ave. Order now for pickup!"
+    "description": "🍩 Fresh artisan donuts & Honolulu Coffee in Waikiki! Try our famous mochi donuts, malasadas & bingsu. Open now in Waikiki at 2142 Kalākaua Ave. Order now for pickup!"
   },
   "aboutKonaCoffee": {
     "hero": {
@@ -95,7 +95,7 @@
       },
       "origin": {
         "title": "🏝️ 100% Hawaiian Origin",
-        "text": "True Kona coffee must be grown in the Kona District to carry the name. Beware of \"Kona blends\" that may contain as little as 10% actual Kona beans—at our Waikiki location, we serve only genuine premium Kona coffee from Honolulu Coffee."
+        "text": "True Kona coffee must be grown in the Kona District to carry the name. Beware of \"Kona blends\" that may contain as little as 10% actual Kona beans—at our Waikiki location, 100% Kona coffee is available alongside Honolulu Coffee drinks."
       }
     },
     "comparison": {
@@ -127,7 +127,7 @@
     },
     "experience": {
       "title": "Experience Honolulu Coffee in Waikiki",
-      "paragraph1": "Located in the heart of Waikiki at 2142 Kalakaua Ave, Kona Coffee Donut is your destination for genuine premium Kona coffee paired with artisan mochi donuts from MOCHILAND. We partner with Honolulu Coffee, Hawaii's most trusted name in premium Kona coffee since 1992.",
+      "paragraph1": "Located in the heart of Waikiki at 2142 Kalakaua Ave, Kona Coffee Donut is your Waikiki stop for Honolulu Coffee, 100% Kona coffee available, and artisan mochi donuts from MOCHILAND. We partner with Honolulu Coffee, Hawaii's most trusted name in premium Kona coffee since 1992.",
       "whyChoose": {
         "title": "Why Choose Our Kona Coffee?",
         "point1": "Premium Kona coffee beans by Honolulu Coffee",
@@ -141,11 +141,11 @@
       "title": "Frequently Asked Questions About Kona Coffee",
       "q1": {
         "question": "Is Kona coffee worth the price?",
-        "answer": "Yes! Kona coffee's premium price reflects its limited production, hand-picking process, and exceptional quality. With less than 1% of global coffee production, genuine Kona coffee offers a unique taste experience you can't find elsewhere."
+        "answer": "Yes! Kona coffee's premium price reflects its limited production, hand-picking process, and exceptional quality. With less than 1% of global coffee production, Kona coffee offers a unique taste experience you can't find elsewhere."
       },
       "q2": {
         "question": "What's the difference between \"Kona blend\" and premium Kona?",
-        "answer": "\"Kona blend\" may contain as little as 10% actual Kona beans mixed with cheaper coffees. At Kona Coffee Donut, we serve only genuine premium Kona coffee from Honolulu Coffee—never blends."
+        "answer": "\"Kona blend\" may contain as little as 10% actual Kona beans mixed with cheaper coffees. At Kona Coffee Donut?, 100% Kona coffee is available alongside Honolulu Coffee drinks and fresh donuts."
       },
       "q3": {
         "question": "How should I brew Kona coffee at home?",
@@ -229,7 +229,7 @@
     },
     "cta": {
       "title": "Ready to Taste the Difference?",
-      "subtitle": "Visit us at 2142 Kalākaua Ave, Waikiki. Opening Late April 2026",
+      "subtitle": "Visit us at 2142 Kalākaua Ave, Waikiki. Open now in Waikiki",
       "visitUs": "Visit Us",
       "seeMenu": "See Our Menu"
     }

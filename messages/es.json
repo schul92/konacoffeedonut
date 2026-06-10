@@ -53,8 +53,8 @@
     "visitButton": "Visítanos Hoy"
   },
   "location": {
-    "title": "GRAN APERTURA",
-    "subtitle": "Próximamente",
+    "title": "ABIERTO AHORA",
+    "subtitle": "Abierto ahora",
     "address": "2142 Kalakaua Ave",
     "city": "Honolulu, HI 96815",
     "directions": "Cómo Llegar"
@@ -66,7 +66,7 @@
   },
   "meta": {
     "title": "Kona Coffee Donut | Donuts y Café Artesanal en Waikiki, Hawaii",
-    "description": "Disfruta del auténtico café Kona hawaiano y donuts artesanales de mochi en Waikiki. Hecho con café premium de Honolulu Coffee y MOCHILAND. Cafetería cerca de mí en Hawaii."
+    "description": "Café y donuts en Waikiki: Honolulu Coffee, café 100% Kona disponible, mochi donuts, malasadas y bingsu en 2142 Kalākaua Ave."
   },
   "aboutKonaCoffee": {
     "hero": {
@@ -95,7 +95,7 @@
       },
       "origin": {
         "title": "100% Origen Hawaiano",
-        "text": "El verdadero café Kona debe cultivarse en el Distrito de Kona para llevar ese nombre. Cuidado con las 'mezclas Kona' que pueden contener tan solo un 10% de granos Kona reales - en nuestra ubicación de Waikiki, servimos solo café Kona premium genuino de Honolulu Coffee."
+        "text": "El verdadero café Kona debe cultivarse en el Distrito de Kona para llevar ese nombre. Cuidado con las 'mezclas Kona' que pueden contener tan solo un 10% de granos Kona reales - en nuestra ubicación de Waikiki, servimos Honolulu Coffee y café 100% Kona disponible."
       }
     },
     "comparison": {
@@ -145,7 +145,7 @@
       },
       "q2": {
         "question": "¿Cuál es la diferencia entre 'mezcla Kona' y Kona premium?",
-        "answer": "La 'mezcla Kona' puede contener tan solo un 10% de granos Kona reales mezclados con cafés más baratos. En Kona Coffee Donut, servimos solo café Kona premium genuino de Honolulu Coffee - nunca mezclas."
+        "answer": "La 'mezcla Kona' puede contener tan solo un 10% de granos Kona reales mezclados con cafés más baratos. En Kona Coffee Donut, servimos Honolulu Coffee y café 100% Kona disponible - verifica siempre el porcentaje en la etiqueta cuando compres café Kona."
       },
       "q3": {
         "question": "¿Cómo debo preparar el café Kona en casa?",
@@ -185,6 +185,53 @@
     "meta": {
       "title": "Donuts de Mochi Waikiki | Mejores Donuts de Mochi en Hawaii | MOCHILAND",
       "description": "Los mejores donuts de mochi en Waikiki! Hechos frescos diariamente con MOCHILAND. 12+ sabores incluyendo Ube, Matcha y Sesamo Negro. Textura masticable-crujiente, junto a Waikiki Beach."
+    }
+  },
+  "farmToDonut": {
+    "meta": {
+      "title": "Farm to Donut | Nuestra historia | Kona Coffee Donut?",
+      "description": "Descubre la historia de nuestro café hawaiano y donuts frescos en Waikiki, preparados con aloha."
+    },
+    "hero": {
+      "title": "Farm to Donut",
+      "subtitle": "Del sabor hawaiano a tu primer bocado en Waikiki"
+    },
+    "journey": {
+      "title": "El viaje del sabor",
+      "intro": "Cada café y cada donut tienen una historia. Traemos sabores de Hawaii y postres artesanales al corazón de Waikiki.",
+      "step1": {
+        "label": "PASO 1",
+        "title": "Café hawaiano",
+        "description": "Servimos café pensado para acompañar donuts y postres frescos.",
+        "fact": "Café 100% Kona disponible."
+      },
+      "step2": {
+        "label": "PASO 2",
+        "title": "Ingredientes seleccionados",
+        "description": "Cuidamos sabor, textura y frescura en cada producto.",
+        "point1": "Ingredientes frescos",
+        "point2": "Preparación diaria",
+        "point3": "Sabor de Waikiki"
+      },
+      "step3": {
+        "label": "PASO 3",
+        "title": "Hecho en Waikiki",
+        "description": "Mochi donuts, malasadas y bingsu preparados con cuidado en la tienda.",
+        "timing": "Una parada fácil cerca de Waikiki Beach."
+      },
+      "step4": {
+        "label": "PASO 4",
+        "title": "Tu primer bocado",
+        "description": "Café, donuts y postres fríos para disfrutar Waikiki.",
+        "quote": "Un bocado dulce para tu día en Hawaii.",
+        "cta": "Pruébalo"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para probarlo?",
+      "subtitle": "Abierto ahora en 2142 Kalākaua Ave, Waikiki",
+      "visitUs": "Visítanos",
+      "seeMenu": "Ver menú"
     }
   }
 }

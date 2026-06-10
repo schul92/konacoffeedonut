@@ -17,15 +17,15 @@ export async function generateMetadata({
     },
     ja: {
       title: "ワイキキで100%コナコーヒーも楽しめるカフェ",
-      description: "ワイキキでコナコーヒー、アイスコーヒー、ラテを。100% Kona coffee available。カラカウア通り近くでドーナツと一緒にどうぞ。",
+      description: "ワイキキでコナコーヒー、アイスコーヒー、ラテを。100%コナコーヒーもご用意。カラカウア通り近くでドーナツと一緒にどうぞ。",
     },
     ko: {
       title: "와이키키 100% 코나 커피도 가능한 카페",
-      description: "와이키키에서 코나 커피, 아이스커피, 라떼를 즐기세요. 100% Kona coffee available. 칼라카우아 애비뉴 근처 도넛 카페입니다.",
+      description: "와이키키에서 코나 커피, 아이스커피, 라떼를 즐기세요. 100% 코나 커피도 선택 가능합니다. 칼라카우아 애비뉴 근처 도넛 카페입니다.",
     },
     zh: {
       title: "威基基可选100%科纳咖啡的咖啡店",
-      description: "在威基基享用科纳咖啡、冰咖啡和拿铁。100% Kona coffee available。卡拉卡瓦大道附近，适合搭配新鲜甜甜圈。",
+      description: "在威基基享用科纳咖啡、冰咖啡和拿铁。可选100%科纳咖啡。卡拉卡瓦大道附近，适合搭配新鲜甜甜圈。",
     },
     es: {
       title: "100% Kona Coffee Available in Waikiki",

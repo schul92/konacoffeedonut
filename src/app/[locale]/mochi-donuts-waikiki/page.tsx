@@ -325,7 +325,7 @@ const content = {
     cta: {
       title: '와이키키 최고의 모찌 도넛을 만나보세요',
       address: '2142 Kalakaua Ave, 와이키키',
-      opening: '2026년 4월 말 그랜드 오픈',
+      opening: '와이키키에서 영업 중',
       note: '갓 만든 모찌 도넛 + 프리미엄 코나 커피 — 와이키키 최고의 디저트.',
       button: '길찾기',
     },
@@ -539,7 +539,7 @@ const content = {
     cta: {
       title: 'Prueba los Mejores Donuts de Mochi de Waikiki',
       address: '2142 Kalakaua Ave, Waikiki',
-      opening: 'Apertura Finales de Abril 2026',
+      opening: 'Abierto ahora en Waikiki',
       note: 'Donuts de mochi frescos + cafe Kona premium — el postre definitivo de Waikiki.',
       button: 'Obtener Direcciones',
     },
