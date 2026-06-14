@@ -16,6 +16,14 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'is-kona-coffee-worth-it',
+        image: '/images/blog/is-kona-coffee-worth-it.jpeg',
+        category: 'Coffee',
+        title: 'Is Kona Coffee Worth It? 100% Kona vs. Kona Blend',
+        excerpt: 'Real Kona is pricey — here\'s the honest difference between 100% Kona and a "Kona Blend" (as little as 10% Kona), and where to taste the real thing in Waikiki.',
+        readTime: 8,
+      },
+      {
         slug: 'hawaiian-shave-ice',
         image: '/images/blog/hawaiian-shave-ice.jpeg',
         category: 'Food Guide',
@@ -233,6 +241,14 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'is-kona-coffee-worth-it',
+        image: '/images/blog/is-kona-coffee-worth-it.jpeg',
+        category: '\u30B3\u30FC\u30D2\u30FC',
+        title: '\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u306F\u4FA1\u5024\u3042\u308B\uFF1F100%\u30B3\u30CA vs \u30B3\u30CA\u30D6\u30EC\u30F3\u30C9',
+        excerpt: '\u300C100%\u30B3\u30CA\u300D\u3068\u3001\u308F\u305A\u304B10%\u3057\u304B\u30B3\u30CA\u3092\u542B\u307E\u306A\u3044\u300C\u30B3\u30CA\u30D6\u30EC\u30F3\u30C9\u300D\u306E\u672C\u5F53\u306E\u9055\u3044\u3092\u6B63\u76F4\u306B\u89E3\u8AAC\u3002\u30EF\u30A4\u30AD\u30AD\u3067\u672C\u7269\u306E\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u304C\u5473\u308F\u3048\u308B\u5834\u6240\u3082\u3054\u6848\u5185\u3057\u307E\u3059\u3002',
+        readTime: 8,
+      },
+      {
         slug: 'hawaiian-shave-ice',
         image: '/images/blog/hawaiian-shave-ice.jpeg',
         category: '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9',
@@ -404,6 +420,14 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'is-kona-coffee-worth-it',
+        image: '/images/blog/is-kona-coffee-worth-it.jpeg',
+        category: '\uCEE4\uD53C',
+        title: '\uCF54\uB098 \uCEE4\uD53C, \uBE44\uC2FC \uAC12\uC744 \uD560\uAE4C? 100% \uCF54\uB098 vs \uCF54\uB098 \uBE14\uB80C\uB4DC',
+        excerpt: '100% \uCF54\uB098\uC640, \uCF54\uB098\uAC00 10%\uBC16\uC5D0 \uC548 \uB4E4\uC5B4\uAC04 "\uCF54\uB098 \uBE14\uB80C\uB4DC"\uC758 \uC9C4\uC9DC \uCC28\uC774\uB97C \uC815\uC9C1\uD558\uAC8C \uC54C\uB824\uB4DC\uB9AC\uACE0, \uC640\uC774\uD0A4\uD0A4\uC5D0\uC11C \uC9C4\uC9DC \uCF54\uB098 \uCEE4\uD53C\uB97C \uB9DB\uBCFC \uC218 \uC788\uB294 \uACF3\uAE4C\uC9C0 \uC548\uB0B4\uD569\uB2C8\uB2E4.',
+        readTime: 8,
+      },
       {
         slug: 'hawaiian-shave-ice',
         image: '/images/blog/hawaiian-shave-ice.jpeg',
@@ -577,6 +601,14 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'is-kona-coffee-worth-it',
+        image: '/images/blog/is-kona-coffee-worth-it.jpeg',
+        category: '\u5496\u5561',
+        title: '\u79D1\u7EB3\u5496\u5561\u503C\u5F97\u4E70\u5417\uFF1F100% \u79D1\u7EB3 vs \u79D1\u7EB3\u6DF7\u5408',
+        excerpt: '\u8BDA\u5B9E\u62C6\u89E3 100% \u79D1\u7EB3\u4E0E"\u79D1\u7EB3\u6DF7\u5408"\uFF08\u79D1\u7EB3\u542B\u91CF\u4F4E\u81F310%\uFF09\u7684\u771F\u6B63\u533A\u522B\uFF0C\u5E76\u544A\u8BC9\u4F60\u5728\u5A01\u57FA\u57FA\u54EA\u91CC\u80FD\u559D\u5230\u6B63\u5B97\u79D1\u7EB3\u5496\u5561\u3002',
+        readTime: 8,
+      },
+      {
         slug: 'hawaiian-shave-ice',
         image: '/images/blog/hawaiian-shave-ice.jpeg',
         category: '\u7F8E\u98DF\u6307\u5357',
@@ -748,6 +780,14 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'is-kona-coffee-worth-it',
+        image: '/images/blog/is-kona-coffee-worth-it.jpeg',
+        category: 'Café',
+        title: '¿Vale la pena el café Kona? 100% Kona vs. Mezcla Kona',
+        excerpt: 'La diferencia honesta entre el 100% Kona y una "Mezcla Kona" (con tan solo un 10% de Kona), y dónde probar el auténtico en Waikiki.',
+        readTime: 8,
+      },
       {
         slug: 'hawaiian-shave-ice',
         image: '/images/blog/hawaiian-shave-ice.jpeg',
