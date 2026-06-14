@@ -50,6 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/kona-affogato-waikiki',
     // Third batch (June 2026)
     '/blog/best-mochi-donuts-waikiki',
+    // Menu-explainer batch (June 2026)
+    '/blog/hawaiian-shave-ice',
+    '/blog/what-is-a-malasada',
+    '/blog/what-is-a-mochi-donut',
+    '/blog/what-is-kona-coffee',
     // Second batch (May 2026)
     '/blog/how-to-eat-bingsu',
     '/blog/best-budget-eats-waikiki',
@@ -100,6 +105,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/malasada-vs-mochi-donut-waikiki': 0.85,
     '/blog/kona-affogato-waikiki': 0.8,
     '/blog/best-mochi-donuts-waikiki': 0.9, // buyer-intent: "best mochi donuts waikiki"
+    '/blog/hawaiian-shave-ice': 0.85,
+    '/blog/what-is-a-malasada': 0.85,
+    '/blog/what-is-a-mochi-donut': 0.85,
+    '/blog/what-is-kona-coffee': 0.85,
     '/blog/how-to-eat-bingsu': 0.9, // captures 1,464 mo "how to eat bingsu" impressions
     '/blog/best-budget-eats-waikiki': 0.9, // pos #1 for "best places to eat in waikiki on a budget"
     '/blog/best-acai-bowls-waikiki': 0.85,
@@ -162,14 +171,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/menu/korean-corn-dog': 'weekly',
   };
 
-  // Add all routes for each locale with enhanced metadata
-  locales.forEach((locale) => {
-    routes.forEach((route) => {
-      const languageAlternates = Object.fromEntries(
-        locales.map((loc) => [loc, `${baseUrl}/${loc}${route}`])
-      );
-      languageAlternates['x-default'] = `${baseUrl}/en${route}`;
+  // Blog POST bodies are translated only into en/ja/ko/zh — the /blog index and
+  // every other route (home, /menu, /menu/*, landing pages) are fully localized
+  // incl. Spanish. So /es/blog/<slug> falls back to English and would be a
+  // duplicate of /en/blog/<slug>. Don't list those es URLs (the post pages
+  // already omit es from their hreflang); this keeps the sitemap and the pages'
+  // canonical/hreflang signals consistent and avoids duplicate-content flags.
+  const isBlogPost = (route: string) => route.startsWith('/blog/');
+  const localesForRoute = (route: string) =>
+    isBlogPost(route) ? locales.filter((loc) => loc !== 'es') : [...locales];
 
+  // Add all routes for each (translated) locale with enhanced metadata
+  routes.forEach((route) => {
+    const routeLocales = localesForRoute(route);
+    const languageAlternates = Object.fromEntries(
+      routeLocales.map((loc) => [loc, `${baseUrl}/${loc}${route}`])
+    );
+    languageAlternates['x-default'] = `${baseUrl}/en${route}`;
+
+    routeLocales.forEach((locale) => {
       sitemap.push({
         url: `${baseUrl}/${locale}${route}`,
         lastModified: routeLastModified[route] || defaultLastModified,
