@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { Coffee, Droplets, Flame, MapPin, Star, ThumbsUp, HelpCircle, ChevronRight, Award, Bean } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 import SubpageNav from '@/components/SubpageNav';
 
 // Primary target: Chinese search queries with 4,500+ monthly impressions
@@ -547,12 +546,12 @@ export default function KonaCoffeeChineseGuidePage() {
 
   return (
     <>
-      <Script
+      <script
         id="blog-posting-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -781,6 +780,21 @@ export default function KonaCoffeeChineseGuidePage() {
               {t.whereToBuy.paragraphs.map((p, i) => (
                 <p key={i} className="text-gray-300 leading-relaxed mb-4 text-base md:text-lg">{p}</p>
               ))}
+
+              <p className="text-gray-300 leading-relaxed mb-4 text-base md:text-lg">
+                <Link
+                  href={`/${locale}/menu/kona-coffee`}
+                  className="text-amber-700 font-semibold underline underline-offset-2 hover:text-amber-600 transition-colors"
+                >
+                  {locale === 'zh'
+                    ? '查看我们的100%科纳咖啡菜单 →'
+                    : locale === 'ja'
+                    ? '100%コナコーヒーメニューを見る →'
+                    : locale === 'ko'
+                    ? '100% 코나 커피 메뉴 보기 →'
+                    : '100% Kona Coffee Menu →'}
+                </Link>
+              </p>
 
               {/* Shop Card */}
               <div className="mt-8 bg-gradient-to-br from-amber-900/30 to-orange-900/20 border border-amber-500/30 rounded-2xl p-8">

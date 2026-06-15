@@ -161,11 +161,6 @@ export default function MochiDonutsPage() {
         name: 'Kona Coffee Donut',
       },
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '150',
-    },
   };
 
   return (

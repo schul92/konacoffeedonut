@@ -418,11 +418,6 @@ export default function BingsuPage() {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
               "priceCurrency": "USD"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "120"
             }
           })
         }}

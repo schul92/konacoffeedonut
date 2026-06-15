@@ -20,22 +20,20 @@ SCOPES = ["https://www.googleapis.com/auth/indexing"]
 SITE = "https://www.konacoffeedonut.com"
 LOCALES = ["en", "ja", "ko", "zh", "es"]
 
-# New blog slugs (revenue-focused posts deployed May 2026)
-NEW_SLUGS = [
-    "best-bingsu-waikiki",
-    "mochi-donut-flavors-waikiki",
-    "best-smoothies-waikiki",
-    "where-to-try-kona-coffee-waikiki",
-    "malasada-vs-mochi-donut-waikiki",
-    "kona-affogato-waikiki",
-]
+# Brand-new pages to submit (none pending — prior batch already submitted)
+NEW_SLUGS = []
 
-# Existing pages that received SEO updates (re-submit so Google re-crawls)
+# Pages updated in the "kona coffee" SEO pass — re-submit so Google re-crawls.
+# Run AFTER pushing the local changes (URLs must serve the new markup).
 UPDATED_PAGES = [
-    "/blog/what-is-bingsu",  # title + meta description rewrite
-    "/menu/bingsu",          # added related-reading internal links
-    "/menu/mochi-donuts",
-    "/menu/kona-coffee",
+    "",                                       # home — Kona internal links + H1
+    "/menu/kona-coffee",                      # schema, Offer price, FAQ, Wikipedia entity
+    "/about-kona-coffee",                     # title fix + Kona menu link
+    "/blog/what-is-kona-coffee",
+    "/blog/is-kona-coffee-worth-it",
+    "/blog/kona-coffee-guide",
+    "/blog/where-to-try-kona-coffee-waikiki",
+    "/blog/kona-affogato-waikiki",
 ]
 
 

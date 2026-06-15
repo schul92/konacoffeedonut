@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 import { MapPin, Clock, Sparkles, Cookie, Coffee, Star, ChevronRight } from 'lucide-react';
 import JoinTeamCTA from '@/components/JoinTeamCTA';
 import SubpageNav from '@/components/SubpageNav';
@@ -645,12 +644,12 @@ export default function MochiDonutsWaikikiPage() {
 
   return (
     <>
-      <Script
+      <script
         id="mochi-donut-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mochiDonutSchema) }}
       />
-      <Script
+      <script
         id="mochi-donut-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 
 // SEO-optimized content for "breakfast waikiki" keyword (Volume: 1,000)
 const content = {
@@ -377,12 +376,7 @@ const breakfastSchema = {
     opens: '07:00',
     closes: '21:00'
   },
-  priceRange: '$$',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '156'
-  }
+  priceRange: '$$'
 };
 
 export default function BreakfastWaikikiPage() {
@@ -392,7 +386,7 @@ export default function BreakfastWaikikiPage() {
 
   return (
     <>
-      <Script
+      <script
         id="breakfast-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breakfastSchema) }}

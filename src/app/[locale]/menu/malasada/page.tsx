@@ -389,11 +389,6 @@ export default function MalasadaPage() {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
               "priceCurrency": "USD"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "reviewCount": "150"
             }
           })
         }}

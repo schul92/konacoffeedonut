@@ -14,7 +14,6 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 import { useState } from 'react';
 import SubpageNav from '@/components/SubpageNav';
 
@@ -736,12 +735,12 @@ export default function BestDessertsWaikikiPage() {
 
   return (
     <>
-      <Script
+      <script
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

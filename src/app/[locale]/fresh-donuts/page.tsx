@@ -134,13 +134,6 @@ const productSchema = {
     lowPrice: '3.00',
     highPrice: '6.00',
     offerCount: '20'
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '200',
-    bestRating: '5',
-    worstRating: '1'
   }
 };
 

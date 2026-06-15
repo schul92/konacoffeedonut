@@ -81,9 +81,9 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         validFrom: '2026-04-25',
       },
     ],
-    servesCuisine: ['Coffee', 'Donuts', 'Desserts', 'Hawaiian'],
+    servesCuisine: ['Kona Coffee', '100% Kona Coffee', 'Coffee', 'Espresso', 'Donuts', 'Malasada', 'Bingsu', 'Hawaiian', 'Desserts'],
     menu: `https://www.konacoffeedonut.com/${locale}/menu`,
-    acceptsReservations: 'False',
+    acceptsReservations: false,
     paymentAccepted: 'Cash, Credit Card, Debit Card',
     currenciesAccepted: 'USD',
     amenityFeature: [
@@ -138,6 +138,24 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       },
     ],
     keywords: keywordsByLocale[locale] || keywordsByLocale.en,
+    knowsAbout: [
+      '100% Kona Coffee', 'Kona Coffee', 'Hawaiian coffee', 'Single-origin coffee',
+      'Espresso drinks', 'Iced coffee', 'Mochi donuts', 'Malasada', 'Korean bingsu',
+    ],
+    hasMenu: { '@id': 'https://www.konacoffeedonut.com/#menu' },
+    makesOffer: [
+      {
+        '@type': 'Offer',
+        availability: 'https://schema.org/InStock',
+        priceCurrency: 'USD',
+        areaServed: { '@type': 'City', name: 'Honolulu' },
+        itemOffered: {
+          '@type': 'MenuItem',
+          name: '100% Kona Coffee',
+          description: '100% Kona coffee from the Kona Districts of Hawaii\'s Big Island, served hot or iced alongside espresso drinks in Waikiki.',
+        },
+      },
+    ],
     sameAs: seoSameAsUrls,
     potentialAction: {
       '@type': 'OrderAction',
@@ -206,6 +224,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
   const menuSchema = {
     '@context': 'https://schema.org',
     '@type': 'Menu',
+    '@id': 'https://www.konacoffeedonut.com/#menu',
     name: 'Kona Coffee Donut Menu',
     description: 'Our selection of artisan mochi donuts, Kona coffee, malasada, bingsu, and more',
     hasMenuSection: [
@@ -223,13 +242,26 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       },
       {
         '@type': 'MenuSection',
-        name: 'Coffee',
-        description: 'Premium Kona coffee by Honolulu Coffee',
+        name: 'Kona Coffee & Espresso',
+        description: '100% Kona coffee and espresso drinks, poured from Honolulu Coffee Kona beans',
         hasMenuItem: [
           {
             '@type': 'MenuItem',
-            name: 'Kona Coffee',
-            description: "Hawaii's number one premium Kona coffee",
+            name: '100% Kona Coffee',
+            description: '100% Kona coffee from Hawaii\'s Big Island — smooth, low-acidity, served hot or iced.',
+            offers: { '@type': 'Offer', priceCurrency: 'USD', price: '5.00', availability: 'https://schema.org/InStock' },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Kona Latte',
+            description: 'Espresso with steamed milk and 100% Kona coffee.',
+            offers: { '@type': 'Offer', priceCurrency: 'USD', price: '6.00', availability: 'https://schema.org/InStock' },
+          },
+          {
+            '@type': 'MenuItem',
+            name: 'Iced Kona Coffee',
+            description: 'Chilled 100% Kona coffee over ice.',
+            offers: { '@type': 'Offer', priceCurrency: 'USD', price: '5.50', availability: 'https://schema.org/InStock' },
           },
         ],
       },
@@ -479,7 +511,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     '@id': 'https://www.konacoffeedonut.com/#product',
-    name: 'Premium Honolulu Coffee & Artisan Mochi Donuts',
+    name: '100% Kona Coffee & Artisan Mochi Donuts',
     description: 'Authentic Hawaiian café experience featuring Honolulu Coffee (grown at 500-900m elevation, less than 1% of world production) from Honolulu Coffee (est. 1992) and artisan mochi donuts from MOCHILAND (50+ US locations). Freshly prepared daily using traditional rice flour (mochiko) for a unique chewy texture.',
     image: [
       'https://www.konacoffeedonut.com/images/menu/donut.webp',
@@ -530,13 +562,6 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         '@id': 'https://www.konacoffeedonut.com/#organization',
       },
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '150',
-      bestRating: '5',
-      worstRating: '1',
-    },
   };
 
   // GEO: ItemList Schema for Menu (Knowledge Graph optimization)
@@ -552,8 +577,8 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         position: 1,
         item: {
           '@type': 'Product',
-          name: 'Honolulu Coffee',
-          description: 'Premium single-origin Kona coffee from Honolulu Coffee, grown at 500-900m elevation on Hawaii\'s Big Island volcanic slopes. Less than 1% of world coffee production.',
+          name: '100% Kona Coffee',
+          description: '100% Kona coffee, poured from Honolulu Coffee\'s Big Island Kona beans grown at 500-900m elevation on volcanic slopes — less than 1% of world coffee production. Served hot or iced in Waikiki.',
           image: 'https://www.konacoffeedonut.com/images/menu/coffee.webp',
           brand: { '@type': 'Brand', name: 'Honolulu Coffee' },
           offers: { '@type': 'Offer', priceCurrency: 'USD', price: '5.00', availability: 'https://schema.org/InStock', url: `https://www.konacoffeedonut.com/${locale}/menu` },

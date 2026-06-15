@@ -34,7 +34,7 @@ export async function generateMetadata({
   };
 
   return {
-    title: titles[locale] || titles.en,
+    title: { absolute: `${titles[locale] || titles.en} | Kona Coffee Donut?` },
     description: descriptions[locale] || descriptions.en,
     openGraph: {
       title: titles[locale] || titles.en,

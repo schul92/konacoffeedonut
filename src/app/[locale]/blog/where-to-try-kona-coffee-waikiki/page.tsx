@@ -10,6 +10,7 @@ const config = {
   schemaHeadline: 'Where to Try Real Kona Coffee in Waikiki 2026',
   schemaDescription:
     'A guide to finding Kona coffee in Waikiki — what to look for, how to spot real Kona, and where to taste pour-over and espresso on Kalākaua Avenue.',
+  linkKonaMenu: true,
 };
 
 const content: Record<Locale, BlogContent> = {

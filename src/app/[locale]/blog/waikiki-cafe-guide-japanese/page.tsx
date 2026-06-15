@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 import SubpageNav from '@/components/SubpageNav';
 import { Coffee, MapPin, Clock, Star, DollarSign, ChevronRight } from 'lucide-react';
 
@@ -658,12 +657,12 @@ export default function WaikikiCafeGuideJapanesePage() {
 
   return (
     <>
-      <Script
+      <script
         id="blog-posting-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

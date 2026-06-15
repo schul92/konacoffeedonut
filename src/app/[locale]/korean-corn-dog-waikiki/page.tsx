@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 import { Flame, ChefHat, Star, MapPin, Clock, Sparkles } from 'lucide-react';
 import JoinTeamCTA from '@/components/JoinTeamCTA';
 import SubpageNav from '@/components/SubpageNav';
@@ -541,12 +540,12 @@ export default function KoreanCornDogWaikikiPage() {
 
   return (
     <>
-      <Script
+      <script
         id="corndog-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Script
+      <script
         id="corndog-restaurant-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantSchema) }}

@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { BookOpen, Clock, Globe, IceCreamCone, MapPin, Snowflake, Utensils, Users } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 import SubpageNav from '@/components/SubpageNav';
 
 // ────────────────────────────────────────────
@@ -915,12 +914,12 @@ export default function WhatIsBingsuPage() {
 
   return (
     <>
-      <Script
+      <script
         id="blogposting-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

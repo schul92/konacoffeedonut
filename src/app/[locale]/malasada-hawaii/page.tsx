@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 
 // SEO-optimized content for "malasada hawaii" keyword (Volume: 2,600, Difficulty: 21)
 const content = {
@@ -248,11 +247,6 @@ const malasadaSchema = {
         addressCountry: 'US'
       }
     }
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '89'
   }
 };
 
@@ -263,7 +257,7 @@ export default function MalasadaHawaiiPage() {
 
   return (
     <>
-      <Script
+      <script
         id="malasada-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(malasadaSchema) }}

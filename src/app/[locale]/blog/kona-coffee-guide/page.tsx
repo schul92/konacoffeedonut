@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { Coffee, Mountain, Hand, Shield, DollarSign, AlertTriangle, Droplets, MapPin, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 import SubpageNav from '@/components/SubpageNav';
 
 // SEO-optimized content for "kona coffee vs regular coffee" keyword (Volume: 1,900)
@@ -624,12 +623,12 @@ export default function KonaCoffeeGuidePage() {
 
   return (
     <>
-      <Script
+      <script
         id="blog-posting-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

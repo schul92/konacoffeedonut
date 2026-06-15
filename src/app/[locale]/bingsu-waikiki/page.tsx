@@ -13,7 +13,6 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 
 import JoinTeamCTA from '@/components/JoinTeamCTA';
 import SubpageNav from '@/components/SubpageNav';
@@ -590,7 +589,7 @@ export default function BingsuWaikikiPage() {
 
   return (
     <>
-      <Script
+      <script
         id="bingsu-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

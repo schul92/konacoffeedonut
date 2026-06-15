@@ -261,7 +261,7 @@ export default async function LocaleLayout({
 
         {/* Geo Tags for Local SEO */}
         <meta name="geo.region" content="US-HI" />
-        <meta name="geo.placename" content="Honolulu" />
+        <meta name="geo.placename" content="Waikiki, Honolulu" />
         <meta name="geo.position" content="21.2793;-157.8294" />
         <meta name="ICBM" content="21.2793, -157.8294" />
 

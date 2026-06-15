@@ -389,11 +389,6 @@ export default function AcaiBowlPage() {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
               "priceCurrency": "USD"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "reviewCount": "180"
             }
           })
         }}

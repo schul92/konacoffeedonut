@@ -10,6 +10,7 @@ const config = {
   schemaHeadline: 'Kona Affogato in Waikiki: Why Coffee Lovers Should Try This',
   schemaDescription:
     'A guide to Kona affogato — Italian-style espresso over vanilla ice cream — and where to try the best version in Waikiki at Kona Coffee Donut on Kalākaua Avenue.',
+  linkKonaMenu: true,
 };
 
 const content: Record<Locale, BlogContent> = {

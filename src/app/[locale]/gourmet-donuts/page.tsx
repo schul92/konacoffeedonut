@@ -162,13 +162,6 @@ const productSchema = {
     lowPrice: '3.50',
     highPrice: '6.00',
     offerCount: '20'
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '180',
-    bestRating: '5',
-    worstRating: '1'
   }
 };
 

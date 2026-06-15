@@ -452,21 +452,23 @@ export default function KonaCoffeePage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            "name": "Kona Coffee",
-            "description": "100% Kona coffee available at Kona Coffee Donut? in Waikiki, served alongside espresso drinks, iced coffee, fresh donuts, malasadas, and bingsu.",
+            "name": "100% Kona Coffee",
+            "description": "100% Kona coffee available at Kona Coffee Donut? in Waikiki, served hot or iced alongside espresso drinks, Kona lattes, fresh mochi donuts, malasadas, and bingsu.",
+            "category": "Kona Coffee",
             "brand": {
               "@type": "Brand",
-              "name": "Kona Coffee Donut"
+              "name": "Honolulu Coffee"
+            },
+            "isRelatedTo": {
+              "@type": "Thing",
+              "name": "Kona coffee",
+              "sameAs": "https://en.wikipedia.org/wiki/Kona_coffee"
             },
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
-              "priceCurrency": "USD"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "200"
+              "priceCurrency": "USD",
+              "price": "5.00"
             }
           })
         }}
@@ -483,7 +485,7 @@ export default function KonaCoffeePage() {
                 "name": "Do you serve 100% Kona coffee?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes — 100% Kona coffee is available at Kona Coffee Donut? alongside espresso drinks, iced coffee, and donut pairings."
+                  "text": "Yes — 100% Kona coffee is available at Kona Coffee Donut? alongside espresso drinks, iced coffee, and donut pairings. It is real 100% Kona, not a Kona blend."
                 }
               },
               {
@@ -491,7 +493,31 @@ export default function KonaCoffeePage() {
                 "name": "Where can I get Kona coffee near Waikiki Beach?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Visit Kona Coffee Donut? at 2142 Kalākaua Ave in Waikiki for coffee, donuts, bingsu, and grab-and-go desserts near Waikiki Beach."
+                  "text": "Visit Kona Coffee Donut? at 2142 Kalākaua Ave, Honolulu — about a 5-minute (400 m) walk from Waikiki Beach — for 100% Kona coffee, donuts, bingsu, and grab-and-go desserts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between 100% Kona coffee and a Kona blend?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "100% Kona coffee is grown entirely in the Kona Districts of Hawaii's Big Island. A 'Kona blend' can legally contain as little as 10% Kona. Kona Coffee Donut? serves 100% Kona coffee, poured from Honolulu Coffee's Kona beans."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the hours at Kona Coffee Donut in Waikiki?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Kona Coffee Donut? is open daily from 7:00 AM to 9:00 PM at 2142 Kalākaua Ave in Waikiki, Honolulu."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much is a cup of Kona coffee in Waikiki?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A cup of 100% Kona coffee starts around $5 at Kona Coffee Donut?, with Kona lattes and iced Kona coffee also available."
                 }
               }
             ]

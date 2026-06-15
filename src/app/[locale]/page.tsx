@@ -224,7 +224,7 @@ export default function Home() {
     <main className="min-h-screen bg-white text-black">
       {/* SEO H1 - Visually hidden but accessible to search engines */}
       <h1 className="sr-only">
-        Kona Coffee & Mochi Donuts in Waikiki | Fresh Malasadas & Bingsu Daily
+        100% Kona Coffee in Waikiki — Fresh Mochi Donuts, Malasadas & Bingsu Daily
       </h1>
 
       {/* Hiring Modal */}
@@ -1437,6 +1437,12 @@ export default function Home() {
                 >
                   Learn More About Kona Coffee →
                 </Link>
+                <Link
+                  href={`/${locale}/menu/kona-coffee`}
+                  className="mt-3 inline-block w-full text-center border-2 border-amber-600 text-amber-700 hover:bg-amber-50 font-bold px-6 py-3 rounded-full transition-all"
+                >
+                  100% Kona Coffee in Waikiki →
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -1521,6 +1527,7 @@ export default function Home() {
             {/* Right: Navigation */}
             <div className="flex flex-wrap gap-6 text-sm">
               <Link href={`/${locale}/menu`} className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.menu')}</Link>
+              <Link href={`/${locale}/menu/kona-coffee`} className="opacity-60 hover:opacity-100 transition-opacity">Kona Coffee</Link>
               <a href="#about" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.about')}</a>
               <a href="#location" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.location')}</a>
               <Link href={`/${locale}/blog`} className="opacity-60 hover:opacity-100 transition-opacity">Blog</Link>

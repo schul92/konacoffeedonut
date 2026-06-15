@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import Script from 'next/script';
 import { useState } from 'react';
 import { MapPin, Clock, Phone, ChevronDown, Sparkles, ArrowRight } from 'lucide-react';
 import SubpageNav from './SubpageNav';
@@ -46,6 +45,8 @@ export interface BlogConfig {
   imageAlt: string;
   schemaHeadline: string;
   schemaDescription: string;
+  /** When true, renders a contextual internal link to /[locale]/menu/kona-coffee near the end of the article. */
+  linkKonaMenu?: boolean;
 }
 
 const STORE = {
@@ -66,6 +67,20 @@ const t = (loc: Locale, key: string) => {
     faq: { en: 'Frequently Asked Questions', ja: 'よくある質問', ko: '자주 묻는 질문', zh: '常见问题', es: 'Preguntas Frecuentes' },
     backToBlog: { en: '← All Blogs', ja: '← ブログ一覧', ko: '← 블로그 목록', zh: '← 所有博客', es: '← Todos los Blogs' },
     pickFor: { en: 'Best Pick For You', ja: 'おすすめ', ko: '추천', zh: '推荐', es: 'Recomendado' },
+    tasteItLead: {
+      en: 'Ready to taste it for yourself? See our',
+      ja: '実際に味わってみませんか？',
+      ko: '직접 맛보고 싶으신가요?',
+      zh: '想亲自品尝吗？查看我们的',
+      es: '¿Listo para probarlo? Mira nuestro',
+    },
+    konaMenuLabel: {
+      en: '100% Kona Coffee Menu',
+      ja: '100%コナコーヒーメニュー',
+      ko: '100% 코나 커피 메뉴',
+      zh: '100%科纳咖啡菜单',
+      es: 'Menú de Café Kona 100%',
+    },
   };
   return dict[key]?.[loc] || dict[key]?.en || '';
 };
@@ -125,17 +140,17 @@ export default function RevenueBlogPost({ locale, config, content }: Props) {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-rose-50">
-      <Script
+      <script
         id={`schema-article-${config.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <Script
+      <script
         id={`schema-faq-${config.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Script
+      <script
         id={`schema-local-${config.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -269,6 +284,20 @@ export default function RevenueBlogPost({ locale, config, content }: Props) {
               )}
             </motion.section>
           ))}
+
+          {/* CONTEXTUAL INTERNAL LINK */}
+          {config.linkKonaMenu && (
+            <p className="text-lg text-stone-700 leading-relaxed mb-10">
+              {t(locale, 'tasteItLead')}{' '}
+              <Link
+                href={`/${locale}/menu/kona-coffee`}
+                className="text-amber-700 font-semibold underline underline-offset-2 hover:text-amber-900 transition-colors"
+              >
+                {t(locale, 'konaMenuLabel')}
+              </Link>
+              .
+            </p>
+          )}
 
           {/* FAQ */}
           <section className="mb-12">

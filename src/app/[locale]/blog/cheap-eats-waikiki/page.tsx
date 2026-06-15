@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { DollarSign, MapPin, Clock, Star, TrendingDown, Utensils, Coffee, ShoppingBag, ArrowRight, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Script from 'next/script';
 import SubpageNav from '@/components/SubpageNav';
 
 // ── i18n content ──────────────────────────────────────────────────────
@@ -907,12 +906,12 @@ export default function CheapEatsWaikikiPage() {
   return (
     <>
       {/* JSON-LD */}
-      <Script
+      <script
         id="blog-posting-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
