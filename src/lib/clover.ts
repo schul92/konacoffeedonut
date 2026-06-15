@@ -188,7 +188,10 @@ export interface SalesData {
   revenueByHour: { hour: number; label: string; revenue: number }[];
   heatmap: { weekday: string; hours: number[] }[];
   heatmapMax: number;
-  topItems: { name: string; units: number; revenue: number }[];
+  topItems: { name: string; units: number; pieces: number; revenue: number }[];
+  donutsByDay: { day: string; label: string; pieces: number }[];
+  donutsTotal: number;
+  donutBreakdown: { name: string; units: number; pieces: number }[];
   categoryMix: { category: string; revenue: number }[];
   tenderMix: { tender: string; amount: number }[];
   insights: { tone: 'good' | 'bad' | 'neutral'; text: string }[];
@@ -210,10 +213,31 @@ function emptyData(key: string, configured: boolean, error?: string, warming?: b
     heatmap: [],
     heatmapMax: 0,
     topItems: [],
+    donutsByDay: [],
+    donutsTotal: 0,
+    donutBreakdown: [],
     categoryMix: [],
     tenderMix: [],
     insights: [],
   };
+}
+
+// ── Donut / unit counting ───────────────────────────────────────────────────
+// Parse a pack size out of an item name: "Mochi Donut 3pc" → 3, "Half Dozen" → 6,
+// "Dozen" → 12. Falls back to 1 when the name has no pack indicator.
+function packQty(name: string): number {
+  const n = name.toLowerCase();
+  const m = n.match(/(\d+)\s*(?:pc|pcs|piece|pieces|pack|ct|count)\b/);
+  if (m) return Math.max(1, parseInt(m[1], 10));
+  if (/half[\s-]*dozen|1\/2\s*dozen|½\s*dozen/.test(n)) return 6;
+  if (/\bdozen\b/.test(n)) return 12;
+  return 1;
+}
+// Treat an item as a donut by its name OR its Clover category (covers
+// flavor-named mochi donuts that don't have "donut" in the item name).
+const DONUT_RE = /donut|doughnut|mochi|malasada|pon[\s-]?de|pon[\s-]?ring/i;
+function isDonut(name: string, category: string): boolean {
+  return DONUT_RE.test(name) || DONUT_RE.test(category);
 }
 
 const timeFmt = new Intl.DateTimeFormat('en-US', { timeZone: CLOVER_TZ, hour: 'numeric', minute: '2-digit' });
@@ -351,7 +375,8 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   const allDayRev = new Map<string, number>(); // every paid day (cur + prior) → for comparison overlay
   const curHour = new Array(24).fill(0);
   const heat: number[][] = WEEK.map(() => new Array(24).fill(0));
-  const itemMap = new Map<string, { units: number; revenue: number }>();
+  const itemMap = new Map<string, { units: number; revenue: number; pieces: number; donut: boolean }>();
+  const donutDay = new Map<string, number>(); // HST day → donut pieces sold
   const catRev = new Map<string, number>();
   const tenderMap = new Map<string, number>();
 
@@ -371,12 +396,16 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
       for (const li of o.lineItems?.elements ?? []) {
         if (li.isRevenue === false || li.refunded) continue;
         const name = li.name ?? 'Unknown';
-        const cur = itemMap.get(name) ?? { units: 0, revenue: 0 };
+        const cat = catMap[li.item?.id ?? ''] ?? 'Uncategorized';
+        const q = packQty(name);
+        const donut = isDonut(name, cat);
+        const cur = itemMap.get(name) ?? { units: 0, revenue: 0, pieces: 0, donut };
         cur.units += 1;
         cur.revenue += li.price ?? 0;
+        cur.pieces += q;
         itemMap.set(name, cur);
-        const cat = catMap[li.item?.id ?? ''] ?? 'Uncategorized';
         catRev.set(cat, (catRev.get(cat) ?? 0) + (li.price ?? 0));
+        if (donut) donutDay.set(day, (donutDay.get(day) ?? 0) + q);
       }
       for (const p of o.payments?.elements ?? []) {
         if (p.result !== 'SUCCESS') continue;
@@ -423,6 +452,14 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
     });
   }
 
+  // Donut pieces sold per day (pack-size aware), aligned to the revenueByDay days.
+  const donutsByDay = revenueByDay.map((d) => ({ day: d.day, label: d.label, pieces: donutDay.get(d.day) ?? 0 }));
+  const donutsTotal = donutsByDay.reduce((s, d) => s + d.pieces, 0);
+  const donutBreakdown = Array.from(itemMap.entries())
+    .filter(([, v]) => v.donut)
+    .map(([name, v]) => ({ name, units: v.units, pieces: v.pieces }))
+    .sort((a, b) => b.pieces - a.pieces);
+
   // Hourly revenue (6am–10pm) for the current window — used for the "Today" view.
   const hLabel = (h: number) => `${((h + 11) % 12) + 1}${h < 12 ? 'a' : 'p'}`;
   const revenueByHour = Array.from({ length: 17 }, (_, i) => i + 6).map((h) => ({ hour: h, label: hLabel(h), revenue: cents(curHour[h]) }));
@@ -431,7 +468,7 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
   const heatmapMax = Math.max(0, ...heat.flat().map((v) => cents(v)));
 
   const topItems = Array.from(itemMap.entries())
-    .map(([name, v]) => ({ name, units: v.units, revenue: cents(v.revenue) }))
+    .map(([name, v]) => ({ name, units: v.units, pieces: v.pieces, revenue: cents(v.revenue) }))
     .sort((a, b) => b.revenue - a.revenue)
     .slice(0, 10);
 
@@ -485,6 +522,9 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
     heatmap,
     heatmapMax,
     topItems,
+    donutsByDay,
+    donutsTotal,
+    donutBreakdown,
     categoryMix,
     tenderMix,
   };

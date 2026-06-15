@@ -36,6 +36,7 @@ export default function SalesView({ data, compare = false }: { data: SalesData; 
   const revenueByHour = data.revenueByHour ?? [];
   const revSpark = data.revenueByDay.map((d) => d.revenue);
   const ordSpark = data.revenueByDay.map((d) => d.orders ?? 0);
+  const donutMax = Math.max(1, ...data.donutsByDay.map((d) => d.pieces));
   const zeroToday = isToday && k.orders === 0;
 
   const toneClass = (t: string) =>
@@ -114,6 +115,61 @@ export default function SalesView({ data, compare = false }: { data: SalesData; 
       <Card title="When you're busiest — revenue by weekday × hour (HST)">
         {data.heatmapMax > 0 ? <Heatmap data={data.heatmap} max={data.heatmapMax} /> : <p className="text-sm text-[var(--ad-fg-muted)]">No data in this range.</p>}
       </Card>
+
+      {/* Donuts sold (pack-size aware: e.g. "Donut 3pc" × 25 = 75 pcs) */}
+      <section className="grid lg:grid-cols-2 gap-4">
+        <Card title={`🍩 Donuts sold — ${num(data.donutsTotal)} pcs (${rangeLabel})`}>
+          {data.donutsByDay.some((d) => d.pieces > 0) ? (
+            <div className="space-y-1.5">
+              {data.donutsByDay
+                .filter((d) => d.pieces > 0)
+                .map((d) => (
+                  <div key={d.day} className="flex items-center gap-2 text-sm">
+                    <span className="w-14 shrink-0 text-[var(--ad-fg-muted)]">{d.label}</span>
+                    <span className="relative h-4 flex-1 rounded bg-[var(--ad-track)]">
+                      <span className="absolute inset-y-0 left-0 rounded bg-pink-500/70" style={{ width: `${(d.pieces / donutMax) * 100}%` }} />
+                    </span>
+                    <span className="w-16 shrink-0 text-right font-semibold tabular-nums">{num(d.pieces)} pcs</span>
+                  </div>
+                ))}
+            </div>
+          ) : (
+            <p className="text-sm text-[var(--ad-fg-muted)]">No donuts sold in this range.</p>
+          )}
+        </Card>
+        <Card title="Donut breakdown (pack × sold = pcs)">
+          {data.donutBreakdown.length ? (
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="text-left text-[var(--ad-fg-muted)]">
+                  <th className="pb-1 font-medium">Item</th>
+                  <th className="pb-1 text-right font-medium">Sold</th>
+                  <th className="pb-1 text-right font-medium">Pack</th>
+                  <th className="pb-1 text-right font-medium">Pieces</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.donutBreakdown.map((it) => (
+                  <tr key={it.name} className="border-t border-[var(--ad-border)]">
+                    <td className="py-1.5 pr-2">{it.name}</td>
+                    <td className="py-1.5 text-right tabular-nums">{num(it.units)}</td>
+                    <td className="py-1.5 text-right tabular-nums text-[var(--ad-fg-muted)]">×{it.units ? Math.round(it.pieces / it.units) : 1}</td>
+                    <td className="py-1.5 text-right font-semibold tabular-nums">{num(it.pieces)}</td>
+                  </tr>
+                ))}
+                <tr className="border-t-2 border-[var(--ad-border)] font-semibold">
+                  <td className="py-1.5 pr-2">Total</td>
+                  <td className="py-1.5 text-right tabular-nums">{num(data.donutBreakdown.reduce((s, i) => s + i.units, 0))}</td>
+                  <td></td>
+                  <td className="py-1.5 text-right tabular-nums">{num(data.donutsTotal)}</td>
+                </tr>
+              </tbody>
+            </table>
+          ) : (
+            <p className="text-sm text-[var(--ad-fg-muted)]">No donuts in this range.</p>
+          )}
+        </Card>
+      </section>
 
       <section className="grid lg:grid-cols-2 gap-4">
         <Card title="Top items (by revenue)">
