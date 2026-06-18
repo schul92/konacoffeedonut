@@ -16,6 +16,22 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'best-kona-coffee-waikiki',
+        image: '/images/blog/best-kona-coffee-waikiki.jpeg',
+        category: 'Coffee',
+        title: 'Best Kona Coffee in Waikiki (2026): Where to Drink Real 100% Kona',
+        excerpt: 'A local guide to where you can drink real, freshly brewed 100% Kona coffee near Waikiki Beach — and how to tell it from a watered-down "Kona blend."',
+        readTime: 7,
+      },
+      {
+        slug: 'buy-kona-coffee-waikiki',
+        image: '/images/blog/buy-kona-coffee-waikiki.jpeg',
+        category: 'Coffee',
+        title: 'Where to Buy Kona Coffee in Waikiki: Sip It or Take It Home (2026)',
+        excerpt: 'Two ways to buy Kona coffee in Waikiki — drink real 100% Kona by the cup or take whole beans home as a gift — plus how to dodge the "Kona Blend" trap.',
+        readTime: 7,
+      },
+      {
         slug: 'is-kona-coffee-worth-it',
         image: '/images/blog/is-kona-coffee-worth-it.jpeg',
         category: 'Coffee',
@@ -241,6 +257,22 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'best-kona-coffee-waikiki',
+        image: '/images/blog/best-kona-coffee-waikiki.jpeg',
+        category: '\u30B3\u30FC\u30D2\u30FC',
+        title: '\u30EF\u30A4\u30AD\u30AD\u3067\u4E00\u756A\u306E\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\uFF082026\uFF09\uFF5C\u672C\u7269\u306E100%\u30B3\u30CA\u304C\u98F2\u3081\u308B\u5834\u6240',
+        excerpt: '\u30EF\u30A4\u30AD\u30AD\u30D3\u30FC\u30C1\u8FD1\u304F\u3067\u672C\u7269\u306E\u6DF9\u308C\u305F\u3066100%\u30B3\u30CA\u3092\u98F2\u3081\u308B\u5834\u6240\u3068\u3001\u8584\u307E\u3063\u305F\u300C\u30B3\u30CA\u30D6\u30EC\u30F3\u30C9\u300D\u3068\u306E\u898B\u5206\u3051\u65B9\u3092\u5730\u5143\u76EE\u7DDA\u3067\u3054\u7D39\u4ECB\u3057\u307E\u3059\u3002',
+        readTime: 7,
+      },
+      {
+        slug: 'buy-kona-coffee-waikiki',
+        image: '/images/blog/buy-kona-coffee-waikiki.jpeg',
+        category: '\u30B3\u30FC\u30D2\u30FC',
+        title: '\u30EF\u30A4\u30AD\u30AD\u3067\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u3092\u8CB7\u3046\u306A\u3089\uFF1A\u30AB\u30C3\u30D7\u3067\u5473\u308F\u3046\u30FB\u8C46\u3067\u6301\u3061\u5E30\u308B\uFF082026\u5E74\u7248\uFF09',
+        excerpt: '\u30EF\u30A4\u30AD\u30AD\u3067\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u3092\u8CB7\u30462\u3064\u306E\u65B9\u6CD5\u3068\u3001\u672C\u7269\u306E100%\u30B3\u30CA\u3092\u898B\u5206\u3051\u3066\u300C\u30B3\u30CA\u30D6\u30EC\u30F3\u30C9\u300D\u306E\u843D\u3068\u3057\u7A74\u3092\u907F\u3051\u308B\u30B3\u30C4\u3092\u89E3\u8AAC\u3057\u307E\u3059\u3002',
+        readTime: 7,
+      },
+      {
         slug: 'is-kona-coffee-worth-it',
         image: '/images/blog/is-kona-coffee-worth-it.jpeg',
         category: '\u30B3\u30FC\u30D2\u30FC',
@@ -420,6 +452,22 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'best-kona-coffee-waikiki',
+        image: '/images/blog/best-kona-coffee-waikiki.jpeg',
+        category: '\uCEE4\uD53C',
+        title: '\uC640\uC774\uD0A4\uD0A4 \uCD5C\uACE0\uC758 \uCF54\uB098 \uCEE4\uD53C (2026)\uFF5C\uC9C4\uC9DC 100% \uCF54\uB098 \uB9C8\uC2DC\uB294 \uACF3',
+        excerpt: '\uC640\uC774\uD0A4\uD0A4 \uD574\uBCC0 \uADFC\uCC98\uC5D0\uC11C \uAC13 \uB0B4\uB9B0 \uC9C4\uC9DC 100% \uCF54\uB098\uB97C \uB9C8\uC2E4 \uC218 \uC788\uB294 \uACF3\uACFC, \uBB3D\uC5B4\uC9C4 "\uCF54\uB098 \uBE14\uB80C\uB4DC"\uB97C \uAD6C\uBCC4\uD558\uB294 \uBC95\uC744 \uD604\uC9C0 \uC2DC\uC120\uC73C\uB85C \uC54C\uB824\uB4DC\uB9BD\uB2C8\uB2E4.',
+        readTime: 7,
+      },
+      {
+        slug: 'buy-kona-coffee-waikiki',
+        image: '/images/blog/buy-kona-coffee-waikiki.jpeg',
+        category: '\uCEE4\uD53C',
+        title: '\uC640\uC774\uD0A4\uD0A4 \uCF54\uB098\uCEE4\uD53C \uAD6C\uC785 \uAC00\uC774\uB4DC: \uD55C \uC794\uC73C\uB85C \uC990\uAE30\uAC70\uB098 \uC6D0\uB450\uB85C \uAC00\uC838\uAC00\uAE30 (2026)',
+        excerpt: '\uC640\uC774\uD0A4\uD0A4\uC5D0\uC11C \uCF54\uB098\uCEE4\uD53C\uB97C \uC0AC\uB294 \uB450 \uAC00\uC9C0 \uBC29\uBC95\uACFC, \uC9C4\uC9DC 100% \uCF54\uB098\uB97C \uACE8\uB77C "\uCF54\uB098 \uBE14\uB80C\uB4DC" \uD568\uC815\uC744 \uD53C\uD558\uB294 \uBC95\uC744 \uC54C\uB824\uB4DC\uB9BD\uB2C8\uB2E4.',
+        readTime: 7,
+      },
       {
         slug: 'is-kona-coffee-worth-it',
         image: '/images/blog/is-kona-coffee-worth-it.jpeg',
@@ -601,6 +649,22 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'best-kona-coffee-waikiki',
+        image: '/images/blog/best-kona-coffee-waikiki.jpeg',
+        category: '\u5496\u5561',
+        title: '\u5A01\u57FA\u57FA\u6700\u597D\u7684\u79D1\u7EB3\u5496\u5561\uFF082026\uFF09\uFF1A\u54EA\u91CC\u80FD\u559D\u5230\u6B63\u5B97100%\u79D1\u7EB3',
+        excerpt: '\u4E00\u4EFD\u672C\u5730\u6307\u5357\uFF0C\u5E26\u4F60\u627E\u5230\u5A01\u57FA\u57FA\u6D77\u6EE9\u9644\u8FD1\u73B0\u51B2\u6B63\u5B97100%\u79D1\u7EB3\u7684\u5730\u65B9\uFF0C\u5E76\u6559\u4F60\u5206\u8FA8\u88AB\u7A00\u91CA\u7684"\u79D1\u7EB3\u6DF7\u5408"\u3002',
+        readTime: 7,
+      },
+      {
+        slug: 'buy-kona-coffee-waikiki',
+        image: '/images/blog/buy-kona-coffee-waikiki.jpeg',
+        category: '\u5496\u5561',
+        title: '\u5728\u5A01\u57FA\u57FA\u54EA\u91CC\u4E70\u79D1\u7EB3\u5496\u5561\uFF1A\u73B0\u559D\u4E00\u676F\u6216\u5E26\u8C46\u56DE\u5BB6\uFF082026\u6307\u5357\uFF09',
+        excerpt: '\u5728\u5A01\u57FA\u57FA\u8D2D\u4E70\u79D1\u7EB3\u5496\u5561\u7684\u4E24\u79CD\u65B9\u5F0F\uFF0C\u4EE5\u53CA\u5982\u4F55\u8BA4\u51C6\u771F\u6B63\u7684100%\u79D1\u7EB3\u3001\u907F\u5F00"\u79D1\u7EB3\u6DF7\u5408"\u9677\u9631\u3002',
+        readTime: 7,
+      },
+      {
         slug: 'is-kona-coffee-worth-it',
         image: '/images/blog/is-kona-coffee-worth-it.jpeg',
         category: '\u5496\u5561',
@@ -780,6 +844,22 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'best-kona-coffee-waikiki',
+        image: '/images/blog/best-kona-coffee-waikiki.jpeg',
+        category: 'Café',
+        title: 'El Mejor Café Kona en Waikiki (2026): Dónde Beber 100% Kona Auténtico',
+        excerpt: 'Una guía local de dónde beber café 100% Kona auténtico y recién hecho cerca de la playa de Waikiki, y cómo distinguirlo de una "mezcla Kona" diluida.',
+        readTime: 7,
+      },
+      {
+        slug: 'buy-kona-coffee-waikiki',
+        image: '/images/blog/buy-kona-coffee-waikiki.jpeg',
+        category: 'Café',
+        title: 'Dónde Comprar Café Kona en Waikiki: Tómalo Recién Hecho o Llévatelo a Casa (2026)',
+        excerpt: 'Dos formas de comprar café Kona en Waikiki — tómate un 100% Kona auténtico por taza o llévate los granos a casa de regalo — y cómo evitar la trampa del "Kona Blend".',
+        readTime: 7,
+      },
       {
         slug: 'is-kona-coffee-worth-it',
         image: '/images/blog/is-kona-coffee-worth-it.jpeg',
