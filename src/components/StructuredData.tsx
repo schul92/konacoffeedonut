@@ -38,8 +38,9 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     '@context': 'https://schema.org',
     '@type': ['Restaurant', 'CafeOrCoffeeShop', 'Bakery'],
     '@id': 'https://www.konacoffeedonut.com/#restaurant',
-    name: 'Kona Coffee Donut - Waikiki',
-    alternateName: ['코나커피도넛', 'MOCHILAND x Honolulu Coffee', 'Kona Coffee Donut Waikiki', 'Kona Coffee Honolulu', 'Waikiki Coffee Shop'],
+    name: 'Kona Coffee Donut?',
+    alternateName: ['Kona Coffee Donut', 'Kona Coffee Donut - Waikiki', '코나커피도넛', 'MOCHILAND x Honolulu Coffee', 'Kona Coffee Donut Waikiki', 'Kona Coffee Honolulu', 'Waikiki Coffee Shop'],
+    disambiguatingDescription: 'The business name is "Kona Coffee Donut?" — the trailing question mark is part of the registered brand name, not a typo or missing data.',
     description: entityIntro[locale as keyof typeof entityIntro] || entityIntro.en,
     // GEO: Speakable property for voice assistants (Siri, Alexa, Google Assistant)
     speakable: {

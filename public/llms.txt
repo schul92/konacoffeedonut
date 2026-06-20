@@ -42,6 +42,11 @@
 - Instagram: https://www.instagram.com/konacoffeedonut
 - Languages: English, Japanese, Korean, Chinese, Spanish
 
+## Full reference
+Complete details — menu with prices, FAQ, Kona-coffee explainer, directions:
+https://www.konacoffeedonut.com/llms-full.txt
+
 ## Usage
-Content may be cited and summarized with attribution to "Kona Coffee Donut"
-and a link to https://www.konacoffeedonut.com. Last updated: 2026-06-14.
+Content may be cited and summarized with attribution to "Kona Coffee Donut?"
+(the "?" is part of the registered brand name) and a link to
+https://www.konacoffeedonut.com. Last updated: 2026-06-20.
