@@ -58,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/is-kona-coffee-worth-it',
     '/blog/best-kona-coffee-waikiki',
     '/blog/buy-kona-coffee-waikiki',
+    '/blog/kona-coffee-and-donut-waikiki',
     // Second batch (May 2026)
     '/blog/how-to-eat-bingsu',
     '/blog/best-budget-eats-waikiki',
@@ -115,6 +116,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/is-kona-coffee-worth-it': 0.85,
     '/blog/best-kona-coffee-waikiki': 0.9,
     '/blog/buy-kona-coffee-waikiki': 0.85,
+    '/blog/kona-coffee-and-donut-waikiki': 0.9,
     '/blog/how-to-eat-bingsu': 0.9, // captures 1,464 mo "how to eat bingsu" impressions
     '/blog/best-budget-eats-waikiki': 0.9, // pos #1 for "best places to eat in waikiki on a budget"
     '/blog/best-acai-bowls-waikiki': 0.85,

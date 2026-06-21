@@ -16,6 +16,14 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'kona-coffee-and-donut-waikiki',
+        image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
+        category: 'Coffee',
+        title: 'Kona Coffee & Mochi Donut: Waikiki\'s Perfect Pairing (2026)',
+        excerpt: 'Real 100% Kona coffee and fresh rice-flour mochi donuts under one roof in Waikiki — how to build the perfect coffee-and-donut combo at Kona Coffee Donut?, ~5 min from the beach.',
+        readTime: 8,
+      },
+      {
         slug: 'best-kona-coffee-waikiki',
         image: '/images/blog/best-kona-coffee-waikiki.jpeg',
         category: 'Coffee',
@@ -257,6 +265,14 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'kona-coffee-and-donut-waikiki',
+        image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
+        category: '\u30B3\u30FC\u30D2\u30FC',
+        title: '\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u00D7\u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\uFF1A\u30EF\u30A4\u30AD\u30AD\u6700\u9AD8\u306E\u30DA\u30A2\u30EA\u30F3\u30B0\uFF082026\uFF09',
+        excerpt: '\u672C\u7269\u306E100%\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u3068\u4F5C\u308A\u305F\u3066\u306E\u7C73\u7C89\u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\u304C\u4E00\u3064\u306E\u5E97\u3067\u3002\u30EF\u30A4\u30AD\u30AD\u30D3\u30FC\u30C1\u304B\u3089\u5F92\u6B69\u7D045\u5206\u3001\u6700\u9AD8\u306E\u30B3\u30FC\u30D2\u30FC\uFF06\u30C9\u30FC\u30CA\u30C4\u306E\u7D44\u307F\u5408\u308F\u305B\u3092\u697D\u3057\u3082\u3046\u3002',
+        readTime: 8,
+      },
+      {
         slug: 'best-kona-coffee-waikiki',
         image: '/images/blog/best-kona-coffee-waikiki.jpeg',
         category: '\u30B3\u30FC\u30D2\u30FC',
@@ -452,6 +468,14 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'kona-coffee-and-donut-waikiki',
+        image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
+        category: '\uCEE4\uD53C',
+        title: '\uCF54\uB098 \uCEE4\uD53C & \uBAA8\uCC0C \uB3C4\uB11B: \uC640\uC774\uD0A4\uD0A4 \uCD5C\uACE0\uC758 \uD398\uC5B4\uB9C1 (2026)',
+        excerpt: '\uC9C4\uC9DC 100% \uCF54\uB098 \uCEE4\uD53C\uC640 \uAC13 \uAD6C\uC6B4 \uC300\uAC00\uB8E8 \uBAA8\uCC0C \uB3C4\uB11B\uC744 \uD55C\uACF3\uC5D0\uC11C \u2014 \uC640\uC774\uD0A4\uD0A4 \uBE44\uCE58\uC5D0\uC11C \uB3C4\uBCF4 \uC57D 5\uBD84, \uC644\uBCBD\uD55C \uCEE4\uD53C \uC564 \uB3C4\uB11B \uC870\uD569\uC744 \uC990\uACA8\uBCF4\uC138\uC694.',
+        readTime: 8,
+      },
       {
         slug: 'best-kona-coffee-waikiki',
         image: '/images/blog/best-kona-coffee-waikiki.jpeg',
@@ -649,6 +673,14 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'kona-coffee-and-donut-waikiki',
+        image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
+        category: '\u5496\u5561',
+        title: '\u79D1\u7EB3\u5496\u5561 & \u9EBB\u7CEC\u751C\u751C\u5708\uFF1A\u5A01\u57FA\u57FA\u7684\u5B8C\u7F8E\u642D\u914D\uFF082026\uFF09',
+        excerpt: '\u6B63\u5B97100%\u79D1\u7EB3\u5496\u5561\u4E0E\u73B0\u505A\u7C73\u7C89\u9EBB\u7CEC\u751C\u751C\u5708\u540C\u5728\u4E00\u5904\u2014\u2014\u8DDD\u5A01\u57FA\u57FA\u6D77\u6EE9\u7EA65\u5206\u949F\uFF0C\u6253\u9020\u5B8C\u7F8E\u7684\u5496\u5561\u914D\u751C\u751C\u5708\u7EC4\u5408\u3002',
+        readTime: 8,
+      },
+      {
         slug: 'best-kona-coffee-waikiki',
         image: '/images/blog/best-kona-coffee-waikiki.jpeg',
         category: '\u5496\u5561',
@@ -844,6 +876,14 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'kona-coffee-and-donut-waikiki',
+        image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
+        category: 'Café',
+        title: 'Café Kona y Mochi Donut: la combinación perfecta de Waikiki (2026)',
+        excerpt: 'Auténtico café 100% Kona y mochi donuts de harina de arroz recién hechos en un mismo lugar de Waikiki, a unos 5 minutos de la playa.',
+        readTime: 8,
+      },
       {
         slug: 'best-kona-coffee-waikiki',
         image: '/images/blog/best-kona-coffee-waikiki.jpeg',
