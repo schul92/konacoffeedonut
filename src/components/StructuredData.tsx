@@ -53,7 +53,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       'https://www.konacoffeedonut.com/images/menu/coffee.webp',
     ],
     url: `https://www.konacoffeedonut.com/${locale}`,
-    // telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
+    telephone: '+1-808-260-1835',
     email: 'info@konacoffeedonut.com',
     priceRange: '$$',
     // GEO: Add founding date for entity credibility
@@ -191,7 +191,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      // telephone: '+1-808-XXX-XXXX', // TODO: Add real phone number when available
+      telephone: '+1-808-260-1835',
       contactType: 'customer service',
       areaServed: 'US',
       availableLanguage: ['English', 'Japanese', 'Korean', 'Chinese', 'Spanish'],

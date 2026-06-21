@@ -1522,6 +1522,9 @@ export default function Home() {
                   </a>
                 ))}
               </div>
+              <a href="tel:+18082601835" className="mt-1 inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors w-fit">
+                <span aria-hidden="true">📞</span> (808) 260-1835
+              </a>
             </div>
 
             {/* Right: Navigation */}
