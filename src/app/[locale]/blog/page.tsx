@@ -16,6 +16,22 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'best-malasadas-waikiki',
+        image: '/images/blog/best-malasadas-waikiki.jpeg',
+        category: 'Food Guide',
+        title: 'Best Malasadas in Waikiki (2026): Fresh Portuguese-Hawaiian Donuts',
+        excerpt: 'Where to find the best malasadas in Waikiki — what makes a great one, flavors to try, and fresh malasadas paired with 100% Kona coffee about 5 minutes from Waikiki Beach.',
+        readTime: 7,
+      },
+      {
+        slug: 'matcha-mochi-donut-waikiki',
+        image: '/images/blog/matcha-mochi-donut-waikiki.jpeg',
+        category: 'Food Guide',
+        title: 'Matcha Mochi Donut in Waikiki (2026): Where to Get the Green One',
+        excerpt: 'Where to get a matcha mochi donut in Waikiki — a chewy rice-flour pon-de-ring with real green-tea glaze, paired with 100% Kona coffee about 5 minutes from the beach.',
+        readTime: 7,
+      },
+      {
         slug: 'kona-coffee-and-donut-waikiki',
         image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
         category: 'Coffee',
@@ -265,6 +281,22 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'best-malasadas-waikiki',
+        image: '/images/blog/best-malasadas-waikiki.jpeg',
+        category: '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9',
+        title: '\u30EF\u30A4\u30AD\u30AD\u3067\u7F8E\u5473\u3057\u3044\u30DE\u30E9\u30B5\u30C02026\uFF5C\u63DA\u3052\u305F\u3066\u30DD\u30EB\u30C8\u30AC\u30EB\u7CFB\u30CF\u30EF\u30A4\u30C9\u30FC\u30CA\u30C4',
+        excerpt: '\u30EF\u30A4\u30AD\u30AD\u3067\u7F8E\u5473\u3057\u3044\u30DE\u30E9\u30B5\u30C0\u304C\u98DF\u3079\u3089\u308C\u308B\u5834\u6240\u3068\u3001\u6700\u9AD8\u306E\u30DE\u30E9\u30B5\u30C0\u306E\u6761\u4EF6\u30FB\u4EBA\u6C17\u30D5\u30EC\u30FC\u30D0\u30FC\u3001\u30D3\u30FC\u30C1\u304B\u3089\u7D045\u5206\u306E\u63DA\u3052\u305F\u3066\u30DE\u30E9\u30B5\u30C0\uFF0B100%\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u3092\u7D39\u4ECB\u3057\u307E\u3059\u3002',
+        readTime: 7,
+      },
+      {
+        slug: 'matcha-mochi-donut-waikiki',
+        image: '/images/blog/matcha-mochi-donut-waikiki.jpeg',
+        category: '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9',
+        title: '\u30EF\u30A4\u30AD\u30AD\u306E\u62B9\u8336\u30E2\u30C1\u30C9\u30FC\u30CA\u30C4\uFF082026\uFF09\uFF1A\u3042\u306E\u7DD1\u306E\u30C9\u30FC\u30CA\u30C4\u306F\u3069\u3053\u3067\u8CB7\u3048\u308B\uFF1F',
+        excerpt: '\u672C\u683C\u62B9\u8336\u30B0\u30EC\u30FC\u30BA\u306E\u3082\u3061\u3082\u3061\u7C73\u7C89\u30DD\u30F3\u30C7\u30EA\u30F3\u30B0\u3068100%\u30B3\u30CA\u30B3\u30FC\u30D2\u30FC\u3092\u30EF\u30A4\u30AD\u30AD\u3067\u3002\u30D3\u30FC\u30C1\u304B\u3089\u5F92\u6B69\u7D045\u5206\u306EKona Coffee Donut?\u3067\u5473\u308F\u3048\u307E\u3059\u3002',
+        readTime: 7,
+      },
+      {
         slug: 'kona-coffee-and-donut-waikiki',
         image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
         category: '\u30B3\u30FC\u30D2\u30FC',
@@ -468,6 +500,22 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'best-malasadas-waikiki',
+        image: '/images/blog/best-malasadas-waikiki.jpeg',
+        category: '\uD478\uB4DC \uAC00\uC774\uB4DC',
+        title: '\uC640\uC774\uD0A4\uD0A4 \uB9D0\uB77C\uC0AC\uB2E4 \uB9DB\uC9D1 2026\uFF5C\uAC13 \uD280\uAE34 \uD3EC\uB974\uD22C\uAC08\uC2DD \uD558\uC640\uC774 \uB3C4\uB11B',
+        excerpt: '\uC640\uC774\uD0A4\uD0A4 \uB9D0\uB77C\uC0AC\uB2E4 \uB9DB\uC9D1\uACFC \uCD5C\uACE0\uC758 \uB9D0\uB77C\uC0AC\uB2E4 \uC870\uAC74\u00B7\uC778\uAE30 \uC885\uB958, \uADF8\uB9AC\uACE0 \uBE44\uCE58\uC5D0\uC11C \uC57D 5\uBD84 \uAC70\uB9AC\uC758 \uAC13 \uD280\uAE34 \uB9D0\uB77C\uC0AC\uB2E4\uC640 100% \uCF54\uB098 \uCEE4\uD53C\uB97C \uC18C\uAC1C\uD569\uB2C8\uB2E4.',
+        readTime: 7,
+      },
+      {
+        slug: 'matcha-mochi-donut-waikiki',
+        image: '/images/blog/matcha-mochi-donut-waikiki.jpeg',
+        category: '\uD478\uB4DC \uAC00\uC774\uB4DC',
+        title: '\uC640\uC774\uD0A4\uD0A4 \uB9D0\uCC28 \uBAA8\uCC0C \uB3C4\uB11B (2026): \uADF8 \uCD08\uB85D \uB3C4\uB11B, \uC5B4\uB514\uC11C \uBA39\uC9C0?',
+        excerpt: '\uC9C4\uC9DC \uB9D0\uCC28 \uAE00\uB808\uC774\uC988\uB97C \uC785\uD78C \uCAC0\uB4DD\uD55C \uC300\uAC00\uB8E8 \uD3F0\uB370\uB9C1\uACFC 100% \uCF54\uB098 \uCEE4\uD53C\uB97C \uC640\uC774\uD0A4\uD0A4\uC5D0\uC11C. \uD574\uBCC0\uC5D0\uC11C \uB3C4\uBCF4 \uC57D 5\uBD84 \uAC70\uB9AC\uC758 Kona Coffee Donut?\uC5D0\uC11C \uC990\uAE30\uC138\uC694.',
+        readTime: 7,
+      },
       {
         slug: 'kona-coffee-and-donut-waikiki',
         image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
@@ -673,6 +721,22 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'best-malasadas-waikiki',
+        image: '/images/blog/best-malasadas-waikiki.jpeg',
+        category: '\u7F8E\u98DF\u6307\u5357',
+        title: '\u5A01\u57FA\u57FA\u6700\u597D\u5403\u7684\u9A6C\u62C9\u8428\u8FBE2026\uFF5C\u73B0\u70B8\u8461\u8404\u7259\u590F\u5A01\u5937\u751C\u751C\u5708',
+        excerpt: '\u5728\u5A01\u57FA\u57FA\u54EA\u91CC\u80FD\u5403\u5230\u6700\u597D\u5403\u7684\u9A6C\u62C9\u8428\u8FBE\uFF0C\u600E\u6837\u624D\u7B97\u597D\uFF0C\u503C\u5F97\u4E00\u8BD5\u7684\u53E3\u5473\uFF0C\u4EE5\u53CA\u8DDD\u6D77\u6EE9\u7EA65\u5206\u949F\u7684\u73B0\u70B8\u9A6C\u62C9\u8428\u8FBE\u642D\u914D100%\u79D1\u7EB3\u5496\u5561\u3002',
+        readTime: 7,
+      },
+      {
+        slug: 'matcha-mochi-donut-waikiki',
+        image: '/images/blog/matcha-mochi-donut-waikiki.jpeg',
+        category: '\u7F8E\u98DF\u6307\u5357',
+        title: '\u5A01\u57FA\u57FA\u62B9\u8336\u9EBB\u7CEC\u751C\u751C\u5708\uFF082026\uFF09\uFF1A\u90A3\u9897\u7EFF\u8272\u7684\u53BB\u54EA\u4E70\uFF1F',
+        excerpt: '\u5728\u5A01\u57FA\u57FA\u54C1\u5C1D\u88F9\u6709\u6B63\u5B97\u62B9\u8336\u7CD6\u971C\u7684Q\u5F39\u7C73\u7C89Pon-de-ring\uFF0C\u642D\u914D100%\u79D1\u7EB3\u5496\u5561\uFF0C\u8DDD\u6D77\u6EE9\u7EA65\u5206\u949F\u3002',
+        readTime: 7,
+      },
+      {
         slug: 'kona-coffee-and-donut-waikiki',
         image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
         category: '\u5496\u5561',
@@ -876,6 +940,22 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'best-malasadas-waikiki',
+        image: '/images/blog/best-malasadas-waikiki.jpeg',
+        category: 'Guía Gastronómica',
+        title: 'Las Mejores Malasadas en Waikiki (2026): Donuts Portugueses-Hawaianos Recién Hechos',
+        excerpt: 'Dónde encontrar las mejores malasadas en Waikiki: qué hace buena a una, sabores para probar y malasadas recién fritas con café 100% Kona a unos 5 minutos de la playa.',
+        readTime: 7,
+      },
+      {
+        slug: 'matcha-mochi-donut-waikiki',
+        image: '/images/blog/matcha-mochi-donut-waikiki.jpeg',
+        category: 'Guía Gastronómica',
+        title: 'Dónut Mochi de Matcha en Waikiki (2026): Dónde Conseguir el Verde',
+        excerpt: 'Dónde encontrar un dónut mochi de matcha en Waikiki: un pon-de-ring de harina de arroz con glaseado de té verde real y café 100% Kona, a unos 5 minutos de la playa.',
+        readTime: 7,
+      },
       {
         slug: 'kona-coffee-and-donut-waikiki',
         image: '/images/blog/kona-coffee-and-donut-waikiki.jpeg',
