@@ -26,7 +26,7 @@ const content: Record<Locale, BlogContent> = {
     visitCTA: {
       headline: 'Mochi Donuts, Made Fresh Daily on Kalākaua',
       body:
-        "Hand-made every morning. Chewy pon-de-ring style with rotating flavors. Try a mixed half-dozen to taste the lineup, or grab a single donut to pair with our Kona coffee. Open 7 AM to 9 PM daily.",
+        "Hand-made every morning. Chewy pon-de-ring style with rotating flavors. Sold by the box — try a mixed half-dozen to taste the lineup, or a box of 3 (from $11.25, about $3.75 each) to pair with our Kona coffee. Open 7 AM to 9 PM daily.",
       menuLabel: 'See Full Menu',
       directionsLabel: 'Get Directions',
     },
@@ -85,7 +85,7 @@ const content: Record<Locale, BlogContent> = {
       {
         h2: 'How Many Should You Order?',
         body:
-          "A single mochi donut is a satisfying snack on its own. A box of 6 (half-dozen) is the most popular order — perfect for sharing with one or two friends, or for trying multiple flavors yourself. A full dozen is the right call for a group, an office treat, or to take back to your hotel for the next day. Mochi donuts are best eaten fresh, but they hold up well overnight in a sealed container.",
+          "Our mochi donuts are sold by the box. A box of 3 ($11.25, about $3.75 each) is a satisfying snack to share. A box of 6 (half-dozen, $22.50) is the most popular order — perfect for sharing with one or two friends, or for trying multiple flavors yourself. A full dozen ($45.00) is the right call for a group, an office treat, or to take back to your hotel for the next day. Mochi donuts are best eaten fresh, but they hold up well overnight in a sealed container.",
       },
     ],
     faq: [
@@ -103,7 +103,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         q: 'How much do mochi donuts cost in Waikiki?',
-        a: 'Single mochi donuts at Kona Coffee Donut start at $3.50. A half-dozen is the most popular size and offers the best value for trying multiple flavors. Full menu and current pricing available in-store at 2142 Kalākaua Ave.',
+        a: 'Mochi donuts at Kona Coffee Donut are sold by the box: 3 for $11.25 (about $3.75 each), 6 for $22.50, or 12 for $45.00. A half-dozen is the most popular size and offers the best value for trying multiple flavors. Full menu and current pricing available in-store at 2142 Kalākaua Ave.',
       },
       {
         q: 'Where is the best place to get mochi donuts in Waikiki?',
@@ -179,14 +179,14 @@ const content: Record<Locale, BlogContent> = {
       {
         h2: 'いくつ買うべき？',
         body:
-          '1個でも十分満足感あり。一番人気はハーフダース（6個）で複数のフレーバーを楽しめます。グループならフルダース（12個）。新鮮さが命なので、当日中に食べるのがベスト。',
+          'モチドーナツはボックス販売。3個ボックス（$11.25、約$3.75/個）でも十分満足感あり。一番人気はハーフダース（6個・$22.50）で複数のフレーバーを楽しめます。グループならフルダース（12個・$45.00）。新鮮さが命なので、当日中に食べるのがベスト。',
       },
     ],
     faq: [
       { q: 'モチドーナツとは？', a: '小麦粉ではなくもち米粉で作る日本×ハワイのドーナツ。もちもち食感と8つ玉のポンデリング型が特徴です。' },
       { q: 'いくつフレーバーがありますか？', a: '定番10種類以上＋季節限定。いつ来てもバリエーションが楽しめます。' },
       { q: 'グルテンフリー？', a: 'もち米粉ベースですが、レシピによって少量の小麦を含む場合があります。スタッフにご確認ください。' },
-      { q: '価格は？', a: '1個$3.50〜。ハーフダースが一番お得で人気です。' },
+      { q: '価格は？', a: 'モチドーナツはボックス販売：3個$11.25（約$3.75/個）、6個$22.50、12個$45.00。ハーフダースが一番お得で人気です。' },
       { q: 'どこで買えますか？', a: '2142 カラカウア通り、ワイキキ中心部。毎日朝7時〜夜9時。' },
       { q: '人気フレーバーは？', a: 'チョコレートとオリジナルが定番人気。観光客にはウベと抹茶が好評です。' },
     ],
@@ -240,13 +240,13 @@ const content: Record<Locale, BlogContent> = {
         body: '함께 마시는 음료로 경험이 달라집니다.',
         bullets: ['오리지널 + 코나 푸어오버', '우베 + 말차 라테', '초콜릿 + 아포가토', '딸기 + 딸기 스무디', '검은깨 + 아이스 아메리카노'],
       },
-      { h2: '몇 개를 주문할까?', body: '1개로도 충분하지만, 여러 맛을 즐기려면 6개 박스가 가장 인기. 단체는 12개. 신선도가 핵심이니 당일 소비를 추천합니다.' },
+      { h2: '몇 개를 주문할까?', body: '모치도넛은 박스 단위로 판매됩니다. 3개 박스($11.25, 개당 약 $3.75)로도 충분하고, 여러 맛을 즐기려면 6개 박스($22.50)가 가장 인기. 단체는 12개($45.00). 신선도가 핵심이니 당일 소비를 추천합니다.' },
     ],
     faq: [
       { q: '모치도넛이란?', a: '찹쌀가루로 만든 일본·하와이 퓨전 도넛. 쫀득한 식감과 폰데링 형태가 특징.' },
       { q: '메뉴는 몇 가지?', a: '정규 10종 이상 + 시즌 한정 메뉴.' },
       { q: '글루텐 프리?', a: '찹쌀 기반이지만 일부 레시피는 소량의 밀가루 사용. 스태프에게 문의.' },
-      { q: '가격은?', a: '낱개 $3.50부터. 6개 박스가 가장 인기.' },
+      { q: '가격은?', a: '박스 단위 판매: 3개 $11.25(개당 약 $3.75), 6개 $22.50, 12개 $45.00. 6개 박스가 가장 인기.' },
       { q: '어디에서 구입?', a: '2142 칼라카우아 거리, 와이키키 중심부. 매일 오전 7시 – 오후 9시.' },
       { q: '베스트셀러는?', a: '초콜릿과 오리지널이 가장 인기. 관광객은 우베·말차 선호.' },
     ],
@@ -300,13 +300,13 @@ const content: Record<Locale, BlogContent> = {
         body: '搭配不同饮料体验更佳。',
         bullets: ['原味 + 科纳手冲', '紫薯 + 抹茶拿铁', '巧克力 + 阿芙佳朵', '草莓 + 草莓奶昔', '黑芝麻 + 冰美式'],
       },
-      { h2: '应该买几个？', body: '一颗即可满足，半打（6个）最受欢迎，团体可点一打。新鲜最重要，当日享用最佳。' },
+      { h2: '应该买几个？', body: '麻糬甜甜圈盒装销售。3个一盒（$11.25，约$3.75/个）即可满足，半打（6个，$22.50）最受欢迎，团体可点一打（$45.00）。新鲜最重要，当日享用最佳。' },
     ],
     faq: [
       { q: '什么是麻糬甜甜圈？', a: '糯米粉制作的日式·夏威夷融合甜甜圈，独特Q弹口感，波堤形外观。' },
       { q: '有几种口味？', a: '招牌10种+季节限定。' },
       { q: '是无麸质吗？', a: '糯米基底，但部分配方含少量小麦。请询问店员。' },
-      { q: '价格？', a: '单颗$3.50起。半打最受欢迎。' },
+      { q: '价格？', a: '盒装销售：3个$11.25（约$3.75/个）、6个$22.50、12个$45.00。半打最受欢迎。' },
       { q: '在哪里购买？', a: '威基基中心 2142 卡拉考阿大道。每天早7点至晚9点。' },
       { q: '最受欢迎的口味？', a: '巧克力和原味釉，游客喜欢紫薯和抹茶。' },
     ],
@@ -334,7 +334,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       { q: '¿Qué es un mochi donut?', a: 'Donut japonés-hawaiano hecho con harina de arroz glutinoso. Textura masticable y forma de anillo de 8 bolas.' },
       { q: '¿Cuántos sabores hay?', a: '10+ sabores rotativos.' },
-      { q: '¿Precio?', a: 'Desde $3.50 por unidad. Media docena es la opción más popular.' },
+      { q: '¿Precio?', a: 'Se venden por caja: 3 por $11.25 (~$3.75 c/u), 6 por $22.50, 12 por $45.00. La media docena es la opción más popular.' },
     ],
     finalCTA: { headline: 'Frescos Cada Día', body: '2142 Kalākaua Ave, Waikiki.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
   },

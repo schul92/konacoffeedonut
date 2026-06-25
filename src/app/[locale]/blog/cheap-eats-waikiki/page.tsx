@@ -29,10 +29,10 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut',
           type: 'Coffee & Donuts',
-          price: '$3.50 - $10',
+          price: '$3.95 - $11.25',
           location: '2142 Kalakaua Ave',
-          description: "The newest addition to Waikiki's food scene, Kona Coffee Donut combines premium Honolulu Coffee with artisan mochi donuts from MOCHILAND — and the prices are surprisingly wallet-friendly. Mochi donuts start at just $3.50, fresh malasadas from $4, and a cup of Honolulu Coffee from $5. You would pay $8-12 for specialty coffee alone at most Waikiki cafes. For under $10, you can get a donut-and-coffee combo that rivals any $20 cafe breakfast. The quality-to-price ratio here is unbeatable — premium ingredients at donut-shop prices.",
-          mustTry: 'Mochi donut + Kona coffee combo ($8.50)',
+          description: "The newest addition to Waikiki's food scene, Kona Coffee Donut combines premium Honolulu Coffee with artisan mochi donuts from MOCHILAND — and the prices are surprisingly wallet-friendly. Mochi donuts come in boxes from $11.25 for 3 (about $3.75 each), fresh malasadas from $3.95, and a cup of Honolulu Coffee from $7. You would pay $8-12 for specialty coffee alone at most Waikiki cafes. For about $11, you can get a malasada-and-coffee combo that rivals any $20 cafe breakfast. The quality-to-price ratio here is unbeatable — premium ingredients at donut-shop prices.",
+          mustTry: 'Malasada + Kona coffee combo (about $11)',
           tag: 'Best Value',
         },
         {
@@ -160,8 +160,8 @@ const content = {
       title: 'Waikiki Price Comparison: Common Items',
       headers: ['Item', 'Tourist Restaurant', 'Budget Spot', 'You Save'],
       rows: [
-        ['Coffee (Kona)', '$8 - $12', '$5 (Kona Coffee Donut)', 'Up to $7'],
-        ['Breakfast combo', '$18 - $25', '$8 - $10 (donut + coffee)', 'Up to $17'],
+        ['Coffee (Kona)', '$8 - $12', '$7 (Kona Coffee Donut)', 'Up to $5'],
+        ['Breakfast combo', '$18 - $25', '~$11 (donut + coffee)', 'Up to $14'],
         ['Poke bowl', '$18 - $22', '$5 - $7 (7-Eleven / food truck)', 'Up to $17'],
         ['Plate lunch', '$18 - $24', '$8 - $12 (Rainbow / food truck)', 'Up to $16'],
         ['Udon noodles', '$14 - $18', '$5 - $8 (Marukame Udon)', 'Up to $13'],
@@ -175,11 +175,11 @@ const content = {
       items: [
         {
           q: 'What is the cheapest meal you can get in Waikiki?',
-          a: "Spam musubi from 7-Eleven or Musubi Cafe Iyasume starts at $2-3, making it the cheapest filling meal in Waikiki. For a more substantial meal, Marukame Udon's basic udon bowl at $5 is hard to beat. A mochi donut and Kona coffee combo at Kona Coffee Donut runs about $8.50 for a premium breakfast.",
+          a: "Spam musubi from 7-Eleven or Musubi Cafe Iyasume starts at $2-3, making it the cheapest filling meal in Waikiki. For a more substantial meal, Marukame Udon's basic udon bowl at $5 is hard to beat. A malasada and Kona coffee combo at Kona Coffee Donut runs about $11 for a premium breakfast.",
         },
         {
           q: 'Is it possible to eat three meals a day in Waikiki for under $30?',
-          a: "Absolutely. A sample budget day: breakfast at Kona Coffee Donut (donut + coffee, ~$9), lunch at Marukame Udon (~$8), and dinner at a food truck or Rainbow Drive-In (~$10-12). That is three solid meals for under $30. Supplement with fruit from ABC Store or 7-Eleven snacks to stay well under budget.",
+          a: "Absolutely. A sample budget day: breakfast at Kona Coffee Donut (donut + coffee, ~$11), lunch at Marukame Udon (~$8), and dinner at a food truck or Rainbow Drive-In (~$10-12). That is three solid meals for around $30. Supplement with fruit from ABC Store or 7-Eleven snacks to stay well under budget.",
         },
         {
           q: 'Where do locals eat in Waikiki to avoid tourist prices?',
@@ -191,7 +191,7 @@ const content = {
         },
         {
           q: 'What budget-friendly food is unique to Hawaii that I should try?',
-          a: "Do not leave without trying: spam musubi (Hawaii's signature snack, $2-4), a plate lunch with two scoops of rice and mac salad ($8-12), mochi donuts (chewy-crispy texture unique to Hawaii, from $3.50 at Kona Coffee Donut), malasadas (Portuguese-Hawaiian fried dough, from $4), and poke (fresh raw fish, $5-7 at convenience stores). All are under $15 and unmissable.",
+          a: "Do not leave without trying: spam musubi (Hawaii's signature snack, $2-4), a plate lunch with two scoops of rice and mac salad ($8-12), mochi donuts (chewy-crispy texture unique to Hawaii, boxes from $11.25 for 3 at Kona Coffee Donut), malasadas (Portuguese-Hawaiian fried dough, from $3.95), and poke (fresh raw fish, $5-7 at convenience stores). All are under $15 and unmissable.",
         },
       ],
     },
@@ -227,10 +227,10 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut（コナコーヒードーナツ）',
           type: 'コーヒー＆ドーナツ',
-          price: '$3.50 - $10',
+          price: '$3.95 - $11.25',
           location: '2142 Kalakaua Ave',
-          description: 'ワイキキのグルメシーンに新登場。プレミアムホノルルコーヒーとMOCHILANDの職人モチドーナツを、驚くほどお手頃な価格で。モチドーナツは$3.50から、新鮮なマラサダは$4から、本物のコナコーヒーは$5から。ワイキキの多くのカフェではコナコーヒーだけで$8〜12しますが、ここなら$10以下でドーナツとコーヒーのコンボが楽しめます。プレミアム品質をドーナツショップ価格で — コスパ最強です。',
-          mustTry: 'モチドーナツ＋コナコーヒーコンボ（$8.50）',
+          description: 'ワイキキのグルメシーンに新登場。プレミアムホノルルコーヒーとMOCHILANDの職人モチドーナツを、驚くほどお手頃な価格で。モチドーナツは3個$11.25から（約$3.75/個）、新鮮なマラサダは$3.95から、本物のコナコーヒーは$7から。ワイキキの多くのカフェではコナコーヒーだけで$8〜12しますが、ここなら約$11でマラサダとコーヒーのコンボが楽しめます。プレミアム品質をドーナツショップ価格で — コスパ最強です。',
+          mustTry: 'マラサダ＋コナコーヒーコンボ（約$11）',
           tag: 'コスパ最高',
         },
         {
@@ -358,8 +358,8 @@ const content = {
       title: 'ワイキキ価格比較：主なメニュー',
       headers: ['メニュー', '観光客向けレストラン', '格安スポット', '節約額'],
       rows: [
-        ['コナコーヒー', '$8 - $12', '$5（コナコーヒードーナツ）', '最大$7'],
-        ['朝食コンボ', '$18 - $25', '$8 - $10（ドーナツ+コーヒー）', '最大$17'],
+        ['コナコーヒー', '$8 - $12', '$7（コナコーヒードーナツ）', '最大$5'],
+        ['朝食コンボ', '$18 - $25', '約$11（ドーナツ+コーヒー）', '最大$14'],
         ['ポケ丼', '$18 - $22', '$5 - $7（セブンイレブン等）', '最大$17'],
         ['プレートランチ', '$18 - $24', '$8 - $12（レインボー等）', '最大$16'],
         ['うどん', '$14 - $18', '$5 - $8（丸亀うどん）', '最大$13'],
@@ -373,11 +373,11 @@ const content = {
       items: [
         {
           q: 'ワイキキで一番安い食事は何ですか？',
-          a: 'セブンイレブンやいやすめのスパムむすびは$2〜3から。もう少ししっかり食べたい場合は、丸亀うどんの基本うどんが$5。コナコーヒードーナツのモチドーナツとコナコーヒーのコンボは約$8.50でプレミアムな朝食になります。',
+          a: 'セブンイレブンやいやすめのスパムむすびは$2〜3から。もう少ししっかり食べたい場合は、丸亀うどんの基本うどんが$5。コナコーヒードーナツのマラサダとコナコーヒーのコンボは約$11でプレミアムな朝食になります。',
         },
         {
           q: 'ワイキキで1日3食を$30以下で食べられますか？',
-          a: 'もちろん可能です。例：朝食にコナコーヒードーナツ（約$9）、昼食に丸亀うどん（約$8）、夕食にフードトラックかレインボードライブイン（約$10〜12）。3食で$30以下に収まります。',
+          a: 'もちろん可能です。例：朝食にコナコーヒードーナツ（約$11）、昼食に丸亀うどん（約$8）、夕食にフードトラックかレインボードライブイン（約$10〜12）。3食で$30前後に収まります。',
         },
         {
           q: '地元の人はワイキキのどこで食べますか？',
@@ -389,7 +389,7 @@ const content = {
         },
         {
           q: 'ハワイでしか食べられない格安グルメは？',
-          a: 'スパムむすび（$2〜4）、プレートランチ（$8〜12）、モチドーナツ（コナコーヒードーナツで$3.50から）、マラサダ（$4から）、ポケ（コンビニで$5〜7）。すべて$15以下で、ハワイならではの味です。',
+          a: 'スパムむすび（$2〜4）、プレートランチ（$8〜12）、モチドーナツ（コナコーヒードーナツで3個$11.25から）、マラサダ（$3.95から）、ポケ（コンビニで$5〜7）。すべて$15以下で、ハワイならではの味です。',
         },
       ],
     },
@@ -425,10 +425,10 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut (코나커피도넛)',
           type: '커피 & 도넛',
-          price: '$3.50 - $10',
+          price: '$3.95 - $11.25',
           location: '2142 Kalakaua Ave',
-          description: '와이키키 맛집 신상. 프리미엄 호놀룰루 커피와 MOCHILAND 장인 모찌 도넛을 놀라운 가격에. 모찌 도넛 $3.50부터, 말라사다 $4부터, 정품 코나 커피 $5부터. 대부분 와이키키 카페에서 코나 커피만 $8-12인데, 여기서는 $10 이하에 도넛+커피 콤보를 즐길 수 있습니다. 프리미엄 품질을 도넛샵 가격에 — 가성비 최강.',
-          mustTry: '모찌 도넛 + 코나 커피 콤보 ($8.50)',
+          description: '와이키키 맛집 신상. 프리미엄 호놀룰루 커피와 MOCHILAND 장인 모찌 도넛을 놀라운 가격에. 모찌 도넛 3개 $11.25부터(개당 약 $3.75), 말라사다 $3.95부터, 정품 코나 커피 $7부터. 대부분 와이키키 카페에서 코나 커피만 $8-12인데, 여기서는 약 $11에 말라사다+커피 콤보를 즐길 수 있습니다. 프리미엄 품질을 도넛샵 가격에 — 가성비 최강.',
+          mustTry: '말라사다 + 코나 커피 콤보 (약 $11)',
           tag: '가성비 최고',
         },
         {
@@ -538,8 +538,8 @@ const content = {
       title: '와이키키 가격 비교: 주요 메뉴',
       headers: ['메뉴', '관광객 레스토랑', '가성비 맛집', '절약 금액'],
       rows: [
-        ['코나 커피', '$8 - $12', '$5 (코나커피도넛)', '최대 $7'],
-        ['아침 콤보', '$18 - $25', '$8 - $10 (도넛+커피)', '최대 $17'],
+        ['코나 커피', '$8 - $12', '$7 (코나커피도넛)', '최대 $5'],
+        ['아침 콤보', '$18 - $25', '약 $11 (도넛+커피)', '최대 $14'],
         ['포케 볼', '$18 - $22', '$5 - $7 (세븐일레븐 등)', '최대 $17'],
         ['플레이트 런치', '$18 - $24', '$8 - $12 (레인보우 등)', '최대 $16'],
         ['우동', '$14 - $18', '$5 - $8 (마루카메)', '최대 $13'],
@@ -553,11 +553,11 @@ const content = {
       items: [
         {
           q: '와이키키에서 가장 저렴한 식사는?',
-          a: '세븐일레븐이나 이야스메의 스팸 무스비 $2-3부터. 좀 더 든든한 식사는 마루카메 우동 $5. 코나커피도넛의 모찌 도넛+코나 커피 콤보는 약 $8.50으로 프리미엄 아침식사를 즐길 수 있습니다.',
+          a: '세븐일레븐이나 이야스메의 스팸 무스비 $2-3부터. 좀 더 든든한 식사는 마루카메 우동 $5. 코나커피도넛의 말라사다+코나 커피 콤보는 약 $11으로 프리미엄 아침식사를 즐길 수 있습니다.',
         },
         {
           q: '하루 3끼를 $30 이하로 먹을 수 있나요?',
-          a: '물론입니다. 예: 아침 코나커피도넛(~$9), 점심 마루카메 우동(~$8), 저녁 푸드트럭(~$10-12). 3끼 합계 $30 이하.',
+          a: '물론입니다. 예: 아침 코나커피도넛(~$11), 점심 마루카메 우동(~$8), 저녁 푸드트럭(~$10-12). 3끼 합계 약 $30.',
         },
         {
           q: '현지인은 와이키키 어디서 먹나요?',
@@ -569,7 +569,7 @@ const content = {
         },
         {
           q: '하와이에서만 먹을 수 있는 가성비 음식은?',
-          a: '스팸 무스비($2-4), 플레이트 런치($8-12), 모찌 도넛(코나커피도넛 $3.50부터), 말라사다($4부터), 포케(편의점 $5-7). 모두 $15 이하로 하와이만의 맛입니다.',
+          a: '스팸 무스비($2-4), 플레이트 런치($8-12), 모찌 도넛(코나커피도넛 3개 $11.25부터), 말라사다($3.95부터), 포케(편의점 $5-7). 모두 $15 이하로 하와이만의 맛입니다.',
         },
       ],
     },
@@ -605,10 +605,10 @@ const content = {
           rank: 1,
           name: 'Kona Coffee Donut（科纳咖啡甜甜圈）',
           type: '咖啡 & 甜甜圈',
-          price: '$3.50 - $10',
+          price: '$3.95 - $11.25',
           location: '2142 Kalakaua Ave',
-          description: '威基基美食新星。高品质檀香山咖啡搭配MOCHILAND手工麻糬甜甜圈，价格出人意料地亲民。麻糬甜甜圈$3.50起，新鲜马拉萨达$4起，正宗科纳咖啡$5起。威基基大多数咖啡馆光科纳咖啡就要$8-12，这里$10以内就能享用甜甜圈+咖啡套餐。高品质，甜甜圈店价格——性价比无敌。',
-          mustTry: '麻糬甜甜圈+科纳咖啡套餐（$8.50）',
+          description: '威基基美食新星。高品质檀香山咖啡搭配MOCHILAND手工麻糬甜甜圈，价格出人意料地亲民。麻糬甜甜圈3个$11.25起（约$3.75/个），新鲜马拉萨达$3.95起，正宗科纳咖啡$7起。威基基大多数咖啡馆光科纳咖啡就要$8-12，这里约$11就能享用马拉萨达+咖啡套餐。高品质，甜甜圈店价格——性价比无敌。',
+          mustTry: '马拉萨达+科纳咖啡套餐（约$11）',
           tag: '最佳性价比',
         },
         {
@@ -718,8 +718,8 @@ const content = {
       title: '威基基价格对比：常见菜品',
       headers: ['菜品', '游客餐厅', '平价店', '节省金额'],
       rows: [
-        ['科纳咖啡', '$8 - $12', '$5（科纳咖啡甜甜圈）', '最多$7'],
-        ['早餐套餐', '$18 - $25', '$8 - $10（甜甜圈+咖啡）', '最多$17'],
+        ['科纳咖啡', '$8 - $12', '$7（科纳咖啡甜甜圈）', '最多$5'],
+        ['早餐套餐', '$18 - $25', '约$11（甜甜圈+咖啡）', '最多$14'],
         ['波奇碗', '$18 - $22', '$5 - $7（7-Eleven等）', '最多$17'],
         ['便当套餐', '$18 - $24', '$8 - $12（Rainbow等）', '最多$16'],
         ['乌冬面', '$14 - $18', '$5 - $8（丸龟乌冬）', '最多$13'],
@@ -733,11 +733,11 @@ const content = {
       items: [
         {
           q: '威基基最便宜的餐食是什么？',
-          a: '7-Eleven或Iyasume的午餐肉饭团$2-3起。更实在的选择是丸龟乌冬$5。科纳咖啡甜甜圈的麻糬甜甜圈+科纳咖啡套餐约$8.50，是高品质的早餐。',
+          a: '7-Eleven或Iyasume的午餐肉饭团$2-3起。更实在的选择是丸龟乌冬$5。科纳咖啡甜甜圈的马拉萨达+科纳咖啡套餐约$11，是高品质的早餐。',
         },
         {
           q: '在威基基一天三餐能控制在$30以内吗？',
-          a: '完全可以。例如：早餐科纳咖啡甜甜圈(~$9)，午餐丸龟乌冬(~$8)，晚餐美食车(~$10-12)。三餐合计$30以内。',
+          a: '完全可以。例如：早餐科纳咖啡甜甜圈(~$11)，午餐丸龟乌冬(~$8)，晚餐美食车(~$10-12)。三餐合计约$30。',
         },
         {
           q: '本地人在威基基哪里吃饭？',
@@ -749,7 +749,7 @@ const content = {
         },
         {
           q: '夏威夷有哪些独特的平价美食值得尝试？',
-          a: '午餐肉饭团($2-4)、便当套餐($8-12)、麻糬甜甜圈(科纳咖啡甜甜圈$3.50起)、马拉萨达($4起)、波奇(便利店$5-7)。全部$15以下，都是夏威夷独有的味道。',
+          a: '午餐肉饭团($2-4)、便当套餐($8-12)、麻糬甜甜圈(科纳咖啡甜甜圈3个$11.25起)、马拉萨达($3.95起)、波奇(便利店$5-7)。全部$15以下，都是夏威夷独有的味道。',
         },
       ],
     },
@@ -807,7 +807,7 @@ const faqSchema = {
       name: 'What is the cheapest meal you can get in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Spam musubi from 7-Eleven or Musubi Cafe Iyasume starts at $2-3, making it the cheapest filling meal in Waikiki. For a more substantial meal, Marukame Udon's basic udon bowl at $5 is hard to beat. A mochi donut and Kona coffee combo at Kona Coffee Donut runs about $8.50 for a premium breakfast.",
+        text: "Spam musubi from 7-Eleven or Musubi Cafe Iyasume starts at $2-3, making it the cheapest filling meal in Waikiki. For a more substantial meal, Marukame Udon's basic udon bowl at $5 is hard to beat. A malasada and Kona coffee combo at Kona Coffee Donut runs about $11 for a premium breakfast.",
       },
     },
     {
@@ -815,7 +815,7 @@ const faqSchema = {
       name: 'Is it possible to eat three meals a day in Waikiki for under $30?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Absolutely. A sample budget day: breakfast at Kona Coffee Donut (donut + coffee, ~$9), lunch at Marukame Udon (~$8), and dinner at a food truck or Rainbow Drive-In (~$10-12). That is three solid meals for under $30.',
+        text: 'Absolutely. A sample budget day: breakfast at Kona Coffee Donut (donut + coffee, ~$11), lunch at Marukame Udon (~$8), and dinner at a food truck or Rainbow Drive-In (~$10-12). That is three solid meals for around $30.',
       },
     },
     {
@@ -839,7 +839,7 @@ const faqSchema = {
       name: 'What budget-friendly food is unique to Hawaii that I should try?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Do not leave without trying: spam musubi ($2-4), a plate lunch with two scoops of rice ($8-12), mochi donuts (from $3.50 at Kona Coffee Donut), malasadas (from $4), and poke (fresh raw fish, $5-7 at convenience stores). All are under $15 and unmissable.",
+        text: "Do not leave without trying: spam musubi ($2-4), a plate lunch with two scoops of rice ($8-12), mochi donuts (boxes from $11.25 for 3 at Kona Coffee Donut), malasadas (from $3.95), and poke (fresh raw fish, $5-7 at convenience stores). All are under $15 and unmissable.",
       },
     },
   ],

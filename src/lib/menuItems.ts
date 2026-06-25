@@ -11,6 +11,30 @@ export interface MenuItem {
   price?: string;
 }
 
+/** An optional extra/add-on for a category (e.g. alt milk, toppings). */
+export interface MenuAddOn {
+  label: string;
+  /** Price string exactly as printed (no $). */
+  price: string;
+}
+
+// Add-on groups exactly as printed on the menu boards.
+// Drinks (espresso bar, matcha/hojicha, smoothies) — the "ADDITIONS" panel.
+const DRINK_ADDONS: MenuAddOn[] = [
+  { label: 'Flavored Syrup', price: '0.75' },
+  { label: 'Almond Milk', price: '1.00' },
+  { label: 'Soy Milk', price: '1.00' },
+  { label: 'Oat Milk', price: '1.00' },
+  { label: 'Latte Foam', price: '1.00' },
+];
+// Shave ice / bingsu — the "ADDITION + 1.95" panel.
+const SHAVE_ICE_ADDONS: MenuAddOn[] = [
+  { label: 'Mochi', price: '1.95' },
+  { label: 'Azuki Bean', price: '1.95' },
+  { label: 'Condensed Milk', price: '1.95' },
+  { label: 'Popping Boba', price: '1.95' },
+];
+
 export interface MenuItemCategory {
   /** Stable id used for anchor links and i18n keys */
   id:
@@ -27,6 +51,8 @@ export interface MenuItemCategory {
   /** Optional category-level link to the existing detail page (slug under /menu) */
   detailSlug?: string;
   items: MenuItem[];
+  /** Optional add-ons/extras for this category, shown under the items grid. */
+  addOns?: MenuAddOn[];
 }
 
 // Category-level fallback roots (only used by categoryFallbackImage map below).
@@ -58,7 +84,7 @@ export const menuItemCategories: MenuItemCategory[] = [
   {
     // Flavors and order match the printed menu board in
     // public/images/menu/donut.webp (24 mochi pon-de-ring flavors). Prices on
-    // the board are pack-based — 3PC $9.75 / 6PC $19.50 / 12PC $39.00 — not
+    // the board are pack-based — 3PC $11.25 / 6PC $22.50 / 12PC $45.00 — not
     // per-flavor, so we deliberately omit MenuItem.price here rather than
     // inventing individual prices.
     id: 'donuts',
@@ -99,15 +125,15 @@ export const menuItemCategories: MenuItemCategory[] = [
     title: 'Malasada',
     detailSlug: 'malasada',
     items: [
-      { name: 'Original', image: malasadaItem('malasada-original'), price: '1PC 2.95 / 3PC 8.85 / 6PC 17.70 / 12PC 35.40' },
-      { name: 'Cinnamon', image: malasadaItem('malasada-cinnamon'), price: '1PC 2.95 / 3PC 8.85 / 6PC 17.70 / 12PC 35.40' },
-      { name: 'Ube', image: malasadaItem('malasada-ube'), price: '1PC 2.95 / 3PC 8.85 / 6PC 17.70 / 12PC 35.40' },
-      { name: 'Custard', image: malasadaItem('malasada-custard'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
-      { name: 'Ube Cream', image: malasadaItem('malasada-ube-cream'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
-      { name: 'Nutella', image: malasadaItem('malasada-nutella'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
-      { name: 'Macadamia Nut', image: malasadaItem('malasada-macadamia-nut'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
-      { name: 'Coconut', image: malasadaItem('malasada-coconut'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
-      { name: 'Red Bean', image: malasadaItem('malasada-red-bean'), price: '1PC 3.25 / 3PC 9.75 / 6PC 19.50 / 12PC 39.00' },
+      { name: 'Original', image: malasadaItem('malasada-original'), price: '1PC 3.95 / 3PC 11.25 / 6PC 22.50 / 12PC 45.00' },
+      { name: 'Cinnamon', image: malasadaItem('malasada-cinnamon'), price: '1PC 3.95 / 3PC 11.25 / 6PC 22.50 / 12PC 45.00' },
+      { name: 'Ube', image: malasadaItem('malasada-ube'), price: '1PC 3.95 / 3PC 11.25 / 6PC 22.50 / 12PC 45.00' },
+      { name: 'Custard', image: malasadaItem('malasada-custard'), price: '1PC 4.95 / 3PC 14.25 / 6PC 28.50 / 12PC 57.00' },
+      { name: 'Ube Cream', image: malasadaItem('malasada-ube-cream'), price: '1PC 4.95 / 3PC 14.25 / 6PC 28.50 / 12PC 57.00' },
+      { name: 'Nutella', image: malasadaItem('malasada-nutella'), price: '1PC 4.95 / 3PC 14.25 / 6PC 28.50 / 12PC 57.00' },
+      { name: 'Macadamia Nut', image: malasadaItem('malasada-macadamia-nut'), price: '1PC 4.95 / 3PC 14.25 / 6PC 28.50 / 12PC 57.00' },
+      { name: 'Coconut', image: malasadaItem('malasada-coconut'), price: '1PC 4.95 / 3PC 14.25 / 6PC 28.50 / 12PC 57.00' },
+      { name: 'Red Bean', image: malasadaItem('malasada-red-bean'), price: '1PC 4.95 / 3PC 14.25 / 6PC 28.50 / 12PC 57.00' },
     ],
   },
   {
@@ -115,18 +141,20 @@ export const menuItemCategories: MenuItemCategory[] = [
     title: 'Espresso Bar',
     detailSlug: 'kona-coffee',
     items: [
-      { name: 'Kona Coffee', image: coffeeItem('coffee-kona-coffee'), price: '5.00' },
+      { name: 'Kona Coffee', image: coffeeItem('coffee-kona-coffee'), price: '7.00' },
       { name: 'Espresso', image: coffeeItem('coffee-espresso'), price: '4.75' },
       { name: 'Americano', image: coffeeItem('coffee-americano'), price: '5.35' },
       { name: 'Latte', image: coffeeItem('coffee-latte'), price: '6.35 / 7.35' },
       { name: 'Cappuccino', image: coffeeItem('coffee-cappuccino'), price: '6.35 / 7.35' },
-      { name: 'Kona Cold Brew', image: coffeeItem('coffee-kona-cold-brew'), price: '6.25 / 7.25' },
+      { name: 'Kona Cold Brew', image: coffeeItem('coffee-kona-cold-brew'), price: '6.95 / 7.95' },
+      { name: 'Kona Pour Over', image: coffeeItem('coffee-kona-coffee'), price: '10.95 / 11.95' },
       { name: 'Kona Affogato', image: coffeeItem('coffee-kona-affogato'), price: '8.50' },
-      { name: 'Mocha', image: coffeeItem('coffee-mocha'), price: '7.75' },
-      { name: 'Ube Latte', image: coffeeItem('coffee-ube-latte'), price: '7.75' },
+      { name: 'Mocha', image: coffeeItem('coffee-mocha'), price: '7.95' },
+      { name: 'Ube Latte', image: coffeeItem('coffee-ube-latte'), price: '7.95' },
       { name: 'Hot Chocolate', image: coffeeItem('coffee-hot-chocolate'), price: '6.50' },
       { name: 'Loose Leaf Tea', image: coffeeItem('coffee-loose-leaf-tea'), price: '5.75' },
     ],
+    addOns: DRINK_ADDONS,
   },
   {
     id: 'matcha',
@@ -142,6 +170,7 @@ export const menuItemCategories: MenuItemCategory[] = [
       { name: 'Coconut Matcha', image: matchaItem('matcha-coconut'), price: '8.95' },
       { name: 'Banana Matcha', image: matchaItem('matcha-banana'), price: '8.95' },
     ],
+    addOns: DRINK_ADDONS,
   },
   {
     id: 'smoothies',
@@ -152,38 +181,40 @@ export const menuItemCategories: MenuItemCategory[] = [
       { name: 'Coconut Pineapple', image: smoothieItem('smoothie-coconut-pineapple'), price: '10.95' },
       { name: 'Mango Coconut Lilikoi', image: smoothieItem('smoothie-mango-coconut-lilikoi'), price: '10.95' },
     ],
+    addOns: DRINK_ADDONS,
   },
   {
     id: 'bingsu',
     title: 'Milk Shaved Bingsu',
     detailSlug: 'bingsu',
     items: [
-      { name: 'Azuki Bean', image: bingsuItem('bingsu-azuki-bean'), price: '13.95' },
-      { name: 'Strawberry', image: bingsuItem('bingsu-strawberry'), price: '13.95' },
-      { name: 'Pineapple', image: bingsuItem('bingsu-pineapple'), price: '13.95' },
-      { name: 'Mango', image: bingsuItem('bingsu-mango'), price: '13.95' },
-      { name: 'Ube', image: bingsuItem('bingsu-ube'), price: '13.95' },
-      { name: 'Injeolmi', image: bingsuItem('bingsu-injeolmi'), price: '13.95' },
-      { name: 'Green Tea', image: bingsuItem('bingsu-greentea'), price: '13.95' },
-      { name: 'Black Sesame', image: bingsuItem('bingsu-black-sesame'), price: '13.95' },
-      { name: 'Kona Coffee', image: bingsuItem('bingsu-kona-coffee'), price: '13.95' },
+      { name: 'Azuki Bean', image: bingsuItem('bingsu-azuki-bean'), price: '14.95' },
+      { name: 'Strawberry', image: bingsuItem('bingsu-strawberry'), price: '14.95' },
+      { name: 'Pineapple', image: bingsuItem('bingsu-pineapple'), price: '14.95' },
+      { name: 'Mango', image: bingsuItem('bingsu-mango'), price: '14.95' },
+      { name: 'Ube', image: bingsuItem('bingsu-ube'), price: '14.95' },
+      { name: 'Kona Coffee', image: bingsuItem('bingsu-kona-coffee'), price: '14.95' },
+      { name: 'Green Tea', image: bingsuItem('bingsu-greentea'), price: '14.95' },
     ],
+    addOns: SHAVE_ICE_ADDONS,
   },
   {
     id: 'acai',
     title: 'Hawaiian Bingsu & Açaí Bowl',
     detailSlug: 'acai-bowl',
     items: [
-      { name: 'Waikiki Rainbow', image: acaiItem('bingsu-waikiki-rainbow'), price: '10.95' },
-      { name: 'Paradise Lilikoi', image: acaiItem('bingsu-paradise-lilikoi'), price: '10.95' },
-      { name: 'Volcano Island', image: acaiItem('bingsu-volcano-island'), price: '10.95' },
-      { name: 'Coco Head', image: acaiItem('bingsu-coco-head'), price: '10.95' },
-      { name: 'Tropical Jungle', image: acaiItem('bingsu-tropical-jungle'), price: '10.95' },
-      { name: 'Açaí Oahu', image: acaiItem('acai-oahu'), price: '11.95 / 15.95' },
-      { name: 'Açaí Paradise', image: acaiItem('acai-paradise'), price: '11.95 / 15.95' },
-      { name: 'Açaí Colada', image: acaiItem('acai-colada'), price: '11.95 / 15.95' },
-      { name: 'Papaya Bowl', image: acaiItem('acai-papaya'), price: '12.95' },
+      { name: 'Waikiki Rainbow', image: acaiItem('bingsu-waikiki-rainbow'), price: '12.95' },
+      { name: 'Paradise Lilikoi', image: acaiItem('bingsu-paradise-lilikoi'), price: '12.95' },
+      { name: 'Volcano Island', image: acaiItem('bingsu-volcano-island'), price: '12.95' },
+      { name: 'Coco Head', image: acaiItem('bingsu-coco-head'), price: '12.95' },
+      { name: 'Tropical Jungle', image: acaiItem('bingsu-tropical-jungle'), price: '12.95' },
+      { name: 'Açaí Oahu', image: acaiItem('acai-oahu'), price: '13.95 / 15.95' },
+      { name: 'Açaí Paradise', image: acaiItem('acai-paradise'), price: '13.95 / 15.95' },
+      { name: 'Açaí Colada', image: acaiItem('acai-colada'), price: '13.95 / 15.95' },
+      { name: 'Papaya Special', image: acaiItem('acai-papaya'), price: '13.95 / 15.95' },
+      { name: 'Papaya', image: acaiItem('acai-papaya'), price: '7.95' },
     ],
+    addOns: SHAVE_ICE_ADDONS,
   },
   {
     id: 'hotdog',

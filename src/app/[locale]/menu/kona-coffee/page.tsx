@@ -468,7 +468,7 @@ export default function KonaCoffeePage() {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
               "priceCurrency": "USD",
-              "price": "5.00"
+              "price": "7.00"
             }
           })
         }}
@@ -517,7 +517,7 @@ export default function KonaCoffeePage() {
                 "name": "How much is a cup of Kona coffee in Waikiki?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "A cup of 100% Kona coffee starts around $5 at Kona Coffee Donut?, with Kona lattes and iced Kona coffee also available."
+                  "text": "A cup of 100% Kona coffee is $7 at Kona Coffee Donut?, with Kona lattes from $6.35, Kona cold brew from $6.95, and Kona pour-over also available."
                 }
               }
             ]

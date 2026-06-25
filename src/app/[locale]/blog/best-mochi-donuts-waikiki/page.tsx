@@ -74,9 +74,9 @@ const content: Record<Locale, BlogContent> = {
         body:
           'Mochi donuts are sold by the box, and a half-dozen is the sweet spot for trying multiple flavors. Everything is made fresh daily, so flavors are best earlier in the day before popular ones sell out.',
         bullets: [
-          '3 pieces — $9.75',
-          '6 pieces — $19.50 (most popular, best for sharing)',
-          '12 pieces — $39.00',
+          '3 pieces — $11.25',
+          '6 pieces — $22.50 (most popular, best for sharing)',
+          '12 pieces — $45.00',
           'Mix and match any flavors in your box',
         ],
       },
@@ -97,7 +97,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         q: 'How much are mochi donuts in Waikiki?',
-        a: 'At Kona Coffee Donut, mochi donuts are $9.75 for 3 pieces, $19.50 for 6 pieces, and $39.00 for 12 pieces. You can mix and match any of the 24 flavors in your box.',
+        a: 'At Kona Coffee Donut, mochi donuts are $11.25 for 3 pieces, $22.50 for 6 pieces, and $45.00 for 12 pieces. You can mix and match any of the 24 flavors in your box.',
       },
       {
         q: 'What is the most popular mochi donut flavor?',
@@ -176,9 +176,9 @@ const content: Record<Locale, BlogContent> = {
         body:
           'モチドーナツはボックス単位での販売です。いろいろなフレーバーを試すなら6個入りがちょうど良いサイズ。毎日手作りのため、人気フレーバーは売り切れることもあり、午前中ほど種類が豊富です。',
         bullets: [
-          '3個 — $9.75',
-          '6個 — $19.50(一番人気・シェアに最適)',
-          '12個 — $39.00',
+          '3個 — $11.25',
+          '6個 — $22.50(一番人気・シェアに最適)',
+          '12個 — $45.00',
           'お好きなフレーバーを自由に組み合わせ可能',
         ],
       },
@@ -199,7 +199,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         q: 'ワイキキのモチドーナツの値段は？',
-        a: 'Kona Coffee Donutでは、3個$9.75、6個$19.50、12個$39.00です。24種類のフレーバーから自由に組み合わせていただけます。',
+        a: 'Kona Coffee Donutでは、3個$11.25、6個$22.50、12個$45.00です。24種類のフレーバーから自由に組み合わせていただけます。',
       },
       {
         q: '一番人気のフレーバーは？',
@@ -278,9 +278,9 @@ const content: Record<Locale, BlogContent> = {
         body:
           '모찌도넛은 박스 단위로 판매합니다. 여러 맛을 맛보려면 6개입이 딱 좋아요. 매일 직접 만들기 때문에, 인기 맛은 일찍 소진될 수 있어 오전에 종류가 가장 많습니다.',
         bullets: [
-          '3개 — $9.75',
-          '6개 — $19.50 (가장 인기, 나눠 먹기 좋음)',
-          '12개 — $39.00',
+          '3개 — $11.25',
+          '6개 — $22.50 (가장 인기, 나눠 먹기 좋음)',
+          '12개 — $45.00',
           '원하는 맛을 자유롭게 조합 가능',
         ],
       },
@@ -301,7 +301,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         q: '와이키키 모찌도넛 가격은 얼마인가요?',
-        a: 'Kona Coffee Donut에서 모찌도넛은 3개 $9.75, 6개 $19.50, 12개 $39.00입니다. 24가지 맛을 자유롭게 조합하실 수 있습니다.',
+        a: 'Kona Coffee Donut에서 모찌도넛은 3개 $11.25, 6개 $22.50, 12개 $45.00입니다. 24가지 맛을 자유롭게 조합하실 수 있습니다.',
       },
       {
         q: '가장 인기 있는 맛은 무엇인가요?',
@@ -380,9 +380,9 @@ const content: Record<Locale, BlogContent> = {
         body:
           '麻糬甜甜圈按盒销售,想多尝几种口味,半打(6个)最合适。所有产品每日现做,人气口味可能较早售罄,上午种类最齐全。',
         bullets: [
-          '3个 — $9.75',
-          '6个 — $19.50(最受欢迎,适合分享)',
-          '12个 — $39.00',
+          '3个 — $11.25',
+          '6个 — $22.50(最受欢迎,适合分享)',
+          '12个 — $45.00',
           '可自由搭配任意口味',
         ],
       },
@@ -403,7 +403,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         q: '威基基的麻糬甜甜圈多少钱？',
-        a: '在Kona Coffee Donut,麻糬甜甜圈3个$9.75、6个$19.50、12个$39.00。24种口味可自由搭配。',
+        a: '在Kona Coffee Donut,麻糬甜甜圈3个$11.25、6个$22.50、12个$45.00。24种口味可自由搭配。',
       },
       {
         q: '最受欢迎的口味是哪个？',
@@ -482,9 +482,9 @@ const content: Record<Locale, BlogContent> = {
         body:
           'Los mochi donuts se venden por caja, y la media docena es el punto ideal para probar varios sabores. Todo se hace fresco a diario, así que los sabores están mejor más temprano, antes de que se agoten los más populares.',
         bullets: [
-          '3 piezas — $9.75',
-          '6 piezas — $19.50 (el más popular, ideal para compartir)',
-          '12 piezas — $39.00',
+          '3 piezas — $11.25',
+          '6 piezas — $22.50 (el más popular, ideal para compartir)',
+          '12 piezas — $45.00',
           'Combina los sabores que quieras en tu caja',
         ],
       },
@@ -505,7 +505,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         q: '¿Cuánto cuestan los mochi donuts en Waikiki?',
-        a: 'En Kona Coffee Donut, los mochi donuts cuestan $9.75 por 3 piezas, $19.50 por 6 piezas y $39.00 por 12 piezas. Puedes combinar cualquiera de los 24 sabores en tu caja.',
+        a: 'En Kona Coffee Donut, los mochi donuts cuestan $11.25 por 3 piezas, $22.50 por 6 piezas y $45.00 por 12 piezas. Puedes combinar cualquiera de los 24 sabores en tu caja.',
       },
       {
         q: '¿Cuál es el sabor de mochi donut más popular?',

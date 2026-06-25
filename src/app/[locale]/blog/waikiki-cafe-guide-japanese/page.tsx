@@ -32,7 +32,7 @@ const content = {
         'コナコーヒーは、ハワイ島（ビッグアイランド）のコナ地区でのみ栽培される、世界的に希少なプレミアムコーヒーです。マウナロア山とフアラライ山の火山性斜面、標高500〜900メートルの地帯で育てられ、世界のコーヒー生産量の1%にも満たない貴重な豆です。',
         '日本のコーヒー愛好家の方々がコナコーヒーに惹かれる理由は明確です。まず、その味わいは非常にまろやかで酸味が少なく、チョコレートやナッツのような深い風味があります。日本で人気のドリップコーヒーとの相性が抜群で、ペーパーフィルターを使ったハンドドリップで淹れると、コナコーヒー本来の繊細な味わいが存分に楽しめます。',
         'また、日本のサードウェーブコーヒーブームの中で、シングルオリジン（単一産地）のコーヒーへの関心が高まっています。コナコーヒーはまさにその代表格であり、生産地から消費者までの「トレーサビリティ（追跡可能性）」が徹底されている点も、品質にこだわる日本の方々に支持される理由です。',
-        '日本国内でコナコーヒーを購入すると100g 2,000〜4,000円と高価ですが、ワイキキのカフェで一杯5ドル前後から本物のホノルルコーヒーを味わえるのは、ハワイ旅行ならではの贅沢です。お土産としても非常に人気が高く、帰国後にご自宅で淹れる楽しみもあります。',
+        '日本国内でコナコーヒーを購入すると100g 2,000〜4,000円と高価ですが、ワイキキのカフェで一杯7ドル前後から本物のホノルルコーヒーを味わえるのは、ハワイ旅行ならではの贅沢です。お土産としても非常に人気が高く、帰国後にご自宅で淹れる楽しみもあります。',
       ],
     },
     ranking: {
@@ -45,7 +45,7 @@ const content = {
           address: '2142 Kalakaua Ave, Honolulu, HI 96815',
           description: 'ワイキキのカラカウア通りに位置する、ホノルルコーヒーとモチドーナツの専門店。日本の「もち」文化にインスパイアされたモチドーナツは、外はサクサク、中はもちもちの食感が楽しめます。紫芋（ウベ）、抹茶、黒糖きなこなど、日本人の舌にも馴染みやすいフレーバーを豊富にご用意。さらにマラサダやビンス（韓国風かき氷）もあり、一軒でハワイとアジアのスイーツを堪能できます。コナコーヒーは全てホノルルコーヒー産を使用し、ブレンドは一切ありません。Wi-Fiも完備しており、カフェ巡りの拠点としても最適です。',
           highlight: 'ホノルルコーヒー、モチドーナツ、マラサダ、ビンス',
-          price: '$3.50〜',
+          price: '$3.95〜',
           isFeatured: true,
         },
         {
@@ -119,7 +119,7 @@ const content = {
         },
         {
           subtitle: '予算目安',
-          text: 'コナコーヒー1杯＋スイーツ1品で$8〜$15程度が目安です。モチドーナツは$3.50〜、マラサダは$4〜、ビンスは$10〜$14程度です。日本円に換算すると約1,200〜2,200円程度（2026年4月時点の為替レート参考）。ワイキキのカフェとしては良心的な価格設定です。クレジットカード（Visa、Mastercard、AMEX）、Apple Payに対応しています。',
+          text: 'コナコーヒー1杯＋スイーツ1品で$11〜$18程度が目安です。モチドーナツは3個$11.25〜（約$3.75/個）、マラサダは$3.95〜、ビンスは$10〜$14程度です。日本円に換算すると約1,650〜2,700円程度（2026年4月時点の為替レート参考）。ワイキキのカフェとしては良心的な価格設定です。クレジットカード（Visa、Mastercard、AMEX）、Apple Payに対応しています。',
         },
       ],
     },
@@ -175,7 +175,7 @@ const content = {
       paragraphs: [
         'Kona coffee is a premium single-origin coffee grown exclusively in the Kona District on Hawaii\'s Big Island. Cultivated on the volcanic slopes of Mauna Loa and Hualalai at 500-900 meters elevation, it represents less than 1% of global coffee production.',
         'Its flavor profile is remarkably smooth with low acidity, featuring chocolate and nutty notes. Hand-picked and sun-dried, each batch undergoes rigorous quality control under Hawaii state law.',
-        'In Waikiki, you can enjoy a cup of genuine Honolulu Coffee for around $5 -- a fraction of what it costs when imported to other countries.',
+        'In Waikiki, you can enjoy a cup of genuine Honolulu Coffee for around $7 -- a fraction of what it costs when imported to other countries.',
         'Be careful with "Kona Blend" labels, which may contain as little as 10% Kona beans. Always look for "Honolulu Coffee" to ensure authenticity.',
       ],
     },
@@ -189,7 +189,7 @@ const content = {
           address: '2142 Kalakaua Ave, Honolulu, HI 96815',
           description: 'Located on Kalakaua Avenue, this specialty cafe serves Honolulu Coffee and artisan mochi donuts. With flavors like ube, matcha, and brown sugar kinako, plus malasadas and bingsu, it is a one-stop destination for Hawaiian and Asian-inspired treats.',
           highlight: 'Honolulu Coffee, Mochi Donuts, Malasadas, Bingsu',
-          price: 'from $3.50',
+          price: 'from $3.95',
           isFeatured: true,
         },
         {
@@ -263,7 +263,7 @@ const content = {
         },
         {
           subtitle: 'Budget',
-          text: 'Expect to spend $8-$15 for a coffee and one dessert. Credit cards (Visa, Mastercard, AMEX) and Apple Pay are widely accepted.',
+          text: 'Expect to spend $11-$18 for a coffee and one dessert. Credit cards (Visa, Mastercard, AMEX) and Apple Pay are widely accepted.',
         },
       ],
     },
@@ -319,7 +319,7 @@ const content = {
       paragraphs: [
         '코나 커피는 하와이 빅아일랜드의 코나 지구에서만 재배되는 프리미엄 싱글 오리진 커피입니다. 세계 커피 생산량의 1% 미만을 차지하는 희귀한 커피입니다.',
         '부드러운 맛, 낮은 산도, 초콜릿과 견과류 같은 풍미가 특징입니다.',
-        '와이키키에서는 한 잔에 약 $5부터 정통 호놀룰루 커피를 즐길 수 있습니다.',
+        '와이키키에서는 한 잔에 약 $7부터 정통 호놀룰루 커피를 즐길 수 있습니다.',
         '"코나 블렌드"는 코나 원두가 10%만 포함될 수 있으니 반드시 "Honolulu Coffee" 표기를 확인하세요.',
       ],
     },
@@ -333,7 +333,7 @@ const content = {
           address: '2142 Kalakaua Ave, Honolulu, HI 96815',
           description: '칼라카우아 애비뉴에 위치한 호놀룰루 커피와 모찌 도넛 전문점. 우베, 말차, 흑설탕 키나코 등 다양한 플레이버의 모찌 도넛과 말라사다, 빙수까지 한 곳에서 즐길 수 있습니다.',
           highlight: '호놀룰루 커피, 모찌 도넛, 말라사다, 빙수',
-          price: '$3.50~',
+          price: '$3.95~',
           isFeatured: true,
         },
         {
@@ -396,7 +396,7 @@ const content = {
         { subtitle: '영업시간', text: '대부분의 와이키키 카페는 오전 7시~오후 9시 영업. 주말 혼잡을 피하려면 오전 8시 전 방문 추천.' },
         { subtitle: '위치', text: 'Kona Coffee Donut은 칼라카우아 애비뉴 2142번지, 와이키키 비치에서 도보 5분 거리.' },
         { subtitle: '팁 문화', text: '미국에서는 15~20% 팁이 관례. 테이크아웃 시 필수는 아니지만 감사의 표시로 남기는 것이 좋습니다.' },
-        { subtitle: '예산', text: '커피 1잔 + 디저트 1개 기준 $8~$15. 신용카드, Apple Pay 사용 가능.' },
+        { subtitle: '예산', text: '커피 1잔 + 디저트 1개 기준 $11~$18. 신용카드, Apple Pay 사용 가능.' },
       ],
     },
     faq: {
@@ -451,7 +451,7 @@ const content = {
       paragraphs: [
         '科纳咖啡是产自夏威夷大岛科纳地区的顶级单一产地咖啡，占全球咖啡产量不到1%。',
         '口感顺滑、酸度低，带有巧克力和坚果的风味。',
-        '在威基基，约$5就能品尝到正宗的檀香山咖啡。',
+        '在威基基，约$7就能品尝到正宗的檀香山咖啡。',
         '注意："科纳混合"可能只含10%科纳豆，请认准"Honolulu Coffee"标签。',
       ],
     },
@@ -465,7 +465,7 @@ const content = {
           address: '2142 Kalakaua Ave, Honolulu, HI 96815',
           description: '位于卡拉卡瓦大道的檀香山咖啡和麻糬甜甜圈专门店。提供紫薯、抹茶、黑糖黄豆粉等多种口味，还有马拉萨达和冰沙。',
           highlight: '檀香山咖啡、麻糬甜甜圈、马拉萨达、冰沙',
-          price: '$3.50起',
+          price: '$3.95起',
           isFeatured: true,
         },
         {
@@ -528,7 +528,7 @@ const content = {
         { subtitle: '营业时间', text: '大多数威基基咖啡厅营业时间为早7点至晚9点。避开周末高峰，建议早8点前到达。' },
         { subtitle: '位置', text: 'Kona Coffee Donut位于卡拉卡瓦大道2142号，距威基基海滩步行5分钟。' },
         { subtitle: '小费文化', text: '美国惯例为15-20%小费。外带时非强制，但表示感谢时可适当给予。' },
-        { subtitle: '预算', text: '咖啡1杯+甜点1份约$8-$15。接受信用卡和Apple Pay。' },
+        { subtitle: '预算', text: '咖啡1杯+甜点1份约$11-$18。接受信用卡和Apple Pay。' },
       ],
     },
     faq: {

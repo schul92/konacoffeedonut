@@ -190,6 +190,25 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
                   </li>
                 ))}
               </ul>
+
+              {cat.addOns && cat.addOns.length > 0 && (
+                <div className="mt-7 md:mt-9 rounded-xl border border-stone-300/70 bg-stone-50/70 px-4 py-4 sm:px-6 sm:py-5">
+                  <p className="text-xs font-bold uppercase tracking-wider text-stone-500 mb-3">
+                    Add-ons
+                  </p>
+                  <ul className="flex flex-wrap gap-x-6 gap-y-2">
+                    {cat.addOns.map((add) => (
+                      <li
+                        key={`${cat.id}-addon-${add.label}`}
+                        className="flex items-baseline gap-1.5 text-sm text-stone-700"
+                      >
+                        <span className="font-medium">{add.label}</span>
+                        <span className="text-stone-500 tabular-nums">+${add.price}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </section>
         ))}

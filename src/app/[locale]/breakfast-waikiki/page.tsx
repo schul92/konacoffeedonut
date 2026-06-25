@@ -24,22 +24,22 @@ const content = {
         {
           name: 'Kona Coffee',
           description: 'Honolulu Coffee from Hawaii\'s Big Island. Smooth, rich, and perfect for your morning.',
-          price: 'from $5'
+          price: 'from $7'
         },
         {
           name: 'Mochi Donuts',
           description: 'Crispy outside, chewy inside. Choose from 12+ flavors including Ube, Matcha, and seasonal specials.',
-          price: 'from $3.50'
+          price: 'from $3.75'
         },
         {
           name: 'Fresh Malasada',
           description: 'Traditional Hawaiian-Portuguese donuts, made fresh every morning and coated in sweet sugar.',
-          price: 'from $4'
+          price: 'from $3.95'
         },
         {
           name: 'Acai Bowl',
           description: 'Fresh acai topped with tropical fruits, granola, and honey. A healthy Hawaiian breakfast option.',
-          price: 'from $10'
+          price: 'from $13'
         }
       ]
     },
@@ -92,22 +92,22 @@ const content = {
         {
           name: 'コナコーヒー',
           description: 'ハワイ島産ホノルルコーヒー。滑らかで豊かな朝にぴったりの一杯。',
-          price: '$5から'
+          price: '$7から'
         },
         {
           name: 'モチドーナツ',
           description: '外はサクサク、中はもちもち。紫芋、抹茶、季節限定など12種類以上。',
-          price: '$3.50から'
+          price: '$3.75から'
         },
         {
           name: '新鮮なマラサダ',
           description: '毎朝作られる伝統的なハワイアン-ポルトガルドーナツ、甘い砂糖でコーティング。',
-          price: '$4から'
+          price: '$3.95から'
         },
         {
           name: 'アサイーボウル',
           description: 'トロピカルフルーツ、グラノーラ、ハニーをトッピングした新鮮なアサイー。',
-          price: '$10から'
+          price: '$13から'
         }
       ]
     },
@@ -160,22 +160,22 @@ const content = {
         {
           name: '코나 커피',
           description: '하와이 빅아일랜드산 호놀룰루 커피. 부드럽고 풍부하며 아침에 완벽.',
-          price: '$5부터'
+          price: '$7부터'
         },
         {
           name: '모찌 도넛',
           description: '겉은 바삭, 속은 쫄깃. 우베, 말차, 시즌 스페셜 등 12가지 이상의 맛.',
-          price: '$3.50부터'
+          price: '$3.75부터'
         },
         {
           name: '신선한 말라사다',
           description: '매일 아침 만드는 전통 하와이안-포르투갈 도넛, 달콤한 설탕 코팅.',
-          price: '$4부터'
+          price: '$3.95부터'
         },
         {
           name: '아사이 볼',
           description: '열대 과일, 그래놀라, 꿀을 토핑한 신선한 아사이. 건강한 하와이안 아침식사.',
-          price: '$10부터'
+          price: '$13부터'
         }
       ]
     },
@@ -228,22 +228,22 @@ const content = {
         {
           name: '科纳咖啡',
           description: '来自夏威夷大岛的檀香山咖啡。顺滑、浓郁，完美的早晨之选。',
-          price: '$5起'
+          price: '$7起'
         },
         {
           name: '麻糬甜甜圈',
           description: '外酥里糯。12种以上口味可选，包括紫薯、抹茶和季节特供。',
-          price: '$3.50起'
+          price: '$3.75起'
         },
         {
           name: '新鲜马拉萨达',
           description: '传统夏威夷-葡萄牙甜甜圈，每天早晨新鲜制作，裹上甜蜜的糖霜。',
-          price: '$4起'
+          price: '$3.95起'
         },
         {
           name: '巴西莓碗',
           description: '新鲜巴西莓配热带水果、燕麦片和蜂蜜。健康的夏威夷早餐选择。',
-          price: '$10起'
+          price: '$13起'
         }
       ]
     },
@@ -296,22 +296,22 @@ const content = {
         {
           name: 'Café Kona',
           description: 'Café 100% puro Kona de la Isla Grande de Hawaii. Suave, rico y perfecto para tu mañana.',
-          price: 'desde $5'
+          price: 'desde $7'
         },
         {
           name: 'Donuts de Mochi',
           description: 'Crujientes por fuera, suaves por dentro. Más de 12 sabores incluyendo Ube, Matcha y especiales de temporada.',
-          price: 'desde $3.50'
+          price: 'desde $3.75'
         },
         {
           name: 'Malasada Fresca',
           description: 'Donuts tradicionales hawaianos-portugueses, hechos frescos cada mañana con cobertura de azúcar.',
-          price: 'desde $4'
+          price: 'desde $3.95'
         },
         {
           name: 'Bowl de Açaí',
           description: 'Açaí fresco con frutas tropicales, granola y miel. Una opción de desayuno hawaiano saludable.',
-          price: 'desde $10'
+          price: 'desde $13'
         }
       ]
     },

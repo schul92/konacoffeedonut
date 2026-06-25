@@ -233,7 +233,7 @@ const malasadaSchema = {
   offers: {
     '@type': 'Offer',
     priceCurrency: 'USD',
-    price: '4.00',
+    price: '3.95',
     availability: 'https://schema.org/InStock',
     seller: {
       '@type': 'Restaurant',

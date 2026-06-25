@@ -67,7 +67,7 @@ const content = {
           name: 'Injeolmi Bingsu',
           description:
             'The #1 bestseller in Korea. Nutty roasted soybean powder, chewy rice cake cubes, and condensed milk drizzle over milk-snow ice.',
-          price: 'from $14',
+          price: 'from $15',
           tag: 'Most Popular',
         },
         {
@@ -88,7 +88,7 @@ const content = {
           name: 'Oreo Bingsu',
           description:
             'Crushed Oreo cookies, chocolate sauce, and vanilla ice cream on a mountain of milk-snow. A favorite with kids and chocolate lovers.',
-          price: 'from $14',
+          price: 'from $15',
           tag: 'Kids\' Favorite',
         },
         {
@@ -102,7 +102,7 @@ const content = {
           name: 'Classic Patbingsu',
           description:
             'The original Korean shaved ice. Slow-simmered sweet red beans, rice cakes, and a touch of condensed milk. Timeless and traditional.',
-          price: 'from $12',
+          price: 'from $15',
           tag: 'Traditional',
         },
       ],
@@ -194,7 +194,7 @@ const content = {
           name: 'インジョルミビンス',
           description:
             '韓国で一番人気。香ばしいきな粉、もちもちのお餅、練乳がミルク氷にかかった定番の味。',
-          price: '$14〜',
+          price: '$15〜',
           tag: '一番人気',
         },
         {
@@ -215,7 +215,7 @@ const content = {
           name: 'オレオビンス',
           description:
             '砕いたオレオ、チョコレートソース、バニラアイスをミルク氷の山にトッピング。お子様やチョコ好きに大人気。',
-          price: '$14〜',
+          price: '$15〜',
           tag: 'お子様に人気',
         },
         {
@@ -229,7 +229,7 @@ const content = {
           name: 'クラシック パッビンス',
           description:
             '韓国かき氷の原点。じっくり炊いた小豆、お餅、練乳のシンプルで伝統的な一品。',
-          price: '$12〜',
+          price: '$15〜',
           tag: '定番',
         },
       ],
@@ -321,7 +321,7 @@ const content = {
           name: '인절미 빙수',
           description:
             '한국 빙수 부동의 1위. 고소한 콩고물, 쫀득한 인절미 떡, 연유가 우유 눈꽃 얼음 위에 소복이. 한 입이면 서울 카페에 온 기분.',
-          price: '$14~',
+          price: '$15~',
           tag: '인기 No.1',
         },
         {
@@ -342,7 +342,7 @@ const content = {
           name: '오레오 빙수',
           description:
             '부순 오레오, 초콜릿 소스, 바닐라 아이스크림을 눈꽃 얼음 위에. 아이들과 초코 덕후들의 원픽.',
-          price: '$14~',
+          price: '$15~',
           tag: '어린이 인기',
         },
         {
@@ -356,7 +356,7 @@ const content = {
           name: '클래식 팥빙수',
           description:
             '빙수의 원조. 정성껏 끓인 통팥, 떡, 연유 한 줄기. 어릴 적 그 맛 그대로, 심플하지만 깊은 전통의 맛.',
-          price: '$12~',
+          price: '$15~',
           tag: '전통',
         },
       ],
@@ -447,7 +447,7 @@ const content = {
           name: '年糕黄豆粉Bingsu',
           description:
             '韩国人气第一名。香浓烤黄豆粉、Q弹年糕块、炼乳淋在绵密牛奶雪冰上。',
-          price: '$14起',
+          price: '$15起',
           tag: '最受欢迎',
         },
         {
@@ -468,7 +468,7 @@ const content = {
           name: '奥利奥Bingsu',
           description:
             '碎奥利奥饼干、巧克力酱和香草冰淇淋堆叠在牛奶雪冰山上。孩子和巧克力爱好者的最爱。',
-          price: '$14起',
+          price: '$15起',
           tag: '儿童最爱',
         },
         {
@@ -482,7 +482,7 @@ const content = {
           name: '经典红豆Bingsu',
           description:
             '韩式刨冰的原点。慢火熬制红豆、年糕和炼乳。简单而经典的传统味道。',
-          price: '$12起',
+          price: '$15起',
           tag: '传统',
         },
       ],
