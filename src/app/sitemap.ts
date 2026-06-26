@@ -64,6 +64,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/matcha-waikiki',
     '/blog/what-is-hojicha-waikiki',
     '/blog/strawberry-matcha-latte-waikiki',
+    // Competitor-conquest batch (June 2026)
+    '/blog/best-coffee-shops-waikiki',
+    '/blog/island-vintage-vs-kona-coffee-donut',
+    '/blog/kona-coffee-purveyors-vs-kona-coffee-donut',
     // Second batch (May 2026)
     '/blog/how-to-eat-bingsu',
     '/blog/best-budget-eats-waikiki',
@@ -127,6 +131,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/matcha-waikiki': 0.9,
     '/blog/what-is-hojicha-waikiki': 0.85,
     '/blog/strawberry-matcha-latte-waikiki': 0.85,
+    '/blog/best-coffee-shops-waikiki': 0.9, // "best coffee waikiki" — beats all 3 rivals
+    '/blog/island-vintage-vs-kona-coffee-donut': 0.9, // conquest: Island Vintage / açaí
+    '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': 0.9, // conquest: Purveyors / best kona coffee
     '/blog/how-to-eat-bingsu': 0.9, // captures 1,464 mo "how to eat bingsu" impressions
     '/blog/best-budget-eats-waikiki': 0.9, // pos #1 for "best places to eat in waikiki on a budget"
     '/blog/best-acai-bowls-waikiki': 0.85,
@@ -175,6 +182,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/malasada-vs-mochi-donut-waikiki': 'weekly',
     '/blog/kona-affogato-waikiki': 'weekly',
     '/blog/best-mochi-donuts-waikiki': 'weekly',
+    '/blog/best-coffee-shops-waikiki': 'weekly',
+    '/blog/island-vintage-vs-kona-coffee-donut': 'weekly',
+    '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': 'weekly',
     '/blog/how-to-eat-bingsu': 'weekly',
     '/blog/best-budget-eats-waikiki': 'weekly',
     '/blog/best-acai-bowls-waikiki': 'weekly',
