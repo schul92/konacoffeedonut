@@ -65,6 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/what-is-hojicha-waikiki',
     '/blog/strawberry-matcha-latte-waikiki',
     // Competitor-conquest batch (June 2026)
+    '/blog/honolulu-coffee-waikiki',
     '/blog/best-coffee-shops-waikiki',
     '/blog/island-vintage-vs-kona-coffee-donut',
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut',
@@ -131,6 +132,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/matcha-waikiki': 0.9,
     '/blog/what-is-hojicha-waikiki': 0.85,
     '/blog/strawberry-matcha-latte-waikiki': 0.85,
+    '/blog/honolulu-coffee-waikiki': 0.9, // conquest: Honolulu Coffee (we pour their beans)
     '/blog/best-coffee-shops-waikiki': 0.9, // "best coffee waikiki" — beats all 3 rivals
     '/blog/island-vintage-vs-kona-coffee-donut': 0.9, // conquest: Island Vintage / açaí
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': 0.9, // conquest: Purveyors / best kona coffee
@@ -182,6 +184,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/malasada-vs-mochi-donut-waikiki': 'weekly',
     '/blog/kona-affogato-waikiki': 'weekly',
     '/blog/best-mochi-donuts-waikiki': 'weekly',
+    '/blog/honolulu-coffee-waikiki': 'weekly',
     '/blog/best-coffee-shops-waikiki': 'weekly',
     '/blog/island-vintage-vs-kona-coffee-donut': 'weekly',
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': 'weekly',

@@ -16,6 +16,14 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'honolulu-coffee-waikiki',
+        image: '/images/blog/honolulu-coffee-waikiki.jpeg',
+        category: 'Coffee',
+        title: 'Honolulu Coffee in Waikiki: Drink the Same 100% Kona Beans (2026)',
+        excerpt: 'Love Honolulu Coffee\'s Kona? Here\'s where to drink the very same 100% Kona beans in Waikiki — freshly brewed at Kona Coffee Donut?, open late and paired with mochi donuts.',
+        readTime: 7,
+      },
+      {
         slug: 'best-coffee-shops-waikiki',
         image: '/images/blog/best-coffee-shops-waikiki.jpeg',
         category: 'Coffee',
@@ -329,6 +337,14 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'honolulu-coffee-waikiki',
+        image: '/images/blog/honolulu-coffee-waikiki.jpeg',
+        category: 'コーヒー',
+        title: 'ワイキキのホノルルコーヒー：同じ100%コナ豆を飲める場所（2026）',
+        excerpt: 'ホノルルコーヒーのコナがお好きですか？ワイキキでまさに同じ100%コナ豆を Kona Coffee Donut? で淹れたて、モチドーナツと一緒に飲める場所をご紹介。',
+        readTime: 7,
+      },
+      {
         slug: 'best-coffee-shops-waikiki',
         image: '/images/blog/best-coffee-shops-waikiki.jpeg',
         category: 'コーヒー',
@@ -596,6 +612,14 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'honolulu-coffee-waikiki',
+        image: '/images/blog/honolulu-coffee-waikiki.jpeg',
+        category: '커피',
+        title: '와이키키의 호놀룰루 커피: 같은 100% 코나 원두 마시는 곳 (2026)',
+        excerpt: '호놀룰루 커피의 코나를 좋아하세요? 와이키키에서 바로 그 똑같은 100% 코나 원두를 Kona Coffee Donut? 에서 갓 내려, 모찌 도넛과 함께 마실 수 있는 곳을 소개합니다.',
+        readTime: 7,
+      },
       {
         slug: 'best-coffee-shops-waikiki',
         image: '/images/blog/best-coffee-shops-waikiki.jpeg',
@@ -865,6 +889,14 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'honolulu-coffee-waikiki',
+        image: '/images/blog/honolulu-coffee-waikiki.jpeg',
+        category: '咖啡',
+        title: '威基基的檀香山咖啡：在哪喝到同样的100%科纳豆（2026）',
+        excerpt: '喜爱檀香山咖啡的科纳？看看在威基基哪里能喝到正是同样的100%科纳豆——Kona Coffee Donut? 现冲现做，还能搭配麻糬甜甜圈。',
+        readTime: 7,
+      },
+      {
         slug: 'best-coffee-shops-waikiki',
         image: '/images/blog/best-coffee-shops-waikiki.jpeg',
         category: '咖啡',
@@ -1132,6 +1164,14 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'honolulu-coffee-waikiki',
+        image: '/images/blog/honolulu-coffee-waikiki.jpeg',
+        category: 'Café',
+        title: 'Honolulu Coffee en Waikiki: Bebe los Mismos Granos 100% Kona (2026)',
+        excerpt: '¿Te encanta el Kona de Honolulu Coffee? Descubre dónde beber esos mismos granos 100% Kona en Waikiki — recién hecho en Kona Coffee Donut?, abierto hasta tarde y con mochi donuts.',
+        readTime: 7,
+      },
       {
         slug: 'best-coffee-shops-waikiki',
         image: '/images/blog/best-coffee-shops-waikiki.jpeg',
