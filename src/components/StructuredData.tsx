@@ -1,4 +1,3 @@
-import Script from 'next/script';
 import { seoSameAsUrls } from '@/lib/socialLinks';
 
 interface StructuredDataProps {
@@ -82,6 +81,13 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         validFrom: '2026-04-25',
       },
     ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '150',
+      bestRating: '5',
+      worstRating: '1',
+    },
     servesCuisine: ['Kona Coffee', '100% Kona Coffee', 'Coffee', 'Espresso', 'Donuts', 'Malasada', 'Bingsu', 'Hawaiian', 'Desserts'],
     menu: `https://www.konacoffeedonut.com/${locale}/menu`,
     acceptsReservations: false,
@@ -651,70 +657,70 @@ export default function StructuredData({ locale }: StructuredDataProps) {
   return (
     <>
       {/* Local Business Schema */}
-      <Script
+      <script
         id="local-business-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       {/* Organization Schema */}
-      <Script
+      <script
         id="organization-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
 
       {/* Website Schema */}
-      <Script
+      <script
         id="website-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
 
       {/* Menu Schema */}
-      <Script
+      <script
         id="menu-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(menuSchema) }}
       />
 
       {/* Breadcrumb Schema */}
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Video Object Schema */}
-      <Script
+      <script
         id="video-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
       />
 
       {/* GEO: WebPage Schema with freshness signals */}
-      <Script
+      <script
         id="webpage-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
 
       {/* FAQ Schema */}
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Product Schema */}
-      <Script
+      <script
         id="product-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
 
       {/* GEO: ItemList Schema for Knowledge Graph */}
-      <Script
+      <script
         id="itemlist-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}

@@ -76,7 +76,7 @@
         }
       ],
       "destination": "https://www.konacoffeedonut.com/:path*",
-      "permanent": true
+      "statusCode": 301
     }
   ],
   "crons": [
