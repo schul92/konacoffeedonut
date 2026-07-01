@@ -69,6 +69,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-coffee-shops-waikiki',
     '/blog/island-vintage-vs-kona-coffee-donut',
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut',
+    // Matcha / hojicha cluster (June 2026)
+    '/blog/matcha-story-waikiki',
+    '/blog/matcha-vs-hojicha-waikiki',
+    '/blog/best-matcha-drinks-waikiki',
+    '/blog/matcha-vs-coffee-waikiki',
+    '/blog/matcha-benefits-waikiki',
+    '/blog/iced-matcha-latte-waikiki',
+    '/blog/hojicha-latte-waikiki',
     // Second batch (May 2026)
     '/blog/how-to-eat-bingsu',
     '/blog/best-budget-eats-waikiki',
@@ -136,6 +144,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-coffee-shops-waikiki': 0.9, // "best coffee waikiki" — beats all 3 rivals
     '/blog/island-vintage-vs-kona-coffee-donut': 0.9, // conquest: Island Vintage / açaí
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': 0.9, // conquest: Purveyors / best kona coffee
+    '/blog/matcha-story-waikiki': 0.85, // matcha cluster
+    '/blog/matcha-vs-hojicha-waikiki': 0.85,
+    '/blog/best-matcha-drinks-waikiki': 0.9, // buyer: best matcha waikiki
+    '/blog/matcha-vs-coffee-waikiki': 0.85,
+    '/blog/matcha-benefits-waikiki': 0.85,
+    '/blog/iced-matcha-latte-waikiki': 0.9, // buyer: iced matcha latte
+    '/blog/hojicha-latte-waikiki': 0.85, // builds under-ordered hojicha
     '/blog/how-to-eat-bingsu': 0.9, // captures 1,464 mo "how to eat bingsu" impressions
     '/blog/best-budget-eats-waikiki': 0.9, // pos #1 for "best places to eat in waikiki on a budget"
     '/blog/best-acai-bowls-waikiki': 0.85,
@@ -188,6 +203,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-coffee-shops-waikiki': 'weekly',
     '/blog/island-vintage-vs-kona-coffee-donut': 'weekly',
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': 'weekly',
+    '/blog/matcha-story-waikiki': 'weekly',
+    '/blog/matcha-vs-hojicha-waikiki': 'weekly',
+    '/blog/best-matcha-drinks-waikiki': 'weekly',
+    '/blog/matcha-vs-coffee-waikiki': 'weekly',
+    '/blog/matcha-benefits-waikiki': 'weekly',
+    '/blog/iced-matcha-latte-waikiki': 'weekly',
+    '/blog/hojicha-latte-waikiki': 'weekly',
     '/blog/how-to-eat-bingsu': 'weekly',
     '/blog/best-budget-eats-waikiki': 'weekly',
     '/blog/best-acai-bowls-waikiki': 'weekly',
