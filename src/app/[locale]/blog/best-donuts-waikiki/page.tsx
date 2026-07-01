@@ -143,7 +143,7 @@ const content = {
         ['Origin', 'Japanese-Hawaiian fusion', 'Portuguese-Hawaiian', 'American classic'],
         ['Shape', 'Eight-ball ring', 'Round ball (no hole)', 'Ring or filled'],
         ['Best For', 'Unique texture lovers', 'Traditional experience', 'Classic donut fans'],
-        ['Gluten-Free Options', 'Some (rice flour base)', 'Rarely', 'Rarely'],
+        ['Allergen Information', 'Ask staff before ordering', 'Ask staff before ordering', 'Ask staff before ordering'],
         ['Price Range', '$11.25 / 3pc', '$2 - $4', '$1.50 - $4'],
         ['Where to Try', 'Kona Coffee Donut', "Leonard's Bakery", 'Donut King'],
       ],

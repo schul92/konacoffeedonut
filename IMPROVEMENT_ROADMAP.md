@@ -271,7 +271,7 @@ Currently hidden - let's make them BOLD:
 **Use Cases**:
 - "Are you open now?"
 - "Do you have WiFi?"
-- "Gluten-free options?"
+- "Allergen information?"
 - Multilingual support
 
 ---
