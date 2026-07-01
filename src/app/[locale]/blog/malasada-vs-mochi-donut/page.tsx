@@ -66,8 +66,8 @@ const content = {
           a: 'A malasada is a Portuguese-style fried dough ball made with wheat flour, rolled in sugar, and sometimes filled with cream or custard. A mochi donut is made with glutinous rice flour (mochiko), giving it a distinctive chewy-crispy QQ texture, and is shaped like a ring of 8 connected balls dipped in colorful glaze.',
         },
         {
-          q: 'Are mochi donuts gluten-free?',
-          a: 'Traditional mochi donuts made with 100% mochiko (glutinous rice flour) are naturally gluten-free. However, some recipes blend rice flour with wheat flour, so always check with the shop. At Kona Coffee Donut we can advise you on ingredients for each flavor.',
+          q: 'Do mochi donuts contain allergens?',
+          a: 'Recipes and toppings can vary. Please ask our staff about current ingredients and possible cross-contact before ordering if you have dietary restrictions or allergies.',
         },
         {
           q: 'Where can I get both malasadas and mochi donuts in Waikiki?',
@@ -399,10 +399,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Are mochi donuts gluten-free?',
+      name: 'Do mochi donuts contain allergens?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Traditional mochi donuts made with 100% mochiko (glutinous rice flour) are naturally gluten-free. However, some recipes blend rice flour with wheat flour, so always check with the shop.',
+        text: 'Recipes and toppings can vary. Please ask staff about current ingredients and possible cross-contact before ordering if you have dietary restrictions or allergies.',
       },
     },
     {

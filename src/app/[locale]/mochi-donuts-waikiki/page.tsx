@@ -77,10 +77,10 @@ const content = {
         ['Main flour', 'Mochiko (rice flour)', 'Wheat flour'],
         ['Shape', 'Connected ball ring', 'Classic ring or filled'],
         ['Origin', 'Japanese-Hawaiian fusion', 'European/American'],
-        ['Gluten', 'Naturally gluten-friendly*', 'Contains gluten'],
+        ['Allergen note', 'Ask staff before ordering', 'Ask staff before ordering'],
         ['Viral factor', 'Highly Instagrammable', 'Classic comfort'],
       ],
-      footnote: '*Made in a shared kitchen. Not certified gluten-free.',
+      footnote: '*Please ask staff about current ingredients and possible cross-contact before ordering.',
     },
     faq: {
       title: 'Frequently Asked Questions',
@@ -90,8 +90,8 @@ const content = {
           a: 'Mochi donuts are made primarily with mochiko (sweet rice flour), which gives them their distinctive chewy texture. Combined with tapioca starch and other ingredients, they create the perfect balance of crispy outside and soft, springy inside.',
         },
         {
-          q: 'Are mochi donuts gluten-free?',
-          a: 'Our mochi donuts are made with rice flour rather than wheat flour, making them naturally gluten-friendly. However, they are prepared in a shared kitchen, so we cannot guarantee they are 100% gluten-free for those with severe allergies or celiac disease.',
+          q: 'Do mochi donuts contain allergens?',
+          a: 'Please ask our staff about current ingredients and possible cross-contact before ordering if you have any dietary restrictions or allergies.',
         },
         {
           q: 'Where can I get mochi donuts in Waikiki?',
@@ -505,10 +505,10 @@ const content = {
         ['Harina principal', 'Mochiko (harina de arroz)', 'Harina de trigo'],
         ['Forma', 'Anillo de bolitas', 'Anillo clasico o relleno'],
         ['Origen', 'Fusion japonesa-hawaiana', 'Europeo/Americano'],
-        ['Gluten', 'Naturalmente sin gluten*', 'Contiene gluten'],
+        ['Nota de alergenos', 'Pregunta antes de ordenar', 'Pregunta antes de ordenar'],
         ['Factor viral', 'Muy instagrameable', 'Clasico reconfortante'],
       ],
-      footnote: '*Preparado en cocina compartida. No certificado libre de gluten.',
+      footnote: '*Pregunta al personal sobre ingredientes actuales y posible contacto cruzado antes de ordenar.',
     },
     faq: {
       title: 'Preguntas Frecuentes',
@@ -518,8 +518,8 @@ const content = {
           a: 'Los donuts de mochi se hacen principalmente con mochiko (harina de arroz dulce), combinada con almidon de tapioca para crear la textura perfecta.',
         },
         {
-          q: 'Son los donuts de mochi libres de gluten?',
-          a: 'Nuestros donuts de mochi usan harina de arroz en lugar de trigo, pero se preparan en una cocina compartida, por lo que no podemos garantizar que sean 100% libres de gluten.',
+          q: 'Los mochi donuts contienen alergenos?',
+          a: 'Pregunta al personal sobre ingredientes actuales y posible contacto cruzado antes de ordenar si tienes restricciones dietarias o alergias.',
         },
         {
           q: 'Donde puedo conseguir donuts de mochi en Waikiki?',

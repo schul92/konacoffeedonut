@@ -261,7 +261,7 @@ const content = {
     },
     mochiDonut: {
       title: 'Mochi Donuts — The Irresistible Texture of MOCHILAND',
-      p1: 'Mochi donuts are inspired by Japanese mochi (rice cake), featuring a uniquely crispy exterior and chewy interior. Unlike regular donuts, they use less gluten for a lighter texture that\'s satisfying without being heavy.',
+      p1: 'Mochi donuts are inspired by Japanese mochi (rice cake), featuring a uniquely crispy exterior and chewy interior. Unlike regular donuts, they have a lighter, chewy texture that\'s satisfying without being heavy.',
       p2: 'Our mochi donut brand MOCHILAND at Kona Coffee Donut offers 12+ flavors including ube, matcha, brown sugar, strawberry, taro, and lilikoi. All mochi donuts are freshly made every morning and are best enjoyed while the glaze is still glistening.',
       p3: 'While mochi donuts have become trendy in Korea too, Hawaiian mochi donuts stand apart with their tropical fruit flavors and local ingredients. The ube and lilikoi flavors in particular are uniquely Hawaiian experiences.',
     },

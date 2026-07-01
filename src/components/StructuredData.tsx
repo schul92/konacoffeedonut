@@ -440,10 +440,10 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       },
       {
         '@type': 'Question',
-        name: 'Do you have vegan or gluten-free options?',
+        name: 'Do you have allergen information?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'While our mochi donuts contain rice flour which is naturally gluten-free, they may be prepared in facilities that handle wheat. Please inform our staff about any dietary restrictions and we\'ll do our best to accommodate you.',
+          text: 'Please ask our staff about current ingredients and possible cross-contact before ordering if you have any dietary restrictions or allergies.',
         },
       },
       {

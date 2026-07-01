@@ -40,7 +40,7 @@ const content: Record<Locale, BlogContent> = {
           'Pon-de-ring shape — 8 balls connected in a circle',
           'Chewy and slightly bouncy interior, lightly crispy exterior',
           'Lower in fat than regular donuts because of the rice flour base',
-          'Often gluten-free friendly (ask staff for current ingredient list)',
+          'Ask staff for the current ingredient list if you have dietary restrictions',
         ],
       },
       {
@@ -98,8 +98,8 @@ const content: Record<Locale, BlogContent> = {
         a: 'We offer 10+ rotating mochi donut flavors including Original Glazed, Ube, Matcha, Strawberry, Mango, Chocolate, Taro, Black Sesame, Cookies & Cream, and Coffee. Seasonal specials change throughout the year.',
       },
       {
-        q: 'Are mochi donuts gluten-free?',
-        a: 'Mochi donuts are made with glutinous rice flour, which is naturally gluten-free. However, some recipes include small amounts of wheat flour. Ask our staff for the current ingredient list if you have a gluten allergy or sensitivity.',
+        q: 'Do mochi donuts contain allergens?',
+        a: 'Please ask our staff for the current ingredient list if you have dietary restrictions or allergies.',
       },
       {
         q: 'How much do mochi donuts cost in Waikiki?',
@@ -322,7 +322,7 @@ const content: Record<Locale, BlogContent> = {
       directionsLabel: 'Cómo llegar',
     },
     sections: [
-      { h2: 'Qué hace al Mochi Donut diferente', body: 'Harina de arroz glutinoso (no de trigo) le da textura masticable y rebote único.', bullets: ['Harina de arroz glutinoso', 'Forma pon-de-ring (8 bolas)', 'Más bajo en grasa', 'Posible sin gluten — pregunta'] },
+      { h2: 'Qué hace al Mochi Donut diferente', body: 'Su textura masticable y rebote único lo hacen diferente de una dona clásica.', bullets: ['Textura masticable', 'Forma pon-de-ring (8 bolas)', 'Más bajo en grasa', 'Pregunta al personal sobre ingredientes'] },
       {
         h2: 'Sabores Disponibles',
         body: 'Núcleo del menú durante todo el año.',

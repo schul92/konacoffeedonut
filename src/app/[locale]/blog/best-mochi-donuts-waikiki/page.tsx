@@ -92,8 +92,8 @@ const content: Record<Locale, BlogContent> = {
         a: 'Mochi donuts are made primarily with glutinous rice flour (mochiko), which gives them their signature chewy, bouncy texture. They are fried fresh so the outside is crispy while the inside stays soft and stretchy.',
       },
       {
-        q: 'Are mochi donuts gluten-free?',
-        a: 'No. Even though they use rice flour, our mochi donut recipe also contains wheat, so they are not gluten-free or suitable for people with celiac disease. Please ask our staff about specific ingredients and allergens before ordering.',
+        q: 'Do mochi donuts contain allergens?',
+        a: 'Please ask our staff about current ingredients and possible cross-contact before ordering if you have any dietary restrictions or allergies.',
       },
       {
         q: 'How much are mochi donuts in Waikiki?',
@@ -500,8 +500,8 @@ const content: Record<Locale, BlogContent> = {
         a: 'Los mochi donuts se hacen principalmente con harina de arroz glutinoso (mochiko), que les da su característica textura masticable y elástica. Se fríen frescos, por lo que el exterior queda crujiente y el interior suave y elástico.',
       },
       {
-        q: '¿Los mochi donuts son sin gluten?',
-        a: 'No. Aunque usan harina de arroz, nuestra receta de mochi donut también contiene trigo, por lo que no son sin gluten ni aptos para personas con enfermedad celíaca. Pregunta a nuestro personal sobre ingredientes y alérgenos antes de pedir.',
+        q: '¿Los mochi donuts contienen alérgenos?',
+        a: 'Pregunta a nuestro personal sobre ingredientes actuales y posible contacto cruzado antes de ordenar si tienes restricciones dietarias o alergias.',
       },
       {
         q: '¿Cuánto cuestan los mochi donuts en Waikiki?',

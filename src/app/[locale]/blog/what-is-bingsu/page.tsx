@@ -183,8 +183,8 @@ const content = {
           answer: 'Bingsu tastes like a cross between ice cream and snow cones, but lighter and creamier. The milk ice base has a subtle sweetness, and the toppings add layers of flavor — from the earthy sweetness of red beans to the bright freshness of seasonal fruit. The texture is what sets it apart: fluffy, snow-like ice that melts on your tongue.',
         },
         {
-          question: 'Is bingsu gluten-free?',
-          answer: 'Traditional patbingsu with red beans, condensed milk, and rice cakes is generally gluten-free, as rice cakes (tteok) are made from rice flour. However, modern variations with Oreo cookies, brownies, or cereal toppings do contain gluten. Fruit bingsu is typically the safest gluten-free option. Always check with the restaurant about specific ingredients.',
+          question: 'Does bingsu contain allergens?',
+          answer: 'Bingsu toppings and ingredients vary by order. Please ask staff about current ingredients and possible cross-contact before ordering if you have dietary restrictions or allergies.',
         },
         {
           question: 'How many calories are in bingsu?',
@@ -864,10 +864,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Is bingsu gluten-free?',
+      name: 'Does bingsu contain allergens?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Traditional patbingsu with red beans, condensed milk, and rice cakes is generally gluten-free, as rice cakes (tteok) are made from rice flour. However, modern variations with Oreo cookies, brownies, or cereal toppings do contain gluten. Fruit bingsu is typically the safest gluten-free option.',
+        text: 'Bingsu toppings and ingredients vary by order. Please ask staff about current ingredients and possible cross-contact before ordering if you have dietary restrictions or allergies.',
       },
     },
     {

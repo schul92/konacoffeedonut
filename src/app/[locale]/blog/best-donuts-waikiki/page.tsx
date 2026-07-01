@@ -86,7 +86,7 @@ const content = {
         priceRange: '$$$',
         knownFor: 'Taro-based, vegan, organic donuts',
         description:
-          "Holey Grail brought the health-conscious donut revolution to Hawaii. Every donut starts with a taro base, making them naturally vegan and gluten-friendly. The texture is dense yet tender, almost cake-like, with vibrant natural coloring from the taro. Flavors rotate daily and lean creative \u2014 think lilikoi glaze, guava cream, and ube coconut. They're made to order, so you'll watch your donuts come together fresh. Originally from Kauai's food truck scene, their Ward Village location brings the experience to Honolulu.",
+          "Holey Grail brought the health-conscious donut revolution to Hawaii. Every donut starts with a taro base, with a plant-forward style. The texture is dense yet tender, almost cake-like, with vibrant natural coloring from the taro. Flavors rotate daily and lean creative \u2014 think lilikoi glaze, guava cream, and ube coconut. They're made to order, so you'll watch your donuts come together fresh. Originally from Kauai's food truck scene, their Ward Village location brings the experience to Honolulu.",
         mustTry: 'Taro Donut with Lilikoi Glaze',
         whyVisit:
           "The best option for vegan, plant-based, or health-conscious visitors. The made-to-order experience is worth the wait. Ward Village is a quick Uber or 15-minute bus from Waikiki.",

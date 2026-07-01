@@ -191,8 +191,8 @@ const content = {
           answer: 'The biggest difference is the flour. A regular donut is made with wheat flour, giving it a soft, cakey, or airy texture. A mochi donut uses glutinous rice flour and tapioca starch, creating a chewy, stretchy, bouncy "QQ" bite that\'s closer to mochi. Mochi donuts are also shaped as a pon-de-ring of eight connected balls rather than a single ring with a hole.',
         },
         {
-          question: 'Are mochi donuts gluten-free?',
-          answer: 'Not necessarily. While mochi donuts are made with rice flour and tapioca starch rather than wheat flour, they are often fried in shared fryers and may use wheat-based glazes or ingredients, so they are not guaranteed to be gluten-free. If you have a gluten allergy or celiac disease, always ask the shop about cross-contamination and specific ingredients before ordering.',
+          question: 'Do mochi donuts contain allergens?',
+          answer: 'Recipes and toppings can vary. If you have dietary restrictions or allergies, ask the shop about current ingredients and possible cross-contact before ordering.',
         },
         {
           question: 'Where can I get fresh mochi donuts in Waikiki?',
@@ -880,10 +880,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Are mochi donuts gluten-free?',
+      name: 'Do mochi donuts contain allergens?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Not necessarily. While mochi donuts are made with rice flour and tapioca starch rather than wheat flour, they are often fried in shared fryers and may use wheat-based glazes or ingredients, so they are not guaranteed to be gluten-free. If you have a gluten allergy or celiac disease, always ask the shop about cross-contamination and specific ingredients before ordering.',
+        text: 'Recipes and toppings can vary. If you have dietary restrictions or allergies, ask the shop about current ingredients and possible cross-contact before ordering.',
       },
     },
     {

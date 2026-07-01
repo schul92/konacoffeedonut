@@ -99,7 +99,7 @@ const content = {
         },
         {
           question: 'Are your gourmet donuts suitable for dietary restrictions?',
-          answer: 'Yes! Our mochi donuts are naturally gluten-friendly (made with rice flour). We also offer vegan options. Please ask our staff about specific dietary requirements.'
+          answer: 'Please ask our staff about current ingredients and possible cross-contact before ordering if you have any dietary restrictions or allergies.'
         },
         {
           question: 'How should I store gourmet donuts?',

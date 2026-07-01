@@ -84,7 +84,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'Which is better, malasada or mochi donut?', a: 'They\'re different desserts — neither is "better." Malasadas are the traditional Hawaii experience. Mochi donuts are the modern, photogenic, chewy alternative. Try both if you can.' },
       { q: 'Where can I get both malasadas and mochi donuts in Waikiki?', a: 'Kona Coffee Donut at 2142 Kalākaua Ave serves both fresh daily — the only walking-distance spot in central Waikiki for both. Open 7 AM to 9 PM.' },
       { q: 'Are malasadas Hawaiian or Portuguese?', a: 'Both. Malasadas originated in Portugal (specifically the Azores) but became a Hawaiian tradition after Portuguese sugar plantation workers brought them to the islands in the 1800s.' },
-      { q: 'Are mochi donuts gluten-free?', a: 'Mochi donuts are made with glutinous rice flour, which is naturally gluten-free. However, recipes may include small amounts of wheat flour. Ask staff for the current ingredient list.' },
+      { q: 'Do mochi donuts contain allergens?', a: 'Recipes and toppings can vary. Please ask staff for the current ingredient list if you have dietary restrictions or allergies.' },
       { q: 'Which donut holds up better as a takeaway?', a: 'Mochi donuts hold up better — they\'re still good 24 hours later in a sealed container. Malasadas are best eaten within 30 minutes of frying for the best texture.' },
     ],
     finalCTA: {
