@@ -86,7 +86,7 @@ const content = {
         priceRange: '$$$',
         knownFor: 'Taro-based, vegan, organic donuts',
         description:
-          "Holey Grail brought the health-conscious donut revolution to Hawaii. Every donut starts with a taro base, with a plant-forward style. The texture is dense yet tender, almost cake-like, with vibrant natural coloring from the taro. Flavors rotate daily and lean creative \u2014 think lilikoi glaze, guava cream, and ube coconut. They're made to order, so you'll watch your donuts come together fresh. Originally from Kauai's food truck scene, their Ward Village location brings the experience to Honolulu.",
+          "Holey Grail brought the health-conscious donut revolution to Hawaii. Every donut starts with a taro base, making them naturally vegan. The texture is dense yet tender, almost cake-like, with vibrant natural coloring from the taro. Flavors rotate daily and lean creative \u2014 think lilikoi glaze, guava cream, and ube coconut. They're made to order, so you'll watch your donuts come together fresh. Originally from Kauai's food truck scene, their Ward Village location brings the experience to Honolulu.",
         mustTry: 'Taro Donut with Lilikoi Glaze',
         whyVisit:
           "The best option for vegan, plant-based, or health-conscious visitors. The made-to-order experience is worth the wait. Ward Village is a quick Uber or 15-minute bus from Waikiki.",
@@ -143,7 +143,6 @@ const content = {
         ['Origin', 'Japanese-Hawaiian fusion', 'Portuguese-Hawaiian', 'American classic'],
         ['Shape', 'Eight-ball ring', 'Round ball (no hole)', 'Ring or filled'],
         ['Best For', 'Unique texture lovers', 'Traditional experience', 'Classic donut fans'],
-        ['Allergen Information', 'Ask staff before ordering', 'Ask staff before ordering', 'Ask staff before ordering'],
         ['Price Range', '$11.25 / 3pc', '$2 - $4', '$1.50 - $4'],
         ['Where to Try', 'Kona Coffee Donut', "Leonard's Bakery", 'Donut King'],
       ],
@@ -269,7 +268,7 @@ const content = {
         priceRange: '$$$',
         knownFor: 'タロベース、ヴィーガン、オーガニックドーナツ',
         description:
-          'ホーリーグレイルはハワイにヘルスコンシャスなドーナツ革命をもたらしました。すべてのドーナツはタロベースで、ナチュラルにヴィーガンでグルテンフレンドリー。タロの自然な色合いが鮮やかで、食感は密度がありながらもしっとり、ほぼケーキのよう。リリコイグレーズ、グアバクリーム、紫芋ココナッツなどクリエイティブなフレーバーが日替わりで登場。注文を受けてから作るので、ドーナツが出来上がる過程を見られます。',
+          'ホーリーグレイルはハワイにヘルスコンシャスなドーナツ革命をもたらしました。すべてのドーナツはタロベースで、ナチュラルにヴィーガン。タロの自然な色合いが鮮やかで、食感は密度がありながらもしっとり、ほぼケーキのよう。リリコイグレーズ、グアバクリーム、紫芋ココナッツなどクリエイティブなフレーバーが日替わりで登場。注文を受けてから作るので、ドーナツが出来上がる過程を見られます。',
         mustTry: 'タロドーナツ リリコイグレーズ',
         whyVisit:
           'ヴィーガン、プラントベース、ヘルスコンシャスな方に最適。注文を受けてから作る体験は待つ価値あり。ワードビレッジはワイキキからUberまたはバスで15分。',
@@ -326,7 +325,6 @@ const content = {
         ['起源', '日本×ハワイ融合', 'ポルトガル×ハワイ', 'アメリカンクラシック'],
         ['形状', '八つ玉リング', '丸型（穴なし）', 'リングまたはフィリング入り'],
         ['おすすめ', 'ユニークな食感好き', '伝統的体験を求める方', 'クラシックドーナツファン'],
-        ['グルテンフリー', '一部あり（米粉ベース）', 'ほぼなし', 'ほぼなし'],
         ['価格帯', '$11.25 / 3個', '$2 - $4', '$1.50 - $4'],
         ['おすすめ店', 'コナコーヒードーナツ', 'レナーズベーカリー', 'ドーナツキング'],
       ],
@@ -452,7 +450,7 @@ const content = {
         priceRange: '$$$',
         knownFor: '타로 베이스, 비건, 오가닉 도넛',
         description:
-          '홀리 그레일은 하와이에 건강 의식적 도넛 혁명을 가져왔습니다. 모든 도넛이 타로 베이스로 자연스럽게 비건이며 글루텐 프렌들리. 타로의 자연 색감이 선명하고, 식감은 촘촘하면서도 촉촉합니다. 릴리코이 글레이즈, 구아바 크림, 우베 코코넛 등 창의적인 맛이 매일 바뀝니다.',
+          '홀리 그레일은 하와이에 건강 의식적 도넛 혁명을 가져왔습니다. 모든 도넛이 타로 베이스로 자연스럽게 비건입니다. 타로의 자연 색감이 선명하고, 식감은 촘촘하면서도 촉촉합니다. 릴리코이 글레이즈, 구아바 크림, 우베 코코넛 등 창의적인 맛이 매일 바뀝니다.',
         mustTry: '타로 도넛 릴리코이 글레이즈',
         whyVisit:
           '비건, 식물 기반, 건강 의식적 방문객을 위한 최고의 옵션. 워드 빌리지는 와이키키에서 우버 또는 버스로 15분.',
@@ -509,7 +507,6 @@ const content = {
         ['기원', '일본-하와이 퓨전', '포르투갈-하와이', '아메리칸 클래식'],
         ['모양', '팔각 링', '둥근 볼 (구멍 없음)', '링 또는 필링'],
         ['추천', '독특한 식감 애호가', '전통 경험을 원하는 분', '클래식 도넛 팬'],
-        ['글루텐프리', '일부 가능 (쌀가루)', '거의 없음', '거의 없음'],
         ['가격대', '$11.25 / 3개', '$2 - $4', '$1.50 - $4'],
         ['추천 매장', '코나커피도넛', '레너즈 베이커리', '도넛 킹'],
       ],
@@ -635,7 +632,7 @@ const content = {
         priceRange: '$$$',
         knownFor: '芋头基底、纯素、有机甜甜圈',
         description:
-          '圣杯将健康意识的甜甜圈革命带到了夏威夷。每个甜甜圈都以芋头为基底，天然纯素且无麸质。芋头的自然色泽鲜艳，质地紧实而柔嫩，近似蛋糕。百香果糖霜、番石榴奶油、紫薯椰子等创意口味每日更换。现点现做，可以看着甜甜圈制作过程。',
+          '圣杯将健康意识的甜甜圈革命带到了夏威夷。每个甜甜圈都以芋头为基底，天然纯素。芋头的自然色泽鲜艳，质地紧实而柔嫩，近似蛋糕。百香果糖霜、番石榴奶油、紫薯椰子等创意口味每日更换。现点现做，可以看着甜甜圈制作过程。',
         mustTry: '芋头甜甜圈 百香果糖霜',
         whyVisit:
           '纯素、植物基、注重健康的游客最佳选择。沃德村从威基基乘优步或巴士约15分钟。',
@@ -692,7 +689,6 @@ const content = {
         ['起源', '日本-夏威夷融合', '葡萄牙-夏威夷', '美式经典'],
         ['形状', '八球环形', '圆球（无孔）', '环形或夹心'],
         ['适合', '喜欢独特口感', '追求传统体验', '经典甜甜圈爱好者'],
-        ['无麸质选项', '部分有（米粉基底）', '几乎没有', '几乎没有'],
         ['价格区间', '$11.25 / 3个', '$2 - $4', '$1.50 - $4'],
         ['推荐店铺', '科纳咖啡甜甜圈', '伦纳德面包店', '甜甜圈大王'],
       ],

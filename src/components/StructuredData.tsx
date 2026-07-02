@@ -81,13 +81,6 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         validFrom: '2026-04-25',
       },
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '150',
-      bestRating: '5',
-      worstRating: '1',
-    },
     servesCuisine: ['Kona Coffee', '100% Kona Coffee', 'Coffee', 'Espresso', 'Donuts', 'Malasada', 'Bingsu', 'Hawaiian', 'Desserts'],
     menu: `https://www.konacoffeedonut.com/${locale}/menu`,
     acceptsReservations: false,

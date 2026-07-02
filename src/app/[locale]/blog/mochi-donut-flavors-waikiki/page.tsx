@@ -40,7 +40,6 @@ const content: Record<Locale, BlogContent> = {
           'Pon-de-ring shape — 8 balls connected in a circle',
           'Chewy and slightly bouncy interior, lightly crispy exterior',
           'Lower in fat than regular donuts because of the rice flour base',
-          'Ask staff for the current ingredient list if you have dietary restrictions',
         ],
       },
       {
@@ -98,10 +97,6 @@ const content: Record<Locale, BlogContent> = {
         a: 'We offer 10+ rotating mochi donut flavors including Original Glazed, Ube, Matcha, Strawberry, Mango, Chocolate, Taro, Black Sesame, Cookies & Cream, and Coffee. Seasonal specials change throughout the year.',
       },
       {
-        q: 'Do mochi donuts contain allergens?',
-        a: 'Please ask our staff for the current ingredient list if you have dietary restrictions or allergies.',
-      },
-      {
         q: 'How much do mochi donuts cost in Waikiki?',
         a: 'Mochi donuts at Kona Coffee Donut are sold by the box: 3 for $11.25 (about $3.75 each), 6 for $22.50, or 12 for $45.00. A half-dozen is the most popular size and offers the best value for trying multiple flavors. Full menu and current pricing available in-store at 2142 Kalākaua Ave.',
       },
@@ -142,7 +137,7 @@ const content: Record<Locale, BlogContent> = {
         h2: 'モチドーナツが他と違う理由',
         body:
           'もち米粉を使うことで、外はサクッ、中はもちもち、ふわふわとは違う独特の食感に。ポンデリングの8つ玉は、ちぎって食べやすく、シェアにも便利です。色鮮やかなグレーズで見た目もアート級。',
-        bullets: ['もち米粉で作る独特のもちもち食感', 'ポンデリング型（8つ玉）', '小麦ドーナツより低脂質', 'グルテンフリーの場合あり（要確認）'],
+        bullets: ['もち米粉で作る独特のもちもち食感', 'ポンデリング型（8つ玉）', '小麦ドーナツより低脂質'],
       },
       {
         h2: 'フレーバー一覧',
@@ -185,7 +180,6 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       { q: 'モチドーナツとは？', a: '小麦粉ではなくもち米粉で作る日本×ハワイのドーナツ。もちもち食感と8つ玉のポンデリング型が特徴です。' },
       { q: 'いくつフレーバーがありますか？', a: '定番10種類以上＋季節限定。いつ来てもバリエーションが楽しめます。' },
-      { q: 'グルテンフリー？', a: 'もち米粉ベースですが、レシピによって少量の小麦を含む場合があります。スタッフにご確認ください。' },
       { q: '価格は？', a: 'モチドーナツはボックス販売：3個$11.25（約$3.75/個）、6個$22.50、12個$45.00。ハーフダースが一番お得で人気です。' },
       { q: 'どこで買えますか？', a: '2142 カラカウア通り、ワイキキ中心部。毎日朝7時〜夜9時。' },
       { q: '人気フレーバーは？', a: 'チョコレートとオリジナルが定番人気。観光客にはウベと抹茶が好評です。' },
@@ -212,7 +206,7 @@ const content: Record<Locale, BlogContent> = {
       {
         h2: '모치도넛이 특별한 이유',
         body: '찹쌀가루를 사용해 겉은 바삭, 속은 쫀득한 독특한 식감을 냅니다. 폰데링 형태는 떼어 먹기 쉽고 비주얼도 화려합니다.',
-        bullets: ['찹쌀가루 사용으로 쫀득한 식감', '폰데링 형태(8개 공 원형)', '일반 도넛보다 지방 함량 낮음', '글루텐 프리 가능성 (확인 필요)'],
+        bullets: ['찹쌀가루 사용으로 쫀득한 식감', '폰데링 형태(8개 공 원형)', '일반 도넛보다 지방 함량 낮음'],
       },
       {
         h2: '플레이버 라인업',
@@ -245,7 +239,6 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       { q: '모치도넛이란?', a: '찹쌀가루로 만든 일본·하와이 퓨전 도넛. 쫀득한 식감과 폰데링 형태가 특징.' },
       { q: '메뉴는 몇 가지?', a: '정규 10종 이상 + 시즌 한정 메뉴.' },
-      { q: '글루텐 프리?', a: '찹쌀 기반이지만 일부 레시피는 소량의 밀가루 사용. 스태프에게 문의.' },
       { q: '가격은?', a: '박스 단위 판매: 3개 $11.25(개당 약 $3.75), 6개 $22.50, 12개 $45.00. 6개 박스가 가장 인기.' },
       { q: '어디에서 구입?', a: '2142 칼라카우아 거리, 와이키키 중심부. 매일 오전 7시 – 오후 9시.' },
       { q: '베스트셀러는?', a: '초콜릿과 오리지널이 가장 인기. 관광객은 우베·말차 선호.' },
@@ -272,7 +265,7 @@ const content: Record<Locale, BlogContent> = {
       {
         h2: '麻糬甜甜圈的独特之处',
         body: '糯米粉带来Q弹有嚼劲的口感，外层酥脆。波堤形（8颗连环）易于分享，色彩缤纷。',
-        bullets: ['糯米粉制作，独特Q弹', '波堤形（8颗）', '比传统甜甜圈低脂', '可能为无麸质（请确认）'],
+        bullets: ['糯米粉制作，独特Q弹', '波堤形（8颗）', '比传统甜甜圈低脂'],
       },
       {
         h2: '口味菜单',
@@ -305,7 +298,6 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       { q: '什么是麻糬甜甜圈？', a: '糯米粉制作的日式·夏威夷融合甜甜圈，独特Q弹口感，波堤形外观。' },
       { q: '有几种口味？', a: '招牌10种+季节限定。' },
-      { q: '是无麸质吗？', a: '糯米基底，但部分配方含少量小麦。请询问店员。' },
       { q: '价格？', a: '盒装销售：3个$11.25（约$3.75/个）、6个$22.50、12个$45.00。半打最受欢迎。' },
       { q: '在哪里购买？', a: '威基基中心 2142 卡拉考阿大道。每天早7点至晚9点。' },
       { q: '最受欢迎的口味？', a: '巧克力和原味釉，游客喜欢紫薯和抹茶。' },
@@ -322,7 +314,7 @@ const content: Record<Locale, BlogContent> = {
       directionsLabel: 'Cómo llegar',
     },
     sections: [
-      { h2: 'Qué hace al Mochi Donut diferente', body: 'Su textura masticable y rebote único lo hacen diferente de una dona clásica.', bullets: ['Textura masticable', 'Forma pon-de-ring (8 bolas)', 'Más bajo en grasa', 'Pregunta al personal sobre ingredientes'] },
+      { h2: 'Qué hace al Mochi Donut diferente', body: 'Harina de arroz glutinoso (no de trigo) le da textura masticable y rebote único.', bullets: ['Harina de arroz glutinoso', 'Forma pon-de-ring (8 bolas)', 'Más bajo en grasa'] },
       {
         h2: 'Sabores Disponibles',
         body: 'Núcleo del menú durante todo el año.',

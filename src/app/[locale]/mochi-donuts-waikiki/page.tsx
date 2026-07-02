@@ -77,10 +77,8 @@ const content = {
         ['Main flour', 'Mochiko (rice flour)', 'Wheat flour'],
         ['Shape', 'Connected ball ring', 'Classic ring or filled'],
         ['Origin', 'Japanese-Hawaiian fusion', 'European/American'],
-        ['Allergen note', 'Ask staff before ordering', 'Ask staff before ordering'],
         ['Viral factor', 'Highly Instagrammable', 'Classic comfort'],
       ],
-      footnote: '*Please ask staff about current ingredients and possible cross-contact before ordering.',
     },
     faq: {
       title: 'Frequently Asked Questions',
@@ -88,10 +86,6 @@ const content = {
         {
           q: 'What are mochi donuts made of?',
           a: 'Mochi donuts are made primarily with mochiko (sweet rice flour), which gives them their distinctive chewy texture. Combined with tapioca starch and other ingredients, they create the perfect balance of crispy outside and soft, springy inside.',
-        },
-        {
-          q: 'Do mochi donuts contain allergens?',
-          a: 'Please ask our staff about current ingredients and possible cross-contact before ordering if you have any dietary restrictions or allergies.',
         },
         {
           q: 'Where can I get mochi donuts in Waikiki?',
@@ -184,10 +178,8 @@ const content = {
         ['主な粉', 'もち粉（米粉）', '小麦粉'],
         ['形状', '球体がつながったリング型', 'クラシックなリング型'],
         ['起源', '日本×ハワイのフュージョン', 'ヨーロッパ・アメリカ'],
-        ['グルテン', 'グルテンフリー寄り*', 'グルテン含有'],
         ['映え度', 'SNS映え抜群', '定番の安心感'],
       ],
-      footnote: '*共有キッチンで調理しています。グルテンフリー認証ではありません。',
     },
     faq: {
       title: 'よくあるご質問',
@@ -195,10 +187,6 @@ const content = {
         {
           q: 'モチドーナツの原材料は何ですか？',
           a: 'モチドーナツの主原料はもち粉（餅粉・甘い米粉）です。タピオカ澱粉などと組み合わせることで、外はカリッと中はもちもちの絶妙な食感を実現しています。日本の伝統的なお餅の食感を活かした新感覚スイーツです。',
-        },
-        {
-          q: 'モチドーナツはグルテンフリーですか？',
-          a: '当店のモチドーナツは小麦粉ではなく米粉を使用しているため、グルテンフリー寄りの製品です。ただし、共有キッチンで調理しているため、重度のアレルギーやセリアック病をお持ちの方には100%グルテンフリーを保証することはできません。',
         },
         {
           q: 'ワイキキでモチドーナツはどこで買えますか？',
@@ -291,10 +279,8 @@ const content = {
         ['주재료', '찹쌀가루 (모치코)', '밀가루'],
         ['모양', '공 모양 연결 링', '클래식 링 또는 필링'],
         ['기원', '일본-하와이 퓨전', '유럽/미국'],
-        ['글루텐', '글루텐 프리 성향*', '글루텐 함유'],
         ['SNS 인기', '인스타 감성 최고', '클래식한 편안함'],
       ],
-      footnote: '*공유 주방에서 조리됩니다. 글루텐프리 인증은 아닙니다.',
     },
     faq: {
       title: '자주 묻는 질문',
@@ -302,10 +288,6 @@ const content = {
         {
           q: '모찌 도넛은 무엇으로 만드나요?',
           a: '모찌 도넛의 주재료는 모치코(찹쌀가루)입니다. 타피오카 전분 등과 결합하여 겉은 바삭하고 속은 쫄깃한 독특한 식감을 만들어냅니다.',
-        },
-        {
-          q: '모찌 도넛은 글루텐프리인가요?',
-          a: '저희 모찌 도넛은 밀가루 대신 쌀가루를 사용하여 글루텐 프리 성향의 제품입니다. 다만, 공유 주방에서 조리하므로 심각한 알레르기나 셀리악병이 있으신 분께는 100% 글루텐프리를 보장할 수 없습니다.',
         },
         {
           q: '와이키키에서 모찌 도넛은 어디서 살 수 있나요?',
@@ -398,10 +380,8 @@ const content = {
         ['主要粉类', '糯米粉', '小麦粉'],
         ['形状', '球体串联环形', '经典环形或夹馅'],
         ['起源', '日本-夏威夷融合', '欧美传统'],
-        ['麸质', '天然无麸质倾向*', '含麸质'],
         ['社交热度', '超级上镜', '经典舒适'],
       ],
-      footnote: '*在共享厨房制作。非无麸质认证。',
     },
     faq: {
       title: '常见问题',
@@ -409,10 +389,6 @@ const content = {
         {
           q: '麻糬甜甜圈是用什么做的？',
           a: '麻糬甜甜圈主要使用糯米粉（日文称"餅粉"）制作，搭配木薯淀粉等原料，实现外酥内糯的独特口感。',
-        },
-        {
-          q: '麻糬甜甜圈是无麸质的吗？',
-          a: '我们的麻糬甜甜圈使用米粉而非小麦粉，属于天然无麸质倾向产品。但由于在共享厨房制作，无法保证对严重过敏或乳糜泻患者100%无麸质。',
         },
         {
           q: '威基基哪里可以买到麻糬甜甜圈？',
@@ -505,10 +481,8 @@ const content = {
         ['Harina principal', 'Mochiko (harina de arroz)', 'Harina de trigo'],
         ['Forma', 'Anillo de bolitas', 'Anillo clasico o relleno'],
         ['Origen', 'Fusion japonesa-hawaiana', 'Europeo/Americano'],
-        ['Nota de alergenos', 'Pregunta antes de ordenar', 'Pregunta antes de ordenar'],
         ['Factor viral', 'Muy instagrameable', 'Clasico reconfortante'],
       ],
-      footnote: '*Pregunta al personal sobre ingredientes actuales y posible contacto cruzado antes de ordenar.',
     },
     faq: {
       title: 'Preguntas Frecuentes',
@@ -516,10 +490,6 @@ const content = {
         {
           q: 'De que estan hechos los donuts de mochi?',
           a: 'Los donuts de mochi se hacen principalmente con mochiko (harina de arroz dulce), combinada con almidon de tapioca para crear la textura perfecta.',
-        },
-        {
-          q: 'Los mochi donuts contienen alergenos?',
-          a: 'Pregunta al personal sobre ingredientes actuales y posible contacto cruzado antes de ordenar si tienes restricciones dietarias o alergias.',
         },
         {
           q: 'Donde puedo conseguir donuts de mochi en Waikiki?',
@@ -858,7 +828,6 @@ export default function MochiDonutsWaikikiPage() {
                 </tbody>
               </table>
             </motion.div>
-            <p className="text-xs text-gray-400 mt-3 text-center">{t.comparison.footnote}</p>
           </div>
         </section>
 

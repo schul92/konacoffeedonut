@@ -67,7 +67,7 @@ const content = {
     },
     mochiDonut: {
       title: '모찌 도넛 — 겉바속쫄의 매력, MOCHILAND',
-      p1: '모찌 도넛은 일본의 모찌(찹쌀떡)에서 영감을 받은 도넛으로, 겉은 바삭하고 속은 쫄깃한 독특한 식감이 특징입니다. "겉바속쫄"이라는 표현이 딱 맞는 디저트입니다. 일반 도넛과 달리 글루텐이 적어 가벼운 식감을 자랑하며, 하나만 먹어도 충분한 만족감을 줍니다.',
+      p1: '모찌 도넛은 일본의 모찌(찹쌀떡)에서 영감을 받은 도넛으로, 겉은 바삭하고 속은 쫄깃한 독특한 식감이 특징입니다. "겉바속쫄"이라는 표현이 딱 맞는 디저트입니다. 일반 도넛보다 가벼운 식감을 자랑하며, 하나만 먹어도 충분한 만족감을 줍니다.',
       p2: '저희 Kona Coffee Donut의 모찌 도넛 브랜드 MOCHILAND에서는 우베, 말차, 흑당, 딸기, 타로, 리리코이 등 12가지 이상의 다양한 맛을 선보이고 있습니다. 모든 모찌 도넛은 매일 아침 신선하게 만들어지며, 글레이즈가 아직 반짝반짝할 때 드시는 것이 가장 맛있습니다.',
       p3: '한국에서도 모찌 도넛이 유행하고 있지만, 하와이 현지에서 먹는 모찌 도넛은 열대 과일 맛과 하와이 특산 재료를 사용한다는 점에서 특별합니다. 특히 우베(보라색 고구마)와 리리코이(패션프루트) 맛은 하와이에서만 경험할 수 있는 맛입니다.',
     },
@@ -261,7 +261,7 @@ const content = {
     },
     mochiDonut: {
       title: 'Mochi Donuts — The Irresistible Texture of MOCHILAND',
-      p1: 'Mochi donuts are inspired by Japanese mochi (rice cake), featuring a uniquely crispy exterior and chewy interior. Unlike regular donuts, they have a lighter, chewy texture that\'s satisfying without being heavy.',
+      p1: 'Mochi donuts are inspired by Japanese mochi (rice cake), featuring a uniquely crispy exterior and chewy interior — a lighter texture that\'s satisfying without being heavy.',
       p2: 'Our mochi donut brand MOCHILAND at Kona Coffee Donut offers 12+ flavors including ube, matcha, brown sugar, strawberry, taro, and lilikoi. All mochi donuts are freshly made every morning and are best enjoyed while the glaze is still glistening.',
       p3: 'While mochi donuts have become trendy in Korea too, Hawaiian mochi donuts stand apart with their tropical fruit flavors and local ingredients. The ube and lilikoi flavors in particular are uniquely Hawaiian experiences.',
     },
@@ -455,7 +455,7 @@ const content = {
     },
     mochiDonut: {
       title: 'モチドーナツ — MOCHILANDの魅力',
-      p1: 'モチドーナツは日本のもちにインスパイアされた、外はサクサク中はもちもちのドーナツです。グルテンが少なく軽い食感が特徴。',
+      p1: 'モチドーナツは日本のもちにインスパイアされた、外はサクサク中はもちもちのドーナツです。軽い食感が特徴。',
       p2: '当店のMOCHILANDでは、ウベ、抹茶、黒糖、いちご、タロ、リリコイなど12種類以上のフレーバーを毎朝新鮮にお作りしています。',
       p3: 'ハワイのモチドーナツは、トロピカルフルーツフレーバーとローカル食材を使用している点が特別です。',
     },
@@ -604,7 +604,7 @@ const content = {
     },
     mochiDonut: {
       title: '麻糬甜甜圈 — MOCHILAND的魅力',
-      p1: '麻糬甜甜圈灵感来自日本麻糬，外酥内糯的独特口感让人着迷。少麸质，口感轻盈。',
+      p1: '麻糬甜甜圈灵感来自日本麻糬，外酥内糯的独特口感让人着迷。口感轻盈。',
       p2: '我们的MOCHILAND品牌提供紫薯、抹茶、黑糖、草莓等12种以上口味，每天早晨新鲜制作。',
       p3: '夏威夷的麻糬甜甜圈使用热带水果口味和当地食材，体验独一无二。',
     },

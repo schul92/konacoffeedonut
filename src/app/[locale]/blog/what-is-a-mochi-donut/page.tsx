@@ -191,10 +191,6 @@ const content = {
           answer: 'The biggest difference is the flour. A regular donut is made with wheat flour, giving it a soft, cakey, or airy texture. A mochi donut uses glutinous rice flour and tapioca starch, creating a chewy, stretchy, bouncy "QQ" bite that\'s closer to mochi. Mochi donuts are also shaped as a pon-de-ring of eight connected balls rather than a single ring with a hole.',
         },
         {
-          question: 'Do mochi donuts contain allergens?',
-          answer: 'Recipes and toppings can vary. If you have dietary restrictions or allergies, ask the shop about current ingredients and possible cross-contact before ordering.',
-        },
-        {
           question: 'Where can I get fresh mochi donuts in Waikiki?',
           answer: 'Kona Coffee Donut at 2142 Kalakaua Ave in the heart of Waikiki serves fresh, hand-made rice-flour mochi donuts in 24 rotating flavors, paired with 100% Kona coffee. We\'re open daily and within walking distance of Waikiki Beach — the perfect spot to grab a chewy treat.',
         },
@@ -390,10 +386,6 @@ const content = {
         {
           question: 'モチドーナツと普通のドーナツの違いは何ですか？',
           answer: '最大の違いは粉です。普通のドーナツは小麦粉で作られ、柔らかくケーキのような、またはふわふわした食感になります。モチドーナツはもち米粉とタピオカでんぷんを使い、お餅に近いもちもち・むにむにとした「QQ」食感を生み出します。また、モチドーナツは穴の開いた1つのリングではなく、8つの団子がつながったポン・デ・リングの形をしています。',
-        },
-        {
-          question: 'モチドーナツはグルテンフリーですか？',
-          answer: '必ずしもそうとは限りません。モチドーナツは小麦粉ではなく米粉とタピオカでんぷんで作られますが、共用のフライヤーで揚げられたり、小麦ベースのグレーズや材料が使われたりすることが多いため、グルテンフリーであることは保証されません。グルテンアレルギーやセリアック病の方は、注文前に必ずお店で交差汚染や具体的な材料について確認してください。',
         },
         {
           question: 'ワイキキで作りたてのモチドーナツはどこで買えますか？',
@@ -593,10 +585,6 @@ const content = {
           answer: '가장 큰 차이는 가루입니다. 일반 도넛은 밀가루로 만들어 부드럽고 케이크 같거나 폭신한 식감을 냅니다. 모찌 도넛은 찹쌀가루와 타피오카 전분을 사용해 떡에 가까운 쫄깃하고 탱글탱글한 "QQ" 식감을 만들죠. 또한 모찌 도넛은 구멍이 하나 뚫린 링이 아니라, 8개의 볼이 연결된 폰데링 모양입니다.',
         },
         {
-          question: '모찌 도넛은 글루텐 프리인가요?',
-          answer: '반드시 그렇지는 않습니다. 모찌 도넛은 밀가루가 아닌 쌀가루와 타피오카 전분으로 만들지만, 공용 튀김기에서 튀기거나 밀 기반 글레이즈나 재료를 사용하는 경우가 많아 글루텐 프리가 보장되지는 않습니다. 글루텐 알레르기나 셀리악병이 있으시다면, 주문 전에 반드시 매장에 교차 오염과 구체적인 재료를 문의하세요.',
-        },
-        {
           question: '와이키키에서 갓 만든 모찌 도넛은 어디서 살 수 있나요?',
           answer: '와이키키 중심부 2142 Kalakaua Ave에 위치한 코나커피도넛에서는 갓 만든 수제 쌀가루 모찌 도넛을 24가지 로테이션 맛으로, 100% 코나 커피와 함께 즐기실 수 있습니다. 매일 영업하며 와이키키 비치에서 도보 거리에 있어, 쫄깃한 간식을 즐기기에 완벽한 곳입니다.',
         },
@@ -794,10 +782,6 @@ const content = {
           answer: '最大的区别在于用粉。普通甜甜圈用小麦粉制作，口感柔软、像蛋糕或蓬松。麻糬甜甜圈则用糯米粉和木薯淀粉，造就更接近麻糬的Q弹、弹牙"QQ"口感。此外，麻糬甜甜圈是八颗相连球组成的波提造型，而非中间带孔的单一圆环。',
         },
         {
-          question: '麻糬甜甜圈是无麸质的吗？',
-          answer: '不一定。虽然麻糬甜甜圈用米粉和木薯淀粉而非小麦粉制作，但它们往往在共用油锅中油炸，或可能使用含小麦的糖霜或配料，因此不保证无麸质。如果你有麸质过敏或乳糜泻，点单前请务必向店家询问交叉污染情况和具体配料。',
-        },
-        {
           question: '在威基基哪里能买到新鲜的麻糬甜甜圈？',
           answer: '位于威基基中心地带2142 Kalakaua Ave的科纳咖啡甜甜圈提供新鲜手作的米粉麻糬甜甜圈，共24种轮换口味，并搭配100%科纳咖啡。我们每天营业，距威基基海滩步行可达——是享用Q弹甜点的完美去处。',
         },
@@ -876,14 +860,6 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'The biggest difference is the flour. A regular donut is made with wheat flour, giving it a soft, cakey, or airy texture. A mochi donut uses glutinous rice flour and tapioca starch, creating a chewy, stretchy, bouncy "QQ" bite that is closer to mochi. Mochi donuts are also shaped as a pon-de-ring of eight connected balls rather than a single ring with a hole.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do mochi donuts contain allergens?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Recipes and toppings can vary. If you have dietary restrictions or allergies, ask the shop about current ingredients and possible cross-contact before ordering.',
       },
     },
     {

@@ -183,10 +183,6 @@ const content = {
           answer: 'Bingsu tastes like a cross between ice cream and snow cones, but lighter and creamier. The milk ice base has a subtle sweetness, and the toppings add layers of flavor — from the earthy sweetness of red beans to the bright freshness of seasonal fruit. The texture is what sets it apart: fluffy, snow-like ice that melts on your tongue.',
         },
         {
-          question: 'Does bingsu contain allergens?',
-          answer: 'Bingsu toppings and ingredients vary by order. Please ask staff about current ingredients and possible cross-contact before ordering if you have dietary restrictions or allergies.',
-        },
-        {
           question: 'How many calories are in bingsu?',
           answer: 'A standard serving of patbingsu contains approximately 350-500 calories, depending on the size and toppings. Fruit bingsu tends to be lighter (around 250-350 calories), while chocolate or Oreo bingsu can range from 500-700 calories. Since bingsu is typically shared between 2-3 people, the per-person calorie count is quite reasonable.',
         },
@@ -382,10 +378,6 @@ const content = {
         {
           question: 'ビンスはどんな味ですか？',
           answer: 'ビンスはアイスクリームとかき氷の中間のような味ですが、より軽くクリーミーです。ミルク氷のベースにほんのりとした甘さがあり、トッピングが味に奥行きを加えます。小豆の素朴な甘さからフルーツの爽やかさまで。最大の特徴はその食感で、雪のようなふわふわの氷が舌の上でとろけます。',
-        },
-        {
-          question: 'ビンスはグルテンフリーですか？',
-          answer: '伝統的なパッビンスは、小豆、練乳、餅（米粉製のトッ）を使用しており、基本的にグルテンフリーです。ただし、オレオ、ブラウニー、シリアルなどを使ったモダンなバリエーションにはグルテンが含まれます。フルーツビンスが最も安全なグルテンフリーの選択肢です。',
         },
         {
           question: 'ビンスのカロリーはどのくらいですか？',
@@ -585,10 +577,6 @@ const content = {
           answer: '빙수는 아이스크림과 빙과의 중간 같은 맛이지만, 훨씬 가볍고 크리미합니다. 우유 얼음 베이스에 은은한 단맛이 있고, 토핑이 다양한 풍미를 더합니다. 팥의 구수한 단맛부터 제철 과일의 상큼함까지. 가장 큰 매력은 식감으로, 눈꽃 같은 포슬포슬한 얼음이 입안에서 살살 녹습니다.',
         },
         {
-          question: '빙수는 글루텐 프리인가요?',
-          answer: '전통 팥빙수(팥, 연유, 쌀떡)는 기본적으로 글루텐 프리입니다. 떡(경단)은 쌀가루로 만들기 때문이죠. 하지만 오레오, 브라우니, 시리얼 등을 사용한 현대 빙수에는 글루텐이 포함되어 있습니다. 과일빙수가 가장 안전한 글루텐 프리 옵션입니다. 구체적인 재료는 매장에 문의하세요.',
-        },
-        {
           question: '빙수의 칼로리는 얼마나 되나요?',
           answer: '기본 팥빙수는 1인분 약 350~500kcal입니다. 과일빙수는 약 250~350kcal로 비교적 가볍고, 초코/오레오 빙수는 500~700kcal까지 올라갈 수 있습니다. 보통 2~3명이 나눠 먹기 때문에 1인당 칼로리는 꽤 합리적입니다.',
         },
@@ -786,10 +774,6 @@ const content = {
           answer: '韩式刨冰的味道介于冰淇淋和刨冰之间，但更轻盈、更绵密。牛奶冰基底带有淡淡的甜味，配料增添层次丰富的风味——从红豆的醇厚甜味到应季水果的清新。最独特的是口感：雪花般蓬松的冰入口即化。',
         },
         {
-          question: '韩式刨冰是无麸质的吗？',
-          answer: '传统红豆刨冰（红豆、炼乳、年糕）通常是无麸质的，因为年糕是用米粉制成的。但含有奥利奥饼干、布朗尼或麦片配料的现代变体含有麸质。水果刨冰通常是最安全的无麸质选择。请务必向餐厅确认具体成分。',
-        },
-        {
           question: '韩式刨冰的热量是多少？',
           answer: '标准红豆刨冰约含350-500卡路里，具体取决于份量和配料。水果刨冰较轻（约250-350卡路里），而巧克力或奥利奥刨冰可达500-700卡路里。由于通常2-3人分享，每人摄入的热量相当合理。',
         },
@@ -860,14 +844,6 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Bingsu tastes like a cross between ice cream and snow cones, but lighter and creamier. The milk ice base has a subtle sweetness, and the toppings add layers of flavor — from the earthy sweetness of red beans to the bright freshness of seasonal fruit. The texture is what sets it apart: fluffy, snow-like ice that melts on your tongue.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Does bingsu contain allergens?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Bingsu toppings and ingredients vary by order. Please ask staff about current ingredients and possible cross-contact before ordering if you have dietary restrictions or allergies.',
       },
     },
     {

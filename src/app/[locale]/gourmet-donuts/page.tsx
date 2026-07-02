@@ -53,7 +53,7 @@ const content = {
           name: 'Mochi Donuts',
           tagline: 'Japanese-Hawaiian Fusion',
           description: 'Our signature mochi donuts feature a crispy exterior and impossibly chewy interior. Made with Japanese rice flour for an authentic pon de ring texture. Available in 12+ artisan flavors.',
-          features: ['Ask staff about allergens', 'Vegan options available', 'Made fresh daily'],
+          features: ['Vegan options available', 'Made fresh daily'],
           link: '/menu/mochi-donuts'
         },
         {
@@ -99,7 +99,7 @@ const content = {
         },
         {
           question: 'Are your gourmet donuts suitable for dietary restrictions?',
-          answer: 'Please ask our staff about current ingredients and possible cross-contact before ordering if you have any dietary restrictions or allergies.'
+          answer: 'We offer vegan options. Please ask our staff about specific dietary requirements and current ingredients before ordering.'
         },
         {
           question: 'How should I store gourmet donuts?',

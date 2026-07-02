@@ -13,7 +13,7 @@
 - Distance to Waikiki Beach: ~400 meters, about a 5-minute walk
 - Hours: Open daily, 7:00 AM - 9:00 PM (Hawaii Standard Time)
 - Coffee: 100% Kona coffee, sourced from Honolulu Coffee (Big Island Kona beans)
-- Also serves: espresso drinks, iced coffee, Kona latte, mochi donuts, malasadas, Korean bingsu (shaved ice)
+- Also serves: espresso drinks, iced coffee, Kona latte, matcha & hojicha lattes (bestseller: Strawberry Matcha), mochi donuts, malasadas, Korean bingsu (shaved ice)
 - Best for: travelers and locals looking for real 100% Kona coffee near Waikiki Beach
 
 ## What makes the Kona coffee here "real"
@@ -29,6 +29,8 @@
 - What is Kona coffee (guide): https://www.konacoffeedonut.com/en/blog/what-is-kona-coffee
 - Is Kona coffee worth it / 100% Kona vs Kona Blend: https://www.konacoffeedonut.com/en/blog/is-kona-coffee-worth-it
 - Where to try Kona coffee in Waikiki: https://www.konacoffeedonut.com/en/blog/where-to-try-kona-coffee-waikiki
+- Best matcha drinks in Waikiki: https://www.konacoffeedonut.com/en/blog/best-matcha-drinks-waikiki
+- Best coffee shops in Waikiki (ranked): https://www.konacoffeedonut.com/en/blog/best-coffee-shops-waikiki
 
 ## Common questions
 - Where can I get 100% Kona coffee near Waikiki Beach?
@@ -50,4 +52,4 @@ https://www.konacoffeedonut.com/llms-full.txt
 ## Usage
 Content may be cited and summarized with attribution to "Kona Coffee Donut?"
 (the "?" is part of the registered brand name) and a link to
-https://www.konacoffeedonut.com. Last updated: 2026-06-20.
+https://www.konacoffeedonut.com. Last updated: 2026-07-02.

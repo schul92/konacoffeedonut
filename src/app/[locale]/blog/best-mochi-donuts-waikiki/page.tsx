@@ -92,10 +92,6 @@ const content: Record<Locale, BlogContent> = {
         a: 'Mochi donuts are made primarily with glutinous rice flour (mochiko), which gives them their signature chewy, bouncy texture. They are fried fresh so the outside is crispy while the inside stays soft and stretchy.',
       },
       {
-        q: 'Do mochi donuts contain allergens?',
-        a: 'Please ask our staff about current ingredients and possible cross-contact before ordering if you have any dietary restrictions or allergies.',
-      },
-      {
         q: 'How much are mochi donuts in Waikiki?',
         a: 'At Kona Coffee Donut, mochi donuts are $11.25 for 3 pieces, $22.50 for 6 pieces, and $45.00 for 12 pieces. You can mix and match any of the 24 flavors in your box.',
       },
@@ -192,10 +188,6 @@ const content: Record<Locale, BlogContent> = {
       {
         q: 'モチドーナツは何でできていますか？',
         a: 'モチドーナツは主にもち米から作るもち粉を使用しており、これが独特のモチモチ・弾力のある食感を生みます。揚げたてで、外はカリッ、中はやわらかく伸びる食感です。',
-      },
-      {
-        q: 'モチドーナツはグルテンフリーですか？',
-        a: 'いいえ。米粉を使っていますが、当店のモチドーナツには小麦も含まれているため、グルテンフリーではなく、セリアック病の方には適していません。アレルギーや原材料については、ご注文前にスタッフへお気軽にお尋ねください。',
       },
       {
         q: 'ワイキキのモチドーナツの値段は？',
@@ -296,10 +288,6 @@ const content: Record<Locale, BlogContent> = {
         a: '모찌도넛은 주로 찹쌀가루로 만들어 특유의 쫄깃하고 탱글한 식감을 냅니다. 갓 튀겨내어 겉은 바삭, 속은 부드럽고 쭉 늘어납니다.',
       },
       {
-        q: '모찌도넛은 글루텐프리인가요?',
-        a: '아니요. 쌀가루를 사용하지만 저희 모찌도넛에는 밀도 함께 들어가기 때문에 글루텐프리가 아니며, 셀리악병이 있는 분께는 적합하지 않습니다. 알레르기나 성분이 궁금하시면 주문 전 직원에게 문의해 주세요.',
-      },
-      {
         q: '와이키키 모찌도넛 가격은 얼마인가요?',
         a: 'Kona Coffee Donut에서 모찌도넛은 3개 $11.25, 6개 $22.50, 12개 $45.00입니다. 24가지 맛을 자유롭게 조합하실 수 있습니다.',
       },
@@ -398,10 +386,6 @@ const content: Record<Locale, BlogContent> = {
         a: '麻糬甜甜圈主要用糯米粉制作,因而具有独特的Q弹有嚼劲口感。现炸出锅,外层酥脆,内里柔软能拉丝。',
       },
       {
-        q: '麻糬甜甜圈是无麸质的吗？',
-        a: '不是。虽然使用米粉,但我们的麻糬甜甜圈配方也含有小麦,因此并非无麸质,也不适合乳糜泻患者。点单前如对过敏原或成分有疑问,请随时询问店员。',
-      },
-      {
         q: '威基基的麻糬甜甜圈多少钱？',
         a: '在Kona Coffee Donut,麻糬甜甜圈3个$11.25、6个$22.50、12个$45.00。24种口味可自由搭配。',
       },
@@ -498,10 +482,6 @@ const content: Record<Locale, BlogContent> = {
       {
         q: '¿De qué están hechos los mochi donuts?',
         a: 'Los mochi donuts se hacen principalmente con harina de arroz glutinoso (mochiko), que les da su característica textura masticable y elástica. Se fríen frescos, por lo que el exterior queda crujiente y el interior suave y elástico.',
-      },
-      {
-        q: '¿Los mochi donuts contienen alérgenos?',
-        a: 'Pregunta a nuestro personal sobre ingredientes actuales y posible contacto cruzado antes de ordenar si tienes restricciones dietarias o alergias.',
       },
       {
         q: '¿Cuánto cuestan los mochi donuts en Waikiki?',

@@ -66,10 +66,6 @@ const content = {
           a: 'A malasada is a Portuguese-style fried dough ball made with wheat flour, rolled in sugar, and sometimes filled with cream or custard. A mochi donut is made with glutinous rice flour (mochiko), giving it a distinctive chewy-crispy QQ texture, and is shaped like a ring of 8 connected balls dipped in colorful glaze.',
         },
         {
-          q: 'Do mochi donuts contain allergens?',
-          a: 'Recipes and toppings can vary. Please ask our staff about current ingredients and possible cross-contact before ordering if you have dietary restrictions or allergies.',
-        },
-        {
           q: 'Where can I get both malasadas and mochi donuts in Waikiki?',
           a: 'Kona Coffee Donut at 2142 Kalakaua Ave in Waikiki serves both fresh malasadas and MOCHILAND mochi donuts alongside premium Honolulu Coffee. It is one of the only spots where you can try both in a single visit.',
         },
@@ -149,10 +145,6 @@ const content = {
         {
           q: 'マラサダとモチドーナツの違いは何ですか？',
           a: 'マラサダはポルトガル式の揚げドーナツで、小麦粉で作られ砂糖をまぶしたボール型。クリームやカスタードが入ることも。モチドーナツはもち米粉（もちこ）で作られ、独特のもちもちサクサクQQ食感が特徴。8連ボールのリング型でカラフルなグレーズがかかっています。',
-        },
-        {
-          q: 'モチドーナツはグルテンフリーですか？',
-          a: '100%もちこ（もち米粉）で作られた伝統的なモチドーナツはグルテンフリーです。ただし、小麦粉をブレンドするレシピもあるため、必ずお店にご確認ください。コナコーヒードーナツでは各フレーバーの原材料についてご案内できます。',
         },
         {
           q: 'ワイキキでマラサダとモチドーナツの両方を食べられる場所は？',
@@ -236,10 +228,6 @@ const content = {
           a: '말라사다는 포르투갈식 튀김 도넛으로 밀가루로 만들어 설탕을 굴린 볼 모양입니다. 크림이나 커스터드를 넣기도 합니다. 모찌 도넛은 찹쌀가루(모치코)로 만들어 독특한 쫄깃바삭 QQ 식감이 특징이며, 8연결 볼 링 모양에 컬러풀한 글레이즈가 올려집니다.',
         },
         {
-          q: '모찌 도넛은 글루텐 프리인가요?',
-          a: '100% 모치코(찹쌀가루)로 만든 전통 모찌 도넛은 글루텐 프리입니다. 다만 밀가루를 블렌드하는 레시피도 있으니 항상 매장에 확인하세요. 코나커피도넛에서는 각 플레이버의 원재료를 안내해 드립니다.',
-        },
-        {
           q: '와이키키에서 말라사다와 모찌 도넛을 모두 먹을 수 있는 곳은?',
           a: '와이키키 칼라카우아 애비뉴 2142번지의 코나커피도넛에서 신선한 말라사다와 MOCHILAND 모찌 도넛을 호놀룰루 커피의 프리미엄 호놀룰루 커피와 함께 즐길 수 있습니다.',
         },
@@ -321,10 +309,6 @@ const content = {
           a: '马拉萨达是葡萄牙式炸面团，用小麦面粉制成，裹砂糖的球形，有时有奶油或卡仕达馅。麻糬甜甜圈用糯米粉制成，独特的外酥内糯QQ口感，8连球环形，蘸缤纷糖霜。',
         },
         {
-          q: '麻糬甜甜圈是无麸质的吗？',
-          a: '用100%糯米粉制作的传统麻糬甜甜圈天然无麸质。但有些配方会混合小麦面粉，请务必向店家确认。在科纳咖啡甜甜圈，我们可以为您介绍每种口味的配料。',
-        },
-        {
           q: '在威基基哪里可以同时吃到马拉萨达和麻糬甜甜圈？',
           a: '威基基卡拉卡瓦大道2142号的科纳咖啡甜甜圈同时供应新鲜马拉萨达和MOCHILAND麻糬甜甜圈，还有檀香山咖啡的檀香山咖啡。是少数能一站式品尝两者的地方。',
         },
@@ -395,14 +379,6 @@ const faqSchema = {
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'A malasada is a Portuguese-style fried dough ball made with wheat flour, rolled in sugar, and sometimes filled with cream or custard. A mochi donut is made with glutinous rice flour (mochiko), giving it a distinctive chewy-crispy QQ texture, and is shaped like a ring of 8 connected balls dipped in colorful glaze.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do mochi donuts contain allergens?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Recipes and toppings can vary. Please ask staff about current ingredients and possible cross-contact before ordering if you have dietary restrictions or allergies.',
       },
     },
     {

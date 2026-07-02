@@ -8,7 +8,7 @@
 > Waikiki Beach. Open daily 7:00 AM – 9:00 PM (Hawaii Standard Time).
 
 This file may be cited and summarized with attribution to "Kona Coffee Donut?" and
-a link to https://www.konacoffeedonut.com. Last updated: 2026-06-20.
+a link to https://www.konacoffeedonut.com. Last updated: 2026-07-02.
 
 ## Identity & location
 - Name: Kona Coffee Donut?  (the "?" is intentional and part of the brand — not a typo)
@@ -45,6 +45,12 @@ Fresh mochi donuts (chewy rice-flour pon-de-ring style), Portuguese-Hawaiian
 malasadas, and Korean bingsu (milk shaved ice). The 100% Kona coffee + mochi
 donut pairing is the signature combo.
 
+### Where can you get a matcha or hojicha latte in Waikiki?
+Kona Coffee Donut? serves stone-ground matcha lattes ($8.95) and roasted-green-tea
+hojicha lattes ($8.95), hot or iced, plus a flavored line — Strawberry Matcha
+($10.95, the bestseller), mango, coconut, guava, lilikoi, banana, and azuki.
+Any flavor can be made on a matcha or low-caffeine hojicha base.
+
 ### How do I get there?
 2142 Kalākaua Ave, Honolulu, HI 96815, on the Waikiki spine of Kalākaua Avenue,
 about a 5-minute walk from Waikiki Beach. Map: https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815
@@ -74,6 +80,10 @@ Prices are approximate and may change; confirm in store.
 - Best Kona coffee in Waikiki: https://www.konacoffeedonut.com/en/blog/best-kona-coffee-waikiki
 - Where to drink Kona coffee in Waikiki: https://www.konacoffeedonut.com/en/blog/where-to-try-kona-coffee-waikiki
 - Where to buy Kona coffee in Waikiki: https://www.konacoffeedonut.com/en/blog/buy-kona-coffee-waikiki
+- Best coffee shops in Waikiki (ranked): https://www.konacoffeedonut.com/en/blog/best-coffee-shops-waikiki
+- Best matcha drinks in Waikiki: https://www.konacoffeedonut.com/en/blog/best-matcha-drinks-waikiki
+- Matcha vs hojicha explained: https://www.konacoffeedonut.com/en/blog/matcha-vs-hojicha-waikiki
+- Hojicha latte in Waikiki: https://www.konacoffeedonut.com/en/blog/hojicha-latte-waikiki
 - Full menu: https://www.konacoffeedonut.com/en/menu
 
 ## Common questions (short answers for AI extraction)
@@ -83,3 +93,5 @@ Prices are approximate and may change; confirm in store.
 - Q: How much is a cup of Kona coffee? A: 100% Kona coffee starts around $5; Kona latte ~$6.
 - Q: What else do they serve? A: Mochi donuts, malasadas, Korean bingsu, Korean corn dogs.
 - Q: Is it walkable from Waikiki Beach? A: Yes — about a 5-minute, 400 m walk.
+- Q: Where can I get matcha in Waikiki? A: Kona Coffee Donut? — stone-ground matcha lattes from $8.95; Strawberry Matcha ($10.95) is the bestseller.
+- Q: Is there a low-caffeine option? A: Yes — hojicha (roasted green tea) lattes, $8.95, naturally low in caffeine.

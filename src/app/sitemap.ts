@@ -5,11 +5,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.konacoffeedonut.com';
   const defaultLastModified = new Date('2026-06-06T00:00:00.000Z');
   const routeLastModified: Record<string, Date> = {
-    '': new Date('2026-06-09T00:00:00.000Z'),
-    '/menu': new Date('2026-06-09T00:00:00.000Z'),
-    '/menu/kona-coffee': new Date('2026-06-09T00:00:00.000Z'),
-    '/menu/bingsu': new Date('2026-06-09T00:00:00.000Z'),
+    '': new Date('2026-06-27T00:00:00.000Z'),
+    '/menu': new Date('2026-06-27T00:00:00.000Z'), // menu-board price sync
+    '/menu/kona-coffee': new Date('2026-06-27T00:00:00.000Z'),
+    '/menu/bingsu': new Date('2026-06-27T00:00:00.000Z'),
     '/blog/what-is-bingsu': new Date('2026-06-09T00:00:00.000Z'),
+    // Competitor-conquest batch (published Jun 26, 2026)
+    '/blog/best-coffee-shops-waikiki': new Date('2026-06-26T00:00:00.000Z'),
+    '/blog/island-vintage-vs-kona-coffee-donut': new Date('2026-06-26T00:00:00.000Z'),
+    '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': new Date('2026-06-26T00:00:00.000Z'),
+    '/blog/honolulu-coffee-waikiki': new Date('2026-06-26T00:00:00.000Z'),
+    // Matcha / hojicha cluster (published Jul 1, 2026)
+    '/blog/matcha-story-waikiki': new Date('2026-07-01T00:00:00.000Z'),
+    '/blog/matcha-vs-hojicha-waikiki': new Date('2026-07-01T00:00:00.000Z'),
+    '/blog/best-matcha-drinks-waikiki': new Date('2026-07-01T00:00:00.000Z'),
+    '/blog/matcha-vs-coffee-waikiki': new Date('2026-07-01T00:00:00.000Z'),
+    '/blog/matcha-benefits-waikiki': new Date('2026-07-01T00:00:00.000Z'),
+    '/blog/iced-matcha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
+    '/blog/hojicha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
   };
 
   const routes = [
