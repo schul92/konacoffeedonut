@@ -16,6 +16,22 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'bingsu-vs-shaved-ice-kakigori',
+        image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
+        category: 'Korean Food',
+        title: 'Bingsu vs Shaved Ice vs Kakigori: Korean, Hawaiian & Japanese Iced Desserts Compared (2026)',
+        excerpt: 'Korean bingsu, Hawaiian shave ice and Japanese kakigori look similar but are completely different desserts — ice, texture, toppings and history compared, plus where to try all three styles in Waikiki.',
+        readTime: 8,
+      },
+      {
+        slug: 'bingsu-origin-history',
+        image: '/images/blog/bingsu-origin-history.jpeg',
+        category: 'Korean Food',
+        title: 'Bingsu Origin & History: Where Korean Shaved Ice Came From (2026)',
+        excerpt: 'From Joseon-dynasty ice houses to Korea\'s modern dessert cafés — the full origin story of bingsu, how patbingsu was born, and how Korean shaved ice made its way to Waikiki.',
+        readTime: 9,
+      },
+      {
         slug: 'matcha-story-waikiki',
         image: '/images/blog/matcha-story-waikiki.jpeg',
         category: 'Coffee',
@@ -393,6 +409,22 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'bingsu-vs-shaved-ice-kakigori',
+        image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
+        category: '韓国フード',
+        title: 'ビンス vs シェイブアイス vs かき氷：韓国・ハワイ・日本の氷デザートを徹底比較（2026年版）',
+        excerpt: '韓国のビンス、ハワイのシェイブアイス、日本のかき氷 — 似ているようで全く違う3つの氷デザートを、氷・食感・トッピング・歴史で徹底比較。ワイキキで味わえる場所も紹介。',
+        readTime: 8,
+      },
+      {
+        slug: 'bingsu-origin-history',
+        image: '/images/blog/bingsu-origin-history.jpeg',
+        category: '韓国フード',
+        title: 'ビンスの起源と歴史：韓国かき氷はどこで生まれた？（2026年版）',
+        excerpt: '朝鮮王朝の氷室から現代韓国のデザートカフェまで — ビンスの起源、パッビンスの誕生、そして韓国かき氷がワイキキに届くまでの物語。',
+        readTime: 9,
+      },
+      {
         slug: 'matcha-story-waikiki',
         image: '/images/blog/matcha-story-waikiki.jpeg',
         category: 'コーヒー',
@@ -724,6 +756,22 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'bingsu-vs-shaved-ice-kakigori',
+        image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
+        category: '한국 음식',
+        title: '빙수 vs 셰이브 아이스 vs 가키고리: 한국·하와이·일본 얼음 디저트 완벽 비교 (2026)',
+        excerpt: '한국 빙수, 하와이 셰이브 아이스, 일본 가키고리 — 비슷해 보이지만 완전히 다른 세 얼음 디저트를 얼음·식감·토핑·역사로 비교하고, 와이키키에서 맛보는 곳까지 소개합니다.',
+        readTime: 8,
+      },
+      {
+        slug: 'bingsu-origin-history',
+        image: '/images/blog/bingsu-origin-history.jpeg',
+        category: '한국 음식',
+        title: '빙수의 기원과 역사: 한국 빙수는 어디서 시작됐나 (2026)',
+        excerpt: '조선시대 빙고에서 현대 디저트 카페까지 — 빙수의 기원과 팥빙수의 탄생, 그리고 한국 빙수가 와이키키까지 오게 된 이야기.',
+        readTime: 9,
+      },
       {
         slug: 'matcha-story-waikiki',
         image: '/images/blog/matcha-story-waikiki.jpeg',
@@ -1057,6 +1105,22 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'bingsu-vs-shaved-ice-kakigori',
+        image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
+        category: '韩国美食',
+        title: '雪冰 vs 刨冰 vs 日式刨冰：韩国、夏威夷与日本冰品全方位对比（2026）',
+        excerpt: '韩式雪冰、夏威夷刨冰、日式刨冰——看似相似却完全不同的三种冰品，从冰质、口感、配料到历史全方位对比，并介绍在威基基品尝三种风格的地方。',
+        readTime: 8,
+      },
+      {
+        slug: 'bingsu-origin-history',
+        image: '/images/blog/bingsu-origin-history.jpeg',
+        category: '韩国美食',
+        title: '雪冰的起源与历史：韩式刨冰从何而来（2026）',
+        excerpt: '从朝鲜王朝的冰窖到现代韩国甜品店——雪冰的起源、红豆雪冰的诞生，以及韩式刨冰如何来到威基基的完整故事。',
+        readTime: 9,
+      },
+      {
         slug: 'matcha-story-waikiki',
         image: '/images/blog/matcha-story-waikiki.jpeg',
         category: '咖啡',
@@ -1388,6 +1452,22 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'bingsu-vs-shaved-ice-kakigori',
+        image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
+        category: 'Comida Coreana',
+        title: 'Bingsu vs Raspado vs Kakigori: Postres de Hielo Coreano, Hawaiano y Japonés Comparados (2026)',
+        excerpt: 'El bingsu coreano, el shave ice hawaiano y el kakigori japonés parecen similares pero son postres totalmente distintos — hielo, textura, toppings e historia comparados, y dónde probarlos en Waikiki.',
+        readTime: 8,
+      },
+      {
+        slug: 'bingsu-origin-history',
+        image: '/images/blog/bingsu-origin-history.jpeg',
+        category: 'Comida Coreana',
+        title: 'Origen e Historia del Bingsu: De Dónde Viene el Hielo Raspado Coreano (2026)',
+        excerpt: 'De las casas de hielo de la dinastía Joseon a los cafés modernos de Corea — la historia completa del bingsu, el nacimiento del patbingsu y cómo llegó a Waikiki.',
+        readTime: 9,
+      },
       {
         slug: 'matcha-story-waikiki',
         image: '/images/blog/matcha-story-waikiki.jpeg',

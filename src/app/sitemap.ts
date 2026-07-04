@@ -15,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/island-vintage-vs-kona-coffee-donut': new Date('2026-06-26T00:00:00.000Z'),
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': new Date('2026-06-26T00:00:00.000Z'),
     '/blog/honolulu-coffee-waikiki': new Date('2026-06-26T00:00:00.000Z'),
+    '/blog/bingsu-vs-shaved-ice-kakigori': new Date('2026-07-05T00:00:00.000Z'),
+    '/blog/bingsu-origin-history': new Date('2026-07-05T00:00:00.000Z'),
     // Matcha / hojicha cluster (published Jul 1, 2026)
     '/blog/matcha-story-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/matcha-vs-hojicha-waikiki': new Date('2026-07-01T00:00:00.000Z'),
@@ -82,6 +84,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-coffee-shops-waikiki',
     '/blog/island-vintage-vs-kona-coffee-donut',
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut',
+    // Bingsu cluster expansion (July 2026)
+    '/blog/bingsu-vs-shaved-ice-kakigori',
+    '/blog/bingsu-origin-history',
     // Matcha / hojicha cluster (June 2026)
     '/blog/matcha-story-waikiki',
     '/blog/matcha-vs-hojicha-waikiki',
@@ -157,6 +162,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-coffee-shops-waikiki': 0.9, // "best coffee waikiki" — beats all 3 rivals
     '/blog/island-vintage-vs-kona-coffee-donut': 0.9, // conquest: Island Vintage / açaí
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': 0.9, // conquest: Purveyors / best kona coffee
+    '/blog/bingsu-vs-shaved-ice-kakigori': 0.9, // captures 'bingsu vs shaved ice' cluster
+    '/blog/bingsu-origin-history': 0.9, // captures 'bingsu origin' 234 impr @ pos 5.6
     '/blog/matcha-story-waikiki': 0.85, // matcha cluster
     '/blog/matcha-vs-hojicha-waikiki': 0.85,
     '/blog/best-matcha-drinks-waikiki': 0.9, // buyer: best matcha waikiki
@@ -216,6 +223,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-coffee-shops-waikiki': 'weekly',
     '/blog/island-vintage-vs-kona-coffee-donut': 'weekly',
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': 'weekly',
+    '/blog/bingsu-vs-shaved-ice-kakigori': 'weekly',
+    '/blog/bingsu-origin-history': 'weekly',
     '/blog/matcha-story-waikiki': 'weekly',
     '/blog/matcha-vs-hojicha-waikiki': 'weekly',
     '/blog/best-matcha-drinks-waikiki': 'weekly',
