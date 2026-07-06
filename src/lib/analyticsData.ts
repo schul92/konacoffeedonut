@@ -221,9 +221,97 @@ async function getGa4(w: ReturnType<typeof windows>) {
   };
 }
 
-// ---- Per-tab entries (Search and Traffic tabs query independently) ----
+// ---- GA4 custom events (Events tab) ----
+// Conversion-ish events fired from src/lib/analytics.ts. Used for the KPI row
+// and the daily-trend filter.
+const CONVERSION_EVENTS = [
+  'job_apply_click',
+  'generate_lead',
+  'get_directions',
+  'contact',
+  'social_click',
+  'menu_download',
+  'initiate_order',
+  'newsletter_signup',
+];
+
+// GA4 auto-collected events — shown separately so they don't drown out ours.
+const AUTO_EVENTS = new Set([
+  'page_view',
+  'session_start',
+  'first_visit',
+  'user_engagement',
+  'scroll',
+  'click',
+  'form_start',
+  'form_submit',
+  'video_start',
+  'video_progress',
+  'video_complete',
+  'file_download',
+]);
+
+async function getEvents(w: ReturnType<typeof windows>) {
+  const ga = google.analyticsdata({ version: 'v1beta', auth: jwtClient(['https://www.googleapis.com/auth/analytics.readonly']) });
+  const property = `properties/${GA4_PROPERTY_ID}`;
+
+  const [byName, daily] = await Promise.all([
+    ga.properties.runReport({
+      property,
+      requestBody: {
+        dateRanges: [
+          { startDate: w.cur.start, endDate: w.cur.end },
+          { startDate: w.prev.start, endDate: w.prev.end },
+        ],
+        dimensions: [{ name: 'eventName' }],
+        metrics: [{ name: 'eventCount' }, { name: 'totalUsers' }],
+        limit: '100',
+      },
+    }),
+    ga.properties.runReport({
+      property,
+      requestBody: {
+        dateRanges: [{ startDate: w.cur.start, endDate: w.cur.end }],
+        dimensions: [{ name: 'date' }],
+        metrics: [{ name: 'eventCount' }],
+        dimensionFilter: { filter: { fieldName: 'eventName', inListFilter: { values: CONVERSION_EVENTS } } },
+        orderBys: [{ dimension: { dimensionName: 'date' } }],
+      },
+    }),
+  ]);
+
+  // With two dateRanges GA4 appends a `dateRange` dimension value to each row;
+  // fold the pair back into one entry per event name.
+  const map = new Map<string, { count: number; prev: number; users: number }>();
+  for (const r of byName.data.rows ?? []) {
+    const name = r.dimensionValues?.[0]?.value ?? '';
+    const range = r.dimensionValues?.[1]?.value;
+    const count = Number(r.metricValues?.[0]?.value) || 0;
+    const users = Number(r.metricValues?.[1]?.value) || 0;
+    const e = map.get(name) ?? { count: 0, prev: 0, users: 0 };
+    if (range === 'date_range_1') e.prev = count;
+    else {
+      e.count = count;
+      e.users = users;
+    }
+    map.set(name, e);
+  }
+
+  return {
+    events: [...map.entries()]
+      .map(([name, v]) => ({ name, ...v, isConversion: CONVERSION_EVENTS.includes(name), isAuto: AUTO_EVENTS.has(name) }))
+      .sort((a, b) => b.count - a.count),
+    dailyConversions: (daily.data.rows ?? []).map((r) => ({
+      date: (r.dimensionValues?.[0]?.value ?? '').replace(/^(\d{4})(\d{2})(\d{2})$/, '$1-$2-$3'),
+      count: Number(r.metricValues?.[0]?.value) || 0,
+    })),
+  };
+}
+
+// ---- Per-tab entries (Search, Traffic and Events tabs query independently) ----
 export type GscData = Awaited<ReturnType<typeof getGsc>>;
 export type Ga4Data = Awaited<ReturnType<typeof getGa4>>;
+export type EventsData = Awaited<ReturnType<typeof getEvents>>;
 
 export function analyticsWindow() {
   const w = windows();
@@ -241,6 +329,14 @@ export async function getGscData(): Promise<GscData | null> {
 export async function getGa4Data(): Promise<Ga4Data | null> {
   try {
     return await getGa4(windows());
+  } catch {
+    return null;
+  }
+}
+
+export async function getEventsData(): Promise<EventsData | null> {
+  try {
+    return await getEvents(windows());
   } catch {
     return null;
   }
