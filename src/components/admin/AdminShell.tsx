@@ -6,6 +6,7 @@ const TABS = [
   { href: '/admin', label: 'Sales', key: 'sales' },
   { href: '/admin/search', label: 'Search', key: 'search' },
   { href: '/admin/traffic', label: 'Traffic', key: 'traffic' },
+  { href: '/admin/events', label: 'Events', key: 'events' },
 ] as const;
 
 export default function AdminShell({
@@ -14,7 +15,7 @@ export default function AdminShell({
   subtitle,
   children,
 }: {
-  active: 'sales' | 'search' | 'traffic';
+  active: 'sales' | 'search' | 'traffic' | 'events';
   user: { name?: string | null; email?: string | null };
   subtitle?: string;
   children: React.ReactNode;
