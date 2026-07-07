@@ -22,7 +22,7 @@ export default function AdminShell({
 }) {
   return (
     <div className="min-h-screen">
-      <header className="border-b border-[var(--ad-border)] bg-[var(--ad-card)]">
+      <header className="sticky top-0 z-20 border-b border-[var(--ad-border)] bg-[var(--ad-card)]/85 backdrop-blur-md supports-[backdrop-filter]:bg-[var(--ad-card)]/70">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-3 sm:pt-4 flex items-center justify-between gap-3">
           <div className="min-w-0">
             <h1 className="text-base sm:text-lg font-bold tracking-tight text-[var(--ad-fg)] truncate">Kona Coffee Donut · Admin</h1>
@@ -54,8 +54,9 @@ export default function AdminShell({
               <Link
                 key={t.key}
                 href={t.href}
+                aria-current={isActive ? 'page' : undefined}
                 className={`shrink-0 px-4 py-2 text-sm font-semibold border-b-2 -mb-px transition-colors ${
-                  isActive ? 'border-orange-500 text-[var(--ad-fg)]' : 'border-transparent text-[var(--ad-fg-muted)] hover:text-[var(--ad-fg)]'
+                  isActive ? 'border-orange-500 text-[var(--ad-fg)]' : 'border-transparent text-[var(--ad-fg-muted)] hover:text-[var(--ad-fg)] hover:border-[var(--ad-border)]'
                 }`}
               >
                 {t.label}
