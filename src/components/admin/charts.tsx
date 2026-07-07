@@ -1,6 +1,7 @@
 'use client';
 
 import {
+  Area,
   Bar,
   BarChart,
   CartesianGrid,
@@ -188,16 +189,26 @@ export function TrafficTrend({ data, height = 260 }: { data: TrafficDay[]; heigh
     <div>
       <div className="-mt-1 mb-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ad-fg-muted)]">
         <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: c.primary }} />Sessions</span>
-        <span className="inline-flex items-center gap-1.5"><span className="h-[3px] w-4 rounded-full" style={{ background: c.palette[1] }} />Users</span>
+        <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: c.palette[1] }} />Users</span>
       </div>
       <ResponsiveContainer width="100%" height={height}>
         <ComposedChart data={data} margin={{ top: 8, right: 8, bottom: 0, left: -12 }}>
+          <defs>
+            <linearGradient id="tt-sessions" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor={c.primary} stopOpacity={0.32} />
+              <stop offset="95%" stopColor={c.primary} stopOpacity={0} />
+            </linearGradient>
+            <linearGradient id="tt-users" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor={c.palette[1]} stopOpacity={0.24} />
+              <stop offset="95%" stopColor={c.palette[1]} stopOpacity={0} />
+            </linearGradient>
+          </defs>
           <CartesianGrid vertical={false} stroke={c.grid} />
           <XAxis dataKey="label" tick={{ fontSize: 11, fill: c.axis }} interval="preserveStartEnd" tickLine={false} axisLine={false} dy={6} />
           <YAxis tick={{ fontSize: 11, fill: c.axis }} tickLine={false} axisLine={false} width={40} allowDecimals={false} />
-          <Tooltip cursor={{ fill: 'rgba(148,163,184,0.12)' }} content={<TrafficTooltip />} />
-          <Bar dataKey="sessions" fill={c.primary} radius={[5, 5, 0, 0]} maxBarSize={44} />
-          <Line type="monotone" dataKey="users" stroke={c.palette[1]} strokeWidth={2.5} dot={false} />
+          <Tooltip cursor={{ stroke: c.axis, strokeOpacity: 0.25 }} content={<TrafficTooltip />} />
+          <Area type="monotone" dataKey="sessions" stroke={c.primary} strokeWidth={2.5} fill="url(#tt-sessions)" dot={false} activeDot={{ r: 4 }} />
+          <Area type="monotone" dataKey="users" stroke={c.palette[1]} strokeWidth={2} fill="url(#tt-users)" dot={false} activeDot={{ r: 3.5 }} />
         </ComposedChart>
       </ResponsiveContainer>
     </div>
@@ -237,15 +248,58 @@ export function GscTrend({ data, height = 260 }: { data: GscDay[]; height?: numb
       </div>
       <ResponsiveContainer width="100%" height={height}>
         <ComposedChart data={data} margin={{ top: 8, right: -8, bottom: 0, left: -12 }}>
+          <defs>
+            <linearGradient id="gsc-clicks" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor={c.primary} stopOpacity={0.32} />
+              <stop offset="95%" stopColor={c.primary} stopOpacity={0} />
+            </linearGradient>
+          </defs>
           <CartesianGrid vertical={false} stroke={c.grid} />
           <XAxis dataKey="label" tick={{ fontSize: 11, fill: c.axis }} interval="preserveStartEnd" tickLine={false} axisLine={false} dy={6} />
           <YAxis yAxisId="clicks" tick={{ fontSize: 11, fill: c.axis }} tickLine={false} axisLine={false} width={40} allowDecimals={false} />
           <YAxis yAxisId="impr" orientation="right" tick={{ fontSize: 11, fill: c.axis }} tickFormatter={(v) => (v >= 1000 ? `${Math.round(v / 1000)}k` : String(v))} tickLine={false} axisLine={false} width={40} allowDecimals={false} />
-          <Tooltip cursor={{ fill: 'rgba(148,163,184,0.12)' }} content={<GscTooltip />} />
-          <Bar yAxisId="clicks" dataKey="clicks" fill={c.primary} radius={[5, 5, 0, 0]} maxBarSize={44} />
-          <Line yAxisId="impr" type="monotone" dataKey="impressions" stroke={c.palette[1]} strokeWidth={2.5} dot={false} />
+          <Tooltip cursor={{ stroke: c.axis, strokeOpacity: 0.25 }} content={<GscTooltip />} />
+          <Area yAxisId="clicks" type="monotone" dataKey="clicks" stroke={c.primary} strokeWidth={2.5} fill="url(#gsc-clicks)" dot={false} activeDot={{ r: 4 }} />
+          <Line yAxisId="impr" type="monotone" dataKey="impressions" stroke={c.palette[1]} strokeWidth={2} strokeDasharray="5 3" dot={false} />
         </ComposedChart>
       </ResponsiveContainer>
+    </div>
+  );
+}
+
+// Donut share breakdown with a center total and side legend (device mix etc.).
+export function ShareDonut({ data, centerLabel }: { data: { name: string; value: number }[]; centerLabel: string }) {
+  const c = useC();
+  const total = data.reduce((s, d) => s + d.value, 0);
+  return (
+    <div className="flex items-center gap-6">
+      <div className="relative h-40 w-40 shrink-0">
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie data={data} dataKey="value" nameKey="name" innerRadius={52} outerRadius={74} paddingAngle={2} strokeWidth={0}>
+              {data.map((_, i) => (
+                <Cell key={i} fill={c.palette[i % c.palette.length]} />
+              ))}
+            </Pie>
+            <Tooltip contentStyle={tip(c)} formatter={(v, n) => [Number(v).toLocaleString('en-US'), String(n)]} />
+          </PieChart>
+        </ResponsiveContainer>
+        <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center">
+          <span className="text-xl font-semibold tabular-nums text-[var(--ad-fg)]">{total.toLocaleString('en-US')}</span>
+          <span className="text-[11px] text-[var(--ad-fg-subtle)]">{centerLabel}</span>
+        </div>
+      </div>
+      <ul className="min-w-0 flex-1 space-y-2 text-sm">
+        {data.map((d, i) => (
+          <li key={d.name} className="flex items-center gap-2">
+            <span className="h-2.5 w-2.5 shrink-0 rounded-sm" style={{ background: c.palette[i % c.palette.length] }} />
+            <span className="truncate capitalize text-[var(--ad-fg)]">{d.name}</span>
+            <span className="ml-auto tabular-nums text-[var(--ad-fg-muted)]">
+              {d.value.toLocaleString('en-US')} · {total ? Math.round((d.value / total) * 100) : 0}%
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
