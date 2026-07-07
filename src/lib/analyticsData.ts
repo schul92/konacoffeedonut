@@ -1,7 +1,7 @@
 import 'server-only';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { google } from 'googleapis';
+import { google, type analyticsdata_v1beta } from 'googleapis';
 
 // googleapis/gaxios emits a harmless `zlib.bytesRead` deprecation (DEP0108)
 // while decompressing responses, which Next's dev error overlay surfaces as a
@@ -124,11 +124,14 @@ async function gscQuery(
 async function getGsc(w: ReturnType<typeof windows>) {
   const svc = google.searchconsole({ version: 'v1', auth: jwtClient(['https://www.googleapis.com/auth/webmasters.readonly']) });
 
-  const [curTotal, prevTotal, queries, pages] = await Promise.all([
+  const [curTotal, prevTotal, queries, pages, daily, devices, countries] = await Promise.all([
     gscQuery(svc, [], w.cur.start, w.cur.end, 1),
     gscQuery(svc, [], w.prev.start, w.prev.end, 1),
     gscQuery(svc, ['query'], w.cur.start, w.cur.end),
     gscQuery(svc, ['page'], w.cur.start, w.cur.end),
+    gscQuery(svc, ['date'], w.cur.start, w.cur.end),
+    gscQuery(svc, ['device'], w.cur.start, w.cur.end),
+    gscQuery(svc, ['country'], w.cur.start, w.cur.end, 10),
   ]);
 
   const cur = curTotal[0] ?? { clicks: 0, impressions: 0, ctr: 0, position: 0, key: '' };
@@ -150,74 +153,124 @@ async function getGsc(w: ReturnType<typeof windows>) {
       .slice(0, 15)
       .map((r) => ({ ...r, key: r.key.replace('https://www.konacoffeedonut.com', '').replace('https://konacoffeedonut.com', '') || '/' })),
     opportunities,
+    daily: [...daily].sort((a, b) => a.key.localeCompare(b.key)),
+    devices: [...devices].sort((a, b) => b.clicks - a.clicks),
+    countries: [...countries].sort((a, b) => b.clicks - a.clicks),
   };
 }
 
 // ---- GA4 ----
+// googleapis' runReport has a callback overload that makes ReturnType resolve
+// to void, so type against the response schema instead.
+type Ga4Report = { data: analyticsdata_v1beta.Schema$RunReportResponse };
+
 async function getGa4(w: ReturnType<typeof windows>) {
   const ga = google.analyticsdata({ version: 'v1beta', auth: jwtClient(['https://www.googleapis.com/auth/analytics.readonly']) });
   const property = `properties/${GA4_PROPERTY_ID}`;
+  const cur = [{ startDate: w.cur.start, endDate: w.cur.end }];
 
-  const totals = await ga.properties.runReport({
-    property,
-    requestBody: {
-      dateRanges: [
-        { startDate: w.cur.start, endDate: w.cur.end },
-        { startDate: w.prev.start, endDate: w.prev.end },
-      ],
-      metrics: [
-        { name: 'totalUsers' },
-        { name: 'sessions' },
-        { name: 'screenPageViews' },
-        { name: 'engagementRate' },
-      ],
-    },
-  });
+  // One breakdown report: dimension × [sessions, totalUsers] over the current window.
+  const breakdown = (dimension: string, limit: number) =>
+    ga.properties.runReport({
+      property,
+      requestBody: {
+        dateRanges: cur,
+        dimensions: [{ name: dimension }],
+        metrics: [{ name: 'sessions' }, { name: 'totalUsers' }],
+        orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
+        limit: String(limit),
+      },
+    });
+  const rows = (res: Ga4Report) => (res.data.rows ?? []);
+  const asKeyed = (res: Ga4Report) =>
+    rows(res).map((r) => ({
+      key: r.dimensionValues?.[0]?.value ?? '',
+      sessions: Number(r.metricValues?.[0]?.value) || 0,
+      users: Number(r.metricValues?.[1]?.value) || 0,
+    }));
+
+  const [totals, dailyRes, pagesRes, chRes, landRes, smRes, coRes, ciRes, devRes, langRes, realtimeRes] = await Promise.all([
+    ga.properties.runReport({
+      property,
+      requestBody: {
+        dateRanges: [
+          { startDate: w.cur.start, endDate: w.cur.end },
+          { startDate: w.prev.start, endDate: w.prev.end },
+        ],
+        metrics: [
+          { name: 'totalUsers' },
+          { name: 'sessions' },
+          { name: 'screenPageViews' },
+          { name: 'engagementRate' },
+          { name: 'newUsers' },
+          { name: 'averageSessionDuration' },
+        ],
+      },
+    }),
+    ga.properties.runReport({
+      property,
+      requestBody: {
+        dateRanges: cur,
+        dimensions: [{ name: 'date' }],
+        metrics: [{ name: 'sessions' }, { name: 'totalUsers' }, { name: 'screenPageViews' }],
+        orderBys: [{ dimension: { dimensionName: 'date' } }],
+      },
+    }),
+    ga.properties.runReport({
+      property,
+      requestBody: {
+        dateRanges: cur,
+        dimensions: [{ name: 'pagePath' }],
+        metrics: [{ name: 'screenPageViews' }, { name: 'totalUsers' }],
+        orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }],
+        limit: '15',
+      },
+    }),
+    breakdown('sessionDefaultChannelGroup', 10),
+    breakdown('landingPage', 10),
+    breakdown('sessionSourceMedium', 10),
+    breakdown('country', 8),
+    breakdown('city', 8),
+    breakdown('deviceCategory', 4),
+    breakdown('language', 8),
+    // Realtime is a different endpoint with its own quota; never let it sink the tab.
+    ga.properties
+      .runRealtimeReport({ property, requestBody: { metrics: [{ name: 'activeUsers' }] } })
+      .catch(() => null),
+  ]);
+
   const tRows = totals.data.rows ?? [];
   const pick = (rangeIdx: number) =>
-    tRows.find((r) => r.dimensionValues?.[0]?.value === `date_range_${rangeIdx}`)?.metricValues?.map((m) => Number(m.value) || 0) ?? [0, 0, 0, 0];
+    tRows.find((r) => r.dimensionValues?.[0]?.value === `date_range_${rangeIdx}`)?.metricValues?.map((m) => Number(m.value) || 0) ?? [0, 0, 0, 0, 0, 0];
   const c = pick(0);
   const p = pick(1);
-
-  const pagesRes = await ga.properties.runReport({
-    property,
-    requestBody: {
-      dateRanges: [{ startDate: w.cur.start, endDate: w.cur.end }],
-      dimensions: [{ name: 'pagePath' }],
-      metrics: [{ name: 'screenPageViews' }, { name: 'totalUsers' }],
-      orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }],
-      limit: '15',
-    },
-  });
-  const topPages = (pagesRes.data.rows ?? []).map((r) => ({
-    path: r.dimensionValues?.[0]?.value ?? '',
-    views: Number(r.metricValues?.[0]?.value) || 0,
-    users: Number(r.metricValues?.[1]?.value) || 0,
-  }));
-
-  const chRes = await ga.properties.runReport({
-    property,
-    requestBody: {
-      dateRanges: [{ startDate: w.cur.start, endDate: w.cur.end }],
-      dimensions: [{ name: 'sessionDefaultChannelGroup' }],
-      metrics: [{ name: 'sessions' }, { name: 'totalUsers' }],
-      orderBys: [{ metric: { metricName: 'sessions' }, desc: true }],
-      limit: '10',
-    },
-  });
-  const channels = (chRes.data.rows ?? []).map((r) => ({
-    channel: r.dimensionValues?.[0]?.value ?? '',
-    sessions: Number(r.metricValues?.[0]?.value) || 0,
-    users: Number(r.metricValues?.[1]?.value) || 0,
-  }));
 
   return {
     users: { value: c[0], prev: p[0] },
     sessions: { value: c[1], prev: p[1] },
     pageViews: { value: c[2], prev: p[2] },
     engagementRate: c[3],
-    topPages,
-    channels,
+    newUsers: { value: c[4], prev: p[4] },
+    avgSessionSeconds: c[5],
+    realtimeUsers: realtimeRes ? Number(realtimeRes.data.rows?.[0]?.metricValues?.[0]?.value) || 0 : null,
+    daily: rows(dailyRes).map((r) => ({
+      date: (r.dimensionValues?.[0]?.value ?? '').replace(/^(\d{4})(\d{2})(\d{2})$/, '$1-$2-$3'),
+      sessions: Number(r.metricValues?.[0]?.value) || 0,
+      users: Number(r.metricValues?.[1]?.value) || 0,
+      pageViews: Number(r.metricValues?.[2]?.value) || 0,
+    })),
+    topPages: rows(pagesRes).map((r) => ({
+      path: r.dimensionValues?.[0]?.value ?? '',
+      views: Number(r.metricValues?.[0]?.value) || 0,
+      users: Number(r.metricValues?.[1]?.value) || 0,
+    })),
+    channels: asKeyed(chRes).map((r) => ({ channel: r.key, sessions: r.sessions, users: r.users })),
+    landingPages: asKeyed(landRes),
+    sourceMedium: asKeyed(smRes),
+    countries: asKeyed(coRes),
+    cities: asKeyed(ciRes),
+    devices: asKeyed(devRes),
+    languages: asKeyed(langRes),
   };
 }
 

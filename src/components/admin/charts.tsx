@@ -155,6 +155,101 @@ export function RevenueChart({ data, compare = false, height = 300 }: { data: Da
   );
 }
 
+// Daily GA4 traffic: sessions as bars, users as a line. pageViews rides along in
+// the tooltip only, so the chart stays readable.
+type TrafficDay = { label: string; sessions: number; users: number; pageViews: number };
+
+function TrafficTooltip({ active, payload }: { active?: boolean; payload?: { payload: TrafficDay }[] }) {
+  const c = useC();
+  if (!active || !payload?.length) return null;
+  const row = payload[0].payload;
+  return (
+    <div style={tip(c)}>
+      <div className="font-semibold mb-1">{row.label}</div>
+      {(
+        [
+          ['Sessions', row.sessions],
+          ['Users', row.users],
+          ['Page views', row.pageViews],
+        ] as const
+      ).map(([k, v]) => (
+        <div key={k} className="flex items-center justify-between gap-4">
+          <span style={{ color: c.axis }}>{k}</span>
+          <span className="font-semibold tabular-nums">{v.toLocaleString('en-US')}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export function TrafficTrend({ data, height = 260 }: { data: TrafficDay[]; height?: number }) {
+  const c = useC();
+  return (
+    <div>
+      <div className="-mt-1 mb-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ad-fg-muted)]">
+        <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: c.primary }} />Sessions</span>
+        <span className="inline-flex items-center gap-1.5"><span className="h-[3px] w-4 rounded-full" style={{ background: c.palette[1] }} />Users</span>
+      </div>
+      <ResponsiveContainer width="100%" height={height}>
+        <ComposedChart data={data} margin={{ top: 8, right: 8, bottom: 0, left: -12 }}>
+          <CartesianGrid vertical={false} stroke={c.grid} />
+          <XAxis dataKey="label" tick={{ fontSize: 11, fill: c.axis }} interval="preserveStartEnd" tickLine={false} axisLine={false} dy={6} />
+          <YAxis tick={{ fontSize: 11, fill: c.axis }} tickLine={false} axisLine={false} width={40} allowDecimals={false} />
+          <Tooltip cursor={{ fill: 'rgba(148,163,184,0.12)' }} content={<TrafficTooltip />} />
+          <Bar dataKey="sessions" fill={c.primary} radius={[5, 5, 0, 0]} maxBarSize={44} />
+          <Line type="monotone" dataKey="users" stroke={c.palette[1]} strokeWidth={2.5} dot={false} />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
+// Daily Search Console: clicks as bars (left axis), impressions as a line
+// (right axis — impressions run ~100x clicks, so they need their own scale).
+type GscDay = { label: string; clicks: number; impressions: number };
+
+function GscTooltip({ active, payload }: { active?: boolean; payload?: { payload: GscDay }[] }) {
+  const c = useC();
+  if (!active || !payload?.length) return null;
+  const row = payload[0].payload;
+  return (
+    <div style={tip(c)}>
+      <div className="font-semibold mb-1">{row.label}</div>
+      <div className="flex items-center justify-between gap-4">
+        <span style={{ color: c.axis }}>Clicks</span>
+        <span className="font-semibold tabular-nums">{row.clicks.toLocaleString('en-US')}</span>
+      </div>
+      <div className="flex items-center justify-between gap-4">
+        <span style={{ color: c.axis }}>Impressions</span>
+        <span className="tabular-nums">{row.impressions.toLocaleString('en-US')}</span>
+      </div>
+    </div>
+  );
+}
+
+export function GscTrend({ data, height = 260 }: { data: GscDay[]; height?: number }) {
+  const c = useC();
+  return (
+    <div>
+      <div className="-mt-1 mb-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[var(--ad-fg-muted)]">
+        <span className="inline-flex items-center gap-1.5"><span className="h-2.5 w-2.5 rounded-sm" style={{ background: c.primary }} />Clicks</span>
+        <span className="inline-flex items-center gap-1.5"><span className="h-[3px] w-4 rounded-full" style={{ background: c.palette[1] }} />Impressions</span>
+      </div>
+      <ResponsiveContainer width="100%" height={height}>
+        <ComposedChart data={data} margin={{ top: 8, right: -8, bottom: 0, left: -12 }}>
+          <CartesianGrid vertical={false} stroke={c.grid} />
+          <XAxis dataKey="label" tick={{ fontSize: 11, fill: c.axis }} interval="preserveStartEnd" tickLine={false} axisLine={false} dy={6} />
+          <YAxis yAxisId="clicks" tick={{ fontSize: 11, fill: c.axis }} tickLine={false} axisLine={false} width={40} allowDecimals={false} />
+          <YAxis yAxisId="impr" orientation="right" tick={{ fontSize: 11, fill: c.axis }} tickFormatter={(v) => (v >= 1000 ? `${Math.round(v / 1000)}k` : String(v))} tickLine={false} axisLine={false} width={40} allowDecimals={false} />
+          <Tooltip cursor={{ fill: 'rgba(148,163,184,0.12)' }} content={<GscTooltip />} />
+          <Bar yAxisId="clicks" dataKey="clicks" fill={c.primary} radius={[5, 5, 0, 0]} maxBarSize={44} />
+          <Line yAxisId="impr" type="monotone" dataKey="impressions" stroke={c.palette[1]} strokeWidth={2.5} dot={false} />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
 export function Sparkline({ data, height = 28 }: { data: number[]; height?: number }) {
   const c = useC();
   if (data.length < 2) return null;

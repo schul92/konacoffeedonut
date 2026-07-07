@@ -1,5 +1,25 @@
 import type { GscData } from '@/lib/analyticsData';
 import { Card, Kpi, num, pct } from './ui';
+import { GscTrend } from './charts';
+
+const dayLabel = (ymd: string) => `${Number(ymd.slice(5, 7))}/${Number(ymd.slice(8, 10))}`;
+
+// GSC returns ISO-3166 alpha-3 lowercase country codes; a few we actually see
+// get friendly names, the rest just get uppercased.
+const COUNTRY: Record<string, string> = {
+  usa: 'United States',
+  jpn: 'Japan',
+  kor: 'South Korea',
+  can: 'Canada',
+  aus: 'Australia',
+  gbr: 'United Kingdom',
+  deu: 'Germany',
+  fra: 'France',
+  chn: 'China',
+  twn: 'Taiwan',
+  phl: 'Philippines',
+  nzl: 'New Zealand',
+};
 
 function GscTable({ title, rows, keyHead }: { title: string; rows: GscData['topQueries']; keyHead: string }) {
   return (
@@ -44,9 +64,22 @@ export default function SearchView({ data }: { data: GscData | null }) {
         <Kpi label="Avg. CTR" value={pct(data.ctr)} sub="last 28 days" />
         <Kpi label="Avg. position" value={data.position.toFixed(1)} sub="last 28 days" />
       </section>
+      <Card title="Clicks & impressions per day">
+        <GscTrend data={data.daily.map((d) => ({ label: dayLabel(d.key), clicks: d.clicks, impressions: d.impressions }))} />
+      </Card>
       <section className="grid lg:grid-cols-2 gap-4">
         <GscTable title="Top queries" rows={data.topQueries} keyHead="Query" />
         <GscTable title="Top pages" rows={data.topPages} keyHead="Page" />
+        <GscTable
+          title="Devices"
+          rows={data.devices.map((r) => ({ ...r, key: r.key.charAt(0) + r.key.slice(1).toLowerCase() }))}
+          keyHead="Device"
+        />
+        <GscTable
+          title="Countries"
+          rows={data.countries.map((r) => ({ ...r, key: COUNTRY[r.key] ?? r.key.toUpperCase() }))}
+          keyHead="Country"
+        />
       </section>
       <GscTable title="Opportunities — high impressions, low CTR or position 8–25" rows={data.opportunities} keyHead="Query" />
     </>
