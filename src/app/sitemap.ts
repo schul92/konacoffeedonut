@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/island-vintage-vs-kona-coffee-donut': new Date('2026-06-26T00:00:00.000Z'),
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut': new Date('2026-06-26T00:00:00.000Z'),
     '/blog/honolulu-coffee-waikiki': new Date('2026-06-26T00:00:00.000Z'),
+    '/blog/shaved-ice-in-korean': new Date('2026-07-14T00:00:00.000Z'),
     '/blog/bingsu-vs-shaved-ice-kakigori': new Date('2026-07-05T00:00:00.000Z'),
     '/blog/bingsu-origin-history': new Date('2026-07-05T00:00:00.000Z'),
     // Matcha / hojicha cluster (published Jul 1, 2026)
@@ -85,6 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/island-vintage-vs-kona-coffee-donut',
     '/blog/kona-coffee-purveyors-vs-kona-coffee-donut',
     // Bingsu cluster expansion (July 2026)
+    '/blog/shaved-ice-in-korean',
     '/blog/bingsu-vs-shaved-ice-kakigori',
     '/blog/bingsu-origin-history',
     // Matcha / hojicha cluster (June 2026)

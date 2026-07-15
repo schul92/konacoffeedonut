@@ -16,6 +16,14 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'shaved-ice-in-korean',
+        image: '/images/blog/what-is-bingsu.png',
+        category: 'Korean Food',
+        title: 'Shaved Ice in Korean: Bingsu (빙수) — Meaning, Pronunciation & Where to Try It (2026)',
+        excerpt: 'Shaved ice in Korean is called bingsu (빙수) — literally "ice water." Learn what the word means, how to pronounce it, bingsu vs bingsoo spelling, key menu words like patbingsu, and where to try real Korean bingsu in Waikiki.',
+        readTime: 6,
+      },
+      {
         slug: 'bingsu-vs-shaved-ice-kakigori',
         image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
         category: 'Korean Food',
@@ -409,6 +417,14 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'shaved-ice-in-korean',
+        image: '/images/blog/what-is-bingsu.png',
+        category: '韓国フード',
+        title: '韓国語でかき氷は「ビンス（빙수）」— 意味・発音・注文フレーズまで（2026年版）',
+        excerpt: '韓国のかき氷「ビンス（빙수）」の意味と発音、パッピンスなどメニューの読み方、韓国語での注文フレーズ、ワイキキで本場のビンスが味わえる場所まで、まとめて解説します。',
+        readTime: 6,
+      },
+      {
         slug: 'bingsu-vs-shaved-ice-kakigori',
         image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
         category: '韓国フード',
@@ -756,6 +772,14 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'shaved-ice-in-korean',
+        image: '/images/blog/what-is-bingsu.png',
+        category: '한국 음식',
+        title: '빙수 영어로? Korean Shaved Ice — 뜻·유래·외국인에게 소개하는 법 (2026)',
+        excerpt: '빙수는 영어로 "Korean shaved ice", 고유명사로는 bingsu. 단어의 뜻과 유래, bingsu와 bingsoo 표기 차이, 외국인 친구에게 소개하는 표현, 와이키키에서 빙수 파는 곳까지 정리했습니다.',
+        readTime: 6,
+      },
       {
         slug: 'bingsu-vs-shaved-ice-kakigori',
         image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
@@ -1105,6 +1129,14 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'shaved-ice-in-korean',
+        image: '/images/blog/what-is-bingsu.png',
+        category: '韩国美食',
+        title: '刨冰的韩语怎么说？雪冰（빙수/Bingsu）的含义、发音与点单用语（2026）',
+        excerpt: '刨冰的韩语是빙수（bingsu），中文称"雪冰"，字面意思是"冰水"。详解含义与发音、bingsu与bingsoo的写法区别、红豆雪冰等菜单词汇，以及在威基基哪里能吃到正宗韩式雪冰。',
+        readTime: 6,
+      },
+      {
         slug: 'bingsu-vs-shaved-ice-kakigori',
         image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
         category: '韩国美食',
@@ -1452,6 +1484,14 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'shaved-ice-in-korean',
+        image: '/images/blog/what-is-bingsu.png',
+        category: 'Comida Coreana',
+        title: 'Hielo Raspado en Coreano: Bingsu (빙수) — Significado, Pronunciación y Dónde Probarlo (2026)',
+        excerpt: 'El hielo raspado en coreano se llama bingsu (빙수), literalmente "agua de hielo". Aprende su significado, cómo pronunciarlo, la diferencia entre bingsu y bingsoo, palabras clave del menú como patbingsu y dónde probar bingsu coreano auténtico en Waikiki.',
+        readTime: 6,
+      },
       {
         slug: 'bingsu-vs-shaved-ice-kakigori',
         image: '/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg',
