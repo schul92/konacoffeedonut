@@ -617,7 +617,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
           description: 'Korean shaved ice dessert (빙수) made with finely shaved milk ice, topped with fresh tropical Hawaiian fruits, mochi, and sweet condensed milk.',
           image: 'https://www.konacoffeedonut.com/images/menu/bingsu.webp',
           brand: { '@type': 'Brand', name: 'Kona Coffee Donut?' },
-          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '14.95', availability: 'https://schema.org/InStock', url: `https://www.konacoffeedonut.com/${locale}/menu` },
+          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '15.95', availability: 'https://schema.org/InStock', url: `https://www.konacoffeedonut.com/${locale}/menu` },
         },
       },
       {
