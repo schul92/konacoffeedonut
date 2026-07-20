@@ -641,7 +641,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
           description: 'Brazilian-Hawaiian superfood bowl with organic acai berry base, topped with fresh Hawaiian fruits (banana, strawberry, mango), granola, and honey.',
           image: 'https://www.konacoffeedonut.com/images/menu/acai.webp',
           brand: { '@type': 'Brand', name: 'Kona Coffee Donut?' },
-          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '13.95', availability: 'https://schema.org/InStock', url: `https://www.konacoffeedonut.com/${locale}/menu` },
+          offers: { '@type': 'Offer', priceCurrency: 'USD', price: '14.95', availability: 'https://schema.org/InStock', url: `https://www.konacoffeedonut.com/${locale}/menu` },
         },
       },
     ],
