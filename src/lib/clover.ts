@@ -44,6 +44,9 @@ interface CloverLineItem {
   isRevenue?: boolean;
   refunded?: boolean;
   item?: { id?: string };
+  // Add-on modifiers (e.g. boba, extra shot). Their charge is NOT in `price`,
+  // so item/category revenue must add them to match the order totals.
+  modifications?: { elements?: { amount?: number }[] };
 }
 interface CloverOrder {
   id: string;
@@ -146,7 +149,7 @@ async function cloverPaginate<T>(resource: string, query: string): Promise<T[]> 
 }
 
 const fetchOrders = (sinceMs: number) =>
-  cloverPaginate<CloverOrder>('orders', `expand=lineItems,payments.tender&filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`);
+  cloverPaginate<CloverOrder>('orders', `expand=lineItems.modifications,payments.tender&filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`);
 const fetchRefunds = (sinceMs: number) =>
   cloverPaginate<CloverRefund>('refunds', `filter=${encodeURIComponent(`createdTime>=${sinceMs}`)}`);
 
@@ -333,7 +336,7 @@ export async function getSalesData(opts: { range?: RangeKey; start?: string; end
     // background refresh is swallowed (the old value is kept). The version
     // suffix is bumped whenever SalesData's shape changes so a deploy never
     // serves an old-shaped object from the persisted cache.
-    const data = await unstable_cache(() => computeSalesData(opts), ['clover-sales-v4', key], { revalidate: 300, tags: [CLOVER_TAG] })();
+    const data = await unstable_cache(() => computeSalesData(opts), ['clover-sales-v5', key], { revalidate: 300, tags: [CLOVER_TAG] })();
     lastGood.set(key, data);
     return data;
   } catch (e) {
@@ -399,12 +402,14 @@ async function computeSalesData(opts: { range?: RangeKey; start?: string; end?: 
         const cat = catMap[li.item?.id ?? ''] ?? 'Uncategorized';
         const q = packQty(name);
         const donut = isDonut(name, cat);
+        const modSum = (li.modifications?.elements ?? []).reduce((s, m) => s + (m.amount ?? 0), 0);
+        const liRevenue = (li.price ?? 0) + modSum;
         const cur = itemMap.get(name) ?? { units: 0, revenue: 0, pieces: 0, donut };
         cur.units += 1;
-        cur.revenue += li.price ?? 0;
+        cur.revenue += liRevenue;
         cur.pieces += q;
         itemMap.set(name, cur);
-        catRev.set(cat, (catRev.get(cat) ?? 0) + (li.price ?? 0));
+        catRev.set(cat, (catRev.get(cat) ?? 0) + liRevenue);
         if (donut) donutDay.set(day, (donutDay.get(day) ?? 0) + q);
       }
       for (const p of o.payments?.elements ?? []) {
