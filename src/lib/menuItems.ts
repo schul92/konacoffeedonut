@@ -45,7 +45,8 @@ export interface MenuItemCategory {
     | 'smoothies'
     | 'bingsu'
     | 'acai'
-    | 'hotdog';
+    | 'hotdog'
+    | 'boba';
   /** Display title for the section header */
   title: string;
   /** Optional category-level link to the existing detail page (slug under /menu) */
@@ -61,6 +62,7 @@ const MALASADA_IMG = '/images/menu/malasada.webp';
 const COFFEE = '/images/menu/coffee.webp';
 const BINGSU_BASE = '/images/menu/bingsu.webp';
 const HOTDOG = '/images/menu/hotdog.webp';
+const MILKTEA_IMG = '/images/menu/hotdog.webp'; // board shows boba beside the hotdogs
 const ACAI_IMG = '/images/menu/acai.webp';
 
 // Photoreal Gemini-generated product shots with the cream studio background
@@ -217,16 +219,38 @@ export const menuItemCategories: MenuItemCategory[] = [
     addOns: SHAVE_ICE_ADDONS,
   },
   {
+    // 12 rice hotdogs, matching the in-store board and Clover POS exactly
+    // (POS is the source of truth for prices). Only six product cutouts exist,
+    // so coatings reuse the closest matching shot.
     id: 'hotdog',
-    title: 'Korean Corn Dogs',
+    title: 'Rice Hotdogs',
     detailSlug: 'korean-corn-dog',
     items: [
-      { name: 'Classic Sausage', image: hotdogItem('corn-dog-classic-sausage') },
-      { name: 'Mozzarella Cheese', image: hotdogItem('corn-dog-mozzarella-cheese') },
-      { name: 'Half & Half', image: hotdogItem('corn-dog-half-and-half') },
-      { name: 'Potato Dog', image: hotdogItem('corn-dog-potato') },
-      { name: 'Crispy Ramen', image: hotdogItem('corn-dog-crispy-ramen') },
-      { name: 'Sugar Dog', image: hotdogItem('corn-dog-sugar-dog') },
+      { name: 'Original', image: hotdogItem('corn-dog-classic-sausage'), price: '6.99' },
+      { name: 'Half Mozzarella', image: hotdogItem('corn-dog-half-and-half'), price: '7.99' },
+      { name: 'Whole Mozzarella', image: hotdogItem('corn-dog-mozzarella-cheese'), price: '8.99' },
+      { name: 'Potato Original', image: hotdogItem('corn-dog-potato'), price: '7.99' },
+      { name: 'Potato Half & Half', image: hotdogItem('corn-dog-potato'), price: '8.99' },
+      { name: 'Potato Mozzarella', image: hotdogItem('corn-dog-potato'), price: '9.99' },
+      { name: 'Hot Cheetos Original', image: hotdogItem('corn-dog-classic-sausage'), price: '7.99' },
+      { name: 'Hot Cheetos Half & Half', image: hotdogItem('corn-dog-half-and-half'), price: '8.99' },
+      { name: 'Hot Cheetos Mozzarella', image: hotdogItem('corn-dog-mozzarella-cheese'), price: '9.99' },
+      { name: 'Ramen Original', image: hotdogItem('corn-dog-crispy-ramen'), price: '7.99' },
+      { name: 'Ramen Half & Half', image: hotdogItem('corn-dog-crispy-ramen'), price: '8.99' },
+      { name: 'Ramen Mozzarella', image: hotdogItem('corn-dog-crispy-ramen'), price: '9.99' },
+    ],
+  },
+  {
+    // Boba milk teas — canned, all one price on the board and in Clover.
+    id: 'boba',
+    title: 'Boba Milk Tea',
+    items: [
+      { name: 'Brown Sugar', image: MILKTEA_IMG, price: '8.95' },
+      { name: 'Ube', image: MILKTEA_IMG, price: '8.95' },
+      { name: 'Milk Tea', image: MILKTEA_IMG, price: '8.95' },
+      { name: 'Coffee', image: MILKTEA_IMG, price: '8.95' },
+      { name: 'Thai Tea', image: MILKTEA_IMG, price: '8.95' },
+      { name: 'Matcha', image: MILKTEA_IMG, price: '8.95' },
     ],
   },
 ];
@@ -241,4 +265,5 @@ export const categoryFallbackImage: Record<MenuItemCategory['id'], string> = {
   bingsu: BINGSU_BASE,
   acai: ACAI_IMG,
   hotdog: HOTDOG,
+  boba: MILKTEA_IMG,
 };
