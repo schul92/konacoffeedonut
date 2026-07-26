@@ -62,7 +62,7 @@ const MALASADA_IMG = '/images/menu/malasada.webp';
 const COFFEE = '/images/menu/coffee.webp';
 const BINGSU_BASE = '/images/menu/bingsu.webp';
 const HOTDOG = '/images/menu/hotdog.webp';
-const MILKTEA_IMG = '/images/menu/hotdog.webp'; // board shows boba beside the hotdogs
+const MILKTEA_IMG = '/images/menu/items/gemini/boba/boba-milk-tea.webp';
 const ACAI_IMG = '/images/menu/acai.webp';
 
 // Photoreal Gemini-generated product shots with the cream studio background
@@ -81,6 +81,7 @@ const smoothieItem = geminiItem('smoothies');
 const bingsuItem = geminiItem('bingsu');
 const acaiItem = geminiItem('acai');
 const hotdogItem = geminiItem('hotdog');
+const bobaItem = geminiItem('boba');
 
 export const menuItemCategories: MenuItemCategory[] = [
   {
@@ -245,12 +246,12 @@ export const menuItemCategories: MenuItemCategory[] = [
     id: 'boba',
     title: 'Boba Milk Tea',
     items: [
-      { name: 'Brown Sugar', image: MILKTEA_IMG, price: '8.95' },
-      { name: 'Ube', image: MILKTEA_IMG, price: '8.95' },
-      { name: 'Milk Tea', image: MILKTEA_IMG, price: '8.95' },
-      { name: 'Coffee', image: MILKTEA_IMG, price: '8.95' },
-      { name: 'Thai Tea', image: MILKTEA_IMG, price: '8.95' },
-      { name: 'Matcha', image: MILKTEA_IMG, price: '8.95' },
+      { name: 'Brown Sugar', image: bobaItem('boba-brown-sugar'), price: '8.95' },
+      { name: 'Ube', image: bobaItem('boba-ube'), price: '8.95' },
+      { name: 'Milk Tea', image: bobaItem('boba-milk-tea'), price: '8.95' },
+      { name: 'Coffee', image: bobaItem('boba-coffee'), price: '8.95' },
+      { name: 'Thai Tea', image: bobaItem('boba-thai-tea'), price: '8.95' },
+      { name: 'Matcha', image: bobaItem('boba-matcha'), price: '8.95' },
     ],
   },
 ];
