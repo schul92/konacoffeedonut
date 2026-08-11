@@ -92,7 +92,7 @@ const content: Record<Locale, BlogContent> = {
           'Malasada at Leonard\'s: $2 (Kona Coffee Donut from $3.95)',
           'Bingsu (sized for 2 people): $14–$18 — split costs $8 each',
           'Hawaiian shaved ice: $5–$10',
-          'Smoothie at Mochi Land: $8.95',
+          'Smoothie at Mochi Land: $10.95',
         ],
       },
       {

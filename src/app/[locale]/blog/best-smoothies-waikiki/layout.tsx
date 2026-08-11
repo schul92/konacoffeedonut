@@ -6,7 +6,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const title = 'Best Smoothies in Waikiki 2026: 10 Hawaiian Flavors at Mochi Land';
   const description =
-    "Looking for smoothies near Waikiki Beach? Mochi Land at Kona Coffee Donut serves 10 Hawaiian smoothies — pina colada, mango, ube, taro, brown sugar, lychee — all $8.95. Open 7 AM–9 PM.";
+    "Looking for smoothies near Waikiki Beach? Mochi Land at Kona Coffee Donut serves 10 Hawaiian smoothies — pina colada, mango, ube, taro, brown sugar, lychee — all $10.95. Open 7 AM–9 PM.";
   const localeMap: Record<string, string> = { en: 'en_US', ja: 'ja_JP', ko: 'ko_KR', zh: 'zh_CN', es: 'es_ES' };
   return {
     title,

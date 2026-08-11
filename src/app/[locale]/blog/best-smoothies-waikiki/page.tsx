@@ -9,22 +9,22 @@ const config = {
   imageAlt: 'Best smoothies in Waikiki — Mochi Land Hawaiian smoothies in tropical flavors',
   schemaHeadline: 'Best Smoothies in Waikiki 2026: 10 Hawaiian Flavors at Mochi Land',
   schemaDescription:
-    "A guide to the best smoothies in Waikiki, featuring 10 Hawaiian-style Mochi Land smoothies at Kona Coffee Donut on Kalākaua Avenue, all priced at $8.95.",
+    "A guide to the best smoothies in Waikiki, featuring 10 Hawaiian-style Mochi Land smoothies at Kona Coffee Donut on Kalākaua Avenue, all priced at $10.95.",
 };
 
 const content: Record<Locale, BlogContent> = {
   en: {
     hero: {
       title: 'Best Smoothies in Waikiki 2026',
-      subtitle: '10 Hawaiian smoothie flavors at Mochi Land — all $8.95, all walking distance from Waikiki Beach.',
-      date: 'Updated May 2026',
+      subtitle: '10 Hawaiian smoothie flavors at Mochi Land — all $10.95, all walking distance from Waikiki Beach.',
+      date: 'Updated August 2026',
       readTime: '5 min read',
       badge: 'Smoothie Guide',
     },
     intro:
-      "After a morning surf, an afternoon walk down Kalākaua, or a sunny afternoon at the beach, nothing hits like a cold tropical smoothie. The challenge in Waikiki: a lot of smoothie spots use frozen concentrates and pre-mix bases that taste like syrup. At Mochi Land — the smoothie counter inside Kona Coffee Donut — every smoothie is blended to order using real fruit and authentic Asian-Hawaiian flavors. All 10 flavors are priced at $8.95, no upsells, no surprises. Here's the lineup, what each tastes like, and which ones to try first.",
+      "After a morning surf, an afternoon walk down Kalākaua, or a sunny afternoon at the beach, nothing hits like a cold tropical smoothie. The challenge in Waikiki: a lot of smoothie spots use frozen concentrates and pre-mix bases that taste like syrup. At Mochi Land — the smoothie counter inside Kona Coffee Donut — every smoothie is blended to order using real fruit and authentic Asian-Hawaiian flavors. All 10 flavors are one flat price — $10.95 — no surprises. Here's the lineup, what each tastes like, and which ones to try first.",
     visitCTA: {
-      headline: '10 Hawaiian Smoothies, All $8.95, On Kalākaua',
+      headline: '10 Hawaiian Smoothies, All $10.95, On Kalākaua',
       body:
         "Mochi Land at Kona Coffee Donut blends every smoothie fresh to order. From classic mango to brown sugar boba and ube cream, there's something for every craving. Walking distance from Waikiki Beach. Open daily 7 AM to 9 PM.",
       menuLabel: 'See Full Smoothie Menu',
@@ -71,7 +71,7 @@ const content: Record<Locale, BlogContent> = {
       {
         h2: 'Why Mochi Land Smoothies Stand Out',
         body:
-          "We've all had the disappointing smoothie that tastes mostly like ice and sugar. Mochi Land smoothies are blended thick (you'll need a wide straw), use real fruit and real Asian-Hawaiian flavor bases (not just syrups), and stay flavorful all the way to the bottom of the cup. We also keep the price flat at $8.95 across all 10 flavors — no upcharges for boba, no surprise add-ons.",
+          "We've all had the disappointing smoothie that tastes mostly like ice and sugar. Mochi Land smoothies are blended thick (you'll need a wide straw), use real fruit and real Asian-Hawaiian flavor bases (not just syrups), and stay flavorful all the way to the bottom of the cup. We also keep the price flat at $10.95 across all 10 flavors — one price, no surprise add-ons.",
       },
       {
         h2: 'Best Smoothies for Different Vibes',
@@ -90,7 +90,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       {
         q: 'How much do smoothies cost at Mochi Land Waikiki?',
-        a: 'All 10 Mochi Land smoothie flavors at Kona Coffee Donut are priced flat at $8.95. No upsells for boba pearls or premium flavors.',
+        a: 'All 10 Mochi Land smoothie flavors at Kona Coffee Donut are priced flat at $10.95 — one price across every flavor.',
       },
       {
         q: 'Do the smoothies have boba (tapioca pearls)?',
@@ -115,33 +115,33 @@ const content: Record<Locale, BlogContent> = {
     ],
     finalCTA: {
       headline: 'Your Next Smoothie Is on Kalākaua',
-      body: '10 Hawaiian flavors, $8.95 across the board, blended fresh. Walking distance from the beach.',
+      body: '10 Hawaiian flavors, $10.95 across the board, blended fresh. Walking distance from the beach.',
       visitLabel: 'Visit Us Today',
       callLabel: 'Call (808) 304-1808',
     },
   },
   ja: {
-    hero: { title: 'ワイキキで美味しいスムージー10選', subtitle: 'Mochi Landの全10フレーバー、すべて$8.95。', date: '2026年5月更新', readTime: '読了5分', badge: 'スムージーガイド' },
-    intro: 'Mochi Land（コナコーヒードーナツ内）では、本物のフルーツと本格的なアジアン・ハワイアンの味を使い、その場でブレンド。10種類すべて$8.95均一でわかりやすい価格設定。',
-    visitCTA: { headline: 'カラカウア通りでハワイアンスムージーを', body: 'すべて$8.95、その場でブレンド。マンゴー、ウベ、ブラウンシュガーボバなど10種類。毎日7時〜21時。', menuLabel: 'メニューを見る', directionsLabel: '行き方を確認' },
+    hero: { title: 'ワイキキで美味しいスムージー10選', subtitle: 'Mochi Landの全10フレーバー、すべて$10.95。', date: '2026年8月更新', readTime: '読了5分', badge: 'スムージーガイド' },
+    intro: 'Mochi Land（コナコーヒードーナツ内）では、本物のフルーツと本格的なアジアン・ハワイアンの味を使い、その場でブレンド。10種類すべて$10.95均一でわかりやすい価格設定。',
+    visitCTA: { headline: 'カラカウア通りでハワイアンスムージーを', body: 'すべて$10.95、その場でブレンド。マンゴー、ウベ、ブラウンシュガーボバなど10種類。毎日7時〜21時。', menuLabel: 'メニューを見る', directionsLabel: '行き方を確認' },
     sections: [
       { h2: 'スムージー全10フレーバー', body: 'ボバ（タピオカ）入りのものはお店で確認できます。', bullets: ['ピニャコラーダ', 'ストロベリー', 'マンゴー', 'ライチ', 'ブラウンシュガーボバ', 'ウベ（紫芋）', 'コーヒー（コナ豆使用）', 'タイティー', 'タロ', 'ミルクティー'], pullout: { title: '初めての方', body: 'マンゴーかピニャコラーダが定番。冒険したいならウベかブラウンシュガー。' } },
       { h2: 'スムージーとボバスムージーの違い', body: 'タピオカパールが入ったタイプは太いストローで吸い上げる楽しさが特徴。ご希望に応じて入れる/抜くが可能です。' },
       { h2: 'おすすめペアリング', body: 'ドーナツやアフォガートとの組み合わせも◎', bullets: ['ピニャコラーダ + マンゴーモチドーナツ', 'ブラウンシュガー + 黒ごまドーナツ', 'コーヒースムージー + アフォガート', 'ウベスムージー + ウベドーナツ'] },
-      { h2: 'Mochi Landの強み', body: 'シロップではなく本物のフルーツ、均一$8.95価格、注文ごとにブレンド。' },
+      { h2: 'Mochi Landの強み', body: 'シロップではなく本物のフルーツ、均一$10.95価格、注文ごとにブレンド。' },
     ],
     faq: [
-      { q: '価格は？', a: '全10種類$8.95均一。追加料金なし。' },
+      { q: '価格は？', a: '全10種類$10.95均一。' },
       { q: 'ボバ（タピオカ）は入っていますか？', a: 'フレーバーによります。ご希望で追加・除外可能。' },
       { q: '営業時間は？', a: '毎日朝7時〜夜9時。' },
       { q: '人気フレーバーは？', a: 'マンゴーが定番、ウベやブラウンシュガーも人気。' },
     ],
-    finalCTA: { headline: '今日のスムージーをカラカウア通りで', body: '10種類$8.95、ビーチから徒歩圏内。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: '今日のスムージーをカラカウア通りで', body: '10種類$10.95、ビーチから徒歩圏内。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
   },
   ko: {
-    hero: { title: '와이키키 베스트 스무디 10선', subtitle: 'Mochi Land 전 메뉴 균일가 $8.95.', date: '2026년 5월 업데이트', readTime: '5분 분량', badge: '스무디 가이드' },
-    intro: 'Mochi Land(코나커피도넛 내)는 시럽 베이스가 아닌 진짜 과일과 정통 아시안·하와이안 베이스로 주문 즉시 블렌딩. 전 메뉴 $8.95 균일가.',
-    visitCTA: { headline: '칼라카우아 거리의 하와이안 스무디', body: '모두 $8.95, 즉석 블렌딩. 망고, 우베, 흑당 보바 등 10종. 매일 7시–21시.', menuLabel: '메뉴 보기', directionsLabel: '길찾기' },
+    hero: { title: '와이키키 베스트 스무디 10선', subtitle: 'Mochi Land 전 메뉴 균일가 $10.95.', date: '2026년 8월 업데이트', readTime: '5분 분량', badge: '스무디 가이드' },
+    intro: 'Mochi Land(코나커피도넛 내)는 시럽 베이스가 아닌 진짜 과일과 정통 아시안·하와이안 베이스로 주문 즉시 블렌딩. 전 메뉴 $10.95 균일가.',
+    visitCTA: { headline: '칼라카우아 거리의 하와이안 스무디', body: '모두 $10.95, 즉석 블렌딩. 망고, 우베, 흑당 보바 등 10종. 매일 7시–21시.', menuLabel: '메뉴 보기', directionsLabel: '길찾기' },
     sections: [
       { h2: '스무디 전 메뉴', body: '보바(타피오카) 추가/제외 가능.', bullets: ['피냐콜라다', '딸기', '망고', '리치', '흑당 보바', '우베(자색 얌)', '커피(코나)', '타이티', '타로', '밀크티'], pullout: { title: '처음이라면', body: '망고나 피냐콜라다가 무난, 모험하려면 우베나 흑당.' } },
       { h2: '일반 스무디 vs 보바 스무디', body: '보바는 굵은 빨대로 빨아 마시는 쫀득함이 매력. 원하는 대로 추가·제외 가능.' },
@@ -149,17 +149,17 @@ const content: Record<Locale, BlogContent> = {
       { h2: 'Mochi Land가 다른 이유', body: '진짜 과일, 균일가, 즉석 블렌딩.' },
     ],
     faq: [
-      { q: '가격은?', a: '전 메뉴 $8.95 균일.' },
+      { q: '가격은?', a: '전 메뉴 $10.95 균일.' },
       { q: '보바 들어가나요?', a: '메뉴마다 다름, 요청 시 변경 가능.' },
       { q: '영업시간은?', a: '매일 오전 7시 – 오후 9시.' },
       { q: '인기 메뉴는?', a: '망고가 베스트, 우베·흑당도 인기.' },
     ],
-    finalCTA: { headline: '오늘의 스무디는 칼라카우아에서', body: '10종 $8.95, 비치 도보 거리.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '오늘의 스무디는 칼라카우아에서', body: '10종 $10.95, 비치 도보 거리.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
   },
   zh: {
-    hero: { title: '威基基最佳奶昔10选', subtitle: 'Mochi Land 全部口味均价 $8.95。', date: '2026年5月更新', readTime: '5分钟', badge: '奶昔指南' },
-    intro: 'Mochi Land（位于 Kona Coffee Donut 内）使用真实水果和正宗亚洲·夏威夷风味，现点现打。10种口味均一价 $8.95。',
-    visitCTA: { headline: '卡拉考阿大道的夏威夷奶昔', body: '全部 $8.95，现点现打。芒果、紫薯、黑糖珍珠等10种。每天7点–21点。', menuLabel: '查看菜单', directionsLabel: '获取路线' },
+    hero: { title: '威基基最佳奶昔10选', subtitle: 'Mochi Land 全部口味均价 $10.95。', date: '2026年8月更新', readTime: '5分钟', badge: '奶昔指南' },
+    intro: 'Mochi Land（位于 Kona Coffee Donut 内）使用真实水果和正宗亚洲·夏威夷风味，现点现打。10种口味均一价 $10.95。',
+    visitCTA: { headline: '卡拉考阿大道的夏威夷奶昔', body: '全部 $10.95，现点现打。芒果、紫薯、黑糖珍珠等10种。每天7点–21点。', menuLabel: '查看菜单', directionsLabel: '获取路线' },
     sections: [
       { h2: '全部口味', body: '可加/不加珍珠。', bullets: ['椰林飘香', '草莓', '芒果', '荔枝', '黑糖珍珠', '紫薯', '咖啡（科纳豆）', '泰式奶茶', '芋头', '奶茶'], pullout: { title: '新手推荐', body: '芒果或椰林飘香最经典，紫薯和黑糖最具特色。' } },
       { h2: '普通奶昔 vs 珍珠奶昔', body: '珍珠奶昔需用粗吸管，QQ口感增加。可根据喜好调整。' },
@@ -167,28 +167,28 @@ const content: Record<Locale, BlogContent> = {
       { h2: 'Mochi Land 的优势', body: '真实水果、均一价格、现点现打。' },
     ],
     faq: [
-      { q: '价格？', a: '全部$8.95均价。' },
+      { q: '价格？', a: '全部$10.95均价。' },
       { q: '有珍珠吗？', a: '部分口味含珍珠，可调整。' },
       { q: '营业时间？', a: '每天早7点至晚9点。' },
       { q: '最受欢迎口味？', a: '芒果是经典，紫薯和黑糖最有特色。' },
     ],
-    finalCTA: { headline: '今天的奶昔在卡拉考阿', body: '10种$8.95，海滩步行可达。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '今天的奶昔在卡拉考阿', body: '10种$10.95，海滩步行可达。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
   },
   es: {
-    hero: { title: 'Mejores Smoothies en Waikiki', subtitle: '10 sabores Mochi Land, todos a $8.95.', date: 'Mayo 2026', readTime: '5 min', badge: 'Guía de Smoothies' },
-    intro: 'Mochi Land en Kona Coffee Donut prepara cada smoothie al momento con fruta real y sabores asiático-hawaianos. Los 10 sabores cuestan $8.95 cada uno.',
-    visitCTA: { headline: 'Smoothies Hawaianos en Kalākaua', body: 'Todos a $8.95, batidos al momento. Mango, ube, té con leche y boba. Abierto 7 AM a 9 PM.', menuLabel: 'Ver Menú', directionsLabel: 'Cómo llegar' },
+    hero: { title: 'Mejores Smoothies en Waikiki', subtitle: '10 sabores Mochi Land, todos a $10.95.', date: 'Agosto 2026', readTime: '5 min', badge: 'Guía de Smoothies' },
+    intro: 'Mochi Land en Kona Coffee Donut prepara cada smoothie al momento con fruta real y sabores asiático-hawaianos. Los 10 sabores cuestan $10.95 cada uno.',
+    visitCTA: { headline: 'Smoothies Hawaianos en Kalākaua', body: 'Todos a $10.95, batidos al momento. Mango, ube, té con leche y boba. Abierto 7 AM a 9 PM.', menuLabel: 'Ver Menú', directionsLabel: 'Cómo llegar' },
     sections: [
       { h2: 'Sabores Disponibles', body: 'Algunos vienen con perlas de tapioca (boba).', bullets: ['Piña Colada', 'Fresa', 'Mango', 'Lichi', 'Azúcar Morena Boba', 'Ube', 'Café Kona', 'Té Tailandés', 'Taro', 'Té con Leche'] },
       { h2: '¿Smoothie con boba o sin?', body: 'Algunos sabores incluyen perlas de tapioca masticables. Pídelo como prefieras.' },
       { h2: 'Maridajes Recomendados', body: 'Combina con donuts o affogato.', bullets: ['Piña Colada + Mochi Donut Mango', 'Azúcar Morena + Mochi Donut Sésamo Negro', 'Café Smoothie + Affogato'] },
     ],
     faq: [
-      { q: '¿Precio?', a: 'Todos a $8.95.' },
+      { q: '¿Precio?', a: 'Todos a $10.95.' },
       { q: '¿Tienen boba?', a: 'Algunos sí, otros no. Se puede ajustar.' },
       { q: '¿Horario?', a: '7 AM a 9 PM diariamente.' },
     ],
-    finalCTA: { headline: 'Tu Próximo Smoothie en Kalākaua', body: '10 sabores, $8.95, a pasos de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Tu Próximo Smoothie en Kalākaua', body: '10 sabores, $10.95, a pasos de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
   },
 };
 
