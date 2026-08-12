@@ -5,19 +5,19 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 const meta = {
   en: {
     title: 'Hojicha Latte in Waikiki (2026): Roasted Green Tea, Benefits & Where to Try It',
-    description: 'What is a hojicha latte? Learn about roasted green tea, its benefits, why it\'s naturally low in caffeine, and where to try one fresh in Waikiki — hot or iced, $8.95.',
+    description: 'What is a hojicha latte? Learn about roasted green tea, its benefits, why it\'s naturally low in caffeine, and where to try one fresh in Waikiki — hot or iced, $9.95.',
   },
   ja: {
     title: 'ワイキキのほうじ茶ラテ（2026）｜焙じ緑茶・効能・味わえる場所',
-    description: 'ほうじ茶ラテとは？焙じた緑茶とその効能、カフェインが少ない理由、そしてワイキキで淹れたてを味わえる場所をご紹介。ホットもアイスも、$8.95。',
+    description: 'ほうじ茶ラテとは？焙じた緑茶とその効能、カフェインが少ない理由、そしてワイキキで淹れたてを味わえる場所をご紹介。ホットもアイスも、$9.95。',
   },
   ko: {
     title: '와이키키 호지차 라떼 (2026)｜볶은 녹차, 효능, 마실 수 있는 곳',
-    description: '호지차 라떼란? 볶은 녹차와 그 효능, 카페인이 적은 이유, 그리고 와이키키에서 갓 만든 한 잔을 맛볼 수 있는 곳을 소개합니다. 핫이든 아이스든, $8.95.',
+    description: '호지차 라떼란? 볶은 녹차와 그 효능, 카페인이 적은 이유, 그리고 와이키키에서 갓 만든 한 잔을 맛볼 수 있는 곳을 소개합니다. 핫이든 아이스든, $9.95.',
   },
   zh: {
     title: '威基基焙茶拿铁（2026）：烘焙绿茶、功效与品尝地点',
-    description: '什么是焙茶拿铁？了解烘焙绿茶及其功效、为何天然低咖啡因，以及在威基基品尝现做焙茶拿铁的地方——冷热皆有，$8.95。',
+    description: '什么是焙茶拿铁？了解烘焙绿茶及其功效、为何天然低咖啡因，以及在威基基品尝现做焙茶拿铁的地方——冷热皆有，$9.95。',
   },
 };
 

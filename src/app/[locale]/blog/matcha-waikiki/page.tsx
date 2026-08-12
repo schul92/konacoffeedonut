@@ -86,31 +86,31 @@ const content = {
       items: [
         {
           name: 'Classic Matcha Latte',
-          korean: '$8.95',
+          korean: '$9.95',
           description: 'Where everyone should start. Real Japanese matcha whisked smooth and poured over your choice of milk for a balanced, earthy-sweet, vivid-green latte. Order it hot or iced. This is the purest way to taste our matcha — and the perfect partner for a mochi donut.',
           icon: '🍵',
         },
         {
           name: 'Strawberry Matcha',
-          korean: '$10.95 · bestseller',
+          korean: '$11.95 · bestseller',
           description: 'Our most photogenic drink: a layer of sweet strawberry over whisked matcha and milk. The bright berry and grassy matcha play off each other beautifully — fruity on top, earthy underneath. Listed on our menu as the Strawberry Latte, and an instant favorite.',
           icon: '🍓',
         },
         {
           name: 'Tropical Matcha — Mango · Guava · Lilikoi',
-          korean: '$8.95 each',
+          korean: '$9.95 each',
           description: 'Our Hawaiian twist on matcha. Choose Mango Matcha, Guava Matcha, or Lilikoi (passion fruit) Matcha — island fruit flavors layered with real whisked matcha. Tropical, refreshing, and impossible to find back home. Best served iced in the Waikiki sun.',
           icon: '🥭',
         },
         {
           name: 'Coconut & Banana Matcha',
-          korean: '$8.95 each',
+          korean: '$9.95 each',
           description: 'Creamy, dessert-like takes on the classic. Coconut Matcha brings a smooth island richness, while Banana Matcha tastes like a green-tea milkshake. Both round out matcha\'s earthy edge with mellow sweetness — crowd-pleasers for first-time matcha drinkers.',
           icon: '🥥',
         },
         {
           name: 'Azuki (Red Bean) Latte',
-          korean: '$10.95',
+          korean: '$11.95',
           description: 'A Japanese-Korean classic for fans of traditional flavor. Sweet azuki red bean blended into a creamy latte — comforting, nutty, and lightly sweet. Pairs perfectly alongside a matcha latte if you want to taste two sides of Japanese café culture in one visit.',
           icon: '🫘',
         },
@@ -188,7 +188,7 @@ const content = {
         },
         {
           question: 'What matcha flavors do you have in Waikiki?',
-          answer: 'We pour 9 matcha and hojicha flavors: the Classic Matcha Latte ($8.95), Strawberry Matcha ($10.95), Mango, Guava, Lilikoi, Coconut, and Banana Matcha ($8.95 each), an Azuki red bean latte ($10.95), and a Hojicha Latte ($8.95). We also make a matcha mochi donut and a green-tea (matcha) bingsu.',
+          answer: 'We pour 9 matcha and hojicha flavors: the Classic Matcha Latte ($9.95), Strawberry Matcha ($11.95), Mango, Guava, Lilikoi, Coconut, and Banana Matcha ($9.95 each), an Azuki red bean latte ($11.95), and a Hojicha Latte ($9.95). We also make a matcha mochi donut and a green-tea (matcha) bingsu.',
         },
         {
           question: 'Does matcha have caffeine?',
@@ -287,31 +287,31 @@ const content = {
       items: [
         {
           name: '抹茶ラテ（クラシック）',
-          korean: '$8.95',
+          korean: '$9.95',
           description: 'まず最初に飲むべき一杯。本格日本産の抹茶をなめらかに点て、お好みのミルクに注いだ、バランスのよい大地の甘みと鮮やかな緑のラテです。ホットでもアイスでも。抹茶を最も純粋に味わえる一杯で、モチドーナツとの相性も抜群です。',
           icon: '🍵',
         },
         {
           name: 'ストロベリー抹茶',
-          korean: '$10.95・人気No.1',
+          korean: '$11.95・人気No.1',
           description: '一番フォトジェニックな一杯。甘いストロベリーの層が、点てた抹茶とミルクの上に重なります。明るいベリーと草の香りの抹茶が美しく響き合い、上はフルーティー、下は大地の風味。メニューにはストロベリーラテとして掲載、たちまち定番人気に。',
           icon: '🍓',
         },
         {
           name: 'トロピカル抹茶 — マンゴー・グァバ・リリコイ',
-          korean: '各$8.95',
+          korean: '各$9.95',
           description: '抹茶のハワイアンアレンジ。マンゴー抹茶、グァバ抹茶、リリコイ（パッションフルーツ）抹茶からお選びください。南国フルーツの風味と本格点てたて抹茶の重なり。トロピカルで爽やか、本土では見つからない味です。ワイキキの日差しの下、アイスがおすすめ。',
           icon: '🥭',
         },
         {
           name: 'ココナッツ＆バナナ抹茶',
-          korean: '各$8.95',
+          korean: '各$9.95',
           description: 'クリーミーでデザートのようなアレンジ。ココナッツ抹茶はなめらかな南国のコク、バナナ抹茶はまるで抹茶ミルクシェイク。どちらも抹茶の大地の風味をまろやかな甘さで包みます。抹茶が初めての方にもおすすめの一杯です。',
           icon: '🥥',
         },
         {
           name: 'あずき（小豆）ラテ',
-          korean: '$10.95',
+          korean: '$11.95',
           description: '伝統の味を愛する方へ、日韓おなじみの一杯。甘い小豆をクリーミーなラテに溶かし込んだ、ほっとする香ばしくほのかな甘さ。抹茶ラテと並べて味わえば、日本のカフェ文化の二つの顔を一度に楽しめます。',
           icon: '🫘',
         },
@@ -389,7 +389,7 @@ const content = {
         },
         {
           question: 'ワイキキではどんな抹茶フレーバーがありますか？',
-          answer: '抹茶とほうじ茶の9フレーバーをご用意：クラシック抹茶ラテ（$8.95）、ストロベリー抹茶（$10.95）、マンゴー・グァバ・リリコイ・ココナッツ・バナナ抹茶（各$8.95）、あずきラテ（$10.95）、ほうじ茶ラテ（$8.95）。さらに抹茶モチドーナツと緑茶（抹茶）ビンスもあります。',
+          answer: '抹茶とほうじ茶の9フレーバーをご用意：クラシック抹茶ラテ（$9.95）、ストロベリー抹茶（$11.95）、マンゴー・グァバ・リリコイ・ココナッツ・バナナ抹茶（各$9.95）、あずきラテ（$11.95）、ほうじ茶ラテ（$9.95）。さらに抹茶モチドーナツと緑茶（抹茶）ビンスもあります。',
         },
         {
           question: '抹茶にカフェインは含まれますか？',
@@ -488,31 +488,31 @@ const content = {
       items: [
         {
           name: '클래식 말차 라테',
-          korean: '$8.95',
+          korean: '$9.95',
           description: '누구나 여기서 시작해야 합니다. 진짜 일본 말차를 부드럽게 격불해 원하는 우유에 부은, 균형 잡힌 고소한 단맛의 선명한 초록빛 라테. 따뜻하게도 차갑게도 즐기세요. 말차를 가장 순수하게 맛보는 방법이자, 모찌 도넛과 환상의 짝꿍입니다.',
           icon: '🍵',
         },
         {
           name: '딸기 말차',
-          korean: '$10.95 · 베스트셀러',
+          korean: '$11.95 · 베스트셀러',
           description: '가장 사진발 잘 받는 한 잔. 격불한 말차와 우유 위에 달콤한 딸기 층이 올라갑니다. 상큼한 베리와 풀향의 말차가 아름답게 어우러져, 위는 상큼하고 아래는 고소합니다. 메뉴에는 딸기 라테로 표기되며, 단숨에 인기 메뉴가 되었습니다.',
           icon: '🍓',
         },
         {
           name: '트로피컬 말차 — 망고·구아바·리리코이',
-          korean: '각 $8.95',
+          korean: '각 $9.95',
           description: '말차의 하와이안 변주. 망고 말차, 구아바 말차, 리리코이(패션프루트) 말차 중 선택하세요. 섬 과일의 풍미가 진짜 갓 격불한 말차와 겹쳐집니다. 트로피컬하고 상큼하며, 본토에서는 찾을 수 없는 맛. 와이키키 햇살 아래 아이스로 즐기세요.',
           icon: '🥭',
         },
         {
           name: '코코넛 & 바나나 말차',
-          korean: '각 $8.95',
+          korean: '각 $9.95',
           description: '크리미하고 디저트 같은 변주. 코코넛 말차는 부드러운 섬의 풍미를, 바나나 말차는 녹차 밀크셰이크 같은 맛을 냅니다. 둘 다 말차의 고소한 끝맛을 부드러운 단맛으로 감싸줘, 말차가 처음인 분께도 강력 추천합니다.',
           icon: '🥥',
         },
         {
           name: '아즈키(단팥) 라테',
-          korean: '$10.95',
+          korean: '$11.95',
           description: '전통의 맛을 사랑하는 분께, 한일 모두에게 친숙한 한 잔. 달콤한 아즈키 단팥을 크리미한 라테에 녹여낸, 포근하고 고소하며 은은하게 단맛이 도는 음료. 말차 라테와 나란히 즐기면 일본 카페 문화의 두 얼굴을 한 번에 맛볼 수 있습니다.',
           icon: '🫘',
         },
@@ -590,7 +590,7 @@ const content = {
         },
         {
           question: '와이키키에서는 어떤 말차 플레이버가 있나요?',
-          answer: '말차와 호지차 9가지를 선보입니다: 클래식 말차 라테($8.95), 딸기 말차($10.95), 망고·구아바·리리코이·코코넛·바나나 말차(각 $8.95), 아즈키 단팥 라테($10.95), 호지차 라테($8.95). 여기에 말차 모찌 도넛과 녹차(말차) 빙수도 있습니다.',
+          answer: '말차와 호지차 9가지를 선보입니다: 클래식 말차 라테($9.95), 딸기 말차($11.95), 망고·구아바·리리코이·코코넛·바나나 말차(각 $9.95), 아즈키 단팥 라테($11.95), 호지차 라테($9.95). 여기에 말차 모찌 도넛과 녹차(말차) 빙수도 있습니다.',
         },
         {
           question: '말차에 카페인이 있나요?',
@@ -689,31 +689,31 @@ const content = {
       items: [
         {
           name: '经典抹茶拿铁',
-          korean: '$8.95',
+          korean: '$9.95',
           description: '每个人都该从这里开始。正宗日本抹茶打至顺滑，倒入你选择的牛奶，调成均衡、醇香微甜、鲜绿明亮的拿铁。可点热饮或冰饮。这是品味抹茶最纯粹的方式——也是麻糬甜甜圈的完美搭档。',
           icon: '🍵',
         },
         {
           name: '草莓抹茶',
-          korean: '$10.95 · 招牌',
+          korean: '$11.95 · 招牌',
           description: '我们最上镜的一杯：一层香甜草莓覆于打发的抹茶与牛奶之上。明亮的莓果与草本抹茶相得益彰——上层果香，下层醇厚。菜单上列为草莓拿铁，瞬间成为人气之选。',
           icon: '🍓',
         },
         {
           name: '热带抹茶——芒果·番石榴·百香果',
-          korean: '每杯 $8.95',
+          korean: '每杯 $9.95',
           description: '我们为抹茶注入的夏威夷风味。可选芒果抹茶、番石榴抹茶或百香果（Lilikoi）抹茶——海岛水果风味与正宗现打抹茶层层交融。热带、清爽，是家乡找不到的味道。在威基基的阳光下，最适合做成冰饮。',
           icon: '🥭',
         },
         {
           name: '椰子 & 香蕉抹茶',
-          korean: '每杯 $8.95',
+          korean: '每杯 $9.95',
           description: '奶香浓郁、宛如甜点的演绎。椰子抹茶带来顺滑的海岛醇厚，香蕉抹茶则像一杯绿茶奶昔。两者都用柔和的甜味中和抹茶的醇厚尾韵——是初次尝试抹茶者的人气之选。',
           icon: '🥥',
         },
         {
           name: '红豆（Azuki）拿铁',
-          korean: '$10.95',
+          korean: '$11.95',
           description: '献给钟爱传统风味的你，一杯日韩皆熟悉的经典。香甜红豆融入奶香拿铁——温暖、坚果香、淡淡的甜。若想一次品味日本咖啡厅文化的两种面貌，不妨与抹茶拿铁并排享用。',
           icon: '🫘',
         },
@@ -791,7 +791,7 @@ const content = {
         },
         {
           question: '你们在威基基有哪些抹茶口味？',
-          answer: '我们供应9种抹茶和焙茶口味：经典抹茶拿铁（$8.95）、草莓抹茶（$10.95）、芒果、番石榴、百香果、椰子和香蕉抹茶（每杯 $8.95）、红豆拿铁（$10.95）以及焙茶拿铁（$8.95）。我们还做抹茶麻糬甜甜圈和绿茶（抹茶）刨冰。',
+          answer: '我们供应9种抹茶和焙茶口味：经典抹茶拿铁（$9.95）、草莓抹茶（$11.95）、芒果、番石榴、百香果、椰子和香蕉抹茶（每杯 $9.95）、红豆拿铁（$11.95）以及焙茶拿铁（$9.95）。我们还做抹茶麻糬甜甜圈和绿茶（抹茶）刨冰。',
         },
         {
           question: '抹茶含咖啡因吗？',
@@ -875,7 +875,7 @@ const faqSchema = {
       name: 'What matcha flavors do you have in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We pour 9 matcha and hojicha flavors: the Classic Matcha Latte ($8.95), Strawberry Matcha ($10.95), Mango, Guava, Lilikoi, Coconut, and Banana Matcha ($8.95 each), an Azuki red bean latte ($10.95), and a Hojicha Latte ($8.95). We also make a matcha mochi donut and a green-tea (matcha) bingsu.',
+        text: 'We pour 9 matcha and hojicha flavors: the Classic Matcha Latte ($9.95), Strawberry Matcha ($11.95), Mango, Guava, Lilikoi, Coconut, and Banana Matcha ($9.95 each), an Azuki red bean latte ($11.95), and a Hojicha Latte ($9.95). We also make a matcha mochi donut and a green-tea (matcha) bingsu.',
       },
     },
     {

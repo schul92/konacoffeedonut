@@ -86,8 +86,8 @@ const content = {
       items: [
         {
           name: 'Hot Hojicha Latte',
-          korean: '$8.95 · hot',
-          description: 'The classic way to taste hojicha. Roasted green tea is whisked and poured over steamed milk, giving you a warm, creamy cup with toasty, caramel-nut flavor and almost no bitterness. Our Hojicha Latte is $8.95 and is the best introduction to roasted green tea.',
+          korean: '$9.95 · hot',
+          description: 'The classic way to taste hojicha. Roasted green tea is whisked and poured over steamed milk, giving you a warm, creamy cup with toasty, caramel-nut flavor and almost no bitterness. Our Hojicha Latte is $9.95 and is the best introduction to roasted green tea.',
           icon: '☕',
         },
         {
@@ -143,9 +143,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'Located in the heart of Waikiki on Kalākaua Avenue, Kona Coffee Donut? pours hojicha and matcha lattes alongside 100% Kona coffee and chewy mochi donuts. Our Hojicha Latte ($8.95) is roasted, toasty, and naturally low in caffeine — the perfect afternoon or evening drink, about 5 minutes from Waikiki Beach.',
+        description: 'Located in the heart of Waikiki on Kalākaua Avenue, Kona Coffee Donut? pours hojicha and matcha lattes alongside 100% Kona coffee and chewy mochi donuts. Our Hojicha Latte ($9.95) is roasted, toasty, and naturally low in caffeine — the perfect afternoon or evening drink, about 5 minutes from Waikiki Beach.',
         highlights: [
-          'Toasty, low-caffeine Hojicha Latte ($8.95)',
+          'Toasty, low-caffeine Hojicha Latte ($9.95)',
           'Also serving matcha lattes and 100% Kona coffee',
           'Pairs perfectly with our mochi donuts',
           'About 5 minutes from Waikiki Beach · open daily 7AM–9PM',
@@ -196,7 +196,7 @@ const content = {
         },
         {
           question: 'Where can I get a hojicha latte in Waikiki?',
-          answer: 'You can get a hojicha latte at Kona Coffee Donut?, located at 2142 Kalakaua Ave in the heart of Waikiki — about 5 minutes from Waikiki Beach. The Hojicha Latte is $8.95, and we also serve matcha lattes, 100% Kona coffee, and mochi donuts. Open daily 7AM–9PM.',
+          answer: 'You can get a hojicha latte at Kona Coffee Donut?, located at 2142 Kalakaua Ave in the heart of Waikiki — about 5 minutes from Waikiki Beach. The Hojicha Latte is $9.95, and we also serve matcha lattes, 100% Kona coffee, and mochi donuts. Open daily 7AM–9PM.',
         },
       ],
     },
@@ -287,8 +287,8 @@ const content = {
       items: [
         {
           name: 'ホットほうじ茶ラテ',
-          korean: '$8.95・ホット',
-          description: 'ほうじ茶を味わう定番スタイル。焙煎緑茶を点ててスチームミルクに注ぐと、香ばしくキャラメルナッツのような風味で、苦みのほとんどない温かくクリーミーな一杯に。ほうじ茶ラテ（$8.95）は焙煎緑茶への最高の入り口です。',
+          korean: '$9.95・ホット',
+          description: 'ほうじ茶を味わう定番スタイル。焙煎緑茶を点ててスチームミルクに注ぐと、香ばしくキャラメルナッツのような風味で、苦みのほとんどない温かくクリーミーな一杯に。ほうじ茶ラテ（$9.95）は焙煎緑茶への最高の入り口です。',
           icon: '☕',
         },
         {
@@ -344,9 +344,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?（コナコーヒードーナツ）',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心、カラカウア通りに位置する Kona Coffee Donut? は、ほうじ茶ラテや抹茶ラテに加え、100%コナコーヒーともちもちのモチドーナツを提供しています。ほうじ茶ラテ（$8.95）は焙煎の香ばしさとカフェイン控えめが魅力で、午後や夜にぴったりの一杯。ワイキキビーチから約5分です。',
+        description: 'ワイキキの中心、カラカウア通りに位置する Kona Coffee Donut? は、ほうじ茶ラテや抹茶ラテに加え、100%コナコーヒーともちもちのモチドーナツを提供しています。ほうじ茶ラテ（$9.95）は焙煎の香ばしさとカフェイン控えめが魅力で、午後や夜にぴったりの一杯。ワイキキビーチから約5分です。',
         highlights: [
-          '香ばしくカフェイン控えめのほうじ茶ラテ（$8.95）',
+          '香ばしくカフェイン控えめのほうじ茶ラテ（$9.95）',
           '抹茶ラテや100%コナコーヒーもご用意',
           'モチドーナツとの相性は抜群',
           'ワイキキビーチから約5分・毎日7時〜21時営業',
@@ -397,7 +397,7 @@ const content = {
         },
         {
           question: 'ワイキキでほうじ茶ラテはどこで飲めますか？',
-          answer: 'ほうじ茶ラテは、ワイキキの中心、2142 Kalakaua Ave にある Kona Coffee Donut? で楽しめます。ワイキキビーチから約5分。ほうじ茶ラテは$8.95で、抹茶ラテや100%コナコーヒー、モチドーナツもご用意しています。毎日7時〜21時営業です。',
+          answer: 'ほうじ茶ラテは、ワイキキの中心、2142 Kalakaua Ave にある Kona Coffee Donut? で楽しめます。ワイキキビーチから約5分。ほうじ茶ラテは$9.95で、抹茶ラテや100%コナコーヒー、モチドーナツもご用意しています。毎日7時〜21時営業です。',
         },
       ],
     },
@@ -488,8 +488,8 @@ const content = {
       items: [
         {
           name: '따뜻한 호지차 라떼',
-          korean: '$8.95 · 핫',
-          description: '호지차를 맛보는 가장 클래식한 방법. 볶은 녹차를 풀어 스팀 밀크에 부으면, 고소하고 카라멜 같은 견과 풍미에 쓴맛은 거의 없는 따뜻하고 크리미한 한 잔이 됩니다. 호지차 라떼($8.95)는 볶은 녹차에 입문하기에 가장 좋은 메뉴입니다.',
+          korean: '$9.95 · 핫',
+          description: '호지차를 맛보는 가장 클래식한 방법. 볶은 녹차를 풀어 스팀 밀크에 부으면, 고소하고 카라멜 같은 견과 풍미에 쓴맛은 거의 없는 따뜻하고 크리미한 한 잔이 됩니다. 호지차 라떼($9.95)는 볶은 녹차에 입문하기에 가장 좋은 메뉴입니다.',
           icon: '☕',
         },
         {
@@ -545,9 +545,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut? (코나커피도넛)',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '와이키키의 중심, 칼라카우아 애비뉴에 위치한 Kona Coffee Donut? 은 호지차 라떼와 말차 라떼는 물론, 100% 코나 커피와 쫄깃한 모찌 도넛을 함께 제공합니다. 호지차 라떼($8.95)는 볶은 고소함과 낮은 카페인이 매력으로, 오후나 저녁에 딱 좋은 한 잔. 와이키키 비치에서 약 5분 거리입니다.',
+        description: '와이키키의 중심, 칼라카우아 애비뉴에 위치한 Kona Coffee Donut? 은 호지차 라떼와 말차 라떼는 물론, 100% 코나 커피와 쫄깃한 모찌 도넛을 함께 제공합니다. 호지차 라떼($9.95)는 볶은 고소함과 낮은 카페인이 매력으로, 오후나 저녁에 딱 좋은 한 잔. 와이키키 비치에서 약 5분 거리입니다.',
         highlights: [
-          '고소하고 카페인 낮은 호지차 라떼($8.95)',
+          '고소하고 카페인 낮은 호지차 라떼($9.95)',
           '말차 라떼와 100% 코나 커피도 함께',
           '모찌 도넛과 완벽한 궁합',
           '와이키키 비치에서 약 5분 · 매일 오전 7시–오후 9시 영업',
@@ -598,7 +598,7 @@ const content = {
         },
         {
           question: '와이키키에서 호지차 라떼는 어디서 마실 수 있나요?',
-          answer: '호지차 라떼는 와이키키의 중심, 2142 Kalakaua Ave에 있는 Kona Coffee Donut? 에서 즐기실 수 있습니다. 와이키키 비치에서 약 5분 거리입니다. 호지차 라떼는 $8.95이며, 말차 라떼와 100% 코나 커피, 모찌 도넛도 함께 제공합니다. 매일 오전 7시부터 오후 9시까지 영업합니다.',
+          answer: '호지차 라떼는 와이키키의 중심, 2142 Kalakaua Ave에 있는 Kona Coffee Donut? 에서 즐기실 수 있습니다. 와이키키 비치에서 약 5분 거리입니다. 호지차 라떼는 $9.95이며, 말차 라떼와 100% 코나 커피, 모찌 도넛도 함께 제공합니다. 매일 오전 7시부터 오후 9시까지 영업합니다.',
         },
       ],
     },
@@ -689,8 +689,8 @@ const content = {
       items: [
         {
           name: '热焙茶拿铁',
-          korean: '$8.95 · 热',
-          description: '品尝焙茶最经典的方式。将烘焙绿茶打匀后倒入蒸奶，便成就一杯温暖绵密、带有香脆焦糖坚果风味、几乎没有苦涩的拿铁。我们的焙茶拿铁（$8.95）是认识烘焙绿茶的最佳入门。',
+          korean: '$9.95 · 热',
+          description: '品尝焙茶最经典的方式。将烘焙绿茶打匀后倒入蒸奶，便成就一杯温暖绵密、带有香脆焦糖坚果风味、几乎没有苦涩的拿铁。我们的焙茶拿铁（$9.95）是认识烘焙绿茶的最佳入门。',
           icon: '☕',
         },
         {
@@ -746,9 +746,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?（科纳咖啡甜甜圈）',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '位于威基基卡拉卡瓦大道中心地段，Kona Coffee Donut? 供应焙茶拿铁与抹茶拿铁，以及100%科纳咖啡和Q弹麻糬甜甜圈。我们的焙茶拿铁（$8.95）烘焙香脆、天然低咖啡因，是下午或傍晚的完美一杯，距威基基海滩约5分钟。',
+        description: '位于威基基卡拉卡瓦大道中心地段，Kona Coffee Donut? 供应焙茶拿铁与抹茶拿铁，以及100%科纳咖啡和Q弹麻糬甜甜圈。我们的焙茶拿铁（$9.95）烘焙香脆、天然低咖啡因，是下午或傍晚的完美一杯，距威基基海滩约5分钟。',
         highlights: [
-          '香脆低咖啡因焙茶拿铁（$8.95）',
+          '香脆低咖啡因焙茶拿铁（$9.95）',
           '同时供应抹茶拿铁与100%科纳咖啡',
           '与麻糬甜甜圈完美搭配',
           '距威基基海滩约5分钟 · 每日上午7点至晚上9点营业',
@@ -799,7 +799,7 @@ const content = {
         },
         {
           question: '在威基基哪里能喝到焙茶拿铁？',
-          answer: '你可以在位于威基基中心地段、2142 Kalakaua Ave 的 Kona Coffee Donut? 喝到焙茶拿铁——距威基基海滩约5分钟。焙茶拿铁售价 $8.95，我们也供应抹茶拿铁、100%科纳咖啡和麻糬甜甜圈。每日上午7点至晚上9点营业。',
+          answer: '你可以在位于威基基中心地段、2142 Kalakaua Ave 的 Kona Coffee Donut? 喝到焙茶拿铁——距威基基海滩约5分钟。焙茶拿铁售价 $9.95，我们也供应抹茶拿铁、100%科纳咖啡和麻糬甜甜圈。每日上午7点至晚上9点营业。',
         },
       ],
     },
@@ -891,7 +891,7 @@ const faqSchema = {
       name: 'Where can I get a hojicha latte in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can get a hojicha latte at Kona Coffee Donut?, located at 2142 Kalakaua Ave in the heart of Waikiki — about 5 minutes from Waikiki Beach. The Hojicha Latte is $8.95, and we also serve matcha lattes, 100% Kona coffee, and mochi donuts. Open daily 7AM–9PM.',
+        text: 'You can get a hojicha latte at Kona Coffee Donut?, located at 2142 Kalakaua Ave in the heart of Waikiki — about 5 minutes from Waikiki Beach. The Hojicha Latte is $9.95, and we also serve matcha lattes, 100% Kona coffee, and mochi donuts. Open daily 7AM–9PM.',
       },
     },
   ],

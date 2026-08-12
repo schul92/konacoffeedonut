@@ -5,19 +5,19 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 const meta = {
   en: {
     title: 'Strawberry Matcha Latte in Waikiki (2026): The Pink-and-Green Drink Everyone Wants',
-    description: 'The viral pink-and-green strawberry matcha latte has arrived in Waikiki. What it is, why it works, and where to get one — Kona Coffee Donut?\'s Strawberry Matcha ($10.95), 5 min from the beach.',
+    description: 'The viral pink-and-green strawberry matcha latte has arrived in Waikiki. What it is, why it works, and where to get one — Kona Coffee Donut?\'s Strawberry Matcha ($11.95), 5 min from the beach.',
   },
   ja: {
     title: 'ワイキキのストロベリー抹茶ラテ（2026）｜みんなが欲しがるピンク＆グリーンの一杯',
-    description: 'バズったピンク＆グリーンのストロベリー抹茶ラテがワイキキに。その正体、相性の理由、買える場所まで — Kona Coffee Donut? のストロベリー抹茶（$10.95）、ビーチから徒歩5分。',
+    description: 'バズったピンク＆グリーンのストロベリー抹茶ラテがワイキキに。その正体、相性の理由、買える場所まで — Kona Coffee Donut? のストロベリー抹茶（$11.95）、ビーチから徒歩5分。',
   },
   ko: {
     title: '와이키키 딸기 말차 라떼 (2026) | 모두가 찾는 핑크 앤 그린 한 잔',
-    description: '바이럴 된 핑크 앤 그린 딸기 말차 라떼가 와이키키에 왔습니다. 정체, 어울리는 이유, 사는 곳까지 — Kona Coffee Donut? 딸기 말차($10.95), 해변에서 도보 5분.',
+    description: '바이럴 된 핑크 앤 그린 딸기 말차 라떼가 와이키키에 왔습니다. 정체, 어울리는 이유, 사는 곳까지 — Kona Coffee Donut? 딸기 말차($11.95), 해변에서 도보 5분.',
   },
   zh: {
     title: '威基基草莓抹茶拿铁（2026）｜人人都想要的粉绿一杯',
-    description: '走红的粉绿草莓抹茶拿铁来到威基基。它是什么、为何好喝、在哪能买到——Kona Coffee Donut? 草莓抹茶（$10.95），距海滩步行5分钟。',
+    description: '走红的粉绿草莓抹茶拿铁来到威基基。它是什么、为何好喝、在哪能买到——Kona Coffee Donut? 草莓抹茶（$11.95），距海滩步行5分钟。',
   },
 };
 

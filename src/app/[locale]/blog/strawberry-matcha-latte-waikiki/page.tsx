@@ -73,9 +73,9 @@ const content = {
         },
         {
           feature: 'Price',
-          bingsu: '$10.95',
-          shavedIce: '$8.95',
-          kakigori: '$8.95',
+          bingsu: '$11.95',
+          shavedIce: '$9.95',
+          kakigori: '$9.95',
         },
       ],
       note: 'The key difference is the layered strawberry base. It turns a single-note matcha latte into a sweet-tart-meets-earthy drink — and gives you that pink-and-green look no other matcha order can match.',
@@ -86,31 +86,31 @@ const content = {
       items: [
         {
           name: 'Strawberry Matcha',
-          korean: '$10.95 · the star',
+          korean: '$11.95 · the star',
           description: 'The viral pink-and-green layered latte. Sweet-tart strawberry purée on the bottom, cold milk in the middle, and a bright cap of real ceremonial-style matcha on top. It is the most photogenic drink we make and the one people come in asking for by name. Served iced.',
           icon: '🍓',
         },
         {
           name: 'Mango Matcha',
-          korean: '$8.95 · tropical',
+          korean: '$9.95 · tropical',
           description: 'Golden Hawaiian-style mango meets earthy matcha for a sunset-colored layered latte. Sweeter and more tropical than the strawberry, with the same satisfying fruit-and-matcha balance. A favorite for anyone who loves island fruit.',
           icon: '🥭',
         },
         {
           name: 'Guava Matcha',
-          korean: '$8.95 · island favorite',
+          korean: '$9.95 · island favorite',
           description: 'Guava is a true Hawaiian classic, and its floral-sweet flavor pairs beautifully with grassy matcha. The pink-coral fruit layer under bright green makes this one nearly as photogenic as the strawberry — and unmistakably local.',
           icon: '🍈',
         },
         {
           name: 'Lilikoi Matcha',
-          korean: '$8.95 · passion fruit',
+          korean: '$9.95 · passion fruit',
           description: 'Lilikoi (Hawaiian passion fruit) brings a tangy, tropical punch that cuts through matcha\'s richness. Bright, a little tart, and refreshing — this is the order for anyone who likes their fruit lattes on the zingy side.',
           icon: '🌺',
         },
         {
           name: 'Coconut / Banana Matcha',
-          korean: '$8.95 · creamy',
+          korean: '$9.95 · creamy',
           description: 'For a softer, creamier take, coconut or banana smooths matcha into a mellow, dessert-like latte. Less tart than the berry and citrus options, with a rich tropical finish that pairs perfectly with a mochi donut.',
           icon: '🥥',
         },
@@ -143,9 +143,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? makes our layered Strawberry Matcha ($10.95) plus eight more matcha and hojicha lattes — including mango, guava, lilikoi, coconut, banana, azuki, and classic matcha. We also pour 100% Kona coffee and serve fresh mochi donuts, and we are about a 5-minute walk from Waikiki Beach. Open daily, 7AM–9PM.',
+        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? makes our layered Strawberry Matcha ($11.95) plus eight more matcha and hojicha lattes — including mango, guava, lilikoi, coconut, banana, azuki, and classic matcha. We also pour 100% Kona coffee and serve fresh mochi donuts, and we are about a 5-minute walk from Waikiki Beach. Open daily, 7AM–9PM.',
         highlights: [
-          'Layered Strawberry Matcha ($10.95) — the pink-and-green star',
+          'Layered Strawberry Matcha ($11.95) — the pink-and-green star',
           '8 more matcha & hojicha lattes to choose from',
           '100% Kona coffee and fresh mochi donuts',
           'About 5 minutes from Waikiki Beach — open daily 7AM–9PM',
@@ -184,7 +184,7 @@ const content = {
         },
         {
           question: 'How much is the strawberry matcha in Waikiki?',
-          answer: 'At Kona Coffee Donut? on Kalākaua Avenue, the Strawberry Matcha is $10.95. Our other matcha fruit lattes — mango, guava, lilikoi, coconut, and banana — are $8.95 each, as is the classic matcha latte. We are about a 5-minute walk from Waikiki Beach and open daily from 7AM to 9PM.',
+          answer: 'At Kona Coffee Donut? on Kalākaua Avenue, the Strawberry Matcha is $11.95. Our other matcha fruit lattes — mango, guava, lilikoi, coconut, and banana — are $9.95 each, as is the classic matcha latte. We are about a 5-minute walk from Waikiki Beach and open daily from 7AM to 9PM.',
         },
         {
           question: 'Is strawberry matcha sweet?',
@@ -196,7 +196,7 @@ const content = {
         },
         {
           question: 'Where can I get a strawberry matcha near Waikiki Beach?',
-          answer: 'Kona Coffee Donut? at 2142 Kalakaua Ave in Waikiki makes a layered Strawberry Matcha ($10.95) along with eight other matcha and hojicha lattes, 100% Kona coffee, and fresh mochi donuts. It is about a 5-minute walk from Waikiki Beach and open daily, 7AM–9PM.',
+          answer: 'Kona Coffee Donut? at 2142 Kalakaua Ave in Waikiki makes a layered Strawberry Matcha ($11.95) along with eight other matcha and hojicha lattes, 100% Kona coffee, and fresh mochi donuts. It is about a 5-minute walk from Waikiki Beach and open daily, 7AM–9PM.',
         },
       ],
     },
@@ -274,9 +274,9 @@ const content = {
         },
         {
           feature: '価格',
-          bingsu: '$10.95',
-          shavedIce: '$8.95',
-          kakigori: '$8.95',
+          bingsu: '$11.95',
+          shavedIce: '$9.95',
+          kakigori: '$9.95',
         },
       ],
       note: '最大の違いは層になったストロベリーベース。単調になりがちな抹茶ラテを、甘酸っぱさとうま味が出会う一杯に変え、ほかのどの抹茶メニューにもない、あのピンク＆グリーンの見た目を生み出します。',
@@ -287,31 +287,31 @@ const content = {
       items: [
         {
           name: 'ストロベリー抹茶',
-          korean: '$10.95・主役',
+          korean: '$11.95・主役',
           description: 'バズったピンク＆グリーンの層ラテ。底に甘酸っぱいストロベリーピューレ、真ん中に冷たいミルク、上に本格的な抹茶を鮮やかに。当店で最も写真映えする一杯で、名指しで注文される人気者。アイスで提供します。',
           icon: '🍓',
         },
         {
           name: 'マンゴー抹茶',
-          korean: '$8.95・トロピカル',
+          korean: '$9.95・トロピカル',
           description: '黄金色のハワイ風マンゴーと抹茶が出会う、サンセットカラーの層ラテ。ストロベリーより甘くトロピカルで、フルーツと抹茶の満足感あるバランスは同じ。島のフルーツが好きな方に人気です。',
           icon: '🥭',
         },
         {
           name: 'グァバ抹茶',
-          korean: '$8.95・島の定番',
+          korean: '$9.95・島の定番',
           description: 'グァバはまさにハワイの定番。その花のような甘さが、草のような抹茶と美しく調和します。グリーンの下のピンクコーラルのフルーツ層は、ストロベリーに迫る写真映え — そして紛れもなくローカルな一杯。',
           icon: '🍈',
         },
         {
           name: 'リリコイ抹茶',
-          korean: '$8.95・パッションフルーツ',
+          korean: '$9.95・パッションフルーツ',
           description: 'リリコイ（ハワイのパッションフルーツ）が、抹茶のコクを切る爽やかでトロピカルなパンチを。明るく、少し酸っぱく、リフレッシュできる — フルーツラテはキリッとした酸味が好き、という方にぴったりです。',
           icon: '🌺',
         },
         {
           name: 'ココナッツ / バナナ抹茶',
-          korean: '$8.95・クリーミー',
+          korean: '$9.95・クリーミー',
           description: 'よりまろやかでクリーミーな一杯なら、ココナッツやバナナが抹茶を穏やかでデザートのようなラテに。ベリーや柑橘より酸味が控えめで、リッチなトロピカルの後味はモチドーナツと相性抜群です。',
           icon: '🥥',
         },
@@ -344,9 +344,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心、カラカウア通り沿いのKona Coffee Donut? では、層になったストロベリー抹茶（$10.95）に加え、マンゴー、グァバ、リリコイ、ココナッツ、バナナ、あずき、定番抹茶など、さらに8種類の抹茶・ほうじ茶ラテをご用意。100%コナコーヒーや作りたてのモチドーナツも提供し、ワイキキビーチから徒歩約5分です。毎日7時〜21時営業。',
+        description: 'ワイキキの中心、カラカウア通り沿いのKona Coffee Donut? では、層になったストロベリー抹茶（$11.95）に加え、マンゴー、グァバ、リリコイ、ココナッツ、バナナ、あずき、定番抹茶など、さらに8種類の抹茶・ほうじ茶ラテをご用意。100%コナコーヒーや作りたてのモチドーナツも提供し、ワイキキビーチから徒歩約5分です。毎日7時〜21時営業。',
         highlights: [
-          '層になったストロベリー抹茶（$10.95）— ピンク＆グリーンの主役',
+          '層になったストロベリー抹茶（$11.95）— ピンク＆グリーンの主役',
           'さらに8種類の抹茶・ほうじ茶ラテから選べる',
           '100%コナコーヒーと作りたてモチドーナツ',
           'ワイキキビーチから約5分 — 毎日7時〜21時営業',
@@ -385,7 +385,7 @@ const content = {
         },
         {
           question: 'ワイキキのストロベリー抹茶はいくら？',
-          answer: 'カラカウア通りのKona Coffee Donut? では、ストロベリー抹茶は$10.95です。マンゴー、グァバ、リリコイ、ココナッツ、バナナなど、ほかの抹茶フルーツラテは各$8.95、定番の抹茶ラテも同様です。ワイキキビーチから徒歩約5分、毎日7時〜21時営業です。',
+          answer: 'カラカウア通りのKona Coffee Donut? では、ストロベリー抹茶は$11.95です。マンゴー、グァバ、リリコイ、ココナッツ、バナナなど、ほかの抹茶フルーツラテは各$9.95、定番の抹茶ラテも同様です。ワイキキビーチから徒歩約5分、毎日7時〜21時営業です。',
         },
         {
           question: 'ストロベリー抹茶は甘い？',
@@ -397,7 +397,7 @@ const content = {
         },
         {
           question: 'ワイキキビーチ近くでストロベリー抹茶が飲める場所は？',
-          answer: 'ワイキキの2142 Kalakaua AveにあるKona Coffee Donut? では、層になったストロベリー抹茶（$10.95）に加え、ほか8種類の抹茶・ほうじ茶ラテ、100%コナコーヒー、作りたてモチドーナツをご用意。ワイキキビーチから徒歩約5分、毎日7時〜21時営業です。',
+          answer: 'ワイキキの2142 Kalakaua AveにあるKona Coffee Donut? では、層になったストロベリー抹茶（$11.95）に加え、ほか8種類の抹茶・ほうじ茶ラテ、100%コナコーヒー、作りたてモチドーナツをご用意。ワイキキビーチから徒歩約5分、毎日7時〜21時営業です。',
         },
       ],
     },
@@ -475,9 +475,9 @@ const content = {
         },
         {
           feature: '가격',
-          bingsu: '$10.95',
-          shavedIce: '$8.95',
-          kakigori: '$8.95',
+          bingsu: '$11.95',
+          shavedIce: '$9.95',
+          kakigori: '$9.95',
         },
       ],
       note: '가장 큰 차이는 층층이 쌓인 딸기 베이스입니다. 단조로울 수 있는 말차 라떼를 새콤달콤함과 감칠맛이 만나는 한 잔으로 바꾸고, 다른 어떤 말차 메뉴도 따라올 수 없는 핑크 앤 그린 비주얼을 선사합니다.',
@@ -488,31 +488,31 @@ const content = {
       items: [
         {
           name: '딸기 말차',
-          korean: '$10.95 · 주인공',
+          korean: '$11.95 · 주인공',
           description: '바이럴 된 핑크 앤 그린 층 라떼. 맨 아래 새콤달콤한 딸기 퓌레, 중간에 차가운 우유, 위에 진짜 격식 있는 말차를 선명하게 올립니다. 저희가 만드는 가장 사진발 좋은 한 잔이자, 이름 대고 찾는 인기 메뉴. 아이스로 제공합니다.',
           icon: '🍓',
         },
         {
           name: '망고 말차',
-          korean: '$8.95 · 열대',
+          korean: '$9.95 · 열대',
           description: '황금빛 하와이안 망고와 흙내음 말차가 만나는 선셋 컬러 층 라떼. 딸기보다 달콤하고 열대적이지만, 과일과 말차의 만족스러운 균형은 그대로. 섬 과일을 좋아하는 분께 인기입니다.',
           icon: '🥭',
         },
         {
           name: '구아바 말차',
-          korean: '$8.95 · 섬의 인기 메뉴',
+          korean: '$9.95 · 섬의 인기 메뉴',
           description: '구아바는 진짜 하와이의 클래식. 그 꽃향 단맛이 풀 향 말차와 아름답게 어우러집니다. 그린 아래 핑크 코랄빛 과일 층은 딸기에 버금가는 사진발 — 그리고 누가 봐도 로컬한 한 잔이죠.',
           icon: '🍈',
         },
         {
           name: '릴리코이 말차',
-          korean: '$8.95 · 패션프루트',
+          korean: '$9.95 · 패션프루트',
           description: '릴리코이(하와이 패션프루트)가 말차의 진함을 가르는 톡 쏘는 열대의 펀치를 더합니다. 밝고, 살짝 새콤하고, 상쾌한 — 과일 라떼는 톡 쏘는 산미가 좋다는 분께 딱 맞는 주문입니다.',
           icon: '🌺',
         },
         {
           name: '코코넛 / 바나나 말차',
-          korean: '$8.95 · 크리미',
+          korean: '$9.95 · 크리미',
           description: '더 부드럽고 크리미한 한 잔이라면, 코코넛이나 바나나가 말차를 은은하고 디저트 같은 라떼로 만들어줍니다. 베리나 시트러스보다 산미가 적고, 진한 열대 여운이 모찌 도넛과 환상의 궁합입니다.',
           icon: '🥥',
         },
@@ -545,9 +545,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 에서는 층층이 쌓인 딸기 말차($10.95)에 더해 망고, 구아바, 릴리코이, 코코넛, 바나나, 아즈키, 클래식 말차까지 8가지 말차·호지차 라떼를 준비했습니다. 100% 코나 커피와 갓 만든 모찌 도넛도 제공하며, 와이키키 비치에서 도보 약 5분 거리입니다. 매일 오전 7시–오후 9시 영업.',
+        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 에서는 층층이 쌓인 딸기 말차($11.95)에 더해 망고, 구아바, 릴리코이, 코코넛, 바나나, 아즈키, 클래식 말차까지 8가지 말차·호지차 라떼를 준비했습니다. 100% 코나 커피와 갓 만든 모찌 도넛도 제공하며, 와이키키 비치에서 도보 약 5분 거리입니다. 매일 오전 7시–오후 9시 영업.',
         highlights: [
-          '층층이 쌓인 딸기 말차($10.95) — 핑크 앤 그린 주인공',
+          '층층이 쌓인 딸기 말차($11.95) — 핑크 앤 그린 주인공',
           '8가지 말차·호지차 라떼 중에서 선택',
           '100% 코나 커피와 갓 만든 모찌 도넛',
           '와이키키 비치에서 약 5분 — 매일 오전 7시–오후 9시 영업',
@@ -586,7 +586,7 @@ const content = {
         },
         {
           question: '와이키키 딸기 말차는 얼마인가요?',
-          answer: '칼라카우아 애비뉴의 Kona Coffee Donut? 에서 딸기 말차는 $10.95입니다. 망고, 구아바, 릴리코이, 코코넛, 바나나 등 다른 말차 과일 라떼는 각 $8.95, 클래식 말차 라떼도 동일합니다. 와이키키 비치에서 도보 약 5분, 매일 오전 7시부터 오후 9시까지 영업합니다.',
+          answer: '칼라카우아 애비뉴의 Kona Coffee Donut? 에서 딸기 말차는 $11.95입니다. 망고, 구아바, 릴리코이, 코코넛, 바나나 등 다른 말차 과일 라떼는 각 $9.95, 클래식 말차 라떼도 동일합니다. 와이키키 비치에서 도보 약 5분, 매일 오전 7시부터 오후 9시까지 영업합니다.',
         },
         {
           question: '딸기 말차는 단가요?',
@@ -598,7 +598,7 @@ const content = {
         },
         {
           question: '와이키키 비치 근처에서 딸기 말차를 어디서 살 수 있나요?',
-          answer: '와이키키 2142 Kalakaua Ave의 Kona Coffee Donut? 에서 층층이 쌓인 딸기 말차($10.95)와 함께 8가지 말차·호지차 라떼, 100% 코나 커피, 갓 만든 모찌 도넛을 만나보세요. 와이키키 비치에서 도보 약 5분, 매일 오전 7시–오후 9시 영업입니다.',
+          answer: '와이키키 2142 Kalakaua Ave의 Kona Coffee Donut? 에서 층층이 쌓인 딸기 말차($11.95)와 함께 8가지 말차·호지차 라떼, 100% 코나 커피, 갓 만든 모찌 도넛을 만나보세요. 와이키키 비치에서 도보 약 5분, 매일 오전 7시–오후 9시 영업입니다.',
         },
       ],
     },
@@ -676,9 +676,9 @@ const content = {
         },
         {
           feature: '价格',
-          bingsu: '$10.95',
-          shavedIce: '$8.95',
-          kakigori: '$8.95',
+          bingsu: '$11.95',
+          shavedIce: '$9.95',
+          kakigori: '$9.95',
         },
       ],
       note: '关键区别在于那层分层的草莓果底。它把单调的抹茶拿铁变成酸甜与醇厚交融的一杯，并带来其他任何抹茶都无法比拟的粉绿外观。',
@@ -689,31 +689,31 @@ const content = {
       items: [
         {
           name: '草莓抹茶',
-          korean: '$10.95 · 主角',
+          korean: '$11.95 · 主角',
           description: '走红的粉绿分层拿铁。底部酸甜草莓果泥，中间冰牛奶，顶部鲜艳浇上正宗仪式级抹茶。这是我们最上镜的一杯，也是顾客点名要的人气款。加冰供应。',
           icon: '🍓',
         },
         {
           name: '芒果抹茶',
-          korean: '$8.95 · 热带',
+          korean: '$9.95 · 热带',
           description: '金黄夏威夷风芒果遇上醇厚抹茶，化作夕阳色的分层拿铁。比草莓更甜更热带，却有着同样令人满足的水果与抹茶平衡。喜爱海岛水果的人的最爱。',
           icon: '🥭',
         },
         {
           name: '番石榴抹茶',
-          korean: '$8.95 · 海岛人气款',
+          korean: '$9.95 · 海岛人气款',
           description: '番石榴是地道的夏威夷经典，其花香甜味与青草抹茶完美相配。绿色之下的粉珊瑚果层，让它几乎与草莓一样上镜——而且一望便知是本地味道。',
           icon: '🍈',
         },
         {
           name: '百香果抹茶',
-          korean: '$8.95 · 百香果',
+          korean: '$9.95 · 百香果',
           description: 'Lilikoi（夏威夷百香果）带来酸爽热带的冲击，切开抹茶的浓郁。明亮、微酸、清爽——这是给喜欢果香拿铁带点酸劲的人的那一杯。',
           icon: '🌺',
         },
         {
           name: '椰子 / 香蕉抹茶',
-          korean: '$8.95 · 绵密',
+          korean: '$9.95 · 绵密',
           description: '想要更柔滑绵密的一杯，椰子或香蕉能把抹茶化作温润、甜点般的拿铁。比莓果和柑橘款更少酸味，浓郁的热带尾韵与麻糬甜甜圈堪称绝配。',
           icon: '🥥',
         },
@@ -746,9 +746,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '就在威基基核心地带的卡拉卡瓦大道上，Kona Coffee Donut? 制作分层草莓抹茶（$10.95），外加芒果、番石榴、百香果、椰子、香蕉、红豆和经典抹茶等8款抹茶与焙茶拿铁。我们还供应100%科纳咖啡和新鲜麻糬甜甜圈，距威基基海滩步行约5分钟。每日营业，上午7点至晚上9点。',
+        description: '就在威基基核心地带的卡拉卡瓦大道上，Kona Coffee Donut? 制作分层草莓抹茶（$11.95），外加芒果、番石榴、百香果、椰子、香蕉、红豆和经典抹茶等8款抹茶与焙茶拿铁。我们还供应100%科纳咖啡和新鲜麻糬甜甜圈，距威基基海滩步行约5分钟。每日营业，上午7点至晚上9点。',
         highlights: [
-          '分层草莓抹茶（$10.95）——粉绿主角',
+          '分层草莓抹茶（$11.95）——粉绿主角',
           '另有8款抹茶与焙茶拿铁可选',
           '100%科纳咖啡与新鲜麻糬甜甜圈',
           '距威基基海滩约5分钟——每日7:00–21:00营业',
@@ -787,7 +787,7 @@ const content = {
         },
         {
           question: '威基基的草莓抹茶多少钱？',
-          answer: '在卡拉卡瓦大道的 Kona Coffee Donut?，草莓抹茶为 $10.95。我们其他的抹茶水果拿铁——芒果、番石榴、百香果、椰子和香蕉——每杯 $8.95，经典抹茶拿铁也是如此。我们距威基基海滩步行约5分钟，每日上午7点至晚上9点营业。',
+          answer: '在卡拉卡瓦大道的 Kona Coffee Donut?，草莓抹茶为 $11.95。我们其他的抹茶水果拿铁——芒果、番石榴、百香果、椰子和香蕉——每杯 $9.95，经典抹茶拿铁也是如此。我们距威基基海滩步行约5分钟，每日上午7点至晚上9点营业。',
         },
         {
           question: '草莓抹茶甜吗？',
@@ -799,7 +799,7 @@ const content = {
         },
         {
           question: '威基基海滩附近哪里能买到草莓抹茶？',
-          answer: '威基基2142 Kalakaua Ave的 Kona Coffee Donut? 制作分层草莓抹茶（$10.95），还有另外8款抹茶与焙茶拿铁、100%科纳咖啡和新鲜麻糬甜甜圈。它距威基基海滩步行约5分钟，每日上午7点至晚上9点营业。',
+          answer: '威基基2142 Kalakaua Ave的 Kona Coffee Donut? 制作分层草莓抹茶（$11.95），还有另外8款抹茶与焙茶拿铁、100%科纳咖啡和新鲜麻糬甜甜圈。它距威基基海滩步行约5分钟，每日上午7点至晚上9点营业。',
         },
       ],
     },
@@ -824,7 +824,7 @@ const blogPostingSchema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'Strawberry Matcha Latte in Waikiki (2026): The Pink-and-Green Drink Everyone Wants',
-  description: 'What a strawberry matcha latte is, why the pink-and-green layered drink went viral, and where to get one in Waikiki — Kona Coffee Donut?\'s Strawberry Matcha ($10.95), minutes from the beach.',
+  description: 'What a strawberry matcha latte is, why the pink-and-green layered drink went viral, and where to get one in Waikiki — Kona Coffee Donut?\'s Strawberry Matcha ($11.95), minutes from the beach.',
   image: 'https://www.konacoffeedonut.com/images/blog/strawberry-matcha-latte-waikiki.jpeg',
   author: {
     '@type': 'Organization',
@@ -867,7 +867,7 @@ const faqSchema = {
       name: 'How much is the strawberry matcha in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'At Kona Coffee Donut? on Kalākaua Avenue, the Strawberry Matcha is $10.95. Our other matcha fruit lattes — mango, guava, lilikoi, coconut, and banana — are $8.95 each, as is the classic matcha latte. We are about a 5-minute walk from Waikiki Beach and open daily from 7AM to 9PM.',
+        text: 'At Kona Coffee Donut? on Kalākaua Avenue, the Strawberry Matcha is $11.95. Our other matcha fruit lattes — mango, guava, lilikoi, coconut, and banana — are $9.95 each, as is the classic matcha latte. We are about a 5-minute walk from Waikiki Beach and open daily from 7AM to 9PM.',
       },
     },
     {
@@ -891,7 +891,7 @@ const faqSchema = {
       name: 'Where can I get a strawberry matcha near Waikiki Beach?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kona Coffee Donut? at 2142 Kalakaua Ave in Waikiki makes a layered Strawberry Matcha ($10.95) along with eight other matcha and hojicha lattes, 100% Kona coffee, and fresh mochi donuts. It is about a 5-minute walk from Waikiki Beach and open daily, 7AM–9PM.',
+        text: 'Kona Coffee Donut? at 2142 Kalakaua Ave in Waikiki makes a layered Strawberry Matcha ($11.95) along with eight other matcha and hojicha lattes, 100% Kona coffee, and fresh mochi donuts. It is about a 5-minute walk from Waikiki Beach and open daily, 7AM–9PM.',
       },
     },
   ],

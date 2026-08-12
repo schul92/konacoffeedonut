@@ -87,7 +87,7 @@ const content = {
         {
           name: 'Strawberry Matcha',
           korean: 'Our most popular by far',
-          description: 'The crowd favorite. Sweet strawberry layered under vivid green matcha over cold milk — as pretty as it is delicious, and easily our most-ordered iced matcha. If you try one thing, make it this. Iced Strawberry Matcha is $10.95.',
+          description: 'The crowd favorite. Sweet strawberry layered under vivid green matcha over cold milk — as pretty as it is delicious, and easily our most-ordered iced matcha. If you try one thing, make it this. Iced Strawberry Matcha is $11.95.',
           icon: '🍓',
         },
         {
@@ -149,10 +149,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? makes iced matcha lattes with real stone-ground matcha — whisked fresh, poured over ice, and never too sweet. Our Matcha Latte is $8.95 (iced available), and our most popular flavor, Strawberry Matcha, is $10.95. Choose oat, almond, or soy milk, add fruit flavors like mango, coconut, guava, or banana, or go for iced hojicha instead. We\'re about a 5-minute walk from Waikiki Beach and open daily — grab one on the way to the beach with a warm mochi donut. Call us at (808) 260-1835.',
+        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? makes iced matcha lattes with real stone-ground matcha — whisked fresh, poured over ice, and never too sweet. Our Matcha Latte is $9.95 (iced available), and our most popular flavor, Strawberry Matcha, is $11.95. Choose oat, almond, or soy milk, add fruit flavors like mango, coconut, guava, or banana, or go for iced hojicha instead. We\'re about a 5-minute walk from Waikiki Beach and open daily — grab one on the way to the beach with a warm mochi donut. Call us at (808) 260-1835.',
         highlights: [
-          'Real stone-ground iced matcha latte — $8.95 (iced available)',
-          'Strawberry Matcha (our most popular) — $10.95',
+          'Real stone-ground iced matcha latte — $9.95 (iced available)',
+          'Strawberry Matcha (our most popular) — $11.95',
           'Oat, almond & soy milk add-ons; iced hojicha too',
           'About 5 minutes from Waikiki Beach • Open daily 7AM–9PM',
         ],
@@ -186,7 +186,7 @@ const content = {
       items: [
         {
           question: 'Where can I get an iced matcha latte in Waikiki?',
-          answer: 'Kona Coffee Donut? at 2142 Kalakaua Ave makes real iced matcha lattes right in the heart of Waikiki, about a 5-minute walk from Waikiki Beach. We\'re open daily 7AM–9PM. Our Matcha Latte is $8.95 (iced available) and our most popular flavor, Strawberry Matcha, is $10.95 — an easy stop on the way to the sand.',
+          answer: 'Kona Coffee Donut? at 2142 Kalakaua Ave makes real iced matcha lattes right in the heart of Waikiki, about a 5-minute walk from Waikiki Beach. We\'re open daily 7AM–9PM. Our Matcha Latte is $9.95 (iced available) and our most popular flavor, Strawberry Matcha, is $11.95 — an easy stop on the way to the sand.',
         },
         {
           question: 'Is your matcha real, stone-ground matcha?',
@@ -194,7 +194,7 @@ const content = {
         },
         {
           question: 'Do you have iced strawberry matcha?',
-          answer: 'Yes — iced Strawberry Matcha is our most popular matcha drink. Sweet strawberry layered under real green matcha over cold milk, for $10.95. We also make mango, coconut, guava, and banana matcha, plus iced hojicha if you prefer roasted green tea.',
+          answer: 'Yes — iced Strawberry Matcha is our most popular matcha drink. Sweet strawberry layered under real green matcha over cold milk, for $11.95. We also make mango, coconut, guava, and banana matcha, plus iced hojicha if you prefer roasted green tea.',
         },
         {
           question: 'Do you have dairy-free options for iced matcha?',
@@ -208,7 +208,7 @@ const content = {
     },
     cta: {
       title: 'Grab an Iced Matcha on the Way to the Beach',
-      text: 'Visit Kona Coffee Donut? at 2142 Kalakaua Ave for a real iced matcha latte — stone-ground, not too sweet, and just minutes from Waikiki Beach. Matcha Latte $8.95, Strawberry Matcha $10.95.',
+      text: 'Visit Kona Coffee Donut? at 2142 Kalakaua Ave for a real iced matcha latte — stone-ground, not too sweet, and just minutes from Waikiki Beach. Matcha Latte $9.95, Strawberry Matcha $11.95.',
       menuButton: 'View Matcha & Coffee Menu',
       directionsButton: 'Get Directions',
     },
@@ -294,7 +294,7 @@ const content = {
         {
           name: 'ストロベリー抹茶',
           korean: '断トツで一番人気',
-          description: 'みんなのお気に入り。冷たいミルクの上に鮮やかグリーンの抹茶、その下に甘いストロベリー——見た目も味も抜群で、当店のアイス抹茶で最も注文されます。一つだけ試すならこれ。アイスストロベリー抹茶は$10.95。',
+          description: 'みんなのお気に入り。冷たいミルクの上に鮮やかグリーンの抹茶、その下に甘いストロベリー——見た目も味も抜群で、当店のアイス抹茶で最も注文されます。一つだけ試すならこれ。アイスストロベリー抹茶は$11.95。',
           icon: '🍓',
         },
         {
@@ -356,10 +356,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心、カラカウア通り沿いの Kona Coffee Donut? では、本物の石臼挽き抹茶でアイス抹茶ラテを作ります——点てたてで氷に注ぎ、甘すぎません。抹茶ラテは$8.95（アイス可）、一番人気のストロベリー抹茶は$10.95。オーツ、アーモンド、ソイミルクを選べ、マンゴー、ココナッツ、グァバ、バナナなどのフルーツフレーバーを追加したり、アイスほうじ茶にしたりも。ワイキキビーチから徒歩約5分、毎日営業——ビーチへ向かう途中に温かいモチドーナツと一緒にどうぞ。お電話は (808) 260-1835。',
+        description: 'ワイキキの中心、カラカウア通り沿いの Kona Coffee Donut? では、本物の石臼挽き抹茶でアイス抹茶ラテを作ります——点てたてで氷に注ぎ、甘すぎません。抹茶ラテは$9.95（アイス可）、一番人気のストロベリー抹茶は$11.95。オーツ、アーモンド、ソイミルクを選べ、マンゴー、ココナッツ、グァバ、バナナなどのフルーツフレーバーを追加したり、アイスほうじ茶にしたりも。ワイキキビーチから徒歩約5分、毎日営業——ビーチへ向かう途中に温かいモチドーナツと一緒にどうぞ。お電話は (808) 260-1835。',
         highlights: [
-          '本物の石臼挽きアイス抹茶ラテ — $8.95（アイス可）',
-          'ストロベリー抹茶（一番人気）— $10.95',
+          '本物の石臼挽きアイス抹茶ラテ — $9.95（アイス可）',
+          'ストロベリー抹茶（一番人気）— $11.95',
           'オーツ・アーモンド・ソイミルク追加可、アイスほうじ茶も',
           'ワイキキビーチから約5分・毎日営業 午前7時〜午後9時',
         ],
@@ -393,7 +393,7 @@ const content = {
       items: [
         {
           question: 'ワイキキでアイス抹茶ラテを飲める場所は？',
-          answer: '2142 Kalakaua Ave の Kona Coffee Donut? は、ワイキキの中心で本物のアイス抹茶ラテを作ります。ワイキキビーチから徒歩約5分、毎日午前7時〜午後9時営業。抹茶ラテは$8.95（アイス可）、一番人気のストロベリー抹茶は$10.95——砂浜へ向かう途中の立ち寄りにぴったりです。',
+          answer: '2142 Kalakaua Ave の Kona Coffee Donut? は、ワイキキの中心で本物のアイス抹茶ラテを作ります。ワイキキビーチから徒歩約5分、毎日午前7時〜午後9時営業。抹茶ラテは$9.95（アイス可）、一番人気のストロベリー抹茶は$11.95——砂浜へ向かう途中の立ち寄りにぴったりです。',
         },
         {
           question: '抹茶は本物の石臼挽きですか？',
@@ -401,7 +401,7 @@ const content = {
         },
         {
           question: 'アイスのストロベリー抹茶はありますか？',
-          answer: 'はい——アイスストロベリー抹茶は当店で一番人気の抹茶ドリンクです。冷たいミルクの上に本物の緑の抹茶、その下に甘いストロベリー、$10.95。マンゴー、ココナッツ、グァバ、バナナ抹茶もあり、焙じ茶がお好みならアイスほうじ茶も作ります。',
+          answer: 'はい——アイスストロベリー抹茶は当店で一番人気の抹茶ドリンクです。冷たいミルクの上に本物の緑の抹茶、その下に甘いストロベリー、$11.95。マンゴー、ココナッツ、グァバ、バナナ抹茶もあり、焙じ茶がお好みならアイスほうじ茶も作ります。',
         },
         {
           question: 'アイス抹茶に乳製品なしの選択肢はありますか？',
@@ -415,7 +415,7 @@ const content = {
     },
     cta: {
       title: 'ビーチへ向かう途中にアイス抹茶を',
-      text: '2142 Kalakaua Ave の Kona Coffee Donut? で、本物のアイス抹茶ラテを——石臼挽きで甘すぎず、ワイキキビーチからわずか数分。抹茶ラテ$8.95、ストロベリー抹茶$10.95。',
+      text: '2142 Kalakaua Ave の Kona Coffee Donut? で、本物のアイス抹茶ラテを——石臼挽きで甘すぎず、ワイキキビーチからわずか数分。抹茶ラテ$9.95、ストロベリー抹茶$11.95。',
       menuButton: '抹茶＆コーヒーメニューを見る',
       directionsButton: '道順を見る',
     },
@@ -501,7 +501,7 @@ const content = {
         {
           name: '딸기 말차',
           korean: '단연 가장 인기',
-          description: '모두의 최애. 차가운 우유 위에 선명한 초록 말차, 그 아래 달콤한 딸기——보기에도 맛에도 뛰어나 우리 아이스 말차 중 가장 많이 주문됩니다. 딱 하나만 맛본다면 이걸로. 아이스 딸기 말차는 $10.95.',
+          description: '모두의 최애. 차가운 우유 위에 선명한 초록 말차, 그 아래 달콤한 딸기——보기에도 맛에도 뛰어나 우리 아이스 말차 중 가장 많이 주문됩니다. 딱 하나만 맛본다면 이걸로. 아이스 딸기 말차는 $11.95.',
           icon: '🍓',
         },
         {
@@ -563,10 +563,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '와이키키 중심 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 는 진짜 맷돌로 간 말차로 아이스 말차 라테를 만듭니다——갓 저어 얼음 위에 붓고, 결코 너무 달지 않게. 말차 라테는 $8.95(아이스 가능), 가장 인기인 딸기 말차는 $10.95. 귀리, 아몬드, 두유 중에서 고르고, 망고·코코넛·구아바·바나나 같은 과일 플레이버를 더하거나 아이스 호지차로 바꿔도 됩니다. 와이키키 해변에서 도보 약 5분, 매일 영업——해변 가는 길에 따뜻한 모찌 도넛과 함께 하나 들르세요. 전화는 (808) 260-1835.',
+        description: '와이키키 중심 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 는 진짜 맷돌로 간 말차로 아이스 말차 라테를 만듭니다——갓 저어 얼음 위에 붓고, 결코 너무 달지 않게. 말차 라테는 $9.95(아이스 가능), 가장 인기인 딸기 말차는 $11.95. 귀리, 아몬드, 두유 중에서 고르고, 망고·코코넛·구아바·바나나 같은 과일 플레이버를 더하거나 아이스 호지차로 바꿔도 됩니다. 와이키키 해변에서 도보 약 5분, 매일 영업——해변 가는 길에 따뜻한 모찌 도넛과 함께 하나 들르세요. 전화는 (808) 260-1835.',
         highlights: [
-          '진짜 맷돌 간 아이스 말차 라테 — $8.95(아이스 가능)',
-          '딸기 말차(가장 인기) — $10.95',
+          '진짜 맷돌 간 아이스 말차 라테 — $9.95(아이스 가능)',
+          '딸기 말차(가장 인기) — $11.95',
           '귀리·아몬드·두유 추가 가능, 아이스 호지차도',
           '와이키키 해변에서 약 5분 • 매일 영업 오전 7시~오후 9시',
         ],
@@ -600,7 +600,7 @@ const content = {
       items: [
         {
           question: '와이키키에서 아이스 말차 라테를 어디서 마실 수 있나요?',
-          answer: '2142 Kalakaua Ave의 Kona Coffee Donut? 는 와이키키 중심에서 진짜 아이스 말차 라테를 만듭니다. 와이키키 해변에서 도보 약 5분, 매일 오전 7시~오후 9시 영업. 말차 라테는 $8.95(아이스 가능), 가장 인기인 딸기 말차는 $10.95——모래사장 가는 길에 들르기 좋습니다.',
+          answer: '2142 Kalakaua Ave의 Kona Coffee Donut? 는 와이키키 중심에서 진짜 아이스 말차 라테를 만듭니다. 와이키키 해변에서 도보 약 5분, 매일 오전 7시~오후 9시 영업. 말차 라테는 $9.95(아이스 가능), 가장 인기인 딸기 말차는 $11.95——모래사장 가는 길에 들르기 좋습니다.',
         },
         {
           question: '말차가 진짜 맷돌로 간 말차인가요?',
@@ -608,7 +608,7 @@ const content = {
         },
         {
           question: '아이스 딸기 말차가 있나요?',
-          answer: '네——아이스 딸기 말차는 우리 매장에서 가장 인기인 말차 음료입니다. 차가운 우유 위에 진짜 초록 말차, 그 아래 달콤한 딸기, $10.95. 망고·코코넛·구아바·바나나 말차도 있고, 볶은 녹차를 좋아하시면 아이스 호지차도 만듭니다.',
+          answer: '네——아이스 딸기 말차는 우리 매장에서 가장 인기인 말차 음료입니다. 차가운 우유 위에 진짜 초록 말차, 그 아래 달콤한 딸기, $11.95. 망고·코코넛·구아바·바나나 말차도 있고, 볶은 녹차를 좋아하시면 아이스 호지차도 만듭니다.',
         },
         {
           question: '아이스 말차에 유제품 없는 옵션이 있나요?',
@@ -622,7 +622,7 @@ const content = {
     },
     cta: {
       title: '해변 가는 길에 아이스 말차 한 잔',
-      text: '2142 Kalakaua Ave의 Kona Coffee Donut? 에서 진짜 아이스 말차 라테를——맷돌로 갈아 너무 달지 않고, 와이키키 해변에서 단 몇 분. 말차 라테 $8.95, 딸기 말차 $10.95.',
+      text: '2142 Kalakaua Ave의 Kona Coffee Donut? 에서 진짜 아이스 말차 라테를——맷돌로 갈아 너무 달지 않고, 와이키키 해변에서 단 몇 분. 말차 라테 $9.95, 딸기 말차 $11.95.',
       menuButton: '말차 & 커피 메뉴 보기',
       directionsButton: '길찾기',
     },
@@ -708,7 +708,7 @@ const content = {
         {
           name: '草莓抹茶',
           korean: '遥遥领先的人气王',
-          description: '大家的最爱。冷牛奶上是鲜绿抹茶，底下是香甜草莓——好看又好喝，是我们卖得最多的冰抹茶。只试一款的话，就选它。冰草莓抹茶$10.95。',
+          description: '大家的最爱。冷牛奶上是鲜绿抹茶，底下是香甜草莓——好看又好喝，是我们卖得最多的冰抹茶。只试一款的话，就选它。冰草莓抹茶$11.95。',
           icon: '🍓',
         },
         {
@@ -770,10 +770,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '就在威基基中心地段的卡拉卡瓦大道上，Kona Coffee Donut? 用真正的石磨抹茶制作冰抹茶拿铁——现打现倒于冰上，绝不太甜。抹茶拿铁$8.95（可做冰），最受欢迎的草莓抹茶$10.95。可选燕麦奶、杏仁奶或豆奶，加芒果、椰子、番石榴、香蕉等果味，或改点冰焙茶。我们距威基基海滩步行约5分钟，每天营业——去海滩的路上顺手带一杯，再配个温热的麻糬甜甜圈。电话 (808) 260-1835。',
+        description: '就在威基基中心地段的卡拉卡瓦大道上，Kona Coffee Donut? 用真正的石磨抹茶制作冰抹茶拿铁——现打现倒于冰上，绝不太甜。抹茶拿铁$9.95（可做冰），最受欢迎的草莓抹茶$11.95。可选燕麦奶、杏仁奶或豆奶，加芒果、椰子、番石榴、香蕉等果味，或改点冰焙茶。我们距威基基海滩步行约5分钟，每天营业——去海滩的路上顺手带一杯，再配个温热的麻糬甜甜圈。电话 (808) 260-1835。',
         highlights: [
-          '真正石磨冰抹茶拿铁 — $8.95（可做冰）',
-          '草莓抹茶（最受欢迎）— $10.95',
+          '真正石磨冰抹茶拿铁 — $9.95（可做冰）',
+          '草莓抹茶（最受欢迎）— $11.95',
           '可加燕麦奶、杏仁奶、豆奶；也有冰焙茶',
           '距威基基海滩约5分钟 • 每天营业 上午7点至晚上9点',
         ],
@@ -807,7 +807,7 @@ const content = {
       items: [
         {
           question: '在威基基哪里能喝到冰抹茶拿铁？',
-          answer: '位于 2142 Kalakaua Ave 的 Kona Coffee Donut? 就在威基基中心制作真正的冰抹茶拿铁，距威基基海滩步行约5分钟，每天上午7点至晚上9点营业。抹茶拿铁$8.95（可做冰），最受欢迎的草莓抹茶$10.95——去沙滩的路上顺道一停正合适。',
+          answer: '位于 2142 Kalakaua Ave 的 Kona Coffee Donut? 就在威基基中心制作真正的冰抹茶拿铁，距威基基海滩步行约5分钟，每天上午7点至晚上9点营业。抹茶拿铁$9.95（可做冰），最受欢迎的草莓抹茶$11.95——去沙滩的路上顺道一停正合适。',
         },
         {
           question: '你们的抹茶是真正的石磨抹茶吗？',
@@ -815,7 +815,7 @@ const content = {
         },
         {
           question: '你们有冰草莓抹茶吗？',
-          answer: '有——冰草莓抹茶是我们最受欢迎的抹茶饮品。冷牛奶上是真正的绿抹茶，底下是香甜草莓，$10.95。我们还做芒果、椰子、番石榴和香蕉抹茶，若你偏爱烘焙绿茶，也有冰焙茶。',
+          answer: '有——冰草莓抹茶是我们最受欢迎的抹茶饮品。冷牛奶上是真正的绿抹茶，底下是香甜草莓，$11.95。我们还做芒果、椰子、番石榴和香蕉抹茶，若你偏爱烘焙绿茶，也有冰焙茶。',
         },
         {
           question: '冰抹茶有无乳（dairy-free）的选择吗？',
@@ -829,7 +829,7 @@ const content = {
     },
     cta: {
       title: '去海滩的路上带一杯冰抹茶',
-      text: '前往 2142 Kalakaua Ave 的 Kona Coffee Donut?，来一杯真正的冰抹茶拿铁——石磨、不太甜，距威基基海滩仅几分钟。抹茶拿铁$8.95，草莓抹茶$10.95。',
+      text: '前往 2142 Kalakaua Ave 的 Kona Coffee Donut?，来一杯真正的冰抹茶拿铁——石磨、不太甜，距威基基海滩仅几分钟。抹茶拿铁$9.95，草莓抹茶$11.95。',
       menuButton: '查看抹茶与咖啡菜单',
       directionsButton: '获取路线',
     },
@@ -883,7 +883,7 @@ const faqSchema = {
       name: 'Where can I get an iced matcha latte in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kona Coffee Donut? at 2142 Kalakaua Ave makes real iced matcha lattes right in the heart of Waikiki, about a 5-minute walk from Waikiki Beach. We\'re open daily 7AM–9PM. Our Matcha Latte is $8.95 (iced available) and our most popular flavor, Strawberry Matcha, is $10.95 — an easy stop on the way to the sand.',
+        text: 'Kona Coffee Donut? at 2142 Kalakaua Ave makes real iced matcha lattes right in the heart of Waikiki, about a 5-minute walk from Waikiki Beach. We\'re open daily 7AM–9PM. Our Matcha Latte is $9.95 (iced available) and our most popular flavor, Strawberry Matcha, is $11.95 — an easy stop on the way to the sand.',
       },
     },
     {
@@ -899,7 +899,7 @@ const faqSchema = {
       name: 'Do you have iced strawberry matcha?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes — iced Strawberry Matcha is our most popular matcha drink. Sweet strawberry layered under real green matcha over cold milk, for $10.95. We also make mango, coconut, guava, and banana matcha, plus iced hojicha if you prefer roasted green tea.',
+        text: 'Yes — iced Strawberry Matcha is our most popular matcha drink. Sweet strawberry layered under real green matcha over cold milk, for $11.95. We also make mango, coconut, guava, and banana matcha, plus iced hojicha if you prefer roasted green tea.',
       },
     },
     {

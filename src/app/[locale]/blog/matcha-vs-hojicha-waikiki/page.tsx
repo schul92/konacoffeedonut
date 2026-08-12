@@ -20,7 +20,7 @@ const content = {
     },
     definition: {
       title: 'Matcha vs Hojicha — The Quick Answer',
-      text: 'Both <strong>matcha</strong> and <strong>hojicha</strong> are Japanese green teas, but they taste like opposites. <strong>Matcha</strong> is shade-grown green tea stone-ground into a fine powder — vibrant green, grassy and umami-rich, with <strong>higher caffeine</strong> and a "calm alert" energy from L-theanine. <strong>Hojicha</strong> is green tea that\'s been <strong>roasted over charcoal</strong> — reddish-brown, toasty, nutty and caramel-smooth, with <strong>naturally low caffeine</strong>, making it perfect for the afternoon, the evening, kids, or anyone caffeine-sensitive. At <strong>Kona Coffee Donut?</strong> in Waikiki you can try both: a Matcha Latte or a Hojicha Latte, each <strong>$8.95</strong>, just minutes from the beach.',
+      text: 'Both <strong>matcha</strong> and <strong>hojicha</strong> are Japanese green teas, but they taste like opposites. <strong>Matcha</strong> is shade-grown green tea stone-ground into a fine powder — vibrant green, grassy and umami-rich, with <strong>higher caffeine</strong> and a "calm alert" energy from L-theanine. <strong>Hojicha</strong> is green tea that\'s been <strong>roasted over charcoal</strong> — reddish-brown, toasty, nutty and caramel-smooth, with <strong>naturally low caffeine</strong>, making it perfect for the afternoon, the evening, kids, or anyone caffeine-sensitive. At <strong>Kona Coffee Donut?</strong> in Waikiki you can try both: a Matcha Latte or a Hojicha Latte, each <strong>$9.95</strong>, just minutes from the beach.',
     },
     history: {
       title: 'What Is Hojicha? (The Underrated One)',
@@ -136,9 +136,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'Right in the heart of Waikiki, Kona Coffee Donut? serves both a Matcha Latte and a Hojicha Latte — each $8.95, hot or iced. Curious about flavors? Our strawberry, mango, coconut, guava, and banana lattes can all be made on a matcha OR hojicha base, so you can mix and match. Pair either with a freshly made mochi donut or malasada for the perfect Waikiki break. We\'re about a 5-minute walk from Waikiki Beach and open daily.',
+        description: 'Right in the heart of Waikiki, Kona Coffee Donut? serves both a Matcha Latte and a Hojicha Latte — each $9.95, hot or iced. Curious about flavors? Our strawberry, mango, coconut, guava, and banana lattes can all be made on a matcha OR hojicha base, so you can mix and match. Pair either with a freshly made mochi donut or malasada for the perfect Waikiki break. We\'re about a 5-minute walk from Waikiki Beach and open daily.',
         highlights: [
-          'Matcha Latte & Hojicha Latte — $8.95 each, hot or iced',
+          'Matcha Latte & Hojicha Latte — $9.95 each, hot or iced',
           'Flavored line (strawberry, mango, coconut, guava, banana) on a matcha OR hojicha base',
           'About 5 minutes from Waikiki Beach',
           'Open daily, 7AM–9PM · (808) 260-1835',
@@ -185,17 +185,17 @@ const content = {
         },
         {
           question: 'Where can I try hojicha in Waikiki?',
-          answer: 'Kona Coffee Donut? at 2142 Kalakaua Ave serves a fresh Hojicha Latte for $8.95, hot or iced, about a 5-minute walk from Waikiki Beach. We also pour a Matcha Latte at $8.95, so you can taste both side by side. Our flavored lattes (strawberry, mango, coconut, guava, banana) can be made on a matcha or hojicha base, too.',
+          answer: 'Kona Coffee Donut? at 2142 Kalakaua Ave serves a fresh Hojicha Latte for $9.95, hot or iced, about a 5-minute walk from Waikiki Beach. We also pour a Matcha Latte at $9.95, so you can taste both side by side. Our flavored lattes (strawberry, mango, coconut, guava, banana) can be made on a matcha or hojicha base, too.',
         },
         {
           question: 'What is a hojicha latte?',
-          answer: 'A hojicha latte is roasted Japanese green tea whisked or brewed and combined with steamed (or iced) milk. It tastes toasty, nutty, and lightly caramel-sweet — a bit like toasted rice and roasted nuts in milk — and it\'s naturally low in caffeine. At Kona Coffee Donut? in Waikiki it\'s $8.95, hot or iced, and pairs perfectly with a warm donut.',
+          answer: 'A hojicha latte is roasted Japanese green tea whisked or brewed and combined with steamed (or iced) milk. It tastes toasty, nutty, and lightly caramel-sweet — a bit like toasted rice and roasted nuts in milk — and it\'s naturally low in caffeine. At Kona Coffee Donut? in Waikiki it\'s $9.95, hot or iced, and pairs perfectly with a warm donut.',
         },
       ],
     },
     cta: {
       title: 'Taste Matcha & Hojicha in Waikiki',
-      text: 'Visit Kona Coffee Donut? at 2142 Kalakaua Ave and try a Matcha Latte and a roasted Hojicha Latte — each $8.95, hot or iced, just minutes from Waikiki Beach.',
+      text: 'Visit Kona Coffee Donut? at 2142 Kalakaua Ave and try a Matcha Latte and a roasted Hojicha Latte — each $9.95, hot or iced, just minutes from Waikiki Beach.',
       menuButton: 'View Matcha & Coffee Menu',
       directionsButton: 'Get Directions',
     },
@@ -214,7 +214,7 @@ const content = {
     },
     definition: {
       title: '抹茶とほうじ茶——ひと目でわかる答え',
-      text: '<strong>抹茶</strong>も<strong>ほうじ茶</strong>もどちらも日本の緑茶ですが、味わいはまるで正反対です。<strong>抹茶</strong>は日陰で育てた茶葉を石臼で挽いた微粉末で、鮮やかな緑色、青々とした旨みがあり、<strong>カフェインは高め</strong>。L-テアニンによる「穏やかな覚醒」のエネルギーが特徴です。<strong>ほうじ茶</strong>は緑茶を<strong>炭火で焙煎</strong>したもので、赤褐色、香ばしくナッツやカラメルのような滑らかさがあり、<strong>カフェインは自然に低い</strong>ため、午後や夜、お子様、カフェインに敏感な方にぴったりです。ワイキキの<strong>Kona Coffee Donut?</strong> では両方を味わえます——抹茶ラテもほうじ茶ラテも各<strong>$8.95</strong>、ビーチからわずか数分です。',
+      text: '<strong>抹茶</strong>も<strong>ほうじ茶</strong>もどちらも日本の緑茶ですが、味わいはまるで正反対です。<strong>抹茶</strong>は日陰で育てた茶葉を石臼で挽いた微粉末で、鮮やかな緑色、青々とした旨みがあり、<strong>カフェインは高め</strong>。L-テアニンによる「穏やかな覚醒」のエネルギーが特徴です。<strong>ほうじ茶</strong>は緑茶を<strong>炭火で焙煎</strong>したもので、赤褐色、香ばしくナッツやカラメルのような滑らかさがあり、<strong>カフェインは自然に低い</strong>ため、午後や夜、お子様、カフェインに敏感な方にぴったりです。ワイキキの<strong>Kona Coffee Donut?</strong> では両方を味わえます——抹茶ラテもほうじ茶ラテも各<strong>$9.95</strong>、ビーチからわずか数分です。',
     },
     history: {
       title: 'ほうじ茶とは？（隠れた主役）',
@@ -330,9 +330,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心に位置する Kona Coffee Donut? では、抹茶ラテもほうじ茶ラテも提供——各$8.95、ホットでもアイスでも。フレーバーが気になる？ストロベリー、マンゴー、ココナッツ、グアバ、バナナのラテは、すべて抹茶またはほうじ茶ベースで作れるので、自由に組み合わせられます。どちらも作りたてのモチドーナツやマラサダと合わせれば、完璧なワイキキの休憩に。ワイキキビーチから徒歩約5分、毎日営業です。',
+        description: 'ワイキキの中心に位置する Kona Coffee Donut? では、抹茶ラテもほうじ茶ラテも提供——各$9.95、ホットでもアイスでも。フレーバーが気になる？ストロベリー、マンゴー、ココナッツ、グアバ、バナナのラテは、すべて抹茶またはほうじ茶ベースで作れるので、自由に組み合わせられます。どちらも作りたてのモチドーナツやマラサダと合わせれば、完璧なワイキキの休憩に。ワイキキビーチから徒歩約5分、毎日営業です。',
         highlights: [
-          '抹茶ラテ＆ほうじ茶ラテ——各$8.95、ホット＆アイス',
+          '抹茶ラテ＆ほうじ茶ラテ——各$9.95、ホット＆アイス',
           'フレーバーライン（ストロベリー、マンゴー、ココナッツ、グアバ、バナナ）を抹茶またはほうじ茶ベースで',
           'ワイキキビーチから約5分',
           '毎日営業、午前7時〜午後9時 · (808) 260-1835',
@@ -379,17 +379,17 @@ const content = {
         },
         {
           question: 'ワイキキでほうじ茶を試せる場所は？',
-          answer: '2142 Kalakaua Ave の Kona Coffee Donut? では、ほうじ茶ラテを$8.95で、ホットでもアイスでも提供、ワイキキビーチから徒歩約5分です。抹茶ラテも$8.95で提供しているので、両方を並べて飲み比べられます。フレーバーラテ（ストロベリー、マンゴー、ココナッツ、グアバ、バナナ）も抹茶またはほうじ茶ベースで作れます。',
+          answer: '2142 Kalakaua Ave の Kona Coffee Donut? では、ほうじ茶ラテを$9.95で、ホットでもアイスでも提供、ワイキキビーチから徒歩約5分です。抹茶ラテも$9.95で提供しているので、両方を並べて飲み比べられます。フレーバーラテ（ストロベリー、マンゴー、ココナッツ、グアバ、バナナ）も抹茶またはほうじ茶ベースで作れます。',
         },
         {
           question: 'ほうじ茶ラテとは？',
-          answer: 'ほうじ茶ラテは、焙煎した日本の緑茶を点てるか淹れて、スチーム（またはアイス）ミルクと合わせたものです。香ばしく、ナッツのようで、ほんのりカラメルのように甘い——お米とローストしたナッツをミルクに溶かしたような味わいで、自然にカフェインが低い。ワイキキの Kona Coffee Donut? では$8.95、ホットでもアイスでも、温かいドーナツと相性抜群です。',
+          answer: 'ほうじ茶ラテは、焙煎した日本の緑茶を点てるか淹れて、スチーム（またはアイス）ミルクと合わせたものです。香ばしく、ナッツのようで、ほんのりカラメルのように甘い——お米とローストしたナッツをミルクに溶かしたような味わいで、自然にカフェインが低い。ワイキキの Kona Coffee Donut? では$9.95、ホットでもアイスでも、温かいドーナツと相性抜群です。',
         },
       ],
     },
     cta: {
       title: 'ワイキキで抹茶とほうじ茶を味わおう',
-      text: '2142 Kalakaua Ave の Kona Coffee Donut? で、抹茶ラテと焙煎ほうじ茶ラテを——各$8.95、ホットでもアイスでも、ワイキキビーチからわずか数分です。',
+      text: '2142 Kalakaua Ave の Kona Coffee Donut? で、抹茶ラテと焙煎ほうじ茶ラテを——各$9.95、ホットでもアイスでも、ワイキキビーチからわずか数分です。',
       menuButton: '抹茶＆コーヒーメニューを見る',
       directionsButton: '道順を見る',
     },
@@ -408,7 +408,7 @@ const content = {
     },
     definition: {
       title: '말차 vs 호지차 — 한눈에 보는 답',
-      text: '<strong>말차</strong>와 <strong>호지차</strong>는 둘 다 일본 녹차이지만, 맛은 정반대입니다. <strong>말차</strong>는 그늘에서 재배한 녹차 잎을 맷돌로 갈아 만든 고운 가루로, 선명한 초록색에 풀향과 감칠맛이 풍부하며 <strong>카페인이 더 높고</strong> L-테아닌 덕분에 "차분한 각성" 에너지를 줍니다. <strong>호지차</strong>는 녹차를 <strong>숯불에 로스팅</strong>한 것으로, 붉은 갈색을 띠며 고소하고 견과류·카라멜 같은 부드러움이 있고 <strong>카페인이 자연스럽게 낮아</strong> 오후나 저녁, 아이들, 카페인에 민감한 분에게 완벽합니다. 와이키키의 <strong>Kona Coffee Donut?</strong> 에서 둘 다 맛볼 수 있습니다 — 말차 라테와 호지차 라테 각 <strong>$8.95</strong>, 해변에서 단 몇 분 거리입니다.',
+      text: '<strong>말차</strong>와 <strong>호지차</strong>는 둘 다 일본 녹차이지만, 맛은 정반대입니다. <strong>말차</strong>는 그늘에서 재배한 녹차 잎을 맷돌로 갈아 만든 고운 가루로, 선명한 초록색에 풀향과 감칠맛이 풍부하며 <strong>카페인이 더 높고</strong> L-테아닌 덕분에 "차분한 각성" 에너지를 줍니다. <strong>호지차</strong>는 녹차를 <strong>숯불에 로스팅</strong>한 것으로, 붉은 갈색을 띠며 고소하고 견과류·카라멜 같은 부드러움이 있고 <strong>카페인이 자연스럽게 낮아</strong> 오후나 저녁, 아이들, 카페인에 민감한 분에게 완벽합니다. 와이키키의 <strong>Kona Coffee Donut?</strong> 에서 둘 다 맛볼 수 있습니다 — 말차 라테와 호지차 라테 각 <strong>$9.95</strong>, 해변에서 단 몇 분 거리입니다.',
     },
     history: {
       title: '호지차란? (저평가된 주인공)',
@@ -524,9 +524,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '와이키키 중심에 자리한 Kona Coffee Donut? 는 말차 라테와 호지차 라테를 모두 제공합니다 — 각 $8.95, 핫이든 아이스든. 플레이버가 궁금하세요? 딸기, 망고, 코코넛, 구아바, 바나나 라테는 모두 말차 또는 호지차 베이스로 만들 수 있어 자유롭게 섞고 매치할 수 있습니다. 어느 쪽이든 갓 만든 모찌 도넛이나 말라사다와 곁들이면 완벽한 와이키키의 쉼표가 됩니다. 와이키키 해변에서 도보 약 5분, 매일 영업합니다.',
+        description: '와이키키 중심에 자리한 Kona Coffee Donut? 는 말차 라테와 호지차 라테를 모두 제공합니다 — 각 $9.95, 핫이든 아이스든. 플레이버가 궁금하세요? 딸기, 망고, 코코넛, 구아바, 바나나 라테는 모두 말차 또는 호지차 베이스로 만들 수 있어 자유롭게 섞고 매치할 수 있습니다. 어느 쪽이든 갓 만든 모찌 도넛이나 말라사다와 곁들이면 완벽한 와이키키의 쉼표가 됩니다. 와이키키 해변에서 도보 약 5분, 매일 영업합니다.',
         highlights: [
-          '말차 라테 & 호지차 라테 — 각 $8.95, 핫 & 아이스',
+          '말차 라테 & 호지차 라테 — 각 $9.95, 핫 & 아이스',
           '플레이버 라인(딸기, 망고, 코코넛, 구아바, 바나나)을 말차 또는 호지차 베이스로',
           '와이키키 해변에서 약 5분',
           '매일 영업, 오전 7시~오후 9시 · (808) 260-1835',
@@ -573,17 +573,17 @@ const content = {
         },
         {
           question: '와이키키에서 호지차를 어디서 마실 수 있나요?',
-          answer: '2142 Kalakaua Ave의 Kona Coffee Donut? 는 호지차 라테를 $8.95에 핫이든 아이스든 제공하며, 와이키키 해변에서 도보 약 5분입니다. 말차 라테도 $8.95에 제공해 둘을 나란히 맛볼 수 있죠. 플레이버 라테(딸기, 망고, 코코넛, 구아바, 바나나)도 말차 또는 호지차 베이스로 만들 수 있습니다.',
+          answer: '2142 Kalakaua Ave의 Kona Coffee Donut? 는 호지차 라테를 $9.95에 핫이든 아이스든 제공하며, 와이키키 해변에서 도보 약 5분입니다. 말차 라테도 $9.95에 제공해 둘을 나란히 맛볼 수 있죠. 플레이버 라테(딸기, 망고, 코코넛, 구아바, 바나나)도 말차 또는 호지차 베이스로 만들 수 있습니다.',
         },
         {
           question: '호지차 라테란 무엇인가요?',
-          answer: '호지차 라테는 로스팅한 일본 녹차를 저어 풀거나 우려 스팀(또는 아이스) 밀크와 섞은 것입니다. 고소하고, 견과류 같고, 은은하게 카라멜처럼 달콤해 — 볶은 쌀과 로스팅한 견과류를 우유에 녹인 듯한 맛이며 자연스럽게 카페인이 낮습니다. 와이키키의 Kona Coffee Donut? 에서는 $8.95, 핫이든 아이스든, 따뜻한 도넛과 완벽하게 어울립니다.',
+          answer: '호지차 라테는 로스팅한 일본 녹차를 저어 풀거나 우려 스팀(또는 아이스) 밀크와 섞은 것입니다. 고소하고, 견과류 같고, 은은하게 카라멜처럼 달콤해 — 볶은 쌀과 로스팅한 견과류를 우유에 녹인 듯한 맛이며 자연스럽게 카페인이 낮습니다. 와이키키의 Kona Coffee Donut? 에서는 $9.95, 핫이든 아이스든, 따뜻한 도넛과 완벽하게 어울립니다.',
         },
       ],
     },
     cta: {
       title: '와이키키에서 말차와 호지차를 맛보세요',
-      text: '2142 Kalakaua Ave의 Kona Coffee Donut? 에 들러 말차 라테와 로스팅 호지차 라테를 즐겨보세요 — 각 $8.95, 핫이든 아이스든, 와이키키 해변에서 단 몇 분 거리입니다.',
+      text: '2142 Kalakaua Ave의 Kona Coffee Donut? 에 들러 말차 라테와 로스팅 호지차 라테를 즐겨보세요 — 각 $9.95, 핫이든 아이스든, 와이키키 해변에서 단 몇 분 거리입니다.',
       menuButton: '말차 & 커피 메뉴 보기',
       directionsButton: '길찾기',
     },
@@ -602,7 +602,7 @@ const content = {
     },
     definition: {
       title: '抹茶 vs 焙茶——一句话答案',
-      text: '<strong>抹茶</strong>和<strong>焙茶（ほうじ茶）</strong>都是日本绿茶，但味道几乎相反。<strong>抹茶</strong>是遮荫栽培的绿茶叶用石磨研磨成的细粉——颜色鲜绿，草香与鲜味浓郁，<strong>咖啡因较高</strong>，因L-茶氨酸带来"平静而清醒"的能量。<strong>焙茶</strong>是把绿茶<strong>用炭火烘焙</strong>而成——呈红褐色，带烘烤香、坚果与焦糖的顺滑，<strong>咖啡因天然偏低</strong>，非常适合午后、傍晚、孩子，或对咖啡因敏感的人。在威基基的 <strong>Kona Coffee Donut?</strong>，两款你都能尝到——抹茶拿铁和焙茶拿铁各<strong>$8.95</strong>，离海滩只有几分钟。',
+      text: '<strong>抹茶</strong>和<strong>焙茶（ほうじ茶）</strong>都是日本绿茶，但味道几乎相反。<strong>抹茶</strong>是遮荫栽培的绿茶叶用石磨研磨成的细粉——颜色鲜绿，草香与鲜味浓郁，<strong>咖啡因较高</strong>，因L-茶氨酸带来"平静而清醒"的能量。<strong>焙茶</strong>是把绿茶<strong>用炭火烘焙</strong>而成——呈红褐色，带烘烤香、坚果与焦糖的顺滑，<strong>咖啡因天然偏低</strong>，非常适合午后、傍晚、孩子，或对咖啡因敏感的人。在威基基的 <strong>Kona Coffee Donut?</strong>，两款你都能尝到——抹茶拿铁和焙茶拿铁各<strong>$9.95</strong>，离海滩只有几分钟。',
     },
     history: {
       title: '什么是焙茶？（被低估的那一款）',
@@ -718,9 +718,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '就在威基基中心地带，Kona Coffee Donut? 同时供应抹茶拿铁和焙茶拿铁——各$8.95，冷热皆有。想尝风味？我们的草莓、芒果、椰子、番石榴和香蕉拿铁，都能用抹茶或焙茶做基底，随你搭配。任选一款配上现做的麻糬甜甜圈或马拉萨达，就是完美的威基基小憩。我们距威基基海滩步行约5分钟，每天营业。',
+        description: '就在威基基中心地带，Kona Coffee Donut? 同时供应抹茶拿铁和焙茶拿铁——各$9.95，冷热皆有。想尝风味？我们的草莓、芒果、椰子、番石榴和香蕉拿铁，都能用抹茶或焙茶做基底，随你搭配。任选一款配上现做的麻糬甜甜圈或马拉萨达，就是完美的威基基小憩。我们距威基基海滩步行约5分钟，每天营业。',
         highlights: [
-          '抹茶拿铁 & 焙茶拿铁——各$8.95，冷热皆有',
+          '抹茶拿铁 & 焙茶拿铁——各$9.95，冷热皆有',
           '风味系列（草莓、芒果、椰子、番石榴、香蕉）可用抹茶或焙茶做基底',
           '距威基基海滩约5分钟',
           '每天营业，上午7点至晚上9点 · (808) 260-1835',
@@ -767,17 +767,17 @@ const content = {
         },
         {
           question: '在威基基哪里能尝到焙茶？',
-          answer: '位于 2142 Kalakaua Ave 的 Kona Coffee Donut? 供应焙茶拿铁，$8.95，冷热皆有，距威基基海滩步行约5分钟。我们也供应$8.95的抹茶拿铁，你可以并排品尝两款。我们的风味拿铁（草莓、芒果、椰子、番石榴、香蕉）也能用抹茶或焙茶做基底。',
+          answer: '位于 2142 Kalakaua Ave 的 Kona Coffee Donut? 供应焙茶拿铁，$9.95，冷热皆有，距威基基海滩步行约5分钟。我们也供应$9.95的抹茶拿铁，你可以并排品尝两款。我们的风味拿铁（草莓、芒果、椰子、番石榴、香蕉）也能用抹茶或焙茶做基底。',
         },
         {
           question: '什么是焙茶拿铁？',
-          answer: '焙茶拿铁是把烘焙过的日本绿茶打匀或冲泡后，与蒸奶（或冰奶）混合而成。它尝起来烘烤香、带坚果味、微微焦糖甜——有点像烤米和烤坚果溶入牛奶——并且天然低咖啡因。在威基基的 Kona Coffee Donut?，一杯$8.95，冷热皆有，与温热的甜甜圈绝配。',
+          answer: '焙茶拿铁是把烘焙过的日本绿茶打匀或冲泡后，与蒸奶（或冰奶）混合而成。它尝起来烘烤香、带坚果味、微微焦糖甜——有点像烤米和烤坚果溶入牛奶——并且天然低咖啡因。在威基基的 Kona Coffee Donut?，一杯$9.95，冷热皆有，与温热的甜甜圈绝配。',
         },
       ],
     },
     cta: {
       title: '在威基基品尝抹茶与焙茶',
-      text: '前往 2142 Kalakaua Ave 的 Kona Coffee Donut?，尝一杯抹茶拿铁和一杯烘焙焙茶拿铁——各$8.95，冷热皆有，距威基基海滩仅几分钟。',
+      text: '前往 2142 Kalakaua Ave 的 Kona Coffee Donut?，尝一杯抹茶拿铁和一杯烘焙焙茶拿铁——各$9.95，冷热皆有，距威基基海滩仅几分钟。',
       menuButton: '查看抹茶与咖啡菜单',
       directionsButton: '获取路线',
     },
@@ -855,7 +855,7 @@ const faqSchema = {
       name: 'Where can I try hojicha in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kona Coffee Donut? at 2142 Kalakaua Ave serves a fresh Hojicha Latte for $8.95, hot or iced, about a 5-minute walk from Waikiki Beach. We also pour a Matcha Latte at $8.95, so you can taste both side by side. Our flavored lattes (strawberry, mango, coconut, guava, banana) can be made on a matcha or hojicha base, too.',
+        text: 'Kona Coffee Donut? at 2142 Kalakaua Ave serves a fresh Hojicha Latte for $9.95, hot or iced, about a 5-minute walk from Waikiki Beach. We also pour a Matcha Latte at $9.95, so you can taste both side by side. Our flavored lattes (strawberry, mango, coconut, guava, banana) can be made on a matcha or hojicha base, too.',
       },
     },
     {
@@ -863,7 +863,7 @@ const faqSchema = {
       name: 'What is a hojicha latte?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'A hojicha latte is roasted Japanese green tea whisked or brewed and combined with steamed (or iced) milk. It tastes toasty, nutty, and lightly caramel-sweet — a bit like toasted rice and roasted nuts in milk — and it\'s naturally low in caffeine. At Kona Coffee Donut? in Waikiki it\'s $8.95, hot or iced, and pairs perfectly with a warm donut.',
+        text: 'A hojicha latte is roasted Japanese green tea whisked or brewed and combined with steamed (or iced) milk. It tastes toasty, nutty, and lightly caramel-sweet — a bit like toasted rice and roasted nuts in milk — and it\'s naturally low in caffeine. At Kona Coffee Donut? in Waikiki it\'s $9.95, hot or iced, and pairs perfectly with a warm donut.',
       },
     },
   ],

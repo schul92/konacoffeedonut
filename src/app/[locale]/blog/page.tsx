@@ -52,7 +52,7 @@ const content = {
         image: '/images/blog/matcha-vs-hojicha-waikiki.jpeg',
         category: 'Coffee',
         title: 'Matcha vs Hojicha: What\'s the Difference? (2026)',
-        excerpt: 'Matcha vs hojicha explained — vibrant, grassy matcha vs roasted, low-caffeine hojicha. Compare color, flavor and caffeine, plus where to try both lattes ($8.95) in Waikiki.',
+        excerpt: 'Matcha vs hojicha explained — vibrant, grassy matcha vs roasted, low-caffeine hojicha. Compare color, flavor and caffeine, plus where to try both lattes ($9.95) in Waikiki.',
         readTime: 8,
       },
       {
@@ -92,7 +92,7 @@ const content = {
         image: '/images/blog/hojicha-latte-waikiki.jpeg',
         category: 'Coffee',
         title: 'Hojicha Latte in Waikiki: Roasted Green Tea, Benefits & Where to Try It (2026)',
-        excerpt: 'A hojicha latte is roasted Japanese green tea over steamed milk — toasty, caramel-smooth and naturally low in caffeine; try one fresh in Waikiki, hot or iced ($8.95).',
+        excerpt: 'A hojicha latte is roasted Japanese green tea over steamed milk — toasty, caramel-smooth and naturally low in caffeine; try one fresh in Waikiki, hot or iced ($9.95).',
         readTime: 7,
       },
       {
@@ -300,7 +300,7 @@ const content = {
         image: '/images/blog/best-smoothies-waikiki.jpeg',
         category: 'Food Guide',
         title: 'Best Smoothies in Waikiki 2026: 10 Hawaiian Flavors at Mochi Land',
-        excerpt: 'Pina colada, mango, ube, brown sugar boba, and 6 more \u2014 all $8.95, blended fresh on Kal\u0101kaua. Walking distance from Waikiki Beach.',
+        excerpt: 'Pina colada, mango, ube, brown sugar boba, and 6 more \u2014 all $10.95, blended fresh on Kal\u0101kaua. Walking distance from Waikiki Beach.',
         readTime: 5,
       },
       {
@@ -493,7 +493,7 @@ const content = {
         image: '/images/blog/hojicha-latte-waikiki.jpeg',
         category: 'コーヒー',
         title: 'ワイキキのほうじ茶ラテ：焙じ茶の魅力と飲める場所（2026）',
-        excerpt: 'ほうじ茶ラテは炭火で焙じた緑茶をスチームミルクに注いだ一杯 — 香ばしくキャラメルのようにまろやかで、カフェインが少なめ。ワイキキで淹れたてを、ホットもアイスも（$8.95）。',
+        excerpt: 'ほうじ茶ラテは炭火で焙じた緑茶をスチームミルクに注いだ一杯 — 香ばしくキャラメルのようにまろやかで、カフェインが少なめ。ワイキキで淹れたてを、ホットもアイスも（$9.95）。',
         readTime: 7,
       },
       {
@@ -701,7 +701,7 @@ const content = {
         image: '/images/blog/best-smoothies-waikiki.jpeg',
         category: '\u30D5\u30FC\u30C9\u30AC\u30A4\u30C9',
         title: '\u30EF\u30A4\u30AD\u30AD\u3067\u7F8E\u5473\u3057\u3044\u30B9\u30E0\u30FC\u30B8\u30FC10\u9078',
-        excerpt: '\u30D4\u30CB\u30E3\u30B3\u30E9\u30FC\u30C0\u3001\u30DE\u30F3\u30B4\u30FC\u3001\u30A6\u30D9\u3001\u30D6\u30E9\u30A6\u30F3\u30B7\u30E5\u30AC\u30FC\u30DC\u30D0\u306A\u3069\u3001Mochi Land\u306E\u516810\u7A2E\u985E$8.95\u5747\u4E00\u3002\u30D3\u30FC\u30C1\u304B\u3089\u5F92\u6B69\u570F\u5185\u3002',
+        excerpt: '\u30D4\u30CB\u30E3\u30B3\u30E9\u30FC\u30C0\u3001\u30DE\u30F3\u30B4\u30FC\u3001\u30A6\u30D9\u3001\u30D6\u30E9\u30A6\u30F3\u30B7\u30E5\u30AC\u30FC\u30DC\u30D0\u306A\u3069\u3001Mochi Land\u306E\u516810\u7A2E\u985E$10.95\u5747\u4E00\u3002\u30D3\u30FC\u30C1\u304B\u3089\u5F92\u6B69\u570F\u5185\u3002',
         readTime: 5,
       },
       {
@@ -849,7 +849,7 @@ const content = {
         image: '/images/blog/hojicha-latte-waikiki.jpeg',
         category: '커피',
         title: '와이키키 호지차 라떼: 로스팅 녹차의 매력과 즐기는 곳 (2026)',
-        excerpt: '호지차 라떼는 볶은 일본 녹차를 스팀 밀크에 부은 한 잔 — 고소하고 카라멜처럼 부드러우며 카페인이 적습니다. 와이키키에서 갓 만든 걸 핫이든 아이스든($8.95).',
+        excerpt: '호지차 라떼는 볶은 일본 녹차를 스팀 밀크에 부은 한 잔 — 고소하고 카라멜처럼 부드러우며 카페인이 적습니다. 와이키키에서 갓 만든 걸 핫이든 아이스든($9.95).',
         readTime: 7,
       },
       {
@@ -1057,7 +1057,7 @@ const content = {
         image: '/images/blog/best-smoothies-waikiki.jpeg',
         category: '\uD478\uB4DC \uAC00\uC774\uB4DC',
         title: '\uC640\uC774\uD0A4\uD0A4 \uBCA0\uC2A4\uD2B8 \uC2A4\uBB34\uB514 10\uC120',
-        excerpt: 'Mochi Land\uC758 10\uAC00\uC9C0 \uD558\uC640\uC774\uC548 \uC2A4\uBB34\uB514 \u2014 \uBAA8\uB450 $8.95. \uC989\uC11D \uBE14\uB80C\uB529, \uBE44\uCE58 \uB3C4\uBCF4 \uAC70\uB9AC.',
+        excerpt: 'Mochi Land\uC758 10\uAC00\uC9C0 \uD558\uC640\uC774\uC548 \uC2A4\uBB34\uB514 \u2014 \uBAA8\uB450 $10.95. \uC989\uC11D \uBE14\uB80C\uB529, \uBE44\uCE58 \uB3C4\uBCF4 \uAC70\uB9AC.',
         readTime: 5,
       },
       {
@@ -1205,7 +1205,7 @@ const content = {
         image: '/images/blog/hojicha-latte-waikiki.jpeg',
         category: '咖啡',
         title: '威基基的焙茶拿铁：烘焙绿茶的魅力与哪里能喝到（2026）',
-        excerpt: '焙茶拿铁是把烘焙日本绿茶注入蒸奶的一杯 — 烘香、焦糖般顺滑、天然低咖啡因。在威基基品尝现做的一杯，冷热皆有（$8.95）。',
+        excerpt: '焙茶拿铁是把烘焙日本绿茶注入蒸奶的一杯 — 烘香、焦糖般顺滑、天然低咖啡因。在威基基品尝现做的一杯，冷热皆有（$9.95）。',
         readTime: 7,
       },
       {
@@ -1413,7 +1413,7 @@ const content = {
         image: '/images/blog/best-smoothies-waikiki.jpeg',
         category: '\u7F8E\u98DF\u6307\u5357',
         title: '\u5A01\u57FA\u57FA\u6700\u4F73\u5976\u661410\u9009',
-        excerpt: 'Mochi Land \u5168\u90E810\u79CD\u590F\u5A01\u5937\u5976\u6614\u5747\u4EF7$8.95\u3002\u8292\u679C\u3001\u7D2B\u85AF\u3001\u9ED1\u7CD6\u73CD\u73E0\u7B49\u3002\u6D77\u6EE9\u6B65\u884C\u53EF\u8FBE\u3002',
+        excerpt: 'Mochi Land \u5168\u90E810\u79CD\u590F\u5A01\u5937\u5976\u6614\u5747\u4EF7$10.95\u3002\u8292\u679C\u3001\u7D2B\u85AF\u3001\u9ED1\u7CD6\u73CD\u73E0\u7B49\u3002\u6D77\u6EE9\u6B65\u884C\u53EF\u8FBE\u3002',
         readTime: 5,
       },
       {
@@ -1561,7 +1561,7 @@ const content = {
         image: '/images/blog/hojicha-latte-waikiki.jpeg',
         category: 'Café',
         title: 'Hojicha Latte en Waikiki: Té Verde Tostado, Beneficios y Dónde Probarlo (2026)',
-        excerpt: 'Un hojicha latte es té verde japonés tostado con leche vaporizada — tostado, suave como el caramelo y bajo en cafeína; pruébalo recién hecho en Waikiki, caliente o frío ($8.95).',
+        excerpt: 'Un hojicha latte es té verde japonés tostado con leche vaporizada — tostado, suave como el caramelo y bajo en cafeína; pruébalo recién hecho en Waikiki, caliente o frío ($9.95).',
         readTime: 7,
       },
       {
@@ -1769,7 +1769,7 @@ const content = {
         image: '/images/blog/best-smoothies-waikiki.jpeg',
         category: 'Gu\u00EDa Gastron\u00F3mica',
         title: 'Mejores Smoothies en Waikiki: 10 Sabores Hawaianos',
-        excerpt: '10 sabores Mochi Land todos a $8.95. Pi\u00F1a colada, mango, ube, t\u00E9 con leche y boba.',
+        excerpt: '10 sabores Mochi Land todos a $10.95. Pi\u00F1a colada, mango, ube, t\u00E9 con leche y boba.',
         readTime: 5,
       },
       {

@@ -143,10 +143,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalākaua Ave, Honolulu, HI 96815',
-        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? serves real 100% Kona coffee — drip $7, latte $6.35, cold brew $6.95 — alongside a full matcha and hojicha line, including matcha and hojicha lattes at $8.95 and a strawberry matcha latte at $10.95. Whether you want a bold coffee kick or matcha\'s calm focus, you can try both here, hot or iced. We\'re about a 5-minute walk from Waikiki Beach, open daily 7AM–9PM. Call (808) 260-1835.',
+        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? serves real 100% Kona coffee — drip $7, latte $6.35, cold brew $6.95 — alongside a full matcha and hojicha line, including matcha and hojicha lattes at $9.95 and a strawberry matcha latte at $11.95. Whether you want a bold coffee kick or matcha\'s calm focus, you can try both here, hot or iced. We\'re about a 5-minute walk from Waikiki Beach, open daily 7AM–9PM. Call (808) 260-1835.',
         highlights: [
           '100% Kona coffee — drip $7, latte $6.35, cold brew $6.95',
-          'Matcha & hojicha lattes $8.95, strawberry matcha $10.95',
+          'Matcha & hojicha lattes $9.95, strawberry matcha $11.95',
           'About 5 minutes from Waikiki Beach',
           'Open daily, 7AM–9PM · (808) 260-1835',
         ],
@@ -188,7 +188,7 @@ const content = {
         },
         {
           question: 'Can I get both matcha and Kona coffee in Waikiki?',
-          answer: 'Yes. Kona Coffee Donut? at 2142 Kalākaua Ave pours real 100% Kona coffee (drip $7, latte $6.35, cold brew $6.95) and a full matcha and hojicha line (matcha and hojicha lattes $8.95, strawberry matcha $10.95). You can taste both, hot or iced, about 5 minutes from Waikiki Beach, open daily 7AM–9PM.',
+          answer: 'Yes. Kona Coffee Donut? at 2142 Kalākaua Ave pours real 100% Kona coffee (drip $7, latte $6.35, cold brew $6.95) and a full matcha and hojicha line (matcha and hojicha lattes $9.95, strawberry matcha $11.95). You can taste both, hot or iced, about 5 minutes from Waikiki Beach, open daily 7AM–9PM.',
         },
         {
           question: 'Which gives a calmer energy, matcha or coffee?',
@@ -344,10 +344,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalākaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心、カラカウア通り沿いに位置する Kona Coffee Donut? は、本物の100%コナコーヒー（ドリップ$7、ラテ$6.35、コールドブリュー$6.95）に加え、抹茶とほうじ茶の充実したラインナップ（抹茶・ほうじ茶ラテ$8.95、ストロベリー抹茶ラテ$10.95）を提供します。力強いコーヒーの刺激でも、抹茶の穏やかな集中でも、ここでホットでもアイスでも両方試せます。ワイキキビーチから徒歩約5分、毎日午前7時〜午後9時営業。お電話は (808) 260-1835。',
+        description: 'ワイキキの中心、カラカウア通り沿いに位置する Kona Coffee Donut? は、本物の100%コナコーヒー（ドリップ$7、ラテ$6.35、コールドブリュー$6.95）に加え、抹茶とほうじ茶の充実したラインナップ（抹茶・ほうじ茶ラテ$9.95、ストロベリー抹茶ラテ$11.95）を提供します。力強いコーヒーの刺激でも、抹茶の穏やかな集中でも、ここでホットでもアイスでも両方試せます。ワイキキビーチから徒歩約5分、毎日午前7時〜午後9時営業。お電話は (808) 260-1835。',
         highlights: [
           '100%コナコーヒー — ドリップ$7、ラテ$6.35、コールドブリュー$6.95',
-          '抹茶・ほうじ茶ラテ$8.95、ストロベリー抹茶$10.95',
+          '抹茶・ほうじ茶ラテ$9.95、ストロベリー抹茶$11.95',
           'ワイキキビーチから約5分',
           '毎日営業、午前7時〜午後9時 · (808) 260-1835',
         ],
@@ -389,7 +389,7 @@ const content = {
         },
         {
           question: 'ワイキキで抹茶とコナコーヒーの両方を飲める？',
-          answer: 'はい。2142 Kalākaua Ave の Kona Coffee Donut? は、本物の100%コナコーヒー（ドリップ$7、ラテ$6.35、コールドブリュー$6.95）と、充実した抹茶・ほうじ茶ラインナップ（抹茶・ほうじ茶ラテ$8.95、ストロベリー抹茶$10.95）を提供します。ワイキキビーチから徒歩約5分、毎日午前7時〜午後9時営業で、ホットでもアイスでも両方味わえます。',
+          answer: 'はい。2142 Kalākaua Ave の Kona Coffee Donut? は、本物の100%コナコーヒー（ドリップ$7、ラテ$6.35、コールドブリュー$6.95）と、充実した抹茶・ほうじ茶ラインナップ（抹茶・ほうじ茶ラテ$9.95、ストロベリー抹茶$11.95）を提供します。ワイキキビーチから徒歩約5分、毎日午前7時〜午後9時営業で、ホットでもアイスでも両方味わえます。',
         },
         {
           question: '抹茶とコーヒー、どちらが穏やかなエネルギー？',
@@ -545,10 +545,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalākaua Ave, Honolulu, HI 96815',
-        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 는 진짜 100% 코나 커피(드립 $7, 라테 $6.35, 콜드브루 $6.95)와 함께 풍성한 말차·호지차 라인업(말차·호지차 라테 $8.95, 딸기 말차 라테 $10.95)을 제공합니다. 진한 커피의 자극이든 말차의 차분한 집중이든, 여기서 핫이든 아이스든 둘 다 맛볼 수 있어요. 와이키키 해변에서 도보 약 5분, 매일 오전 7시~오후 9시 영업. 전화 (808) 260-1835.',
+        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 는 진짜 100% 코나 커피(드립 $7, 라테 $6.35, 콜드브루 $6.95)와 함께 풍성한 말차·호지차 라인업(말차·호지차 라테 $9.95, 딸기 말차 라테 $11.95)을 제공합니다. 진한 커피의 자극이든 말차의 차분한 집중이든, 여기서 핫이든 아이스든 둘 다 맛볼 수 있어요. 와이키키 해변에서 도보 약 5분, 매일 오전 7시~오후 9시 영업. 전화 (808) 260-1835.',
         highlights: [
           '100% 코나 커피 — 드립 $7, 라테 $6.35, 콜드브루 $6.95',
-          '말차·호지차 라테 $8.95, 딸기 말차 $10.95',
+          '말차·호지차 라테 $9.95, 딸기 말차 $11.95',
           '와이키키 해변에서 약 5분',
           '매일 영업, 오전 7시~오후 9시 · (808) 260-1835',
         ],
@@ -590,7 +590,7 @@ const content = {
         },
         {
           question: '와이키키에서 말차와 코나 커피를 둘 다 마실 수 있나요?',
-          answer: '네. 2142 Kalākaua Ave 의 Kona Coffee Donut? 는 진짜 100% 코나 커피(드립 $7, 라테 $6.35, 콜드브루 $6.95)와 풍성한 말차·호지차 라인업(말차·호지차 라테 $8.95, 딸기 말차 $10.95)을 제공합니다. 와이키키 해변에서 도보 약 5분, 매일 오전 7시~오후 9시 영업하며, 핫이든 아이스든 둘 다 맛볼 수 있습니다.',
+          answer: '네. 2142 Kalākaua Ave 의 Kona Coffee Donut? 는 진짜 100% 코나 커피(드립 $7, 라테 $6.35, 콜드브루 $6.95)와 풍성한 말차·호지차 라인업(말차·호지차 라테 $9.95, 딸기 말차 $11.95)을 제공합니다. 와이키키 해변에서 도보 약 5분, 매일 오전 7시~오후 9시 영업하며, 핫이든 아이스든 둘 다 맛볼 수 있습니다.',
         },
         {
           question: '말차와 커피 중 어느 쪽이 더 차분한 에너지를 주나요?',
@@ -746,10 +746,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalākaua Ave, Honolulu, HI 96815',
-        description: '就在威基基中心地段的卡拉卡瓦大道上，Kona Coffee Donut? 供应正宗100%科纳咖啡（手冲 $7、拿铁 $6.35、冷萃 $6.95），同时还有完整的抹茶与焙茶系列（抹茶、焙茶拿铁 $8.95，草莓抹茶拿铁 $10.95）。无论你想要咖啡的强劲提神，还是抹茶的平稳专注，都能在这里冷热皆宜地两样都试。我们距威基基海滩步行约5分钟，每天上午7点至晚上9点营业。电话 (808) 260-1835。',
+        description: '就在威基基中心地段的卡拉卡瓦大道上，Kona Coffee Donut? 供应正宗100%科纳咖啡（手冲 $7、拿铁 $6.35、冷萃 $6.95），同时还有完整的抹茶与焙茶系列（抹茶、焙茶拿铁 $9.95，草莓抹茶拿铁 $11.95）。无论你想要咖啡的强劲提神，还是抹茶的平稳专注，都能在这里冷热皆宜地两样都试。我们距威基基海滩步行约5分钟，每天上午7点至晚上9点营业。电话 (808) 260-1835。',
         highlights: [
           '100%科纳咖啡——手冲 $7、拿铁 $6.35、冷萃 $6.95',
-          '抹茶、焙茶拿铁 $8.95，草莓抹茶 $10.95',
+          '抹茶、焙茶拿铁 $9.95，草莓抹茶 $11.95',
           '距威基基海滩约5分钟',
           '每天营业，上午7点至晚上9点 · (808) 260-1835',
         ],
@@ -791,7 +791,7 @@ const content = {
         },
         {
           question: '在威基基能同时喝到抹茶和科纳咖啡吗？',
-          answer: '能。位于 2142 Kalākaua Ave 的 Kona Coffee Donut? 供应正宗100%科纳咖啡（手冲 $7、拿铁 $6.35、冷萃 $6.95）以及完整的抹茶与焙茶系列（抹茶、焙茶拿铁 $8.95，草莓抹茶 $10.95）。距威基基海滩步行约5分钟，每天上午7点至晚上9点营业，冷热皆可两样都尝。',
+          answer: '能。位于 2142 Kalākaua Ave 的 Kona Coffee Donut? 供应正宗100%科纳咖啡（手冲 $7、拿铁 $6.35、冷萃 $6.95）以及完整的抹茶与焙茶系列（抹茶、焙茶拿铁 $9.95，草莓抹茶 $11.95）。距威基基海滩步行约5分钟，每天上午7点至晚上9点营业，冷热皆可两样都尝。',
         },
         {
           question: '抹茶和咖啡，哪个能量更平稳？',
@@ -875,7 +875,7 @@ const faqSchema = {
       name: 'Can I get both matcha and Kona coffee in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Kona Coffee Donut? at 2142 Kalākaua Ave pours real 100% Kona coffee (drip $7, latte $6.35, cold brew $6.95) and a full matcha and hojicha line (matcha and hojicha lattes $8.95, strawberry matcha $10.95). You can taste both, hot or iced, about 5 minutes from Waikiki Beach, open daily 7AM–9PM.',
+        text: 'Yes. Kona Coffee Donut? at 2142 Kalākaua Ave pours real 100% Kona coffee (drip $7, latte $6.35, cold brew $6.95) and a full matcha and hojicha line (matcha and hojicha lattes $9.95, strawberry matcha $11.95). You can taste both, hot or iced, about 5 minutes from Waikiki Beach, open daily 7AM–9PM.',
       },
     },
     {

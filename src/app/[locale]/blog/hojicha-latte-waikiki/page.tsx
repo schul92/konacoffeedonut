@@ -143,9 +143,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? serves a smooth, toasty Hojicha Latte for $8.95 — made fresh, hot or iced. Our whole flavored line can be made on a hojicha base, so you can customize your roasted-tea drink, and it pairs beautifully with a warm mochi donut. We are about a 5-minute walk from Waikiki Beach and open daily, so it is easy to swing by for a cozy, low-caffeine cup.',
+        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? serves a smooth, toasty Hojicha Latte for $9.95 — made fresh, hot or iced. Our whole flavored line can be made on a hojicha base, so you can customize your roasted-tea drink, and it pairs beautifully with a warm mochi donut. We are about a 5-minute walk from Waikiki Beach and open daily, so it is easy to swing by for a cozy, low-caffeine cup.',
         highlights: [
-          'Hojicha Latte $8.95 — roasted green tea, hot or iced',
+          'Hojicha Latte $9.95 — roasted green tea, hot or iced',
           'Flavored drinks can be made on a hojicha base',
           'Pairs perfectly with fresh mochi donuts',
           'Open daily, 7AM–9PM · about 5 min from Waikiki Beach',
@@ -192,7 +192,7 @@ const content = {
         },
         {
           question: 'Where can I get a hojicha latte in Waikiki?',
-          answer: 'You can get a fresh hojicha latte at Kona Coffee Donut?, 2142 Kalakaua Ave, right on Kalākaua Avenue in the heart of Waikiki — about a 5-minute walk from Waikiki Beach. Our Hojicha Latte is $8.95, available hot or iced, and pairs perfectly with a fresh mochi donut. We are open daily, 7AM–9PM.',
+          answer: 'You can get a fresh hojicha latte at Kona Coffee Donut?, 2142 Kalakaua Ave, right on Kalākaua Avenue in the heart of Waikiki — about a 5-minute walk from Waikiki Beach. Our Hojicha Latte is $9.95, available hot or iced, and pairs perfectly with a fresh mochi donut. We are open daily, 7AM–9PM.',
         },
         {
           question: 'What is the difference between hojicha and matcha?',
@@ -202,7 +202,7 @@ const content = {
     },
     cta: {
       title: 'Try a Roasted Green Tea Hojicha Latte in Waikiki',
-      text: 'Visit Kona Coffee Donut? at 2142 Kalakaua Ave and order a smooth, toasty Hojicha Latte ($8.95), hot or iced, paired with a warm mochi donut — just minutes from Waikiki Beach.',
+      text: 'Visit Kona Coffee Donut? at 2142 Kalakaua Ave and order a smooth, toasty Hojicha Latte ($9.95), hot or iced, paired with a warm mochi donut — just minutes from Waikiki Beach.',
       menuButton: 'View Coffee & Tea Menu',
       directionsButton: 'Get Directions',
     },
@@ -344,9 +344,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心、カラカウア通り沿いに位置する Kona Coffee Donut? では、まろやかで香ばしいほうじ茶ラテを$8.95でご提供——ホットでもアイスでも淹れたてです。フレーバードリンクはすべてほうじ茶ベースにもでき、焙じ茶の一杯を自由にカスタマイズ。温かいモチドーナツとも相性抜群です。ワイキキビーチから徒歩約5分、毎日営業なので、ほっとする低カフェインの一杯に気軽に立ち寄れます。',
+        description: 'ワイキキの中心、カラカウア通り沿いに位置する Kona Coffee Donut? では、まろやかで香ばしいほうじ茶ラテを$9.95でご提供——ホットでもアイスでも淹れたてです。フレーバードリンクはすべてほうじ茶ベースにもでき、焙じ茶の一杯を自由にカスタマイズ。温かいモチドーナツとも相性抜群です。ワイキキビーチから徒歩約5分、毎日営業なので、ほっとする低カフェインの一杯に気軽に立ち寄れます。',
         highlights: [
-          'ほうじ茶ラテ $8.95——焙じ緑茶、ホット＆アイス',
+          'ほうじ茶ラテ $9.95——焙じ緑茶、ホット＆アイス',
           'フレーバードリンクはほうじ茶ベースにも',
           '淹れたてのモチドーナツと相性抜群',
           '毎日営業、午前7時〜午後9時・ワイキキビーチから約5分',
@@ -393,7 +393,7 @@ const content = {
         },
         {
           question: 'ワイキキでほうじ茶ラテはどこで飲めますか？',
-          answer: 'ワイキキの中心、カラカウア通り沿いの 2142 Kalakaua Ave にある Kona Coffee Donut? で淹れたてのほうじ茶ラテが飲めます——ワイキキビーチから徒歩約5分。ほうじ茶ラテは$8.95、ホットでもアイスでも、淹れたてのモチドーナツと相性抜群です。毎日午前7時〜午後9時営業。',
+          answer: 'ワイキキの中心、カラカウア通り沿いの 2142 Kalakaua Ave にある Kona Coffee Donut? で淹れたてのほうじ茶ラテが飲めます——ワイキキビーチから徒歩約5分。ほうじ茶ラテは$9.95、ホットでもアイスでも、淹れたてのモチドーナツと相性抜群です。毎日午前7時〜午後9時営業。',
         },
         {
           question: 'ほうじ茶と抹茶の違いは？',
@@ -403,7 +403,7 @@ const content = {
     },
     cta: {
       title: 'ワイキキで焙じ緑茶のほうじ茶ラテを',
-      text: '2142 Kalakaua Ave の Kona Coffee Donut? で、まろやかで香ばしいほうじ茶ラテ（$8.95）をホットまたはアイスで、温かいモチドーナツと一緒に——ワイキキビーチからわずか数分です。',
+      text: '2142 Kalakaua Ave の Kona Coffee Donut? で、まろやかで香ばしいほうじ茶ラテ（$9.95）をホットまたはアイスで、温かいモチドーナツと一緒に——ワイキキビーチからわずか数分です。',
       menuButton: 'コーヒー＆ティーメニューを見る',
       directionsButton: '道順を見る',
     },
@@ -545,9 +545,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 는 부드럽고 고소한 호지차 라떼를 $8.95에 제공합니다——핫이든 아이스든 갓 만들어 드리죠. 플레이버 음료는 모두 호지차 베이스로도 만들 수 있어 볶은 차 음료를 취향껏 맞춤할 수 있고, 따뜻한 모찌 도넛과도 잘 어울립니다. 와이키키 해변에서 도보 약 5분, 매일 영업하니 편안한 저카페인 한 잔을 가볍게 들르기 좋습니다.',
+        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 는 부드럽고 고소한 호지차 라떼를 $9.95에 제공합니다——핫이든 아이스든 갓 만들어 드리죠. 플레이버 음료는 모두 호지차 베이스로도 만들 수 있어 볶은 차 음료를 취향껏 맞춤할 수 있고, 따뜻한 모찌 도넛과도 잘 어울립니다. 와이키키 해변에서 도보 약 5분, 매일 영업하니 편안한 저카페인 한 잔을 가볍게 들르기 좋습니다.',
         highlights: [
-          '호지차 라떼 $8.95 — 볶은 녹차, 핫 & 아이스',
+          '호지차 라떼 $9.95 — 볶은 녹차, 핫 & 아이스',
           '플레이버 음료를 호지차 베이스로도',
           '갓 만든 모찌 도넛과 완벽한 궁합',
           '매일 영업, 오전 7시~오후 9시 · 와이키키 해변에서 약 5분',
@@ -594,7 +594,7 @@ const content = {
         },
         {
           question: '와이키키에서 호지차 라떼는 어디서 마실 수 있나요?',
-          answer: '와이키키의 중심, 칼라카우아 애비뉴의 2142 Kalakaua Ave에 있는 Kona Coffee Donut? 에서 갓 만든 호지차 라떼를 마실 수 있습니다——와이키키 해변에서 도보 약 5분. 호지차 라떼는 $8.95, 핫이든 아이스든 가능하며 갓 만든 모찌 도넛과 완벽하게 어울립니다. 매일 오전 7시~오후 9시 영업합니다.',
+          answer: '와이키키의 중심, 칼라카우아 애비뉴의 2142 Kalakaua Ave에 있는 Kona Coffee Donut? 에서 갓 만든 호지차 라떼를 마실 수 있습니다——와이키키 해변에서 도보 약 5분. 호지차 라떼는 $9.95, 핫이든 아이스든 가능하며 갓 만든 모찌 도넛과 완벽하게 어울립니다. 매일 오전 7시~오후 9시 영업합니다.',
         },
         {
           question: '호지차와 말차의 차이는 무엇인가요?',
@@ -604,7 +604,7 @@ const content = {
     },
     cta: {
       title: '와이키키에서 볶은 녹차 호지차 라떼를 맛보세요',
-      text: '2142 Kalakaua Ave의 Kona Coffee Donut? 에 들러 부드럽고 고소한 호지차 라떼($8.95)를 핫이든 아이스든, 따뜻한 모찌 도넛과 함께 즐겨보세요——와이키키 해변에서 단 몇 분 거리입니다.',
+      text: '2142 Kalakaua Ave의 Kona Coffee Donut? 에 들러 부드럽고 고소한 호지차 라떼($9.95)를 핫이든 아이스든, 따뜻한 모찌 도넛과 함께 즐겨보세요——와이키키 해변에서 단 몇 분 거리입니다.',
       menuButton: '커피 & 티 메뉴 보기',
       directionsButton: '길찾기',
     },
@@ -746,9 +746,9 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '就在威基基中心地段的卡拉卡瓦大道上，Kona Coffee Donut? 提供顺滑烘香的焙茶拿铁，售价$8.95——冷热皆现做。我们所有风味饮品都可用焙茶做基底，让你自由定制这杯烘焙茶饮，并与温热的麻糬甜甜圈绝配。我们距威基基海滩步行约5分钟，每天营业，随时可来一杯暖心的低咖啡因饮品。',
+        description: '就在威基基中心地段的卡拉卡瓦大道上，Kona Coffee Donut? 提供顺滑烘香的焙茶拿铁，售价$9.95——冷热皆现做。我们所有风味饮品都可用焙茶做基底，让你自由定制这杯烘焙茶饮，并与温热的麻糬甜甜圈绝配。我们距威基基海滩步行约5分钟，每天营业，随时可来一杯暖心的低咖啡因饮品。',
         highlights: [
-          '焙茶拿铁 $8.95——烘焙绿茶，冷热皆有',
+          '焙茶拿铁 $9.95——烘焙绿茶，冷热皆有',
           '风味饮品可用焙茶做基底',
           '与现做麻糬甜甜圈完美搭配',
           '每天营业，上午7点至晚上9点·距威基基海滩约5分钟',
@@ -795,7 +795,7 @@ const content = {
         },
         {
           question: '在威基基哪里能喝到焙茶拿铁？',
-          answer: '你可以在位于威基基中心卡拉卡瓦大道上的 Kona Coffee Donut?（2142 Kalakaua Ave）喝到现做的焙茶拿铁——距威基基海滩步行约5分钟。我们的焙茶拿铁售价$8.95，冷热皆有，与现做麻糬甜甜圈完美搭配。我们每天上午7点至晚上9点营业。',
+          answer: '你可以在位于威基基中心卡拉卡瓦大道上的 Kona Coffee Donut?（2142 Kalakaua Ave）喝到现做的焙茶拿铁——距威基基海滩步行约5分钟。我们的焙茶拿铁售价$9.95，冷热皆有，与现做麻糬甜甜圈完美搭配。我们每天上午7点至晚上9点营业。',
         },
         {
           question: '焙茶和抹茶有什么区别？',
@@ -805,7 +805,7 @@ const content = {
     },
     cta: {
       title: '在威基基品尝烘焙绿茶焙茶拿铁',
-      text: '前往 2142 Kalakaua Ave 的 Kona Coffee Donut?，点一杯顺滑烘香的焙茶拿铁（$8.95），冷热皆可，配上温热的麻糬甜甜圈——距威基基海滩仅几分钟。',
+      text: '前往 2142 Kalakaua Ave 的 Kona Coffee Donut?，点一杯顺滑烘香的焙茶拿铁（$9.95），冷热皆可，配上温热的麻糬甜甜圈——距威基基海滩仅几分钟。',
       menuButton: '查看咖啡与茶饮菜单',
       directionsButton: '获取路线',
     },
@@ -883,7 +883,7 @@ const faqSchema = {
       name: 'Where can I get a hojicha latte in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'You can get a fresh hojicha latte at Kona Coffee Donut?, 2142 Kalakaua Ave, right on Kalākaua Avenue in the heart of Waikiki — about a 5-minute walk from Waikiki Beach. Our Hojicha Latte is $8.95, available hot or iced, and pairs perfectly with a fresh mochi donut. We are open daily, 7AM–9PM.',
+        text: 'You can get a fresh hojicha latte at Kona Coffee Donut?, 2142 Kalakaua Ave, right on Kalākaua Avenue in the heart of Waikiki — about a 5-minute walk from Waikiki Beach. Our Hojicha Latte is $9.95, available hot or iced, and pairs perfectly with a fresh mochi donut. We are open daily, 7AM–9PM.',
       },
     },
     {
