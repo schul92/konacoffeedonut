@@ -4,8 +4,8 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 
 const meta = {
   en: {
-    title: 'Bingsu vs Shaved Ice vs Kakigori: Korean, Hawaiian & Japanese Iced Desserts Compared (2026)',
-    description: 'Bingsu vs shaved ice vs kakigori — Korean shaved ice is called bingsu (빙수). See how creamy milk-snow bingsu, Hawaiian shave ice & Japanese kakigori differ, and where to try real Korean bingsu in Waikiki.',
+    title: 'Bingsu vs Shave Ice vs Kakigori: The Real Difference (From a Bingsu Shop)',
+    description: 'One is shaved frozen milk, two are shaved water ice — that changes everything. A Waikiki bingsu shop breaks down bingsu vs Hawaiian shave ice vs Japanese kakigori: texture, toppings, price, and which one to order first.',
   },
   ja: {
     title: 'ビンス vs シェイブアイス vs かき氷：韓国・ハワイ・日本の氷デザートを徹底比較（2026年版）',

@@ -4,8 +4,8 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 
 const meta = {
   en: {
-    title: 'What Is Bingsu? The Korean Shaved Ice Taking Over Waikiki (2026 Guide + Photos)',
-    description: 'Bingsu (빙수) is Korean shaved ice: fluffy milk-snow piled with red bean, mango & mochi. See every popular type with photos — and where to get fresh bingsu in Waikiki.',
+    title: 'What Is Bingsu? Explained by an Actual Bingsu Shop (Photos & Prices)',
+    description: 'Bingsu is Korean shaved ice — but not the crunchy kind. We shave frozen milk into powder-soft snow and top it with mango, strawberry or red bean. A Waikiki bingsu shop shows every type with real photos, prices, and what to order first.',
   },
   ja: {
     title: 'ビンスとは？ワイキキで話題の韓国かき氷を写真で解説（2026年版）',
