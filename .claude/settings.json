@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "Bash(git:*)",
+      "Bash(gh:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run lint:*)",
+      "Bash(npx tsc:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(curl https://api.clover.com/v3/merchants/RFKS9SXJFCJX1/items*)",
+      "Bash(curl https://api.clover.com/v3/merchants/RFKS9SXJFCJX1/categories*)"
+    ],
+    "deny": [
+      "Bash(curl -X POST https://api.clover.com/*)",
+      "Bash(rm -rf:*)"
+    ]
+  }
+}

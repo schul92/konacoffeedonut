@@ -54,3 +54,7 @@ google-service-account.json
 scripts/google_ads/google-ads.yaml
 scripts/google_ads/client_secret.json
 scripts/google_ads/refresh_token.txt
+audit-evidence/
+
+# allow shared Claude settings (needed by daily blog routine)
+!.claude/settings.json
