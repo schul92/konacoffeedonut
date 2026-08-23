@@ -107,6 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-breakfast-waikiki',
     '/blog/boba-waikiki',
     '/blog/musubi-waikiki',
+    '/blog/coffee-near-waikiki-beach',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -184,6 +185,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-breakfast-waikiki': 0.85,
     '/blog/boba-waikiki': 0.85,
     '/blog/musubi-waikiki': 0.85,
+    '/blog/coffee-near-waikiki-beach': 0.85,
     '/blog/ube-mochi-donut-waikiki': 0.85,
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
@@ -248,6 +250,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/best-breakfast-waikiki': 'weekly',
     '/blog/boba-waikiki': 'weekly',
     '/blog/musubi-waikiki': 'weekly',
+    '/blog/coffee-near-waikiki-beach': 'weekly',
     '/blog/ube-mochi-donut-waikiki': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',

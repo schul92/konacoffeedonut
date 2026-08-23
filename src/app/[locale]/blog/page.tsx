@@ -16,6 +16,14 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'coffee-near-waikiki-beach',
+        image: '/images/blog/coffee-near-waikiki-beach.jpeg',
+        category: 'Food Guide',
+        title: 'Coffee Near Waikiki Beach: 100% Kona, Open 7 AM',
+        excerpt: 'Real 100% Kona coffee ($7), espresso from $4.75, and fresh mochi donuts — a 5-minute walk from the sand on Kalākaua. Open 7 AM daily.',
+        readTime: 4,
+      },
+      {
         slug: 'best-breakfast-waikiki',
         image: '/images/blog/best-breakfast-waikiki.jpeg',
         category: 'Food Guide',
@@ -441,6 +449,14 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'coffee-near-waikiki-beach',
+        image: '/images/blog/coffee-near-waikiki-beach.jpeg',
+        category: 'フードガイド',
+        title: 'ワイキキビーチ近くのコーヒー：100%コナ、朝7時オープン',
+        excerpt: '本物の100%コナコーヒー$7、エスプレッソ$4.75〜、作りたてモチドーナツ。ビーチから徒歩5分。',
+        readTime: 4,
+      },
+      {
         slug: 'best-breakfast-waikiki',
         image: '/images/blog/best-breakfast-waikiki.jpeg',
         category: 'フードガイド',
@@ -820,6 +836,14 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'coffee-near-waikiki-beach',
+        image: '/images/blog/coffee-near-waikiki-beach.jpeg',
+        category: '푸드 가이드',
+        title: '와이키키 비치 근처 커피: 100% 코나, 아침 7시 오픈',
+        excerpt: '진짜 100% 코나커피 $7, 에스프레소 $4.75부터, 갓 만든 모치도넛. 비치에서 도보 5분.',
+        readTime: 4,
+      },
       {
         slug: 'best-breakfast-waikiki',
         image: '/images/blog/best-breakfast-waikiki.jpeg',
@@ -1201,6 +1225,14 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'coffee-near-waikiki-beach',
+        image: '/images/blog/coffee-near-waikiki-beach.jpeg',
+        category: '美食指南',
+        title: '威基基海滩附近的咖啡：100%科纳，早7点开门',
+        excerpt: '真正的100%科纳咖啡$7、浓缩$4.75起、现做麻糬甜甜圈。距海滩步行5分钟。',
+        readTime: 4,
+      },
+      {
         slug: 'best-breakfast-waikiki',
         image: '/images/blog/best-breakfast-waikiki.jpeg',
         category: '美食指南',
@@ -1580,6 +1612,14 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'coffee-near-waikiki-beach',
+        image: '/images/blog/coffee-near-waikiki-beach.jpeg',
+        category: 'Guía Gastronómica',
+        title: 'Café cerca de Waikiki Beach: Kona 100%, abierto a las 7 AM',
+        excerpt: 'Café 100% Kona ($7), espresso desde $4.75 y mochi donuts frescos, a 5 minutos de la arena.',
+        readTime: 4,
+      },
       {
         slug: 'best-breakfast-waikiki',
         image: '/images/blog/best-breakfast-waikiki.jpeg',

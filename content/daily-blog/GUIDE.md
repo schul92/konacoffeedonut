@@ -38,7 +38,7 @@ Content requirements (SEO + GEO):
 - **FAQ answers must be self-contained** (name + address + price in the answer itself) — these are what AI search engines quote.
 - Every post ends with visitCTA + finalCTA driving an in-store visit (revenue-first: the post must give a reason to walk in TODAY).
 - Dates: use the real current date ("Published <Month Year>").
-- layout.tsx: copy boba-waikiki/layout.tsx, update title/description/keywords (6–9 keyword variants incl. "near me" forms), og image path, and ALL alternates URLs to the new slug.
+- layout.tsx: copy boba-waikiki/layout.tsx, update title/description/keywords (6–9 keyword variants incl. "near me" forms), og image path, and ALL alternates URLs to the new slug — include `'es-ES'` in `alternates.languages` (copy from coffee-near-waikiki-beach/layout.tsx).
 
 ## 4. Hero image
 
@@ -49,6 +49,7 @@ Content requirements (SEO + GEO):
 
 1. `src/app/sitemap.ts`: add `'/blog/<slug>'` to the blog list (after the latest batch comment), plus priority `0.85` and changefreq `'weekly'` entries next to the other blog entries.
 2. `src/app/[locale]/blog/page.tsx`: add a card at the TOP of each of the 5 locale `posts: [` arrays (translate title/excerpt per locale; category in that locale's style; readTime 4–5).
+3. `public/llms.txt`: add one line for the new post under the guides list (`- <short label>: https://www.konacoffeedonut.com/en/blog/<slug>`) and bump the `Last updated:` date. This is what AI search engines read.
 
 ## 6. Verify build
 

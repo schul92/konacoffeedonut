@@ -1,35 +1,216 @@
 {
   "note": "Daily blog topic queue. The routine picks the FIRST topic with status 'pending', writes it, then sets status 'published' + date. Buyer-intent only: every post must give a reason to walk into the store. Never invent prices - verify against Clover POS or omit.",
   "topics": [
-    { "slug": "coffee-near-waikiki-beach", "keyword": "coffee near waikiki beach", "angle": "Closest real-coffee stop to the sand: 100% Kona ($7), espresso bar, open 7 AM. Target 'coffee near me' tourists standing on the beach.", "products": "Kona coffee, lattes, mochi donuts", "status": "pending" },
-    { "slug": "late-night-dessert-waikiki", "keyword": "dessert open late waikiki", "angle": "Open until 9 PM daily - bingsu, mochi donuts, boba after dinner when most bakeries are closed.", "products": "bingsu, mochi donuts, boba cans", "status": "pending" },
-    { "slug": "brown-sugar-boba-waikiki", "keyword": "brown sugar boba waikiki", "angle": "The viral tiger-stripe can done right: what it is, why ours is $8.95 sealed-to-go, pairing with black sesame donut.", "products": "boba cans, mochi donuts", "status": "pending" },
-    { "slug": "what-is-ube-waikiki", "keyword": "what is ube", "angle": "Explainer with a cash register: ube latte ($7.95), ube boba ($8.95), ube mochi donut, ube bingsu - taste the purple in 4 forms.", "products": "ube latte, ube boba, ube donut, ube bingsu", "status": "pending" },
-    { "slug": "diamond-head-breakfast-nearby", "keyword": "breakfast near diamond head hike", "angle": "Post-sunrise-hike refuel on the walk back: open 7 AM, musubi from $2.95, malasadas, Kona coffee.", "products": "musubi, malasadas, coffee", "status": "pending" },
-    { "slug": "best-iced-drinks-waikiki", "keyword": "iced drinks waikiki hot day", "angle": "Beat the Waikiki heat ranking: smoothies, iced matcha, boba cans, Kona cold brew - by how cold/refreshing.", "products": "smoothies, iced lattes, boba, cold brew", "status": "pending" },
-    { "slug": "waikiki-snacks-grab-and-go", "keyword": "grab and go food waikiki", "angle": "One-handed beach food: musubi, donuts, sealed boba cans. Everything packable, nothing over $9.", "products": "musubi, donuts, boba cans", "status": "pending" },
-    { "slug": "spam-musubi-vs-onigiri", "keyword": "musubi vs onigiri", "angle": "Comparison explainer that lands on our 5 musubi varieties from $2.95, made fresh daily.", "products": "musubi lineup", "status": "pending" },
-    { "slug": "taro-vs-ube-difference", "keyword": "taro vs ube difference", "angle": "The two purple roots people confuse - and where to taste both: taro smoothie vs ube everything.", "products": "taro smoothie, ube items", "status": "pending" },
-    { "slug": "rainy-day-waikiki-cafe", "keyword": "what to do waikiki rainy day", "angle": "Rainy-day plan: warm malasadas, hot Kona coffee, window seat on Kalakaua. Comfort-food angle.", "products": "malasadas, hot drinks, donuts", "status": "pending" },
-    { "slug": "family-kids-cafe-waikiki", "keyword": "family friendly cafe waikiki kids", "angle": "Where to take kids: donut flavors kids love, no-caffeine boba (ube/brown sugar), smoothies, quick counter service.", "products": "donuts, caffeine-free boba, smoothies", "status": "pending" },
-    { "slug": "rice-flour-donuts-waikiki", "keyword": "rice flour donuts", "angle": "Why mochi donuts use rice flour (mochiko): lighter, chewier, and different from wheat donuts. Honest note: made in a shared kitchen (no GF certification claims).", "products": "mochi donuts", "status": "pending" },
-    { "slug": "thai-tea-waikiki", "keyword": "thai tea waikiki", "angle": "Thai tea three ways: boba can $8.95, smoothie $10.95 - bold orange, creamy, beach-ready.", "products": "thai tea boba, thai tea smoothie", "status": "pending" },
-    { "slug": "acai-bowl-vs-acai-smoothie", "keyword": "acai bowl vs smoothie", "angle": "Same fruit two ways: bowls (from $14.95) vs Acai Berry smoothie ($12.95) - when to order which.", "products": "acai bowls, acai smoothie", "status": "pending" },
-    { "slug": "what-is-lilikoi", "keyword": "what is lilikoi", "angle": "Hawaii's passion fruit explained, then where to taste it: Lilikoi Matcha ($9.95), Paradise Lilikoi bingsu ($12.95).", "products": "lilikoi matcha, lilikoi bingsu", "status": "pending" },
-    { "slug": "guava-drinks-waikiki", "keyword": "guava drink hawaii", "angle": "Guava as the underrated Hawaii flavor: Guava Matcha ($9.95) and how it compares to POG expectations.", "products": "guava matcha", "status": "pending" },
-    { "slug": "instagram-desserts-waikiki", "keyword": "instagrammable food waikiki", "angle": "The 5 most-photographed items in the shop: strawberry matcha layers, ube boba, rainbow bingsu, flower donuts.", "products": "strawberry matcha, ube boba, bingsu, donuts", "status": "pending" },
-    { "slug": "cheap-breakfast-honolulu", "keyword": "cheap breakfast honolulu", "angle": "Honolulu-wide angle (wider net than the Waikiki post): real breakfasts under $10, led by musubi + coffee.", "products": "musubi, coffee, malasadas", "status": "pending" },
-    { "slug": "which-bingsu-to-order", "keyword": "bingsu flavors best", "angle": "Decision guide for first-timers: milk bingsu ($15.95) vs Hawaiian bingsu ($12.95) by taste profile - photos.", "products": "bingsu lineup", "status": "pending" },
-    { "slug": "mochi-donut-vs-regular-donut", "keyword": "mochi donut vs regular donut", "angle": "Texture science comparison ending at the counter: try one for $3.95 and taste the difference.", "products": "mochi donuts", "status": "pending" },
-    { "slug": "waikiki-sunset-snacks", "keyword": "waikiki sunset picnic food", "angle": "Sunset picnic kit from one counter: sealed boba, donut box, musubi - assembled in 5 minutes, beach in 5 more.", "products": "boba cans, donut boxes, musubi", "status": "pending" },
-    { "slug": "matcha-for-beginners-waikiki", "keyword": "matcha for beginners", "angle": "Never had matcha? Start with fruit matchas (guava/mango $9.95) before classic. Ordering ladder for newbies.", "products": "matcha lattes", "status": "pending" },
-    { "slug": "hawaii-omiyage-treats", "keyword": "omiyage hawaii ideas", "angle": "Japanese visitors' omiyage culture: donut boxes (dozen $45) and what travels well on the flight home.", "products": "donut dozen boxes", "status": "pending" },
-    { "slug": "coffee-date-spot-waikiki", "keyword": "date spot cafe waikiki", "angle": "Affordable date on Kalakaua: two drinks + dessert to share under $30, evening hours until 9.", "products": "lattes, bingsu to share", "status": "pending" },
-    { "slug": "korean-desserts-waikiki", "keyword": "korean dessert waikiki", "angle": "The K-dessert lineup in one shop: bingsu, hotteok-adjacent items, Korean corn dogs, boba - K-culture wave angle.", "products": "bingsu, corn dogs, boba", "status": "pending" },
-    { "slug": "pina-colada-smoothie-waikiki", "keyword": "pina colada waikiki non alcoholic", "angle": "The beach cocktail without the bar: Pina Colada smoothie $10.95, all ages, walk to the sand.", "products": "pina colada smoothie", "status": "pending" },
-    { "slug": "labor-day-waikiki-eats", "keyword": "labor day weekend waikiki food", "angle": "SEASONAL (publish before Sep 7): beat the holiday crowds - order ahead, grab-and-go picks.", "products": "full lineup", "status": "pending" },
-    { "slug": "fall-drinks-waikiki", "keyword": "fall drinks hawaii", "angle": "SEASONAL (September): fall in Hawaii still means 84F - iced hojicha ($9.95) as the tropical PSL alternative.", "products": "hojicha latte, coffee", "status": "pending" },
-    { "slug": "waikiki-solo-travel-cafe", "keyword": "solo travel waikiki where to eat", "angle": "Solo-friendly counter cafe: no reservations, counter seats, one musubi + one coffee = $10 solo lunch.", "products": "musubi, coffee, donuts", "status": "pending" },
-    { "slug": "boba-flavors-ranked", "keyword": "best boba flavors", "angle": "Our 6 cans ranked by first-timer friendliness, with honest tasting notes. Ends with 'all $8.95, try two'.", "products": "boba cans", "status": "pending" }
+    {
+      "slug": "coffee-near-waikiki-beach",
+      "keyword": "coffee near waikiki beach",
+      "angle": "Closest real-coffee stop to the sand: 100% Kona ($7), espresso bar, open 7 AM. Target 'coffee near me' tourists standing on the beach.",
+      "products": "Kona coffee, lattes, mochi donuts",
+      "status": "published",
+      "published": "2026-08-21"
+    },
+    {
+      "slug": "late-night-dessert-waikiki",
+      "keyword": "dessert open late waikiki",
+      "angle": "Open until 9 PM daily - bingsu, mochi donuts, boba after dinner when most bakeries are closed.",
+      "products": "bingsu, mochi donuts, boba cans",
+      "status": "pending"
+    },
+    {
+      "slug": "brown-sugar-boba-waikiki",
+      "keyword": "brown sugar boba waikiki",
+      "angle": "The viral tiger-stripe can done right: what it is, why ours is $8.95 sealed-to-go, pairing with black sesame donut.",
+      "products": "boba cans, mochi donuts",
+      "status": "pending"
+    },
+    {
+      "slug": "what-is-ube-waikiki",
+      "keyword": "what is ube",
+      "angle": "Explainer with a cash register: ube latte ($7.95), ube boba ($8.95), ube mochi donut, ube bingsu - taste the purple in 4 forms.",
+      "products": "ube latte, ube boba, ube donut, ube bingsu",
+      "status": "pending"
+    },
+    {
+      "slug": "diamond-head-breakfast-nearby",
+      "keyword": "breakfast near diamond head hike",
+      "angle": "Post-sunrise-hike refuel on the walk back: open 7 AM, musubi from $2.95, malasadas, Kona coffee.",
+      "products": "musubi, malasadas, coffee",
+      "status": "pending"
+    },
+    {
+      "slug": "best-iced-drinks-waikiki",
+      "keyword": "iced drinks waikiki hot day",
+      "angle": "Beat the Waikiki heat ranking: smoothies, iced matcha, boba cans, Kona cold brew - by how cold/refreshing.",
+      "products": "smoothies, iced lattes, boba, cold brew",
+      "status": "pending"
+    },
+    {
+      "slug": "waikiki-snacks-grab-and-go",
+      "keyword": "grab and go food waikiki",
+      "angle": "One-handed beach food: musubi, donuts, sealed boba cans. Everything packable, nothing over $9.",
+      "products": "musubi, donuts, boba cans",
+      "status": "pending"
+    },
+    {
+      "slug": "spam-musubi-vs-onigiri",
+      "keyword": "musubi vs onigiri",
+      "angle": "Comparison explainer that lands on our 5 musubi varieties from $2.95, made fresh daily.",
+      "products": "musubi lineup",
+      "status": "pending"
+    },
+    {
+      "slug": "taro-vs-ube-difference",
+      "keyword": "taro vs ube difference",
+      "angle": "The two purple roots people confuse - and where to taste both: taro smoothie vs ube everything.",
+      "products": "taro smoothie, ube items",
+      "status": "pending"
+    },
+    {
+      "slug": "rainy-day-waikiki-cafe",
+      "keyword": "what to do waikiki rainy day",
+      "angle": "Rainy-day plan: warm malasadas, hot Kona coffee, window seat on Kalakaua. Comfort-food angle.",
+      "products": "malasadas, hot drinks, donuts",
+      "status": "pending"
+    },
+    {
+      "slug": "family-kids-cafe-waikiki",
+      "keyword": "family friendly cafe waikiki kids",
+      "angle": "Where to take kids: donut flavors kids love, no-caffeine boba (ube/brown sugar), smoothies, quick counter service.",
+      "products": "donuts, caffeine-free boba, smoothies",
+      "status": "pending"
+    },
+    {
+      "slug": "rice-flour-donuts-waikiki",
+      "keyword": "rice flour donuts",
+      "angle": "Why mochi donuts use rice flour (mochiko): lighter, chewier, and different from wheat donuts. Honest note: made in a shared kitchen (no GF certification claims).",
+      "products": "mochi donuts",
+      "status": "pending"
+    },
+    {
+      "slug": "thai-tea-waikiki",
+      "keyword": "thai tea waikiki",
+      "angle": "Thai tea three ways: boba can $8.95, smoothie $10.95 - bold orange, creamy, beach-ready.",
+      "products": "thai tea boba, thai tea smoothie",
+      "status": "pending"
+    },
+    {
+      "slug": "acai-bowl-vs-acai-smoothie",
+      "keyword": "acai bowl vs smoothie",
+      "angle": "Same fruit two ways: bowls (from $14.95) vs Acai Berry smoothie ($12.95) - when to order which.",
+      "products": "acai bowls, acai smoothie",
+      "status": "pending"
+    },
+    {
+      "slug": "what-is-lilikoi",
+      "keyword": "what is lilikoi",
+      "angle": "Hawaii's passion fruit explained, then where to taste it: Lilikoi Matcha ($9.95), Paradise Lilikoi bingsu ($12.95).",
+      "products": "lilikoi matcha, lilikoi bingsu",
+      "status": "pending"
+    },
+    {
+      "slug": "guava-drinks-waikiki",
+      "keyword": "guava drink hawaii",
+      "angle": "Guava as the underrated Hawaii flavor: Guava Matcha ($9.95) and how it compares to POG expectations.",
+      "products": "guava matcha",
+      "status": "pending"
+    },
+    {
+      "slug": "instagram-desserts-waikiki",
+      "keyword": "instagrammable food waikiki",
+      "angle": "The 5 most-photographed items in the shop: strawberry matcha layers, ube boba, rainbow bingsu, flower donuts.",
+      "products": "strawberry matcha, ube boba, bingsu, donuts",
+      "status": "pending"
+    },
+    {
+      "slug": "cheap-breakfast-honolulu",
+      "keyword": "cheap breakfast honolulu",
+      "angle": "Honolulu-wide angle (wider net than the Waikiki post): real breakfasts under $10, led by musubi + coffee.",
+      "products": "musubi, coffee, malasadas",
+      "status": "pending"
+    },
+    {
+      "slug": "which-bingsu-to-order",
+      "keyword": "bingsu flavors best",
+      "angle": "Decision guide for first-timers: milk bingsu ($15.95) vs Hawaiian bingsu ($12.95) by taste profile - photos.",
+      "products": "bingsu lineup",
+      "status": "pending"
+    },
+    {
+      "slug": "mochi-donut-vs-regular-donut",
+      "keyword": "mochi donut vs regular donut",
+      "angle": "Texture science comparison ending at the counter: try one for $3.95 and taste the difference.",
+      "products": "mochi donuts",
+      "status": "pending"
+    },
+    {
+      "slug": "waikiki-sunset-snacks",
+      "keyword": "waikiki sunset picnic food",
+      "angle": "Sunset picnic kit from one counter: sealed boba, donut box, musubi - assembled in 5 minutes, beach in 5 more.",
+      "products": "boba cans, donut boxes, musubi",
+      "status": "pending"
+    },
+    {
+      "slug": "matcha-for-beginners-waikiki",
+      "keyword": "matcha for beginners",
+      "angle": "Never had matcha? Start with fruit matchas (guava/mango $9.95) before classic. Ordering ladder for newbies.",
+      "products": "matcha lattes",
+      "status": "pending"
+    },
+    {
+      "slug": "hawaii-omiyage-treats",
+      "keyword": "omiyage hawaii ideas",
+      "angle": "Japanese visitors' omiyage culture: donut boxes (dozen $45) and what travels well on the flight home.",
+      "products": "donut dozen boxes",
+      "status": "pending"
+    },
+    {
+      "slug": "coffee-date-spot-waikiki",
+      "keyword": "date spot cafe waikiki",
+      "angle": "Affordable date on Kalakaua: two drinks + dessert to share under $30, evening hours until 9.",
+      "products": "lattes, bingsu to share",
+      "status": "pending"
+    },
+    {
+      "slug": "korean-desserts-waikiki",
+      "keyword": "korean dessert waikiki",
+      "angle": "The K-dessert lineup in one shop: bingsu, hotteok-adjacent items, Korean corn dogs, boba - K-culture wave angle.",
+      "products": "bingsu, corn dogs, boba",
+      "status": "pending"
+    },
+    {
+      "slug": "pina-colada-smoothie-waikiki",
+      "keyword": "pina colada waikiki non alcoholic",
+      "angle": "The beach cocktail without the bar: Pina Colada smoothie $10.95, all ages, walk to the sand.",
+      "products": "pina colada smoothie",
+      "status": "pending"
+    },
+    {
+      "slug": "labor-day-waikiki-eats",
+      "keyword": "labor day weekend waikiki food",
+      "angle": "SEASONAL (publish before Sep 7): beat the holiday crowds - order ahead, grab-and-go picks.",
+      "products": "full lineup",
+      "status": "pending"
+    },
+    {
+      "slug": "fall-drinks-waikiki",
+      "keyword": "fall drinks hawaii",
+      "angle": "SEASONAL (September): fall in Hawaii still means 84F - iced hojicha ($9.95) as the tropical PSL alternative.",
+      "products": "hojicha latte, coffee",
+      "status": "pending"
+    },
+    {
+      "slug": "waikiki-solo-travel-cafe",
+      "keyword": "solo travel waikiki where to eat",
+      "angle": "Solo-friendly counter cafe: no reservations, counter seats, one musubi + one coffee = $10 solo lunch.",
+      "products": "musubi, coffee, donuts",
+      "status": "pending"
+    },
+    {
+      "slug": "boba-flavors-ranked",
+      "keyword": "best boba flavors",
+      "angle": "Our 6 cans ranked by first-timer friendliness, with honest tasting notes. Ends with 'all $8.95, try two'.",
+      "products": "boba cans",
+      "status": "pending"
+    }
   ]
 }
