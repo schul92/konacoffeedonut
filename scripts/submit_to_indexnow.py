@@ -19,14 +19,21 @@ LOCALES = ["en", "ja", "ko", "zh", "es"]
 
 # Pages touched by the kona-coffee SEO pass (re-crawl these first)
 PATHS = [
-    "",                                  # home
-    "/menu/kona-coffee",                 # canonical kona commercial page
+    "",
+    "/blog",
+    "/blog/must-try-foods-waikiki",
+    "/blog/korean-corn-dog-honolulu-viral",
+    "/blog/best-poke-waikiki",
+    "/blog/coffee-near-waikiki-beach",
+    "/blog/best-breakfast-waikiki",
+    "/blog/boba-waikiki",
+    "/blog/musubi-waikiki",
+    "/blog/shaved-ice-in-korean",
     "/about-kona-coffee",
-    "/blog/what-is-kona-coffee",
-    "/blog/is-kona-coffee-worth-it",
-    "/blog/kona-coffee-guide",
-    "/blog/where-to-try-kona-coffee-waikiki",
-    "/blog/kona-affogato-waikiki",
+    "/blog/what-is-bingsu",
+    "/blog/bingsu-vs-shaved-ice-kakigori",
+    "/blog/cheap-eats-waikiki",
+    "/blog/kona-coffee-chinese-guide",
 ]
 
 

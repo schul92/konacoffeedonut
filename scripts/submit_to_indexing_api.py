@@ -20,20 +20,28 @@ SCOPES = ["https://www.googleapis.com/auth/indexing"]
 SITE = "https://www.konacoffeedonut.com"
 LOCALES = ["en", "ja", "ko", "zh", "es"]
 
-# Brand-new pages to submit (none pending — prior batch already submitted)
-NEW_SLUGS = []
+# Brand-new pages to submit (Sep 2026 batch)
+NEW_SLUGS = [
+    "must-try-foods-waikiki",
+    "korean-corn-dog-honolulu-viral",
+    "best-poke-waikiki",
+    "coffee-near-waikiki-beach",
+    "best-breakfast-waikiki",
+    "boba-waikiki",
+    "musubi-waikiki",
+    "shaved-ice-in-korean",
+]
 
 # Pages updated in the "kona coffee" SEO pass — re-submit so Google re-crawls.
 # Run AFTER pushing the local changes (URLs must serve the new markup).
 UPDATED_PAGES = [
-    "",                                       # home — Kona internal links + H1
-    "/menu/kona-coffee",                      # schema, Offer price, FAQ, Wikipedia entity
-    "/about-kona-coffee",                     # title fix + Kona menu link
-    "/blog/what-is-kona-coffee",
-    "/blog/is-kona-coffee-worth-it",
-    "/blog/kona-coffee-guide",
-    "/blog/where-to-try-kona-coffee-waikiki",
-    "/blog/kona-affogato-waikiki",
+    "",                                       # home — footer/hours refresh
+    "/blog",                                  # index with new posts
+    "/about-kona-coffee",                     # ko/zh title rewrite
+    "/blog/what-is-bingsu",
+    "/blog/bingsu-vs-shaved-ice-kakigori",
+    "/blog/cheap-eats-waikiki",
+    "/blog/kona-coffee-chinese-guide",        # canonical fix
 ]
 
 
