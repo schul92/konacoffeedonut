@@ -12,16 +12,16 @@ export async function generateMetadata({
   const titles: Record<string, string> = {
     en: 'About Kona Coffee | Premium Hawaiian Coffee',
     ja: 'コナコーヒーについて | プレミアムハワイアンコーヒー',
-    ko: '코나 커피 소개 | 프리미엄 하와이안 커피',
-    zh: '关于科纳咖啡 | 优质夏威夷咖啡',
+    ko: '코나커피란? 하와이 코나 커피 특징·등급·맛 (와이키키에서 마시는 곳)',
+    zh: '夏威夷科纳咖啡(Kona咖啡)是什么？产地、等级、风味与威基基哪里喝',
     es: 'Sobre el Café Kona | Café Premium de Hawaii',
   };
 
   const descriptions: Record<string, string> = {
     en: 'Discover why Kona coffee is the world\'s premium Hawaiian coffee. Learn about volcanic soil growing conditions, hand-picked harvesting, and the unique flavor profile that makes Kona coffee special.',
     ja: 'コナコーヒーがなぜ世界最高のハワイアンコーヒーなのかをご紹介。火山土壌での栽培、手摘み収穫、そしてコナコーヒーを特別にするユニークな風味について。',
-    ko: '코나 커피가 왜 세계 최고의 하와이안 커피인지 알아보세요. 화산 토양 재배, 수작업 수확, 그리고 코나 커피를 특별하게 만드는 독특한 풍미에 대해.',
-    zh: '了解为什么科纳咖啡是世界顶级的夏威夷咖啡。火山土壤种植条件、手工采摘以及使科纳咖啡与众不同的独特风味。',
+    ko: '하와이 코나 커피는 빅아일랜드 화산 경사면 30마일에서만 재배되는 희소 원두. 100% 코나와 코나 블렌드(10%)의 차이, 등급, 맛 특징, 그리고 와이키키 칼라카우아 애비뉴에서 100% 코나 커피를 마실 수 있는 곳.',
+    zh: '夏威夷科纳(Kona)咖啡只产于大岛火山坡30英里地带。100%科纳与科纳拼配(仅需10%)的区别、等级、风味特点，以及在威基基卡拉卡瓦大道哪里能喝到100%科纳咖啡。',
     es: 'Descubre por qué el café Kona es el café premium de Hawaii. Conoce el cultivo en suelo volcánico, la cosecha manual y el perfil de sabor único.',
   };
 

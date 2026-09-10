@@ -2,9 +2,14 @@ import { seoSameAsUrls } from '@/lib/socialLinks';
 
 interface StructuredDataProps {
   locale: string;
+  /** 'site' (default) = entity schemas from the root layout; 'home' = page-scoped schemas rendered only by the homepage. */
+  scope?: 'site' | 'home';
 }
 
-export default function StructuredData({ locale }: StructuredDataProps) {
+// Bumped on content edits; a render-time `new Date()` here made every crawl look "just modified".
+const SITE_CONTENT_UPDATED = '2026-09-08T00:00:00+00:00';
+
+export default function StructuredData({ locale, scope = 'site' }: StructuredDataProps) {
   const localeNames: Record<string, string> = {
     en: 'English',
     ja: '日本語',
@@ -157,18 +162,6 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       },
     ],
     sameAs: seoSameAsUrls,
-    potentialAction: {
-      '@type': 'OrderAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `https://www.konacoffeedonut.com/${locale}/menu`,
-        inLanguage: locale,
-        actionPlatform: [
-          'http://schema.org/DesktopWebPlatform',
-          'http://schema.org/MobileWebPlatform',
-        ],
-      },
-    },
   };
 
   // Organization Schema
@@ -351,7 +344,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     description: entityIntro[locale as keyof typeof entityIntro] || entityIntro.en,
     // GEO: Critical freshness signals for AI engines
     datePublished: '2025-01-01T00:00:00+00:00',
-    dateModified: new Date().toISOString(),
+    dateModified: SITE_CONTENT_UPDATED,
     inLanguage: locale,
     isPartOf: {
       '@id': 'https://www.konacoffeedonut.com/#website',
@@ -647,6 +640,50 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     ],
   };
 
+  // Page-scoped schemas (FAQPage, VideoObject, Product, ItemList, WebPage) must describe
+  // on-page content, so they render only on the homepage (scope="home"); the site-wide
+  // entity schemas render from the root layout (default scope).
+  if (scope === 'home') {
+    return (
+      <>
+        {/* Video Object Schema */}
+        <script
+          id="video-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+        />
+
+        {/* GEO: WebPage Schema with freshness signals */}
+        <script
+          id="webpage-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        />
+
+        {/* FAQ Schema */}
+        <script
+          id="faq-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+
+        {/* Product Schema */}
+        <script
+          id="product-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+        />
+
+        {/* GEO: ItemList Schema for Knowledge Graph */}
+        <script
+          id="itemlist-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        />
+      </>
+    );
+  }
+
   return (
     <>
       {/* Local Business Schema */}
@@ -682,41 +719,6 @@ export default function StructuredData({ locale }: StructuredDataProps) {
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-
-      {/* Video Object Schema */}
-      <script
-        id="video-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
-      />
-
-      {/* GEO: WebPage Schema with freshness signals */}
-      <script
-        id="webpage-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
-      />
-
-      {/* FAQ Schema */}
-      <script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-
-      {/* Product Schema */}
-      <script
-        id="product-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
-
-      {/* GEO: ItemList Schema for Knowledge Graph */}
-      <script
-        id="itemlist-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
     </>
   );

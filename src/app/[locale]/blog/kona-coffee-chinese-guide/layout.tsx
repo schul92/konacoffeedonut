@@ -73,7 +73,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       images: ['/og-image.jpg'],
     },
     alternates: {
-      canonical: `${siteUrl}/${locale}/blog/kona-coffee-chinese-guide`,
+      // /es has no Spanish content (falls back to zh) and was getting indexed as a
+      // duplicate of the Chinese page — canonicalise unsupported locales to /zh.
+      canonical: `${siteUrl}/${locale in titles ? locale : 'zh'}/blog/kona-coffee-chinese-guide`,
       languages: {
         'zh-CN': `${siteUrl}/zh/blog/kona-coffee-chinese-guide`,
         'en-US': `${siteUrl}/en/blog/kona-coffee-chinese-guide`,

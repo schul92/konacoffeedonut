@@ -58,3 +58,4 @@ audit-evidence/
 
 # allow shared Claude settings (needed by daily blog routine)
 !.claude/settings.json
+scripts/__pycache__/

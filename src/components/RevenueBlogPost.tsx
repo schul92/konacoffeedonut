@@ -47,6 +47,11 @@ export interface BlogConfig {
   schemaDescription: string;
   /** When true, renders a contextual internal link to /[locale]/menu/kona-coffee near the end of the article. */
   linkKonaMenu?: boolean;
+  /** ISO dates for Article schema. Defaults keep the May-2026 batch stable. */
+  datePublished?: string;
+  dateModified?: string;
+  /** Contextual internal links rendered before the FAQ (path is locale-relative, e.g. "/blog/what-is-bingsu"). */
+  related?: { path: string; label: Record<Locale, string> }[];
 }
 
 const STORE = {
@@ -67,6 +72,7 @@ const t = (loc: Locale, key: string) => {
     faq: { en: 'Frequently Asked Questions', ja: 'よくある質問', ko: '자주 묻는 질문', zh: '常见问题', es: 'Preguntas Frecuentes' },
     backToBlog: { en: '← All Blogs', ja: '← ブログ一覧', ko: '← 블로그 목록', zh: '← 所有博客', es: '← Todos los Blogs' },
     pickFor: { en: 'Best Pick For You', ja: 'おすすめ', ko: '추천', zh: '推荐', es: 'Recomendado' },
+    related: { en: 'Keep Reading', ja: '関連記事', ko: '함께 읽기', zh: '相关阅读', es: 'Sigue leyendo' },
     tasteItLead: {
       en: 'Ready to taste it for yourself? See our',
       ja: '実際に味わってみませんか？',
@@ -107,8 +113,9 @@ export default function RevenueBlogPost({ locale, config, content }: Props) {
       logo: { '@type': 'ImageObject', url: 'https://www.konacoffeedonut.com/logo.png' },
     },
     mainEntityOfPage: `https://www.konacoffeedonut.com/${locale}/blog/${config.slug}`,
-    datePublished: '2026-05-01',
-    dateModified: new Date().toISOString().split('T')[0],
+    inLanguage: locale,
+    datePublished: config.datePublished ?? '2026-05-01',
+    dateModified: config.dateModified ?? config.datePublished ?? '2026-05-01',
   };
 
   const faqSchema = {
@@ -297,6 +304,25 @@ export default function RevenueBlogPost({ locale, config, content }: Props) {
               </Link>
               .
             </p>
+          )}
+
+          {/* RELATED READING */}
+          {config.related && config.related.length > 0 && (
+            <section className="mb-12">
+              <h2 className="text-2xl font-extrabold text-stone-900 mb-4">{t(locale, 'related')}</h2>
+              <ul className="space-y-2">
+                {config.related.map(r => (
+                  <li key={r.path}>
+                    <Link
+                      href={`/${locale}${r.path}`}
+                      className="text-amber-700 font-semibold underline underline-offset-2 hover:text-amber-900 transition-colors"
+                    >
+                      {r.label[locale] || r.label.en}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
           )}
 
           {/* FAQ */}

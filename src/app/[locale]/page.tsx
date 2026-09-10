@@ -10,6 +10,7 @@ import { useLocale } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { BANNER_VISIBILITY_EVENT, isBannerVisible } from '@/components/HiringBanner';
 import SocialIcon from '@/components/SocialIcon';
+import StructuredData from '@/components/StructuredData';
 import { konaSocialLinks, type SocialLink } from '@/lib/socialLinks';
 
 // Dynamic imports for heavy client components to reduce initial JS bundle
@@ -222,6 +223,9 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-black">
+      {/* Homepage-only JSON-LD (FAQPage / VideoObject / Product / ItemList / WebPage) */}
+      <StructuredData locale={locale} scope="home" />
+
       {/* SEO H1 - Visually hidden but accessible to search engines */}
       <h1 className="sr-only">
         100% Kona Coffee in Waikiki — Fresh Mochi Donuts, Malasadas & Bingsu Daily
@@ -1256,7 +1260,7 @@ export default function Home() {
                   </>
                 ) : (
                   <>
-                    <p><strong>Kona Coffee Donut</strong> is a Hawaiian café and bakery located at <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span> in Waikiki. <strong>Grand open now</strong>. Prime location just <strong>5 minutes walking distance (400 meters)</strong> from Waikiki Beach.</p>
+                    <p><strong>Kona Coffee Donut</strong> is a Hawaiian café and bakery located at <span itemProp="address">2142 Kalakaua Ave, Honolulu, HI 96815</span> in Waikiki. Open daily 7 AM–9 PM. Prime location just <strong>5 minutes walking distance (400 meters)</strong> from Waikiki Beach.</p>
                     <p>We proudly serve <strong>Honolulu Coffee</strong> (established 1992, Hawaii&apos;s largest Kona coffee chain), featuring <strong>Honolulu Coffee</strong>. Kona coffee is grown on the slopes of Mauna Loa and Hualalai volcanoes on Hawaii&apos;s Big Island (elevation 500-900 meters), representing <strong>less than 1%</strong> of worldwide coffee production according to the Kona Coffee Council.</p>
                     <p>We also serve artisan mochi donuts from <strong>MOCHILAND</strong> (originated in Korea, now with 50+ US locations). Made with rice flour (mochiko) for a unique chewy texture, <strong>freshly prepared daily in-store</strong>.</p>
                   </>

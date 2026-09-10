@@ -55,7 +55,7 @@ export async function generateMetadata({
     metadataBase: new URL(siteUrl),
     title: {
       default: t('title'),
-      template: `%s | ${t('title')}`,
+      template: '%s | Kona Coffee Donut?',
     },
     description: t('description'),
     applicationName: 'Kona Coffee Donut',

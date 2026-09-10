@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.konacoffeedonut.com';
   const defaultLastModified = new Date('2026-06-06T00:00:00.000Z');
   const routeLastModified: Record<string, Date> = {
-    '': new Date('2026-06-27T00:00:00.000Z'),
+    '': new Date('2026-09-08T00:00:00.000Z'), // meta + JSON-LD scope refresh
     '/menu': new Date('2026-06-27T00:00:00.000Z'), // menu-board price sync
     '/menu/kona-coffee': new Date('2026-06-27T00:00:00.000Z'),
     '/menu/bingsu': new Date('2026-06-27T00:00:00.000Z'),
@@ -26,6 +26,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/matcha-benefits-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/iced-matcha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/hojicha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
+    // Sep 2026 batch (published Sep 9, 2026)
+    '/blog': new Date('2026-09-09T00:00:00.000Z'),
+    '/blog/korean-corn-dog-honolulu-viral': new Date('2026-09-09T00:00:00.000Z'),
+    '/blog/must-try-foods-waikiki': new Date('2026-09-09T00:00:00.000Z'),
+    '/blog/best-poke-waikiki': new Date('2026-09-09T00:00:00.000Z'),
   };
 
   const routes = [
@@ -108,6 +113,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/boba-waikiki',
     '/blog/musubi-waikiki',
     '/blog/coffee-near-waikiki-beach',
+    // Sep 2026 batch
+    '/blog/korean-corn-dog-honolulu-viral',
+    '/blog/must-try-foods-waikiki',
+    '/blog/best-poke-waikiki',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -186,6 +195,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/boba-waikiki': 0.85,
     '/blog/musubi-waikiki': 0.85,
     '/blog/coffee-near-waikiki-beach': 0.85,
+    '/blog/korean-corn-dog-honolulu-viral': 0.85,
+    '/blog/must-try-foods-waikiki': 0.9,
+    '/blog/best-poke-waikiki': 0.85,
     '/blog/ube-mochi-donut-waikiki': 0.85,
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
@@ -251,6 +263,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/boba-waikiki': 'weekly',
     '/blog/musubi-waikiki': 'weekly',
     '/blog/coffee-near-waikiki-beach': 'weekly',
+    '/blog/korean-corn-dog-honolulu-viral': 'weekly',
+    '/blog/must-try-foods-waikiki': 'weekly',
+    '/blog/best-poke-waikiki': 'weekly',
     '/blog/ube-mochi-donut-waikiki': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',

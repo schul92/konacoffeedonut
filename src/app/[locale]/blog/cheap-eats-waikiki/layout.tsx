@@ -6,7 +6,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    en: 'Cheap Eats in Waikiki Under $15: Best Budget Food 2026 | Local Guide',
+    en: 'Cheap Eats in Waikiki: Best Places to Eat on a Budget Under $15 (2026 Local Guide)',
     ja: 'ワイキキの安くて美味しいグルメ15ドル以下｜2026年地元ガイド',
     ko: '와이키키 저렴한 맛집 $15 이하 | 2026 로컬 가이드',
     zh: '威基基15美元以下平价美食指南｜2026本地人推荐',
