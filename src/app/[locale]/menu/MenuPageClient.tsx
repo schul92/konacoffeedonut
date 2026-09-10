@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { ORDER_ONLINE_URL, getOrderOnlineLabel, trackOrderOnlineClick } from '@/lib/orderLinks';
 import { menuItemCategories, type MenuItemCategory } from '@/lib/menuItems';
 
 interface MenuPageClientProps {
@@ -72,7 +73,16 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
             />
           </Link>
 
-          <div className="flex justify-end">
+          <div className="flex justify-end items-center gap-2">
+            <a
+              href={ORDER_ONLINE_URL}
+              target="_blank"
+              rel="noopener"
+              onClick={() => trackOrderOnlineClick('menu-header')}
+              className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-orange-500 hover:bg-orange-600 text-white text-xs sm:text-sm font-semibold shadow-sm transition-colors whitespace-nowrap"
+            >
+              {getOrderOnlineLabel(locale)}
+            </a>
             <LanguageSwitcher />
           </div>
         </div>
@@ -100,6 +110,16 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
             <p className="mt-2 text-white/70 text-xs sm:text-sm">
               Proudly serving Honolulu coffee
             </p>
+            <a
+              href={ORDER_ONLINE_URL}
+              target="_blank"
+              rel="noopener"
+              onClick={() => trackOrderOnlineClick('menu-hero')}
+              className="mt-5 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm md:text-base font-bold shadow-lg transition-colors [text-shadow:none]"
+            >
+              <span aria-hidden="true">🛍️</span>
+              {getOrderOnlineLabel(locale)}
+            </a>
           </div>
         </div>
       </section>

@@ -28,6 +28,16 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
+  // Public ordering entry point (linked from Google Business Profile, print,
+  // etc). Non-permanent so the provider can change without browsers caching
+  // the old target. Keep the URL in sync with src/lib/orderLinks.ts.
+  async redirects() {
+    const orderOnlineUrl = 'https://kona-coffee-donut-honolulu.cloveronline.com';
+    return [
+      { source: '/order', destination: orderOnlineUrl, permanent: false },
+      { source: '/:locale(en|ja|ko|zh|es)/order', destination: orderOnlineUrl, permanent: false },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);

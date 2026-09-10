@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { ORDER_ONLINE_URL, getOrderOnlineLabel, trackOrderOnlineClick } from '@/lib/orderLinks';
 import { BANNER_VISIBILITY_EVENT, isBannerVisible } from '@/components/HiringBanner';
 import SocialIcon from '@/components/SocialIcon';
 import StructuredData from '@/components/StructuredData';
@@ -272,6 +273,17 @@ export default function Home() {
               />
             </button>
 
+            {/* Order Online (compact) */}
+            <a
+              href={ORDER_ONLINE_URL}
+              target="_blank"
+              rel="noopener"
+              onClick={() => trackOrderOnlineClick('nav-mobile')}
+              className="flex-shrink-0 px-3 py-1.5 rounded-full bg-orange-500 text-white text-xs font-semibold whitespace-nowrap"
+            >
+              {getOrderOnlineLabel(locale)}
+            </a>
+
             {/* Language Switcher */}
             <div className="flex-shrink-0">
               <LanguageSwitcher />
@@ -428,8 +440,18 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Right: Instagram & Language Switcher */}
+            {/* Right: Order Online, Instagram & Language Switcher */}
             <div className="flex justify-end items-center gap-2">
+              <a
+                href={ORDER_ONLINE_URL}
+                target="_blank"
+                rel="noopener"
+                onClick={() => trackOrderOnlineClick('nav-desktop')}
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold shadow-sm transition-colors whitespace-nowrap"
+              >
+                <span aria-hidden="true">🛍️</span>
+                {getOrderOnlineLabel(locale)}
+              </a>
               <InstagramReels />
               <LanguageSwitcher />
             </div>
@@ -445,6 +467,20 @@ export default function Home() {
             className="md:hidden bg-white border-t border-gray-100"
           >
             <div className="px-4 py-3 space-y-1">
+              <motion.div whileTap={{ scale: 0.98 }}>
+                <a
+                  href={ORDER_ONLINE_URL}
+                  target="_blank"
+                  rel="noopener"
+                  onClick={() => {
+                    trackOrderOnlineClick('nav-drawer');
+                    setMenuOpen(false);
+                  }}
+                  className="block py-3 px-4 w-full rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-semibold text-center transition-colors"
+                >
+                  🛍️ {getOrderOnlineLabel(locale)}
+                </a>
+              </motion.div>
               <motion.div whileTap={{ scale: 0.98 }}>
                 <Link
                   href={`/${locale}/menu`}
@@ -1533,6 +1569,7 @@ export default function Home() {
 
             {/* Right: Navigation */}
             <div className="flex flex-wrap gap-6 text-sm">
+              <a href={ORDER_ONLINE_URL} target="_blank" rel="noopener" onClick={() => trackOrderOnlineClick('footer')} className="opacity-60 hover:opacity-100 transition-opacity">{getOrderOnlineLabel(locale)}</a>
               <Link href={`/${locale}/menu`} className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.menu')}</Link>
               <Link href={`/${locale}/menu/kona-coffee`} className="opacity-60 hover:opacity-100 transition-opacity">Kona Coffee</Link>
               <a href="#about" className="opacity-60 hover:opacity-100 transition-opacity">{t('nav.about')}</a>

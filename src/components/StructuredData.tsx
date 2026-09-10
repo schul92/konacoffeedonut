@@ -1,3 +1,4 @@
+import { ORDER_ONLINE_URL } from '@/lib/orderLinks';
 import { seoSameAsUrls } from '@/lib/socialLinks';
 
 interface StructuredDataProps {
@@ -88,6 +89,18 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
     ],
     servesCuisine: ['Kona Coffee', '100% Kona Coffee', 'Coffee', 'Espresso', 'Donuts', 'Malasada', 'Bingsu', 'Hawaiian', 'Desserts'],
     menu: `https://www.konacoffeedonut.com/${locale}/menu`,
+    potentialAction: {
+      '@type': 'OrderAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: ORDER_ONLINE_URL,
+        actionPlatform: [
+          'http://schema.org/DesktopWebPlatform',
+          'http://schema.org/MobileWebPlatform',
+        ],
+      },
+      deliveryMethod: 'http://purl.org/goodrelations/v1#DeliveryModePickUp',
+    },
     acceptsReservations: false,
     paymentAccepted: 'Cash, Credit Card, Debit Card',
     currenciesAccepted: 'USD',
