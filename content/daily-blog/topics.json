@@ -14,7 +14,8 @@
       "keyword": "dessert open late waikiki",
       "angle": "Open until 9 PM daily - bingsu, mochi donuts, boba after dinner when most bakeries are closed.",
       "products": "bingsu, mochi donuts, boba cans",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-09-15"
     },
     {
       "slug": "brown-sugar-boba-waikiki",
@@ -28,7 +29,8 @@
       "keyword": "what is ube",
       "angle": "Explainer with a cash register: ube latte ($7.95), ube boba ($8.95), ube mochi donut, ube bingsu - taste the purple in 4 forms.",
       "products": "ube latte, ube boba, ube donut, ube bingsu",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-09-15"
     },
     {
       "slug": "diamond-head-breakfast-nearby",
@@ -140,7 +142,8 @@
       "keyword": "mochi donut vs regular donut",
       "angle": "Texture science comparison ending at the counter: try one for $3.95 and taste the difference.",
       "products": "mochi donuts",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-09-15"
     },
     {
       "slug": "waikiki-sunset-snacks",
@@ -189,7 +192,8 @@
       "keyword": "labor day weekend waikiki food",
       "angle": "SEASONAL (publish before Sep 7): beat the holiday crowds - order ahead, grab-and-go picks.",
       "products": "full lineup",
-      "status": "pending"
+      "status": "skipped",
+      "note": "seasonal window passed (Labor Day 2026-09-07) before publishing"
     },
     {
       "slug": "fall-drinks-waikiki",
