@@ -95,7 +95,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Your Kona Coffee Is 5 Minutes From the Sand',
       body: '100% Kona from $7, espresso from $4.75, fresh donuts. 2142 Kalākaua Ave, open 7 AM daily.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -112,7 +112,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '本物の100%コナ？', a: 'はい。ビッグアイランド産コナ豆100%、Honolulu Coffee供給。10%ブレンドではありません。' },
       { q: '営業時間は？', a: '毎日朝7時〜夜9時。' },
     ],
-    finalCTA: { headline: 'コナコーヒーはビーチから5分', body: '100%コナ$7〜、エスプレッソ$4.75〜。毎日7時から。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'コナコーヒーはビーチから5分', body: '100%コナ$7〜、エスプレッソ$4.75〜。毎日7時から。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 비치 근처 커피, 아침 7시 오픈', subtitle: '진짜 100% 코나커피와 에스프레소 바, 비치에서 도보 5분.', date: '2026년 8월 발행', readTime: '4분 분량', badge: '커피 가이드' },
@@ -128,7 +128,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '진짜 100% 코나인가요?', a: '네. 빅아일랜드 코나 원두 100%, Honolulu Coffee 공급. 10% 블렌드 아님.' },
       { q: '영업시간은?', a: '매일 오전 7시 – 오후 9시.' },
     ],
-    finalCTA: { headline: '코나커피는 비치에서 5분', body: '100% 코나 $7부터, 에스프레소 $4.75부터. 매일 7시.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '코나커피는 비치에서 5분', body: '100% 코나 $7부터, 에스프레소 $4.75부터. 매일 7시.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基海滩附近的咖啡，早上7点开门', subtitle: '真正的100%科纳咖啡和意式咖啡吧，距海滩步行5分钟。', date: '2026年8月发布', readTime: '4分钟', badge: '咖啡指南' },
@@ -144,7 +144,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '是真正的100%科纳吗？', a: '是。大岛科纳豆100%，由Honolulu Coffee供应，非10%拼配。' },
       { q: '营业时间？', a: '每天早7点至晚9点。' },
     ],
-    finalCTA: { headline: '科纳咖啡距海滩5分钟', body: '100%科纳$7起，浓缩$4.75起。每天7点。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '科纳咖啡距海滩5分钟', body: '100%科纳$7起，浓缩$4.75起。每天7点。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Café cerca de Waikiki Beach, abierto a las 7 AM', subtitle: 'Café 100% Kona de verdad y barra de espresso, a 5 minutos de la arena.', date: 'Agosto 2026', readTime: '4 min', badge: 'Guía de Café' },
@@ -158,7 +158,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Cafetería más cercana a Waikiki Beach?', a: 'Kona Coffee Donut, 2142 Kalākaua Ave, a 5 minutos a pie. Kona 100% $7.00, espresso desde $4.75. 7 AM – 9 PM.' },
       { q: '¿Es Kona 100% real?', a: 'Sí, granos Kona de Big Island, no mezcla al 10%.' },
     ],
-    finalCTA: { headline: 'Tu café Kona a 5 minutos de la arena', body: 'Kona 100% desde $7, espresso desde $4.75. Abierto 7 AM.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Tu café Kona a 5 minutos de la arena', body: 'Kona 100% desde $7, espresso desde $4.75. Abierto 7 AM.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

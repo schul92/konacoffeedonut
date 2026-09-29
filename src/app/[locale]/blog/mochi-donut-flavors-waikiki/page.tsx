@@ -113,7 +113,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Try the Whole Lineup — Made Fresh Daily',
       body: "Hand-made mochi donuts on Kalākaua Avenue, paired with Honolulu Coffee. Stop by today.",
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -184,7 +184,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'どこで買えますか？', a: '2142 カラカウア通り、ワイキキ中心部。毎日朝7時〜夜9時。' },
       { q: '人気フレーバーは？', a: 'チョコレートとオリジナルが定番人気。観光客にはウベと抹茶が好評です。' },
     ],
-    finalCTA: { headline: '毎日手作り。全フレーバーをぜひ', body: 'カラカウア通り 2142、ワイキキ中心部。今日お越しください。', visitLabel: '今日来店する', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: '毎日手作り。全フレーバーをぜひ', body: 'カラカウア通り 2142、ワイキキ中心部。今日お越しください。', visitLabel: '今日来店する', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: {
@@ -243,7 +243,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '어디에서 구입?', a: '2142 칼라카우아 거리, 와이키키 중심부. 매일 오전 7시 – 오후 9시.' },
       { q: '베스트셀러는?', a: '초콜릿과 오리지널이 가장 인기. 관광객은 우베·말차 선호.' },
     ],
-    finalCTA: { headline: '매일 직접 만든 모치도넛', body: '와이키키 중심부 2142 칼라카우아 거리.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '매일 직접 만든 모치도넛', body: '와이키키 중심부 2142 칼라카우아 거리.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: {
@@ -302,7 +302,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '在哪里购买？', a: '威基基中心 2142 卡拉考阿大道。每天早7点至晚9点。' },
       { q: '最受欢迎的口味？', a: '巧克力和原味釉，游客喜欢紫薯和抹茶。' },
     ],
-    finalCTA: { headline: '每日现做麻糬甜甜圈', body: '威基基中心 2142 卡拉考阿大道。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '每日现做麻糬甜甜圈', body: '威基基中心 2142 卡拉考阿大道。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Sabores de Mochi Donut en Waikiki', subtitle: 'Guía visual del menú en Kalākaua Avenue.', date: 'Mayo 2026', readTime: '5 min', badge: 'Guía de Menú' },
@@ -328,7 +328,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Cuántos sabores hay?', a: '10+ sabores rotativos.' },
       { q: '¿Precio?', a: 'Se venden por caja: 3 por $11.25 (~$3.75 c/u), 6 por $22.50, 12 por $45.00. La media docena es la opción más popular.' },
     ],
-    finalCTA: { headline: 'Frescos Cada Día', body: '2142 Kalākaua Ave, Waikiki.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Frescos Cada Día', body: '2142 Kalākaua Ave, Waikiki.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

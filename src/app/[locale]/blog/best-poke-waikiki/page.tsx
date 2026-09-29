@@ -129,7 +129,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Poke on the Beach, Dessert on Kalākaua',
       body: 'Bingsu, malasadas, mochi donuts and 100% Kona coffee — the second stop after your poke bowl. Two blocks from the beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -162,7 +162,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '値段は？', a: 'ボウル$14〜20、1ポンド$18〜26。' },
       { q: 'ポケの後のデザートは？', a: 'コナコーヒードーナツ（2142 Kalākaua Ave）でビンスやマラサダを。' },
     ],
-    finalCTA: { headline: 'ビーチでポケ、カラカウアでデザート', body: 'ビンス、マラサダ、モチドーナツ、100%コナコーヒー。ビーチから2ブロック。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'ビーチでポケ、カラカウアでデザート', body: 'ビンス、マラサダ、モチドーナツ、100%コナコーヒー。ビーチから2ブロック。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: {
@@ -194,7 +194,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '가격?', a: '볼 $14–20, 파운드 $18–26.' },
       { q: '포케 후 디저트는?', a: '코나커피도넛(2142 Kalākaua Ave) 빙수·말라사다.' },
     ],
-    finalCTA: { headline: '비치에서 포케, 칼라카우아에서 디저트', body: '빙수, 말라사다, 모찌도넛, 100% 코나 커피. 비치 두 블록.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '비치에서 포케, 칼라카우아에서 디저트', body: '빙수, 말라사다, 모찌도넛, 100% 코나 커피. 비치 두 블록.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: {
@@ -226,7 +226,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '价格？', a: '一碗$14–20，一磅$18–26。' },
       { q: 'poke之后的甜品？', a: 'Kona Coffee Donut（2142 Kalākaua Ave）雪冰、马拉萨达。' },
     ],
-    finalCTA: { headline: '海滩吃Poke，卡拉卡瓦吃甜品', body: '雪冰、马拉萨达、麻糬甜甜圈、100%科纳咖啡。离海滩两个街区。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '海滩吃Poke，卡拉卡瓦吃甜品', body: '雪冰、马拉萨达、麻糬甜甜圈、100%科纳咖啡。离海滩两个街区。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: {
@@ -257,7 +257,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Precio?', a: '$14–20 por bowl.' },
       { q: '¿Postre cerca?', a: 'Kona Coffee Donut, 2142 Kalākaua Ave.' },
     ],
-    finalCTA: { headline: 'Poke en la playa, postre en Kalākaua', body: 'Bingsu, malasadas, mochi donuts y café 100% Kona. A dos cuadras de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Poke en la playa, postre en Kalākaua', body: 'Bingsu, malasadas, mochi donuts y café 100% Kona. A dos cuadras de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

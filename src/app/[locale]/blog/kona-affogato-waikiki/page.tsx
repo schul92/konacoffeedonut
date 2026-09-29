@@ -94,7 +94,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Try Kona Affogato Today',
       body: 'Two scoops of vanilla bean ice cream, one shot of Honolulu Coffee espresso, eaten immediately. The simplest perfect dessert in Waikiki.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -113,7 +113,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'コーヒー？デザート？', a: '両方。エスプレッソショット入りなのでカフェインもあり。' },
       { q: '何が特別？', a: 'ホノルルコーヒーのスムースな味とバニラの相性が抜群。' },
     ],
-    finalCTA: { headline: '今日コナアフォガートを', body: 'カラカウア通り 2142、ワイキキ中心部。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: '今日コナアフォガートを', body: 'カラカウア通り 2142、ワイキキ中心部。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 코나 아포가토', subtitle: '호놀룰루 커피를 마법처럼 만드는 단순한 이탈리아 디저트.', date: '2026년 5월', readTime: '4분 분량', badge: '커피 디저트' },
@@ -131,7 +131,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '커피인가요 디저트인가요?', a: '둘 다. 에스프레소 샷이 들어 카페인도 있음.' },
       { q: '왜 특별한가요?', a: '호놀룰루 커피의 부드러움이 바닐라와 환상의 조합.' },
     ],
-    finalCTA: { headline: '오늘 코나 아포가토를', body: '와이키키 중심부 2142 칼라카우아.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '오늘 코나 아포가토를', body: '와이키키 중심부 2142 칼라카우아.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基的科纳阿芙佳朵', subtitle: '让檀香山咖啡变神奇的简单意式甜品。', date: '2026年5月', readTime: '4分钟', badge: '咖啡甜品' },
@@ -149,7 +149,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '是咖啡还是甜品？', a: '都是。含浓缩咖啡，所以有咖啡因。' },
       { q: '科纳的特别之处？', a: '檀香山咖啡顺滑低酸，与香草完美搭配。' },
     ],
-    finalCTA: { headline: '今天就试试科纳阿芙佳朵', body: '威基基中心 2142 卡拉考阿。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '今天就试试科纳阿芙佳朵', body: '威基基中心 2142 卡拉考阿。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Affogato Kona en Waikiki', subtitle: 'El postre italiano simple que transforma el espresso Honolulu Coffee en algo mágico.', date: 'Mayo 2026', readTime: '4 min', badge: 'Postre de Café' },
@@ -166,7 +166,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Dónde encontrarlo?', a: 'Kona Coffee Donut, 2142 Kalākaua Ave, Waikiki.' },
       { q: '¿Café o postre?', a: 'Ambos. Tiene espresso, así que también es cafeína.' },
     ],
-    finalCTA: { headline: 'Prueba el Affogato Kona Hoy', body: '2142 Kalākaua Ave, Waikiki.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Prueba el Affogato Kona Hoy', body: '2142 Kalākaua Ave, Waikiki.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

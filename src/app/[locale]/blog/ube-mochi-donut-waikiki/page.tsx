@@ -98,7 +98,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Hawaii\'s Most Photogenic Donut Awaits',
       body: 'Fresh ube mochi donuts daily, walking distance from Waikiki Beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -119,7 +119,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '味は？', a: '甘くて土の香りのある優しい味。' },
       { q: 'タロと同じ？', a: 'いいえ、別物です。' },
     ],
-    finalCTA: { headline: 'ハワイで最も映えるドーナツ', body: '毎日手作り、ビーチから徒歩。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'ハワイで最も映えるドーナツ', body: '毎日手作り、ビーチから徒歩。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '우베 모치도넛 — 하와이 최고의 비주얼 도넛', subtitle: '선명한 보라색, 쫀득한 식감.', date: '2026년 5월', readTime: '4분', badge: '모치도넛 스포트라이트' },
@@ -139,7 +139,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '맛은?', a: '달콤하면서 흙내음.' },
       { q: '타로와 같나요?', a: '아니요.' },
     ],
-    finalCTA: { headline: '하와이 최고 비주얼 도넛', body: '매일 직접 만듦.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '하와이 최고 비주얼 도넛', body: '매일 직접 만듦.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '紫薯麻糬甜甜圈 — 夏威夷最上镜的甜甜圈', subtitle: '鲜艳紫色，Q弹口感。', date: '2026年5月', readTime: '4分钟', badge: '麻糬甜甜圈聚焦' },
@@ -159,7 +159,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '味道?', a: '香甜带土香。' },
       { q: '与芋头一样吗?', a: '不一样。' },
     ],
-    finalCTA: { headline: '夏威夷最上镜的甜甜圈', body: '每日现做。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '夏威夷最上镜的甜甜圈', body: '每日现做。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Ube Mochi Donut — El Donut Más Fotogénico de Hawái', subtitle: 'Morado vibrante, textura masticable.', date: 'Mayo 2026', readTime: '4 min', badge: 'Especial Mochi Donut' },
@@ -178,7 +178,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Sabor?', a: 'Dulce-terroso.' },
       { q: '¿Igual que taro?', a: 'No.' },
     ],
-    finalCTA: { headline: 'El Donut Más Fotogénico', body: 'Fresco diariamente.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'El Donut Más Fotogénico', body: 'Fresco diariamente.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

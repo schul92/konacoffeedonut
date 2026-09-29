@@ -109,7 +109,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Cheese-Pull Moment Awaits on Kalākaua',
       body: 'Fresh-fried Korean corn dogs, walking distance from Waikiki Beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -130,7 +130,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'アメリカ式との違い？', a: '米粉衣、モッツァレラ中心、砂糖がけ。' },
       { q: '値段は？', a: '$5-8/本。' },
     ],
-    finalCTA: { headline: 'カリッと揚げたてハットグ', body: 'カラカウア通り、ビーチから徒歩。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'カリッと揚げたてハットグ', body: 'カラカウア通り、ビーチから徒歩。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 한국 핫도그', subtitle: '겉바속쫀, 늘어나는 모짜렐라, 설탕 솔솔.', date: '2026년 5월', readTime: '5분', badge: 'K-푸드' },
@@ -150,7 +150,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '미국과 차이?', a: '쌀가루, 모짜렐라, 설탕.' },
       { q: '가격?', a: '$5-8.' },
     ],
-    finalCTA: { headline: '갓 튀긴 한국 핫도그', body: '비치 도보, 매일 영업.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '갓 튀긴 한국 핫도그', body: '비치 도보, 매일 영업.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基的韩国玉米热狗', subtitle: '外脆内拉丝，糖粉点缀。', date: '2026年5月', readTime: '5分钟', badge: 'K-Food' },
@@ -169,7 +169,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '什么是韩式玉米热狗?', a: '米粉炸皮，芝士或热狗内馅。' },
       { q: '价格?', a: '$5-8。' },
     ],
-    finalCTA: { headline: '现炸韩式玉米热狗', body: '海滩步行可达。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '现炸韩式玉米热狗', body: '海滩步行可达。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Korean Corn Dog en Waikiki', subtitle: 'Crujiente afuera, mozzarella stretch adentro.', date: 'Mayo 2026', readTime: '5 min', badge: 'K-Food' },
@@ -187,7 +187,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Qué es?', a: 'Hot dog coreano con masa de arroz, mozzarella o salchicha.' },
       { q: '¿Precio?', a: '$5-8.' },
     ],
-    finalCTA: { headline: 'Corn Dogs Coreanos Frescos', body: 'Cerca de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Corn Dogs Coreanos Frescos', body: 'Cerca de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

@@ -121,7 +121,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Taste the Difference on Kalākaua',
       body: '24 mochi donut flavors and classic malasadas, fried fresh every morning and never frozen. Open 7 AM – 9 PM daily, five minutes from Waikiki Beach, walk-in only.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -182,7 +182,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'カラカウア通りで食べ比べ',
       body: 'モチドーナツ24種とマラサダ、毎朝揚げたて。毎日7時〜21時、ビーチから徒歩5分。',
       visitLabel: '今日来店',
-      callLabel: '電話 (808) 304-1808',
+      callLabel: '電話 (808) 260-1835',
     },
   },
   ko: {
@@ -243,7 +243,7 @@ const content: Record<Locale, BlogContent> = {
       headline: '칼라카우아에서 직접 비교',
       body: '모찌도넛 24종과 말라사다, 매일 아침 갓 튀김. 매일 7시–21시, 비치에서 도보 5분.',
       visitLabel: '오늘 방문',
-      callLabel: '전화 (808) 304-1808',
+      callLabel: '전화 (808) 260-1835',
     },
   },
   zh: {
@@ -304,7 +304,7 @@ const content: Record<Locale, BlogContent> = {
       headline: '在卡拉考阿大道亲自比较',
       body: '24种麻糬甜甜圈和马拉萨达，每天早晨现炸。每天7点–21点，海滩步行5分钟。',
       visitLabel: '立即到店',
-      callLabel: '致电 (808) 304-1808',
+      callLabel: '致电 (808) 260-1835',
     },
   },
   es: {
@@ -360,7 +360,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Prueba la diferencia en Kalākaua',
       body: '24 sabores de mochi donut y malasadas, recién hechas cada mañana. 7 AM – 9 PM, a 5 minutos de la playa.',
       visitLabel: 'Visítanos',
-      callLabel: 'Llama (808) 304-1808',
+      callLabel: 'Llama (808) 260-1835',
     },
   },
 };

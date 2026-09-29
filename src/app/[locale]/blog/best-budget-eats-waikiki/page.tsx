@@ -121,7 +121,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Cheap, Real Hawaiian Food on Kalākaua',
       body: 'Mochi donuts about $3.75 each, malasadas from $3.95, real Kona coffee. Walking distance from Waikiki Beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -142,7 +142,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '一日いくらかかる？', a: '$30-45で十分。' },
       { q: 'コナコーヒーは高い？', a: '本物のホノルルコーヒーで$6-7/杯。' },
     ],
-    finalCTA: { headline: 'カラカウア通りで本物のハワイ料理を', body: 'モチドーナツ約$3.75/個、マラサダ$3.95〜、本物のコナコーヒー。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'カラカウア通りで本物のハワイ料理を', body: 'モチドーナツ約$3.75/個、マラサダ$3.95〜、本物のコナコーヒー。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 가성비 맛집', subtitle: '$15 이하로 즐기는 와이키키 베스트.', date: '2026년 5월', readTime: '6분', badge: '예산 가이드' },
@@ -162,7 +162,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '하루 예산은?', a: '$30-45.' },
       { q: '코나커피 비싸요?', a: '진품 호놀룰루 커피 $6-7/잔.' },
     ],
-    finalCTA: { headline: '칼라카우아에서 진짜 하와이 음식을', body: '모치도넛 개당 약 $3.75, 말라사다 $3.95부터, 진짜 코나커피.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '칼라카우아에서 진짜 하와이 음식을', body: '모치도넛 개당 약 $3.75, 말라사다 $3.95부터, 진짜 코나커피.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基平价美食指南', subtitle: '$15以下的威基基最佳餐厅。', date: '2026年5月', readTime: '6分钟', badge: '预算指南' },
@@ -182,7 +182,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '每天预算多少？', a: '$30-45足够。' },
       { q: '科纳咖啡贵吗？', a: '正宗檀香山咖啡 $6-7/杯。' },
     ],
-    finalCTA: { headline: '卡拉考阿的真正夏威夷美食', body: '麻糬甜甜圈约$3.75/个、玛拉萨达$3.95起、真正的科纳咖啡。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '卡拉考阿的真正夏威夷美食', body: '麻糬甜甜圈约$3.75/个、玛拉萨达$3.95起、真正的科纳咖啡。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Comer en Waikiki con Presupuesto', subtitle: 'Los mejores spots bajo $15.', date: 'Mayo 2026', readTime: '6 min', badge: 'Guía de Presupuesto' },
@@ -199,7 +199,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Bajo $15 posible?', a: 'Sí, fácilmente.' },
       { q: '¿Presupuesto diario?', a: '$30-45 está bien.' },
     ],
-    finalCTA: { headline: 'Comida Real Económica en Kalākaua', body: 'Mochi donuts ~$3.75 c/u, café Kona real.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Comida Real Económica en Kalākaua', body: 'Mochi donuts ~$3.75 c/u, café Kona real.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

@@ -143,7 +143,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Get the Cheese Pull on Kalākaua Ave',
       body: 'Six Korean corn dog styles fried to order, two blocks from Waikīkī Beach. Walk in — no reservation, no app.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -176,7 +176,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '普通のコーンドッグとの違いは？', a: '米粉衣、チーズ入り、ポテトやラーメンの衣、砂糖がけ。' },
       { q: 'なぜ砂糖をかける？', a: 'ソウルの屋台の伝統。甘い衣と塩気の対比が特徴です。' },
     ],
-    finalCTA: { headline: 'カラカウア通りでチーズプル', body: 'ワイキキビーチから2ブロック。予約不要、直接どうぞ。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'カラカウア通りでチーズプル', body: 'ワイキキビーチから2ブロック。予約不要、直接どうぞ。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: {
@@ -207,7 +207,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '왜 틱톡에서 유명한가?', a: '치즈 늘리기, 튀김옷 식감, 설탕 반전이 숏폼에 최적이라서.' },
       { q: '미국 콘도그와 차이?', a: '쌀가루 반죽, 치즈 속, 감자·라면 코팅, 설탕.' },
     ],
-    finalCTA: { headline: '칼라카우아에서 치즈 늘리기', body: '와이키키 비치 두 블록. 예약 없이 바로 방문.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '칼라카우아에서 치즈 늘리기', body: '와이키키 비치 두 블록. 예약 없이 바로 방문.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: {
@@ -238,7 +238,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '为什么在TikTok上火？', a: '拉丝、外壳口感、撒糖反差都适合短视频。' },
       { q: '和美式玉米热狗的区别？', a: '米粉面糊、芝士内馅、薯块/拉面外壳、撒糖。' },
     ],
-    finalCTA: { headline: '来卡拉卡瓦大道拉丝', body: '距威基基海滩两个街区，无需预约。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '来卡拉卡瓦大道拉丝', body: '距威基基海滩两个街区，无需预约。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: {
@@ -268,7 +268,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Por qué es viral?', a: 'Por el estiramiento de mozzarella, la textura y el azúcar.' },
       { q: '¿Diferencia con el corn dog americano?', a: 'Masa de arroz, relleno de queso, cobertura de papa o ramen, azúcar.' },
     ],
-    finalCTA: { headline: 'El cheese pull, en Kalākaua Ave', body: 'A dos cuadras de la playa. Sin reserva.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'El cheese pull, en Kalākaua Ave', body: 'A dos cuadras de la playa. Sin reserva.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

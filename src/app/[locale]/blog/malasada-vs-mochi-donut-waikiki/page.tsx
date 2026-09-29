@@ -90,7 +90,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Try Both — In One Stop on Kalākaua',
       body: 'Fresh malasadas and pon-de-ring mochi donuts under one roof, paired with Honolulu Coffee.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -111,7 +111,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'マラサダはハワイ料理？', a: 'ポルトガル発祥ですがハワイで定着。' },
       { q: 'モチドーナツは持ち帰り可？', a: 'はい、24時間以内なら美味しさキープ。' },
     ],
-    finalCTA: { headline: '一度の来店で両方', body: 'カラカウア通り 2142、ワイキキ中心部。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: '一度の来店で両方', body: 'カラカウア通り 2142、ワイキキ中心部。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '말라사다 vs 모치도넛', subtitle: '하와이의 두 명물 도넛 비교.', date: '2026년 5월', readTime: '5분 분량', badge: '비교 가이드' },
@@ -130,7 +130,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '둘 다 파는 곳은?', a: '코나커피도넛(칼라카우아 2142).' },
       { q: '말라사다는 하와이 음식?', a: '포르투갈에서 왔지만 하와이에 정착.' },
     ],
-    finalCTA: { headline: '한 번에 둘 다', body: '와이키키 중심부 2142 칼라카우아.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '한 번에 둘 다', body: '와이키키 중심부 2142 칼라카우아.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '玛拉萨达 vs 麻糬甜甜圈', subtitle: '夏威夷两大甜甜圈对比。', date: '2026年5月', readTime: '5分钟', badge: '比较指南' },
@@ -148,7 +148,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '哪个更好吃？', a: '两种不同的甜点，建议都尝。' },
       { q: '哪里能同时买到？', a: 'Kona Coffee Donut（卡拉考阿2142）。' },
     ],
-    finalCTA: { headline: '一站式两种甜甜圈', body: '威基基中心 2142 卡拉考阿。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '一站式两种甜甜圈', body: '威基基中心 2142 卡拉考阿。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Malasada vs Mochi Donut', subtitle: 'Los dos donuts más famosos de Hawái comparados.', date: 'Mayo 2026', readTime: '5 min', badge: 'Guía Comparativa' },
@@ -165,7 +165,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Cuál es mejor?', a: 'Distintos postres. Prueba ambos.' },
       { q: '¿Dónde encuentro ambos?', a: 'Kona Coffee Donut, 2142 Kalākaua Ave.' },
     ],
-    finalCTA: { headline: 'Prueba Ambos en Una Visita', body: '2142 Kalākaua Ave, Waikiki.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Prueba Ambos en Una Visita', body: '2142 Kalākaua Ave, Waikiki.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 
