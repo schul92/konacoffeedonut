@@ -28,8 +28,8 @@ export async function generateMetadata({
       description: "在威基基享用科纳咖啡、冰咖啡和拿铁。可选100%科纳咖啡。卡拉卡瓦大道附近，适合搭配新鲜甜甜圈。",
     },
     es: {
-      title: "100% Kona Coffee Available in Waikiki",
-      description: "Coffee in Waikiki with espresso, iced coffee, lattes, and 100% Kona coffee available. Pair your cup with fresh donuts near Waikiki Beach.",
+      title: "Café 100% Kona en Waikiki",
+      description: "Café en Waikiki: espresso, café helado, lattes y café 100% Kona. Acompáñalo con donuts recién hechos cerca de la playa de Waikiki, en Kalākaua Ave.",
     },
   };
 

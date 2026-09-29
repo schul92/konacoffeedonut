@@ -44,16 +44,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description,
       images: ['/images/menu/donut.webp']
     },
+    // Page copy is English-only on every locale, so all locale URLs point
+    // canonical at /en to avoid duplicate-content signals.
     alternates: {
-      canonical: `${siteUrl}/${locale}/fresh-donuts`,
-      languages: {
-        'en-US': `${siteUrl}/en/fresh-donuts`,
-        'ja-JP': `${siteUrl}/ja/fresh-donuts`,
-        'ko-KR': `${siteUrl}/ko/fresh-donuts`,
-        'zh-CN': `${siteUrl}/zh/fresh-donuts`,
-        'es-ES': `${siteUrl}/es/fresh-donuts`,
-        'x-default': `${siteUrl}/en/fresh-donuts`
-      }
+      canonical: `${siteUrl}/en/fresh-donuts`,
     },
     robots: {
       index: true,

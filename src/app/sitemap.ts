@@ -297,8 +297,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // already omit es from their hreflang); this keeps the sitemap and the pages'
   // canonical/hreflang signals consistent and avoids duplicate-content flags.
   const isBlogPost = (route: string) => route.startsWith('/blog/');
+  // Landing pages whose copy is English on every locale: only /en is canonical.
+  const englishOnly = new Set(['/fresh-donuts', '/gourmet-donuts']);
   const localesForRoute = (route: string) =>
-    isBlogPost(route) ? locales.filter((loc) => loc !== 'es') : [...locales];
+    englishOnly.has(route)
+      ? locales.filter((loc) => loc === 'en')
+      : isBlogPost(route) ? locales.filter((loc) => loc !== 'es') : [...locales];
 
   // Add all routes for each (translated) locale with enhanced metadata
   routes.forEach((route) => {
