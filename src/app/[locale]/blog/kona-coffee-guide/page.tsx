@@ -641,7 +641,7 @@ export default function KonaCoffeeGuidePage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/kona-coffee-guide.png"
-          alt=""
+          alt="Kona Coffee Guide — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

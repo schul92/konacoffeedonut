@@ -26,7 +26,15 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'menu' });
 
-  const title = locale === 'en' ? 'Menu | Donuts, Bingsu & 100% Kona Coffee Available in Waikiki | Kona Coffee Donut?' : `${t('title')} | Kona Coffee Donut?`;
+  // The [locale] layout title template appends the brand, so titles here omit it.
+  const menuTitles: Record<string, string> = {
+    en: 'Waikiki Menu: Mochi Donuts, Bingsu & 100% Kona Coffee',
+    ja: 'ワイキキのメニュー | モチドーナツ・ビンス・100%コナコーヒー',
+    ko: '와이키키 메뉴 | 모찌도넛·빙수·100% 코나커피',
+    zh: '威基基菜单 | 麻糬甜甜圈・韩式雪冰・100%科纳咖啡',
+    es: 'Menú en Waikiki: Mochi Donuts, Bingsu y Café 100% Kona',
+  };
+  const title = menuTitles[locale] || t('title');
   const description =
     locale === 'en'
       ? 'Browse our Waikiki menu: mochi donuts, malasadas, Korean bingsu, acai bowls, Korean corn dogs, and 100% Kona coffee available near Waikiki Beach.'

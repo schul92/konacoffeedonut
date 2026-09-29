@@ -908,7 +908,7 @@ export default function WhatIsBingsuPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/what-is-bingsu.png"
-          alt=""
+          alt="What Is Bingsu — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

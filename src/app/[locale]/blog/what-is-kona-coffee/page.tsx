@@ -932,7 +932,7 @@ export default function WhatIsKonaCoffeePage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/what-is-kona-coffee.jpeg"
-          alt=""
+          alt="What Is Kona Coffee — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

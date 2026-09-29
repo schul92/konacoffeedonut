@@ -45,11 +45,13 @@ export async function generateMetadata({
       siteName: 'Kona Coffee Donut',
       locale: localeMap[locale] || 'en_US',
       type: 'website',
+      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Kona Coffee Donut? — mochi donuts, malasadas & 100% Kona coffee in Waikiki' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: titles[locale] || titles.en,
       description: descriptions[locale] || descriptions.en,
+      images: ['/og-image.jpg'],
     },
     alternates: {
       canonical: `${siteUrl}/${locale}/faq`,

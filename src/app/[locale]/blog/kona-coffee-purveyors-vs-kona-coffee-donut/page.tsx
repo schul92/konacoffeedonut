@@ -986,7 +986,7 @@ export default function KonaCoffeePurveyorsVsKonaCoffeeDonutPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/kona-coffee-purveyors-vs-kona-coffee-donut.jpeg"
-          alt=""
+          alt="Kona Coffee Purveyors vs Kona Coffee Donut — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

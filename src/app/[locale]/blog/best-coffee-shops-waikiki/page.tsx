@@ -986,7 +986,7 @@ export default function BestCoffeeShopsWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/best-coffee-shops-waikiki.jpeg"
-          alt=""
+          alt="Best Coffee Shops Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

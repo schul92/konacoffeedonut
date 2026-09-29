@@ -5,9 +5,20 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
 
-  const title = 'Best Desserts in Waikiki 2026: Sweet Spots You Can\'t Miss';
-  const description =
-    'Discover the 8 best desserts in Waikiki for 2026. From mochi donuts and bingsu to shaved ice and gelato — the ultimate guide to dessert near me in Waikiki. Prices, must-try items, and insider tips.';
+  const titles: Record<string, string> = {
+    en: 'Best Desserts in Waikiki 2026: Sweet Spots You Can\'t Miss',
+    ja: '2026年ワイキキのベストデザート | Kona Coffee Donut',
+    ko: '2026년 와이키키 베스트 디저트 | Kona Coffee Donut',
+    zh: '2026年威基基最佳甜点 | Kona Coffee Donut',
+  };
+  const descriptions: Record<string, string> = {
+    en: 'Discover the 8 best desserts in Waikiki for 2026. From mochi donuts and bingsu to shaved ice and gelato — the ultimate guide to dessert near me in Waikiki. Prices, must-try items, and insider tips.',
+    ja: '2026年版ワイキキのおすすめデザート8選。モチドーナツやビンスからシェイブアイス、ジェラートまで、価格・必食メニュー・地元民のコツをまとめました。',
+    ko: '2026년 와이키키 디저트 베스트 8. 모찌도넛과 빙수부터 셰이브 아이스, 젤라또까지 — 가격, 꼭 먹어야 할 메뉴, 현지인 팁을 한 번에 정리했습니다.',
+    zh: '2026年威基基8大必吃甜点：从麻糬甜甜圈、雪冰到刨冰和意式冰淇淋，价格、必点单品与本地人小贴士一次看懂。',
+  };
+  const title = titles[locale] || titles.en;
+  const description = descriptions[locale] || descriptions.en;
 
   const localeMap: Record<string, string> = {
     en: 'en_US',

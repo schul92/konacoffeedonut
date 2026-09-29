@@ -5,8 +5,23 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
 
-  const title = 'Blog | Kona Coffee Donut';
-  const description = 'Explore our blog for guides on Waikiki donuts, Kona coffee, Hawaiian food culture, Korean shaved ice, and more. Tips and stories from our Waikiki cafe.';
+  // The [locale] layout title template appends the brand, so titles here omit it.
+  const titles: Record<string, string> = {
+    en: 'Waikiki Food & Coffee Blog: Donuts, Bingsu & Kona Guides',
+    ja: 'ワイキキ グルメ＆コーヒーブログ | ドーナツ・ビンス・コナコーヒー',
+    ko: '와이키키 맛집·커피 블로그 | 도넛·빙수·코나커피 가이드',
+    zh: '威基基美食与咖啡博客 | 甜甜圈・雪冰・科纳咖啡指南',
+    es: 'Blog de Comida y Café en Waikiki: Donuts, Bingsu y Kona',
+  };
+  const descriptions: Record<string, string> = {
+    en: 'Local guides to Waikiki donuts, 100% Kona coffee, Korean bingsu, malasadas and Hawaiian food — written by our cafe on Kalakaua Ave, 5 minutes from the beach.',
+    ja: 'ワイキキのドーナツ、100%コナコーヒー、韓国かき氷ビンス、マラサダ、ハワイグルメを地元カフェが解説。ワイキキビーチから徒歩5分、カラカウア通りのカフェから。',
+    ko: '와이키키 도넛, 100% 코나커피, 한국 빙수, 말라사다와 하와이 음식을 현지 카페가 직접 소개합니다. 와이키키 비치에서 도보 5분, 칼라카우아 거리 카페의 가이드.',
+    zh: '威基基本地咖啡店带你了解甜甜圈、100%科纳咖啡、韩式雪冰、马拉萨达与夏威夷美食。位于卡拉考阿大道，距海滩步行5分钟。',
+    es: 'Guías locales de donuts, café 100% Kona, bingsu coreano, malasadas y comida hawaiana en Waikiki, escritas por nuestra cafetería en Kalakaua Ave.',
+  };
+  const title = titles[locale] || titles.en;
+  const description = descriptions[locale] || descriptions.en;
 
   const localeMap: Record<string, string> = {
     en: 'en_US',

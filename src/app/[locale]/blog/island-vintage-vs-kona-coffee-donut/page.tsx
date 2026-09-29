@@ -990,7 +990,7 @@ export default function IslandVintageVsKonaCoffeeDonutPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/island-vintage-vs-kona-coffee-donut.jpeg"
-          alt=""
+          alt="Island Vintage vs Kona Coffee Donut — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

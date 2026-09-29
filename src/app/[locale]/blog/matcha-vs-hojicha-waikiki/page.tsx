@@ -934,7 +934,7 @@ export default function MatchaVsHojichaWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/matcha-vs-hojicha-waikiki.jpeg"
-          alt=""
+          alt="Matcha vs Hojicha Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

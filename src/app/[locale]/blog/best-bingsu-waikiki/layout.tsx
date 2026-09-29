@@ -9,9 +9,22 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
 
-  const title = 'Best Bingsu in Waikiki 2026: Korean Shaved Ice Worth the Trip';
-  const description =
-    'Looking for authentic Korean bingsu in Waikiki? Try Kona Coffee Donut on Kalākaua Ave — fresh mango, strawberry, and matcha bingsu, snow-soft milk ice, generous toppings. Open 7 AM–9 PM.';
+  const titles: Record<string, string> = {
+    en: 'Best Bingsu in Waikiki 2026: Korean Shaved Ice Worth the Trip',
+    ja: '2026年 ワイキキで食べられる絶品ビンス | Kona Coffee Donut',
+    ko: '2026 와이키키 빙수 베스트 | Kona Coffee Donut',
+    zh: '2026 威基基最佳雪冰 | Kona Coffee Donut',
+    es: 'Mejor Bingsu en Waikiki 2026 | Kona Coffee Donut',
+  };
+  const descriptions: Record<string, string> = {
+    en: 'Looking for authentic Korean bingsu in Waikiki? Try Kona Coffee Donut on Kalākaua Ave — fresh mango, strawberry, and matcha bingsu, snow-soft milk ice, generous toppings. Open 7 AM–9 PM.',
+    ja: 'カラカウア通りで本格的な韓国かき氷ビンスはここで。暑いハワイの日にぴったり。ビンスとは、韓国式のミルク氷を細かく削って、新鮮なフルーツ、餅、あずき、練乳をトッピングした韓国伝統のデザートです。',
+    ko: '와이키키 칼라카우아 거리에서 정통 한국 빙수를 찾는다면 — 무더운 하와이 날에 딱 맞는 디저트. 빙수는 우유 얼음을 곱게 갈아 신선한 과일, 떡, 팥, 연유를 올린 한국 전통 디저트입니다.',
+    zh: '在卡拉考阿大道找到正宗的韩式雪冰 — 炎热夏威夷的最佳选择。雪冰（빙수）是韩国传统冰品，将冷冻牛奶刨成雪花状细冰，再加上新鲜水果、年糕、红豆和炼乳。',
+    es: 'Dónde encontrar bingsu coreano auténtico en Kalākaua Avenue.',
+  };
+  const title = titles[locale] || titles.en;
+  const description = descriptions[locale] || descriptions.en;
 
   const localeMap: Record<string, string> = {
     en: 'en_US',

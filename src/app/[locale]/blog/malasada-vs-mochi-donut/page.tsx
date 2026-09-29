@@ -449,7 +449,7 @@ export default function MalasadaVsMochiDonutPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/malasada-vs-mochi-donut.png"
-          alt=""
+          alt="Malasada vs Mochi Donut — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority
