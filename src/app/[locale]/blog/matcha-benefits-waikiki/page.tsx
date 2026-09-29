@@ -962,7 +962,7 @@ export default function MatchaBenefitsWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/matcha-benefits-waikiki.jpeg"
-          alt=""
+          alt="Matcha Benefits Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

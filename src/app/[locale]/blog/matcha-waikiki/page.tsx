@@ -932,7 +932,7 @@ export default function MatchaWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/matcha-waikiki.jpeg"
-          alt=""
+          alt="Matcha Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

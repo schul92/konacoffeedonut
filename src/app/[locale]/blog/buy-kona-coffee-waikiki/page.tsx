@@ -932,7 +932,7 @@ export default function BuyKonaCoffeeWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/buy-kona-coffee-waikiki.jpeg"
-          alt=""
+          alt="Buy Kona Coffee Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

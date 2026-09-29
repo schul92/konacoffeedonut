@@ -932,7 +932,7 @@ export default function WhatIsHojichaWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/what-is-hojicha-waikiki.jpeg"
-          alt=""
+          alt="What Is Hojicha Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

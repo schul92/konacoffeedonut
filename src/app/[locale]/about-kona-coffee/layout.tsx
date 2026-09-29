@@ -43,11 +43,13 @@ export async function generateMetadata({
       siteName: 'Kona Coffee Donut',
       locale: localeMap[locale] || 'en_US',
       type: 'article',
+      images: [{ url: '/images/blog/what-is-kona-coffee.jpeg', width: 1376, height: 768, alt: '100% Kona coffee at Kona Coffee Donut? in Waikiki' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: titles[locale] || titles.en,
       description: descriptions[locale] || descriptions.en,
+      images: ['/images/blog/what-is-kona-coffee.jpeg'],
     },
     alternates: {
       canonical: `${siteUrl}/${locale}/about-kona-coffee`,

@@ -932,7 +932,7 @@ export default function BingsuOriginHistoryPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/bingsu-origin-history.jpeg"
-          alt=""
+          alt="Bingsu Origin History — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

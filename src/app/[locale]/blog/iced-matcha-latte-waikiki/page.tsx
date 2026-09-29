@@ -986,7 +986,7 @@ export default function IcedMatchaLatteWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/iced-matcha-latte-waikiki.jpeg"
-          alt=""
+          alt="Iced Matcha Latte Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

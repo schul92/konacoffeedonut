@@ -134,7 +134,7 @@ export default function RevenueBlogPost({ locale, config, content }: Props) {
     name: STORE.name,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '2142 Kalākaua Ave',
+      streetAddress: '2142 Kalakaua Ave',
       addressLocality: 'Honolulu',
       addressRegion: 'HI',
       postalCode: '96815',

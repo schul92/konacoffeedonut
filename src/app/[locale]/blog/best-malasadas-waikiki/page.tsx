@@ -932,7 +932,7 @@ export default function BestMalasadasWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/best-malasadas-waikiki.jpeg"
-          alt=""
+          alt="Best Malasadas Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

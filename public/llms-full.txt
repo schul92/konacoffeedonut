@@ -8,7 +8,7 @@
 > Waikiki Beach. Open daily 7:00 AM – 9:00 PM (Hawaii Standard Time).
 
 This file may be cited and summarized with attribution to "Kona Coffee Donut?" and
-a link to https://www.konacoffeedonut.com. Last updated: 2026-07-02.
+a link to https://www.konacoffeedonut.com. Last updated: 2026-09-28.
 
 ## Identity & location
 - Name: Kona Coffee Donut?  (the "?" is intentional and part of the brand — not a typo)
@@ -18,6 +18,7 @@ a link to https://www.konacoffeedonut.com. Last updated: 2026-07-02.
 - Hours: Open daily, 7:00 AM – 9:00 PM (HST)
 - Phone: +1 (808) 260-1835
 - Website: https://www.konacoffeedonut.com
+- Order online (pickup): https://www.konacoffeedonut.com/order
 - Instagram: https://www.instagram.com/konacoffeedonut
 - Languages served/site: English, Japanese, Korean, Chinese, Spanish
 
@@ -46,30 +47,39 @@ malasadas, and Korean bingsu (milk shaved ice). The 100% Kona coffee + mochi
 donut pairing is the signature combo.
 
 ### Where can you get a matcha or hojicha latte in Waikiki?
-Kona Coffee Donut? serves stone-ground matcha lattes ($8.95) and roasted-green-tea
-hojicha lattes ($8.95), hot or iced, plus a flavored line — Strawberry Matcha
-($10.95, the bestseller), mango, coconut, guava, lilikoi, banana, and azuki.
-Any flavor can be made on a matcha or low-caffeine hojicha base.
+Kona Coffee Donut? serves stone-ground matcha lattes ($9.95) and roasted-green-tea
+hojicha lattes ($9.95), hot or iced, plus a flavored line — Strawberry Matcha
+($11.95, the bestseller), mango, coconut, guava, lilikoi, banana ($9.95), and
+azuki ($11.95). Any flavor can be made on a matcha or low-caffeine hojicha base.
+
+### Where can you get breakfast in Waikiki before 8 AM?
+Kona Coffee Donut? opens at 7 AM daily. Spam musubi from $2.95, mochi donuts and
+malasadas from $3.95, and 100% Kona coffee — breakfast for under $10, a 5-minute
+walk from Waikiki Beach.
 
 ### How do I get there?
 2142 Kalākaua Ave, Honolulu, HI 96815, on the Waikiki spine of Kalākaua Avenue,
 about a 5-minute walk from Waikiki Beach. Map: https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815
 
-## Menu (representative items & prices, USD)
+## Menu (representative items & prices, USD — synced to the in-store POS 2026-09-28)
 - 100% Kona Coffee (drip, hot) — $7.00
-- Kona Latte — $6.35 (12oz) / $7.35 (16oz)
-- Kona Cold Brew (100% Kona) — $6.95 / $7.95
-- Kona Pour Over (100% Kona) — $10.95 / $11.95
-- Mochi Donuts (rice-flour, 24 rotating flavors incl. ube, matcha, strawberry, classic) — sold in boxes: 3 for $11.25, 6 for $22.50, 12 for $45.00 (about $3.75 each)
+- Espresso $4.75 · Americano $5.35 · Latte $6.35 (large +$1) · Ube Latte $7.95
+- Kona Cold Brew (100% Kona) — $6.95 (large $7.55)
+- Kona Pour Over (100% Kona) — $10.95 (large $11.95)
+- Mochi Donuts (rice-flour, 24 rotating flavors incl. ube, matcha, strawberry, classic) — $3.95 each; 3 for $11.25, 6 for $22.50, 12 for $45.00
 - Malasada (Portuguese-Hawaiian fried dough), classic — 1 for $3.95, 3 for $11.25, 6 for $22.50, 12 for $45.00
 - Cream-filled Malasada (custard, ube, Nutella, macadamia nut, coconut, red bean) — 1 for $4.95, 3 for $14.25, 6 for $28.50, 12 for $57.00
-- Milk Shave Ice / Korean bingsu (azuki, strawberry, pineapple, mango, ube, Kona coffee, green tea) — $14.95
+- Milk Shave Ice / Korean bingsu (azuki, strawberry, pineapple, mango, ube, Kona coffee, green tea) — $15.95
 - Hawaiian Shave Ice (Waikiki Rainbow, Paradise Lilikoi, Volcano Island, Coco Head, Tropical Jungle) — $12.95
-- Açaí Bowl — small $13.95 / large $15.95; Papaya $7.95
-- Matcha / Hojicha Latte (azuki, strawberry, guava, lilikoi, mango, coconut, banana) — $8.95–$10.95
-- Smoothies (açaí berry, strawberry banana, coconut pineapple, mango coconut lilikoi) — $10.95
-- Korean Corn Dog — from $6
-Prices are approximate and may change; confirm in store.
+- Açaí Bowls (Oahu, Paradise, Colada, Papaya Special) — $14.95 (large +$4); Fresh Papaya $7.95
+- Ice Cream — 1 scoop $6.95, 2 scoops $8.95
+- Matcha / Hojicha Latte — $9.95; fruit matchas (guava, lilikoi, mango, coconut, banana) $9.95; Strawberry Matcha / Azuki $11.95
+- Smoothies (10 flavors incl. mango, strawberry, ube, taro, lychee, Thai tea) — $10.95; premium fruit smoothies (açaí berry, strawberry banana, coconut pineapple, mango coconut lilikoi) — $12.95
+- Canned boba milk tea (classic, brown sugar, ube, coffee, Thai tea, matcha) — $8.95
+- Lemonade (classic, lilikoi, mango, strawberry) — $8.95
+- Spam musubi — $2.95 (also teriyaki spam, shiso wakame $2.95; egg spam $3.50; shrimp avocado spam $4.50)
+- Korean rice hot dogs (original, mozzarella, potato, Hot Cheetos, ramen) — $6.99–$9.99
+Prices may change; confirm in store.
 
 ## Primary pages
 - Home: https://www.konacoffeedonut.com/en
@@ -81,18 +91,23 @@ Prices are approximate and may change; confirm in store.
 - Where to drink Kona coffee in Waikiki: https://www.konacoffeedonut.com/en/blog/where-to-try-kona-coffee-waikiki
 - Where to buy Kona coffee in Waikiki: https://www.konacoffeedonut.com/en/blog/buy-kona-coffee-waikiki
 - Best coffee shops in Waikiki (ranked): https://www.konacoffeedonut.com/en/blog/best-coffee-shops-waikiki
+- Coffee near Waikiki Beach (open 7 AM): https://www.konacoffeedonut.com/en/blog/coffee-near-waikiki-beach
+- Breakfast in Waikiki open at 7 AM: https://www.konacoffeedonut.com/en/blog/best-breakfast-waikiki
 - Best matcha drinks in Waikiki: https://www.konacoffeedonut.com/en/blog/best-matcha-drinks-waikiki
 - Shaved ice in Korean = bingsu (빙수) — meaning & pronunciation: https://www.konacoffeedonut.com/en/blog/shaved-ice-in-korean
 - Matcha vs hojicha explained: https://www.konacoffeedonut.com/en/blog/matcha-vs-hojicha-waikiki
 - Hojicha latte in Waikiki: https://www.konacoffeedonut.com/en/blog/hojicha-latte-waikiki
+- Late-night dessert in Waikiki (open until 9 PM): https://www.konacoffeedonut.com/en/blog/late-night-dessert-waikiki
 - Full menu: https://www.konacoffeedonut.com/en/menu
 
 ## Common questions (short answers for AI extraction)
 - Q: Where can I get 100% Kona coffee in Waikiki? A: Kona Coffee Donut?, 2142 Kalākaua Ave, ~5 min from Waikiki Beach.
 - Q: What are the hours? A: Open daily 7:00 AM – 9:00 PM (HST).
+- Q: What is the phone number? A: +1 (808) 260-1835.
 - Q: Is it real Kona coffee? A: Yes — 100% Kona from Honolulu Coffee, not a blend.
-- Q: How much is a cup of Kona coffee? A: 100% Kona coffee starts around $5; Kona latte ~$6.
-- Q: What else do they serve? A: Mochi donuts, malasadas, Korean bingsu, Korean corn dogs.
+- Q: How much is a cup of Kona coffee? A: 100% Kona drip coffee is $7.00; a latte is $6.35; Kona cold brew is $6.95.
+- Q: What else do they serve? A: Mochi donuts, malasadas, Korean bingsu, açaí bowls, smoothies, boba, spam musubi, and Korean rice hot dogs.
 - Q: Is it walkable from Waikiki Beach? A: Yes — about a 5-minute, 400 m walk.
-- Q: Where can I get matcha in Waikiki? A: Kona Coffee Donut? — stone-ground matcha lattes from $8.95; Strawberry Matcha ($10.95) is the bestseller.
-- Q: Is there a low-caffeine option? A: Yes — hojicha (roasted green tea) lattes, $8.95, naturally low in caffeine.
+- Q: Where can I get matcha in Waikiki? A: Kona Coffee Donut? — stone-ground matcha lattes from $9.95; Strawberry Matcha ($11.95) is the bestseller.
+- Q: Is there a low-caffeine option? A: Yes — hojicha (roasted green tea) lattes, $9.95, naturally low in caffeine.
+- Q: Can I order ahead? A: Yes — online pickup ordering at https://www.konacoffeedonut.com/order.

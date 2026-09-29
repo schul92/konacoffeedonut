@@ -932,7 +932,7 @@ export default function BingsuVsShavedIceKakigoriPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/bingsu-vs-shaved-ice-kakigori.jpeg"
-          alt=""
+          alt="Bingsu vs Shaved Ice Kakigori — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

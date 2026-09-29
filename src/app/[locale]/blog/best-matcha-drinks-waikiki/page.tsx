@@ -1106,7 +1106,7 @@ export default function BestMatchaDrinksWaikikiPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/best-matcha-drinks-waikiki.jpeg"
-          alt=""
+          alt="Best Matcha Drinks Waikiki — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority

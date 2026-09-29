@@ -932,7 +932,7 @@ export default function IsKonaCoffeeWorthItPage() {
       <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden">
         <Image
           src="/images/blog/is-kona-coffee-worth-it.jpeg"
-          alt=""
+          alt="Is Kona Coffee Worth It — Kona Coffee Donut? in Waikiki"
           fill
           className="object-cover"
           priority
