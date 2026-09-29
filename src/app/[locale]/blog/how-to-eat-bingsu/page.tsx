@@ -96,7 +96,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Practice on a Real Bingsu — On Kalākaua',
       body: "Authentic Korean bingsu with snow-soft milk ice, two spoons, walking distance from Waikiki Beach.",
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -118,7 +118,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '何分かける？', a: '15〜20分が理想。' },
       { q: 'ワイキキでビンス？', a: 'コナコーヒードーナツ（カラカウア通り 2142）で。' },
     ],
-    finalCTA: { headline: '本場のビンスをカラカウアで', body: 'ビーチから徒歩圏内、毎日営業。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: '本場のビンスをカラカウアで', body: 'ビーチから徒歩圏内、毎日営業。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '빙수 제대로 먹는 법', subtitle: '위에서 떠 먹지 말고 비벼 먹으세요. 60초 만에 배우는 정통 빙수 먹는 법 + 와이키키에서 즐기는 곳.', date: '2026년 5월', readTime: '4분 분량', badge: '먹는 법 가이드' },
@@ -139,7 +139,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '얼마나 걸려요?', a: '15–20분이 적당합니다.' },
       { q: '와이키키 어디서?', a: '코나커피도넛(2142 칼라카우아).' },
     ],
-    finalCTA: { headline: '칼라카우아에서 정통 빙수를', body: '비치 도보 거리, 매일 영업.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '칼라카우아에서 정통 빙수를', body: '비치 도보 거리, 매일 영업.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '雪冰的正确吃法（韩国式）', subtitle: '不要从上面挖 — 要拌匀。60秒学会正宗雪冰吃法，加上威基基品尝指南。', date: '2026年5月', readTime: '4分钟', badge: '吃法指南' },
@@ -160,7 +160,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '吃多久？', a: '15–20分钟为佳。' },
       { q: '威基基哪里？', a: 'Kona Coffee Donut（卡拉考阿2142号）。' },
     ],
-    finalCTA: { headline: '在卡拉考阿享受正宗雪冰', body: '距海滩步行可达，每日营业。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '在卡拉考阿享受正宗雪冰', body: '距海滩步行可达，每日营业。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Cómo Comer Bingsu (Al Estilo Coreano)', subtitle: 'No cucharees desde arriba — mezcla. Guía de 60 segundos al estilo coreano.', date: 'Mayo 2026', readTime: '4 min', badge: 'Guía de Consumo' },
@@ -178,7 +178,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Se comparte?', a: 'Sí, es para dos personas.' },
       { q: '¿Dónde en Waikiki?', a: 'Kona Coffee Donut, 2142 Kalākaua Ave.' },
     ],
-    finalCTA: { headline: 'Practica con un Bingsu Real', body: '2142 Kalākaua Ave, a pasos de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Practica con un Bingsu Real', body: '2142 Kalākaua Ave, a pasos de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

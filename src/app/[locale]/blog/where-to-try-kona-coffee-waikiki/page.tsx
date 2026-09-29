@@ -95,7 +95,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Taste Real Kona Coffee on Kalākaua',
       body: 'Honolulu Coffee, multiple brew methods, and beans to take home. A Honolulu Coffee experience in Waikiki.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -115,7 +115,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '豆を持ち帰れますか？', a: 'はい、ホノルルコーヒーを袋売りしています。お土産に最適。' },
       { q: '味は？', a: 'スムース、酸味少なめ、ブラウンシュガー・柑橘・ナッツの香り。' },
     ],
-    finalCTA: { headline: 'カラカウア通りで本物のコナを', body: 'ホノルルコーヒー、複数の抽出方法、豆のお持ち帰りも可能。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'カラカウア通りで本物のコナを', body: 'ホノルルコーヒー、複数の抽出方法、豆のお持ち帰りも可能。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키에서 정통 코나커피 마시는 곳', subtitle: '대형 체인을 넘어 — 칼라카우아 거리에서 호놀룰루 커피를.', date: '2026년 5월 업데이트', readTime: '6분 분량', badge: '커피 가이드' },
@@ -134,7 +134,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '원두 구매 가능?', a: '네, 호놀룰루 커피 판매 중.' },
       { q: '맛은?', a: '부드럽고 산미 낮음, 흑설탕·시트러스·견과류 노트.' },
     ],
-    finalCTA: { headline: '칼라카우아 거리에서 정통 코나를', body: '호놀룰루 커피, 다양한 추출, 원두 판매까지.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '칼라카우아 거리에서 정통 코나를', body: '호놀룰루 커피, 다양한 추출, 원두 판매까지.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基哪里能喝到真正的科纳咖啡', subtitle: '超越大型连锁 — 在卡拉考阿大道找到檀香山咖啡。', date: '2026年5月更新', readTime: '6分钟', badge: '咖啡指南' },
@@ -153,7 +153,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '可以买豆吗？', a: '可以，檀香山咖啡袋装出售。' },
       { q: '味道如何？', a: '顺滑低酸，带黑糖、柑橘、坚果香气。' },
     ],
-    finalCTA: { headline: '在卡拉考阿品尝真正的科纳', body: '檀香山咖啡、多种萃取、咖啡豆销售。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '在卡拉考阿品尝真正的科纳', body: '檀香山咖啡、多种萃取、咖啡豆销售。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Dónde Probar Café Kona Real en Waikiki', subtitle: 'Más allá de las cadenas — Honolulu Coffee en Kalākaua.', date: 'Mayo 2026', readTime: '6 min', badge: 'Guía de Café' },
@@ -170,7 +170,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Diferencia con mezcla?', a: 'La mezcla puede tener solo 10% Kona. 100% es mucho mejor calidad.' },
       { q: '¿Por qué es caro?', a: 'Región de cultivo pequeña, cosecha manual, producción limitada.' },
     ],
-    finalCTA: { headline: 'Café Kona Real en Kalākaua', body: 'Honolulu Coffee, múltiples métodos, granos para llevar.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Café Kona Real en Kalākaua', body: 'Honolulu Coffee, múltiples métodos, granos para llevar.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

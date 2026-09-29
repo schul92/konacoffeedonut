@@ -125,7 +125,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Come Taste the Purple',
       body: 'Ube mochi donuts, malasadas, bingsu, lattes and boba at 2142 Kalākaua Ave. Open 7 AM – 9 PM daily, 5 minutes from the beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -166,7 +166,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '紫色は着色料？', a: 'いいえ。本物のウベはアントシアニン色素で自然に紫色になります。' },
       { q: 'ワイキキでウベはどこで食べられる？', a: 'Kona Coffee Donut（2142 Kalākaua Ave, Honolulu）でウベモチドーナツ、マラサダ、ビンス、ラテ、ボバの5種類。ワイキキビーチから徒歩約5分、毎日7時〜21時。' },
     ],
-    finalCTA: { headline: '紫のスイーツを食べに', body: 'カラカウア通り2142。毎日7時〜21時、ビーチから徒歩5分。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: '紫のスイーツを食べに', body: 'カラカウア通り2142。毎日7時〜21時、ビーチから徒歩5分。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: {
@@ -206,7 +206,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '보라색은 색소인가요?', a: '아니요. 진짜 우베는 안토시아닌 색소 덕분에 자연적으로 보라색입니다.' },
       { q: '와이키키에서 우베는 어디서 먹나요?', a: 'Kona Coffee Donut(2142 Kalākaua Ave, Honolulu)에서 우베 모찌도넛, 말라사다, 빙수, 라떼, 보바 5종. 와이키키 비치에서 도보 약 5분, 매일 7시–21시.' },
     ],
-    finalCTA: { headline: '보라색 디저트 먹으러', body: '칼라카우아 2142. 매일 7시–21시, 비치에서 도보 5분.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '보라색 디저트 먹으러', body: '칼라카우아 2142. 매일 7시–21시, 비치에서 도보 5분.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: {
@@ -246,7 +246,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '紫色是色素吗？', a: '不是。真正的ube因含花青素而天然呈紫色。' },
       { q: '威基基哪里能吃到ube？', a: 'Kona Coffee Donut（2142 Kalākaua Ave, Honolulu）有ube麻糬甜甜圈、马拉萨达、雪冰、拿铁和珍珠奶茶5种。距威基基海滩步行约5分钟，每天7点–21点。' },
     ],
-    finalCTA: { headline: '来尝一口紫色', body: '卡拉考阿大道2142号。每天7点–21点，海滩步行5分钟。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '来尝一口紫色', body: '卡拉考阿大道2142号。每天7点–21点，海滩步行5分钟。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: {
@@ -280,7 +280,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿A qué sabe el ube?', a: 'Dulce y suave, como vainilla, coco y pistacho. Combina muy bien con leche.' },
       { q: '¿Dónde pruebo ube en Waikiki?', a: 'Kona Coffee Donut, 2142 Kalākaua Ave, Honolulu: dona, malasada, bingsu, latte y boba de ube. A 5 minutos de la playa, 7 AM – 9 PM.' },
     ],
-    finalCTA: { headline: 'Ven a probar el morado', body: '2142 Kalākaua Ave. 7 AM – 9 PM todos los días, a 5 minutos de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Ven a probar el morado', body: '2142 Kalākaua Ave. 7 AM – 9 PM todos los días, a 5 minutos de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

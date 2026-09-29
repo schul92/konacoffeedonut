@@ -99,7 +99,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Breakfast Is Ready at 7',
       body: 'Musubi from $2.95, fresh donuts, real Kona coffee. 2142 Kalākaua Ave, every day from 7 AM.',
       visitLabel: 'Visit Us Tomorrow Morning',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -116,7 +116,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'ワイキキで一番安い朝食は？', a: 'スパムむすび$2.95。コーヒーを付けても$10以下。' },
       { q: 'テイクアウトできる？', a: 'すべて可能。ビーチ朝食が朝の人気No.1です。' },
     ],
-    finalCTA: { headline: '朝7時、朝ごはんできてます', body: 'むすび$2.95〜、作りたてドーナツ、本物のコナコーヒー。', visitLabel: '明日の朝どうぞ', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: '朝7時、朝ごはんできてます', body: 'むすび$2.95〜、作りたてドーナツ、本物のコナコーヒー。', visitLabel: '明日の朝どうぞ', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 아침식사, 아침 7시 오픈', subtitle: '모치도넛, 말라사다, 스팸무스비 $2.95부터, 100% 코나커피.', date: '2026년 8월 발행', readTime: '5분 분량', badge: '아침 가이드' },
@@ -132,7 +132,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '와이키키 최저가 아침은?', a: '스팸무스비 $2.95. 커피 추가해도 $10 이하.' },
       { q: '테이크아웃 되나요?', a: '전부 가능. 비치 피크닉 아침이 아침 시간대 인기 1위.' },
     ],
-    finalCTA: { headline: '아침 7시, 준비 완료', body: '무스비 $2.95부터, 갓 만든 도넛, 진짜 코나커피.', visitLabel: '내일 아침 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '아침 7시, 준비 완료', body: '무스비 $2.95부터, 갓 만든 도넛, 진짜 코나커피.', visitLabel: '내일 아침 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基早餐，早上7点开门', subtitle: '麻糬甜甜圈、马拉萨达、午餐肉饭团$2.95起、100%科纳咖啡。', date: '2026年8月发布', readTime: '5分钟', badge: '早餐指南' },
@@ -148,7 +148,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '威基基最便宜的早餐？', a: '午餐肉饭团$2.95，加咖啡也不到$10。' },
       { q: '可以外带吗？', a: '全部可以，海滩野餐早餐是早晨最热门的吃法。' },
     ],
-    finalCTA: { headline: '早上7点，早餐已就绪', body: '饭团$2.95起、现做甜甜圈、真正的科纳咖啡。', visitLabel: '明早来店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '早上7点，早餐已就绪', body: '饭团$2.95起、现做甜甜圈、真正的科纳咖啡。', visitLabel: '明早来店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Desayuno en Waikiki desde las 7 AM', subtitle: 'Mochi donuts, malasadas, spam musubi desde $2.95 y café 100% Kona.', date: 'Agosto 2026', readTime: '5 min', badge: 'Guía de Desayuno' },
@@ -162,7 +162,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Horario?', a: '7 AM a 9 PM todos los días. 2142 Kalakaua Ave.' },
       { q: '¿El desayuno más barato de Waikiki?', a: 'Spam musubi a $2.95 — con café, menos de $10.' },
     ],
-    finalCTA: { headline: 'El desayuno está listo a las 7', body: 'Musubi desde $2.95, donuts frescos, café Kona real.', visitLabel: 'Visítanos mañana', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'El desayuno está listo a las 7', body: 'Musubi desde $2.95, donuts frescos, café Kona real.', visitLabel: 'Visítanos mañana', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

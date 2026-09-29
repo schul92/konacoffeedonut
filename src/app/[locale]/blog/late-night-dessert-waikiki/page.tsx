@@ -112,7 +112,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       {
         q: 'Is there a dessert place in Waikiki open late?',
-        a: 'Yes. Kona Coffee Donut at 2142 Kalākaua Ave, Honolulu, HI 96815 is open 7 AM to 9 PM every day, serving mochi donuts, malasadas, bingsu, sealed boba milk tea cans and Korean corn dogs until close. It is about a 5-minute walk from Waikiki Beach; call (808) 304-1808.',
+        a: 'Yes. Kona Coffee Donut at 2142 Kalākaua Ave, Honolulu, HI 96815 is open 7 AM to 9 PM every day, serving mochi donuts, malasadas, bingsu, sealed boba milk tea cans and Korean corn dogs until close. It is about a 5-minute walk from Waikiki Beach; call (808) 260-1835.',
       },
       {
         q: 'What time does Kona Coffee Donut close?',
@@ -139,7 +139,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Still Open. Come Now.',
       body: 'Kona Coffee Donut, 2142 Kalākaua Ave — dessert until 9 PM every day, 5 minutes from the beach, no reservation needed.',
       visitLabel: 'Visit Tonight',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -187,7 +187,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       {
         q: 'ワイキキで夜遅くまで開いているデザート店は？',
-        a: 'Kona Coffee Donut（2142 Kalākaua Ave, Honolulu）は毎日7時〜21時営業。モチドーナツ、マラサダ、ビンス、缶ボバ、コーンドッグを閉店まで提供。ワイキキビーチから徒歩約5分、電話 (808) 304-1808。',
+        a: 'Kona Coffee Donut（2142 Kalākaua Ave, Honolulu）は毎日7時〜21時営業。モチドーナツ、マラサダ、ビンス、缶ボバ、コーンドッグを閉店まで提供。ワイキキビーチから徒歩約5分、電話 (808) 260-1835。',
       },
       {
         q: '夜にビンスは食べられる？',
@@ -206,7 +206,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'まだ開いています',
       body: 'Kona Coffee Donut、2142 Kalākaua Ave。毎日21時まで、ビーチから徒歩5分。',
       visitLabel: '今夜立ち寄る',
-      callLabel: '電話 (808) 304-1808',
+      callLabel: '電話 (808) 260-1835',
     },
   },
   ko: {
@@ -254,7 +254,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       {
         q: '와이키키에서 밤늦게 여는 디저트 가게는?',
-        a: 'Kona Coffee Donut(2142 Kalākaua Ave, Honolulu)이 매일 7시–21시 영업. 모찌도넛, 말라사다, 빙수, 캔 보바, 핫도그를 마감까지 판매. 와이키키 비치에서 도보 5분, 전화 (808) 304-1808.',
+        a: 'Kona Coffee Donut(2142 Kalākaua Ave, Honolulu)이 매일 7시–21시 영업. 모찌도넛, 말라사다, 빙수, 캔 보바, 핫도그를 마감까지 판매. 와이키키 비치에서 도보 5분, 전화 (808) 260-1835.',
       },
       {
         q: '밤에 빙수 되나요?',
@@ -273,7 +273,7 @@ const content: Record<Locale, BlogContent> = {
       headline: '아직 열려 있어요',
       body: 'Kona Coffee Donut, 2142 Kalākaua Ave. 매일 21시까지, 비치에서 도보 5분.',
       visitLabel: '오늘 밤 방문',
-      callLabel: '전화 (808) 304-1808',
+      callLabel: '전화 (808) 260-1835',
     },
   },
   zh: {
@@ -321,7 +321,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       {
         q: '威基基有晚上开到很晚的甜品店吗？',
-        a: '有。Kona Coffee Donut（2142 Kalākaua Ave, Honolulu）每天7点–21点营业，麻糬甜甜圈、马拉萨达、刨冰、罐装珍珠奶茶、韩式热狗供应到关门。距威基基海滩步行5分钟，电话 (808) 304-1808。',
+        a: '有。Kona Coffee Donut（2142 Kalākaua Ave, Honolulu）每天7点–21点营业，麻糬甜甜圈、马拉萨达、刨冰、罐装珍珠奶茶、韩式热狗供应到关门。距威基基海滩步行5分钟，电话 (808) 260-1835。',
       },
       {
         q: '晚上能吃到刨冰吗？',
@@ -340,7 +340,7 @@ const content: Record<Locale, BlogContent> = {
       headline: '现在还开着',
       body: 'Kona Coffee Donut，2142 Kalākaua Ave。每天到21点，离海滩步行5分钟。',
       visitLabel: '今晚就来',
-      callLabel: '致电 (808) 304-1808',
+      callLabel: '致电 (808) 260-1835',
     },
   },
   es: {
@@ -379,7 +379,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       {
         q: '¿Hay postres abiertos hasta tarde en Waikiki?',
-        a: 'Sí. Kona Coffee Donut (2142 Kalākaua Ave, Honolulu) abre todos los días de 7 AM a 9 PM con mochi donuts, malasadas, bingsu y boba en lata hasta el cierre. A 5 minutos de Waikiki Beach; tel. (808) 304-1808.',
+        a: 'Sí. Kona Coffee Donut (2142 Kalākaua Ave, Honolulu) abre todos los días de 7 AM a 9 PM con mochi donuts, malasadas, bingsu y boba en lata hasta el cierre. A 5 minutos de Waikiki Beach; tel. (808) 260-1835.',
       },
       {
         q: '¿Puedo pedir bingsu de noche?',
@@ -394,7 +394,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Todavía abierto',
       body: 'Kona Coffee Donut, 2142 Kalākaua Ave. Hasta las 9 PM todos los días, a 5 minutos de la playa.',
       visitLabel: 'Ven esta noche',
-      callLabel: 'Llama (808) 304-1808',
+      callLabel: 'Llama (808) 260-1835',
     },
   },
 };

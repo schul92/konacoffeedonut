@@ -58,8 +58,8 @@ const STORE = {
   name: 'Kona Coffee Donut',
   address: '2142 Kalākaua Ave, Honolulu, HI 96815',
   hoursShort: '7 AM – 9 PM Daily',
-  phone: '(808) 304-1808',
-  phoneTel: '+18083041808',
+  phone: '(808) 260-1835',
+  phoneTel: '+18082601835',
   mapUrl: 'https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815',
 };
 

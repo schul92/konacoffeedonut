@@ -89,7 +89,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Grab a Musubi on Kalākaua',
       body: 'Five varieties from $2.95, made fresh daily. Open 7 AM – 9 PM, steps from the beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -106,7 +106,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'ベジタリアン向けは？', a: 'しそわかめむすび($2.95)はスパムなし。' },
       { q: '何時から買える？', a: '毎日朝7時から。朝食に最適です。' },
     ],
-    finalCTA: { headline: 'カラカウアでむすびを', body: '5種類$2.95〜、毎日作りたて。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'カラカウアでむすびを', body: '5種類$2.95〜、毎日作りたて。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 스팸무스비, $2.95부터', subtitle: '하와이 국민 간식을 매일 매장에서 직접. 5종.', date: '2026년 8월 발행', readTime: '4분 분량', badge: '무스비 가이드' },
@@ -122,7 +122,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '채식 옵션은?', a: '시소와카메 무스비($2.95)는 스팸 없이 시소+미역 밥.' },
       { q: '몇 시부터?', a: '매일 아침 7시부터. 아침식사로 최고.' },
     ],
-    finalCTA: { headline: '칼라카우아에서 무스비 하나', body: '5종 $2.95부터, 매일 직접 제조.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '칼라카우아에서 무스비 하나', body: '5종 $2.95부터, 매일 직접 제조.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基午餐肉饭团，$2.95起', subtitle: '夏威夷国民小吃，每天店内现做，5种口味。', date: '2026年8月发布', readTime: '4分钟', badge: '饭团指南' },
@@ -138,7 +138,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '有素食吗？', a: '紫苏海带饭团($2.95)不含午餐肉。' },
       { q: '几点开始卖？', a: '每天早7点起，早餐首选。' },
     ],
-    finalCTA: { headline: '来卡拉考阿吃个饭团', body: '5种口味$2.95起，每天现做。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '来卡拉考阿吃个饭团', body: '5种口味$2.95起，每天现做。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Spam Musubi en Waikiki desde $2.95', subtitle: 'El snack favorito de Hawái, hecho fresco a diario — cinco variedades.', date: 'Agosto 2026', readTime: '4 min', badge: 'Guía de Musubi' },
@@ -152,7 +152,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Precio?', a: 'Desde $2.95; huevo $3.50; camarón-aguacate $4.50.' },
       { q: '¿Opción vegetariana?', a: 'Shiso Wakame ($2.95), sin spam.' },
     ],
-    finalCTA: { headline: 'Tu musubi en Kalākaua', body: 'Cinco variedades desde $2.95, frescas a diario.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Tu musubi en Kalākaua', body: 'Cinco variedades desde $2.95, frescas a diario.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

@@ -181,7 +181,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Start the List on Kalākaua Ave',
       body: 'Malasadas, mochi donuts, bingsu, açaí bowls, Korean corn dogs and 100% Kona coffee — fresh daily, 7 AM–9 PM, two blocks from the beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -218,7 +218,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'シェイブアイスとビンスの違いは？', a: 'シェイブアイスは水の氷+シロップ、ビンスはミルク氷+トッピングでクリーミー。' },
       { q: '車なしで回れる？', a: 'はい。すべてカラカウア通り、クヒオ通り、カパフル通り徒歩圏です。' },
     ],
-    finalCTA: { headline: 'まずはカラカウア通りから', body: 'マラサダ、モチドーナツ、ビンス、アサイー、韓国コーンドッグ、100%コナコーヒー。毎日7時〜21時。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'まずはカラカウア通りから', body: 'マラサダ、モチドーナツ、ビンス、アサイー、韓国コーンドッグ、100%コナコーヒー。毎日7時〜21時。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: {
@@ -254,7 +254,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '셰이브 아이스와 빙수 차이?', a: '셰이브 아이스는 물 얼음+시럽, 빙수는 우유 얼음+토핑으로 크리미.' },
       { q: '차 없이 가능?', a: '네. 전부 칼라카우아, 쿠히오, 카파훌루 도보 거리.' },
     ],
-    finalCTA: { headline: '칼라카우아에서 시작하세요', body: '말라사다, 모찌도넛, 빙수, 아사이, 한국 핫도그, 100% 코나 커피. 매일 7AM–9PM.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '칼라카우아에서 시작하세요', body: '말라사다, 모찌도넛, 빙수, 아사이, 한국 핫도그, 100% 코나 커피. 매일 7AM–9PM.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: {
@@ -290,7 +290,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '刨冰和雪冰的区别？', a: '刨冰是水冰加糖浆，雪冰是牛奶冰加配料，更绵密。' },
       { q: '不开车能吃到吗？', a: '可以，全部在卡拉卡瓦、库希奥、Kapahulu步行范围内。' },
     ],
-    finalCTA: { headline: '从卡拉卡瓦大道开始', body: '马拉萨达、麻糬甜甜圈、雪冰、巴西莓、韩式热狗、100%科纳咖啡。每天7AM–9PM。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '从卡拉卡瓦大道开始', body: '马拉萨达、麻糬甜甜圈、雪冰、巴西莓、韩式热狗、100%科纳咖啡。每天7AM–9PM。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: {
@@ -326,7 +326,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Shave ice o bingsu?', a: 'Shave ice: hielo de agua con jarabe. Bingsu: hielo de leche con toppings, cremoso.' },
       { q: '¿Se puede sin coche?', a: 'Sí, todo está a pie en Kalākaua, Kūhiō o Kapahulu.' },
     ],
-    finalCTA: { headline: 'Empieza la lista en Kalākaua Ave', body: 'Malasadas, mochi donuts, bingsu, açaí, corn dogs coreanos y café 100% Kona. 7 AM–9 PM.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Empieza la lista en Kalākaua Ave', body: 'Malasadas, mochi donuts, bingsu, açaí, corn dogs coreanos y café 100% Kona. 7 AM–9 PM.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

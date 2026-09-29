@@ -114,7 +114,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Skip the Search — Bingsu Is Right Here in Waikiki',
       body: "Authentic Korean bingsu, fresh ingredients, and the only walkable spot from Waikiki Beach. Stop by today.",
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -189,7 +189,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'ワイキキで本場のビンスを',
       body: 'カラカウア通り 2142、ワイキキビーチから徒歩圏内。今日お越しください。',
       visitLabel: '今日来店する',
-      callLabel: '電話 (808) 304-1808',
+      callLabel: '電話 (808) 260-1835',
     },
   },
   ko: {
@@ -264,7 +264,7 @@ const content: Record<Locale, BlogContent> = {
       headline: '와이키키에서 정통 빙수를 즐기세요',
       body: '2142 칼라카우아 거리, 와이키키 비치에서 도보 거리. 오늘 방문해보세요.',
       visitLabel: '오늘 방문하기',
-      callLabel: '전화 (808) 304-1808',
+      callLabel: '전화 (808) 260-1835',
     },
   },
   zh: {
@@ -328,7 +328,7 @@ const content: Record<Locale, BlogContent> = {
       headline: '在威基基享受正宗雪冰',
       body: '卡拉考阿大道 2142 号，距威基基海滩仅几步之遥。今天就来吧。',
       visitLabel: '立即到店',
-      callLabel: '致电 (808) 304-1808',
+      callLabel: '致电 (808) 260-1835',
     },
   },
   es: {
@@ -376,7 +376,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Bingsu Auténtico en Waikiki',
       body: 'Kalākaua Avenue 2142, a pasos de la playa.',
       visitLabel: 'Visítanos Hoy',
-      callLabel: 'Llama (808) 304-1808',
+      callLabel: 'Llama (808) 260-1835',
     },
   },
 };

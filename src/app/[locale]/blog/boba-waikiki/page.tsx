@@ -96,7 +96,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Your Boba Is Waiting on Kalākaua',
       body: 'Six flavors, $8.95, sealed to go. Open 7 AM – 9 PM daily, steps from the beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -113,7 +113,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'ビーチに持って行ける？', a: '密封缶なので持ち運びに最適。ビーチまで徒歩5分。' },
       { q: 'カフェインなしは？', a: 'ウベと黒糖はカフェインフリー。' },
     ],
-    finalCTA: { headline: 'カラカウア通りでボバを', body: '6種類$8.95、密封テイクアウト。毎日7時〜21時。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'カラカウア通りでボバを', body: '6種類$8.95、密封テイクアウト。毎日7時〜21時。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 보바는 Mochi Land', subtitle: '캔 보바 밀크티 6종, 전부 $8.95.', date: '2026년 8월 발행', readTime: '4분 분량', badge: '보바 가이드' },
@@ -129,7 +129,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '비치에 들고 갈 수 있나요?', a: '밀봉 캔이라 최적. 비치까지 도보 5분.' },
       { q: '카페인 없는 메뉴는?', a: '우베와 흑당이 카페인프리.' },
     ],
-    finalCTA: { headline: '칼라카우아에서 보바 한 캔', body: '6종 $8.95, 밀봉 테이크아웃. 매일 7시–21시.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '칼라카우아에서 보바 한 캔', body: '6종 $8.95, 밀봉 테이크아웃. 매일 7시–21시.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基珍珠奶茶指南 — Mochi Land', subtitle: '罐装珍珠奶茶6种口味，均价$8.95。', date: '2026年8月发布', readTime: '4分钟', badge: '奶茶指南' },
@@ -145,7 +145,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '能带去海滩吗？', a: '密封罐装最适合外带，海滩步行5分钟。' },
       { q: '有无咖啡因选择吗？', a: '紫薯和黑糖不含咖啡因。' },
     ],
-    finalCTA: { headline: '卡拉考阿大道的珍珠奶茶', body: '6种口味$8.95，密封外带。每天7点–21点。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '卡拉考阿大道的珍珠奶茶', body: '6种口味$8.95，密封外带。每天7点–21点。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Boba en Waikiki: Guía Mochi Land', subtitle: 'Seis tés con boba en lata, todos a $8.95.', date: 'Agosto 2026', readTime: '4 min', badge: 'Guía de Boba' },
@@ -159,7 +159,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Precio?', a: 'Todos los boba milk teas en lata cuestan $8.95.' },
       { q: '¿Puedo llevarlo a la playa?', a: 'Sí — la lata sellada viaja perfecto. La playa está a 5 minutos.' },
     ],
-    finalCTA: { headline: 'Tu boba te espera en Kalākaua', body: 'Seis sabores, $8.95, sellado para llevar.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Tu boba te espera en Kalākaua', body: 'Seis sabores, $8.95, sellado para llevar.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

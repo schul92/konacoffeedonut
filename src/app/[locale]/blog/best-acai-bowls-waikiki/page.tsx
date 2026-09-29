@@ -97,7 +97,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Fresh Acai Bowl + Kona Coffee = Perfect Waikiki Morning',
       body: 'Walking distance from Waikiki Beach. Thick acai, fresh toppings, open from 7 AM.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -117,7 +117,7 @@ const content: Record<Locale, BlogContent> = {
       { q: 'アサイーとは？', a: 'アマゾン産の紫色のベリー。' },
       { q: '健康的？', a: 'はい、栄養豊富です。' },
     ],
-    finalCTA: { headline: 'アサイーボウル+コナコーヒー', body: 'ビーチから徒歩、朝7時から営業。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: 'アサイーボウル+コナコーヒー', body: 'ビーチから徒歩、朝7時から営業。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 베스트 아사이볼', subtitle: '신선하게 블렌딩한 진한 아사이.', date: '2026년 5월', readTime: '5분', badge: '건강식' },
@@ -135,7 +135,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '가격?', a: '$10-14.' },
       { q: '아사이란?', a: '아마존산 보라색 베리.' },
     ],
-    finalCTA: { headline: '아사이볼+코나커피', body: '비치 도보, 오전 7시 영업.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '아사이볼+코나커피', body: '비치 도보, 오전 7시 영업.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基最佳巴西莓碗', subtitle: '新鲜调制的浓郁巴西莓。', date: '2026年5月', readTime: '5分钟', badge: '健康饮食' },
@@ -153,7 +153,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '价格？', a: '$10-14。' },
       { q: '什么是巴西莓？', a: '亚马逊紫色浆果。' },
     ],
-    finalCTA: { headline: '巴西莓碗+科纳咖啡', body: '海滩步行可达，早7点营业。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '巴西莓碗+科纳咖啡', body: '海滩步行可达，早7点营业。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Mejores Acai Bowls en Waikiki', subtitle: 'Acai mezclado fresco, espeso y con toppings.', date: 'Mayo 2026', readTime: '5 min', badge: 'Saludable' },
@@ -171,7 +171,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Precio?', a: '$10-14.' },
       { q: '¿Qué es acai?', a: 'Una baya morada del Amazonas.' },
     ],
-    finalCTA: { headline: 'Acai Bowl + Café Kona', body: 'Cerca de la playa, 7 AM.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Acai Bowl + Café Kona', body: 'Cerca de la playa, 7 AM.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

@@ -117,7 +117,7 @@ const content: Record<Locale, BlogContent> = {
       headline: 'Your Next Smoothie Is on Kalākaua',
       body: '10 Hawaiian flavors, $10.95 across the board, blended fresh. Walking distance from the beach.',
       visitLabel: 'Visit Us Today',
-      callLabel: 'Call (808) 304-1808',
+      callLabel: 'Call (808) 260-1835',
     },
   },
   ja: {
@@ -136,7 +136,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '営業時間は？', a: '毎日朝7時〜夜9時。' },
       { q: '人気フレーバーは？', a: 'マンゴーが定番、ウベやブラウンシュガーも人気。' },
     ],
-    finalCTA: { headline: '今日のスムージーをカラカウア通りで', body: '10種類$10.95、ビーチから徒歩圏内。', visitLabel: '今日来店', callLabel: '電話 (808) 304-1808' },
+    finalCTA: { headline: '今日のスムージーをカラカウア通りで', body: '10種類$10.95、ビーチから徒歩圏内。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
   ko: {
     hero: { title: '와이키키 베스트 스무디 10선', subtitle: 'Mochi Land 전 메뉴 균일가 $10.95.', date: '2026년 8월 업데이트', readTime: '5분 분량', badge: '스무디 가이드' },
@@ -154,7 +154,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '영업시간은?', a: '매일 오전 7시 – 오후 9시.' },
       { q: '인기 메뉴는?', a: '망고가 베스트, 우베·흑당도 인기.' },
     ],
-    finalCTA: { headline: '오늘의 스무디는 칼라카우아에서', body: '10종 $10.95, 비치 도보 거리.', visitLabel: '오늘 방문', callLabel: '전화 (808) 304-1808' },
+    finalCTA: { headline: '오늘의 스무디는 칼라카우아에서', body: '10종 $10.95, 비치 도보 거리.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
   zh: {
     hero: { title: '威基基最佳奶昔10选', subtitle: 'Mochi Land 全部口味均价 $10.95。', date: '2026年8月更新', readTime: '5分钟', badge: '奶昔指南' },
@@ -172,7 +172,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '营业时间？', a: '每天早7点至晚9点。' },
       { q: '最受欢迎口味？', a: '芒果是经典，紫薯和黑糖最有特色。' },
     ],
-    finalCTA: { headline: '今天的奶昔在卡拉考阿', body: '10种$10.95，海滩步行可达。', visitLabel: '立即到店', callLabel: '致电 (808) 304-1808' },
+    finalCTA: { headline: '今天的奶昔在卡拉考阿', body: '10种$10.95，海滩步行可达。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },
   es: {
     hero: { title: 'Mejores Smoothies en Waikiki', subtitle: '10 sabores Mochi Land, todos a $10.95.', date: 'Agosto 2026', readTime: '5 min', badge: 'Guía de Smoothies' },
@@ -188,7 +188,7 @@ const content: Record<Locale, BlogContent> = {
       { q: '¿Tienen boba?', a: 'Algunos sí, otros no. Se puede ajustar.' },
       { q: '¿Horario?', a: '7 AM a 9 PM diariamente.' },
     ],
-    finalCTA: { headline: 'Tu Próximo Smoothie en Kalākaua', body: '10 sabores, $10.95, a pasos de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 304-1808' },
+    finalCTA: { headline: 'Tu Próximo Smoothie en Kalākaua', body: '10 sabores, $10.95, a pasos de la playa.', visitLabel: 'Visítanos', callLabel: 'Llama (808) 260-1835' },
   },
 };
 

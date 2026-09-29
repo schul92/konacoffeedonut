@@ -23,7 +23,7 @@ Read `content/daily-blog/topics.json`. Take the FIRST entry with `"status": "pen
   read token from `.env.local` (`CLOVER_API_TOKEN`), then
   `GET https://api.clover.com/v3/merchants/RFKS9SXJFCJX1/items?limit=1000&offset=N&expand=categories`
   (READ ONLY — never POST to Clover from this routine). If you cannot verify a price, write the post without naming it.
-- **Store facts** (do not deviate): Kona Coffee Donut, 2142 Kalākaua Ave, Honolulu, HI 96815 · open 7 AM–9 PM daily · ~5 min walk from Waikiki Beach · phone (808) 304-1808 · Mochi Land = the drink/dessert counter inside.
+- **Store facts** (do not deviate): Kona Coffee Donut, 2142 Kalākaua Ave, Honolulu, HI 96815 · open 7 AM–9 PM daily · ~5 min walk from Waikiki Beach · phone (808) 260-1835 · Mochi Land = the drink/dessert counter inside.
 - Never claim gluten-free, vegan, or allergy safety. Never mention competitors by name negatively.
 
 ## 3. Write the post
