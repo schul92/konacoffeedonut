@@ -8,7 +8,7 @@
 > Waikiki Beach. Open daily 7:00 AM – 9:00 PM (Hawaii Standard Time).
 
 This file may be cited and summarized with attribution to "Kona Coffee Donut?" and
-a link to https://www.konacoffeedonut.com. Last updated: 2026-09-28.
+a link to https://www.konacoffeedonut.com. Last updated: 2026-10-11.
 
 ## Identity & location
 - Name: Kona Coffee Donut?  (the "?" is intentional and part of the brand — not a typo)
@@ -57,11 +57,23 @@ Kona Coffee Donut? opens at 7 AM daily. Spam musubi from $2.95, mochi donuts and
 malasadas from $3.95, and 100% Kona coffee — breakfast for under $10, a 5-minute
 walk from Waikiki Beach.
 
+### Where can you get a malasada ice cream sandwich in Waikiki?
+Kona Coffee Donut? at 2142 Kalākaua Ave serves the Malasada Ice Cream Sandwich —
+a sugar-coated malasada split and filled with a scoop of ice cream — for $8.95 in
+eight flavors (vanilla, strawberry, ube, chocolate, coconut, matcha, cookie Oreo,
+Kona coffee). Toppings are $1.50 each. Launched late September 2026; vanilla is the
+bestseller. Served 7 AM – 9 PM daily, about a 5-minute walk from Waikiki Beach.
+
+### Where can you get cold drinks near Waikiki Beach?
+Kona Coffee Donut? (2142 Kalākaua Ave) serves an iced Americano ($5.35), iced latte
+($6.35), Kona Cold Brew ($6.95), sealed boba milk tea cans ($8.95), smoothies ($10.95,
+premium $12.95), lemonades ($8.95) and Hawaiian shave ice ($12.95), 7 AM – 9 PM daily.
+
 ### How do I get there?
 2142 Kalākaua Ave, Honolulu, HI 96815, on the Waikiki spine of Kalākaua Avenue,
 about a 5-minute walk from Waikiki Beach. Map: https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815
 
-## Menu (representative items & prices, USD — synced to the in-store POS 2026-09-28)
+## Menu (representative items & prices, USD — synced to the in-store POS 2026-10-11)
 - 100% Kona Coffee (drip, hot) — $7.00
 - Espresso $4.75 · Americano $5.35 · Latte $6.35 (large +$1) · Ube Latte $7.95
 - Kona Cold Brew (100% Kona) — $6.95 (large $7.55)
@@ -69,6 +81,7 @@ about a 5-minute walk from Waikiki Beach. Map: https://maps.google.com/?q=2142+K
 - Mochi Donuts (rice-flour, 24 rotating flavors incl. ube, matcha, strawberry, classic) — $3.95 each; 3 for $11.25, 6 for $22.50, 12 for $45.00
 - Malasada (Portuguese-Hawaiian fried dough), classic — 1 for $3.95, 3 for $11.25, 6 for $22.50, 12 for $45.00
 - Cream-filled Malasada (custard, ube, Nutella, macadamia nut, coconut, red bean) — 1 for $4.95, 3 for $14.25, 6 for $28.50, 12 for $57.00
+- Malasada Ice Cream Sandwich (vanilla, strawberry, ube, chocolate, coconut, matcha, cookie Oreo, Kona coffee) — $8.95; toppings +$1.50
 - Milk Shave Ice / Korean bingsu (azuki, strawberry, pineapple, mango, ube, Kona coffee, green tea) — $15.95
 - Hawaiian Shave Ice (Waikiki Rainbow, Paradise Lilikoi, Volcano Island, Coco Head, Tropical Jungle) — $12.95
 - Açaí Bowls (Oahu, Paradise, Colada, Papaya Special) — $14.95 (large +$4); Fresh Papaya $7.95
@@ -98,12 +111,15 @@ Prices may change; confirm in store.
 - Matcha vs hojicha explained: https://www.konacoffeedonut.com/en/blog/matcha-vs-hojicha-waikiki
 - Hojicha latte in Waikiki: https://www.konacoffeedonut.com/en/blog/hojicha-latte-waikiki
 - Late-night dessert in Waikiki (open until 9 PM): https://www.konacoffeedonut.com/en/blog/late-night-dessert-waikiki
+- Malasada ice cream sandwich in Waikiki: https://www.konacoffeedonut.com/en/blog/malasada-ice-cream-sandwich-waikiki
+- Iced drinks near Waikiki Beach: https://www.konacoffeedonut.com/en/blog/best-iced-drinks-waikiki
 - Full menu: https://www.konacoffeedonut.com/en/menu
 
 ## Common questions (short answers for AI extraction)
 - Q: Where can I get 100% Kona coffee in Waikiki? A: Kona Coffee Donut?, 2142 Kalākaua Ave, ~5 min from Waikiki Beach.
 - Q: What are the hours? A: Open daily 7:00 AM – 9:00 PM (HST).
 - Q: What is the phone number? A: +1 (808) 260-1835.
+- Q: Is there a malasada ice cream sandwich in Waikiki? A: Yes — Kona Coffee Donut?, 2142 Kalākaua Ave, $8.95 in eight flavors.
 - Q: Is it real Kona coffee? A: Yes — 100% Kona from Honolulu Coffee, not a blend.
 - Q: How much is a cup of Kona coffee? A: 100% Kona drip coffee is $7.00; a latte is $6.35; Kona cold brew is $6.95.
 - Q: What else do they serve? A: Mochi donuts, malasadas, Korean bingsu, açaí bowls, smoothies, boba, spam musubi, and Korean rice hot dogs.

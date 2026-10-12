@@ -232,7 +232,7 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
     '@type': 'Menu',
     '@id': 'https://www.konacoffeedonut.com/#menu',
     name: 'Kona Coffee Donut Menu',
-    description: 'Our selection of artisan mochi donuts, Kona coffee, malasada, bingsu, and more',
+    description: 'Mochi donuts, 100% Kona coffee, malasadas, malasada ice cream sandwiches, shave ice and bingsu, acai bowls, smoothies, boba and Korean corn dogs',
     hasMenuSection: [
       {
         '@type': 'MenuSection',
@@ -274,22 +274,61 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
       {
         '@type': 'MenuSection',
         name: 'Malasada',
-        description: 'Hawaiian-Portuguese fried dough pastries',
+        description: 'Hawaiian-Portuguese fried dough pastries, classic or cream-filled',
+        hasMenuItem: [
+          { '@type': 'MenuItem', name: 'Classic Malasada', description: 'Sugar-coated malasada: original, cinnamon or ube.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '3.95', availability: 'https://schema.org/InStock' } },
+          { '@type': 'MenuItem', name: 'Cream Malasada', description: 'Malasada filled with custard, ube cream, Nutella, macadamia nut, coconut or red bean.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '4.95', availability: 'https://schema.org/InStock' } },
+        ],
       },
       {
         '@type': 'MenuSection',
-        name: 'Bingsu',
-        description: 'Hawaiian style bingsu with fresh fruits',
+        name: 'Malasada Ice Cream Sandwich',
+        description: 'A sugar-coated malasada split and filled with a scoop of ice cream; toppings +$1.50',
+        hasMenuItem: [
+          { '@type': 'MenuItem', name: 'Malasada Ice Cream Sandwich', description: 'Choice of vanilla, strawberry, ube, chocolate, coconut, matcha, cookie Oreo or Kona coffee ice cream.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '8.95', availability: 'https://schema.org/InStock' } },
+        ],
+      },
+      {
+        '@type': 'MenuSection',
+        name: 'Shave Ice & Bingsu',
+        description: 'Hawaiian shave ice and Korean milk bingsu',
+        hasMenuItem: [
+          { '@type': 'MenuItem', name: 'Hawaiian Shave Ice', description: 'Waikiki Rainbow, Paradise Lilikoi, Volcano Island, Coco Head or Tropical Jungle.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '12.95', availability: 'https://schema.org/InStock' } },
+          { '@type': 'MenuItem', name: 'Milk Bingsu', description: 'Korean shaved-milk ice: azuki bean, strawberry, pineapple, mango, ube, Kona coffee or green tea.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '15.95', availability: 'https://schema.org/InStock' } },
+        ],
+      },
+      {
+        '@type': 'MenuSection',
+        name: 'Acai Bowls',
+        description: 'Thick-blended acai bowls with fruit and granola',
+        hasMenuItem: [
+          { '@type': 'MenuItem', name: 'Acai Bowl', description: 'Oahu, Paradise, Colada or Papaya Special.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '14.95', availability: 'https://schema.org/InStock' } },
+        ],
       },
       {
         '@type': 'MenuSection',
         name: 'Korean Corn Dogs',
-        description: 'Crispy Korean-style corn dogs',
+        description: 'Crispy Korean-style rice hot dogs',
+        hasMenuItem: [
+          { '@type': 'MenuItem', name: 'Korean Rice Hot Dog', description: 'Original, mozzarella, potato, Hot Cheetos or ramen coating.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '6.99', availability: 'https://schema.org/InStock' } },
+        ],
       },
       {
         '@type': 'MenuSection',
         name: 'Smoothies',
-        description: 'Fresh tropical fruit smoothies',
+        description: 'Tropical fruit and milk-tea smoothies; add boba +$1.95',
+        hasMenuItem: [
+          { '@type': 'MenuItem', name: 'Smoothie', description: 'Mango, strawberry, pina colada, lychee, coconut, ube, taro, Thai tea, milk tea, brown sugar, chai or coffee.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '10.95', availability: 'https://schema.org/InStock' } },
+          { '@type': 'MenuItem', name: 'Premium Fruit Smoothie', description: 'Acai berry, strawberry banana, coconut pineapple or mango coconut lilikoi.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '12.95', availability: 'https://schema.org/InStock' } },
+        ],
+      },
+      {
+        '@type': 'MenuSection',
+        name: 'Boba Milk Tea',
+        description: 'Sealed boba milk tea cans with brown-sugar tapioca pearls',
+        hasMenuItem: [
+          { '@type': 'MenuItem', name: 'Boba Milk Tea Can', description: 'Classic, brown sugar, ube, coffee, Thai tea or matcha.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '8.95', availability: 'https://schema.org/InStock' } },
+        ],
       },
     ],
   };

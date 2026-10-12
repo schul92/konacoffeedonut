@@ -27,6 +27,14 @@ const DRINK_ADDONS: MenuAddOn[] = [
   { label: 'Oat Milk', price: '1.00' },
   { label: 'Latte Foam', price: '1.00' },
 ];
+// Malasada Ice Cream Sandwich toppings — the "ADD A TOPPING +$1.50" panel.
+const SANDWICH_TOPPINGS: MenuAddOn[] = [
+  { label: 'Strawberry Pebble', price: '1.50' },
+  { label: 'Choco Pebble', price: '1.50' },
+  { label: 'Sprinkles', price: '1.50' },
+  { label: 'Frosted', price: '1.50' },
+  { label: 'M&M', price: '1.50' },
+];
 // Shave ice / bingsu — the "ADDITION + 1.95" panel.
 const SHAVE_ICE_ADDONS: MenuAddOn[] = [
   { label: 'Mochi', price: '1.95' },
@@ -40,6 +48,7 @@ export interface MenuItemCategory {
   id:
     | 'donuts'
     | 'malasada'
+    | 'sandwich'
     | 'coffee'
     | 'matcha'
     | 'smoothies'
@@ -75,6 +84,7 @@ const donutItem = (name: string) => `/images/menu/items/mochinut/cutouts/${name}
 const geminiItem = (category: string) => (name: string) =>
   `/images/menu/items/gemini/${category}/cutouts/${name}.webp`;
 const malasadaItem = geminiItem('malasada');
+const sandwichItem = geminiItem('sandwich');
 const coffeeItem = geminiItem('coffee');
 const matchaItem = geminiItem('matcha');
 const smoothieItem = geminiItem('smoothies');
@@ -138,6 +148,23 @@ export const menuItemCategories: MenuItemCategory[] = [
       { name: 'Coconut', image: malasadaItem('malasada-coconut'), price: '1PC 4.95 / 3PC 14.25 / 6PC 28.50 / 12PC 57.00' },
       { name: 'Red Bean', image: malasadaItem('malasada-red-bean'), price: '1PC 4.95 / 3PC 14.25 / 6PC 28.50 / 12PC 57.00' },
     ],
+  },
+  {
+    // New Sep 29, 2026. Flavors/prices match the overhead board and the Clover
+    // "MALASADA ICE CREAM SANDWICH" category; images are cut from Steve's board art.
+    id: 'sandwich',
+    title: 'Malasada Ice Cream Sandwich',
+    items: [
+      { name: 'Vanilla', image: sandwichItem('sandwich-vanilla'), price: '8.95' },
+      { name: 'Strawberry', image: sandwichItem('sandwich-strawberry'), price: '8.95' },
+      { name: 'Ube', image: sandwichItem('sandwich-ube'), price: '8.95' },
+      { name: 'Chocolate', image: sandwichItem('sandwich-chocolate'), price: '8.95' },
+      { name: 'Coconut', image: sandwichItem('sandwich-coconut'), price: '8.95' },
+      { name: 'Matcha', image: sandwichItem('sandwich-matcha'), price: '8.95' },
+      { name: 'Cookie Oreo', image: sandwichItem('sandwich-cookie-oreo'), price: '8.95' },
+      { name: 'Kona Coffee', image: sandwichItem('sandwich-kona-coffee'), price: '8.95' },
+    ],
+    addOns: SANDWICH_TOPPINGS,
   },
   {
     id: 'coffee',
@@ -260,6 +287,7 @@ export const menuItemCategories: MenuItemCategory[] = [
 export const categoryFallbackImage: Record<MenuItemCategory['id'], string> = {
   donuts: DONUT,
   malasada: MALASADA_IMG,
+  sandwich: MALASADA_IMG,
   coffee: COFFEE,
   matcha: COFFEE,
   smoothies: ACAI_IMG,
