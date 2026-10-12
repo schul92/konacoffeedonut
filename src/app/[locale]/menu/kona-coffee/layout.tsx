@@ -12,8 +12,8 @@ export async function generateMetadata({
   // Titles without site name - parent template adds "| Kona Coffee Donut®..."
   const metadata: Record<string, { title: string; description: string }> = {
     en: {
-      title: "100% Kona Coffee Available in Waikiki",
-      description: "Order Kona coffee in Waikiki — espresso, drip, iced coffee, and lattes. 100% Kona coffee available with fresh donuts near Waikiki Beach on Kalākaua Ave.",
+      title: "Kona Coffee Menu & Prices in Waikiki: 100% Kona From $7",
+      description: "Our Kona coffee menu: 100% Kona drip $7, Kona Cold Brew $6.95, pour over $10.95, lattes $6.35, espresso $4.75. 2142 Kalākaua Ave, Waikiki, open 7 AM–9 PM.",
     },
     ja: {
       title: "ワイキキで100%コナコーヒーも楽しめるカフェ",

@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/iced-matcha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/hojicha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     // Sep 2026 batch (published Sep 9, 2026)
-    '/blog': new Date('2026-09-15T00:00:00.000Z'),
+    '/blog': new Date('2026-10-11T00:00:00.000Z'),
     '/blog/korean-corn-dog-honolulu-viral': new Date('2026-09-09T00:00:00.000Z'),
     '/blog/must-try-foods-waikiki': new Date('2026-09-09T00:00:00.000Z'),
     '/blog/best-poke-waikiki': new Date('2026-09-09T00:00:00.000Z'),
@@ -35,6 +35,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/late-night-dessert-waikiki': new Date('2026-09-15T00:00:00.000Z'),
     '/blog/what-is-ube-waikiki': new Date('2026-09-15T00:00:00.000Z'),
     '/blog/mochi-donut-vs-regular-donut': new Date('2026-09-15T00:00:00.000Z'),
+    // Oct 2026 batch (published Oct 11, 2026)
+    '/blog/malasada-ice-cream-sandwich-waikiki': new Date('2026-10-11T00:00:00.000Z'),
+    '/blog/best-iced-drinks-waikiki': new Date('2026-10-11T00:00:00.000Z'),
   };
 
   const routes = [
@@ -125,6 +128,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/late-night-dessert-waikiki',
     '/blog/what-is-ube-waikiki',
     '/blog/mochi-donut-vs-regular-donut',
+    // Oct 2026 batch
+    '/blog/malasada-ice-cream-sandwich-waikiki',
+    '/blog/best-iced-drinks-waikiki',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -209,6 +215,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/late-night-dessert-waikiki': 0.85,
     '/blog/what-is-ube-waikiki': 0.85,
     '/blog/mochi-donut-vs-regular-donut': 0.85,
+    '/blog/malasada-ice-cream-sandwich-waikiki': 0.9,
+    '/blog/best-iced-drinks-waikiki': 0.85,
     '/blog/ube-mochi-donut-waikiki': 0.85,
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
@@ -280,6 +288,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/late-night-dessert-waikiki': 'weekly',
     '/blog/what-is-ube-waikiki': 'weekly',
     '/blog/mochi-donut-vs-regular-donut': 'weekly',
+    '/blog/malasada-ice-cream-sandwich-waikiki': 'weekly',
+    '/blog/best-iced-drinks-waikiki': 'weekly',
     '/blog/ube-mochi-donut-waikiki': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',

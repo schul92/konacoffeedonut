@@ -16,6 +16,22 @@ const content = {
     readTime: 'min read',
     posts: [
       {
+        slug: 'malasada-ice-cream-sandwich-waikiki',
+        image: '/images/blog/malasada-ice-cream-sandwich-waikiki.jpeg',
+        category: 'New Menu',
+        title: 'Malasada Ice Cream Sandwich in Waikiki: 8 Flavors, $8.95',
+        excerpt: 'Our new dessert: a sugar-coated malasada split and filled with a scoop of ice cream. Eight flavors, $8.95, toppings $1.50 — vanilla is the early bestseller.',
+        readTime: 4,
+      },
+      {
+        slug: 'best-iced-drinks-waikiki',
+        image: '/images/blog/best-iced-drinks-waikiki.jpeg',
+        category: 'Drink Guide',
+        title: 'Iced Drinks in Waikiki: Cold Brew, Boba & Shave Ice From $5.35',
+        excerpt: 'Every cold drink on our menu with real prices — iced Americano $5.35, Kona Cold Brew, sealed boba cans, smoothies, lemonade and shave ice, 5 minutes from the beach.',
+        readTime: 5,
+      },
+      {
         slug: 'late-night-dessert-waikiki',
         image: '/images/blog/late-night-dessert-waikiki.jpeg',
         category: 'Food Guide',
@@ -497,6 +513,22 @@ const content = {
     readTime: '\u5206\u3067\u8AAD\u3081\u308B',
     posts: [
       {
+        slug: 'malasada-ice-cream-sandwich-waikiki',
+        image: '/images/blog/malasada-ice-cream-sandwich-waikiki.jpeg',
+        category: '新メニュー',
+        title: 'ワイキキのマラサダ・アイスクリームサンド：8種類$8.95',
+        excerpt: 'シュガーをまぶしたマラサダにアイスをはさんだ新デザート。8種類すべて$8.95、トッピング各$1.50。一番人気はバニラ。',
+        readTime: 4,
+      },
+      {
+        slug: 'best-iced-drinks-waikiki',
+        image: '/images/blog/best-iced-drinks-waikiki.jpeg',
+        category: 'ドリンクガイド',
+        title: 'ワイキキの冷たいドリンク：コールドブリュー・ボバ・かき氷',
+        excerpt: 'アイスアメリカーノ$5.35、コナ・コールドブリュー、缶ボバ、スムージー、レモネード、かき氷。ビーチから徒歩5分。',
+        readTime: 5,
+      },
+      {
         slug: 'late-night-dessert-waikiki',
         image: '/images/blog/late-night-dessert-waikiki.jpeg',
         category: 'フードガイド',
@@ -932,6 +964,22 @@ const content = {
     readMore: '\uB354 \uC77D\uAE30 \u2192',
     readTime: '\uBD84 \uC77D\uAE30',
     posts: [
+      {
+        slug: 'malasada-ice-cream-sandwich-waikiki',
+        image: '/images/blog/malasada-ice-cream-sandwich-waikiki.jpeg',
+        category: '신메뉴',
+        title: '와이키키 말라사다 아이스크림 샌드위치: 8가지 맛 $8.95',
+        excerpt: '설탕 입힌 말라사다에 아이스크림 한 스쿱. 8가지 맛 모두 $8.95, 토핑 $1.50. 판매 1위는 바닐라.',
+        readTime: 4,
+      },
+      {
+        slug: 'best-iced-drinks-waikiki',
+        image: '/images/blog/best-iced-drinks-waikiki.jpeg',
+        category: '음료 가이드',
+        title: '와이키키 아이스 음료: 콜드브루·보바·빙수 $5.35부터',
+        excerpt: '아이스 아메리카노 $5.35, 코나 콜드브루, 캔 보바, 스무디, 레모네이드, 하와이안 빙수. 비치에서 도보 5분.',
+        readTime: 5,
+      },
       {
         slug: 'late-night-dessert-waikiki',
         image: '/images/blog/late-night-dessert-waikiki.jpeg',
@@ -1369,6 +1417,22 @@ const content = {
     readTime: '\u5206\u949F\u9605\u8BFB',
     posts: [
       {
+        slug: 'malasada-ice-cream-sandwich-waikiki',
+        image: '/images/blog/malasada-ice-cream-sandwich-waikiki.jpeg',
+        category: '新品',
+        title: '威基基马拉萨达冰淇淋三明治：8种口味$8.95',
+        excerpt: '裹糖马拉萨达夹一球冰淇淋，8种口味均价$8.95，配料每份$1.50，香草口味最畅销。',
+        readTime: 4,
+      },
+      {
+        slug: 'best-iced-drinks-waikiki',
+        image: '/images/blog/best-iced-drinks-waikiki.jpeg',
+        category: '饮品指南',
+        title: '威基基冰饮：冷萃、珍珠奶茶、刨冰 $5.35起',
+        excerpt: '冰美式$5.35、科纳冷萃、罐装珍珠奶茶、奶昔、柠檬水和夏威夷刨冰，距海滩步行5分钟。',
+        readTime: 5,
+      },
+      {
         slug: 'late-night-dessert-waikiki',
         image: '/images/blog/late-night-dessert-waikiki.jpeg',
         category: '美食指南',
@@ -1804,6 +1868,22 @@ const content = {
     readMore: 'Leer M\u00E1s \u2192',
     readTime: 'min de lectura',
     posts: [
+      {
+        slug: 'malasada-ice-cream-sandwich-waikiki',
+        image: '/images/blog/malasada-ice-cream-sandwich-waikiki.jpeg',
+        category: 'Nuevo',
+        title: 'Sándwich de helado con malasada en Waikiki: 8 sabores, $8.95',
+        excerpt: 'Una malasada azucarada rellena con una bola de helado. Ocho sabores a $8.95, toppings $1.50; la vainilla es la favorita.',
+        readTime: 4,
+      },
+      {
+        slug: 'best-iced-drinks-waikiki',
+        image: '/images/blog/best-iced-drinks-waikiki.jpeg',
+        category: 'Guía de bebidas',
+        title: 'Bebidas frías en Waikiki: cold brew, boba y raspado desde $5.35',
+        excerpt: 'Americano helado $5.35, Kona Cold Brew, boba en lata, smoothies, limonadas y raspado hawaiano, a 5 minutos de la playa.',
+        readTime: 5,
+      },
       {
         slug: 'late-night-dessert-waikiki',
         image: '/images/blog/late-night-dessert-waikiki.jpeg',

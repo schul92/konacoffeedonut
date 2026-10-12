@@ -22,7 +22,8 @@
       "keyword": "brown sugar boba waikiki",
       "angle": "The viral tiger-stripe can done right: what it is, why ours is $8.95 sealed-to-go, pairing with black sesame donut.",
       "products": "boba cans, mochi donuts",
-      "status": "pending"
+      "status": "duplicate",
+      "note": "covered by boba-waikiki (2026-10-11)"
     },
     {
       "slug": "what-is-ube-waikiki",
@@ -37,14 +38,16 @@
       "keyword": "breakfast near diamond head hike",
       "angle": "Post-sunrise-hike refuel on the walk back: open 7 AM, musubi from $2.95, malasadas, Kona coffee.",
       "products": "musubi, malasadas, coffee",
-      "status": "pending"
+      "status": "skipped",
+      "note": "store is ~3 mi from the Diamond Head trailhead; walk-back angle is inaccurate (2026-10-11)"
     },
     {
       "slug": "best-iced-drinks-waikiki",
       "keyword": "iced drinks waikiki hot day",
       "angle": "Beat the Waikiki heat ranking: smoothies, iced matcha, boba cans, Kona cold brew - by how cold/refreshing.",
       "products": "smoothies, iced lattes, boba, cold brew",
-      "status": "pending"
+      "status": "published",
+      "published": "2026-10-11"
     },
     {
       "slug": "waikiki-snacks-grab-and-go",
