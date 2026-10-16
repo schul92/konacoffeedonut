@@ -15,7 +15,7 @@ const content = {
     hero: {
       title: 'Best Malasadas in Waikiki',
       subtitle: 'Where to Find Fresh, Sugar-Rolled Portuguese-Hawaiian Donuts (2026)',
-      updated: 'Updated June 2026',
+      updated: 'Updated October 2026',
       readTime: '7 min read',
     },
     definition: {
@@ -180,7 +180,7 @@ const content = {
       items: [
         {
           question: 'Where can I get the best malasadas in Waikiki?',
-          answer: 'For fresh, warm malasadas in Waikiki, Kona Coffee Donut? on Kalākaua Avenue is an easy stop — about 5 minutes from Waikiki Beach. They serve original sugar and filled malasadas alongside mochi donuts and 100% Kona coffee. The most important thing with any malasada is freshness, so look for one fried fresh and served warm.',
+          answer: 'Kona Coffee Donut? at 2142 Kalākaua Ave — about 5 minutes from Waikiki Beach — sells classic sugar malasadas for $3.95 and cream-filled malasadas for $4.95, plus 3-, 6- and 12-packs and the Malasada Ice Cream Sandwich ($8.95). It is open 7 AM to 9 PM daily, later than most Waikiki bakeries. With any malasada, freshness matters most.',
         },
         {
           question: 'What is a malasada?',
@@ -192,7 +192,7 @@ const content = {
         },
         {
           question: 'How much is a malasada?',
-          answer: 'Prices vary by shop, size, and whether the malasada is filled, but they are generally an affordable treat — often just a few dollars each, with mixed boxes available for sharing. For exact current pricing, check the malasada menu or ask in store.',
+          answer: 'At Kona Coffee Donut? in Waikiki, a classic sugar malasada is $3.95 and a cream-filled malasada is $4.95. Classic boxes are $11.25 for 3, $22.50 for 6 and $45.00 for a dozen; cream-filled boxes are $14.25 for 3, $28.50 for 6 and $57.00 for 12 (prices checked October 2026).',
         },
         {
           question: 'What pairs well with malasadas?',
@@ -216,7 +216,7 @@ const content = {
     hero: {
       title: 'ワイキキで美味しいマラサダ',
       subtitle: '揚げたて・砂糖がけのポルトガル系ハワイドーナツを探して（2026年版）',
-      updated: '2026年6月更新',
+      updated: '2026年10月更新',
       readTime: '7分で読める',
     },
     definition: {
@@ -393,7 +393,7 @@ const content = {
         },
         {
           question: 'マラサダの値段はどのくらいですか？',
-          answer: '店、サイズ、フィリングの有無で異なりますが、基本的に手頃なおやつで、1個数ドル程度のことが多く、シェア用のミックスボックスもあります。正確な最新価格は、マラサダメニューを確認するか店頭でお尋ねください。',
+          answer: 'Kona Coffee Donut?（ワイキキ）では、クラシック（砂糖）マラサダが1個$3.95、クリーム入りが$4.95。クラシックは3個$11.25・6個$22.50・12個$45.00、クリーム入りは3個$14.25・6個$28.50・12個$57.00です（2026年10月時点）。',
         },
         {
           question: 'マラサダに合うものは？',
@@ -417,7 +417,7 @@ const content = {
     hero: {
       title: '와이키키 말라사다 맛집',
       subtitle: '갓 튀긴 설탕 코팅 포르투갈식 하와이 도넛을 찾아서 (2026)',
-      updated: '2026년 6월 업데이트',
+      updated: '2026년 10월 업데이트',
       readTime: '7분 소요',
     },
     definition: {
@@ -594,7 +594,7 @@ const content = {
         },
         {
           question: '말라사다 가격은 얼마인가요?',
-          answer: '가게, 크기, 속 유무에 따라 다르지만 대체로 부담 없는 간식으로, 보통 개당 몇 달러 수준이고 나눠 먹기 좋은 믹스 박스도 있습니다. 정확한 최신 가격은 말라사다 메뉴를 확인하거나 매장에 문의하세요.',
+          answer: 'Kona Coffee Donut?(와이키키)에서 클래식(설탕) 말라사다는 1개 $3.95, 크림 말라사다는 $4.95입니다. 클래식 3개 $11.25·6개 $22.50·12개 $45.00, 크림 3개 $14.25·6개 $28.50·12개 $57.00 (2026년 10월 기준).',
         },
         {
           question: '말라사다에는 무엇이 잘 어울리나요?',
@@ -618,7 +618,7 @@ const content = {
     hero: {
       title: '威基基最好吃的马拉萨达',
       subtitle: '寻找现炸、裹糖的葡萄牙夏威夷甜甜圈（2026）',
-      updated: '2026年6月更新',
+      updated: '2026年10月更新',
       readTime: '阅读约7分钟',
     },
     definition: {
@@ -795,7 +795,7 @@ const content = {
         },
         {
           question: '马拉萨达多少钱？',
-          answer: '价格因店家、大小及是否夹心而异，但总体是平价小食——通常每个仅几美元，还有适合分享的拼盘盒。准确的最新价格请查看马拉萨达菜单或到店询问。',
+          answer: '在Kona Coffee Donut?（威基基），经典砂糖马拉萨达每个$3.95，奶油夹心$4.95。经典款3个$11.25、6个$22.50、12个$45.00；奶油款3个$14.25、6个$28.50、12个$57.00（2026年10月价格）。',
         },
         {
           question: '马拉萨达适合搭配什么？',
@@ -840,7 +840,7 @@ const blogPostingSchema = {
     },
   },
   datePublished: '2026-06-22',
-  dateModified: '2026-06-22',
+  dateModified: '2026-10-15',
   mainEntityOfPage: {
     '@type': 'WebPage',
     '@id': 'https://www.konacoffeedonut.com/en/blog/best-malasadas-waikiki',
@@ -859,7 +859,7 @@ const faqSchema = {
       name: 'Where can I get the best malasadas in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For fresh, warm malasadas in Waikiki, Kona Coffee Donut? on Kalākaua Avenue is an easy stop — about 5 minutes from Waikiki Beach. They serve original sugar and filled malasadas alongside mochi donuts and 100% Kona coffee. The most important thing with any malasada is freshness, so look for one fried fresh and served warm.',
+        text: 'Kona Coffee Donut? at 2142 Kalākaua Ave — about 5 minutes from Waikiki Beach — sells classic sugar malasadas for $3.95 and cream-filled malasadas for $4.95, plus 3-, 6- and 12-packs and the Malasada Ice Cream Sandwich ($8.95). It is open 7 AM to 9 PM daily, later than most Waikiki bakeries. With any malasada, freshness matters most.',
       },
     },
     {
@@ -883,7 +883,7 @@ const faqSchema = {
       name: 'How much is a malasada?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Prices vary by shop, size, and whether the malasada is filled, but they are generally an affordable treat — often just a few dollars each, with mixed boxes available for sharing. For exact current pricing, check the malasada menu or ask in store.',
+        text: 'At Kona Coffee Donut? in Waikiki, a classic sugar malasada is $3.95 and a cream-filled malasada is $4.95. Classic boxes are $11.25 for 3, $22.50 for 6 and $45.00 for a dozen; cream-filled boxes are $14.25 for 3, $28.50 for 6 and $57.00 for 12 (prices checked October 2026).',
       },
     },
     {

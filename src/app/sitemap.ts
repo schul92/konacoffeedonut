@@ -21,13 +21,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Matcha / hojicha cluster (published Jul 1, 2026)
     '/blog/matcha-story-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/matcha-vs-hojicha-waikiki': new Date('2026-07-01T00:00:00.000Z'),
-    '/blog/best-matcha-drinks-waikiki': new Date('2026-07-01T00:00:00.000Z'),
+    '/blog/best-matcha-drinks-waikiki': new Date('2026-10-15T00:00:00.000Z'),
     '/blog/matcha-vs-coffee-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/matcha-benefits-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/iced-matcha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/hojicha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     // Sep 2026 batch (published Sep 9, 2026)
-    '/blog': new Date('2026-10-11T00:00:00.000Z'),
+    '/blog': new Date('2026-10-15T00:00:00.000Z'),
     '/blog/korean-corn-dog-honolulu-viral': new Date('2026-09-09T00:00:00.000Z'),
     '/blog/must-try-foods-waikiki': new Date('2026-09-09T00:00:00.000Z'),
     '/blog/best-poke-waikiki': new Date('2026-09-09T00:00:00.000Z'),
@@ -38,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Oct 2026 batch (published Oct 11, 2026)
     '/blog/malasada-ice-cream-sandwich-waikiki': new Date('2026-10-11T00:00:00.000Z'),
     '/blog/best-iced-drinks-waikiki': new Date('2026-10-11T00:00:00.000Z'),
+    // Oct 2026 batch 2 (published Oct 15, 2026)
+    '/blog/rainy-day-waikiki-cafe': new Date('2026-10-15T00:00:00.000Z'),
+    '/blog/family-kids-cafe-waikiki': new Date('2026-10-15T00:00:00.000Z'),
+    // Refreshed Oct 15, 2026 (POS prices + CTR titles)
+    '/blog/best-malasadas-waikiki': new Date('2026-10-15T00:00:00.000Z'),
+    '/blog/best-donuts-waikiki': new Date('2026-10-15T00:00:00.000Z'),
   };
 
   const routes = [
@@ -131,6 +137,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Oct 2026 batch
     '/blog/malasada-ice-cream-sandwich-waikiki',
     '/blog/best-iced-drinks-waikiki',
+    // Oct 2026 batch 2
+    '/blog/rainy-day-waikiki-cafe',
+    '/blog/family-kids-cafe-waikiki',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -217,6 +226,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/mochi-donut-vs-regular-donut': 0.85,
     '/blog/malasada-ice-cream-sandwich-waikiki': 0.9,
     '/blog/best-iced-drinks-waikiki': 0.85,
+    '/blog/rainy-day-waikiki-cafe': 0.85,
+    '/blog/family-kids-cafe-waikiki': 0.85,
     '/blog/ube-mochi-donut-waikiki': 0.85,
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
@@ -290,6 +301,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/mochi-donut-vs-regular-donut': 'weekly',
     '/blog/malasada-ice-cream-sandwich-waikiki': 'weekly',
     '/blog/best-iced-drinks-waikiki': 'weekly',
+    '/blog/rainy-day-waikiki-cafe': 'weekly',
+    '/blog/family-kids-cafe-waikiki': 'weekly',
     '/blog/ube-mochi-donut-waikiki': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',

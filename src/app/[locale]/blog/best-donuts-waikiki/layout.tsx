@@ -6,10 +6,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    en: 'Best Donuts in Waikiki 2026: Top 7 Donut Shops | Local Guide',
-    ja: '2026年ワイキキのベストドーナツ | Kona Coffee Donut',
-    ko: '2026년 와이키키 베스트 도넛 | Kona Coffee Donut',
-    zh: '2026年威基基最佳甜甜圈 | Kona Coffee Donut',
+    en: 'Best Donuts in Waikiki (2026): 7 Shops, Mochi Donuts & Malasadas',
+    ja: 'ワイキキのドーナツ人気店7選（2026）｜モチドーナツ・マラサダ | Kona Coffee Donut',
+    ko: '와이키키 도넛 맛집 7곳 (2026)｜모찌도넛·말라사다 | Kona Coffee Donut',
+    zh: '威基基甜甜圈人气店7家（2026）｜麻糬甜甜圈・马拉萨达 | Kona Coffee Donut',
   };
   const descriptions: Record<string, string> = {
     en: 'Discover the 7 best donut shops in Waikiki for 2026. From mochi donuts and malasadas to classic glazed, a local guide to the sweetest spots near Waikiki Beach. Insider tips, prices, and must-try flavors.',

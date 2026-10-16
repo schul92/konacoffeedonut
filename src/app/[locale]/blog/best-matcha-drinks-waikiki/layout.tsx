@@ -4,19 +4,19 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 
 const meta = {
   en: {
-    title: 'Best Matcha Drinks in Waikiki (2026): Every Flavor Ranked',
-    description: 'The best matcha in Waikiki, ranked. Real whisked Japanese matcha led by our bestselling Strawberry Matcha — plus classic, tropical, hojicha & iced options. Prices inside.',
+    title: 'Best Matcha in Waikiki (2026): Every Flavor Ranked, From $9.95',
+    description: 'The best matcha in Waikiki, ranked: whisked Japanese matcha lattes from $9.95, bestselling Strawberry Matcha $11.95, tropical & hojicha. 2142 Kalākaua Ave, 7 AM–9 PM.',
   },
   ja: {
-    title: 'ワイキキで一番おいしい抹茶ドリンク（2026）｜全フレーバー人気ランキング',
+    title: 'ワイキキの抹茶おすすめ（2026）｜全フレーバーランキング・$9.95〜',
     description: 'ワイキキで一番おいしい抹茶をランキングで。本格点てたて日本産抹茶、人気No.1のストロベリー抹茶、クラシック、トロピカル、ほうじ茶、アイスまで。価格もご紹介。',
   },
   ko: {
-    title: '와이키키 최고의 말차 음료 (2026)｜모든 플레이버 랭킹',
+    title: '와이키키 말차 맛집 (2026)｜전 메뉴 랭킹·$9.95부터',
     description: '와이키키 최고의 말차를 랭킹으로. 진짜 갓 격불한 일본 말차, 베스트셀러 딸기 말차부터 클래식·트로피컬·호지차·아이스까지. 가격 정보 포함.',
   },
   zh: {
-    title: '威基基最好喝的抹茶饮品（2026）：全口味排行',
+    title: '威基基抹茶推荐（2026）：全口味排行，$9.95起',
     description: '威基基最好喝的抹茶排行榜。正宗现打日本抹茶，招牌草莓抹茶领衔，还有经典、热带、焙茶与冰饮选择。附价格。',
   },
 };

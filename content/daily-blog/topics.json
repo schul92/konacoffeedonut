@@ -75,14 +75,16 @@
       "keyword": "what to do waikiki rainy day",
       "angle": "Rainy-day plan: warm malasadas, hot Kona coffee, window seat on Kalakaua. Comfort-food angle.",
       "products": "malasadas, hot drinks, donuts",
-      "status": "pending"
+      "status": "published",
+      "published": "2026-10-15"
     },
     {
       "slug": "family-kids-cafe-waikiki",
       "keyword": "family friendly cafe waikiki kids",
       "angle": "Where to take kids: donut flavors kids love, no-caffeine boba (ube/brown sugar), smoothies, quick counter service.",
       "products": "donuts, caffeine-free boba, smoothies",
-      "status": "pending"
+      "status": "published",
+      "published": "2026-10-15"
     },
     {
       "slug": "rice-flour-donuts-waikiki",
@@ -138,7 +140,8 @@
       "keyword": "bingsu flavors best",
       "angle": "Decision guide for first-timers: milk bingsu ($15.95) vs Hawaiian bingsu ($12.95) by taste profile - photos.",
       "products": "bingsu lineup",
-      "status": "pending"
+      "status": "duplicate",
+      "note": "best-bingsu-waikiki already covers our bingsu lineup and how to choose"
     },
     {
       "slug": "mochi-donut-vs-regular-donut",
