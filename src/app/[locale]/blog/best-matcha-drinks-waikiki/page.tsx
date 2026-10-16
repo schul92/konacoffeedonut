@@ -15,7 +15,7 @@ const content = {
     hero: {
       title: 'Best Matcha Drinks in Waikiki',
       subtitle: 'Every Flavor Ranked — Find Your Perfect Cup (2026 Guide)',
-      updated: 'Updated June 2026',
+      updated: 'Updated October 2026',
       readTime: '6 min read',
     },
     definition: {
@@ -252,7 +252,7 @@ const content = {
     hero: {
       title: 'ワイキキで一番おいしい抹茶ドリンク',
       subtitle: '全フレーバー人気ランキング — あなたにぴったりの一杯を（2026年版ガイド）',
-      updated: '2026年6月更新',
+      updated: '2026年10月更新',
       readTime: '6分で読める',
     },
     definition: {
@@ -489,7 +489,7 @@ const content = {
     hero: {
       title: '와이키키 최고의 말차 음료',
       subtitle: '모든 플레이버 인기 랭킹 — 나에게 딱 맞는 한 잔 찾기 (2026 가이드)',
-      updated: '2026년 6월 업데이트',
+      updated: '2026년 10월 업데이트',
       readTime: '6분 소요',
     },
     definition: {
@@ -726,7 +726,7 @@ const content = {
     hero: {
       title: '威基基最好喝的抹茶饮品',
       subtitle: '全口味人气排行 — 找到最适合你的那一杯（2026指南）',
-      updated: '2026年6月更新',
+      updated: '2026年10月更新',
       readTime: '阅读约6分钟',
     },
     definition: {
@@ -984,7 +984,7 @@ const blogPostingSchema = {
     },
   },
   datePublished: '2026-06-30',
-  dateModified: '2026-06-30',
+  dateModified: '2026-10-15',
   mainEntityOfPage: {
     '@type': 'WebPage',
     '@id': 'https://www.konacoffeedonut.com/en/blog/best-matcha-drinks-waikiki',

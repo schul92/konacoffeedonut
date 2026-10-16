@@ -27,7 +27,7 @@ const content = {
     hero: {
       title: 'Best Donuts in Waikiki 2026',
       subtitle: "A Local's Guide to the Sweetest Spots",
-      date: 'Updated April 2026',
+      date: 'Updated October 2026',
       readTime: '8 min read',
     },
     intro: {
@@ -143,7 +143,7 @@ const content = {
         ['Origin', 'Japanese-Hawaiian fusion', 'Portuguese-Hawaiian', 'American classic'],
         ['Shape', 'Eight-ball ring', 'Round ball (no hole)', 'Ring or filled'],
         ['Best For', 'Unique texture lovers', 'Traditional experience', 'Classic donut fans'],
-        ['Price Range', '$11.25 / 3pc', '$2 - $4', '$1.50 - $4'],
+        ['Price Range', '$3.95 each / $11.25 3pc', '$2 - $4', '$1.50 - $4'],
         ['Where to Try', 'Kona Coffee Donut', "Leonard's Bakery", 'Donut King'],
       ],
     },
@@ -209,7 +209,7 @@ const content = {
     hero: {
       title: '2026年ワイキキのベストドーナツ',
       subtitle: '地元民が教えるスイートスポットガイド',
-      date: '2026年4月更新',
+      date: '2026年10月更新',
       readTime: '読了8分',
     },
     intro: {
@@ -325,7 +325,7 @@ const content = {
         ['起源', '日本×ハワイ融合', 'ポルトガル×ハワイ', 'アメリカンクラシック'],
         ['形状', '八つ玉リング', '丸型（穴なし）', 'リングまたはフィリング入り'],
         ['おすすめ', 'ユニークな食感好き', '伝統的体験を求める方', 'クラシックドーナツファン'],
-        ['価格帯', '$11.25 / 3個', '$2 - $4', '$1.50 - $4'],
+        ['価格帯', '1個$3.95 / 3個$11.25', '$2 - $4', '$1.50 - $4'],
         ['おすすめ店', 'コナコーヒードーナツ', 'レナーズベーカリー', 'ドーナツキング'],
       ],
     },
@@ -391,7 +391,7 @@ const content = {
     hero: {
       title: '2026년 와이키키 베스트 도넛',
       subtitle: '현지인이 알려주는 달콤한 명소 가이드',
-      date: '2026년 4월 업데이트',
+      date: '2026년 10월 업데이트',
       readTime: '8분 읽기',
     },
     intro: {
@@ -507,7 +507,7 @@ const content = {
         ['기원', '일본-하와이 퓨전', '포르투갈-하와이', '아메리칸 클래식'],
         ['모양', '팔각 링', '둥근 볼 (구멍 없음)', '링 또는 필링'],
         ['추천', '독특한 식감 애호가', '전통 경험을 원하는 분', '클래식 도넛 팬'],
-        ['가격대', '$11.25 / 3개', '$2 - $4', '$1.50 - $4'],
+        ['가격대', '개당 $3.95 / 3개 $11.25', '$2 - $4', '$1.50 - $4'],
         ['추천 매장', '코나커피도넛', '레너즈 베이커리', '도넛 킹'],
       ],
     },
@@ -573,7 +573,7 @@ const content = {
     hero: {
       title: '2026年威基基最佳甜甜圈',
       subtitle: '本地人带你找到最甜蜜的好去处',
-      date: '2026年4月更新',
+      date: '2026年10月更新',
       readTime: '8分钟阅读',
     },
     intro: {
@@ -689,7 +689,7 @@ const content = {
         ['起源', '日本-夏威夷融合', '葡萄牙-夏威夷', '美式经典'],
         ['形状', '八球环形', '圆球（无孔）', '环形或夹心'],
         ['适合', '喜欢独特口感', '追求传统体验', '经典甜甜圈爱好者'],
-        ['价格区间', '$11.25 / 3个', '$2 - $4', '$1.50 - $4'],
+        ['价格区间', '每个$3.95 / 3个$11.25', '$2 - $4', '$1.50 - $4'],
         ['推荐店铺', '科纳咖啡甜甜圈', '伦纳德面包店', '甜甜圈大王'],
       ],
     },
@@ -775,7 +775,7 @@ const articleSchema = {
     },
   },
   datePublished: '2026-04-14',
-  dateModified: '2026-04-14',
+  dateModified: '2026-10-15',
   mainEntityOfPage: {
     '@type': 'WebPage',
     '@id': 'https://www.konacoffeedonut.com/en/blog/best-donuts-waikiki',
