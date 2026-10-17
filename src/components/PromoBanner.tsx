@@ -18,10 +18,10 @@ interface PromoBannerProps {
 
 const translations = {
   en: { badge: 'NEW', text: 'Malasada Ice Cream Sandwich', detail: '8 flavors · $8.95', cta: 'See flavors' },
-  ja: { badge: '新メニュー', text: 'マラサダ・アイスクリームサンド', detail: '全8種 · $8.95', cta: 'フレーバーを見る' },
-  ko: { badge: '신메뉴', text: '말라사다 아이스크림 샌드위치', detail: '8가지 맛 · $8.95', cta: '맛 보러 가기' },
-  zh: { badge: '新品', text: '马拉萨达冰淇淋三明治', detail: '8种口味 · $8.95', cta: '查看口味' },
-  es: { badge: 'NUEVO', text: 'Sándwich de helado con malasada', detail: '8 sabores · $8.95', cta: 'Ver sabores' },
+  ja: { badge: '新メニュー', text: 'Malasada Ice Cream Sandwich', detail: '全8種 · $8.95', cta: 'フレーバーを見る' },
+  ko: { badge: '신메뉴', text: 'Malasada Ice Cream Sandwich', detail: '8가지 맛 · $8.95', cta: '맛 보러 가기' },
+  zh: { badge: '新品', text: 'Malasada Ice Cream Sandwich', detail: '8种口味 · $8.95', cta: '查看口味' },
+  es: { badge: 'NUEVO', text: 'Malasada Ice Cream Sandwich', detail: '8 sabores · $8.95', cta: 'Ver sabores' },
 };
 
 const dispatchBannerEvent = (visible: boolean) => {
