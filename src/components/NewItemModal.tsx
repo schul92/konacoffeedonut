@@ -8,7 +8,7 @@ import { X, MapPin } from 'lucide-react';
 import { trackEvent, trackDirectionsClick } from '@/lib/analytics';
 
 // Home-page "we have this now!" popup for the Malasada Ice Cream Sandwich (launched 9/29/2026).
-// Image is the sandwich half of the in-store board (public/images/promo/).
+// Image: the 8-flavor grid of the sandwich (same photos as the /menu section).
 const STORAGE_KEY = 'promo-modal-dismissed-sandwich-2026-10';
 const PROMO = 'malasada_ice_cream_sandwich';
 const MAPS_URL = 'https://maps.google.com/?q=2142+Kalakaua+Ave+Honolulu+HI+96815';
@@ -26,47 +26,47 @@ const translations = {
     secondary: 'Get directions',
     footer: '2142 Kalākaua Ave · Open daily 7 AM – 9 PM',
     later: 'Maybe later',
-    alt: 'Malasada Ice Cream Sandwich menu board: Vanilla, Strawberry, Ube, Chocolate, Coconut, Matcha, Cookies & Cream and Coffee, $8.95',
+    alt: 'Malasada Ice Cream Sandwich in 8 flavors: Vanilla, Strawberry, Ube, Chocolate, Coconut, Matcha, Cookies & Cream and Coffee',
   },
   ja: {
     badge: '新メニュー',
-    title: 'マラサダ・アイスクリームサンド',
+    title: 'Malasada Ice Cream Sandwich',
     body: 'シュガーをまぶしたマラサダにアイスをたっぷり。全8種 $8.95、トッピング各$1.50。',
     primary: '8種類のフレーバーを見る',
     secondary: '行き方を見る',
     footer: '2142 Kalākaua Ave · 毎日 7:00–21:00',
     later: 'あとで',
-    alt: 'マラサダ・アイスクリームサンドのメニューボード（全8種、$8.95）',
+    alt: 'Malasada Ice Cream Sandwich（全8種）',
   },
   ko: {
     badge: '신메뉴',
-    title: '말라사다 아이스크림 샌드위치',
+    title: 'Malasada Ice Cream Sandwich',
     body: '설탕 입힌 말라사다에 아이스크림을 가득. 8가지 맛 $8.95, 토핑 $1.50.',
     primary: '8가지 맛 보러 가기',
     secondary: '길찾기',
     footer: '2142 Kalākaua Ave · 매일 오전 7시–밤 9시',
     later: '나중에',
-    alt: '말라사다 아이스크림 샌드위치 메뉴판 (8가지 맛, $8.95)',
+    alt: 'Malasada Ice Cream Sandwich (8가지 맛)',
   },
   zh: {
     badge: '新品上市',
-    title: '马拉萨达冰淇淋三明治',
+    title: 'Malasada Ice Cream Sandwich',
     body: '裹糖马拉萨达夹满一球冰淇淋。8种口味 $8.95，配料每份 $1.50。',
     primary: '查看全部8种口味',
     secondary: '获取路线',
     footer: '2142 Kalākaua Ave · 每天 7:00–21:00',
     later: '稍后再说',
-    alt: '马拉萨达冰淇淋三明治菜单（8种口味，$8.95）',
+    alt: 'Malasada Ice Cream Sandwich（8种口味）',
   },
   es: {
     badge: 'NUEVO',
-    title: 'Sándwich de helado con malasada',
+    title: 'Malasada Ice Cream Sandwich',
     body: 'Una malasada azucarada rellena con una bola de helado. 8 sabores a $8.95, toppings $1.50.',
     primary: 'Ver los 8 sabores',
     secondary: 'Cómo llegar',
     footer: '2142 Kalākaua Ave · Todos los días 7 AM – 9 PM',
     later: 'Más tarde',
-    alt: 'Menú del sándwich de helado con malasada: 8 sabores, $8.95',
+    alt: 'Malasada Ice Cream Sandwich: 8 sabores',
   },
 };
 
@@ -147,10 +147,10 @@ export default function NewItemModal({ locale = 'en' }: NewItemModalProps) {
                   remember();
                   trackEvent('promo_modal_click', { promo: PROMO, locale, target: 'image' });
                 }}
-                className="block relative w-full aspect-[792/682] max-h-[42vh] sm:max-h-none bg-[#f7f5ee]"
+                className="block relative w-full aspect-[16/9] bg-[#fbf6ec]"
               >
                 <Image
-                  src="/images/promo/malasada-ice-cream-sandwich-board.webp"
+                  src="/images/blog/malasada-ice-cream-sandwich-waikiki.jpeg"
                   alt={t.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, 448px"
