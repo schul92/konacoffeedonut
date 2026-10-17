@@ -9,7 +9,7 @@ import { locales, type Locale } from '@/i18n';
 import StructuredData from '@/components/StructuredData';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import MetaPixel from '@/components/MetaPixel';
-import HiringBanner from '@/components/HiringBanner';
+import PromoBanner from '@/components/PromoBanner';
 import { seoSameAsUrls } from '@/lib/socialLinks';
 import "../globals.css";
 
@@ -303,7 +303,7 @@ export default async function LocaleLayout({
           <MetaPixel pixelId={process.env.NEXT_PUBLIC_META_PIXEL_ID} />
         )}
         <StructuredData locale={locale} />
-        <HiringBanner locale={locale} />
+        <PromoBanner locale={locale} />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

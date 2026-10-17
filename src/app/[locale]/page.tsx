@@ -9,13 +9,13 @@ import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { ORDER_ONLINE_URL, getOrderOnlineLabel, trackOrderOnlineClick } from '@/lib/orderLinks';
-import { BANNER_VISIBILITY_EVENT, isBannerVisible } from '@/components/HiringBanner';
+import { BANNER_VISIBILITY_EVENT, isBannerVisible } from '@/components/PromoBanner';
 import SocialIcon from '@/components/SocialIcon';
 import StructuredData from '@/components/StructuredData';
 import { konaSocialLinks, type SocialLink } from '@/lib/socialLinks';
 
 // Dynamic imports for heavy client components to reduce initial JS bundle
-const HiringModal = dynamic(() => import('@/components/HiringModal'), { ssr: false });
+const NewItemModal = dynamic(() => import('@/components/NewItemModal'), { ssr: false });
 const InstagramReels = dynamic(() => import('@/components/InstagramReels'), {
   ssr: false,
   loading: () => <div className="w-8 h-8" />,
@@ -233,7 +233,7 @@ export default function Home() {
       </h1>
 
       {/* Hiring Modal */}
-      <HiringModal locale={locale} />
+      <NewItemModal locale={locale} />
 
       {/* Navigation - Responsive (position adjusts based on banner visibility) */}
       <nav className={`fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300 ${bannerVisible ? 'top-10' : 'top-0'}`}>
