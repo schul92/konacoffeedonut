@@ -4,29 +4,29 @@ const siteUrl = 'https://www.konacoffeedonut.com';
 
 const metaContent: Record<string, { title: string; description: string }> = {
   en: {
-    title: 'Best Bingsu in Waikiki | Korean Shaved Ice Hawaii',
+    title: 'Bingsu in Waikiki & Honolulu: Korean Shaved Ice From $12.95',
     description:
-      'Try the best bingsu in Waikiki at Kona Coffee Donut. Authentic Korean shaved ice with premium milk ice, injeolmi, mango, strawberry, matcha & more. The top Korean dessert spot in Honolulu, steps from Waikiki Beach.',
+      'Korean bingsu in Waikiki, Honolulu: milk bingsu $15.95 in 7 flavors (ube, mango, strawberry, Kona coffee and more) and Hawaiian bingsu $12.95. 2142 Kalākaua Ave, 7 AM–9 PM.',
   },
   ja: {
-    title: 'ワイキキで最高のビンス | 韓国かき氷ハワイ',
+    title: 'ワイキキ・ホノルルのビンス｜韓国かき氷 $12.95〜',
     description:
-      'ワイキキで本格的な韓国ビンス（かき氷）を。ミルク氷ベースのきな粉・マンゴー・いちご・抹茶など豊富なメニュー。日本でも大人気の韓国スイーツをハワイで楽しめます。',
+      'ワイキキ（ホノルル）で本格韓国ビンス。ミルクビンス全7種$15.95（ウベ、マンゴー、いちご、コナコーヒーなど）、ハワイアンビンス$12.95。カラカウア通り2142、毎日7時〜21時。',
   },
   ko: {
-    title: '와이키키 최고의 빙수 | 하와이 한국 빙수 전문',
+    title: '와이키키·호놀룰루 빙수 | 한국 빙수 $12.95부터',
     description:
-      '와이키키에서 만나는 정통 한국 빙수. 우유 얼음 베이스에 인절미, 망고, 딸기, 오레오, 녹차, 팥빙수까지. 호놀룰루 최고의 한국 디저트를 와이키키 비치 근처에서 즐기세요.',
+      '와이키키(호놀룰루)에서 즐기는 한국 빙수. 우유 빙수 7가지 $15.95(우베, 망고, 딸기, 코나커피 등), 하와이안 빙수 $12.95. 칼라카우아 2142, 매일 7시–21시.',
   },
   zh: {
-    title: '威基基最好的韩式刨冰 | 夏威夷韩式甜品',
+    title: '威基基・檀香山韩式刨冰Bingsu｜$12.95起',
     description:
-      '在威基基品尝正宗韩式刨冰Bingsu。牛奶冰底，提供年糕、芒果、草莓、奥利奥、抹茶和经典红豆冰等多种口味。火奴鲁鲁最佳韩式甜品店。',
+      '在威基基（檀香山）品尝韩式刨冰：牛奶Bingsu 7种口味$15.95（紫山药、芒果、草莓、科纳咖啡等），夏威夷Bingsu $12.95。卡拉考阿大道2142号，每天7点至21点。',
   },
   es: {
-    title: 'Mejor Bingsu en Waikiki | Hielo Raspado Coreano Hawaii',
+    title: 'Bingsu en Waikiki y Honolulu: hielo coreano desde $12.95',
     description:
-      'Prueba el mejor bingsu en Waikiki en Kona Coffee Donut. Auténtico hielo raspado coreano con helado de leche premium y más de 6 sabores. El mejor postre coreano en Honolulu.',
+      'Bingsu coreano en Waikiki, Honolulu: bingsu de leche $15.95 en 7 sabores y bingsu hawaiano $12.95. 2142 Kalākaua Ave, de 7 AM a 9 PM.',
   },
 };
 

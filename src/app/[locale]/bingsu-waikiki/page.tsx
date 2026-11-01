@@ -37,13 +37,13 @@ const content = {
           icon: 'snowflake',
           title: 'Real Milk-Based Ice',
           description:
-            'We use a Korean-imported bingsu machine that shaves frozen milk into ultra-fine, snow-like flakes. No crushed ice, no syrup-soaked crystals — just pure, creamy milk snow.',
+            'Our bingsu is shaved from frozen milk into ultra-fine, snow-like flakes. No crushed ice, no syrup-soaked crystals — just creamy milk snow.',
         },
         {
           icon: 'star',
           title: 'Premium Toppings',
           description:
-            'From slow-cooked sweet red beans (pat) to hand-rolled injeolmi rice cakes, every topping is prepared fresh in-house. We never use canned fillings or artificial flavors.',
+            'Every bowl is shaved to order and finished at the counter — red bean, ube, mango, strawberry, pineapple, Kona coffee or green tea over milk snow.',
         },
         {
           icon: 'sparkles',
@@ -61,48 +61,48 @@ const content = {
     },
     menu: {
       title: 'Our Bingsu Menu',
-      subtitle: 'Six signature flavors of Korean shaved ice in Waikiki',
+      subtitle: 'Seven milk bingsu flavors at $15.95, plus five Hawaiian-style bingsu at $12.95',
       items: [
         {
-          name: 'Injeolmi Bingsu',
+          name: 'Ube Bingsu',
           description:
-            'The #1 bestseller in Korea. Nutty roasted soybean powder, chewy rice cake cubes, and condensed milk drizzle over milk-snow ice.',
-          price: 'from $15',
-          tag: 'Most Popular',
+            'Purple ube over our milk-snow ice — the most photogenic bowl on the menu.',
+          price: '$15.95',
+          tag: '',
         },
         {
           name: 'Mango Bingsu',
           description:
-            'Fresh Hawaiian mango chunks, mango puree, and coconut flakes atop our signature milk ice. A tropical-Korean fusion exclusive.',
-          price: 'from $15',
-          tag: 'Hawaii Exclusive',
+            'Sweet mango over fluffy milk-snow ice. The tropical pick for a hot Waikiki afternoon.',
+          price: '$15.95',
+          tag: 'Tropical',
         },
         {
           name: 'Strawberry Bingsu',
           description:
-            'Sliced fresh strawberries, strawberry sauce, and cheesecake crumbles layered with fluffy milk-snow ice.',
-          price: 'from $15',
+            'Strawberry over milk-snow ice — sweet, bright and easy to share.',
+          price: '$15.95',
           tag: '',
         },
         {
-          name: 'Oreo Bingsu',
+          name: 'Kona Coffee Bingsu',
           description:
-            'Crushed Oreo cookies, chocolate sauce, and vanilla ice cream on a mountain of milk-snow. A favorite with kids and chocolate lovers.',
-          price: 'from $15',
-          tag: 'Kids\' Favorite',
+            'Coffee-flavored bingsu for the coffee crowd, on the same milk-snow ice.',
+          price: '$15.95',
+          tag: 'For Coffee Lovers',
         },
         {
           name: 'Green Tea Bingsu',
           description:
-            'Premium matcha from Jeju Island, sweet red beans, and mochi balls. The perfect balance of bitter and sweet.',
-          price: 'from $15',
+            'Green tea (matcha) bingsu — bitter-sweet and not too sugary.',
+          price: '$15.95',
           tag: '',
         },
         {
-          name: 'Classic Patbingsu',
+          name: 'Classic Patbingsu (Azuki Bean)',
           description:
-            'The original Korean shaved ice. Slow-simmered sweet red beans, rice cakes, and a touch of condensed milk. Timeless and traditional.',
-          price: 'from $15',
+            'The original Korean style: sweet red azuki beans over milk-snow ice.',
+          price: '$15.95',
           tag: 'Traditional',
         },
       ],
@@ -114,27 +114,27 @@ const content = {
       combos: [
         {
           name: 'The Waikiki Chill',
-          items: 'Injeolmi Bingsu + Iced Kona Latte',
+          items: 'Ube Bingsu + Iced Latte',
           description:
-            'The nutty sweetness of injeolmi meets the smooth richness of Honolulu Coffee. Our most popular pairing — the roasted soybean and coffee flavors complement each other beautifully.',
+            'Creamy ube with a cold latte ($6.35) — sweet and cooling after the beach.',
         },
         {
           name: 'Tropical Duo',
-          items: 'Mango Bingsu + Mochi Donut (Lilikoi Glaze)',
+          items: 'Mango Bingsu + Mochi Donut',
           description:
-            'Double down on Hawaiian tropical vibes. The fresh mango bingsu paired with our chewy lilikoi-glazed mochi donut is a taste of paradise.',
+            'Icy mango plus a chewy mochi donut ($3.95) — two textures in one stop.',
         },
         {
           name: 'Matcha Harmony',
-          items: 'Green Tea Bingsu + Matcha Kona Latte',
+          items: 'Green Tea Bingsu + Matcha Latte',
           description:
-            'For matcha enthusiasts — pair our Jeju matcha bingsu with a creamy matcha Kona latte for the ultimate green tea experience.',
+            'For green-tea fans: the bingsu with a whisked matcha latte ($9.95).',
         },
         {
           name: 'Classic Korean Set',
-          items: 'Patbingsu + Hot Kona Americano',
+          items: 'Patbingsu + Hot Americano',
           description:
-            'The way Koreans enjoy it — traditional red bean bingsu with a strong, hot Americano. The contrast of icy and warm is deeply satisfying.',
+            'The Korean cafe way: icy red-bean bingsu with a hot Americano ($5.35).',
         },
       ],
     },
@@ -164,13 +164,13 @@ const content = {
           icon: 'snowflake',
           title: '本物のミルク氷',
           description:
-            '韓国から輸入した専用ビンスマシンで、凍った牛乳を極細のパウダースノー状に。砕いた氷やシロップではない、本物のミルク氷です。',
+            '凍らせた牛乳を極細のパウダースノー状に削ります。砕いた氷やシロップではない、本物のミルク氷です。',
         },
         {
           icon: 'star',
           title: 'プレミアムトッピング',
           description:
-            'じっくり炊いた小豆、手作りのインジョルミ餅、すべて店内で手作り。缶詰や人工フレーバーは一切使いません。',
+            'ご注文ごとに削りたて。あずき、ウベ、マンゴー、いちご、パイナップル、コナコーヒー、抹茶から選べます。',
         },
         {
           icon: 'sparkles',
@@ -188,48 +188,48 @@ const content = {
     },
     menu: {
       title: 'ビンスメニュー',
-      subtitle: 'ワイキキで味わう6種類の本格韓国かき氷',
+      subtitle: 'ミルクビンス全7種 $15.95・ハワイアンビンス全5種 $12.95',
       items: [
         {
-          name: 'インジョルミビンス',
+          name: 'ウベビンス',
           description:
-            '韓国で一番人気。香ばしいきな粉、もちもちのお餅、練乳がミルク氷にかかった定番の味。',
-          price: '$15〜',
-          tag: '一番人気',
+            '紫芋ウベをミルク氷にたっぷり。写真映え抜群の一杯。',
+          price: '$15.95',
+          tag: '',
         },
         {
           name: 'マンゴービンス',
           description:
-            'ハワイ産の新鮮なマンゴーとマンゴーピューレ、ココナッツフレークをトッピング。ハワイ×韓国の限定フュージョン。',
-          price: '$15〜',
-          tag: 'ハワイ限定',
+            '甘いマンゴーとふわふわミルク氷。暑いワイキキの午後にぴったり。',
+          price: '$15.95',
+          tag: 'トロピカル',
         },
         {
           name: 'いちごビンス',
           description:
-            'フレッシュいちごのスライス、いちごソース、チーズケーキクランブルをふわふわミルク氷に。',
-          price: '$15〜',
+            'いちごとミルク氷の甘酸っぱい組み合わせ。シェアにもおすすめ。',
+          price: '$15.95',
           tag: '',
         },
         {
-          name: 'オレオビンス',
+          name: 'コナコーヒービンス',
           description:
-            '砕いたオレオ、チョコレートソース、バニラアイスをミルク氷の山にトッピング。お子様やチョコ好きに大人気。',
-          price: '$15〜',
-          tag: 'お子様に人気',
+            'コーヒー好きのためのコーヒーフレーバーのビンス。',
+          price: '$15.95',
+          tag: 'コーヒー好きに',
         },
         {
           name: '抹茶ビンス',
           description:
-            '済州島産プレミアム抹茶、あずき、もち玉。ほろ苦さと甘さの絶妙なバランス。',
-          price: '$15〜',
+            'ほろ苦い抹茶（グリーンティー）のビンス。甘さ控えめ。',
+          price: '$15.95',
           tag: '',
         },
         {
-          name: 'クラシック パッビンス',
+          name: 'クラシック パッビンス（あずき）',
           description:
-            '韓国かき氷の原点。じっくり炊いた小豆、お餅、練乳のシンプルで伝統的な一品。',
-          price: '$15〜',
+            '韓国かき氷の原点。甘いあずきとミルク氷。',
+          price: '$15.95',
           tag: '定番',
         },
       ],
@@ -241,27 +241,27 @@ const content = {
       combos: [
         {
           name: 'ワイキキ チル',
-          items: 'インジョルミビンス + アイスコナラテ',
+          items: 'ウベビンス + アイスラテ',
           description:
-            'きな粉の香ばしさとホノルルコーヒーの豊かな味わいが出会う、一番人気の組み合わせ。',
+            'クリーミーなウベと冷たいラテ（$6.35）。ビーチ帰りに。',
         },
         {
           name: 'トロピカルデュオ',
-          items: 'マンゴービンス + モチドーナツ（リリコイグレーズ）',
+          items: 'マンゴービンス + モチドーナツ',
           description:
-            'ハワイのトロピカルフルーツを堪能。マンゴービンスとリリコイモチドーナツで南国気分を倍増。',
+            'ひんやりマンゴーともちもちモチドーナツ（$3.95）、2つの食感を一度に。',
         },
         {
           name: '抹茶ハーモニー',
-          items: '抹茶ビンス + 抹茶コナラテ',
+          items: '抹茶ビンス + 抹茶ラテ',
           description:
-            '抹茶好きのための究極セット。済州島の抹茶ビンスとクリーミーな抹茶コナラテの組み合わせ。',
+            '抹茶好きのためのセット。抹茶ラテは$9.95。',
         },
         {
           name: '韓国クラシックセット',
-          items: 'パッビンス + ホットコナアメリカーノ',
+          items: 'パッビンス + ホットアメリカーノ',
           description:
-            '韓国スタイルの楽しみ方。冷たいパッビンスと熱いアメリカーノのコントラストが癖になります。',
+            '韓国カフェの定番。冷たいパッビンスと熱いアメリカーノ（$5.35）。',
         },
       ],
     },
@@ -291,13 +291,13 @@ const content = {
           icon: 'snowflake',
           title: '진짜 우유 얼음',
           description:
-            '한국에서 직수입한 빙수 전용 머신으로 우유를 얼려 곱게 깎아냅니다. 얼음을 갈거나 시럽을 뿌린 것과는 차원이 다른, 진짜 우유 눈꽃 빙수입니다.',
+            '우유를 얼려 곱게 깎아낸 눈꽃 얼음입니다. 얼음을 갈거나 시럽을 뿌린 것과는 차원이 다른, 진짜 우유 빙수입니다.',
         },
         {
           icon: 'star',
           title: '프리미엄 토핑',
           description:
-            '정성껏 끓인 팥, 직접 만든 인절미 떡까지 모든 토핑을 매장에서 직접 준비합니다. 캔 재료나 인공 향료는 절대 사용하지 않습니다.',
+            '주문 즉시 갈아내고 팥, 우베, 망고, 딸기, 파인애플, 코나커피, 녹차 중에서 고를 수 있습니다.',
         },
         {
           icon: 'sparkles',
@@ -315,49 +315,49 @@ const content = {
     },
     menu: {
       title: '빙수 메뉴',
-      subtitle: '와이키키에서 즐기는 6가지 시그니처 빙수',
+      subtitle: '우유 빙수 7가지 $15.95 · 하와이안 빙수 5가지 $12.95',
       items: [
         {
-          name: '인절미 빙수',
+          name: '우베 빙수',
           description:
-            '한국 빙수 부동의 1위. 고소한 콩고물, 쫀득한 인절미 떡, 연유가 우유 눈꽃 얼음 위에 소복이. 한 입이면 서울 카페에 온 기분.',
-          price: '$15~',
-          tag: '인기 No.1',
+            '보라색 우베를 우유 눈꽃 얼음 위에 듬뿍. 사진이 제일 예쁘게 나오는 빙수.',
+          price: '$15.95',
+          tag: '',
         },
         {
           name: '망고 빙수',
           description:
-            '하와이산 신선 망고 듬뿍, 망고 퓨레, 코코넛 플레이크까지. 한국 빙수와 하와이 열대 과일의 환상적인 만남.',
-          price: '$15~',
-          tag: '하와이 한정',
+            '달콤한 망고와 폭신한 우유 얼음. 더운 와이키키 오후에 딱.',
+          price: '$15.95',
+          tag: '트로피컬',
         },
         {
           name: '딸기 빙수',
           description:
-            '신선한 딸기 슬라이스, 딸기 소스, 치즈케이크 크럼블이 우유 눈꽃 얼음과 어우러진 상큼한 맛.',
-          price: '$15~',
+            '딸기와 우유 얼음의 달콤한 조합. 나눠 먹기 좋아요.',
+          price: '$15.95',
           tag: '',
         },
         {
-          name: '오레오 빙수',
+          name: '코나커피 빙수',
           description:
-            '부순 오레오, 초콜릿 소스, 바닐라 아이스크림을 눈꽃 얼음 위에. 아이들과 초코 덕후들의 원픽.',
-          price: '$15~',
-          tag: '어린이 인기',
+            '커피 좋아하는 분들을 위한 커피 맛 빙수.',
+          price: '$15.95',
+          tag: '커피 러버',
         },
         {
           name: '녹차 빙수',
           description:
-            '제주도산 프리미엄 말차, 달콤한 팥, 찰떡볼의 조합. 쌉싸름함과 달콤함의 완벽한 밸런스.',
-          price: '$15~',
+            '쌉쌀한 녹차(말차) 빙수. 너무 달지 않아요.',
+          price: '$15.95',
           tag: '',
         },
         {
           name: '클래식 팥빙수',
           description:
-            '빙수의 원조. 정성껏 끓인 통팥, 떡, 연유 한 줄기. 어릴 적 그 맛 그대로, 심플하지만 깊은 전통의 맛.',
-          price: '$15~',
-          tag: '전통',
+            '빙수의 원조. 달콤한 팥과 우유 얼음.',
+          price: '$15.95',
+          tag: '클래식',
         },
       ],
     },
@@ -368,27 +368,27 @@ const content = {
       combos: [
         {
           name: '와이키키 칠',
-          items: '인절미 빙수 + 아이스 코나 라떼',
+          items: '우베 빙수 + 아이스 라떼',
           description:
-            '인절미의 고소함과 호놀룰루 커피의 깊은 풍미가 만나는 최고의 조합. 콩고물과 커피 향이 놀랍도록 잘 어울립니다.',
+            '크리미한 우베와 시원한 라떼($6.35). 해변에서 돌아오는 길에.',
         },
         {
           name: '트로피컬 듀오',
-          items: '망고 빙수 + 모찌 도넛 (릴리코이 글레이즈)',
+          items: '망고 빙수 + 모찌 도넛',
           description:
-            '하와이 열대 과일의 향연. 신선한 망고 빙수와 릴리코이 모찌 도넛으로 남국의 맛을 두 배로.',
+            '시원한 망고 빙수와 쫄깃한 모찌 도넛($3.95), 두 가지 식감을 한 번에.',
         },
         {
           name: '말차 하모니',
-          items: '녹차 빙수 + 말차 코나 라떼',
+          items: '녹차 빙수 + 말차 라떼',
           description:
-            '말차 덕후를 위한 궁극의 세트. 제주 말차 빙수와 크리미한 말차 코나 라떼의 꿈의 조합.',
+            '말차 좋아하는 분들을 위한 조합. 말차 라떼는 $9.95.',
         },
         {
           name: '한국 클래식 세트',
-          items: '팥빙수 + 핫 코나 아메리카노',
+          items: '팥빙수 + 따뜻한 아메리카노',
           description:
-            '한국인이 사랑하는 조합. 차가운 팥빙수와 뜨거운 아메리카노의 대비가 주는 깊은 만족감.',
+            '한국 카페 스타일. 차가운 팥빙수와 뜨거운 아메리카노($5.35).',
         },
       ],
     },
@@ -417,13 +417,13 @@ const content = {
           icon: 'snowflake',
           title: '真正的牛奶冰',
           description:
-            '使用韩国进口的专业Bingsu机器，将冻结的牛奶削成超细雪花状薄片。不是碎冰加糖浆，而是纯正的牛奶雪。',
+            '将冻结的牛奶削成超细雪花状薄片。不是碎冰加糖浆，而是纯正的牛奶雪。',
         },
         {
           icon: 'star',
           title: '优质配料',
           description:
-            '从慢火熬制的红豆到手工制作的年糕，所有配料均在店内新鲜制作。绝不使用罐头原料或人工香精。',
+            '每碗现点现削，可选红豆、紫山药、芒果、草莓、菠萝、科纳咖啡或抹茶口味。',
         },
         {
           icon: 'sparkles',
@@ -441,49 +441,49 @@ const content = {
     },
     menu: {
       title: 'Bingsu菜单',
-      subtitle: '威基基六款招牌韩式刨冰',
+      subtitle: '牛奶Bingsu 7种口味 $15.95 · 夏威夷Bingsu 5种 $12.95',
       items: [
         {
-          name: '年糕黄豆粉Bingsu',
+          name: '紫山药Bingsu',
           description:
-            '韩国人气第一名。香浓烤黄豆粉、Q弹年糕块、炼乳淋在绵密牛奶雪冰上。',
-          price: '$15起',
-          tag: '最受欢迎',
+            '紫色Ube铺满牛奶雪花冰，最上镜的一碗。',
+          price: '$15.95',
+          tag: '',
         },
         {
           name: '芒果Bingsu',
           description:
-            '新鲜夏威夷芒果块、芒果泥和椰子片搭配招牌牛奶冰。夏威夷×韩国限定特色。',
-          price: '$15起',
-          tag: '夏威夷限定',
+            '香甜芒果配绵软牛奶冰，炎热午后的热带之选。',
+          price: '$15.95',
+          tag: '热带',
         },
         {
           name: '草莓Bingsu',
           description:
-            '新鲜草莓切片、草莓酱和芝士蛋糕碎屑层叠在绵软牛奶雪冰上。',
-          price: '$15起',
+            '草莓配牛奶雪花冰，酸甜适口，适合分享。',
+          price: '$15.95',
           tag: '',
         },
         {
-          name: '奥利奥Bingsu',
+          name: '科纳咖啡Bingsu',
           description:
-            '碎奥利奥饼干、巧克力酱和香草冰淇淋堆叠在牛奶雪冰山上。孩子和巧克力爱好者的最爱。',
-          price: '$15起',
-          tag: '儿童最爱',
+            '咖啡口味的Bingsu，咖啡爱好者必点。',
+          price: '$15.95',
+          tag: '咖啡控',
         },
         {
           name: '抹茶Bingsu',
           description:
-            '济州岛优质抹茶、甜红豆和麻糬球。苦与甜的完美平衡。',
-          price: '$15起',
+            '微苦抹茶（绿茶）口味，甜而不腻。',
+          price: '$15.95',
           tag: '',
         },
         {
           name: '经典红豆Bingsu',
           description:
-            '韩式刨冰的原点。慢火熬制红豆、年糕和炼乳。简单而经典的传统味道。',
-          price: '$15起',
-          tag: '传统',
+            '韩式刨冰的原点：香甜红豆配牛奶冰。',
+          price: '$15.95',
+          tag: '经典',
         },
       ],
     },
@@ -493,27 +493,27 @@ const content = {
       combos: [
         {
           name: '威基基清凉组合',
-          items: '年糕黄豆粉Bingsu + 冰科纳拿铁',
+          items: '紫山药Bingsu + 冰拿铁',
           description:
-            '黄豆粉的醇香与檀香山咖啡的浓郁完美交融。最受欢迎的搭配。',
+            '绵密Ube配冰拿铁（$6.35），海滩归来正合适。',
         },
         {
           name: '热带双享',
-          items: '芒果Bingsu + 麻糬甜甜圈（百香果糖霜）',
+          items: '芒果Bingsu + 麻糬甜甜圈',
           description:
-            '双重热带风情。新鲜芒果Bingsu搭配百香果麻糬甜甜圈，尽享天堂之味。',
+            '冰爽芒果配Q弹麻糬甜甜圈（$3.95），一次享受两种口感。',
         },
         {
           name: '抹茶和谐',
-          items: '抹茶Bingsu + 抹茶科纳拿铁',
+          items: '抹茶Bingsu + 抹茶拿铁',
           description:
-            '抹茶爱好者的终极组合。济州抹茶Bingsu配奶香抹茶科纳拿铁。',
+            '抹茶控专属组合，抹茶拿铁$9.95。',
         },
         {
           name: '韩式经典套餐',
-          items: '红豆Bingsu + 热科纳美式',
+          items: '红豆Bingsu + 热美式',
           description:
-            '韩国人最爱的吃法。冰凉红豆刨冰搭配滚烫美式咖啡，冰火交融的满足感。',
+            '韩国咖啡馆的经典吃法：冰红豆Bingsu配热美式（$5.35）。',
         },
       ],
     },
@@ -545,7 +545,7 @@ const faqSchema = {
       name: 'Where can I get bingsu in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kona Coffee Donut at 2142 Kalakaua Ave in Waikiki serves authentic Korean bingsu made with a Korean-imported milk-ice machine. We offer six signature flavors including Injeolmi, Mango, Strawberry, Oreo, Green Tea, and Classic Patbingsu. Our cafe is located steps from Waikiki Beach.',
+        text: 'Kona Coffee Donut at 2142 Kalakaua Ave in Waikiki, about a 5-minute walk from Waikiki Beach, serves milk bingsu in seven flavors — Azuki Bean, Strawberry, Pineapple, Mango, Ube, Kona Coffee and Green Tea — for $15.95, plus five Hawaiian-style bingsu for $12.95. Open 7 AM to 9 PM daily.',
       },
     },
     {
@@ -553,7 +553,7 @@ const faqSchema = {
       name: 'What are the most popular bingsu flavors?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The most popular bingsu flavor in Korea is Injeolmi Bingsu, which features roasted soybean powder and chewy rice cakes. Other popular flavors include Mango Bingsu, Strawberry Bingsu, Oreo Bingsu, Green Tea (Matcha) Bingsu, and the classic Patbingsu with sweet red beans. At Kona Coffee Donut in Waikiki, our Mango Bingsu is a Hawaii exclusive featuring fresh local mangoes.',
+        text: 'Classic red bean (patbingsu), mango, strawberry and green tea are among the best-known bingsu flavors in Korea. At Kona Coffee Donut in Waikiki you can order Azuki Bean, Strawberry, Pineapple, Mango, Ube, Kona Coffee or Green Tea milk bingsu ($15.95), or one of five Hawaiian-style bingsu ($12.95) such as Waikiki Rainbow and Paradise Lilikoi.',
       },
     },
     {
@@ -561,7 +561,7 @@ const faqSchema = {
       name: 'How much does bingsu cost in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'At Kona Coffee Donut in Waikiki, bingsu prices start from $12 for Classic Patbingsu and go up to $15 for premium flavors like Mango and Green Tea Bingsu. Each serving is generous and can be shared between two people.',
+        text: 'At Kona Coffee Donut, 2142 Kalakaua Ave in Waikiki, milk bingsu is $15.95 and Hawaiian-style bingsu is $12.95; a shave ice cup is $8.95. One bowl is easy to share between two people.',
       },
     },
     {
@@ -569,7 +569,7 @@ const faqSchema = {
       name: 'Is bingsu a good dessert to pair with coffee?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes! Bingsu pairs wonderfully with coffee, especially hot Americano — the contrast between icy bingsu and hot coffee is a classic Korean combination. At Kona Coffee Donut, we recommend pairing Injeolmi Bingsu with an Iced Kona Latte or Classic Patbingsu with a Hot Kona Americano for the authentic Korean cafe experience.',
+        text: 'Yes! Bingsu pairs wonderfully with coffee, especially hot Americano — the contrast between icy bingsu and hot coffee is a classic Korean combination. At Kona Coffee Donut in Waikiki, try Classic Patbingsu with a hot Americano ($5.35) or Ube Bingsu with an iced latte ($6.35).',
       },
     },
   ],

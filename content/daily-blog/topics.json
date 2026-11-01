@@ -54,7 +54,8 @@
       "keyword": "grab and go food waikiki",
       "angle": "One-handed beach food: musubi, donuts, sealed boba cans. Everything packable, nothing over $9.",
       "products": "musubi, donuts, boba cans",
-      "status": "pending"
+      "status": "published",
+      "published": "2026-10-31"
     },
     {
       "slug": "spam-musubi-vs-onigiri",
@@ -170,7 +171,8 @@
       "keyword": "omiyage hawaii ideas",
       "angle": "Japanese visitors' omiyage culture: donut boxes (dozen $45) and what travels well on the flight home.",
       "products": "donut dozen boxes",
-      "status": "pending"
+      "status": "published",
+      "published": "2026-10-31"
     },
     {
       "slug": "coffee-date-spot-waikiki",

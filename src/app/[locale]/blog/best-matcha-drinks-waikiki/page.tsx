@@ -20,7 +20,7 @@ const content = {
     },
     definition: {
       title: 'What\'s the Best Matcha in Waikiki?',
-      text: 'The <strong>best matcha in Waikiki</strong> is real, stone-ground Japanese matcha <strong>whisked fresh to order</strong> — not a sugary instant powder — in a flavor you love. At <strong>Kona Coffee Donut?</strong>, our most popular pick is the <strong>Strawberry Matcha ($11.95)</strong>: creamy, sweet-tart, and impossibly photogenic. Prefer it pure? The <strong>Classic Matcha Latte ($9.95)</strong> is the truest taste. Add tropical mango, coconut, guava, banana, or lilikoi, get any of them <strong>iced</strong>, or swap to a <strong>caffeine-free hojicha base</strong> — all just about 5 minutes from Waikiki Beach.',
+      text: 'The <strong>best matcha in Waikiki</strong> is real, stone-ground Japanese matcha <strong>whisked fresh to order</strong> — not a sugary instant powder — in a flavor you love. At <strong>Kona Coffee Donut?</strong>, our most popular pick is the <strong>Strawberry Matcha ($11.95)</strong>: creamy, sweet-tart, and impossibly photogenic. Prefer it pure? The <strong>Classic Matcha Latte ($9.95)</strong> is the truest taste. Add tropical mango, coconut, guava, banana, or lilikoi, get any of them <strong>iced</strong>, or pick roasted, <strong>low-caffeine hojicha</strong> — all just about 5 minutes from Waikiki Beach.',
     },
     history: {
       title: 'What Makes a Great Matcha Drink',
@@ -28,7 +28,7 @@ const content = {
       p1: 'A great matcha starts with <strong>real, stone-ground Japanese matcha whisked fresh to order</strong> — not a sugary instant powder. That\'s what gives you the vivid green color, the smooth earthy-umami flavor, and the calm, steady caffeine matcha is famous for. Every matcha on our Waikiki menu is built on that same real base.',
       p2: 'The second thing that makes a matcha great is <strong>balance</strong>. Too much sugar buries the tea; too little and it can taste harsh. Our flavored matchas layer just enough fruit or cream to complement the grassy matcha underneath, so you taste both — bright on top, earthy below. That balance is exactly why our <strong>Strawberry Matcha has become our most popular drink</strong>.',
       p3: 'Flavor choice matters too. Some people want the pure, classic taste; others want tropical fruit, creamy coconut, or a dessert-like banana. That\'s why we pour a <strong>full lineup</strong> — so whether it\'s your first matcha ever or your daily ritual, there\'s one with your name on it. Below we rank them to help you choose.',
-      p4: 'Finally, a great matcha fits the moment. <strong>Iced</strong> on a hot Waikiki afternoon, hot on an early morning, or swapped to a <strong>caffeine-free hojicha base</strong> when you want something toasty and gentle. Pair any of them with a fresh mochi donut and a quick coffee run becomes the best few minutes of your day.',
+      p4: 'Finally, a great matcha fits the moment. <strong>Iced</strong> on a hot Waikiki afternoon, hot on an early morning, or switched to roasted, <strong>low-caffeine hojicha</strong> when you want something toasty and gentle. Pair any of them with a fresh mochi donut and a quick coffee run becomes the best few minutes of your day.',
     },
     comparison: {
       title: 'Which Matcha Flavor Is Right for You?',
@@ -90,13 +90,13 @@ const content = {
           kakigori: '$11.95',
         },
         {
-          feature: 'Caffeine-free & roasted',
-          bingsu: 'Any flavor, hojicha base',
+          feature: 'Low-caffeine & roasted',
+          bingsu: 'Hojicha Latte',
           shavedIce: 'Toasty, nutty caramel',
           kakigori: '$9.95',
         },
       ],
-      note: 'Every drink can be made iced, and any flavor can be built on a caffeine-free hojicha base instead of matcha. When in doubt, start with the Strawberry Matcha — it\'s our most popular for a reason.',
+      note: 'Every drink can be made iced, and for something roasted and low in caffeine there is the Hojicha Latte ($9.95) or Strawberry Hojicha ($10.95). When in doubt, start with the Strawberry Matcha — it\'s our most popular for a reason.',
     },
     types: {
       title: 'Our Matcha Lineup, Ranked',
@@ -160,8 +160,8 @@ const content = {
           description: 'The classic. Every flavor is built on real stone-ground Japanese matcha, whisked fresh — vivid green, earthy-sweet, with matcha\'s signature calm caffeine. This is what most people picture when they order a matcha latte, and it\'s the base for our bestselling Strawberry Matcha.',
         },
         {
-          title: 'Hojicha Base — Roasted & Caffeine-Free-Friendly',
-          description: 'Prefer something toasty and mellow? Ask for any flavor on a hojicha (roasted green tea) base instead. Hojicha is nutty, caramel-like, and naturally very low in caffeine — the perfect pick for the evening, or for anyone avoiding a caffeine kick.',
+          title: 'Hojicha — Roasted & Low in Caffeine',
+          description: 'Prefer something toasty and mellow? Order the Hojicha Latte ($9.95) or Strawberry Hojicha ($10.95). Hojicha is nutty, caramel-like, and naturally very low in caffeine — the perfect pick for the evening, or for anyone avoiding a caffeine kick.',
         },
         {
           title: 'Get Any of Them Iced',
@@ -179,10 +179,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? whisks real Japanese matcha to order in a full lineup of flavors — led by our bestselling Strawberry Matcha — plus caffeine-free hojicha and 100% Kona coffee. Get any of them hot or iced, and pair one with a fresh mochi donut. We\'re about a 5-minute walk from Waikiki Beach and open daily from 7AM to 9PM.',
+        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? whisks real Japanese matcha to order in a full lineup of flavors — led by our bestselling Strawberry Matcha — plus low-caffeine hojicha and 100% Kona coffee. Get any of them hot or iced, and pair one with a fresh mochi donut. We\'re about a 5-minute walk from Waikiki Beach and open daily from 7AM to 9PM.',
         highlights: [
           'Bestselling Strawberry Matcha + a full flavor lineup',
-          'Real whisked matcha or caffeine-free hojicha — hot or iced',
+          'Real whisked matcha or low-caffeine hojicha — hot or iced',
           'Pairs perfectly with a fresh mochi donut',
           '~5 min from Waikiki Beach · open daily 7AM–9PM · (808) 260-1835',
         ],
@@ -206,8 +206,8 @@ const content = {
           description: 'Matcha and mochi are a match made in heaven. Add a fresh mochi donut — we even make a matcha one — and the chewy, lightly sweet donut balances the earthy tea perfectly. It\'s the combo our regulars come back for.',
         },
         {
-          title: 'Go Caffeine-Free with Hojicha',
-          description: 'Want the treat without the buzz? Ask for your flavor on a hojicha base. It\'s roasted, nutty, and naturally very low in caffeine, so you can enjoy a warm or iced cup any time of day — even in the evening.',
+          title: 'Go Low-Caffeine with Hojicha',
+          description: 'Want the treat with less buzz? Order a Hojicha Latte or Strawberry Hojicha. It\'s roasted, nutty, and naturally very low in caffeine, so you can enjoy a warm or iced cup any time of day — even in the evening.',
         },
       ],
     },
@@ -227,8 +227,12 @@ const content = {
           answer: 'Absolutely. Every matcha (and hojicha) drink on our menu can be made iced — including the Strawberry Matcha, Classic Matcha Latte, and all the tropical flavors. Iced is how most guests order on a warm Waikiki day.',
         },
         {
-          question: 'Is there a caffeine-free option?',
-          answer: 'Yes. Ask for any flavor on a hojicha (roasted green tea) base instead of matcha. Hojicha is naturally very low in caffeine, with a toasty, nutty, caramel-like flavor — perfect for the evening or anyone avoiding a caffeine kick.',
+          question: 'Where can I get the best matcha in Waikiki?',
+          answer: 'At Kona Coffee Donut?, 2142 Kalākaua Ave — about a 5-minute walk from Waikiki Beach, open 7 AM to 9 PM daily. Matcha is whisked to order: Classic Matcha Latte $9.95, fruit matchas (mango, coconut, guava, banana, lilikoi) $9.95 and Strawberry Matcha $11.95, all hot or iced.',
+        },
+        {
+          question: 'Is there a low-caffeine option?',
+          answer: 'Yes — hojicha (roasted green tea). Order the Hojicha Latte ($9.95) or Strawberry Hojicha ($10.95) at Kona Coffee Donut? in Waikiki. Hojicha is not caffeine-free, but it is naturally much lower in caffeine than matcha or coffee, with a toasty, nutty, caramel-like flavor — good for the evening.',
         },
         {
           question: 'How much is matcha in Waikiki?',
@@ -257,7 +261,7 @@ const content = {
     },
     definition: {
       title: 'ワイキキで一番おいしい抹茶は？',
-      text: '<strong>ワイキキで一番おいしい抹茶</strong>とは、既製の甘いインスタント粉ではなく、<strong>注文ごとに点てたて</strong>の本格的な石臼挽き日本産抹茶を、あなた好みのフレーバーで味わうことです。<strong>Kona Coffee Donut?</strong> の一番人気は<strong>ストロベリー抹茶（$11.95）</strong>。クリーミーで甘酸っぱく、写真映えも抜群です。純粋な味がお好みなら<strong>抹茶ラテ（クラシック・$9.95）</strong>が一番。マンゴー、ココナッツ、グァバ、バナナ、リリコイなどのトロピカルも、どれも<strong>アイス</strong>に、あるいは<strong>カフェインフリーのほうじ茶ベース</strong>にも変更可能 — すべてワイキキビーチから徒歩約5分です。',
+      text: '<strong>ワイキキで一番おいしい抹茶</strong>とは、既製の甘いインスタント粉ではなく、<strong>注文ごとに点てたて</strong>の本格的な石臼挽き日本産抹茶を、あなた好みのフレーバーで味わうことです。<strong>Kona Coffee Donut?</strong> の一番人気は<strong>ストロベリー抹茶（$11.95）</strong>。クリーミーで甘酸っぱく、写真映えも抜群です。純粋な味がお好みなら<strong>抹茶ラテ（クラシック・$9.95）</strong>が一番。マンゴー、ココナッツ、グァバ、バナナ、リリコイなどのトロピカルも、どれも<strong>アイス</strong>に、香ばしく<strong>低カフェインのほうじ茶</strong>も選べます — すべてワイキキビーチから徒歩約5分です。',
     },
     history: {
       title: 'おいしい抹茶ドリンクの条件',
@@ -265,7 +269,7 @@ const content = {
       p1: 'おいしい抹茶は、<strong>既製の甘い粉ではなく、注文ごとに点てたての本格石臼挽き日本産抹茶</strong>から始まります。だからこそ鮮やかな緑色、なめらかで大地のうまみ豊かな味わい、そして抹茶ならではの穏やかで持続的なカフェインが生まれるのです。ワイキキのメニューの抹茶は、すべてこの本物のベースからできています。',
       p2: '二つ目の条件は<strong>バランス</strong>です。甘すぎるとお茶が埋もれ、甘さが足りないと角が立ちます。当店のフレーバー抹茶は、下の草の香りの抹茶を引き立てるのにちょうどよいフルーツやクリームを重ねているので、両方の味が楽しめます — 上はフルーティー、下は大地の風味。このバランスこそ、<strong>ストロベリー抹茶が一番人気になった</strong>理由です。',
       p3: 'フレーバー選びも大切です。純粋なクラシックの味が好きな人もいれば、南国フルーツ、クリーミーなココナッツ、デザートのようなバナナを求める人も。だから当店は<strong>豊富なラインナップ</strong>をご用意 — 抹茶が初めての方にも、毎日の習慣にしている方にも、あなたにぴったりの一杯があります。以下でランキングしてお選びをお手伝いします。',
-      p4: '最後に、おいしい抹茶はその瞬間に寄り添います。暑いワイキキの午後には<strong>アイス</strong>、早朝にはホット、香ばしく穏やかなものが欲しいときは<strong>カフェインフリーのほうじ茶ベース</strong>に。どれも点てたてのモチドーナツと合わせれば、さっとのコーヒータイムが一日で最高の数分になります。',
+      p4: '最後に、おいしい抹茶はその瞬間に寄り添います。暑いワイキキの午後には<strong>アイス</strong>、早朝にはホット、香ばしく穏やかなものが欲しいときは<strong>低カフェインのほうじ茶</strong>を。どれも点てたてのモチドーナツと合わせれば、さっとのコーヒータイムが一日で最高の数分になります。',
     },
     comparison: {
       title: 'あなたにぴったりの抹茶フレーバーは？',
@@ -327,13 +331,13 @@ const content = {
           kakigori: '$11.95',
         },
         {
-          feature: 'カフェインフリーで香ばしい',
-          bingsu: 'お好きなフレーバー・ほうじ茶ベース',
+          feature: '低カフェインで香ばしい',
+          bingsu: 'ほうじ茶ラテ',
           shavedIce: '香ばしくナッツのようなキャラメル',
           kakigori: '$9.95',
         },
       ],
-      note: 'どのドリンクもアイスにでき、どのフレーバーも抹茶の代わりにカフェインフリーのほうじ茶ベースでお作りできます。迷ったらまずストロベリー抹茶を — 一番人気にはちゃんと理由があります。',
+      note: 'どのドリンクもアイスにでき、香ばしく低カフェインなら、ほうじ茶ラテ（$9.95）やストロベリーほうじ茶（$10.95）を。迷ったらまずストロベリー抹茶を — 一番人気にはちゃんと理由があります。',
     },
     types: {
       title: '当店の抹茶ラインナップ・ランキング',
@@ -398,7 +402,7 @@ const content = {
         },
         {
           title: 'ほうじ茶ベース — 香ばしくカフェイン控えめ',
-          description: '香ばしくまろやかなものがお好みなら、どのフレーバーもほうじ茶（焙煎緑茶）ベースに変更できます。ほうじ茶はナッツのようなキャラメル風味で、カフェインが自然にとても少なめ — 夜や、カフェインを控えたい方にぴったりです。',
+          description: '香ばしくまろやかなものがお好みなら、ほうじ茶ラテ（$9.95）やストロベリーほうじ茶（$10.95）を。ほうじ茶はナッツのようなキャラメル風味で、カフェインが自然にとても少なめ — 夜や、カフェインを控えたい方にぴったりです。',
         },
         {
           title: 'どれもアイスに',
@@ -416,10 +420,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?（コナコーヒードーナツ）',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心、カラカウア通り沿いにあるKona Coffee Donut? では、本格日本産抹茶を注文ごとに点て、豊富なフレーバーでご用意 — 一番人気のストロベリー抹茶を筆頭に、カフェインフリーのほうじ茶、100%コナコーヒーも。どれもホットでもアイスでも、点てたてのモチドーナツと一緒にどうぞ。ワイキキビーチから徒歩約5分、毎日朝7時から夜9時まで営業です。',
+        description: 'ワイキキの中心、カラカウア通り沿いにあるKona Coffee Donut? では、本格日本産抹茶を注文ごとに点て、豊富なフレーバーでご用意 — 一番人気のストロベリー抹茶を筆頭に、低カフェインのほうじ茶、100%コナコーヒーも。どれもホットでもアイスでも、点てたてのモチドーナツと一緒にどうぞ。ワイキキビーチから徒歩約5分、毎日朝7時から夜9時まで営業です。',
         highlights: [
           '一番人気のストロベリー抹茶＋豊富なフレーバー',
-          '本格点てたて抹茶、またはカフェインフリーのほうじ茶 — ホット＆アイス',
+          '本格点てたて抹茶、または低カフェインのほうじ茶 — ホット＆アイス',
           '点てたてのモチドーナツとの相性抜群',
           'ワイキキビーチから徒歩約5分・毎日朝7時〜夜9時・(808) 260-1835',
         ],
@@ -443,8 +447,8 @@ const content = {
           description: '抹茶とモチは天国の組み合わせ。点てたてのモチドーナツを添えて — 抹茶モチドーナツもあります。もちもちでほんのり甘いドーナツが、大地の抹茶を完璧に引き立てます。常連さんが何度も戻ってくる人気のコンビです。',
         },
         {
-          title: 'ほうじ茶でカフェインフリーに',
-          description: 'カフェインなしでご褒美を楽しみたい？ お好きなフレーバーをほうじ茶ベースで。香ばしくナッツのような風味で、カフェインが自然にとても少なめ。夜でも、いつでもホットやアイスで楽しめます。',
+          title: 'ほうじ茶でカフェイン控えめに',
+          description: 'カフェインを控えてご褒美を楽しみたい？ ほうじ茶ラテやストロベリーほうじ茶を。香ばしくナッツのような風味で、カフェインが自然にとても少なめ。夜でも、いつでもホットやアイスで楽しめます。',
         },
       ],
     },
@@ -464,8 +468,12 @@ const content = {
           answer: 'もちろんです。メニューのすべての抹茶（およびほうじ茶）ドリンクはアイスにできます — ストロベリー抹茶、抹茶ラテ（クラシック）、すべてのトロピカルフレーバーも。暖かいワイキキの日には、ほとんどのお客様がアイスで注文されます。',
         },
         {
-          question: 'カフェインフリーの選択肢はありますか？',
-          answer: 'はい。どのフレーバーも抹茶の代わりにほうじ茶（焙煎緑茶）ベースでお作りできます。ほうじ茶はカフェインが自然にとても少なく、香ばしくナッツのようなキャラメル風味 — 夜や、カフェインを控えたい方にぴったりです。',
+          question: 'ワイキキで美味しい抹茶が飲めるのはどこ？',
+          answer: 'Kona Coffee Donut?（2142 Kalākaua Ave、ワイキキビーチから徒歩約5分、毎日7時〜21時）。抹茶は注文ごとに点てます。クラシック抹茶ラテ$9.95、フルーツ抹茶（マンゴー、ココナッツ、グァバ、バナナ、リリコイ）$9.95、ストロベリー抹茶$11.95。ホット・アイスどちらも可。',
+        },
+        {
+          question: 'カフェイン控えめの選択肢はありますか？',
+          answer: 'はい、ほうじ茶（焙煎緑茶）です。Kona Coffee Donut?ではほうじ茶ラテ（$9.95）とストロベリーほうじ茶（$10.95）をご用意。カフェインゼロではありませんが抹茶やコーヒーよりずっと少なく、香ばしくナッツのようなキャラメル風味 — 夜にもおすすめです。',
         },
         {
           question: 'ワイキキで抹茶はいくらですか？',
@@ -494,7 +502,7 @@ const content = {
     },
     definition: {
       title: '와이키키 최고의 말차는?',
-      text: '<strong>와이키키 최고의 말차</strong>는 달콤한 기성 인스턴트 가루가 아니라, <strong>주문 즉시 갓 격불한</strong> 진짜 맷돌 간 일본 말차를 내가 좋아하는 플레이버로 즐기는 것입니다. <strong>Kona Coffee Donut?</strong> 의 가장 인기 메뉴는 <strong>딸기 말차($11.95)</strong> — 크리미하고 새콤달콤하며 사진발도 최고입니다. 순수한 맛을 원하신다면 <strong>클래식 말차 라테($9.95)</strong>가 정답. 망고, 코코넛, 구아바, 바나나, 리리코이 같은 트로피컬도, 무엇이든 <strong>아이스</strong>로, 혹은 <strong>카페인 프리 호지차 베이스</strong>로 바꿀 수 있습니다 — 모두 와이키키 비치에서 도보 약 5분.',
+      text: '<strong>와이키키 최고의 말차</strong>는 달콤한 기성 인스턴트 가루가 아니라, <strong>주문 즉시 갓 격불한</strong> 진짜 맷돌 간 일본 말차를 내가 좋아하는 플레이버로 즐기는 것입니다. <strong>Kona Coffee Donut?</strong> 의 가장 인기 메뉴는 <strong>딸기 말차($11.95)</strong> — 크리미하고 새콤달콤하며 사진발도 최고입니다. 순수한 맛을 원하신다면 <strong>클래식 말차 라테($9.95)</strong>가 정답. 망고, 코코넛, 구아바, 바나나, 리리코이 같은 트로피컬도, 무엇이든 <strong>아이스</strong>로, 고소한 <strong>저카페인 호지차</strong>도 고를 수 있습니다 — 모두 와이키키 비치에서 도보 약 5분.',
     },
     history: {
       title: '맛있는 말차 음료의 조건',
@@ -502,7 +510,7 @@ const content = {
       p1: '맛있는 말차는 <strong>달콤한 기성 가루가 아닌, 주문 즉시 갓 격불한 진짜 맷돌 간 일본 말차</strong>에서 시작됩니다. 그래야 선명한 초록색, 부드럽고 고소한 감칠맛, 그리고 말차 특유의 차분하고 꾸준한 카페인이 나오죠. 와이키키 메뉴의 모든 말차는 바로 이 진짜 베이스로 만듭니다.',
       p2: '두 번째 조건은 <strong>균형</strong>입니다. 설탕이 너무 많으면 차가 묻히고, 너무 적으면 거칠어질 수 있습니다. 저희 플레이버 말차는 아래의 풀향 말차를 살려줄 딱 알맞은 만큼의 과일이나 크림을 얹어, 두 가지 맛을 모두 느끼게 합니다 — 위는 상큼하게, 아래는 고소하게. 이 균형이야말로 <strong>딸기 말차가 가장 인기 있는 음료가 된</strong> 이유입니다.',
       p3: '플레이버 선택도 중요합니다. 순수한 클래식 맛을 원하는 분도 있고, 트로피컬 과일, 크리미한 코코넛, 디저트 같은 바나나를 원하는 분도 있죠. 그래서 저희는 <strong>풍성한 라인업</strong>을 준비했습니다 — 말차가 처음이든, 매일의 루틴이든, 당신을 위한 한 잔이 있습니다. 아래에서 랭킹으로 선택을 도와드릴게요.',
-      p4: '마지막으로, 맛있는 말차는 그 순간에 어울립니다. 더운 와이키키 오후엔 <strong>아이스</strong>, 이른 아침엔 따뜻하게, 고소하고 부드러운 걸 원할 땐 <strong>카페인 프리 호지차 베이스</strong>로. 무엇이든 갓 만든 모찌 도넛과 곁들이면, 잠깐의 커피 타임이 하루 중 가장 좋은 몇 분이 됩니다.',
+      p4: '마지막으로, 맛있는 말차는 그 순간에 어울립니다. 더운 와이키키 오후엔 <strong>아이스</strong>, 이른 아침엔 따뜻하게, 고소하고 부드러운 걸 원할 땐 <strong>저카페인 호지차</strong>로. 무엇이든 갓 만든 모찌 도넛과 곁들이면, 잠깐의 커피 타임이 하루 중 가장 좋은 몇 분이 됩니다.',
     },
     comparison: {
       title: '나에게 맞는 말차 플레이버는?',
@@ -564,13 +572,13 @@ const content = {
           kakigori: '$11.95',
         },
         {
-          feature: '카페인 프리 · 구수한',
-          bingsu: '아무 플레이버, 호지차 베이스',
+          feature: '저카페인 · 구수한',
+          bingsu: '호지차 라테',
           shavedIce: '구수한 견과 캐러멜',
           kakigori: '$9.95',
         },
       ],
-      note: '모든 음료는 아이스로 만들 수 있고, 어떤 플레이버든 말차 대신 카페인 프리 호지차 베이스로 만들 수 있습니다. 고민된다면 딸기 말차부터 — 가장 인기 있는 데는 다 이유가 있으니까요.',
+      note: '모든 음료는 아이스로 만들 수 있고, 고소하고 카페인이 적은 걸 원하면 호지차 라테($9.95)나 딸기 호지차($10.95)를 고르세요. 고민된다면 딸기 말차부터 — 가장 인기 있는 데는 다 이유가 있으니까요.',
     },
     types: {
       title: '우리의 말차 라인업, 랭킹',
@@ -635,7 +643,7 @@ const content = {
         },
         {
           title: '호지차 베이스 — 구수하고 카페인 걱정 적게',
-          description: '구수하고 부드러운 걸 원하신다면, 어떤 플레이버든 호지차(볶은 녹차) 베이스로 바꿔보세요. 호지차는 고소한 캐러멜 풍미에 카페인이 자연적으로 아주 낮습니다 — 저녁이나, 카페인을 피하고 싶은 분께 딱입니다.',
+          description: '구수하고 부드러운 걸 원하신다면 호지차 라테($9.95)나 딸기 호지차($10.95)를 드셔보세요. 호지차는 고소한 캐러멜 풍미에 카페인이 자연적으로 아주 낮습니다 — 저녁이나, 카페인을 피하고 싶은 분께 딱입니다.',
         },
         {
           title: '무엇이든 아이스로',
@@ -653,10 +661,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut? (코나커피도넛)',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 은 진짜 일본 말차를 주문 즉시 격불해 다양한 플레이버로 선보입니다 — 베스트셀러 딸기 말차를 필두로, 카페인 프리 호지차와 100% 코나 커피까지. 무엇이든 따뜻하게든 차갑게든, 갓 만든 모찌 도넛과 함께 즐기세요. 와이키키 비치에서 도보 약 5분, 매일 오전 7시부터 밤 9시까지 영업합니다.',
+        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 은 진짜 일본 말차를 주문 즉시 격불해 다양한 플레이버로 선보입니다 — 베스트셀러 딸기 말차를 필두로, 저카페인 호지차와 100% 코나 커피까지. 무엇이든 따뜻하게든 차갑게든, 갓 만든 모찌 도넛과 함께 즐기세요. 와이키키 비치에서 도보 약 5분, 매일 오전 7시부터 밤 9시까지 영업합니다.',
         highlights: [
           '베스트셀러 딸기 말차 + 풍성한 플레이버 라인업',
-          '진짜 갓 격불 말차 또는 카페인 프리 호지차 — 핫 & 아이스',
+          '진짜 갓 격불 말차 또는 저카페인 호지차 — 핫 & 아이스',
           '갓 만든 모찌 도넛과 찰떡궁합',
           '와이키키 비치에서 도보 약 5분 · 매일 오전 7시~밤 9시 · (808) 260-1835',
         ],
@@ -680,8 +688,8 @@ const content = {
           description: '말차와 모찌는 천생연분. 갓 만든 모찌 도넛을 곁들이세요 — 말차 모찌 도넛도 있습니다. 쫄깃하고 은은하게 단 도넛이 고소한 차를 완벽하게 받쳐줍니다. 단골들이 다시 찾는 바로 그 콤보죠.',
         },
         {
-          title: '호지차로 카페인 프리하게',
-          description: '카페인 없이 즐기고 싶으세요? 원하는 플레이버를 호지차 베이스로 주문하세요. 구수하고 고소하며 카페인이 자연적으로 아주 낮아, 저녁에도 언제든 따뜻하게든 차갑게든 즐길 수 있습니다.',
+          title: '호지차로 카페인은 가볍게',
+          description: '카페인을 줄이고 싶으세요? 호지차 라테나 딸기 호지차를 주문하세요. 구수하고 고소하며 카페인이 자연적으로 아주 낮아, 저녁에도 언제든 따뜻하게든 차갑게든 즐길 수 있습니다.',
         },
       ],
     },
@@ -701,8 +709,12 @@ const content = {
           answer: '물론입니다. 메뉴의 모든 말차(및 호지차) 음료는 아이스로 만들 수 있습니다 — 딸기 말차, 클래식 말차 라테, 모든 트로피컬 플레이버까지. 따뜻한 와이키키 날엔 대부분의 손님이 아이스로 주문하십니다.',
         },
         {
-          question: '카페인 프리 옵션이 있나요?',
-          answer: '네. 어떤 플레이버든 말차 대신 호지차(볶은 녹차) 베이스로 주문하세요. 호지차는 카페인이 자연적으로 아주 낮고, 구수하고 고소한 캐러멜 풍미입니다 — 저녁이나 카페인을 피하고 싶은 분께 딱입니다.',
+          question: '와이키키에서 맛있는 말차는 어디서 마실 수 있나요?',
+          answer: 'Kona Coffee Donut?(2142 Kalākaua Ave, 와이키키 비치에서 도보 약 5분, 매일 오전 7시–밤 9시). 말차는 주문 즉시 격불합니다. 클래식 말차 라테 $9.95, 과일 말차(망고·코코넛·구아바·바나나·리리코이) $9.95, 딸기 말차 $11.95. 핫·아이스 모두 가능합니다.',
+        },
+        {
+          question: '카페인이 적은 옵션이 있나요?',
+          answer: '네, 호지차(볶은 녹차)입니다. Kona Coffee Donut?에서 호지차 라테($9.95)와 딸기 호지차($10.95)를 고를 수 있어요. 카페인이 아예 없진 않지만 말차나 커피보다 훨씬 적고, 구수하고 고소한 캐러멜 풍미라 저녁에도 좋습니다.',
         },
         {
           question: '와이키키에서 말차는 얼마인가요?',
@@ -731,7 +743,7 @@ const content = {
     },
     definition: {
       title: '威基基最好喝的抹茶是哪款？',
-      text: '<strong>威基基最好喝的抹茶</strong>，是用真正的石磨日本抹茶<strong>现点现打</strong>——而非加糖的速溶粉——调成你喜欢的口味。在 <strong>Kona Coffee Donut?</strong>，我们最人气的一款是<strong>草莓抹茶（$11.95）</strong>：奶香浓郁、酸甜可口，还格外上镜。想要纯粹的味道？<strong>经典抹茶拿铁（$9.95）</strong>最正宗。再加上芒果、椰子、番石榴、香蕉或百香果等热带口味，任意一款都能做成<strong>冰饮</strong>，或换成<strong>无咖啡因的焙茶底</strong>——全都距威基基海滩约5分钟。',
+      text: '<strong>威基基最好喝的抹茶</strong>，是用真正的石磨日本抹茶<strong>现点现打</strong>——而非加糖的速溶粉——调成你喜欢的口味。在 <strong>Kona Coffee Donut?</strong>，我们最人气的一款是<strong>草莓抹茶（$11.95）</strong>：奶香浓郁、酸甜可口，还格外上镜。想要纯粹的味道？<strong>经典抹茶拿铁（$9.95）</strong>最正宗。再加上芒果、椰子、番石榴、香蕉或百香果等热带口味，任意一款都能做成<strong>冰饮</strong>，或选焙香、<strong>低咖啡因的焙茶</strong>——全都距威基基海滩约5分钟。',
     },
     history: {
       title: '一杯好抹茶的秘诀',
@@ -739,7 +751,7 @@ const content = {
       p1: '一杯好抹茶，始于<strong>真正现点现打的石磨日本抹茶</strong>，而非加糖的速溶粉。正因如此，才有那鲜亮的绿色、顺滑醇厚的鲜味，以及抹茶著称的平静持久咖啡因。我们威基基菜单上的每一款抹茶，都建立在这同一个正宗基底之上。',
       p2: '第二个秘诀是<strong>平衡</strong>。糖太多会埋没茶味，太少又会显得生涩。我们的风味抹茶只叠加恰到好处的果味或奶香，来衬托下层的草本抹茶，让你两种味道都尝得到——上层明亮，下层醇厚。正是这份平衡，让<strong>草莓抹茶成为我们最人气的饮品</strong>。',
       p3: '口味选择同样重要。有人想要纯粹的经典味，有人想要热带水果、奶香椰子，或像甜点般的香蕉。所以我们供应<strong>完整的口味阵容</strong>——无论是你人生第一杯抹茶，还是每日必点，总有一杯专属于你。下面我们为你排行，帮你挑选。',
-      p4: '最后，一杯好抹茶要契合当下。炎热的威基基午后来杯<strong>冰饮</strong>，清晨来杯热的，想要香醇温和时就换成<strong>无咖啡因的焙茶底</strong>。任意一款配上现做麻糬甜甜圈，随手一杯咖啡便成了一天中最惬意的几分钟。',
+      p4: '最后，一杯好抹茶要契合当下。炎热的威基基午后来杯<strong>冰饮</strong>，清晨来杯热的，想要香醇温和时就选<strong>低咖啡因的焙茶</strong>。任意一款配上现做麻糬甜甜圈，随手一杯咖啡便成了一天中最惬意的几分钟。',
     },
     comparison: {
       title: '哪款抹茶口味适合你？',
@@ -801,13 +813,13 @@ const content = {
           kakigori: '$11.95',
         },
         {
-          feature: '无咖啡因 · 焙烤香',
-          bingsu: '任意口味 · 焙茶底',
+          feature: '低咖啡因 · 焙烤香',
+          bingsu: '焙茶拿铁',
           shavedIce: '焙香坚果焦糖',
           kakigori: '$9.95',
         },
       ],
-      note: '每款饮品都能做成冰饮，任意口味都能用无咖啡因的焙茶底代替抹茶。拿不定主意时，就从草莓抹茶开始——它成为最人气自有道理。',
+      note: '每款饮品都能做成冰饮，想要焙香低咖啡因的，可选焙茶拿铁（$9.95）或草莓焙茶（$10.95）。拿不定主意时，就从草莓抹茶开始——它成为最人气自有道理。',
     },
     types: {
       title: '我们的抹茶阵容 · 排行',
@@ -871,8 +883,8 @@ const content = {
           description: '经典之选。每款口味都以真正石磨日本抹茶现打而成——鲜绿、醇甜，带有抹茶标志性的平静咖啡因。这是大多数人点抹茶拿铁时想到的味道，也是我们招牌草莓抹茶的基底。',
         },
         {
-          title: '焙茶底——焙烤香，适合避开咖啡因',
-          description: '偏爱香醇温和？可把任意口味换成焙茶（烘焙绿茶）底。焙茶带坚果焦糖香，咖啡因天然极低——是夜晚或想避开咖啡因者的完美之选。',
+          title: '焙茶——焙烤香，咖啡因较低',
+          description: '偏爱香醇温和？可点焙茶拿铁（$9.95）或草莓焙茶（$10.95）。焙茶带坚果焦糖香，咖啡因天然极低——是夜晚或想避开咖啡因者的完美之选。',
         },
         {
           title: '任意一款都能做冰饮',
@@ -890,10 +902,10 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?（科纳咖啡甜甜圈）',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '就在威基基中心的卡拉卡瓦大道上，Kona Coffee Donut? 现点现打正宗日本抹茶，口味阵容齐全——以招牌草莓抹茶领衔，还有无咖啡因焙茶和100%科纳咖啡。任意一款都可点热饮或冰饮，再配一个现做麻糬甜甜圈。我们距威基基海滩约5分钟步行，每天早上7点至晚上9点营业。',
+        description: '就在威基基中心的卡拉卡瓦大道上，Kona Coffee Donut? 现点现打正宗日本抹茶，口味阵容齐全——以招牌草莓抹茶领衔，还有低咖啡因焙茶和100%科纳咖啡。任意一款都可点热饮或冰饮，再配一个现做麻糬甜甜圈。我们距威基基海滩约5分钟步行，每天早上7点至晚上9点营业。',
         highlights: [
           '招牌草莓抹茶 + 齐全的口味阵容',
-          '真正现打抹茶或无咖啡因焙茶——冷热皆有',
+          '真正现打抹茶或低咖啡因焙茶——冷热皆有',
           '与现做麻糬甜甜圈绝配',
           '距威基基海滩约5分钟 · 每日早7点至晚9点 · (808) 260-1835',
         ],
@@ -917,8 +929,8 @@ const content = {
           description: '抹茶与麻糬是天作之合。加一个现做麻糬甜甜圈——我们还做抹茶味的——Q弹微甜的甜甜圈与醇厚的茶香完美平衡。这正是常客一次次回来的组合。',
         },
         {
-          title: '用焙茶实现无咖啡因',
-          description: '想享受美味又不摄入咖啡因？把你喜欢的口味换成焙茶底。它焙香、坚果味，咖啡因天然极低，所以一天中任何时候——甚至晚上——都能来杯热的或冰的。',
+          title: '用焙茶减少咖啡因',
+          description: '想享受美味又少摄入咖啡因？点一杯焙茶拿铁或草莓焙茶。它焙香、坚果味，咖啡因天然极低，所以一天中任何时候——甚至晚上——都能来杯热的或冰的。',
         },
       ],
     },
@@ -938,8 +950,12 @@ const content = {
           answer: '当然可以。菜单上每款抹茶（和焙茶）饮品都能做成冰饮——包括草莓抹茶、经典抹茶拿铁和所有热带口味。在温暖的威基基，大多数客人都点冰的。',
         },
         {
-          question: '有无咖啡因的选择吗？',
-          answer: '有。把任意口味换成焙茶（烘焙绿茶）底代替抹茶即可。焙茶咖啡因天然极低，带焙香、坚果、焦糖般的味道——是夜晚或想避开咖啡因者的完美之选。',
+          question: '在威基基哪里能喝到好喝的抹茶？',
+          answer: 'Kona Coffee Donut?（2142 Kalākaua Ave，距威基基海滩步行约5分钟，每天早7点至晚9点）。抹茶现点现打：经典抹茶拿铁$9.95，水果抹茶（芒果、椰子、番石榴、香蕉、百香果）$9.95，草莓抹茶$11.95，冷热皆可。',
+        },
+        {
+          question: '有低咖啡因的选择吗？',
+          answer: '有，焙茶（烘焙绿茶）。在Kona Coffee Donut?可点焙茶拿铁（$9.95）或草莓焙茶（$10.95）。焙茶并非完全不含咖啡因，但比抹茶或咖啡少得多，带焙香、坚果、焦糖般的味道——晚上喝也合适。',
         },
         {
           question: '威基基的抹茶多少钱？',
@@ -984,7 +1000,7 @@ const blogPostingSchema = {
     },
   },
   datePublished: '2026-06-30',
-  dateModified: '2026-10-15',
+  dateModified: '2026-10-31',
   mainEntityOfPage: {
     '@type': 'WebPage',
     '@id': 'https://www.konacoffeedonut.com/en/blog/best-matcha-drinks-waikiki',
@@ -1024,10 +1040,18 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Is there a caffeine-free option?',
+      name: 'Where can I get the best matcha in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Ask for any flavor on a hojicha (roasted green tea) base instead of matcha. Hojicha is naturally very low in caffeine, with a toasty, nutty, caramel-like flavor — perfect for the evening or anyone avoiding a caffeine kick.',
+        text: 'At Kona Coffee Donut?, 2142 Kalākaua Ave — about a 5-minute walk from Waikiki Beach, open 7 AM to 9 PM daily. Matcha is whisked to order: Classic Matcha Latte $9.95, fruit matchas (mango, coconut, guava, banana, lilikoi) $9.95 and Strawberry Matcha $11.95, all hot or iced.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is there a low-caffeine option?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes — hojicha (roasted green tea). Order the Hojicha Latte ($9.95) or Strawberry Hojicha ($10.95) at Kona Coffee Donut? in Waikiki. Hojicha is not caffeine-free, but it is naturally much lower in caffeine than matcha or coffee, with a toasty, nutty, caramel-like flavor — good for the evening.',
       },
     },
     {

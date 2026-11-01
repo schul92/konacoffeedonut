@@ -89,7 +89,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         q: 'Do you have non-caffeinated boba options?',
-        a: 'Ube and Brown Sugar are caffeine-free choices. Thai Tea, Matcha, Classic Milk Tea, and Coffee contain caffeine.',
+        a: 'Our canned boba are milk teas — Thai Tea, Matcha, Classic Milk Tea and Coffee contain caffeine; ask at the counter about Ube and Brown Sugar. For a drink with no coffee or tea, choose a fruit smoothie ($10.95) or a lemonade ($8.95).',
       },
     ],
     finalCTA: {
@@ -111,7 +111,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       { q: '価格は？', a: '缶入りボバミルクティーは全種$8.95。スムージーは$10.95。' },
       { q: 'ビーチに持って行ける？', a: '密封缶なので持ち運びに最適。ビーチまで徒歩5分。' },
-      { q: 'カフェインなしは？', a: 'ウベと黒糖はカフェインフリー。' },
+      { q: 'カフェインなしは？', a: 'ボバ缶はミルクティー系で、タイティー・抹茶・コーヒーはカフェイン入り。ウベと黒糖はスタッフにご確認を。コーヒー・お茶なしならフルーツスムージー（$10.95）かレモネード（$8.95）を。' },
     ],
     finalCTA: { headline: 'カラカウア通りでボバを', body: '6種類$8.95、密封テイクアウト。毎日7時〜21時。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
   },
@@ -127,7 +127,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       { q: '가격은?', a: '캔 보바 밀크티 전 종류 $8.95, 보바 스무디 $10.95.' },
       { q: '비치에 들고 갈 수 있나요?', a: '밀봉 캔이라 최적. 비치까지 도보 5분.' },
-      { q: '카페인 없는 메뉴는?', a: '우베와 흑당이 카페인프리.' },
+      { q: '카페인 없는 메뉴는?', a: '보바 캔은 밀크티 계열이라 타이티·말차·커피는 카페인이 있어요. 우베와 흑당은 직원에게 확인해 주세요. 커피·차가 없는 음료는 과일 스무디($10.95)나 레모네이드($8.95)입니다.' },
     ],
     finalCTA: { headline: '칼라카우아에서 보바 한 캔', body: '6종 $8.95, 밀봉 테이크아웃. 매일 7시–21시.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
   },
@@ -143,7 +143,7 @@ const content: Record<Locale, BlogContent> = {
     faq: [
       { q: '价格？', a: '罐装珍珠奶茶全部$8.95，珍珠奶昔$10.95。' },
       { q: '能带去海滩吗？', a: '密封罐装最适合外带，海滩步行5分钟。' },
-      { q: '有无咖啡因选择吗？', a: '紫薯和黑糖不含咖啡因。' },
+      { q: '有无咖啡因选择吗？', a: '罐装珍珠奶茶都是奶茶类，泰式奶茶、抹茶和咖啡口味含咖啡因；紫薯和黑糖请向店员确认。想要不含咖啡和茶的饮品，可选水果冰沙（$10.95）或柠檬水（$8.95）。' },
     ],
     finalCTA: { headline: '卡拉考阿大道的珍珠奶茶', body: '6种口味$8.95，密封外带。每天7点–21点。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
   },

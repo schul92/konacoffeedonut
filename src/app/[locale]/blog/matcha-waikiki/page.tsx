@@ -1244,6 +1244,12 @@ export default function MatchaWaikikiPage() {
         <section className="py-8 px-4">
           <div className="max-w-4xl mx-auto flex flex-wrap gap-4 justify-center">
             <Link
+              href={`/${locale}/blog/best-matcha-drinks-waikiki`}
+              className="text-sky-600 hover:text-sky-800 underline underline-offset-4 font-semibold transition-colors"
+            >
+              → Best Matcha in Waikiki (every flavor ranked)
+            </Link>
+            <Link
               href={`/${locale}/blog/what-is-hojicha-waikiki`}
               className="text-sky-600 hover:text-sky-800 underline underline-offset-4 font-semibold transition-colors"
             >

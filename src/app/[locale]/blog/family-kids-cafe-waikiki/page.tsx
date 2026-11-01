@@ -78,7 +78,7 @@ const content: Record<Locale, BlogContent> = {
           'Classic malasada — $3.95; sugar-rolled, no hole, an easy first Hawaii treat',
           'Shave Ice Cup — $8.95; or the Waikiki Rainbow Hawaiian-style shave ice ($12.95), big enough to share',
           'Ice cream — $6.95 for one scoop, $8.95 for two',
-          'Korean rice corn dog — Original $6.99; Potato or Cheetos $7.99 for the adventurous',
+          'Korean rice corn dog — Original $6.99; Potato or Hot Cheetos $7.99 for the adventurous',
           'Spam musubi — $2.95; Egg Spam musubi $3.50, a fast 7 AM breakfast',
           'Malasada Ice Cream Sandwich — $8.95, a malasada filled with a scoop of ice cream',
         ],
@@ -95,7 +95,7 @@ const content: Record<Locale, BlogContent> = {
           'Fruit smoothies — $10.95 (Strawberry, Mango, Lychee, Piña Colada); Strawberry Banana $12.95',
           'Lemonade — $8.95, plain or Strawberry, Mango or Lilikoi',
           'Hot Chocolate — $6.50 for cooler evenings',
-          'Free filtered water — always',
+          'Filtered water — $1.00',
         ],
       },
       {
@@ -149,7 +149,7 @@ const content: Record<Locale, BlogContent> = {
     ],
     faq: [
       { q: 'ワイキキで子連れに便利なカフェは？', a: 'Kona Coffee Donut（2142 Kalākaua Ave、ワイキキビーチから徒歩約5分）はカウンター注文ですぐ買えます。モチドーナツ$3.95、かき氷$8.95〜、スムージー$10.95、ホットドッグ$6.99〜。毎日朝7時〜夜9時。' },
-      { q: '子ども向けのカフェインなしドリンクは？', a: 'Kona Coffee Donutではフルーツスムージー$10.95、レモネード$8.95、ホットチョコレート$6.50があります。' },
+      { q: '子ども向けのコーヒー・お茶なしドリンクは？', a: 'Kona Coffee Donutではフルーツスムージー$10.95、レモネード$8.95、ホットチョコレート$6.50があります。' },
       { q: 'モチドーナツはいくらですか？', a: '1個$3.95、3個$11.25、6個$22.50、12個$45.00です（Kona Coffee Donut、ワイキキ）。' },
     ],
     finalCTA: { headline: '今日、家族でカラカウア通りへ', body: 'モチドーナツ$3.95、かき氷$8.95〜。毎日朝7時〜夜9時。', visitLabel: '今日来店', callLabel: '電話 (808) 260-1835' },
@@ -165,7 +165,7 @@ const content: Record<Locale, BlogContent> = {
     ],
     faq: [
       { q: '와이키키에서 아이랑 가기 좋은 카페는?', a: 'Kona Coffee Donut(2142 Kalākaua Ave, 와이키키 비치에서 도보 약 5분)은 카운터 주문이라 빠릅니다. 모찌도넛 $3.95, 빙수 $8.95부터, 스무디 $10.95, 핫도그 $6.99부터. 매일 아침 7시–밤 9시.' },
-      { q: '아이용 카페인 없는 음료가 있나요?', a: 'Kona Coffee Donut에는 과일 스무디 $10.95, 레모네이드 $8.95, 핫초코 $6.50이 있습니다.' },
+      { q: '아이용 커피·차 없는 음료가 있나요?', a: 'Kona Coffee Donut에는 과일 스무디 $10.95, 레모네이드 $8.95, 핫초코 $6.50이 있습니다.' },
       { q: '모찌도넛 가격은?', a: '1개 $3.95, 3개 $11.25, 6개 $22.50, 12개 $45.00입니다(Kona Coffee Donut, 와이키키).' },
     ],
     finalCTA: { headline: '오늘 가족과 칼라카우아로', body: '모찌도넛 $3.95, 빙수 $8.95부터. 매일 아침 7시–밤 9시.', visitLabel: '오늘 방문', callLabel: '전화 (808) 260-1835' },
@@ -181,7 +181,7 @@ const content: Record<Locale, BlogContent> = {
     ],
     faq: [
       { q: '威基基有适合带孩子的咖啡店吗？', a: 'Kona Coffee Donut（2142 Kalākaua Ave，距威基基海滩步行约5分钟）柜台点餐，出餐快：麻糬甜甜圈$3.95、刨冰$8.95起、冰沙$10.95、热狗$6.99起，每天早7点至晚9点。' },
-      { q: '有适合孩子的无咖啡因饮品吗？', a: 'Kona Coffee Donut有水果冰沙$10.95、柠檬水$8.95和热巧克力$6.50。' },
+      { q: '有适合孩子的不含咖啡和茶的饮品吗？', a: 'Kona Coffee Donut有水果冰沙$10.95、柠檬水$8.95和热巧克力$6.50。' },
       { q: '麻糬甜甜圈多少钱？', a: '每个$3.95，3个$11.25，6个$22.50，12个$45.00（Kona Coffee Donut，威基基）。' },
     ],
     finalCTA: { headline: '今天带孩子来卡拉考阿大道', body: '麻糬甜甜圈$3.95，刨冰$8.95起。每天早7点至晚9点。', visitLabel: '立即到店', callLabel: '致电 (808) 260-1835' },
