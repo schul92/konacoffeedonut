@@ -59,7 +59,7 @@ export async function generateMetadata({
       'patbingsu hawaii',
       'korean shaved ice honolulu',
       'milk shaved ice waikiki',
-      'injeolmi bingsu hawaii',
+      'ube bingsu hawaii',
       'mango bingsu waikiki',
       'ワイキキ ビンス',
       '와이키키 빙수',
