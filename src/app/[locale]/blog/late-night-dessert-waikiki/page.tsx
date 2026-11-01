@@ -99,7 +99,7 @@ const content: Record<Locale, BlogContent> = {
           "A lot of our late-night business is people picking up dessert for the lanai. Three things travel best:",
         bullets: [
           'A dozen mochi donuts ($45) — mix all 24 flavors; they hold up fine on the walk and still taste right in the morning with hotel coffee',
-          'Boba milk tea cans ($8.95) — sealed at the counter, so nothing spills in the bag on the walk back; Ube and Brown Sugar are caffeine-free if you actually want to sleep',
+          'Boba milk tea cans ($8.95) — sealed at the counter, so nothing spills in the bag on the walk back; if you actually want to sleep, skip the tea and coffee flavors and get a fruit smoothie or lemonade instead',
           'Filled malasadas ($4.95) — Custard, Ube Cream or Nutella, boxed to order; Original and Cinnamon are $3.95',
         ],
       },
@@ -181,7 +181,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         h2: 'ホテルへの持ち帰りと時間の目安',
-        body: '閉店は21時ちょうど。ビンスやコーンドッグなど作りたてメニューは20:45までに注文を。ドーナツとマラサダは毎朝店内で作る当日分なので、夜は人気フレーバーが売り切れることも。缶ボバは密封されているのでバッグに入れても安心。ウベと黒糖はカフェインフリーです。',
+        body: '閉店は21時ちょうど。ビンスやコーンドッグなど作りたてメニューは20:45までに注文を。ドーナツとマラサダは毎朝店内で作る当日分なので、夜は人気フレーバーが売り切れることも。缶ボバは密封されているのでバッグに入れても安心。眠りたい夜はお茶・コーヒー系を避けて、フルーツスムージーやレモネードを。',
       },
     ],
     faq: [
@@ -248,7 +248,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         h2: '호텔로 포장 & 시간 맞추기',
-        body: '마감은 밤 9시 정각. 빙수·핫도그처럼 바로 만드는 메뉴는 8:45까지 주문하세요. 도넛과 말라사다는 매일 아침 매장에서 만드는 당일분이라 밤엔 인기 맛(우베·말차·누텔라)이 먼저 빠질 수 있어요. 캔 보바는 밀봉이라 가방에 넣어도 안 새고, 우베·흑당은 카페인 없어서 밤에도 부담 없습니다.',
+        body: '마감은 밤 9시 정각. 빙수·핫도그처럼 바로 만드는 메뉴는 8:45까지 주문하세요. 도넛과 말라사다는 매일 아침 매장에서 만드는 당일분이라 밤엔 인기 맛(우베·말차·누텔라)이 먼저 빠질 수 있어요. 캔 보바는 밀봉이라 가방에 넣어도 안 새고, 밤에 잠이 걱정되면 차·커피 맛 대신 과일 스무디나 레모네이드를 고르세요.',
       },
     ],
     faq: [
@@ -315,7 +315,7 @@ const content: Record<Locale, BlogContent> = {
       },
       {
         h2: '带回酒店与时间安排',
-        body: '晚上9点准时关门，刨冰、热狗等现做品请在8:45前下单。甜甜圈和马拉萨达每天早上店内现做、当天售完，晚上热门口味（紫薯、抹茶、Nutella）可能先卖完。罐装奶茶密封包装，放包里不会洒；紫薯和黑糖不含咖啡因，晚上喝也放心。',
+        body: '晚上9点准时关门，刨冰、热狗等现做品请在8:45前下单。甜甜圈和马拉萨达每天早上店内现做、当天售完，晚上热门口味（紫薯、抹茶、Nutella）可能先卖完。罐装奶茶密封包装，放包里不会洒；晚上怕睡不着的话，避开茶和咖啡口味，选水果冰沙或柠檬水。',
       },
     ],
     faq: [

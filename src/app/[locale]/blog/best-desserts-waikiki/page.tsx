@@ -24,7 +24,7 @@ const content = {
     hero: {
       title: 'Best Desserts in Waikiki 2026',
       subtitle: 'Sweet Spots You Can\'t Miss',
-      date: 'Updated April 2026',
+      date: 'Updated October 2026',
       readTime: '10 min read',
     },
     intro: {
@@ -39,7 +39,7 @@ const content = {
         hours: '7:00 AM - 9:00 PM Daily',
         priceRange: '$$',
         knownFor: 'Mochi donuts, malasadas, bingsu, and acai bowls paired with Honolulu Coffee',
-        description: 'If you\'re looking for one dessert stop that covers all the bases, this is it. Kona Coffee Donut is Waikiki\'s newest cafe and the only place on Kalakaua Avenue where you can get chewy MOCHILAND mochi donuts, fresh-fried malasadas, Korean-style bingsu, and tropical acai bowls — all under one roof. Each mochi donut features the signature eight-ball shape with a satisfying crunch on the outside and an impossibly chewy center made from premium rice flour. Flavors rotate through 12+ options including Ube, Matcha, Black Sesame, Mango, and seasonal specials. The malasadas come out golden and pillowy every morning, filled with haupia cream, lilikoi custard, or dusted in cinnamon sugar. Their bingsu is a mountain of finely shaved milk ice topped with fresh fruit, mochi, and red bean — perfect for sharing on a hot Waikiki afternoon. Pair any dessert with their Honolulu Coffee for the full experience. The cafe sits steps from Waikiki Beach, making it an ideal post-beach or after-dinner dessert destination.',
+        description: 'If you\'re looking for one dessert stop that covers all the bases, this is it. Kona Coffee Donut is Waikiki\'s newest cafe and the only place on Kalakaua Avenue where you can get chewy MOCHILAND mochi donuts, fresh-fried malasadas, Korean-style bingsu, and tropical acai bowls — all under one roof. Each mochi donut features the signature eight-ball shape with a satisfying crunch on the outside and an impossibly chewy center made from premium rice flour. Flavors rotate through 12+ options including Ube, Matcha, Black Sesame, Mango, and seasonal specials. The malasadas come classic sugar-rolled ($3.95) or cream-filled ($4.95), and the new Malasada Ice Cream Sandwich ($8.95) puts a full scoop of ice cream inside one. Their bingsu is a mountain of finely shaved milk ice topped with fresh fruit, mochi, and red bean — perfect for sharing on a hot Waikiki afternoon. Pair any dessert with their Honolulu Coffee for the full experience. The cafe sits steps from Waikiki Beach, making it an ideal post-beach or after-dinner dessert destination.',
         mustTry: 'Ube Mochi Donut + Mango Bingsu combo',
         whyVisit: 'The only spot in Waikiki offering mochi donuts, malasadas, bingsu, AND acai bowls in one location. Whether you want something chewy, icy, fruity, or fried, Kona Coffee Donut has you covered. The Kona coffee pairing elevates every dessert. Steps from the beach and open until 9 PM — perfect for an evening sweet treat.',
         menuLinks: true,
@@ -180,7 +180,7 @@ const content = {
     hero: {
       title: '2026年ワイキキのベストデザート',
       subtitle: '見逃せないスイートスポット',
-      date: '2026年4月更新',
+      date: '2026年10月更新',
       readTime: '読了10分',
     },
     intro: {
@@ -195,7 +195,7 @@ const content = {
         hours: '毎日 7:00 AM - 9:00 PM',
         priceRange: '$$',
         knownFor: 'モチドーナツ、マラサダ、ビンス、アサイーボウル、ホノルルコーヒー',
-        description: 'デザートを一箇所で全部楽しみたいなら、ここが最適です。コナコーヒードーナツはワイキキ最新のカフェで、カラカウア通りで唯一、もちもちのMOCHILANDモチドーナツ、揚げたてマラサダ、韓国式ビンス、トロピカルアサイーボウルのすべてが一つの屋根の下で楽しめるお店です。モチドーナツはプレミアム米粉を使用したシグネチャーの八つ玉形状で、外はサクサク、中はもちもち。紫芋、抹茶、黒ごま、マンゴー、季節限定など12種類以上のフレーバーが楽しめます。マラサダは毎朝黄金色にふわふわに揚げられ、ハウピアクリーム、リリコイカスタード、シナモンシュガーなどのバリエーションも。ビンスは細かく削ったミルク氷の山にフレッシュフルーツ、もち、あずきをトッピング — 暑いワイキキの午後のシェアにぴったり。すべてのデザートはホノルルコーヒーのプレミアムホノルルコーヒーとペアリングして、究極の体験を。ワイキキビーチからすぐの場所にあり、ビーチ帰りやディナー後のデザートスポットに最適です。',
+        description: 'デザートを一箇所で全部楽しみたいなら、ここが最適です。コナコーヒードーナツはワイキキ最新のカフェで、カラカウア通りで唯一、もちもちのMOCHILANDモチドーナツ、揚げたてマラサダ、韓国式ビンス、トロピカルアサイーボウルのすべてが一つの屋根の下で楽しめるお店です。モチドーナツはプレミアム米粉を使用したシグネチャーの八つ玉形状で、外はサクサク、中はもちもち。紫芋、抹茶、黒ごま、マンゴー、季節限定など12種類以上のフレーバーが楽しめます。マラサダはクラシック（砂糖、$3.95）とクリーム入り（$4.95）。新登場のマラサダ・アイスクリームサンド（$8.95）もあります。ビンスは細かく削ったミルク氷の山にフレッシュフルーツ、もち、あずきをトッピング — 暑いワイキキの午後のシェアにぴったり。すべてのデザートはホノルルコーヒーのプレミアムホノルルコーヒーとペアリングして、究極の体験を。ワイキキビーチからすぐの場所にあり、ビーチ帰りやディナー後のデザートスポットに最適です。',
         mustTry: '紫芋モチドーナツ + マンゴービンス セット',
         whyVisit: 'ワイキキで唯一、モチドーナツ、マラサダ、ビンス、アサイーボウルのすべてを一箇所で提供するスポット。もちもち、ひんやり、フルーティー、揚げたて — どんなデザートもコナコーヒードーナツにお任せ。コナコーヒーのペアリングがすべてのデザートを格上げ。ビーチからすぐ、夜9時まで営業 — 夕食後のスイーツに最適。',
         menuLinks: true,
@@ -336,7 +336,7 @@ const content = {
     hero: {
       title: '2026년 와이키키 베스트 디저트',
       subtitle: '놓칠 수 없는 스위트 스팟',
-      date: '2026년 4월 업데이트',
+      date: '2026년 10월 업데이트',
       readTime: '10분 읽기',
     },
     intro: {
@@ -351,7 +351,7 @@ const content = {
         hours: '매일 7:00 AM - 9:00 PM',
         priceRange: '$$',
         knownFor: '모찌 도넛, 말라사다, 빙수, 아사이 볼 + 호놀룰루 커피',
-        description: '디저트를 한 곳에서 모두 즐기고 싶다면 바로 여기입니다. 코나커피도넛은 와이키키 최신 카페로, 칼라카우아 애비뉴에서 유일하게 쫄깃한 MOCHILAND 모찌 도넛, 갓 튀긴 말라사다, 한국식 빙수, 트로피컬 아사이 볼을 모두 한 지붕 아래에서 제공하는 곳입니다. 모찌 도넛은 프리미엄 쌀가루로 만든 시그니처 팔각 모양으로, 겉은 바삭 속은 쫄깃. 우베, 말차, 흑임자, 망고, 시즌 스페셜 등 12가지 이상의 맛이 있습니다. 말라사다는 매일 아침 황금빛으로 폭신하게 튀겨져 나오며, 하우피아 크림, 릴리코이 커스터드, 시나몬 슈가 등 다양한 버전을 제공합니다. 빙수는 곱게 간 밀크 아이스 위에 신선한 과일, 모찌, 팥을 올린 산 — 더운 와이키키 오후에 나눠 먹기 완벽합니다. 모든 디저트는 호놀룰루 커피의 프리미엄 호놀룰루 커피와 페어링할 수 있습니다. 한국에서 즐기던 디저트 카페 감성을 와이키키에서 만날 수 있어 특히 한국 여행객들에게 인기입니다.',
+        description: '디저트를 한 곳에서 모두 즐기고 싶다면 바로 여기입니다. 코나커피도넛은 와이키키 최신 카페로, 칼라카우아 애비뉴에서 유일하게 쫄깃한 MOCHILAND 모찌 도넛, 갓 튀긴 말라사다, 한국식 빙수, 트로피컬 아사이 볼을 모두 한 지붕 아래에서 제공하는 곳입니다. 모찌 도넛은 프리미엄 쌀가루로 만든 시그니처 팔각 모양으로, 겉은 바삭 속은 쫄깃. 우베, 말차, 흑임자, 망고, 시즌 스페셜 등 12가지 이상의 맛이 있습니다. 말라사다는 클래식(설탕, $3.95)과 크림($4.95) 두 가지이고, 새로 나온 말라사다 아이스크림 샌드위치($8.95)도 있습니다. 빙수는 곱게 간 밀크 아이스 위에 신선한 과일, 모찌, 팥을 올린 산 — 더운 와이키키 오후에 나눠 먹기 완벽합니다. 모든 디저트는 호놀룰루 커피의 프리미엄 호놀룰루 커피와 페어링할 수 있습니다. 한국에서 즐기던 디저트 카페 감성을 와이키키에서 만날 수 있어 특히 한국 여행객들에게 인기입니다.',
         mustTry: '우베 모찌 도넛 + 망고 빙수 콤보',
         whyVisit: '와이키키에서 유일하게 모찌 도넛, 말라사다, 빙수, 아사이 볼을 한 곳에서 제공. 쫄깃한 것, 시원한 것, 과일 맛, 튀긴 것 — 코나커피도넛에 다 있습니다. 코나 커피 페어링이 모든 디저트를 격상. 해변에서 가깝고 밤 9시까지 영업 — 저녁 후 디저트로 완벽.',
         menuLinks: true,
@@ -492,7 +492,7 @@ const content = {
     hero: {
       title: '2026年威基基最佳甜点',
       subtitle: '不可错过的甜蜜好去处',
-      date: '2026年4月更新',
+      date: '2026年10月更新',
       readTime: '10分钟阅读',
     },
     intro: {
@@ -507,7 +507,7 @@ const content = {
         hours: '每天 7:00 AM - 9:00 PM',
         priceRange: '$$',
         knownFor: '麻糬甜甜圈、马拉萨达、冰沙、巴西莓碗配檀香山咖啡',
-        description: '如果您想在一个地方品尝所有类型的甜点，这里就是最佳选择。科纳咖啡甜甜圈是威基基最新的咖啡馆，也是卡拉卡瓦大道上唯一可以一站式品尝MOCHILAND麻糬甜甜圈、新鲜马拉萨达、韩式冰沙和热带巴西莓碗的地方。麻糬甜甜圈采用优质米粉制成的招牌八球形状，外酥里糯。口味轮换12种以上，包括紫薯、抹茶、黑芝麻、芒果和季节限定。马拉萨达每天早晨炸至金黄蓬松，有椰子奶油、百香果蛋奶和肉桂糖等多种口味。冰沙是一座细腻刨冰山，顶部放满新鲜水果、麻糬和红豆——非常适合在炎热的威基基午后分享。搭配来自檀香山咖啡的优质檀香山咖啡，享受完整体验。咖啡馆距离威基基海滩仅几步之遥，是海滩归来或晚餐后的理想甜点目的地。',
+        description: '如果您想在一个地方品尝所有类型的甜点，这里就是最佳选择。科纳咖啡甜甜圈是威基基最新的咖啡馆，也是卡拉卡瓦大道上唯一可以一站式品尝MOCHILAND麻糬甜甜圈、新鲜马拉萨达、韩式冰沙和热带巴西莓碗的地方。麻糬甜甜圈采用优质米粉制成的招牌八球形状，外酥里糯。口味轮换12种以上，包括紫薯、抹茶、黑芝麻、芒果和季节限定。马拉萨达有经典砂糖款（$3.95）和奶油夹心款（$4.95），还有新推出的马拉萨达冰淇淋三明治（$8.95）。冰沙是一座细腻刨冰山，顶部放满新鲜水果、麻糬和红豆——非常适合在炎热的威基基午后分享。搭配来自檀香山咖啡的优质檀香山咖啡，享受完整体验。咖啡馆距离威基基海滩仅几步之遥，是海滩归来或晚餐后的理想甜点目的地。',
         mustTry: '紫薯麻糬甜甜圈 + 芒果冰沙套餐',
         whyVisit: '威基基唯一在一个地点提供麻糬甜甜圈、马拉萨达、冰沙和巴西莓碗的地方。无论您想要嚼劲、冰爽、水果味还是油炸，科纳咖啡甜甜圈都能满足。科纳咖啡的搭配提升每一款甜点。距海滩几步，营业至晚上9点——完美的傍晚甜食之选。',
         menuLinks: true,
@@ -668,7 +668,7 @@ const articleSchema = {
     },
   },
   datePublished: '2026-04-14',
-  dateModified: '2026-04-14',
+  dateModified: '2026-10-31',
   mainEntityOfPage: {
     '@type': 'WebPage',
     '@id': 'https://www.konacoffeedonut.com/en/blog/best-desserts-waikiki',

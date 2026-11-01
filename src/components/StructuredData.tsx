@@ -285,7 +285,7 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
         name: 'Malasada Ice Cream Sandwich',
         description: 'A sugar-coated malasada split and filled with a scoop of ice cream; toppings +$1.50',
         hasMenuItem: [
-          { '@type': 'MenuItem', name: 'Malasada Ice Cream Sandwich', description: 'Choice of vanilla, strawberry, ube, chocolate, coconut, matcha, cookie Oreo or Kona coffee ice cream.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '8.95', availability: 'https://schema.org/InStock' } },
+          { '@type': 'MenuItem', name: 'Malasada Ice Cream Sandwich', description: 'Choice of vanilla, strawberry, ube, chocolate, coconut, matcha, cookies & cream or coffee ice cream.', offers: { '@type': 'Offer', priceCurrency: 'USD', price: '8.95', availability: 'https://schema.org/InStock' } },
         ],
       },
       {

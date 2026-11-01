@@ -6,13 +6,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
 
   const titles: Record<string, string> = {
-    en: 'Best Desserts in Waikiki 2026: Sweet Spots You Can\'t Miss',
-    ja: '2026年ワイキキのベストデザート | Kona Coffee Donut',
-    ko: '2026년 와이키키 베스트 디저트 | Kona Coffee Donut',
-    zh: '2026年威基基最佳甜点 | Kona Coffee Donut',
+    en: 'Best Desserts in Waikiki (2026): 8 Sweet Spots, Prices & Hours',
+    ja: 'ワイキキのデザート人気店8選（2026）｜価格・営業時間 | Kona Coffee Donut',
+    ko: '와이키키 디저트 맛집 8곳 (2026) | 가격·영업시간 | Kona Coffee Donut',
+    zh: '威基基甜点人气店8家（2026）｜价格与营业时间 | Kona Coffee Donut',
   };
   const descriptions: Record<string, string> = {
-    en: 'Discover the 8 best desserts in Waikiki for 2026. From mochi donuts and bingsu to shaved ice and gelato — the ultimate guide to dessert near me in Waikiki. Prices, must-try items, and insider tips.',
+    en: 'The 8 best dessert spots in Waikiki for 2026: mochi donuts, malasadas, a malasada ice cream sandwich ($8.95), bingsu, shave ice and gelato, with prices and hours.',
     ja: '2026年版ワイキキのおすすめデザート8選。モチドーナツやビンスからシェイブアイス、ジェラートまで、価格・必食メニュー・地元民のコツをまとめました。',
     ko: '2026년 와이키키 디저트 베스트 8. 모찌도넛과 빙수부터 셰이브 아이스, 젤라또까지 — 가격, 꼭 먹어야 할 메뉴, 현지인 팁을 한 번에 정리했습니다.',
     zh: '2026年威基基8大必吃甜点：从麻糬甜甜圈、雪冰到刨冰和意式冰淇淋，价格、必点单品与本地人小贴士一次看懂。',
