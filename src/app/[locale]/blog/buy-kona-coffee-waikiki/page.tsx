@@ -1244,6 +1244,12 @@ export default function BuyKonaCoffeeWaikikiPage() {
         <section className="py-8 px-4">
           <div className="max-w-4xl mx-auto flex flex-wrap gap-4 justify-center">
             <Link
+              href={`/${locale}/blog/hawaii-omiyage-treats`}
+              className="text-sky-600 hover:text-sky-800 underline underline-offset-4 font-semibold transition-colors"
+            >
+              → Hawaii Omiyage Ideas: Kona Coffee Beans
+            </Link>
+            <Link
               href={`/${locale}/blog/what-is-kona-coffee`}
               className="text-sky-600 hover:text-sky-800 underline underline-offset-4 font-semibold transition-colors"
             >

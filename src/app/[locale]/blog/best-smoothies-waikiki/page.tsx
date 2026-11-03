@@ -10,6 +10,11 @@ const config = {
   schemaHeadline: 'Best Smoothies in Waikiki 2026: 10 Hawaiian Flavors at Mochi Land',
   schemaDescription:
     "A guide to the best smoothies in Waikiki, featuring 10 Hawaiian-style Mochi Land smoothies at Kona Coffee Donut on Kalākaua Avenue, all priced at $10.95.",
+  related: [
+    { path: '/blog/best-iced-drinks-waikiki', label: { en: 'Iced drinks near Waikiki Beach', ja: 'ワイキキのアイスドリンク', ko: '와이키키 아이스 음료', zh: '威基基冰饮', es: 'Bebidas frías en Waikiki' } },
+    { path: '/blog/what-is-lilikoi', label: { en: 'What is lilikoi? Hawaii’s passion fruit', ja: 'リリコイとは？', ko: '릴리코이란?', zh: 'Lilikoi是什么？', es: '¿Qué es el lilikoi?' } },
+    { path: '/blog/family-kids-cafe-waikiki', label: { en: 'Family-friendly cafe in Waikiki', ja: 'ワイキキの子連れカフェ', ko: '와이키키 아이랑 가기 좋은 카페', zh: '威基基亲子咖啡店', es: 'Cafetería familiar en Waikiki' } },
+  ],
 };
 
 const content: Record<Locale, BlogContent> = {

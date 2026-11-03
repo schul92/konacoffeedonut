@@ -10,6 +10,11 @@ const config = {
   schemaHeadline: 'Coffee Near Waikiki Beach: 100% Kona, Open 7 AM, 5 Minutes From the Sand',
   schemaDescription:
     'The closest real-coffee stop to Waikiki Beach: 100% Kona coffee ($7), a full espresso bar from $4.75, and fresh mochi donuts at Kona Coffee Donut, 2142 Kalākaua Ave — open 7 AM daily.',
+  related: [
+    { path: '/blog/rainy-day-waikiki-cafe', label: { en: 'Rainy day in Waikiki: hot Kona coffee & malasadas', ja: 'ワイキキ雨の日の過ごし方', ko: '와이키키 비 오는 날 코스', zh: '威基基下雨天去哪', es: 'Día de lluvia en Waikiki' } },
+    { path: '/blog/best-iced-drinks-waikiki', label: { en: 'Iced drinks near Waikiki Beach', ja: 'ワイキキのアイスドリンク', ko: '와이키키 아이스 음료', zh: '威基基冰饮', es: 'Bebidas frías en Waikiki' } },
+    { path: '/blog/hawaii-omiyage-treats', label: { en: 'Hawaii omiyage: Kona coffee beans to take home', ja: 'ハワイのお土産にコナコーヒー豆', ko: '하와이 기념품 코나 원두', zh: '夏威夷伴手礼：科纳咖啡豆', es: 'Regalos de Hawái: café Kona' } },
+  ],
 };
 
 const content: Record<Locale, BlogContent> = {

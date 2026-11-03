@@ -11,6 +11,7 @@ import LanguageSwitcher from '@/components/LanguageSwitcher';
 import { ORDER_ONLINE_URL, getOrderOnlineLabel, trackOrderOnlineClick } from '@/lib/orderLinks';
 import { BANNER_VISIBILITY_EVENT, isBannerVisible } from '@/components/PromoBanner';
 import SocialIcon from '@/components/SocialIcon';
+import LatestBlogPosts from '@/components/LatestBlogPosts';
 import StructuredData from '@/components/StructuredData';
 import { konaSocialLinks, type SocialLink } from '@/lib/socialLinks';
 
@@ -1530,6 +1531,9 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+      {/* Latest blog posts — internal links so new posts get crawled */}
+      <LatestBlogPosts locale={locale} />
 
       {/* Footer */}
       <footer className="py-12 md:py-16 bg-black text-white">
