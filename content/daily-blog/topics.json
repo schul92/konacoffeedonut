@@ -62,7 +62,8 @@
       "keyword": "musubi vs onigiri",
       "angle": "Comparison explainer that lands on our 5 musubi varieties from $2.95, made fresh daily.",
       "products": "musubi lineup",
-      "status": "pending"
+      "status": "published",
+      "published": "2026-11-02"
     },
     {
       "slug": "taro-vs-ube-difference",
@@ -99,7 +100,8 @@
       "keyword": "thai tea waikiki",
       "angle": "Thai tea three ways: boba can $8.95, smoothie $10.95 - bold orange, creamy, beach-ready.",
       "products": "thai tea boba, thai tea smoothie",
-      "status": "pending"
+      "status": "published",
+      "published": "2026-11-02"
     },
     {
       "slug": "acai-bowl-vs-acai-smoothie",
@@ -113,7 +115,8 @@
       "keyword": "what is lilikoi",
       "angle": "Hawaii's passion fruit explained, then where to taste it: Lilikoi Matcha ($9.95), Paradise Lilikoi bingsu ($12.95).",
       "products": "lilikoi matcha, lilikoi bingsu",
-      "status": "pending"
+      "status": "published",
+      "published": "2026-11-02"
     },
     {
       "slug": "guava-drinks-waikiki",

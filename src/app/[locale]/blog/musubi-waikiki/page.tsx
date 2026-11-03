@@ -10,6 +10,11 @@ const config = {
   schemaHeadline: 'Spam Musubi in Waikiki from $2.95: The Hawaii Classic, Made Fresh Daily',
   schemaDescription:
     'Where to get spam musubi in Waikiki: five fresh musubi varieties from $2.95 at Kona Coffee Donut, 2142 Kalākaua Ave — spam, teriyaki, egg, shiso wakame, and shrimp avocado.',
+  related: [
+    { path: '/blog/spam-musubi-vs-onigiri', label: { en: 'Spam musubi vs onigiri: the difference', ja: 'スパムむすびとおにぎりの違い', ko: '스팸 무스비와 오니기리 차이', zh: '午餐肉饭团和日式饭团的区别', es: 'Spam musubi vs onigiri' } },
+    { path: '/blog/waikiki-snacks-grab-and-go', label: { en: 'Grab-and-go beach food in Waikiki', ja: 'ワイキキのテイクアウト', ko: '와이키키 테이크아웃', zh: '威基基外带小吃', es: 'Comida para llevar en Waikiki' } },
+    { path: '/blog/best-breakfast-waikiki', label: { en: 'Breakfast in Waikiki from 7 AM', ja: 'ワイキキの朝ごはん', ko: '와이키키 아침', zh: '威基基早餐', es: 'Desayuno en Waikiki' } },
+  ],
 };
 
 const content: Record<Locale, BlogContent> = {

@@ -17,6 +17,7 @@ const config = {
     { path: '/blog/cheap-eats-waikiki', label: { en: 'Cheap eats in Waikiki', ja: 'ワイキキの安くて美味しい店', ko: '와이키키 가성비 맛집', zh: '威基基平价美食', es: 'Comer barato en Waikiki' } },
     { path: '/blog/best-bingsu-waikiki', label: { en: 'Best bingsu in Waikiki — dessert after poke', ja: 'ワイキキのビンス — ポケの後のデザートに', ko: '와이키키 빙수 — 포케 후 디저트', zh: '威基基雪冰——poke之后的甜品', es: 'El mejor bingsu de Waikiki' } },
     { path: '/blog/best-kona-coffee-waikiki', label: { en: 'Best Kona coffee in Waikiki', ja: 'ワイキキのコナコーヒー', ko: '와이키키 코나 커피', zh: '威基基科纳咖啡', es: 'El mejor café Kona de Waikiki' } },
+    { path: '/blog/waikiki-snacks-grab-and-go', label: { en: 'Grab-and-go beach food in Waikiki', ja: 'ワイキキのテイクアウト', ko: '와이키키 테이크아웃', zh: '威基基外带小吃', es: 'Comida para llevar en Waikiki' } },
   ],
 };
 

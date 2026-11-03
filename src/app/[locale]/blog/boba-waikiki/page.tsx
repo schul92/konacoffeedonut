@@ -10,6 +10,11 @@ const config = {
   schemaHeadline: 'Boba in Waikiki: Canned Milk Tea, Brown Sugar & Ube at Mochi Land',
   schemaDescription:
     'Where to get boba in Waikiki: Mochi Land canned boba milk teas ($8.95, six flavors), boba smoothies, and $1.95 boba add-ons at Kona Coffee Donut, 2142 Kalākaua Ave.',
+  related: [
+    { path: '/blog/thai-tea-waikiki', label: { en: 'Thai tea in Waikiki', ja: 'ワイキキのタイティー', ko: '와이키키 타이티', zh: '威基基泰式奶茶', es: 'Té tailandés en Waikiki' } },
+    { path: '/blog/waikiki-snacks-grab-and-go', label: { en: 'Grab-and-go beach food in Waikiki', ja: 'ワイキキのテイクアウト', ko: '와이키키 테이크아웃', zh: '威基基外带小吃', es: 'Comida para llevar en Waikiki' } },
+    { path: '/blog/best-iced-drinks-waikiki', label: { en: 'Iced drinks near Waikiki Beach', ja: 'ワイキキのアイスドリンク', ko: '와이키키 아이스 음료', zh: '威基基冰饮', es: 'Bebidas frías en Waikiki' } },
+  ],
 };
 
 const content: Record<Locale, BlogContent> = {

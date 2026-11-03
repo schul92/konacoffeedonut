@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.konacoffeedonut.com';
   const defaultLastModified = new Date('2026-06-06T00:00:00.000Z');
   const routeLastModified: Record<string, Date> = {
-    '': new Date('2026-09-08T00:00:00.000Z'), // meta + JSON-LD scope refresh
+    '': new Date('2026-11-02T00:00:00.000Z'), // meta + JSON-LD scope refresh
     '/menu': new Date('2026-06-27T00:00:00.000Z'), // menu-board price sync
     '/menu/kona-coffee': new Date('2026-06-27T00:00:00.000Z'),
     '/menu/bingsu': new Date('2026-06-27T00:00:00.000Z'),
@@ -27,10 +27,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/iced-matcha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/hojicha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     // Sep 2026 batch (published Sep 9, 2026)
-    '/blog': new Date('2026-10-31T00:00:00.000Z'),
+    '/blog': new Date('2026-11-02T00:00:00.000Z'),
     '/blog/korean-corn-dog-honolulu-viral': new Date('2026-09-09T00:00:00.000Z'),
     '/blog/must-try-foods-waikiki': new Date('2026-09-09T00:00:00.000Z'),
-    '/blog/best-poke-waikiki': new Date('2026-09-09T00:00:00.000Z'),
+    '/blog/best-poke-waikiki': new Date('2026-11-02T00:00:00.000Z'),
     // Daily blog (Sep 15, 2026)
     '/blog/late-night-dessert-waikiki': new Date('2026-10-31T00:00:00.000Z'),
     '/blog/what-is-ube-waikiki': new Date('2026-09-15T00:00:00.000Z'),
@@ -42,15 +42,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/rainy-day-waikiki-cafe': new Date('2026-10-15T00:00:00.000Z'),
     '/blog/family-kids-cafe-waikiki': new Date('2026-10-31T00:00:00.000Z'),
     // Refreshed Oct 15, 2026 (POS prices + CTR titles)
-    '/blog/best-malasadas-waikiki': new Date('2026-10-15T00:00:00.000Z'),
+    '/blog/best-malasadas-waikiki': new Date('2026-11-02T00:00:00.000Z'),
     '/blog/best-donuts-waikiki': new Date('2026-10-15T00:00:00.000Z'),
     // Oct 31, 2026: POS accuracy fixes + CTR titles
     '/bingsu-waikiki': new Date('2026-10-31T00:00:00.000Z'),
     '/blog/best-desserts-waikiki': new Date('2026-10-31T00:00:00.000Z'),
-    '/blog/boba-waikiki': new Date('2026-10-31T00:00:00.000Z'),
+    '/blog/boba-waikiki': new Date('2026-11-02T00:00:00.000Z'),
     // Nov 2026 batch (published Oct 31, 2026)
     '/blog/waikiki-snacks-grab-and-go': new Date('2026-10-31T00:00:00.000Z'),
     '/blog/hawaii-omiyage-treats': new Date('2026-10-31T00:00:00.000Z'),
+    // Nov 2 2026: gained internal links to the newest posts
+    '/blog/coffee-near-waikiki-beach': new Date('2026-11-02T00:00:00.000Z'),
+    '/blog/best-smoothies-waikiki': new Date('2026-11-02T00:00:00.000Z'),
+    '/blog/musubi-waikiki': new Date('2026-11-02T00:00:00.000Z'),
+    '/blog/what-is-a-malasada': new Date('2026-11-02T00:00:00.000Z'),
+    '/blog/buy-kona-coffee-waikiki': new Date('2026-11-02T00:00:00.000Z'),
+    // Nov 2026 batch 2 (published Nov 2, 2026)
+    '/blog/spam-musubi-vs-onigiri': new Date('2026-11-02T00:00:00.000Z'),
+    '/blog/thai-tea-waikiki': new Date('2026-11-02T00:00:00.000Z'),
+    '/blog/what-is-lilikoi': new Date('2026-11-02T00:00:00.000Z'),
   };
 
   const routes = [
@@ -150,6 +160,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Nov 2026 batch
     '/blog/waikiki-snacks-grab-and-go',
     '/blog/hawaii-omiyage-treats',
+    '/blog/spam-musubi-vs-onigiri',
+    '/blog/thai-tea-waikiki',
+    '/blog/what-is-lilikoi',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -240,6 +253,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/family-kids-cafe-waikiki': 0.85,
     '/blog/waikiki-snacks-grab-and-go': 0.85,
     '/blog/hawaii-omiyage-treats': 0.85,
+    '/blog/spam-musubi-vs-onigiri': 0.85,
+    '/blog/thai-tea-waikiki': 0.85,
+    '/blog/what-is-lilikoi': 0.85,
     '/blog/ube-mochi-donut-waikiki': 0.85,
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
@@ -317,6 +333,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/family-kids-cafe-waikiki': 'weekly',
     '/blog/waikiki-snacks-grab-and-go': 'weekly',
     '/blog/hawaii-omiyage-treats': 'weekly',
+    '/blog/spam-musubi-vs-onigiri': 'weekly',
+    '/blog/thai-tea-waikiki': 'weekly',
+    '/blog/what-is-lilikoi': 'weekly',
     '/blog/ube-mochi-donut-waikiki': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',

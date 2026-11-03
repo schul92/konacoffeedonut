@@ -1244,6 +1244,12 @@ export default function WhatIsAMalasadaPage() {
         <section className="py-8 px-4">
           <div className="max-w-4xl mx-auto flex flex-wrap gap-4 justify-center">
             <Link
+              href={`/${locale}/blog/malasada-ice-cream-sandwich-waikiki`}
+              className="text-sky-600 hover:text-sky-800 underline underline-offset-4 font-semibold transition-colors"
+            >
+              → Malasada Ice Cream Sandwich ($8.95, 8 flavors)
+            </Link>
+            <Link
               href={`/${locale}/blog/malasada-vs-mochi-donut`}
               className="text-sky-600 hover:text-sky-800 underline underline-offset-4 font-semibold transition-colors"
             >
