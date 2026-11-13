@@ -10,6 +10,7 @@ import StructuredData from '@/components/StructuredData';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import MetaPixel from '@/components/MetaPixel';
 import PromoBanner from '@/components/PromoBanner';
+import SiteCredit from '@/components/SiteCredit';
 import { seoSameAsUrls } from '@/lib/socialLinks';
 import "../globals.css";
 
@@ -307,6 +308,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <SiteCredit />
         <Analytics />
         <SpeedInsights />
       </body>
