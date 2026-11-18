@@ -3,10 +3,13 @@ import Link from 'next/link';
 
 // Home-page "New on the blog" strip. The home page is the most-crawled URL on the site, so linking the newest
 // posts from here is what gets them crawled (most were "Discovered – currently not indexed" in GSC).
-// Keep the newest posts first; 8 cards = two rows on desktop.
+// Keep the newest posts first; 12 cards = three rows on desktop. Phones show the first 8; the rest stay in the
+// HTML (hidden with CSS) so the links still count.
 type L = 'en' | 'ja' | 'ko' | 'zh' | 'es';
 
 const POSTS: { slug: string; title: Record<L, string> }[] = [
+  { slug: 'malasada-vs-donut', title: { en: 'Malasada vs Donut: The Difference', ja: 'マラサダとドーナツの違い', ko: '말라사다 vs 도넛 차이', zh: '马拉萨达 vs 甜甜圈', es: 'Malasada vs donut' } },
+  { slug: 'mochi-donut-box-waikiki', title: { en: 'Mochi Donut Boxes: 3, 6 or a Dozen', ja: 'モチドーナツボックス：3・6・12個', ko: '모찌도넛 박스: 3·6·12개', zh: '麻糬甜甜圈礼盒：3・6・12个', es: 'Cajas de mochi donuts: 3, 6 o 12' } },
   { slug: 'spam-musubi-vs-onigiri', title: { en: 'Spam Musubi vs Onigiri: What’s the Difference?', ja: 'スパムむすびとおにぎりの違い', ko: '스팸 무스비와 오니기리 차이', zh: '午餐肉饭团和日式饭团的区别', es: 'Spam musubi vs onigiri' } },
   { slug: 'thai-tea-waikiki', title: { en: 'Thai Tea in Waikiki: Boba Cans & Smoothies', ja: 'ワイキキのタイティー', ko: '와이키키 타이티', zh: '威基基泰式奶茶', es: 'Té tailandés en Waikiki' } },
   { slug: 'what-is-lilikoi', title: { en: 'What Is Lilikoi? Hawaii’s Passion Fruit', ja: 'リリコイとは？', ko: '릴리코이란?', zh: 'Lilikoi是什么？', es: '¿Qué es el lilikoi?' } },
@@ -15,6 +18,8 @@ const POSTS: { slug: string; title: Record<L, string> }[] = [
   { slug: 'best-iced-drinks-waikiki', title: { en: 'Iced Drinks Near Waikiki Beach', ja: 'ワイキキのアイスドリンク', ko: '와이키키 아이스 음료', zh: '威基基冰饮', es: 'Bebidas frías en Waikiki' } },
   { slug: 'rainy-day-waikiki-cafe', title: { en: 'Rainy Day in Waikiki: Warm Up on Kalākaua', ja: 'ワイキキ雨の日の過ごし方', ko: '와이키키 비 오는 날 코스', zh: '威基基下雨天去哪', es: 'Día de lluvia en Waikiki' } },
   { slug: 'family-kids-cafe-waikiki', title: { en: 'Family-Friendly Cafe in Waikiki', ja: 'ワイキキの子連れカフェ', ko: '와이키키 아이랑 가기 좋은 카페', zh: '威基基亲子咖啡店', es: 'Cafetería familiar en Waikiki' } },
+  { slug: 'hawaii-omiyage-treats', title: { en: 'What to Bring Home From Hawaii', ja: 'ハワイのお土産ガイド', ko: '하와이 기념품 가이드', zh: '夏威夷伴手礼指南', es: 'Qué llevar de Hawái' } },
+  { slug: 'mochi-donut-vs-regular-donut', title: { en: 'Mochi Donut vs Regular Donut', ja: 'モチドーナツと普通のドーナツの違い', ko: '모찌도넛 vs 일반 도넛', zh: '麻糬甜甜圈 vs 普通甜甜圈', es: 'Mochi donut vs donut normal' } },
 ];
 
 const HEAD: Record<L, { title: string; all: string }> = {
@@ -38,8 +43,8 @@ export default function LatestBlogPosts({ locale = 'en' }: { locale?: string }) 
           </Link>
         </div>
         <ul className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
-          {POSTS.map((p) => (
-            <li key={p.slug}>
+          {POSTS.map((p, i) => (
+            <li key={p.slug} className={i >= 8 ? 'hidden md:block' : undefined}>
               <Link
                 href={`/${loc}/blog/${p.slug}`}
                 className="group block h-full rounded-2xl overflow-hidden border border-stone-200 bg-stone-50 hover:shadow-lg transition-shadow"

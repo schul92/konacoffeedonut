@@ -182,7 +182,7 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': 'https://www.konacoffeedonut.com/#organization',
-    name: 'Kona Coffee Donut',
+    name: 'Kona Coffee Donut?',
     url: 'https://www.konacoffeedonut.com',
     logo: 'https://www.konacoffeedonut.com/konacoffee.png',
     description: 'Premium Kona coffee and artisan mochi donuts in Waikiki, Hawaii',
@@ -210,7 +210,7 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
     '@type': 'WebSite',
     '@id': 'https://www.konacoffeedonut.com/#website',
     url: 'https://www.konacoffeedonut.com',
-    name: 'Kona Coffee Donut',
+    name: 'Kona Coffee Donut?',
     description: 'Authentic Hawaiian coffee and artisan mochi donuts',
     publisher: {
       '@id': 'https://www.konacoffeedonut.com/#organization',
@@ -242,7 +242,8 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
           {
             '@type': 'MenuItem',
             name: 'Mochi Donuts',
-            description: 'Crispy outside, chewy inside mochi donuts',
+            description: 'Crispy outside, chewy inside mochi donuts in 24 flavors. Single $3.95; box of 3 $11.25, box of 6 $22.50, dozen $45.00.',
+            offers: { '@type': 'Offer', priceCurrency: 'USD', price: '3.95', availability: 'https://schema.org/InStock' },
           },
         ],
       },
@@ -378,7 +379,7 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
     duration: 'PT30S',
     publisher: {
       '@type': 'Organization',
-      name: 'Kona Coffee Donut',
+      name: 'Kona Coffee Donut?',
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.konacoffeedonut.com/konacoffee.png',
@@ -565,7 +566,7 @@ export default function StructuredData({ locale, scope = 'site' }: StructuredDat
     ],
     brand: {
       '@type': 'Brand',
-      name: 'Kona Coffee Donut',
+      name: 'Kona Coffee Donut?',
       logo: 'https://www.konacoffeedonut.com/konacoffee.png',
     },
     // GEO: Knowledge graph - explicit brand relationships

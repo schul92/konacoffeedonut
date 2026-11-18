@@ -18,6 +18,8 @@ const config = {
     { path: '/blog/bingsu-vs-shaved-ice-kakigori', label: { en: 'Bingsu vs Hawaiian shave ice vs kakigori', ja: 'ビンス vs シェイブアイス vs かき氷', ko: '빙수 vs 셰이브 아이스 vs 가키고리', zh: '雪冰 vs 刨冰 vs 日式刨冰', es: 'Bingsu vs shave ice vs kakigori' } },
     { path: '/blog/best-poke-waikiki', label: { en: 'Best poke in Waikiki', ja: 'ワイキキのポケおすすめ', ko: '와이키키 포케 맛집', zh: '威基基最好的Poke', es: 'El mejor poke de Waikiki' } },
     { path: '/blog/what-is-kona-coffee', label: { en: 'What is Kona coffee, and why does it cost more?', ja: 'コナコーヒーとは？', ko: '코나 커피란?', zh: '什么是科纳咖啡？', es: '¿Qué es el café Kona?' } },
+    { path: '/blog/thai-tea-waikiki', label: { en: 'Thai tea in Waikiki', ja: 'ワイキキのタイティー', ko: '와이키키 타이티', zh: '威基基泰式奶茶', es: 'Té tailandés en Waikiki' } },
+    { path: '/blog/rainy-day-waikiki-cafe', label: { en: 'Rainy day in Waikiki: hot Kona coffee & malasadas', ja: 'ワイキキ雨の日の過ごし方', ko: '와이키키 비 오는 날 코스', zh: '威基基下雨天去哪', es: 'Día de lluvia en Waikiki' } },
   ],
 };
 

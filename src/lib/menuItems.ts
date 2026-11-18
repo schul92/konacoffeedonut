@@ -63,6 +63,18 @@ export interface MenuItemCategory {
   items: MenuItem[];
   /** Optional add-ons/extras for this category, shown under the items grid. */
   addOns?: MenuAddOn[];
+  /** Optional box/pack sizes sold for the whole category, shown above the items grid. */
+  packs?: MenuPack[];
+}
+
+/** A box size for a category that is priced by the pack rather than per flavor. */
+export interface MenuPack {
+  /** Number of pieces in the box. */
+  count: number;
+  /** Price string exactly as on the menu board / Clover POS (no $). */
+  price: string;
+  /** Marks the size we lead with in the callout. */
+  featured?: boolean;
 }
 
 // Category-level fallback roots (only used by categoryFallbackImage map below).
@@ -103,6 +115,14 @@ export const menuItemCategories: MenuItemCategory[] = [
     id: 'donuts',
     title: 'Mochi Donuts',
     detailSlug: 'mochi-donuts',
+    // Box sizes exactly as on the board and in Clover POS (checked 2026-11-17):
+    // 1pc 3.95 / 3pc 11.25 / 6pc 22.50 / 12pc 45.00. Any flavors can be mixed.
+    packs: [
+      { count: 3, price: '11.25' },
+      { count: 6, price: '22.50', featured: true },
+      { count: 12, price: '45.00' },
+      { count: 1, price: '3.95' },
+    ],
     items: [
       { name: 'Plain', image: donutItem('donut-plain') },
       { name: 'Cookies & Creme', image: donutItem('donut-cookies-and-creme') },

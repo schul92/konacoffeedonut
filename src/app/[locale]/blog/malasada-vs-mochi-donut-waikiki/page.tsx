@@ -10,6 +10,9 @@ const config = {
   schemaHeadline: 'Malasada vs Mochi Donut in Waikiki: Which Should You Try First?',
   schemaDescription:
     'A side-by-side guide to malasadas and mochi donuts in Waikiki — the difference in flavor and texture, and where to try both at Kona Coffee Donut on Kalākaua Avenue.',
+  related: [
+    { path: '/blog/malasada-vs-donut', label: { en: 'Malasada vs donut: what is the difference?', ja: 'マラサダとドーナツの違い', ko: '말라사다 vs 도넛 차이', zh: '马拉萨达和甜甜圈的区别', es: 'Malasada vs donut: la diferencia' } },
+  ],
 };
 
 const content: Record<Locale, BlogContent> = {
