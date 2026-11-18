@@ -12,6 +12,17 @@ interface MenuPageClientProps {
   locale: string;
 }
 
+// Copy for the box-size callout above a pack-priced category (mochi donuts).
+// Product names stay English site-wide; only the helper text is localized.
+type PackLocale = 'en' | 'ja' | 'ko' | 'zh' | 'es';
+const PACK_COPY: Record<PackLocale, { heading: string; sub: string; box: (n: number) => string; single: string; popular: string }> = {
+  en: { heading: 'Get them by the box', sub: 'Mix any flavors. Every box works out to $3.75 a donut. Made in-house every morning.', box: (n) => `Box of ${n}`, single: 'Single', popular: 'Most shared' },
+  ja: { heading: 'ボックスがおすすめ', sub: 'お好きなフレーバーを自由に組み合わせ。ボックスなら1個あたり$3.75。毎朝店内で手作り。', box: (n) => `${n}個入りボックス`, single: '1個', popular: 'シェアに人気' },
+  ko: { heading: '박스로 담아가세요', sub: '원하는 맛을 자유롭게 섞어 담을 수 있어요. 박스는 개당 $3.75. 매일 아침 매장에서 만듭니다.', box: (n) => `${n}개 박스`, single: '1개', popular: '나눠 먹기 좋아요' },
+  zh: { heading: '整盒带走更划算', sub: '口味任意搭配，整盒每个只要$3.75。每天早晨店内现做。', box: (n) => `${n}个装`, single: '单个', popular: '适合分享' },
+  es: { heading: 'Llévalos por caja', sub: 'Combina los sabores que quieras. En caja, cada donut sale a $3.75. Hechos aquí cada mañana.', box: (n) => `Caja de ${n}`, single: 'Unidad', popular: 'Para compartir' },
+};
+
 export default function MenuPageClient({ locale }: MenuPageClientProps) {
   const [activeId, setActiveId] = useState<MenuItemCategory['id']>(menuItemCategories[0].id);
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
@@ -181,6 +192,47 @@ export default function MenuPageClient({ locale }: MenuPageClientProps) {
                   </Link>
                 )}
               </div>
+
+              {cat.packs && cat.packs.length > 0 && (() => {
+                const copy = PACK_COPY[(locale in PACK_COPY ? locale : 'en') as PackLocale];
+                return (
+                  <div className="mb-8 md:mb-10 rounded-2xl border border-orange-200 bg-white/80 px-4 py-5 sm:px-6 sm:py-6 shadow-sm">
+                    <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
+                      <div>
+                        <p className="text-lg md:text-xl font-extrabold tracking-tight text-stone-900">{copy.heading}</p>
+                        <p className="mt-1 text-sm text-stone-600">{copy.sub}</p>
+                      </div>
+                      <a
+                        href={ORDER_ONLINE_URL}
+                        target="_blank"
+                        rel="noopener"
+                        onClick={() => trackOrderOnlineClick(`menu-${cat.id}-box`)}
+                        className="inline-flex items-center px-5 py-2.5 rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold shadow-sm transition-colors whitespace-nowrap"
+                      >
+                        {getOrderOnlineLabel(locale)}
+                      </a>
+                    </div>
+                    <ul className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3">
+                      {cat.packs.map((pack) => (
+                        <li
+                          key={`${cat.id}-pack-${pack.count}`}
+                          className={`rounded-xl px-3 py-3 sm:px-4 text-center ${
+                            pack.featured ? 'bg-orange-50 ring-2 ring-orange-400' : 'bg-stone-50 ring-1 ring-stone-200'
+                          }`}
+                        >
+                          <p className="text-xs sm:text-sm font-semibold text-stone-600">
+                            {pack.count === 1 ? copy.single : copy.box(pack.count)}
+                          </p>
+                          <p className="mt-0.5 text-xl sm:text-2xl font-black text-stone-900 tabular-nums">${pack.price}</p>
+                          {pack.featured && (
+                            <p className="mt-1 text-[11px] sm:text-xs font-bold uppercase tracking-wide text-orange-700">{copy.popular}</p>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })()}
 
               <ul className="grid gap-x-4 gap-y-8 sm:gap-y-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
                 {cat.items.map((it) => (

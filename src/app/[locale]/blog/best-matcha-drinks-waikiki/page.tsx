@@ -169,7 +169,7 @@ const content = {
         },
         {
           title: 'Same Great Flavors, Your Way',
-          description: 'Strawberry, mango, coconut, guava, banana, lilikoi — pair any flavor with either base, hot or iced. It\'s an easy way to make your drink exactly yours, and to find a new favorite on every visit.',
+          description: 'Strawberry, mango, coconut, guava, banana, lilikoi — every matcha flavor comes hot or iced, and strawberry also comes as a Strawberry Hojicha ($10.95). It\'s an easy way to make your drink exactly yours, and to find a new favorite on every visit.',
         },
       ],
     },
@@ -410,7 +410,7 @@ const content = {
         },
         {
           title: '同じおいしさ、あなた好みに',
-          description: 'ストロベリー、マンゴー、ココナッツ、グァバ、バナナ、リリコイ — どのフレーバーもどちらのベースでも、ホットでもアイスでも。自分だけの一杯に仕上げ、来店のたびに新しいお気に入りを見つける、簡単な方法です。',
+          description: 'ストロベリー、マンゴー、ココナッツ、グァバ、バナナ、リリコイ — どの抹茶フレーバーもホットでもアイスでも、ストロベリーは Strawberry Hojicha（$10.95）でも楽しめます。自分だけの一杯に仕上げ、来店のたびに新しいお気に入りを見つける、簡単な方法です。',
         },
       ],
     },
@@ -651,7 +651,7 @@ const content = {
         },
         {
           title: '같은 맛, 당신의 방식대로',
-          description: '딸기, 망고, 코코넛, 구아바, 바나나, 리리코이 — 어떤 플레이버든 두 베이스 중 하나로, 따뜻하게든 차갑게든. 나만의 한 잔으로 만들고, 방문할 때마다 새로운 최애를 찾는 쉬운 방법입니다.',
+          description: '딸기, 망고, 코코넛, 구아바, 바나나, 리리코이 — 어떤 말차 플레이버든 따뜻하게든 차갑게든, 딸기는 Strawberry Hojicha($10.95)로도 즐길 수 있습니다. 나만의 한 잔으로 만들고, 방문할 때마다 새로운 최애를 찾는 쉬운 방법입니다.',
         },
       ],
     },
@@ -892,7 +892,7 @@ const content = {
         },
         {
           title: '同样的好味道，随你定制',
-          description: '草莓、芒果、椰子、番石榴、香蕉、百香果——任意口味搭配任一茶底，冷热皆可。这是把饮品调成专属于你、并在每次到访都发现新最爱的简单方式。',
+          description: '草莓、芒果、椰子、番石榴、香蕉、百香果——每款抹茶口味都冷热皆可，草莓还有 Strawberry Hojicha（$10.95）可选。这是把饮品调成专属于你、并在每次到访都发现新最爱的简单方式。',
         },
       ],
     },

@@ -5,8 +5,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.konacoffeedonut.com';
   const defaultLastModified = new Date('2026-06-06T00:00:00.000Z');
   const routeLastModified: Record<string, Date> = {
-    '': new Date('2026-11-02T00:00:00.000Z'), // meta + JSON-LD scope refresh
-    '/menu': new Date('2026-06-27T00:00:00.000Z'), // menu-board price sync
+    '': new Date('2026-11-17T00:00:00.000Z'), // meta + JSON-LD scope refresh
+    '/menu': new Date('2026-11-17T00:00:00.000Z'), // mochi donut box prices callout
     '/menu/kona-coffee': new Date('2026-06-27T00:00:00.000Z'),
     '/menu/bingsu': new Date('2026-06-27T00:00:00.000Z'),
     '/blog/what-is-bingsu': new Date('2026-06-09T00:00:00.000Z'),
@@ -27,16 +27,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/iced-matcha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     '/blog/hojicha-latte-waikiki': new Date('2026-07-01T00:00:00.000Z'),
     // Sep 2026 batch (published Sep 9, 2026)
-    '/blog': new Date('2026-11-02T00:00:00.000Z'),
+    '/blog': new Date('2026-11-17T00:00:00.000Z'),
     '/blog/korean-corn-dog-honolulu-viral': new Date('2026-09-09T00:00:00.000Z'),
-    '/blog/must-try-foods-waikiki': new Date('2026-09-09T00:00:00.000Z'),
-    '/blog/best-poke-waikiki': new Date('2026-11-02T00:00:00.000Z'),
+    '/blog/must-try-foods-waikiki': new Date('2026-11-17T00:00:00.000Z'),
+    '/blog/best-poke-waikiki': new Date('2026-11-17T00:00:00.000Z'),
     // Daily blog (Sep 15, 2026)
     '/blog/late-night-dessert-waikiki': new Date('2026-10-31T00:00:00.000Z'),
     '/blog/what-is-ube-waikiki': new Date('2026-09-15T00:00:00.000Z'),
-    '/blog/mochi-donut-vs-regular-donut': new Date('2026-09-15T00:00:00.000Z'),
+    '/blog/mochi-donut-vs-regular-donut': new Date('2026-11-17T00:00:00.000Z'),
     // Oct 2026 batch (published Oct 11, 2026)
-    '/blog/malasada-ice-cream-sandwich-waikiki': new Date('2026-10-31T00:00:00.000Z'),
+    '/blog/malasada-ice-cream-sandwich-waikiki': new Date('2026-11-17T00:00:00.000Z'),
     '/blog/best-iced-drinks-waikiki': new Date('2026-10-11T00:00:00.000Z'),
     // Oct 2026 batch 2 (published Oct 15, 2026)
     '/blog/rainy-day-waikiki-cafe': new Date('2026-10-15T00:00:00.000Z'),
@@ -50,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/boba-waikiki': new Date('2026-11-02T00:00:00.000Z'),
     // Nov 2026 batch (published Oct 31, 2026)
     '/blog/waikiki-snacks-grab-and-go': new Date('2026-10-31T00:00:00.000Z'),
-    '/blog/hawaii-omiyage-treats': new Date('2026-10-31T00:00:00.000Z'),
+    '/blog/hawaii-omiyage-treats': new Date('2026-11-17T00:00:00.000Z'),
     // Nov 2 2026: gained internal links to the newest posts
     '/blog/coffee-near-waikiki-beach': new Date('2026-11-02T00:00:00.000Z'),
     '/blog/best-smoothies-waikiki': new Date('2026-11-02T00:00:00.000Z'),
@@ -61,6 +61,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/spam-musubi-vs-onigiri': new Date('2026-11-02T00:00:00.000Z'),
     '/blog/thai-tea-waikiki': new Date('2026-11-02T00:00:00.000Z'),
     '/blog/what-is-lilikoi': new Date('2026-11-02T00:00:00.000Z'),
+    // Nov 17 2026: gained internal links to the newest posts
+    '/blog/best-mochi-donuts-waikiki': new Date('2026-11-17T00:00:00.000Z'),
+    '/blog/mochi-donut-flavors-waikiki': new Date('2026-11-17T00:00:00.000Z'),
+    '/blog/malasada-vs-mochi-donut-waikiki': new Date('2026-11-17T00:00:00.000Z'),
+    // Nov 2026 batch 3 (published Nov 17, 2026)
+    '/blog/mochi-donut-box-waikiki': new Date('2026-11-17T00:00:00.000Z'),
+    '/blog/malasada-vs-donut': new Date('2026-11-17T00:00:00.000Z'),
   };
 
   const routes = [
@@ -163,6 +170,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/spam-musubi-vs-onigiri',
     '/blog/thai-tea-waikiki',
     '/blog/what-is-lilikoi',
+    '/blog/malasada-vs-donut',
+    '/blog/mochi-donut-box-waikiki',
     // Individual menu item pages for SEO
     '/menu/mochi-donuts',
     '/menu/kona-coffee',
@@ -256,6 +265,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/spam-musubi-vs-onigiri': 0.85,
     '/blog/thai-tea-waikiki': 0.85,
     '/blog/what-is-lilikoi': 0.85,
+    '/blog/malasada-vs-donut': 0.85,
+    '/blog/mochi-donut-box-waikiki': 0.85,
     '/blog/ube-mochi-donut-waikiki': 0.85,
     '/menu': 0.8,
     '/menu/mochi-donuts': 0.85,
@@ -336,6 +347,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/spam-musubi-vs-onigiri': 'weekly',
     '/blog/thai-tea-waikiki': 'weekly',
     '/blog/what-is-lilikoi': 'weekly',
+    '/blog/malasada-vs-donut': 'weekly',
+    '/blog/mochi-donut-box-waikiki': 'weekly',
     '/blog/ube-mochi-donut-waikiki': 'weekly',
     '/menu': 'weekly',
     '/menu/mochi-donuts': 'weekly',

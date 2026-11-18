@@ -10,6 +10,9 @@ const config = {
   schemaHeadline: 'Mochi Donut Flavors at Kona Coffee Donut Waikiki: A Visual Menu Guide',
   schemaDescription:
     'A visual guide to all mochi donut flavors at Kona Coffee Donut on Kalākaua Avenue, Waikiki. Pon-de-ring style chewy mochi donuts including ube, matcha, strawberry, mango, taro, and more.',
+  related: [
+    { path: '/blog/mochi-donut-box-waikiki', label: { en: 'Mochi donut boxes: 3, 6 or a dozen (from $11.25)', ja: 'モチドーナツボックス（$11.25〜）', ko: '모찌도넛 박스 ($11.25부터)', zh: '麻糬甜甜圈礼盒（$11.25起）', es: 'Cajas de mochi donuts (desde $11.25)' } },
+  ],
 };
 
 const content: Record<Locale, BlogContent> = {

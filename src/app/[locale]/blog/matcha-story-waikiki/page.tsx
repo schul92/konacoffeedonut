@@ -133,7 +133,7 @@ const content = {
         },
         {
           title: 'Endlessly Versatile',
-          description: 'Matcha shines whisked on its own, poured into a creamy latte, blended into fruit flavors, or swapped for a roasted hojicha base. That flexibility — plus its beautiful green color — is why it has become one of the most beloved drinks in cafés around the world.',
+          description: 'Matcha shines whisked on its own, poured into a creamy latte, blended into fruit flavors, or set beside its roasted cousin, hojicha. That flexibility — plus its beautiful green color — is why it has become one of the most beloved drinks in cafés around the world.',
         },
       ],
     },
@@ -143,11 +143,11 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? whisks a real Matcha Latte ($9.95) plus a full flavored-matcha lineup — strawberry, mango, coconut, guava, and banana — and you can even choose a roasted Hojicha base instead. Our Strawberry Matcha is far and away the crowd favorite: whisked green tea layered with sweet berry, it\'s the one guests keep coming back for. Pair any of them with a warm mochi donut, about a 5-minute walk from Waikiki Beach.',
+        description: 'Right on Kalākaua Avenue in the heart of Waikiki, Kona Coffee Donut? whisks a real Matcha Latte ($9.95) plus a full flavored-matcha lineup — strawberry, mango, coconut, guava, and banana — and on the roasted side there is a Hojicha Latte ($9.95) and a Strawberry Hojicha ($10.95). Our Strawberry Matcha is far and away the crowd favorite: whisked green tea layered with sweet berry, it\'s the one guests keep coming back for. Pair any of them with a warm mochi donut, about a 5-minute walk from Waikiki Beach.',
         highlights: [
           'Real Matcha Latte ($9.95), whisked fresh',
           'Flavored matcha: strawberry (our bestseller), mango, coconut, guava, banana',
-          'Choose a roasted Hojicha base too',
+          'Hojicha Latte ($9.95) and Strawberry Hojicha ($10.95) too',
           'Open daily, 7AM–9PM · (808) 260-1835',
         ],
       },
@@ -167,7 +167,7 @@ const content = {
         },
         {
           title: 'Then Explore the Flavors',
-          description: 'Feeling adventurous? Our Strawberry Matcha is the runaway favorite, but mango, coconut, guava, and banana are all worth a try. Or swap in a roasted Hojicha base for a nuttier, mellower cup — a lovely change of pace from the grassy green.',
+          description: 'Feeling adventurous? Our Strawberry Matcha is the runaway favorite, but mango, coconut, guava, and banana are all worth a try. Or try a roasted Hojicha Latte or Strawberry Hojicha for a nuttier, mellower cup — a lovely change of pace from the grassy green.',
         },
         {
           title: 'Pair It With a Mochi Donut',
@@ -196,7 +196,7 @@ const content = {
         },
         {
           question: 'Where can I get real matcha in Waikiki?',
-          answer: 'Kona Coffee Donut? at 2142 Kalakaua Ave whisks a real Matcha Latte ($9.95) plus flavored matcha in strawberry (the bestseller), mango, coconut, guava, and banana, with an optional roasted Hojicha base. We\'re about a 5-minute walk from Waikiki Beach, open daily 7AM–9PM, (808) 260-1835 — and you can pair your matcha with a fresh mochi donut.',
+          answer: 'Kona Coffee Donut? at 2142 Kalakaua Ave whisks a real Matcha Latte ($9.95) plus flavored matcha in strawberry (the bestseller), mango, coconut, guava, and banana, plus a roasted Hojicha Latte ($9.95) and Strawberry Hojicha ($10.95). We\'re about a 5-minute walk from Waikiki Beach, open daily 7AM–9PM, (808) 260-1835 — and you can pair your matcha with a fresh mochi donut.',
         },
       ],
     },
@@ -334,7 +334,7 @@ const content = {
         },
         {
           title: '限りない万能さ',
-          description: '抹茶は、そのまま点てても、クリーミーなラテに注いでも、フルーツの風味と合わせても、香ばしいほうじ茶ベースに替えても輝きます。その柔軟さ——そして美しい緑色——こそ、世界中のカフェで最も愛される飲み物のひとつになった理由です。',
+          description: '抹茶は、そのまま点てても、クリーミーなラテに注いでも、フルーツの風味と合わせても、香ばしい仲間のほうじ茶と並べても輝きます。その柔軟さ——そして美しい緑色——こそ、世界中のカフェで最も愛される飲み物のひとつになった理由です。',
         },
       ],
     },
@@ -344,11 +344,11 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: 'ワイキキの中心、カラカウア通り沿いに位置する Kona Coffee Donut? では、本物の抹茶ラテ（$9.95）に加え、ストロベリー、マンゴー、ココナッツ、グァバ、バナナと、フレーバー抹茶を勢揃い。香ばしいほうじ茶ベースも選べます。ストロベリー抹茶は断トツの一番人気——点てた抹茶に甘いベリーを重ねた一杯で、お客様が何度も戻ってきてくださる看板メニューです。どれも温かいモチドーナツと好相性。ワイキキビーチから徒歩約5分です。',
+        description: 'ワイキキの中心、カラカウア通り沿いに位置する Kona Coffee Donut? では、本物の抹茶ラテ（$9.95）に加え、ストロベリー、マンゴー、ココナッツ、グァバ、バナナと、フレーバー抹茶を勢揃い。香ばしい Hojicha Latte（$9.95）と Strawberry Hojicha（$10.95）もあります。ストロベリー抹茶は断トツの一番人気——点てた抹茶に甘いベリーを重ねた一杯で、お客様が何度も戻ってきてくださる看板メニューです。どれも温かいモチドーナツと好相性。ワイキキビーチから徒歩約5分です。',
         highlights: [
           '本物の抹茶ラテ（$9.95）、点てたて',
           'フレーバー抹茶：ストロベリー（一番人気）、マンゴー、ココナッツ、グァバ、バナナ',
-          '香ばしいほうじ茶ベースも選べます',
+          'Hojicha Latte（$9.95）と Strawberry Hojicha（$10.95）も',
           '毎日営業、午前7時〜午後9時 ・ (808) 260-1835',
         ],
       },
@@ -368,7 +368,7 @@ const content = {
         },
         {
           title: 'それからフレーバーを',
-          description: '冒険したい気分なら、断トツ人気のストロベリー抹茶をはじめ、マンゴー、ココナッツ、グァバ、バナナもぜひ。あるいは香ばしいほうじ茶ベースに替えれば、ナッツのようにまろやかな一杯に——青々しい緑からの心地よい気分転換です。',
+          description: '冒険したい気分なら、断トツ人気のストロベリー抹茶をはじめ、マンゴー、ココナッツ、グァバ、バナナもぜひ。あるいは香ばしい Hojicha Latte や Strawberry Hojicha なら、ナッツのようにまろやかな一杯に——青々しい緑からの心地よい気分転換です。',
         },
         {
           title: 'モチドーナツと合わせる',
@@ -397,7 +397,7 @@ const content = {
         },
         {
           question: 'ワイキキで本物の抹茶はどこで飲めますか？',
-          answer: '2142 Kalakaua Ave の Kona Coffee Donut? では、本物の抹茶ラテ（$9.95）に加え、ストロベリー（一番人気）、マンゴー、ココナッツ、グァバ、バナナのフレーバー抹茶をご用意し、香ばしいほうじ茶ベースも選べます。ワイキキビーチから徒歩約5分、毎日午前7時〜午後9時営業、(808) 260-1835——抹茶を淹れたてのモチドーナツと合わせられます。',
+          answer: '2142 Kalakaua Ave の Kona Coffee Donut? では、本物の抹茶ラテ（$9.95）に加え、ストロベリー（一番人気）、マンゴー、ココナッツ、グァバ、バナナのフレーバー抹茶をご用意し、香ばしい Hojicha Latte（$9.95）と Strawberry Hojicha（$10.95）もあります。ワイキキビーチから徒歩約5分、毎日午前7時〜午後9時営業、(808) 260-1835——抹茶を淹れたてのモチドーナツと合わせられます。',
         },
       ],
     },
@@ -535,7 +535,7 @@ const content = {
         },
         {
           title: '무한한 변주',
-          description: '말차는 그대로 저어도, 크리미한 라테에 부어도, 과일 향과 섞어도, 고소한 호지차 베이스로 바꿔도 빛납니다. 그 유연함 — 그리고 아름다운 초록빛 — 이야말로 전 세계 카페에서 가장 사랑받는 음료 중 하나가 된 이유입니다.',
+          description: '말차는 그대로 저어도, 크리미한 라테에 부어도, 과일 향과 섞어도, 고소한 사촌 호지차와 나란히 두어도 빛납니다. 그 유연함 — 그리고 아름다운 초록빛 — 이야말로 전 세계 카페에서 가장 사랑받는 음료 중 하나가 된 이유입니다.',
         },
       ],
     },
@@ -545,11 +545,11 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 는 진짜 말차 라테($9.95)에 더해 딸기, 망고, 코코넛, 구아바, 바나나까지 플레이버 말차를 두루 저어냅니다. 고소한 호지차 베이스도 고를 수 있죠. 딸기 말차는 압도적인 1위 인기 메뉴 — 저은 말차에 달콤한 베리를 겹친 한 잔으로, 손님들이 자꾸 다시 찾는 대표 메뉴입니다. 무엇이든 따뜻한 모찌 도넛과 잘 어울리고, 와이키키 해변에서 도보 약 5분입니다.',
+        description: '와이키키의 중심, 칼라카우아 애비뉴에 자리한 Kona Coffee Donut? 는 진짜 말차 라테($9.95)에 더해 딸기, 망고, 코코넛, 구아바, 바나나까지 플레이버 말차를 두루 저어냅니다. 고소한 쪽으로는 Hojicha Latte($9.95)와 Strawberry Hojicha($10.95)도 있죠. 딸기 말차는 압도적인 1위 인기 메뉴 — 저은 말차에 달콤한 베리를 겹친 한 잔으로, 손님들이 자꾸 다시 찾는 대표 메뉴입니다. 무엇이든 따뜻한 모찌 도넛과 잘 어울리고, 와이키키 해변에서 도보 약 5분입니다.',
         highlights: [
           '진짜 말차 라테($9.95), 갓 저어냄',
           '플레이버 말차: 딸기(베스트셀러), 망고, 코코넛, 구아바, 바나나',
-          '고소한 호지차 베이스도 선택 가능',
+          'Hojicha Latte($9.95)와 Strawberry Hojicha($10.95)도',
           '매일 영업, 오전 7시~오후 9시 · (808) 260-1835',
         ],
       },
@@ -569,7 +569,7 @@ const content = {
         },
         {
           title: '그다음 플레이버 탐험',
-          description: '모험하고 싶다면, 압도적 인기의 딸기 말차를 비롯해 망고, 코코넛, 구아바, 바나나도 모두 시도해 볼 만합니다. 또는 고소한 호지차 베이스로 바꾸면 견과처럼 더 부드러운 한 잔이 되죠 — 풀 향 나는 초록에서의 기분 좋은 변화입니다.',
+          description: '모험하고 싶다면, 압도적 인기의 딸기 말차를 비롯해 망고, 코코넛, 구아바, 바나나도 모두 시도해 볼 만합니다. 또는 고소한 Hojicha Latte나 Strawberry Hojicha를 고르면 견과처럼 더 부드러운 한 잔이 되죠 — 풀 향 나는 초록에서의 기분 좋은 변화입니다.',
         },
         {
           title: '모찌 도넛과 곁들이기',
@@ -598,7 +598,7 @@ const content = {
         },
         {
           question: '와이키키에서 진짜 말차는 어디서 마실 수 있나요?',
-          answer: '2142 Kalakaua Ave의 Kona Coffee Donut? 는 진짜 말차 라테($9.95)에 더해 딸기(베스트셀러), 망고, 코코넛, 구아바, 바나나 플레이버 말차를 저어내고, 고소한 호지차 베이스도 고를 수 있습니다. 와이키키 해변에서 도보 약 5분, 매일 오전 7시~오후 9시 영업, (808) 260-1835 — 말차를 갓 만든 모찌 도넛과 곁들일 수 있습니다.',
+          answer: '2142 Kalakaua Ave의 Kona Coffee Donut? 는 진짜 말차 라테($9.95)에 더해 딸기(베스트셀러), 망고, 코코넛, 구아바, 바나나 플레이버 말차를 저어내고, 고소한 Hojicha Latte($9.95)와 Strawberry Hojicha($10.95)도 있습니다. 와이키키 해변에서 도보 약 5분, 매일 오전 7시~오후 9시 영업, (808) 260-1835 — 말차를 갓 만든 모찌 도넛과 곁들일 수 있습니다.',
         },
       ],
     },
@@ -736,7 +736,7 @@ const content = {
         },
         {
           title: '百搭无穷',
-          description: '抹茶单独搅点出彩，倒入香浓拿铁出彩，融入水果风味出彩，换成烘焙的焙茶（Hojicha）底也出彩。这份灵活——再加上它美丽的绿色——正是它成为全球咖啡馆最受喜爱饮品之一的原因。',
+          description: '抹茶单独搅点出彩，倒入香浓拿铁出彩，融入水果风味出彩，与烘焙的近亲焙茶（Hojicha）并排品尝也出彩。这份灵活——再加上它美丽的绿色——正是它成为全球咖啡馆最受喜爱饮品之一的原因。',
         },
       ],
     },
@@ -746,11 +746,11 @@ const content = {
       shop: {
         name: 'Kona Coffee Donut?',
         address: '2142 Kalakaua Ave, Honolulu, HI 96815',
-        description: '就在威基基中心地段的卡拉卡瓦大道上，Kona Coffee Donut? 现搅正宗抹茶拿铁（$9.95），还有草莓、芒果、椰子、番石榴、香蕉等一整条风味抹茶，你甚至可以换成烘焙的焙茶（Hojicha）底。我们的草莓抹茶是遥遥领先的人气之选——搅好的抹茶叠上香甜草莓，是客人一再回头点的招牌。任选一杯都能配上温热的麻糬甜甜圈，距威基基海滩步行约5分钟。',
+        description: '就在威基基中心地段的卡拉卡瓦大道上，Kona Coffee Donut? 现搅正宗抹茶拿铁（$9.95），还有草莓、芒果、椰子、番石榴、香蕉等一整条风味抹茶，焙茶这边则有 Hojicha Latte（$9.95）和 Strawberry Hojicha（$10.95）。我们的草莓抹茶是遥遥领先的人气之选——搅好的抹茶叠上香甜草莓，是客人一再回头点的招牌。任选一杯都能配上温热的麻糬甜甜圈，距威基基海滩步行约5分钟。',
         highlights: [
           '正宗抹茶拿铁（$9.95），现搅',
           '风味抹茶：草莓（我们的招牌）、芒果、椰子、番石榴、香蕉',
-          '也可换成烘焙焙茶（Hojicha）底',
+          '另有 Hojicha Latte（$9.95）和 Strawberry Hojicha（$10.95）',
           '每天营业，上午7点至晚上9点 · (808) 260-1835',
         ],
       },
@@ -770,7 +770,7 @@ const content = {
         },
         {
           title: '再探索各种口味',
-          description: '想尝鲜？我们的草莓抹茶是遥遥领先的人气之选，而芒果、椰子、番石榴和香蕉也都值得一试。或者换成烘焙焙茶底，换来一杯更坚果、更醇和的口感——是从青草绿意中的一次美妙变奏。',
+          description: '想尝鲜？我们的草莓抹茶是遥遥领先的人气之选，而芒果、椰子、番石榴和香蕉也都值得一试。或者试试烘焙的 Hojicha Latte 或 Strawberry Hojicha，换来一杯更坚果、更醇和的口感——是从青草绿意中的一次美妙变奏。',
         },
         {
           title: '搭配一个麻糬甜甜圈',
@@ -799,7 +799,7 @@ const content = {
         },
         {
           question: '在威基基哪里能喝到正宗抹茶？',
-          answer: '位于 2142 Kalakaua Ave 的 Kona Coffee Donut? 现搅正宗抹茶拿铁（$9.95），还有草莓（招牌）、芒果、椰子、番石榴和香蕉风味抹茶，并可选烘焙焙茶（Hojicha）底。我们距威基基海滩步行约5分钟，每天上午7点至晚上9点营业，电话 (808) 260-1835——还能把抹茶配上一个现做的麻糬甜甜圈。',
+          answer: '位于 2142 Kalakaua Ave 的 Kona Coffee Donut? 现搅正宗抹茶拿铁（$9.95），还有草莓（招牌）、芒果、椰子、番石榴和香蕉风味抹茶，另有烘焙的 Hojicha Latte（$9.95）和 Strawberry Hojicha（$10.95）。我们距威基基海滩步行约5分钟，每天上午7点至晚上9点营业，电话 (808) 260-1835——还能把抹茶配上一个现做的麻糬甜甜圈。',
         },
       ],
     },
@@ -891,7 +891,7 @@ const faqSchema = {
       name: 'Where can I get real matcha in Waikiki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Kona Coffee Donut? at 2142 Kalakaua Ave whisks a real Matcha Latte ($9.95) plus flavored matcha in strawberry (the bestseller), mango, coconut, guava, and banana, with an optional roasted Hojicha base. We are about a 5-minute walk from Waikiki Beach, open daily 7AM-9PM, (808) 260-1835 — and you can pair your matcha with a fresh mochi donut.',
+        text: 'Kona Coffee Donut? at 2142 Kalakaua Ave whisks a real Matcha Latte ($9.95) plus flavored matcha in strawberry (the bestseller), mango, coconut, guava, and banana, plus a roasted Hojicha Latte ($9.95) and Strawberry Hojicha ($10.95). We are about a 5-minute walk from Waikiki Beach, open daily 7AM-9PM, (808) 260-1835 — and you can pair your matcha with a fresh mochi donut.',
       },
     },
   ],

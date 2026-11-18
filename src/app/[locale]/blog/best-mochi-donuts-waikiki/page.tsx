@@ -11,6 +11,9 @@ const config = {
   schemaHeadline: 'Best Mochi Donuts in Waikiki (2026): 24 Fresh Rice-Flour Flavors',
   schemaDescription:
     'A guide to the best mochi donuts in Waikiki — fresh rice-flour pon-de-ring donuts in 24 flavors on Kalākaua Ave, paired with 100% Kona coffee.',
+  related: [
+    { path: '/blog/mochi-donut-box-waikiki', label: { en: 'Mochi donut boxes: 3, 6 or a dozen (from $11.25)', ja: 'モチドーナツボックス（$11.25〜）', ko: '모찌도넛 박스 ($11.25부터)', zh: '麻糬甜甜圈礼盒（$11.25起）', es: 'Cajas de mochi donuts (desde $11.25)' } },
+  ],
 };
 
 const content: Record<Locale, BlogContent> = {

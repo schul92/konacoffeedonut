@@ -18,6 +18,8 @@ const config = {
     { path: '/blog/best-bingsu-waikiki', label: { en: 'Best bingsu in Waikiki — dessert after poke', ja: 'ワイキキのビンス — ポケの後のデザートに', ko: '와이키키 빙수 — 포케 후 디저트', zh: '威基基雪冰——poke之后的甜品', es: 'El mejor bingsu de Waikiki' } },
     { path: '/blog/best-kona-coffee-waikiki', label: { en: 'Best Kona coffee in Waikiki', ja: 'ワイキキのコナコーヒー', ko: '와이키키 코나 커피', zh: '威基基科纳咖啡', es: 'El mejor café Kona de Waikiki' } },
     { path: '/blog/waikiki-snacks-grab-and-go', label: { en: 'Grab-and-go beach food in Waikiki', ja: 'ワイキキのテイクアウト', ko: '와이키키 테이크아웃', zh: '威基基外带小吃', es: 'Comida para llevar en Waikiki' } },
+    { path: '/blog/spam-musubi-vs-onigiri', label: { en: 'Spam musubi vs onigiri: the difference', ja: 'スパムむすびとおにぎりの違い', ko: '스팸 무스비와 오니기리 차이', zh: '午餐肉饭团和日式饭团的区别', es: 'Spam musubi vs onigiri' } },
+    { path: '/blog/family-kids-cafe-waikiki', label: { en: 'Family-friendly cafe in Waikiki', ja: 'ワイキキの子連れカフェ', ko: '와이키키 아이랑 가기 좋은 카페', zh: '威基基亲子咖啡店', es: 'Cafetería familiar en Waikiki' } },
   ],
 };
 

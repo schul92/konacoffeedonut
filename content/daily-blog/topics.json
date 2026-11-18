@@ -226,6 +226,18 @@
       "angle": "Our 6 cans ranked by first-timer friendliness, with honest tasting notes. Ends with 'all $8.95, try two'.",
       "products": "boba cans",
       "status": "pending"
+    },
+    {
+      "slug": "mochi-donut-box-waikiki",
+      "keyword": "mochi donut box waikiki",
+      "status": "published",
+      "published": "2026-11-17"
+    },
+    {
+      "slug": "malasada-vs-donut",
+      "keyword": "malasada vs donut",
+      "status": "published",
+      "published": "2026-11-17"
     }
   ]
 }

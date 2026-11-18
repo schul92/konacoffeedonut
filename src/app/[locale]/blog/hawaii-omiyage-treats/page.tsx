@@ -43,6 +43,7 @@ const config = {
         es: '¿Qué es una malasada?',
       },
     },
+    { path: '/blog/mochi-donut-box-waikiki', label: { en: 'Mochi donut boxes: 3, 6 or a dozen (from $11.25)', ja: 'モチドーナツボックス（$11.25〜）', ko: '모찌도넛 박스 ($11.25부터)', zh: '麻糬甜甜圈礼盒（$11.25起）', es: 'Cajas de mochi donuts (desde $11.25)' } },
   ],
 };
 

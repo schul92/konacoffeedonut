@@ -16,6 +16,8 @@ const config = {
     { path: '/blog/best-mochi-donuts-waikiki', label: { en: 'Best mochi donuts in Waikiki', ja: 'ワイキキのモチドーナツおすすめ', ko: '와이키키 모찌도넛 추천', zh: '威基基最好的麻糬甜甜圈', es: 'Los mejores mochi donuts de Waikiki' } },
     { path: '/blog/malasada-vs-mochi-donut-waikiki', label: { en: 'Malasada vs mochi donut in Waikiki', ja: 'マラサダ vs モチドーナツ', ko: '말라사다 vs 모찌도넛', zh: '马拉萨达 vs 麻糬甜甜圈', es: 'Malasada vs mochi donut' } },
     { path: '/blog/must-try-foods-waikiki', label: { en: '10 must-try foods in Waikiki', ja: 'ワイキキで絶対食べたい10品', ko: '와이키키 필수 음식 10가지', zh: '威基基必吃10种美食', es: '10 comidas imperdibles en Waikiki' } },
+    { path: '/blog/mochi-donut-box-waikiki', label: { en: 'Mochi donut boxes: 3, 6 or a dozen (from $11.25)', ja: 'モチドーナツボックス（$11.25〜）', ko: '모찌도넛 박스 ($11.25부터)', zh: '麻糬甜甜圈礼盒（$11.25起）', es: 'Cajas de mochi donuts (desde $11.25)' } },
+    { path: '/blog/malasada-vs-donut', label: { en: 'Malasada vs donut: what is the difference?', ja: 'マラサダとドーナツの違い', ko: '말라사다 vs 도넛 차이', zh: '马拉萨达和甜甜圈的区别', es: 'Malasada vs donut: la diferencia' } },
   ],
 };
 

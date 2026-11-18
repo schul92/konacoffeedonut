@@ -44,6 +44,7 @@ const config = {
         es: 'Mejores postres en Waikiki',
       },
     },
+    { path: '/blog/malasada-vs-donut', label: { en: 'Malasada vs donut: what is the difference?', ja: 'マラサダとドーナツの違い', ko: '말라사다 vs 도넛 차이', zh: '马拉萨达和甜甜圈的区别', es: 'Malasada vs donut: la diferencia' } },
   ],
 };
 
